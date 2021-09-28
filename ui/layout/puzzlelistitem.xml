@@ -1,0 +1,53 @@
+<UICompositeButton name="PuzzleEntry" button="selector">
+  <UIRegion x="0" y="0" w="0" h="18" xalign="min" yalign="min" walign="max" halign="len" />
+  <UIState active="normal" visible="normal" />
+  <UIAspect>
+    <default />
+  </UIAspect>
+  <children>
+    <UIToggleButton name="selector" sticky="1">
+      <UIRegion x="0" y="0" w="290" h="18" />
+      <UIState active="normal" visible="normal" />
+      <UIAspect alwayshit="region">
+        <default>
+          <BFFont x="20" w="270">
+            <BFColor r="50" g="255" b="50" a="255" />
+          </BFFont>
+        </default>
+        <standard>
+          <normal>
+            <BFFont x="20" w="270">
+              <BFColor r="255" g="255" b="255" a="255" />
+            </BFFont>
+          </normal>
+          <highlighted image="">
+            <BFFont x="20" w="270">
+              <BFColor r="148" g="239" b="255" a="255" />
+            </BFFont>
+          </highlighted>
+          <activated image="">
+            <BFFont x="20" w="270">
+               <BFColor r="255" g="0" b="0" a="255"/>
+            </BFFont>
+          </activated>
+          <disabled />
+        </standard>
+      </UIAspect>
+      <text format="guestthoughtformat:thought_format" type="multi" />
+    </UIToggleButton>
+    <UIMultiIcon name="Clickable Icon" value="ready">
+      <UIRegion x="0" y="1" w="16" h="16" />
+      <UIState active="normal" visible="normal" />
+      <UIAspect alwayshit="never">
+        <default image="" sound="">
+          <BFRect x="0" y="0" w="16" h="16" />
+          <BFColor r="255" g="255" b="255" a="255" />
+        </default>
+      </UIAspect>
+      <images>
+        <image key="ready" image="ui/minigames/icon_puzzle_incomplete.dds" />
+        <image key="complete" image="ui/minigames/icon_puzzle_complete.dds" />
+      </images>
+    </UIMultiIcon>
+  </children>
+</UICompositeButton>

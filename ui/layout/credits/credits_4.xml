@@ -1,0 +1,2060 @@
+<ZTUITimedEvents name="credits" xPack="3">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+      <default/>
+   </UIAspect>
+   <children>
+      <UILayout name="ucbackground">
+         <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+         <children>
+            <UIStatic name="Ultimate Collection Background 1">
+               <UIRegion x="0" y="0" w="512" h="512" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_A.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="Ultimate Collection Background 2">
+               <UIRegion x="512" y="0" w="512" h="512" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_B.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="Ultimate Collection Background 3">
+               <UIRegion x="0" y="512" w="256" h="256" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_C.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="Ultimate Collection Background 4">
+               <UIRegion x="256" y="512" w="256" h="256" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_D.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="Ultimate Collection Background 5">
+               <UIRegion x="512" y="512" w="256" h="256" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_E.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="Ultimate Collection Background 6">
+               <UIRegion x="768" y="512" w="256" h="256" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIAspect>
+                  <default image="UI/credits/logos/CreditBackground_F.dds">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+         </children>
+      </UILayout>
+      
+	  <UILayout name="uclogo">
+		 <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+		 <UIState active="normal" visible="hidden"/>
+		 <UIShowHideAnim time=".5" bob="1.3">
+			<start x="0" y="1024" w="1024" h="768"/>
+			<end x="0" y="0" w="1024" h="768"/>
+		 </UIShowHideAnim>
+		 <children>
+			<UIStatic rows="-1">
+				<UIRegion x="256" y="80" w="512" h="512" xalign="min" yalign="min" walign="len" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect>
+				  <default image="UI\credits\logos\logo_zoo_uc.dds"/>
+				</UIAspect>
+			</UIStatic>
+			<UIText autosize="true">
+				<UIRegion x="0" y="580" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="credits:devteam">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headinglarge"/>
+			</UIText>
+		 </children>
+	  </UILayout>
+	  
+	  <UILayout name="ucbflogo">
+		 <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+		 <UIState active="normal" visible="hidden"/>
+		 <UIShowHideAnim time=".5" bob="1.3">
+			<start x="0" y="1024" w="1024" h="768"/>
+			<end x="0" y="0" w="1024" h="768"/>
+		 </UIShowHideAnim>
+		 <children>
+			<UIStatic rows="-1">
+			   <UIRegion x="256" y="130" w="512" h="512" xalign="min" yalign="min" walign="len" halign="len"/>
+			   <UIState active="normal" visible="normal"/>
+			   <UIAspect>
+				  <default image="ui/credits/logos/bluefang.dds"/>
+			   </UIAspect>
+			</UIStatic>
+		 </children>
+	  </UILayout>
+
+      <UILayout name="ucmanagementback">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="512" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_bengaltiger"/>
+         </children>
+      </UILayout>
+      
+      <UILayout name="ucmanagement1">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="0" y="1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+		<UILayout rows="-1">
+				<UIRegion x="0" y="25" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect>
+				  <default sound=""/>
+				</UIAspect>
+				<children>
+				  <UIListBox rows="-1">
+					  <UIRegion x="175" y="75" w="600" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+					 <UIState active="normal" visible="normal"/>
+					 <UIAspect>
+						<default sound=""/>
+					 </UIAspect>
+					 <children>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="credits:producer">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingmedium"/>
+						</UIText>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="devteamnames:stephan_wenninger">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingname"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>							 
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="credits:engineeringlead">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingmedium"/>
+						</UIText>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="devteamnames:ralph_hebb">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingname"/>
+						</UIText>   
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="credits:managingartdirector">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingmedium"/>
+						</UIText>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="devteamnames:fred_galpern">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingname"/>                                       
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="credits:audiodirector">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingmedium"/>
+						</UIText>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="devteamnames:george_valavanis">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+							</UIAspect>
+							<text format="credits:xp2headingname"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="credits:testingmanager">
+								<default>
+									<BFFont align="center"/>
+								</default>
+							</UIAspect>
+							<text format="credits:xp2headingmedium"/>
+						  </UIText>
+						  <UIText autosize="true">
+							<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+							<UIState active="normal" visible="normal"/>
+							<UIAspect locid="devteamnames:richard_baker">
+								<default>
+									<BFFont align="center"/>
+								</default>
+							</UIAspect>
+							<text format="credits:xp2headingname"/>
+						  </UIText>                                    
+					 </children>
+				  </UIListBox>	
+				</children>
+			</UILayout>            
+         </children>
+      </UILayout>
+      <UILayout name="ucmanagement2_1">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="1024" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+	<UILayout name="background Image" template="creditsback_leatherbackturtle1"/>
+	<UILayout rows="-1">
+			<UIRegion x="0" y="0" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+			<UIState active="normal" visible="normal"/>
+			<UIAspect>
+			  <default sound=""/>
+			</UIAspect>
+			<children>
+			  <UIListBox rows="-1">
+			         <UIRegion x="0" y="128" w="600" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+				 <UIState active="normal" visible="normal"/>
+				 <UIAspect>
+					<default sound=""/>
+				 </UIAspect>
+				 <children>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="credits:engineeringteam">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingmedium"/>
+					</UIText>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="devteamnames:ralph_hebb">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingname"/>
+					</UIText>
+					<UIStatic name="spacer">
+						<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+					</UIStatic>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="credits:artteam">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingmedium"/>
+					</UIText>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="devteamnames:bj_johnson">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingname"/>
+					</UIText>
+					<UIStatic name="spacer">
+						<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+					</UIStatic>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="credits:music">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingmedium"/>
+					</UIText>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="devteamnames:george_valavanis">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingname"/>
+					</UIText>
+					<UIStatic name="spacer">
+						<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+					</UIStatic>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="credits:leadtester">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingmedium"/>
+					</UIText>
+					<UIText autosize="true">
+						<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						<UIState active="normal" visible="normal"/>
+						<UIAspect locid="devteamnames:keith_carpentier">
+						  <default>
+							 <BFFont align="center"/>
+						  </default>
+						</UIAspect>
+						<text format="credits:xp2headingname"/>
+					</UIText>
+				 </children>
+			  </UIListBox>
+			</children>
+		</UILayout>            
+         </children>
+      </UILayout>
+      
+      <UILayout name="ucdesignteamback1">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="-512" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_jeeprubicon1"/>
+         </children>
+      </UILayout>
+
+      <UILayout name="ucdesignteamback2">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="-1024" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_jeeprubicon2"/>
+         </children>
+      </UILayout>
+
+      <UILayout name="ucdesignteam">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="0" y="-1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="0" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="-512" y="64" w="0" h="0" xalign="mid" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:designsupport">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:joe_freemer">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:justin_jones_2">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>                        
+			<UIStatic name="spacer">
+				<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+			</UIStatic>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="credits:testingteam">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingmedium"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:richard_baker">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:keith_carpentier">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:jim_beals">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:cole_stlaurent">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:matthew_reinke">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+			<UIText autosize="true">
+				<UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+				<UIState active="normal" visible="normal"/>
+				<UIAspect locid="devteamnames:troy_annichiarico">
+				  <default>
+					 <BFFont align="center"/>
+				  </default>
+				</UIAspect>
+				<text format="credits:xp2headingname"/>
+			</UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      
+      <UILayout name="ucmanagement3">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="0" y="1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_egyptthemeddonationbox"/>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="55" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="112" y="256" w="400" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:executiveproducers">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:adam_levesque">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:jr_surprenant">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>        
+        		<UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:marketingandpr">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:scott_triola">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:business">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:hank_howie">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:scott_triola">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>                        
+                     </children>
+                  </UIListBox>
+                  <UIListBox rows="-1">
+                     <UIRegion x="256" y="0" w="600" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:support">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:rob_harrington">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:dina_spylios">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      <UILayout name="ucmanagement4">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="0" y="1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+	    <UILayout name="background Image" template="creditsback_egyptthemedfountain"/>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="95" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:management">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headinglarge"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="20" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:ceo">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:adam_levesque">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:president">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:hank_howie">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:coo">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:scott_triola">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:vpsoftware">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:john_wheeler">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIStatic name="spacer">
+                           <UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+                        </UIStatic>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:cto">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="devteamnames:pat_johnson">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      <UILayout name="ucfriendsfamilyback">
+         <UIRegion x="0" y="512" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="0" y="1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_ankylosaur2"/>
+         </children>
+      </UILayout>
+      <UILayout name="ucfriendsfamily1_1">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="-1024" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="60" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:bluefangthanks">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingmedium"/>
+                        </UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      <UILayout name="ucfriendsfamily1_2">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="1024" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="110" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:friendsfamily1">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:friendsfamily2">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      <UILayout name="ucfriendsfamily1_3">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="1024" y="0" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+            <UILayout rows="-1">
+               <UIRegion x="0" y="220" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect>
+                  <default sound=""/>
+               </UIAspect>
+               <children>
+                  <UIListBox rows="-1">
+                     <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect>
+                        <default sound=""/>
+                     </UIAspect>
+                     <children>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:fans1">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                        <UIText autosize="true">
+                           <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+                           <UIState active="normal" visible="normal"/>
+                           <UIAspect locid="credits:fans2">
+                              <default>
+                                 <BFFont align="center"/>
+                              </default>
+                           </UIAspect>
+                           <text format="credits:xp2headingname"/>
+                        </UIText>
+                     </children>
+                  </UIListBox>
+               </children>
+            </UILayout>
+         </children>
+      </UILayout>
+      <UILayout name="finalimage">
+         <UIRegion x="0" y="512" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="0" y="-1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_ankylosaur1"/>
+         </children>
+      </UILayout>
+      <UILayout name="ucmsback1">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="-1024" y="-1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_tramgondola1"/>
+         </children>
+      </UILayout>
+      <UILayout name="ucmsback2">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".5">
+            <start x="-1024" y="-1024" w="1024" h="768"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <children>
+         	<UILayout name="background Image" template="creditsback_tramgondola2"/>
+         </children>
+      </UILayout>
+      
+	  <UILayout name="ucms">
+		 <UIRegion x="0" y="768" w="1024" h="3600" xalign="min" yalign="min" walign="len" halign="len"/>
+		 <UIState active="normal" visible="hidden"/>
+		 <UIShowHideAnim time="68" function="linear">
+			<start x="0" y="768" w="-1" h="-1"/>
+			<end x="0" y="-3500" w="-1" h="-1"/>
+		 </UIShowHideAnim>
+		 <children>
+			<UILayout rows="-1">
+			   <UIRegion x="0" y="0" w="1024" h="0" xalign="min" yalign="min" walign="len" halign="max"/>
+			   <UIState active="normal" visible="normal"/>
+			   <UIAspect>
+				  <default sound=""/>
+			   </UIAspect>
+			   <children>
+				  <UIListBox rows="-1">
+					 <UIRegion x="-512" y="0" w="1024" h="0" xalign="mid" yalign="min" walign="len" halign="max"/>
+					 <UIState active="normal" visible="normal"/>
+					 <UIAspect>
+						<default sound=""/>
+					 </UIAspect>
+					 <children>
+						<UIStatic>
+						   <UIRegion x="-190" y="0" w="380" h="188" xalign="mid" yalign="min" walign="len" halign="len"/>
+						   <UIAspect>
+							  <default image="ui/splash/logo_ms.dds">
+								 <BFRect x="0" y="0" w="190" h="94"/>
+							  </default>
+						   </UIAspect>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Games">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingmedium"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Project">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingmedium"/>
+						</UIText>	
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>								
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Production">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Tanya_Erwin">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Marketing">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Jason_Ing">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>							
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Business_Development">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Angeline_Fowler">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>							
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Development">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Greg_Hermann">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Frank_Klier">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Design">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Chris_Novak">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Bob_Settles">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Audio">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Caesar_Filori">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Mike_Cody">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Art">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ben_Cammarano">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Doug_McBride">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						 <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:User_Research">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Kevin_Keeker">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Kevin_Goebel">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:User_Experience">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Dana_Fos">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Heidi_Hendricks">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Print_Production">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ginny_Baldwin">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Doug_Startzel">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Quality">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Greg_B">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Jimmy_Bischoff">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Brian_Yu">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Carolyn_Gold">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Joe_Djorgee">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Mark_McAllister">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+					        <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>						
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Configuration_Testing">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Mike_Grodin">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+					        <UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>						
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:XNA_Game">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Chris_Lee">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Jon_Burns">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Marwan_Jubran">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Mike_Ruete">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Kazuyuki_Shibuya">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Setup_Team">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Josh_Wexler">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Product_Support">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ronn_Mercer">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Diana_Leon">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>						
+						
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Microsoft_Globalization">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+   						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>							
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Yasmine_Nelson">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Yumiko_Murphy">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>		
+
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Dublin">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Peter_O">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Enda_Kelly">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Steven_Garrad">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>						
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ingo_Schumacher">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>						
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>	
+					
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Web_Site">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:John_Peoples">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ginny_Baldwin">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Denise_Wynn">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Jason_Graf">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Chris_Barney">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Susan_Clark">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Kelly_Bell">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Mark_Diller">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Jeremy_Holcomb">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>					
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Pauline_Thompson">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Yumiko_Murphy">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>					
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Publishing_Management">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingsmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Phil_Spencer">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Kevin_Browne">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Ken_Lobb">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Chris_Kimmell">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Andrew_Kertesz">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Josh_Atkins">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Guy_Whitmore">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>
+						<UIText autosize="true">
+						   <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="len"/>
+						   <UIState active="normal" visible="normal"/>
+						   <UIAspect locid="ucMSteamnames:Nick_Dimitrov">
+							  <default>
+								 <BFFont align="center"/>
+							  </default>
+						   </UIAspect>
+						   <text format="credits:xp2headingnamesmall"/>
+						</UIText>	
+						<UIStatic name="spacer">
+							<UIRegion x="0" y="0" w="0" h="10" xalign="min" yalign="min" walign="max" halign="len"/>
+						</UIStatic>
+						
+					 </children>
+				  </UIListBox>
+			   </children>
+			</UILayout>
+		 </children>
+	  </UILayout>
+      
+      <UIText name="Exit_Credits_Message" autosize="true">
+         <UIRegion x="0" y="-25" w="1024" h="25" xalign="min" yalign="max" walign="len" halign="len"/>
+         <UIAspect locid="credits:back_message">
+            <default>
+               <BFFont align="center"/>
+            </default>
+         </UIAspect>
+         <UIShowHideAnim time=".5" bob="1.3">
+            <start x="0" y="0" w="1024" h="25"/>
+            <end x="0" y="-25" w="1024" h="25"/>
+         </UIShowHideAnim>
+         <text format="credits:xp2headingnamesmall"/>
+      </UIText>
+   </children>
+   <timedEvents>
+	<event msg="UI_CHILD" data="UIChildData" name="railcam">
+		<child msg="UI_ACTIVATE_OFF"/>
+	</event>   
+	<event time="0" msg="UI_CHILD" data="UIChildData" name="Exit_Credits_Message">
+	   <child msg="UI_SHOW"/>
+	</event>
+	<event time="0" msg="UI_CHILD" data="UIChildData" name="ucbackground">
+	   <child msg="UI_SHOW"/>
+	</event>
+	<event time="2.0" msg="UI_CHILD" data="UIChildData" name="uclogo">
+	   <child msg="UI_SHOW"/>
+	</event>
+	<event time="6.0" msg="UI_CHILD" data="UIChildData" name="uclogo">
+	   <child msg="UI_HIDE"/>
+	</event>
+	<event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucbflogo">
+	   <child msg="UI_SHOW"/>
+	</event>
+	<event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucbflogo">
+	   <child msg="UI_HIDE"/>
+	</event>
+	<event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmanagementback">
+	    <child msg="UI_SHOW"/>
+	</event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement1">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement1">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucmanagementback">
+         <child msg="UI_HIDE"/>
+      </event>      
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement2_1">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement2_1">
+         <child msg="UI_HIDE"/>
+      </event>      
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteamback2">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteam">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteamback1">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="4.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteamback1">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteam">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="1.0" msg="UI_CHILD" data="UIChildData" name="ucdesignteamback2">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement3">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement3">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement4">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucmanagement4">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamilyback">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_1">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_2">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_3">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamilyback">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_1">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_2">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucfriendsfamily1_3">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="ucmsback1">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="0.0" msg="UI_CHILD" data="UIChildData" name="ucmsback2">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="0" msg="UI_CHILD" data="UIChildData" name="Exit_Credits_Message">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time=".5" msg="UI_CHILD" data="UIChildData" name="ucms">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="52" msg="UI_CHILD" data="UIChildData" name="ucms">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0" msg="UI_CHILD" data="UIChildData" name="ucms">
+         <child msg="UI_WIND_ANIMATION"/>
+      </event>
+      <event time="0" msg="UI_CHILD" data="UIChildData" name="ucmsback1">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="0" msg="UI_CHILD" data="UIChildData" name="ucmsback2">
+         <child msg="UI_HIDE"/>
+      </event>
+      <event time="2.0" msg="UI_CHILD" data="UIChildData" name="finalimage">
+         <child msg="UI_SHOW"/>
+      </event>
+      <event time="6.0" msg="UI_CHILD" data="UIChildData" name="finalimage">
+         <child msg="UI_HIDE"/>
+      </event>
+		<event time="0" msg="UI_CHILD" data="UIChildData" name="Exit_Credits_Message">
+		  <child msg="UI_SHOW"/>
+		</event>      
+      <event time="0" msg="UI_CHILD" data="UIChildData" name="ucbackground">
+        <child msg="UI_HIDE"/>
+      </event>  
+		<event msg="UI_CHILD" data="UIChildData" name="railcam">
+			<child msg="UI_ACTIVATE_ON"/>
+		</event>      
+   </timedEvents>
+</ZTUITimedEvents>

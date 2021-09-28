@@ -1,0 +1,16 @@
+<ZT2Strings>
+   <guestthoughts>
+      <!--Guest_Thoughts-->
+      <RunningFromAnimal_Happy>Whoa! %s scared me a little.</RunningFromAnimal_Happy>
+      <AnimalMotionGood>Hey, %1s is motioning toward %2s.</AnimalMotionGood>
+      <AnimalBeckonChildGood>Sweet! %s is beckoning her child over!</AnimalBeckonChildGood>
+      <AnimalGapeWideGood>%s is amazing! Look how wide its mouth is gaping!</AnimalGapeWideGood>
+      <AnimalGapeBad>Oh, no! %s looks frightening to me!</AnimalGapeBad>
+      <AnimalTryStandTwoLegsGood>Oh, look! %s is trying to stand on two legs!</AnimalTryStandTwoLegsGood>
+      <AnimalSnowGood>Cool! %s is rolling in the snow!</AnimalSnowGood>
+      <AnimalGrowlGood>Hear that?! %s is growling for attention!</AnimalGrowlGood>
+      <AnimalAttemptEscape>Oh, snap! %s is trying to escape from its exhibit!</AnimalAttemptEscape>
+      <AnimalTestFence>Uh oh, %s is checking if its fence is electrified</AnimalTestFence>
+      <AnimalShockedFence>Oh no! That fence shocked %s a little bit!</AnimalShockedFence>
+   </guestthoughts>
+</ZT2Strings>

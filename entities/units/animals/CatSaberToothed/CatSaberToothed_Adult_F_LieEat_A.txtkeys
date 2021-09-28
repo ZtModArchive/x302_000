@@ -1,0 +1,5 @@
+<TEXTKEY>
+        <key frame="0" text = "{Bip01 Ponytail1} snd 'Lie_EatA'" />
+   <key percent="0" text = "{Node_Carry} attach object"/>
+   <key percent="100" text = "{Node_Carry} detach object"/>
+</TEXTKEY>

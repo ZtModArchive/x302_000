@@ -1,0 +1,183 @@
+<BFTypedBinder binderType="Ankylosaurus" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+						<Ornithischia>
+							<Ankylosauridae>
+								<Ankylosaurus />
+							</Ankylosauridae>
+						</Ornithischia>
+					</Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\Ankylosaurus\Ankylosaurus_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:Ankylosaurus" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Ankylosaurus_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData waterPlacement="true" icon3Doffset="0 0 1.25" icon3Dscale=".64" />
+		<BFAIEntityDataShared s_Product="Extinct" b_UpdateSteeringEveryFrame="true" f_BaseDonationAmount="100" f_MaxTourValue="60" s_DonateToken="t_DonateAnkylosaurus" s_Species="Ankylosaurus" s_Endangerment="Extinct" b_ExtinctAnimal="true" b_Advanced="true" p_NurseNode="0 -1 90" p_PoleRopeNode="0 -2.5 180" f_ResponseRadius="35" b_RespondToCursor="true" b_Graminivore="true" b_Radicivore="true" b_Folivore="true" s_KeeperEatType="Terrain_Branches" b_LargeAnimal="true" b_SubstratePileEater="true" b_TroughEater="true" b_MetalTroughEater="true" b_FoodDishEater="true" s_KeeperDrinkType="FoodDish_Water" f_adoptRemoveTime="0" f_adoptRarity="80" s_Zoopedia="zoopedia:zoopedia_Ankylosaurus:entry" f_RequiredInitialSpace="480" f_RequiredAdditionalSpace="80" p_PursuitBallNode="0 -3 180" b_ScratchPostRubber="true" b_TreeRubber="true" p_HollowLogDock="0 -3 180" b_MarineAnimal="false" b_ScrubAnimal="true" b_SniffsTroughs="true" b_SniffsMetalTroughs="true" b_SniffsCarcass="true" b_SniffsFoodDish="true" b_WetlandsOdd="true" b_TropicalRainforestOdd="true" b_TemperateForestOdd="true" b_ScrubOdd="false" b_SavannahOdd="true" b_GrasslandOdd="true" b_DesertOdd="true" b_BorealForestOdd="true" b_AlpineOdd="true" b_PursuitBallUser="true" b_PlasticBarrelUser="true" b_CarTireUser="true" p_FightOffset="0 -2.75 180" p_PreyOffset="0 1 0" b_ShadeStructureUser="true" f_TranqPointsNeeded="30.0f" b_LargeExtinctShelterUser="true">
+			<BFAINeedAdjusts social="0.15" privacy="0" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="wetlands_northamerica_northwest" locationSensitivity="10">
+			<alpine sensitivity="-7" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-7" />
+			<coastal sensitivity="-10" />
+			<desert sensitivity="-7" />
+			<grassland sensitivity="-2" />
+			<reef sensitivity="-10" />
+			<pelagic sensitivity="-10" />
+			<temperateforest sensitivity="-7" />
+			<tropicalrainforest sensitivity="-7" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-2" />
+			<scrub sensitivity="-2" />
+			<wetlands sensitivity="3" primary="true" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_wash" effect="SuperStaffWashLarge" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" effect="SuperStaffHeal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="2" switchingDists="18.0 60.0" />
+					<BFActorComponent actorfile="entities/units/animals/Ankylosaurus/Ankylosaurus_Adult_F.bfm" pickAgainstSphereOnly="false" scale="1.5" />
+					<BF4LegsGroundFitComponent heightOffset="-.05" seabedOffset="1" surfacingDepth="0.25" maxRollError=".2" maxPitchError=".1" maxHeightError=".5" pitchGain="1.0" heightGain="6.0" rollGain="1.0" bicyclePointBack="bp2" bicyclePointFront="bp1" frontBuoyancyNode="Node_Buoy" backBuoyancyNode="Node_Buoy_Back" />
+					<BFLegFitComponent maxLegRaise="2.0" leftFrontHipJoint="Bip01 L UpperArm" leftFrontKneeJoint="Bip01 L ForeArm" leftFrontAnkleJoint="Bip01 L Hand" rightFrontHipJoint="Bip01 R UpperArm" rightFrontKneeJoint="Bip01 R ForeArm" rightFrontAnkleJoint="Bip01 R Hand" leftBackHipJoint="Bip01 L Thigh" leftBackKneeJoint="Bip01 L Calf" leftBackAnkleJoint="Bip01 L Foot" rightBackHipJoint="Bip01 R Thigh" rightBackKneeJoint="Bip01 R Calf" rightBackAnkleJoint="Bip01 R Foot" ankleRotVectorLeftFront="0 0 -1" ankleRotVectorRightFront="0 0 -1" ankleRotVectorRightBack="0 0 -1" ankleRotVectorLeftBack="0 0 -1" hipRaiseVectorLeftFront="-1 0 0" hipRaiseVectorRightFront="1 0 0" hipRaiseVectorLeftBack="0 0 1" hipRaiseVectorRightBack="0 0 1" kneeRaiseVectorLeftFront="0 0 1" kneeRaiseVectorRightFront="0 0 1" kneeRaiseVectorLeftBack="0 0 1" kneeRaiseVectorRightBack="0 0 1" legFitModeLeftFront="1" legFitModeRightFront="1" legFitModeRightBack="1" legFitModeLeftBack="1" anklePitchVector="0 -1 0" maxLOD="1" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFCollisionComponent grid="Bip01 Spine1" />
+					<BFGridCollisionComponent />
+					<BFSecondaryAnimComponent animName="Secondary_EarTwitch" frequency="1.5" chance="40" validAnims="Stand_Idle,Pee_Idle,Poop_Idle,Stand_Groom,Stand_GroomYoung,Stand_Grunt,Stand_Snort,Stand_Turn180,Stand_TurnLeft90,Stand_TurnRight90,Stand_Yawn,Eat_Chew,Eat_Drink,Eat_Idle,Lie_Idle,Walk_Ahead,Walk_TurnLeftA,Walk_TurnLeftB,Walk_TurnRightA,Walk_TurnRightB,Run_Ahead,Run_TurnLeftA,Run_TurnLeftB,Run_TurnRightA,Run_TurnRightB,Stand_Dig,Stand_PushUp,Stand_BrowseBush,Curl_Idle,Sleep_Idle,TreadWater_Idle,Swim_Ahead" />
+					<BFDecalTextureCycleComponent materialName="Ankylosaurus_Adult_F">
+						<Step imageName="entities/units/animals/shared/Ankylosaurus_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/Ankylosaurus_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/Ankylosaurus_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/Ankylosaurus_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFHeadLookComponent leftRightAnimName="Secondary_HeadLook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Lie_2Stand&apos;, anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_TurnLeftA&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+				<BFSharedPhysVars isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Dock_BallHitLeft x="2" y="2.3" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_BallHitRight x="-2" y="2.3" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Rub x="0" y="-4" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_RubHead x="0" y="-1.6" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_RubShell x="1" y="0" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_RubShell2 x="0.25" y="-1.35" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Fight_Left x="1" y="0" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_FightWait_Left x="0.75" y="1" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Fight_Right x="-1" y="0" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_FightWait_Right x="-0.75" y="1" z="0" yaw="180" pitch="0" roll="0" />
+						<Node_PreyOffset x="0" y="4" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Fence x="0" y="-3.25" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Guest x="0" y="-1.9" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Building x=".3" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_SniffOther x="0" y="-1.65" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_NuzzleYoung x="0" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_BeNuzzled x="0" y="-1.7" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_KnockYoung x="0" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_BeKnocked x="0" y="-1.7" z="0" yaw="180" pitch="0" roll="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehLocoSwitchSet loopFlag="true">
+							<behaviorTable>
+								<ground behSet="Stand" />
+								<water behSet="TreadWater" />
+							</behaviorTable>
+						</BFBehLocoSwitchSet>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="Stand_Idle">
+							<stop name="Stand" />
+							<slow name="Walk" />
+							<medium name="Walk" />
+							<fast name="Run" />
+							<stalk name="Walk" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="TreadWater_Idle">
+							<stop name="TreadWater" />
+							<slow name="Swim" />
+							<medium name="Swim" />
+							<fast name="Swim" />
+							<stalk name="Swim" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="mouth" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="45000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

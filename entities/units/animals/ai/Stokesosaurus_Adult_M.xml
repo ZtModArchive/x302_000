@@ -1,0 +1,51 @@
+<BFTypedBinder binderType="Stokesosaurus_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Archosauria>
+                  <Saurischia>
+                     <Tyrannosauridae>
+                        <Stokesosaurus>
+                           <Stokesosaurus_Adult>
+                              <Stokesosaurus_Adult_M/>
+                           </Stokesosaurus_Adult>
+                        </Stokesosaurus>
+                     </Tyrannosauridae>
+                  </Saurischia>
+               </Archosauria>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Stokesosaurus_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/Stokesosaurus/Stokesosaurus_Adult_F.bfm" scale="0.70"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+	<BFNamedBinder binderName="Glasses" required="0">
+	   <instance>
+	      <BFPhysObj>
+		<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\items\Glasses_Prop\Glasses_Prop" scale="0.70" switch="0" />
+	      </BFPhysObj>
+	   </instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

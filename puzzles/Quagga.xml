@@ -1,0 +1,13 @@
+<ZTPuzzle animal="Quagga" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.8" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="1.8" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="1.8" />
+    <ZTPuzzlePiece texture="04_ArmsUpper" node="Piece04" entityScale="1.8" />
+    <ZTPuzzlePiece texture="05_ArmsLower" node="Piece05" entityScale="1.8" />
+    <ZTPuzzlePiece texture="06_Spine" node="Piece06" entityScale="1.8"/>
+    <ZTPuzzlePiece texture="07_Hips" node="Piece07" entityScale="1.8" />
+    <ZTPuzzlePiece texture="08_LegsUpper" node="Piece08" entityScale="1.8" />
+    <ZTPuzzlePiece texture="09_LegsLower" node="Piece09" entityScale="0.9" />    
+  </pieces>
+</ZTPuzzle>

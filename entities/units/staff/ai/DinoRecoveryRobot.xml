@@ -1,0 +1,112 @@
+<BFTypedBinder binderType="DinoRecoveryRobot" abstract="true">
+  <types>
+    <entity>
+      <actor>
+        <people>
+          <Staff>
+            <DinoRecoveryRobot />
+          </Staff>
+        </people>
+      </actor>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity />
+  </instance>
+  <shared>
+    <ZTDevComponent />
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities\units\staff\DinoRecoveryTeam\DinoRecovery_Robot_icon.dds" />
+      </UIAspect>
+      <UIHelpInfo ids="entityname:DinoRecoveryRobot" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DinoRecoveryRobot" />
+      </on>
+    </UIToggleButton>
+    <ZTPlacementData tankPlacement="true" waterPlacement="true" iconObj="headObj" icon3Doffset="0 0.002026 0.637109" icon3Dscale="2.9" displayFootprint="false" deletable="false" dockArrowStyle="none" gridSnap="false" placeable="false">
+      <stompData>
+        <allow>
+          <wildflowers />
+          <watersurfacefoliage />
+          <grass />
+          <fungi />
+          <bush />
+          <Poop />
+          <TrashGround />
+          <RecyclableGround />
+          <StageEntertainer />
+          <TankPlatform />
+          <ShowPlatform />
+          <RockIsland_Shelter />
+          <DesertIsland_Shelter />
+        </allow>
+        <prevent>
+          <log />
+          <thicket />
+          <flowerbed />
+        </prevent>
+      </stompData>
+    </ZTPlacementData>
+    <BFAIEntityDataShared s_Product="Extinct" b_FearDinosaur="false" s_Zoopedia="zoopedia:zoopedia_drt_robot:entry" p_TalkOffset="0 -1 180"/>
+  </shared>
+  <binder>
+    <BFBinder required="1">
+      <instance>
+        <BFAICognitiveMgr>
+          <Sensors>
+          	<ZTAISensor/>
+            <ZTAISensorRampagingAnimals />
+            <BFAISensorSelf />
+          </Sensors>
+          <TaskThinkers>
+            <ZTAITaskThinker />
+          </TaskThinkers>
+        </BFAICognitiveMgr>
+      </instance>
+      <shared>
+        <BFAICogShared>
+          <BFAINoPerceive>
+            <fence />
+            <path />
+            <foliage />
+          </BFAINoPerceive>
+        </BFAICogShared>
+      </shared>
+    </BFBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFGCollisionTester escapeBuffer="0.1" radius="0.1f" motionClass="staffMover" waterScore="10" useFastPathing="true" />
+      </instance>
+    </BFBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFLocomotionMgr />
+      </instance>
+      <binder>
+        <BFNamedBinder binderName="ground" required="1">
+          <instance>
+            <BFLocoAnimate version="1">
+              <stop name="Stand" />
+              <slow name="Walk" minAnimSpeed="1.0" maxAnimSpeed="1.4">
+                <waggle name="Walk_Ahead" wag="0.1" />
+              </slow>
+              <medium name="Walk" minAnimSpeed="1.4" maxAnimSpeed="1.6" />
+              <fast name="Run" minAnimSpeed="1.25" maxAnimSpeed="1.45" />
+            </BFLocoAnimate>
+          </instance>
+        </BFNamedBinder>
+        <BFNamedBinder binderName="water" required="1">
+          <instance>
+            <BFLocoAnimate version="1" stationaryAnim="TreadWater_Idle">
+              <stop name="TreadWater" />
+              <slow name="Swim" />
+              <medium name="Swim" minAnimSpeed="1.25" maxAnimSpeed="1.45" />
+              <fast name="Swim" minAnimSpeed="1.4" maxAnimSpeed="1.6" />
+            </BFLocoAnimate>
+          </instance>
+        </BFNamedBinder>
+      </binder>
+    </BFBinder>
+  </binder>
+</BFTypedBinder>

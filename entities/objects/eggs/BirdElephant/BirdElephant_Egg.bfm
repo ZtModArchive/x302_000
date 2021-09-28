@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\eggs\BirdElephant\BirdElephant_Egg.bfb">
+  <animation anim="entities\objects\eggs\Ostrich_Egg\Ostrich_Egg_Hatch_Idle.bf" animName="Hatch_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\eggs\Ostrich_Egg\Ostrich_Egg_Stand_2Hatch.bf" animName="Stand_2Hatch" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\eggs\Ostrich_Egg\Ostrich_Egg_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="BirdElephant_Egg" version="1">
+    <node name="Hatch">
+      <table>
+        <Hatch_Idle />
+      </table>
+    </node>
+    <node name="Stand">
+      <table>
+        <Stand_Idle />
+      </table>
+      <edge name="Hatch">
+        <table>
+          <Stand_2Hatch />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

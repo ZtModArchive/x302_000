@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Protarchaeopteryx_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Saurischia>
+                     <Caudipteridae>
+                        <Protarchaeopteryx>
+                           <Protarchaeopteryx_Young>
+                              <Protarchaeopteryx_Young_F/>
+                           </Protarchaeopteryx_Young>
+                        </Protarchaeopteryx>
+                     </Caudipteridae>
+                  </Saurischia>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Protarchaeopteryx_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

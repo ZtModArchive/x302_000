@@ -1,0 +1,17 @@
+<ZT2Strings>
+   <guestactions>
+      <!--Guest Actions-->
+      <GoWatchEntertainer>Going to watch %s</GoWatchEntertainer>
+      <WatchingEntertainer>Watching the antics of %s</WatchingEntertainer>
+      <HuggingEntertainer>Hugging %s</HuggingEntertainer>
+      <TakingPictureEntertainer>Taking a picture with %s</TakingPictureEntertainer>
+      <GoToFossilDigPit>Going to dig in %s</GoToFossilDigPit>
+      <UseFossilDigPit>Digging in %s</UseFossilDigPit>
+      <ExitFossilDigPit>Exiting %s</ExitFossilDigPit>
+      <GoToDeliverFossil>Going to bring a fossil to the %s</GoToDeliverFossil>
+      <DeliveringFossil>Handing over %s</DeliveringFossil>
+      <GoingtoDanceStage>Going to dance on stage</GoingtoDanceStage>
+      <DancingAtStage>Dancing on stage</DancingAtStage>
+      <PlayingWith>Playing with %s</PlayingWith>
+    </guestactions>
+</ZT2Strings>

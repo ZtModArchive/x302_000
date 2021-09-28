@@ -1,0 +1,13 @@
+<ZTPuzzle animal="Kentrosaurus" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="0.93" />
+    <ZTPuzzlePiece texture="02_ArmRight" node="Piece02" entityScale="0.93" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="1.86" />
+    <ZTPuzzlePiece texture="04_Torso" node="Piece04" entityScale="1.86" />
+    <ZTPuzzlePiece texture="05_Hips" node="Piece05" entityScale="1.86" />
+    <ZTPuzzlePiece texture="06_LegRight" node="Piece06" entityScale="0.93"/>
+    <ZTPuzzlePiece texture="07_LegLeft" node="Piece07" entityScale="0.93" />
+    <ZTPuzzlePiece texture="08_TailBase" node="Piece08" entityScale="1.86" />
+    <ZTPuzzlePiece texture="09_TailEnd" node="Piece09" entityScale="1.86" />    
+  </pieces>
+</ZTPuzzle>

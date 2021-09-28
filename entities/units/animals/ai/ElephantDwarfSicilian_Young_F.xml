@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="ElephantDwarfSicilian_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Proboscidea>
+                     <Elephantidae>
+                        <ElephantDwarfSicilian>
+                           <ElephantDwarfSicilian_Young>
+                              <ElephantDwarfSicilian_Young_F/>
+                           </ElephantDwarfSicilian_Young>
+                        </ElephantDwarfSicilian>
+                     </Elephantidae>
+                  </Proboscidea>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ElephantDwarfSicilian_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

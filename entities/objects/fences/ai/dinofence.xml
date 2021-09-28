@@ -1,0 +1,86 @@
+<BFTypedBinder binderType="dinofence">
+	<types>
+		<entity>
+			<fence>
+				<dinofence />
+			</fence>
+		</entity>
+	</types>
+	<instance>
+		<ZTFenceEntity entityVersion="1" />
+	</instance>
+	<shared>
+      		<ZTEntityDestructionData entityRuinBinderName="dinofence_broken" secsToRemove="0.0f"/>
+		<ZTPlacementData minimumHeadroom="6.0" />
+		<UIToggleButton template="fence">
+			<UIAspect>
+				<default image="entities\objects\fences\dino_fence\dinofence_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:dinofence" />
+			<on>
+				<event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="dinofence" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_Product="PDLC1" s_uisort="tb" f_FenceStrength="10" s_Zoopedia="zoopedia:zoopedia_dinofence:entry" b_SeeThrough="true" s_Broken="dinofence_broken" />
+	</shared>
+	<binder>
+		<BFBinder>
+			<instance>
+				<ZTFence gate="dinogate" hasCurves="false" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="start_post">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_post" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder required="0" binderName="fence90">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_vert" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder required="0" binderName="fence45">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_diag" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="end_post">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_post" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+	        <BFBinder required="1">
+		   <instance>
+		      <ZTEntityDestructionComponent/>
+		   </instance>
+	        </BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="130">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,13 @@
+<ZT2Strings>
+   <Challengetext>
+      <CHRandomDino>
+A group of scientists developed a process to create dinosaur eggs. By paying a sponsorship fee, you can get one of their first eggs, but the scientists can't guarantee the species. You might get a more common Styracosaurus or a rare Tyrannosaurus rex. To accept this challenge, pay the $12,000 sponsorship fee for the new dinosaur to be delivered in a crate near your zoo's entrance.                               
+         <br/>
+Difficulty: Easy                    
+      </CHRandomDino>
+      <CHRandomDinoShort>Provide a suitable environment for your new dinosaur.</CHRandomDinoShort>
+      <CHRandomDinoSuccessShort>Your new dinosaur is an excellent addition to your zoo. </CHRandomDinoSuccessShort>
+      <CHRandomDinoGreatSuccess>Wow! Your new dinosaur is a magnificent specimen worth far more than the sponsorship fee!</CHRandomDinoGreatSuccess>
+      <CHRandomDinoSuccess>While your new dinosaur is a common species, it's a strong addition to your zoo.</CHRandomDinoSuccess>      
+   </Challengetext>
+</ZT2Strings>

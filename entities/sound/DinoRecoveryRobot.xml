@@ -1,0 +1,81 @@
+<soundtags>
+
+   <!--DinoRecoveryRobot-->
+
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_Dance_Idle">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Dance_Idle.wav" volume="0.9" mindist="8" maxdist="30" />
+      </BF3DSndFactory> 
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_LeftChaseRight">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_LeftChaseRight.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_LeftConverse">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_LeftConverse.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_PuppetShow_2Stand">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_PuppetShow_2Stand.wav" volume="0.9" mindist="2" maxdist="30" />
+      </BF3DSndFactory>  
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_PuppetShow_Bow">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_PuppetShow_Bow.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>   
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_RightChaseLeft">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_RightChaseLeft.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_RightConverse">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_RightConverse.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>   
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_2Puppet">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_2Puppet.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_BackFlip">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_BackFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_BreakDance">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_BreakDance.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_ForwardFlip">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_ForwardFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_Robot">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_Robot.wav" volume="0.9" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_TellJokeBad">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_TellJokeBad.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_Stand_TellJokeGood">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_Stand_TellJokeGood.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoRecoveryRobot_Yell">
+         <snd name="entities/units/staff/DinoRecoveryTeam/sound/DinoRecoveryRobot_M_WaveHand.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>   
+    
+</soundtags>

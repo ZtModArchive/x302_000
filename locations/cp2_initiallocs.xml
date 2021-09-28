@@ -1,0 +1,32 @@
+<entries>
+   <ZTLocationEntry name="alpine_america_south" locid="worldlocation:america_south" icon="ui/icon_maplocations/Alpine_America_South.dds"/>
+   <ZTLocationEntry name="alpine_europe_iceage" locid="worldlocation:europe_iceage" icon="ui/icon_maplocations/Alpine_Europe_IceAge.dds"/>
+   <ZTLocationEntry name="alpine_newzealand" locid="worldlocation:newzealand" icon="ui/icon_maplocations/Alpine_NewZealand.dds"/>
+   <ZTLocationEntry name="desert_africa_south" locid="worldlocation:africa_south" icon="ui/icon_maplocations/Desert_Africa_South.dds"/>
+   <ZTLocationEntry name="grassland_africa_south" locid="worldlocation:africa_south" icon="ui/icon_maplocations/Grassland_Africa_South.dds"/>
+   <ZTLocationEntry name="grassland_falklandislands" locid="worldlocation:falklandislands" icon="ui/icon_maplocations/Grassland_FalklandIslands.dds"/>
+   <ZTLocationEntry name="grassland_mediterraneanislands" locid="worldlocation:mediterraneanislands" icon="ui/icon_maplocations/Grassland_MediterraneanIslands.dds"/>
+   <ZTLocationEntry name="grassland_america_north_east" locid="worldlocation:america_north_east" icon="ui/icon_maplocations/Grassland_America_North_East.dds"/>
+   <ZTLocationEntry name="grassland_europe" locid="worldlocation:europe" icon="ui/icon_maplocations/Grassland_Europe.dds"/>
+   <ZTLocationEntry name="scrub_america_south" locid="worldlocation:america_south" icon="ui/icon_maplocations/Scrub_America_South.dds"/>
+   <ZTLocationEntry name="temperateforest_eurasia" locid="worldlocation:eurasia" icon="ui/icon_maplocations/Temperateforest_Eurasia.dds"/>
+   <ZTLocationEntry name="temperateforest_newzealand" locid="worldlocation:newzealand" icon="ui/icon_maplocations/Temperateforest_NewZealand.dds"/>
+   <ZTLocationEntry name="temperateforest_tasmania" locid="worldlocation:tasmania" icon="ui/icon_maplocations/Temperateforest_tasmania.dds"/>
+   <ZTLocationEntry name="tropicalrainforest_china" locid="worldlocation:china" icon="ui/icon_maplocations/Rainforest_China.dds"/>
+   <ZTLocationEntry name="tropicalrainforest_mauritius" locid="worldlocation:mauritius" icon="ui/icon_maplocations/Rainforest_Mauritius.dds"/>
+   <ZTLocationEntry name="tundra_eurasia" locid="worldlocation:eurasia" icon="ui/icon_maplocations/Tundra_Eurasia.dds"/>
+   <ZTLocationEntry name="tundra_america_north_iceage" locid="worldlocation:america_north" icon="ui/icon_maplocations/Tundra_America_North_IceAge.dds"/>
+   <ZTLocationEntry name="tundra_america_north_east" locid="worldlocation:america_north_east" icon="ui/icon_maplocations/Tundra_America_North_East.dds"/>
+   <ZTLocationEntry name="wetlands_australia" locid="worldlocation:australia" icon="ui/icon_maplocations/Wetlands_Australia.dds"/>
+   <ZTLocationEntry name="wetlands_madagascar" locid="worldlocation:madagascar" icon="ui/icon_maplocations/Wetlands_Madagascar.dds"/>
+   <ZTLocationEntry name="wetlands_northamerica_northwest" locid="worldlocation:america_north" icon="ui/icon_maplocations/wetlands_northamerica_northwest.dds"/>
+   <ZTLocationEntry name="tropicalrainforest_northamerica_northwest" locid="worldlocation:america_north" icon="ui/icon_maplocations/tropicalrainforest_northamerica_northwest.dds"/>
+   <ZTLocationEntry name="wetlands_africa_centraleast" locid="worldlocation:eastafrica" icon="ui/icon_maplocations/wetlands_africa_centraleast.dds"/>
+   <ZTLocationEntry name="wetlands_asia_southeast" locid="worldlocation:asia" icon="ui/icon_maplocations/wetlands_asia_south.dds"/>
+   <ZTLocationEntry name="borealforest_northamerica_central" locid="worldlocation:america_north" icon="ui/icon_maplocations/borealforest_northamerica_central.dds"/>
+   <ZTLocationEntry name="desert_asia_central" locid="worldlocation:asia_central" icon="ui/icon_maplocations/desert_asia_central.dds"/>
+   <ZTLocationEntry name="wetlands_northamerica_southcentral" locid="worldlocation:america_north" icon="ui/icon_maplocations/wetlands_northamerica_southcentral.dds"/>
+   <ZTLocationEntry name="tropicalrainforest_northamerica_southeastern" locid="worldlocation:america_north" icon="ui/icon_maplocations/tropicalrainforest_northamerica_southeastern.dds"/>
+   <ZTLocationEntry name="borealforest_cretaceous_northamerica" locid="worldlocation:northamerica" icon="ui/icon_maplocations/Cretaceous_America_Boreal.dds"/>
+   <ZTLocationEntry name="tropicalrainforest_cretaceous_northamerica" locid="worldlocation:northamerica" icon="ui/icon_maplocations/Cretaceous_America_TropicalRainforest.dds"/>
+</entries>

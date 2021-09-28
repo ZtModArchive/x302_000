@@ -1,0 +1,146 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="ReceiveMalnutritionDisease" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="DiseaseMalnutrition:ReceiveMalnutritionDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetMalnutritionDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick" params="Malnutrition"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_MalnutritionDisease" GiveTo="subject" Timein="0" Timeout="120" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CureMalnutritionDisease" UniqueID="DiseaseMalnutrition:CureMalnutritionDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CureMalnutritionDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="555"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehPlaySet behSet="CureSickMalnutrition"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_MalnutritionDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseaseMalnutrition:GetSick_MalnutritionDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_MalnutritionDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+               <ZTMessageInfo locID="animalthoughts:DiseasedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="30"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_MalnutritionDisease2" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickMalnutrition"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_MalnutritionDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseaseMalnutrition:GetSick_MalnutritionDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_MalnutritionDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="30"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_MalnutritionDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickMalnutrition"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

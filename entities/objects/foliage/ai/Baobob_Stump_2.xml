@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Baobob_Stump_2">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <Baobob_Stump>
+                  <Baobob_Stump_2/>
+               </Baobob_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

@@ -1,0 +1,61 @@
+<soundtags>
+
+   <!--SMALL-->
+   <BFSoundtag>
+      <BF3DSndFactory name="footstep_small">
+         <snd name="sounds/footsteps/Footstep_Small_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_small2">
+         <snd name="sounds/footsteps/Footstep_Small_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_small3">
+         <snd name="sounds/footsteps/Footstep_Small_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_small4">
+         <snd name="sounds/footsteps/Footstep_Small_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_small5">
+         <snd name="sounds/footsteps/Footstep_Small_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>  
+   </BFSoundtag>
+   
+   
+   <!--MEDIUM-->
+   <BFSoundtag>
+      <BF3DSndFactory name="footstep_med">
+         <snd name="sounds/footsteps/Footstep_Med_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_med2">
+         <snd name="sounds/footsteps/Footstep_Med_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_med3">
+         <snd name="sounds/footsteps/Footstep_Med_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_med4">
+         <snd name="sounds/footsteps/Footstep_Med_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_med5">
+         <snd name="sounds/footsteps/Footstep_Med_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>  
+   </BFSoundtag>   
+   
+   <!--LARGE-->
+   <BFSoundtag>
+      <BF3DSndFactory name="footstep_large">
+         <snd name="sounds/footsteps/Footstep_Large_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_large2">
+         <snd name="sounds/footsteps/Footstep_Large_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_large3">
+         <snd name="sounds/footsteps/Footstep_Large_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_large4">
+         <snd name="sounds/footsteps/Footstep_Large_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="footstep_large5">
+         <snd name="sounds/footsteps/Footstep_Large_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>  
+   </BFSoundtag>     
+  
+</soundtags>

@@ -1,0 +1,81 @@
+<BFTypedBinder binderType="AgaveCactus_Desert">
+   <types>
+      <entity>
+         <foliage>
+            <plant>
+               <bush>
+                  <AgaveCactus_Desert/>
+               </bush>
+            </plant>
+         </foliage>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\foliage\AgaveCactus\AgaveCactus_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:AgaveCactus_Desert"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="AgaveCactus_Desert"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct" s_Zoopedia="zoopedia:zoopedia_agavecactus:entry" f_FameReq="60" s_prop="Grass_Prop" b_ReceiveUpdates="true">
+         <BFAINeedAdjusts bloom="0.01"/>
+      </BFAIEntityDataShared>
+      <ZTPlacementData waterPlacement="true" icon3Doffset="-0.75 0.1 0.5" icon3Dscale="0.35" maximumDepth="1.0" minimumHeadroom="6.0"/>
+      <BFGBiomeData location="desert_northamerica">
+         <desert/>
+      </BFGBiomeData>
+      <ZTTourData>
+         <biome_desert value="3"/>
+      </ZTTourData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities/objects/foliage/AgaveCactus/AgaveCactus" scale="1.0" switch="0 15 25 35 60"/>
+               <BFMultiGroundFitComponent heightOffset="-0.5"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors>
+                  <ZTAISensor/>
+                  <BFAISensorSelf/>
+               </Sensors>
+               <StateThinkers>
+                  <ZTAIStateThinker mergeKey="Name">
+                     <BFAIStateVar Name="bloom" Value="0" CessationThreshold="0" TriggerThreshold="0" CriticalThreshold="90" DisplayThreshold="100" PressingThreshold="100" />
+                  </ZTAIStateThinker>
+               </StateThinkers>
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+         <shared>
+            <BFAICogShared/>
+         </shared>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="15">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

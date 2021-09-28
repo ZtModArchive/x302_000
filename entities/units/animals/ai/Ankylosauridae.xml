@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Ankylosauridae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Ankylosauridae/>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

@@ -1,0 +1,87 @@
+<BFTypedBinder binderType="DinoPreyDummy">
+   <types>
+      <entity>
+         <enrichment>
+            <stationary_enrichment>
+               <DinoPreyDummy/>
+            </stationary_enrichment>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\enrichment\Dino_Prey_Dummy\DinoPreyDummy_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:DinoPreyDummy"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DinoPreyDummy"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\enrichment\Dino_Prey_Dummy\DinoPreyDummy_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DinoPreyDummy"/>
+         </on>
+      </UIToggleButton>      
+      <BFAIEntityDataShared s_uisort="hu" b_Researchable="true" s_Zoopedia="zoopedia:zoopedia_dinopreydummy:entry" f_researchUnlockTime="100" f_researchCost="800" f_FameReq="60" s_Product="PDLC1"/>
+      <ZTPlacementData randomRotate="false" gridSnap="true" autoFootprint="false" terrainFlatten="true" icon3Doffset="0 0.17 0.28" icon3Dscale="0.33" protectedPlacement="false">
+         <cfootprint width="4" height="2"/>
+         <dfootprint width="5" height="3"/>
+      </ZTPlacementData>
+      <BFGCollisionData isPassable="false" isStatic="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="Grid" width="3.5" length="2" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\objects\enrichment\Dino_Prey_Dummy\Dino_Prey_Dummy.bfm" scale="1.4"/>
+               <BFGroundFitComponent heightOffset="0.175"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Idle" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Play">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="EnterDinoPreyLeft" useBehSet="UseDinoPreyLeft" exitBehSet="ExitDinoPrey" targetNode="Hit_Left" capacity="1"/>     
+                  <BFGEntityContainerSlot enterBehSet="EnterDinoPreyRight" useBehSet="UseDinoPreyRight" exitBehSet="ExitDinoPrey" targetNode="Hit_Right" capacity="1"/>     
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

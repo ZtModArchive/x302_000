@@ -1,0 +1,91 @@
+<BFTypedBinder binderType="MistyWaterfall">
+   <types>
+      <entity>
+         <enrichment>
+            <stationary_enrichment>
+               <MistyWaterfall/>
+            </stationary_enrichment>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="Water" rottype="use" postype="use" attachnode="Water_Attach"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\enrichment\MistyWaterfall\MistyWaterfall_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:MistyWaterfall"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="MistyWaterfall"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\enrichment\MistyWaterfall\MistyWaterfall_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="MistyWaterfall"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData icon3Dscale="0.175" randomRotate="false" gridSnap="true" terrainFlatten="true" minimumHeadroom="6.0" protectedPlacement="false"/>
+      <BFGBiomeData location="tropicalrainforest_worldwide">
+         <alpine sensitivity="-5" />
+         <benthic sensitivity="-5" />
+         <borealforest sensitivity="-5" />
+         <coastal sensitivity="0" />
+         <desert sensitivity="0" />
+         <grassland sensitivity="5" />
+         <reef sensitivity="5" />
+         <pelagic sensitivity="-5" />
+         <temperateforest sensitivity="5" />
+         <tropicalrainforest sensitivity="5" primary="true" />
+         <tundra sensitivity="-5" />
+         <savannah sensitivity="0" />
+         <scrub sensitivity="-5" />
+         <wetlands sensitivity="5" />
+      </BFGBiomeData>
+      <BFAIEntityDataShared s_Product="Extinct" b_Researchable="true" s_uisort="lb" s_Zoopedia="zoopedia:zoopedia_mistywaterfall:entry" f_researchUnlockTime="90" f_researchCost="200" f_FameReq="1" b_ClimateAlteringObject="true"/>
+      <BFGCollisionData isPassable="false" isStatic="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="12" length="6" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/MistyWaterfall/MistyWaterfall" scale="0.8" switch="0 15 35" minSwitch="0 0 15"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+	       <BFTerrainPaintComponent />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Water" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/MistyWaterfall/MistyWaterfall_Water" scale="0.8" switch="0 15 35" minSwitch="0 0 15" initialTextKey="snd &quot;Misty Waterfall&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="RhinocerosWooly_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Perissodactyla>
+                     <Rhinocerotidae>
+                        <RhinocerosWooly>
+                           <RhinocerosWooly_Young>
+                              <RhinocerosWooly_Young_F/>
+                           </RhinocerosWooly_Young>
+                        </RhinocerosWooly>
+                     </Rhinocerotidae>
+                  </Perissodactyla>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="RhinocerosWooly_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

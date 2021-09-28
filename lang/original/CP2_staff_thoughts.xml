@@ -1,0 +1,40 @@
+<ZT2Strings>
+   <staffthoughts>
+      <!--Staff Thoughts-->
+      <EntertainerGotoEntertainGuests>It's time to do a show!</EntertainerGotoEntertainGuests>
+      <EntertainerEntertainGuests>I hope the crowd likes my show!</EntertainerEntertainGuests>
+      <EntertainerGotoEntertainGuest>Oh no, %s looks bored. I better entertain them.</EntertainerGotoEntertainGuest>
+      <EntertainerEntertainGuest>I'm glad that %s likes my antics!</EntertainerEntertainGuest>
+      <EntertainerSplashFountain>Good thing there's a splash fountain here, this suit gets hot!</EntertainerSplashFountain>
+      <EntertainerDanceMusicalRock>If there's music, let's dance!</EntertainerDanceMusicalRock>
+      <MaintenanceWorkerGetPlantFoliage>That spot could use foliage from %s.</MaintenanceWorkerGetPlantFoliage>
+      <MaintenanceWorkerGoPlantTree>I'm going to plant a tree at %s.</MaintenanceWorkerGoPlantTree>
+      <EducatorGotoEducateGuestsFossils>I can't wait to teach guests about fossils!</EducatorGotoEducateGuestsFossils>
+      <EducatorEducateGuestsFossils>Ooh! Don't forget to tell them to dig for bones in the Play Dig Pit!</EducatorEducateGuestsFossils>
+      <PaleontologistSearchFossil>Hey, I think there is something nearby ...</PaleontologistSearchFossil>
+      <PaleontologistMarkFossil>Mark this spot to secure the site!</PaleontologistMarkFossil>
+      <PaleontologistGotoDigFossil>Enough scanning ... time to get digging!</PaleontologistGotoDigFossil>
+      <PaleontologistDigFossil>I love digging in the dirt! Finding fossils is the best part of my job!</PaleontologistDigFossil>
+      <DRTCrateRegroup>Where did %s go to now?</DRTCrateRegroup>
+      <DRTCrateLookFor>Where is %s?</DRTCrateLookFor>
+      <DRTCrateTagDino>There's our target! %s is over there!</DRTCrateTagDino>
+      <DRTCrateCallDinoDistraction>%s needs to be distracted to tranquilize it.</DRTCrateCallDinoDistraction>
+      <DRTCrateCallDinoTranq>%s needs to be tranquilized now!</DRTCrateCallDinoTranq>
+      <DRTCrateRecallTeam>Well done, rampage over!</DRTCrateRecallTeam>
+      <DRTCrateCallRobotReplacement>Oh, no! Our distraction robot is gone! Better call in a replacement.</DRTCrateCallRobotReplacement>
+      <DinoRecoveryCrateTeamGoCrateAnimal>It's my turn to crate the animal.</DinoRecoveryCrateTeamGoCrateAnimal>
+      <DinoRecoveryCrateTeamCrateAnimal>The dinosaur is crated. Are any others rampaging?</DinoRecoveryCrateTeamCrateAnimal>
+      <DRTRobotFollow>11011001101</DRTRobotFollow>
+      <DRTRobotStaffFailure>10101102</DRTRobotStaffFailure>
+      <DRTRobotWaitingForTask>00000000</DRTRobotWaitingForTask>
+      <DRTRobotGoingToDistract>111011001</DRTRobotGoingToDistract>
+      <DRTRobotDistracting>101001101</DRTRobotDistracting>
+      <DRTRobotAttackedAnimal>1040206085ERROR</DRTRobotAttackedAnimal>
+      <DinoRecoveryRobotSplashFountain>1020100101</DinoRecoveryRobotSplashFountain>
+      <DRTTranqFollow>Better keep up -- don't want to get left behind!</DRTTranqFollow>
+      <DRTTranqChaseDino>There's %s! Get into position!</DRTTranqChaseDino>
+      <DinoRecoveryTranqTeamGoTranqAnimal>I am sooo not paid enough for this!</DinoRecoveryTranqTeamGoTranqAnimal>
+      <DinoRecoveryTranqTeamTranqAnimal>That was dangerous!</DinoRecoveryTranqTeamTranqAnimal>
+      <Scared>Oh, no! %s is rampaging!</Scared>
+   </staffthoughts>
+</ZT2Strings>

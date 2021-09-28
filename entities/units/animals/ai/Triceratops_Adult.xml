@@ -1,0 +1,66 @@
+<BFTypedBinder binderType="Triceratops_Adult" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Ceratopsidae>
+                        <Triceratops>
+                           <Triceratops_Adult/>
+                        </Triceratops>
+                     </Ceratopsidae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj3" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+   </instance>
+   <shared>
+	<ZTEntitySelector parentName="mainObj" nodeName="Bip01 Spine2" animationTime="0.4" useFootprint="false" size="4.0">
+	   <BFPhysObj>
+	      <BFTerrainDecalComponent imageName="UI/fx/selection/unit.tga" alphaBlend="true">
+		 <lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255"/>
+	      </BFTerrainDecalComponent>
+	   </BFPhysObj>
+	</ZTEntitySelector>
+      <BFAIEntityDataShared f_viewBonus="80" b_Adult="1" b_Territorial="true" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_XXLargePrey="true" b_Rampager="true" b_FenceTester="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Head" width="2" length="2" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine1" width="2.5" length="2" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob3.tga" lodLevel="0" baseNode="Bip01 Spine3" width="2" length="2" intensity="0.3"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester escapeBuffer="0.25" radius=".5" motionClass="swimmer" waterScore="0" landScore="0" maxSlope=".50"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

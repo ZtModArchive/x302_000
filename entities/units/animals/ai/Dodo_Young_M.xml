@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Dodo_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Columbiformes>
+                     <Raphidae>
+                        <Dodo>
+                           <Dodo_Young>
+                              <Dodo_Young_M/>
+                           </Dodo_Young>
+                        </Dodo>
+                     </Raphidae>
+                  </Columbiformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Dodo_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

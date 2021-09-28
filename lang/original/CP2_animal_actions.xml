@@ -1,0 +1,28 @@
+<ZT2Strings>
+   <animalactions>
+      <!--New Animal Actions-->
+      <ShooOther>Shooing %s away</ShooOther>
+      <Shoo>Shooing</Shoo>
+      <MooAngry>Mooing in anger</MooAngry>
+      <MooHappy>Mooing in contentment</MooHappy>
+      <MooAt>Mooing at %s</MooAt>
+      <BeckonOther>Beckoning %s closer</BeckonOther>
+      <Beckon>Beckoning</Beckon>
+      <MotionOther>Motioning to %s</MotionOther>
+      <MotionOtherBack>Motioning back to %s</MotionOtherBack>
+      <PlayInWater>Playing in water</PlayInWater>
+      <GapeAt>Gaping at %s</GapeAt>
+      <GapeAnswer>Gaping back at %s</GapeAnswer>
+      <StandTwoLegs>Trying to stand on two legs</StandTwoLegs>
+      <WaitingToRub>Waiting to rub %s</WaitingToRub>
+      <GoingToRollInSnow>Going to roll in the snow</GoingToRollInSnow>
+      <RollingInSnow>Rolling in the snow</RollingInSnow>
+      <AggressiveAngry>Behaving aggressively</AggressiveAngry>
+      <WanderAimless>Wandering aimlessly</WanderAimless>
+      <GoingToBashBuilding>Going to bash %s</GoingToBashBuilding>
+      <BashingBuilding>Bashing %s</BashingBuilding>
+      <AttemptBash>Failing to damage %s</AttemptBash>
+      <RunningAroundRampage>Running around rampaging</RunningAroundRampage>
+      <GettingShocked>Getting shocked by %s</GettingShocked>      
+   </animalactions>
+</ZT2Strings>

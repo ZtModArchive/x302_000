@@ -1,0 +1,6 @@
+<UIText name="mode_help_text" autosize="true">
+   <UIRegion x="5" y="5" w="265" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIHotKeys/>
+   <text format="minigameHelp:minigameHelp_format" type="multi"/>
+</UIText>

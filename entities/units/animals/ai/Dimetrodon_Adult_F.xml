@@ -1,0 +1,49 @@
+<BFTypedBinder binderType="Dimetrodon_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Synapsida>
+                  <Pelycosauria>
+                     <Sphenacodontidae>
+                        <Dimetrodon>
+                           <Dimetrodon_Adult>
+                              <Dimetrodon_Adult_F/>
+                           </Dimetrodon_Adult>
+                        </Dimetrodon>
+                     </Sphenacodontidae>
+                  </Pelycosauria>
+               </Synapsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Dimetrodon\Dimetrodon_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Dimetrodon_Adult_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Dimetrodon/Dimetrodon_Adult_F.bfm" scale="1.3"/>
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+        <BFBinder required="1">
+           <instance>
+              <BFAIEntityDataInstance b_Pregnant="false"/>
+           </instance>
+        </BFBinder>
+   </binder>
+</BFTypedBinder>

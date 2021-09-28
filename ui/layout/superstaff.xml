@@ -1,0 +1,82 @@
+<UILayout name="Super Staff Screen">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect alwayshit="never">
+      <default/>
+   </UIAspect>
+   <children>
+      <UILayout name="Super Staff Tank Clean">
+         <UIRegion x="-128" y="150" w="260" h="46" xalign="mid" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="normal"/>
+         <UIAspect alwayshit="never">
+            <default/>
+         </UIAspect>
+         <children>
+            <UILayout name="Super Staff Clean">
+               <UIRegion x="0" y="0" w="256" h="32" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIAspect>
+                  <default image="UI\infopan\meter_filter_clean.dds" sound="">
+                     <BFRect x="0" y="0" w="256" h="32"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+               <UIShowHideAnim time=".5f" initialTime=".5f" initialDir="true">
+                  <colors>
+                     <start r="255" g="255" b="255" a="0"/>
+                     <end r="255" g="255" b="255" a="255"/>
+                  </colors>
+               </UIShowHideAnim>
+            </UILayout>
+            <UILayout name="Super Staff Soiled">
+               <UIRegion x="0" y="0" w="256" h="32" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIAspect>
+                  <default image="UI\infopan\meter_filter_soiled.dds" sound="">
+                     <BFRect x="0" y="0" w="256" h="32"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+               <UIShowHideAnim time=".5f" initialTime=".5f" initialDir="true">
+                  <colors>
+                     <start r="255" g="255" b="255" a="0"/>
+                     <end r="255" g="255" b="255" a="255"/>
+                  </colors>
+               </UIShowHideAnim>
+            </UILayout>
+            <UILayout name="Super Staff Dirty">
+               <UIRegion x="0" y="0" w="256" h="32" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIAspect>
+                  <default image="UI\infopan\meter_filter_dirty.dds" sound="">
+                     <BFRect x="0" y="0" w="256" h="32"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+               <UIShowHideAnim time=".5f" initialTime=".5f" initialDir="true">
+                  <colors>
+                     <start r="255" g="255" b="255" a="0"/>
+                     <end r="255" g="255" b="255" a="255"/>
+                  </colors>
+               </UIShowHideAnim>
+            </UILayout>
+            <UILayout name="Super Staff Toxic">
+               <UIRegion x="0" y="0" w="256" h="32" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIAspect>
+                  <default image="UI\infopan\meter_filter_toxic.dds" sound="">
+                     <BFRect x="0" y="0" w="256" h="32"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+               </UIAspect>
+               <UIShowHideAnim time=".5f" initialTime=".5f" initialDir="true">
+                  <colors>
+                     <start r="255" g="255" b="255" a="0"/>
+                     <end r="255" g="255" b="255" a="255"/>
+                  </colors>
+               </UIShowHideAnim>
+            </UILayout>
+         </children>
+      </UILayout>
+   </children>
+</UILayout>

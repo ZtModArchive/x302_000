@@ -1,0 +1,57 @@
+EMPTY_SEQUENCE_AT_0fBip01  LINKEY    ROT = 1 POS = 1 
+Bip01 Pelvis  LINKEY    ROT = 1 POS = 1 
+Bip01 Spine  LINKEY    ROT = 1 POS = 1 
+Bip01 Spine1  LINKEY    ROT = 1 POS = 1 
+Bip01 Spine2  LINKEY    ROT = 1 POS = 1 
+Bip01 Neck  LINKEY    ROT = 1 POS = 1 
+Bip01 Neck1  LINKEY    ROT = 1 POS = 1 
+Bip01 Head  LINKEY    ROT = 1 POS = 1 
+Node_Buoy  EULERKEY  [X]    ROT = 3 POS = 1  
+Node_Buoy  EULERKEY  [Y]    ROT = 3 POS = 1  
+Node_Buoy  EULERKEY  [Z]    ROT = 3 POS = 1  
+Node_Carry  EULERKEY  [X]    ROT = 3 POS = 1  
+Node_Carry  EULERKEY  [Y]    ROT = 3 POS = 1  
+Node_Carry  EULERKEY  [Z]    ROT = 3 POS = 1  
+Node_Eat  TCBKEY    ROT = 3 POS = 3 
+Bip01 L Clavicle  LINKEY    ROT = 1 POS = 1 
+Bip01 L UpperArm  LINKEY    ROT = 1 POS = 1 
+Bip01 L Forearm  LINKEY    ROT = 1 POS = 1 
+Bip01 L Hand  LINKEY    ROT = 1 POS = 1 
+Bip01 L Finger0  LINKEY    ROT = 1 POS = 1 
+Bip01 R Clavicle  LINKEY    ROT = 1 POS = 1 
+Bip01 R UpperArm  LINKEY    ROT = 1 POS = 1 
+Bip01 R Forearm  LINKEY    ROT = 1 POS = 1 
+Bip01 R Hand  LINKEY    ROT = 1 POS = 1 
+Bip01 R Finger0  LINKEY    ROT = 1 POS = 1 
+Bip01 L Thigh  LINKEY    ROT = 1 POS = 1 
+Bip01 L Calf  LINKEY    ROT = 1 POS = 1 
+Bip01 L Foot  LINKEY    ROT = 1 POS = 1 
+Bip01 L Toe0  LINKEY    ROT = 1 POS = 1 
+Bip01 R Thigh  LINKEY    ROT = 1 POS = 1 
+Bip01 R Calf  LINKEY    ROT = 1 POS = 1 
+Bip01 R Foot  LINKEY    ROT = 1 POS = 1 
+Bip01 R Toe0  LINKEY    ROT = 1 POS = 1 
+Bip01 Tail  LINKEY    ROT = 1 POS = 1 
+Bip01 Tail1  LINKEY    ROT = 1 POS = 1 
+Bip01 Tail2  LINKEY    ROT = 1 POS = 1 
+Bip01 Tail3  LINKEY    ROT = 1 POS = 1 
+Bip01 Tail4  LINKEY    ROT = 1 POS = 1 
+Node_Buoy_Back  EULERKEY  [X]    ROT = 3 POS = 1  
+Node_Buoy_Back  EULERKEY  [Y]    ROT = 3 POS = 1  
+Node_Buoy_Back  EULERKEY  [Z]    ROT = 3 POS = 1  
+Floor  TCBKEY    ROT = 3 POS = 3 
+Grid  TCBKEY    ROT = 3 POS = 3 
+Dock_Tap  TCBKEY    ROT = 3 POS = 3 
+Poop  EULERKEY  [X]    ROT = 3 POS = 1  
+Poop  EULERKEY  [Y]    ROT = 3 POS = 1  
+Poop  EULERKEY  [Z]    ROT = 3 POS = 1  
+Node_Mouth  EULERKEY  [X]    ROT = 3 POS = 1  
+Node_Mouth  EULERKEY  [Y]    ROT = 3 POS = 1  
+Node_Mouth  EULERKEY  [Z]    ROT = 3 POS = 1  
+Dock_Attack  EULERKEY  [X]    ROT = 3 POS = 1  
+Dock_Attack  EULERKEY  [Y]    ROT = 3 POS = 1  
+Dock_Attack  EULERKEY  [Z]    ROT = 3 POS = 1  
+Node_Swipe  EULERKEY  [X]    ROT = 3 POS = 1  
+Node_Swipe  EULERKEY  [Y]    ROT = 3 POS = 1  
+Node_Swipe  EULERKEY  [Z]    ROT = 3 POS = 1  
+Bip01 NonAccum  LINKEY    ROT = 1 POS = 1 

@@ -1,0 +1,19 @@
+<BFScenarioGroup name="bluebuckaurochphotorules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="bluebuckaurochphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHBluebuckAurochPhotoShort" overview="PhotoChallengetext:PHBluebuckAurochPhoto" />
+				<success locid="PhotoChallengetext:PHBluebuckAurochPhotoSuccessShort" overview="PhotoChallengetext:PHBluebuckAurochPhotoSuccess" />
+			</info>
+			<evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BluebuckAurochPhoto.lua" entry="evalbluebuckaurochphoto" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BluebuckAurochPhoto.lua" entry="completebluebuckaurochphoto" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BluebuckAurochPhoto.lua" entry="failbluebuckaurochphoto" />
+			</failure>	
+		</BFScenarioRule>		
+	 </children>
+</BFScenarioGroup>

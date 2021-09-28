@@ -1,0 +1,104 @@
+<BFTypedBinder binderType="Stokesosaurus_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Archosauria>
+                  <Saurischia>
+                     <Tyrannosauridae>
+                        <Stokesosaurus>
+                           <Stokesosaurus_Adult>
+                              <Stokesosaurus_Adult_F/>
+                           </Stokesosaurus_Adult>
+                        </Stokesosaurus>
+                     </Tyrannosauridae>
+                  </Saurischia>
+               </Archosauria>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Stokesosaurus_Adult_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/Stokesosaurus/Stokesosaurus_Adult_F.bfm" scale="0.75"/>
+               <BFDecalTextureCycleComponent materialName="Stokesosaurus_Adult_F">
+			<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+			<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+			<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+			<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+		</BFDecalTextureCycleComponent>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="Stokesosaurus_Adult_F" image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_F_Sick_Dirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="Stokesosaurus_Adult_F" image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_F_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="Stokesosaurus_Adult_F" image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_F_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData>
+                        <mainObj material="Stokesosaurus_Adult_F" image="entities\units\animals\Stokesosaurus\Stokesosaurus_Adult_F.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+	<BFNamedBinder binderName="Glasses" required="0">
+	   <instance>
+	      <BFPhysObj>
+		<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\items\Glasses_Prop\Glasses_Prop" scale="0.75" switch="0" />
+	      </BFPhysObj>
+	   </instance>
+	</BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

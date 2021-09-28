@@ -1,0 +1,102 @@
+<BehaviorSets>
+   <UseGlacier>
+      <subjects>
+         <Guest_Adult_M_Caveman/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Frozen_Idle" playTime="300" interruptFlag="true"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_IceLevel="1"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Frozen_Idle" playTime="300"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_IceLevel="1"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Frozen_Idle" playTime="300"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_IceLevel="1"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Frozen_2Stand"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData b_Frozen="false"/>
+         </BFBehSetAttribute>
+         <BFBehAttachObject attachEntity="CavemanClub" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+      </behaviors>
+   </UseGlacier>
+   <ExitGlacier>
+      <subjects>
+         <Guest_Adult_M_Caveman/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData b_InGlacier="false"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </ExitGlacier>
+
+   <TalkNeutral>
+      <subjects>
+         <Guest_Adult_M_Caveman/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="1" Chance="100" Timeout="120" Reconsider="true" OnlyOne="true"/>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="5" ChanceInRadius="20" Timeout="120" Reconsider="true" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </TalkNeutral>
+
+   <TalkAngry>
+      <subjects>
+         <Guest_Adult_M_Caveman/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Stand_ShakeFist weight="50"/>
+               <Stand_Grumble weight="50"/>
+               <Stand_Argue weight="50"/>
+               <Stand_Scold weight="50"/>               
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="1" Chance="50" Timeout="120" Reconsider="true" OnlyOne="true"/>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="5" ChanceInRadius="10" Timeout="120" Reconsider="true" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </TalkAngry>
+
+   <TalkHappy>
+      <subjects>
+         <Guest_Adult_M_Caveman/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Stand_Cheer weight="50"/>
+               <Stand_Laugh weight="50"/>
+               <StandTalk_Idle weight="50"/>           
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="1" Chance="100" Timeout="120" Reconsider="true" OnlyOne="true"/>
+               <BFAIToken Name="t_ClubGift" GiveTo="Guest" Radius="5" ChanceInRadius="20" Timeout="120" Reconsider="true" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </TalkHappy>
+
+</BehaviorSets>

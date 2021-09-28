@@ -1,0 +1,2030 @@
+<BFAITaskTemplateList>
+<!-- Water Tasks -->
+   <BFAITaskTemplate Name="GoToLand" UniqueID="SlothGroundGiant:GoToLand">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="40"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLand"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Idle"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderWater" UniqueID="SlothGroundGiant:WanderWater">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="35"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swimming"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="TreadWater"/>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Exercise Tasks -->
+   <BFAITaskTemplate Name="Wander" UniqueID="SlothGroundGiant:Wander">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND rest="GE 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderMedium" UniqueID="SlothGroundGiant:WanderMedium">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND rest="L 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="medium" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderFast" UniqueID="SlothGroundGiant:WanderFast">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND rest="L 25" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-32"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="fast" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Rest Tasks -->
+   <BFAITaskTemplate Name="Yawn" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:Yawn">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalYawnGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Yawning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Yawn"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-10"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Yawn" GiveTo="subject" Timeout="-1" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Rest" UniqueID="SlothGroundGiant:Rest">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-38"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Rest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Yawning"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Yawn"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepShade" UniqueID="SlothGroundGiant:SleepShade">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Yawning"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Yawn"/>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepBush" UniqueID="SlothGroundGiant:SleepBush">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Yawning"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Yawn"/>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Privacy Tasks -->
+   <BFAITaskTemplate Name="EvadePrivacy" UniqueID="SlothGroundGiant:EvadePrivacy">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+          <ZTBehViewEvent viewKey="Pos_3"/>
+         <BFBehEvasion evasionRadius="15">
+            <avoidEntityTypes>
+               <Guest/>
+            </avoidEntityTypes>
+         </BFBehEvasion>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" privacy="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideBush" UniqueID="SlothGroundGiant:HideBush">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Rest"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GoToShooGuest" UniqueID="SlothGroundGiant:GoToShooGuest">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" privacy="GE 30"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalComingToLookAtGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-15" privacy="-10"/>
+         <BFBehExecTask>
+            <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SeekPrivacy_ShooGuest" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:SeekPrivacy_ShooGuest">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" privacy="GE 15"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="10"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-60"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ShooOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Shoo"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData privacy="-40"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_EvadeHappy" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_EvadeHappy" GiveTo="Guest_Adult" Payload="subject" ChanceInRadius="50" Radius="20" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_EvadeHappy" GiveTo="Guest_Young" Payload="subject" ChanceInRadius="80" Radius="20" Timeout="30" Reconsider="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>    
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SeekPrivacy_ShooAnimal" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:SeekPrivacy_ShooAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" privacy="GE 30"/>
+         </Subjects>
+         <Targets>
+            <animal/>
+            <Qualifiers_AND inSight="10" sameSpecies="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-60"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ShooOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Shoo"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData privacy="-30"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>    
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Hygiene Tasks -->
+   <BFAITaskTemplate Name="Groom" UniqueID="SlothGroundGiant:Groom">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Scratch"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Hunger/Thirst Tasks -->
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="SlothGroundGiant:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="Eat_Drink"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Social Tasks -->
+   <BFAITaskTemplate Name="Contact_Call" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SlothGroundGiant:Contact_Call">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ShooOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalMotionGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="SlothGroundGiant" Payload="subject" Radius="5" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="SlothGroundGiant" Payload="subject" Radius="15" Chance="75" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="SlothGroundGiant" Payload="subject" Radius="25" Chance="50" Timeout="30"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Contact_Answer" UniqueID="SlothGroundGiant:Contact_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ContactCall/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MotionOtherBack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalMotionGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Chance="25" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Stimulation Tasks -->
+   <BFAITaskTemplate Name="Sniff" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:Sniff">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sniffing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSniffSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Sniff"/>
+         <BFBehPlaySet behSet="Sniff"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-35"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LookAround" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:LookAround">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalLookAroundGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Look"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Reproduction Tasks -->
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="SlothGroundGiant:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="SlothGroundGiant:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="80">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="SlothGroundGiant:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="SlothGroundGiant:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_M/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="SlothGroundGiant:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="1414.21" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BirthBushes" UniqueID="SlothGroundGiant:BirthBushes">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <bush/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010">
+         <BFAIBiomeMap alpine=".75" borealforest=".75" temperateforest=".50" desert=".25" grassland=".50" savannah=".25" tropicalrainforest="1.00" scrub=".25" tundra=".25" wetlands=".75"/>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBirth"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BirthShade" UniqueID="SlothGroundGiant:BirthShade">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBirth"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Birth" UniqueID="SlothGroundGiant:Birth">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Birthing"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehPlaySet behSet="Birth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBirth" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Guest Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="SlothGroundGiant:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedSlothGroundGiant"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Escape Tasks -->
+   <BFAITaskTemplate Name="BashFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="SlothGroundGiant:BashFence">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+         </Subjects>
+         <Targets>
+            <fence/>
+            <Qualifiers f_FenceStrength="LE 9"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="30" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_Fence" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Predator/Prey Interaction Tasks -->
+   <BFAITaskTemplate Name="Attacked" UniqueID="SlothGroundGiant:Attacked">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Beckon"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+		  <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="SlothGroundGiant:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   
+<!-- Mother/Young Interaction Tasks -->
+   <BFAITaskTemplate Name="InviteGroomYoung" TaskDelayMin="60" TaskDelayMax="180" UniqueID="SlothGroundGiant:InviteGroomYoung">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND isRelation="mother" inWater_OR_onLand="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GroomYoung" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Beckon"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondGroomYoung" reserveTag="General" UniqueID="SlothGroundGiant:RespondGroomYoung">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_GroomYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingGroomOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="DockCleanYoung" targetBehSet="WaitCleanYoung"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="CleanYoung" targetBehSet="BeCleaned"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITargetData hygiene="-75"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="CleanYoung" targetBehSet="BeCleaned"/>
+         </BFBehExecTask>
+         <BFAITargetData hygiene="-75"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteFollowMother" UniqueID="SlothGroundGiant:InviteFollowMother">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="true" notInSight="5" isRelation="child"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".1"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeckonOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_BeckonYoung" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Beckon"/>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBeckonChildGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-6"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FollowMother_Beckoned" UniqueID="SlothGroundGiant:FollowMother_Beckoned">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" notInSight="5" isRelation="mother"/>
+         </Targets>
+         <Objects>
+            <t_BeckonYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FollowMother"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="9" locoSpeed="fast"/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FollowMother" UniqueID="SlothGroundGiant:FollowMother">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" notInSight="5" isRelation="mother"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".1"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FollowMother"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Beckon"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="9" locoSpeed="slow"/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InvitePickup" TaskDelayMin="60" TaskDelayMax="120" UniqueID="SlothGroundGiant:InvitePickup">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isRelation="mother" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pickup" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Beckon"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondPickup" attachTag="back" UniqueID="SlothGroundGiant:RespondPickup">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Pickup/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="WaitPickup" targetBehSet="DockPickup"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSyncSet subjectBehSet="MommaPickupBaby" targetBehSet="BabyPickedUpByMomma" resetPhase="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CarryBaby" TaskDelayMin="60" TaskDelayMax="120" objectContainer="back" UniqueID="SlothGroundGiant:CarryBaby">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <SlothGroundGiant_Young/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <b_SmallPredator/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30" health="-30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="DetachBaby"/>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CarryBabyToShade" TaskDelayMin="120" TaskDelayMax="180" objectContainer="back" UniqueID="SlothGroundGiant:CarryBabyToShade">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <SlothGroundGiant_Young/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1200"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-35"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="DetachBaby"/>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITargetData social="-20" health="-30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RequestNurse" TaskDelayMin="15" TaskDelayMax="15" UniqueID="SlothGroundGiant:RequestNurse">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" isRelation="mother" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-50" thirst="-50"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_RequestNurse" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true" OnlyOne="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Beckon"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondNurse" UniqueID="SlothGroundGiant:RespondNurse">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_RequestNurse/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Beckon"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="WaitPickup" targetBehSet="DockPickup"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="MommaPickupBaby" targetBehSet="BabyPickedUpByMomma" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="MommaNurseYoung" targetBehSet="Nurse" resetPhase="true"/>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalNurseGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData hunger="-100" thirst="-100" social="-10" health="-50"/>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Aging Tasks -->
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="SlothGroundGiant:Born">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Beckon"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="SlothGroundGiant:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 12.45"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="SlothGroundGiant:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="SlothGroundGiant_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="SlothGroundGiant:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="SlothGroundGiant_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperF" UniqueID="SlothGroundGiant:Age_SuperF">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young_F_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="SlothGroundGiant_Adult_F_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperM" UniqueID="SlothGroundGiant:Age_SuperM">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant_Young_M_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="SlothGroundGiant_Adult_M_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="SlothGroundGiant:Old">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers lifespan="GE 46.8"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="SlothGroundGiant:Die">
+      <BFAICreateData>
+         <Subjects>
+            <SlothGroundGiant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

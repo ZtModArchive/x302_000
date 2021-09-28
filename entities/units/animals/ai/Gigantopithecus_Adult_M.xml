@@ -1,0 +1,51 @@
+<BFTypedBinder binderType="Gigantopithecus_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Primata>
+                     <Pongidae>
+                        <Gigantopithecus>
+                           <Gigantopithecus_Adult>
+                              <Gigantopithecus_Adult_M/>
+                           </Gigantopithecus_Adult>
+                        </Gigantopithecus>
+                     </Pongidae>
+                  </Primata>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+	 <UIAspect>
+		<default image="entities\units\animals\Gigantopithecus\Gigantopithecus_Adult_M_icon.dds" />
+	 </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Gigantopithecus_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" p_GroomNode="0 -.5 0"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+		<BFActorComponent actorfile="entities/units/animals/Gigantopithecus/Gigantopithecus_Adult_M.bfm" scale="1.5"/>
+            </BFPhysObj>
+         </instance>
+	 <shared>
+	    <BFSharedPhysVars  isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25" splashScale="0.6">
+	       <virtualNodes>
+	          <Node_Groom y="-1.5" />
+	       </virtualNodes>
+	    </BFSharedPhysVars>
+	 </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

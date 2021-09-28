@@ -1,0 +1,121 @@
+<BFTypedBinder binderType="FossilDigPit">
+   <types>
+      <entity>
+         <building>
+            <FossilDigPit/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="ShadowObj_01" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData autoFootprint="false" dockArrowStyle="standard" dockArrowSize="1.5" icon3Doffset="0 0 0.5" icon3Dscale="0.2" elevatedTilePlacement="false">
+         <cfootprint width="3" height="3"/>
+         <dfootprint width="4" height="4"/>
+         <excludedIconObjs>
+            <FitSurfacePick/>
+         </excludedIconObjs>
+      </ZTPlacementData>
+      <BFGCollisionData isTraversable="false">
+         <typeScores avatar="0"/>
+      </BFGCollisionData>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\FossilDigPit\FossilDigPit_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:FossilDigPit"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FossilDigPit"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\buildings\FossilDigPit\FossilDigPit_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FossilDigPit"/>
+         </on>
+      </UIToggleButton>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_attractions.dds"/>
+         </UIAspect>
+      </UIButton>
+      <ZTTourData>
+         <theme_extinct value="5"/>
+         <cool value="6"/>
+      </ZTTourData>
+      <BFAIEntityDataShared s_ObjectType="Misc" b_Researchable="true" s_Product="Extinct" s_uisort="ef" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_fossildigpit:entry" f_researchUnlockTime="60" f_researchCost="200" b_wantLifetimeUsers="true" f_FameReq="20" b_HasEntityFittingSurface="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilDigPit/FossilDigPit"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFForceUpdateWhenVisibleComponent/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Dock_Guest1 y="-4" yaw="180"/>
+                  <Dock_Guest2 x="-4" yaw="270"/>
+                  <Dock_Guest3 y="4" yaw="0"/>
+                  <Dock_Guest4 x="4" yaw="90"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilDigPit/FossilDigPit_FittingSurface"/>
+               <BFGFittingSurfaceComponent heightOffset="0.2"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="ShadowObj_01">
+         <instance>
+            <BFPhysObj>
+               <BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="9" length="7" offwidth="1" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Use_FossilDigPit">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_1_Left" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Left" targetNode="Dock_Guest1" exclusiveID="FossilDigPit_1"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_1_Center" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Center" targetNode="Dock_Guest1" exclusiveID="FossilDigPit_1"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_1_Right" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Right" targetNode="Dock_Guest1" exclusiveID="FossilDigPit_1"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_2_Left" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Left" targetNode="Dock_Guest2" exclusiveID="FossilDigPit_2"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_2_Center" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Center" targetNode="Dock_Guest2" exclusiveID="FossilDigPit_2"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_2_Right" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Right" targetNode="Dock_Guest2" exclusiveID="FossilDigPit_2"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_3_Left" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Left" targetNode="Dock_Guest3" exclusiveID="FossilDigPit_3"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_3_Center" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Center" targetNode="Dock_Guest3" exclusiveID="FossilDigPit_3"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_3_Right" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Right" targetNode="Dock_Guest3" exclusiveID="FossilDigPit_3"/>                  
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_4_Left" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Left" targetNode="Dock_Guest4" exclusiveID="FossilDigPit_4"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_4_Center" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Center" targetNode="Dock_Guest4" exclusiveID="FossilDigPit_4"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterFossilDigPit_4_Right" useBehSet="Use_FossilDigPit" exitBehSet="ExitFossilDigPit_Right" targetNode="Dock_Guest4" exclusiveID="FossilDigPit_4"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep"/>
+               <ZTTransaction name="add_user" cost="1" type="addUser" category="user"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

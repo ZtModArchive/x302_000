@@ -1,0 +1,16 @@
+<ZTPuzzle animal="Deinonychus" level="3" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.64" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="1.64" />
+    <ZTPuzzlePiece texture="03_ArmRight" node="Piece03" entityScale="0.82" />
+    <ZTPuzzlePiece texture="04_ArmLeft" node="Piece04" entityScale="0.82" />
+    <ZTPuzzlePiece texture="05_Torso" node="Piece05" entityScale="0.82" />
+    <ZTPuzzlePiece texture="06_Hips" node="Piece06" entityScale="0.82"/>
+    <ZTPuzzlePiece texture="07_LegRightFoot" node="Piece07" entityScale="0.82" />
+    <ZTPuzzlePiece texture="08_LegLeft" node="Piece08" entityScale="0.82" />
+    <ZTPuzzlePiece texture="09_LegLeftFoot" node="Piece09" entityScale="0.82" />
+    <ZTPuzzlePiece texture="10_TailBase" node="Piece10" entityScale="1.64" />
+    <ZTPuzzlePiece texture="11_Tail" node="Piece11" entityScale="1.64" />
+    <ZTPuzzlePiece texture="12_TailEnd" node="Piece12" entityScale="1.64"/>
+  </pieces>
+</ZTPuzzle>

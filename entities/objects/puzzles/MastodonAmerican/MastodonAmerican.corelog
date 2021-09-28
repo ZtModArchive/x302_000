@@ -1,0 +1,51 @@
+************************************************************
+Date: 04/20/2007
+Time: 16:51
+************************************************************
+Compiled object 1: BackPlane
+Compiled object 2: Dock_Node
+Compiled object 3: Piece01
+Compiled object 4: Piece02
+Compiled object 5: Piece03
+Compiled object 6: Piece04
+Compiled object 7: Piece05
+Compiled object 8: Piece06
+Compiled object 9: Piece07
+Compiled object 10: Piece08
+Compiled object 11: Piece09
+Compiled object 12: Piece10
+Compiled object 13: Piece11
+Compiled object 14: Piece12
+Compiled object 15: Piece13
+Compiled object 16: Piece14
+Compiled object 17: Piece15
+Compiled object 18: Piece16
+Compiled object 19: Piece17
+Compiled object 20: Piece18
+Compiled object 21: Piece19
+Compiled object 22: Piece20
+Compiled object 23: Piece21
+Compiled object 24: Piece22
+Compiled object 25: Piece23
+Compiled object 26: Piece24
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 2 
+Vertex Count: 6 
+Vertex Memory: 0 kb
+Material Count: 1 
+Texture Count: 1 
+Texture Memory: 10 kb
+Num LODs: 0 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 2 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 276ms
+XML File Translation: total time = 77ms
+Data Output: total time = 1ms
+************************************************************

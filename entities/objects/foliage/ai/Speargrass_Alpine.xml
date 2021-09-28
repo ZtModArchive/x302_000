@@ -1,0 +1,57 @@
+<BFTypedBinder binderType="Speargrass_Alpine">
+	<types>
+		<entity>
+			<foliage>
+				<plant>
+					<grass>
+						<Speargrass_Alpine />
+					</grass>
+				</plant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="-0.25 0 0.8" icon3Dscale="0.75">
+			<cfootprint width="1" height="1" />
+			<dfootprint width="2" height="2" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\Speargrass\Speargrass_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Speargrass_Alpine" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Speargrass_Alpine" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="alpine_newzealand">
+			<alpine />
+		</BFGBiomeData>
+		<BFAIEntityDataShared s_Product="Extinct" b_GrazeGrass="true" s_prop="Grass_Prop" s_Zoopedia="zoopedia:zoopedia_Speargrass:entry" f_FameReq="60" />
+		<ZTTourData>
+			<biome_alpine value="2" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\SpearGrass\SpearGrass" switch="0 15 25 35 60" />
+					<BFMultiGroundFitComponent heightOffset="0.0" maxTilt="75" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="10">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

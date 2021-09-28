@@ -1,0 +1,89 @@
+<BFTypedBinder binderType="lowextinct_xt">
+   <types>
+      <entity>
+         <fence>
+            <lowextinct_xt/>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTEntityDestructionData entityRuinBinderName="lowextinct_xt_broken" secsToRemove="0.0f"/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\lowextinct_xt\lowextinct_xt_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:lowextinct_xt"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="lowextinct_xt"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"  s_ProfileLock="extinct_xtlock" s_Theme="extinct" b_SeeThrough="true" s_uisort="tb" f_FenceStrength="6" f_Height="1.0" b_lowfence="true" s_Zoopedia="zoopedia:zoopedia_extinctfence:entry" s_Broken="lowextinct_xt_broken"/>
+   		<ZTTourData>
+	 	 	<theme_extinct value="8"/>
+		</ZTTourData>       
+      <ZTPlacementData minimumHeadroom="2.0"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTFence gate="lowextinctgate_xt" hasCurves="false"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\lowextinct_xt\lowextinct_xt_post"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\lowextinct_xt\lowextinct_xt_vert"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\lowextinct_xt\lowextinct_xt_diag"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\lowextinct_xt\lowextinct_xt_post"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars seeThrough="true"/>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+	    <ZTEntityDestructionComponent/>
+	 </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="110">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

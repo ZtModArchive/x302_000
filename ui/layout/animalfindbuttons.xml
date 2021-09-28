@@ -1,0 +1,75 @@
+<UILayout name="AnimalFindButtonsLayout">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+      <default image="" sound="">
+         <BFRect x="0" y="0" w="0" h="0"/>
+         <BFColor r="0" g="0" b="0" a="0"/>
+      </default>
+   </UIAspect>
+   <UIHotKeys/>
+   <children>
+      <UIButton name="diseased_animal_button" toggle="0" sticky="0">
+         <UIRegion x="750" y="60" w="128" h="128" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIHelpInfo name="" short="shell:disease_ui_button_stt" long="shell:disease_ui_button_ltt" help="" ids="shell:disease_ui_button"/>
+         <UIAspect string="">
+            <default image="ui/shared/button_large_curemode.dds" sound="">
+               <BFRect x="0" y="0" w="-1" h="-1"/>
+               <BFColor r="255" g="255" b="255" a="128"/>
+            </default>
+            <standard>
+               <normal>
+                  <BFRect x="0" y="0" w="128" h="128"/>
+               </normal>
+               <highlighted>
+                  <BFRect x="128" y="0" w="128" h="128"/>
+               </highlighted>
+               <activated sound="uiclick2">
+                  <BFRect x="0" y="128" w="128" h="128"/>
+               </activated>
+               <disabled>
+                  <BFRect x="128" y="128" w="128" h="128"/>
+               </disabled>
+            </standard>
+            <alternate/>
+         </UIAspect>
+         <UIHotKeys/>
+         <activate>
+            <event msg="ZT_SETMODE" data="BFString" string="mode_selection"/>
+            <event msg="ZT_SELECTNEXT_DISEASED_ANIMAL"/>
+         </activate>
+      </UIButton>
+      <UIButton name="rampaging_animal_button" toggle="0" sticky="0">
+         <UIRegion x="890" y="60" w="128" h="128" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIHelpInfo name="" short="shell:rampage_ui_button_stt" long="shell:rampage_ui_button_ltt" help="" ids="shell:rampage_ui_button"/>
+         <UIAspect string="">
+            <default image="ui/shared/button_large_tranqmode.dds" sound="">
+               <BFRect x="0" y="0" w="-1" h="-1"/>
+               <BFColor r="255" g="255" b="255" a="128"/>
+            </default>
+            <standard>
+               <normal>
+                  <BFRect x="0" y="0" w="128" h="128"/>
+               </normal>
+               <highlighted>
+                  <BFRect x="128" y="0" w="128" h="128"/>
+               </highlighted>
+               <activated sound="uiclick2">
+                  <BFRect x="0" y="128" w="128" h="128"/>
+               </activated>
+               <disabled>
+                  <BFRect x="128" y="128" w="128" h="128"/>
+               </disabled>
+            </standard>
+            <alternate/>
+         </UIAspect>
+         <UIHotKeys/>
+         <activate>
+            <event msg="ZT_SETMODE" data="BFString" string="mode_selection"/>
+            <event msg="ZT_SELECTNEXT_RAMPAGING_ANIMAL"/>
+         </activate>
+      </UIButton>
+   </children>
+</UILayout>

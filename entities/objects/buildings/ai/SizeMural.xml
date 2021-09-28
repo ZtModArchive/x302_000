@@ -1,0 +1,123 @@
+<BFTypedBinder binderType="SizeMural" version="2" versionReplace="true">
+	<types>
+		<entity>
+			<building>
+				<SizeMural />
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTEntityDestructionData explosionEffect="destroy_building" explosionSound="destroy_wood_large" rubbleBinderName="Rubble_Fragment_Concrete" entityRuinBinderName="rubble_SizeMural" spawnOnlyOneRuin="true" numParticles="10" secsToRemove="0.3f" applyPhysToRubble="true" forceToRubbleMin="8.5f" forceToRubbleMax="15.0f" rubblePitchAngle="86" rubbleStartHeight="3.0f" preserveRuinRotation="true"/>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\SizeMural\SizeMural_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:SizeMural" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SizeMural" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\buildings\SizeMural\SizeMural_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SizeMural" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_attractions.dds" />
+			</UIAspect>
+		</UIButton>
+		<ZTTourData>
+			<theme_extinct value="5" />
+			<cool value="6" />
+		</ZTTourData>
+		<BFAIEntityDataShared s_Product="Extinct" s_uisort="cb" s_ObjectType="Misc" b_Researchable="true" f_researchUnlockTime="100" f_researchCost="800" s_Zoopedia="zoopedia:zoopedia_sizecomparisonmural:entry" f_FameReq="60" b_SeeThrough="false" f_BuildingStrength="40" />
+		<ZTPlacementData autoFootprint="false" minimumHeadroom="6.0" icon3Dscale="0.15">
+			<cfootprint width="1" height="4" />
+			<dfootprint width="2" height="6" />
+		</ZTPlacementData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="ShadowNode_01" width="9" length="10" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/SizeMural/SizeMural" scale="0.7" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Guest_Hand_1 x="2.5" y="-0.5" />
+						<Dock_Guest_Hand_Young_1 x="1.75" y="-4.5" />
+						<Dock_Guest_Hand_2 x="-2.5" y="-0.5" />
+						<Dock_Guest_Hand_Young_2 x="-1.75" y="-4.5" />
+						<Dock_Guest_Foot_1 x="2.5" y="2.5" />
+						<Dock_Guest_Foot_Young_1 x="1.75" y="-2.75" />
+						<Dock_Guest_Foot_2 x="-2.5" y="2.5" />
+						<Dock_Guest_Foot_Young_2 x="1.75" y="-2.75" />
+						<Dock_Guest_Size_1 x="2.25" y="5" yaw="90" />
+						<Dock_Guest_Size_Young_1 x="2" y="-2.75" yaw="90" />
+						<Dock_Guest_Size_2 x="-2.25" y="5" yaw="-90" />
+						<Dock_Guest_Size_Young_2 x="-2" y="-2.75" yaw="-90" />
+						<Dock_Rampage1 y="-4" yaw="-90" x="-1.5" />
+						<Dock_Rampage2 x="-2.25" y="4" />
+						<Dock_Rampage3 yaw="90" x="1.5" y="-4" />
+						<Dock_Rampage4 x="2.25" y="4" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_SizeMural" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Hand" targetNode="Dock_Guest_Hand_1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Hand" targetNode="Dock_Guest_Hand_2" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Foot" targetNode="Dock_Guest_Foot_1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Foot" targetNode="Dock_Guest_Foot_2" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Size" exitBehSet="ExitSizeMural_Size" targetNode="Dock_Guest_Size_1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Size" exitBehSet="ExitSizeMural_Size" targetNode="Dock_Guest_Size_2" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_SizeMural_Young" repopulateMethod="byName">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Hand" targetNode="Dock_Guest_Hand_Young_1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Hand" targetNode="Dock_Guest_Hand_Young_2" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Foot" targetNode="Dock_Guest_Foot_Young_1" exclusiveID="SizeMural1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Foot" targetNode="Dock_Guest_Foot_Young_2" exclusiveID="SizeMural2" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Size" exitBehSet="ExitSizeMural_Size" targetNode="Dock_Guest_Size_Young_1" exclusiveID="SizeMural1" />
+						<BFGEntityContainerSlot enterBehSet="DockSizeMural" useBehSet="UseSizeMural_Size" exitBehSet="ExitSizeMural_Size" targetNode="Dock_Guest_Size_Young_2" exclusiveID="SizeMural2" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1400" mergeKey="name">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

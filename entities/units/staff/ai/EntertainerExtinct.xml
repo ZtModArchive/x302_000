@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="EntertainerExtinct" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                 <Entertainer>
+                    <EntertainerExtinct/>
+                 </Entertainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+               <UIAspect>
+                  <default image="entities\units\staff\EntertainerExtinct\Entertainer_M_icon.dds"/>
+               </UIAspect>
+               <UIHelpInfo ids="entityname:EntertainerExtinct"/>
+               <on>
+                  <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="EntertainerExtinct"/>
+               </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"/>
+   </shared>
+</BFTypedBinder>

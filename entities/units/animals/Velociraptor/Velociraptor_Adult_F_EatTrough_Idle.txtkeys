@@ -1,0 +1,4 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'EatTrough_Idle'"/>
+   	<key time="0.29" text = "{Node_Eat} attach object"/>
+</TEXTKEY>

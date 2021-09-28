@@ -1,0 +1,196 @@
+<UILayout name="Extinct Camera Set">
+   <UIRegion x="-53" y="615" w="53" h="154" xalign="max" yalign="min" walign="len" halign="len"/>
+   <UIShowHideAnim time=".3">
+      <start x="0" y="615" w="53" h="154"/>
+      <end x="-53" y="615" w="53" h="154"/>
+   </UIShowHideAnim>
+   <UIState active="normal" visible="hidden"/>
+   <UIAspect string="">
+      <default image="" sound="">
+         <BFColor r="0" g="0" b="0" a="0"/>
+      </default>
+   </UIAspect>
+   <UIHotKeys/>
+   <children>
+      <UILayout name="altcameraset background">
+         <UIRegion x="0" y="0" w="53" h="154" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="normal"/>
+         <UIAspect string="" alwayshit="never">
+            <default image="ui\minigames\peanut_flip.dds" sound="">
+               <BFRect x="10" y="0" w="53" h="154"/>
+            </default>
+         </UIAspect>
+         <UIHotKeys/>
+         <children>
+            <UIStatic name="fossil background">
+               <UIRegion x="5" y="4" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:firstpersoncameramode_stt" long="cameraset:firstpersoncameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_fossilfinding.dds">
+                     <BFRect x="73" y="72" w="45" h="48"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="tranq background">
+               <UIRegion x="5" y="52" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:firstpersoncameramode_stt" long="cameraset:firstpersoncameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_tranquilizeanimal.dds">
+                     <BFRect x="73" y="72" w="45" h="48"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+            <UIStatic name="cure background">
+               <UIRegion x="5" y="102" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:photocameramode_stt" long="cameraset:photocameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_curedisease.dds">
+                     <BFRect x="73" y="72" w="45" h="48"/>
+                  </default>
+               </UIAspect>
+            </UIStatic>
+         </children>
+      </UILayout>
+      <UIToggleSet name="mode buttons">
+         <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+         <UIState active="normal" visible="normal"/>
+         <UIAspect string="">
+            <default/>
+         </UIAspect>
+         <children>
+            <UIToggleButton name="fossil" toggle="0" sticky="1">
+               <UIRegion x="5" y="4" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:fossilcameramode_stt" long="cameraset:fossilcameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_fossilfinding.dds" sound="">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="9" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_first_person"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_find_fossils"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="tranquilize" sticky="1">
+               <UIRegion x="5" y="52" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:tranqcameramode_stt" long="cameraset:tranqcameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_tranquilizeanimal.dds" sound="">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="9" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_first_person"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_tranquilize"/>
+               </on>
+            </UIToggleButton>
+            <UIToggleButton name="cure" sticky="1">
+               <UIRegion x="5" y="102" w="45" h="48" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHelpInfo name="" short="cameraset:curecameramode_stt" long="cameraset:curecameramode_ltt" help=""/>
+               <UIAspect string="">
+                  <default image="ui/minigames/button_pgbright_curedisease.dds" sound="">
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="9" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </standard>
+                  <alternate>
+                     <normal>
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="9" y="72" w="45" h="48"/>
+                     </highlighted>
+                     <activated sound="uiclick">
+                        <BFRect x="73" y="8" w="45" h="48"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="73" y="72" w="45" h="48"/>
+                     </disabled>
+                  </alternate>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_first_person"/>
+                  <event msg="ZT_SETMODE" data="BFString" string="mode_cure_disease"/>
+               </on>
+            </UIToggleButton>
+         </children>
+      </UIToggleSet>
+   </children>
+</UILayout>

@@ -1,0 +1,88 @@
+﻿<BFTypedBinder binderType="DinoRecoveryRobot_Adult_M" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<people>
+					<Staff>
+						<DinoRecoveryRobot>
+							<DinoRecoveryRobot_Adult_M />
+						</DinoRecoveryRobot>
+					</Staff>
+				</people>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.587109" icon3Dscale="4" />
+		<BFAIEntityDataShared b_Male="1" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<position x="10" y="0" z="0" />
+					<BFShadowLODComponent numLevels="1" switchingDists="30.0" />
+					<BFActorComponent actorfile="entities\units\staff\DinoRecoveryTeam\DinoRecoveryRobot_Adult_M.bfm" scale="1.0" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFBoundedObjectComponent>
+						<minPoint x="0" y="0" z="-100" />
+						<maxPoint x="300" y="300" z="100" />
+					</BFBoundedObjectComponent>
+					<BFCollisionComponent grid="Grid" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Distract x="0" y="0" z="0" yaw="0" pitch="0" roll="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="headObj" required="0">
+			<instance>
+				<BFPhysObj useTriShapeGroup="false">
+					<BFSimpleLODComponent modelfile="entities/units/staff/DinoRecoveryTeam/DinoRecoveryRobot_Head_M" scale="1.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\guest_blob.tga" baseNode="Bip01" width="1.0" minLength="1.0" maxLength="4.0" minOffset="0" maxOffset="1.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_TurnLeftA&apos;" />
+						<macro name="TurnLeft180" text="anim &apos;Stand_TurnLeft90&apos;, anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight180" text="anim &apos;Stand_TurnRight90&apos;, anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="TurnLeft90" text="anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight90" text="anim &apos;Stand_TurnRight90&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="0">
+					<ZTTransaction name="build" costType="parent" type="debit" category="staff_salaries" />
+					<ZTTransaction name="salary" cost="0" period="monthly" type="debit" category="staff_salaries" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

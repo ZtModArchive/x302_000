@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key time="1.49" text="{Node_Eat} runpeff electricsparks attach nocull"/>
+   <key time="2.8" text="{Node_Eat} runpeff electricsparks stop nocull"/>
+</TEXTKEY>

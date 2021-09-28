@@ -1,0 +1,81 @@
+<BFTypedBinder binderType="CatSaberToothed_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Felidae>
+                        <CatSaberToothed>
+                           <CatSaberToothed_Adult>
+                              <CatSaberToothed_Adult_F/>
+                           </CatSaberToothed_Adult>
+                        </CatSaberToothed>
+                     </Felidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" p_PredatorOffset="0 -2 0" b_Predator="true" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+	       <weights>
+		       <base weight="90" />
+		       <variant extension="1" weight="5" />
+		       <variant extension="2" weight="5" />
+	       </weights>
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="80" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_F_Sick_Dirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_F_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="80" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_F_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_F.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

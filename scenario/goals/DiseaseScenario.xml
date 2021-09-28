@@ -1,0 +1,145 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+  <info locid="ExtinctCampaign:DiseaseIntro" />
+  <children>
+    <BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+      <evaluate>
+        <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="setinitialzoostate" />
+      </evaluate>
+    </BFScenarioRule>
+    <BFScenarioGroup hidden="0" name="ExtinctDiseaseOptional1" state="0" chain="false" allsuccess="false" sticky="true">
+      <children>
+        <BFScenarioRule name="ExtinctNormalOperationGoal" hidden="1" state="0" sticky="true">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseOptionalGoal1Short" overview="ExtinctCampaign:DiseaseOptionalGoal1" />
+            <success locid="ExtinctCampaign:FinishDiseaseOptionalGoal1Short" overview="ExtinctCampaign:FinishDiseaseOptionalGoal1" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalNormalOperation" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeNormalOperation" />
+          </success>
+        </BFScenarioRule>
+      </children>
+    </BFScenarioGroup>
+    <BFScenarioGroup hidden="0" name="ExtinctDiseaseOptional2" state="0" chain="false" allsuccess="false" sticky="true">
+      <children>
+        <BFScenarioRule name="ExtinctHealthyAnimalGoal" hidden="1" state="0" sticky="true">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseOptionalGoal2Short" overview="ExtinctCampaign:DiseaseOptionalGoal2" />
+            <success locid="ExtinctCampaign:FinishDiseaseOptionalGoal2Short" overview="ExtinctCampaign:FinishDiseaseOptionalGoal2" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalHealthyAnimalPhoto" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeHealthyAnimalPhoto" />
+          </success>
+        </BFScenarioRule>
+      </children>
+    </BFScenarioGroup>
+    <BFScenarioGroup hidden="0" name="ExtinctDisease" state="0" chain="true" allsuccess="true" sticky="true">
+      <success>
+        <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeExtinctDonations2" />
+      </success>
+      <children>
+        <BFScenarioRule name="ExtinctAnimalsGoal" hidden="0" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseAdoptFirstShort" overview="ExtinctCampaign:DiseaseOverview" />
+            <success locid="ExtinctCampaign:DiseaseFinishAdoptFirst" overview="ExtinctCampaign:DiseaseOverview" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalExtinctAnimals" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeExtinctAnimals" />
+          </success>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctDonations1Goal" hidden="1" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseDonations1Short" overview="ExtinctCampaign:DiseaseDonations1" />
+            <success locid="ExtinctCampaign:DiseaseFinishDonations1Short" overview="ExtinctCampaign:DiseaseFinishDonations1" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalExtinctDonations1" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeExtinctDonations1" />
+          </success>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctGiftAnimalSick" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+					</info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalGiftAnimalGetsSick" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeGiftAnimalGetsSick" />
+          </success>
+          <failure>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="failGiftAnimalGetsSick" />
+          </failure>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctDocumentGoal" hidden="1" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseOutbreakShort" overview="ExtinctCampaign:DiseaseOutbreak" />
+            <success locid="ExtinctCampaign:DiseaseFinishOutbreakShort" overview="ExtinctCampaign:DiseaseFinishOutbreak" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalDiseaseOutbreak" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeDiseaseOutbreak" />
+          </success>
+          <failure>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="failDiseasePhoto" />
+          </failure>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctFindCureGoal" hidden="1" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseFindCureShort" overview="ExtinctCampaign:DiseaseFindCure" />
+            <success locid="ExtinctCampaign:DiseaseFinishFindCure" overview="ExtinctCampaign:DiseaseFinishFindCure" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalDiseaseFindCure" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeDiseaseFindCure" />
+          </success>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctCureAllGoal" hidden="1" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseHealAllShort" overview="ExtinctCampaign:DiseaseHealAll" />
+            <success locid="ExtinctCampaign:DiseaseFinishHealAllShort" overview="ExtinctCampaign:DiseaseFinishHealAll" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalDiseaseHealAll" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeDiseaseHealAll" />
+          </success>
+          <failure>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="failAnimalDeath" />
+          </failure>
+        </BFScenarioRule>
+        <BFScenarioRule name="ExtinctDonations2Goal" hidden="1" state="0" sticky="true" optional="false">
+          <info type="primary">
+            <neutral locid="ExtinctCampaign:DiseaseDonations2Short" overview="ExtinctCampaign:DiseaseDonations2" />
+            <success locid="ExtinctCampaign:DiseaseFinishDonations2Short" overview="ExtinctCampaign:DiseaseDonations2" />
+          </info>
+          <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="evalExtinctDonations2" />
+          </evaluate>
+          <success>
+            <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="completeExtinctDonations2" />
+          </success>
+        </BFScenarioRule>
+      </children>
+    </BFScenarioGroup>
+    <BFScenarioRule name="FailScenario" hidden="0" state="0" sticky="true" optional="false">
+      <evaluate>
+        <BFScenarioScriptAction script="scenario/scripts/DiseaseScenario.lua" entry="hasAnimalDied" />
+      </evaluate>
+    </BFScenarioRule>
+  </children>
+</ZTScenarioMgr>

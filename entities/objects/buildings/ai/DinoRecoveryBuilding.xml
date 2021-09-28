@@ -1,0 +1,154 @@
+<BFTypedBinder binderType="DinoRecoveryBuilding">
+  <types>
+    <entity>
+      <actor>
+        <DinoRecoveryBuilding />
+      </actor>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity entityVersion="1">
+      <physObjParenting>
+        <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+        <parentObj parent="mainObj" child="base" rottype="use" postype="use" />
+      </physObjParenting>
+    </BFGEntity>
+  </instance>
+  <shared>
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_icon.dds" />
+      </UIAspect>
+      <UIHelpInfo name="" short="" long="" help="" ids="entityname:DinoRecoveryBuilding" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DinoRecoveryBuilding" />
+      </on>
+    </UIToggleButton>
+    <UIToggleButton template="researchentity">
+      <UIAspect>
+        <default image="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_icon.dds" />
+      </UIAspect>
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DinoRecoveryBuilding" />
+      </on>
+    </UIToggleButton>
+    <UIButton name="overviewicon">
+      <UIAspect>
+        <default image="ui/zoomap/icon_staff.dds" />
+      </UIAspect>
+    </UIButton>
+    <BFAIEntityDataShared b_Researchable="true" s_Product="Extinct" s_ObjectType="Misc" s_Zoopedia="zoopedia:zoopedia_dinorecoverybuilding:entry" f_FameReq="1" b_ReceiveUpdates="1" f_researchUnlockTime="45" f_researchCost="1000" s_uisort="ac" />
+    <ZTEntitySelector size="4.0">
+      <BFPhysObj>
+        <BFTerrainDecalComponent imageName="UI/fx/selection/object.tga" alphaBlend="true">
+          <lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255" />
+        </BFTerrainDecalComponent>
+      </BFPhysObj>
+    </ZTEntitySelector>
+    <ZTPlacementData iconAnim="Down_Idle" moveable="true" gridSnap="true" autoFootprint="true" waterPlacement="false" terrainFlatten="true" sound="place_building" deleteSound="recycle_building" minimumHeadroom="5.0" icon3Doffset="0 -0.01 0.76" icon3Dscale=".2" elevatedTilePlacement="false" dockArrowStyle="special" dockArrowSize="0.75">
+      <cfootprint width="2" height="2" />
+      <dfootprint width="3" height="3" />
+      <attachObj>
+        <entity nodeName="Bip01" binderType="DinoRecoveryBuilding_collision" />
+      </attachObj>
+      <stompData>
+        <delete>
+          <treat />
+          <bush />
+          <grass />
+          <thicket />
+          <wildflowers />
+          <fungi />
+          <watersurfacefoliage />
+          <Poop />
+        </delete>
+      </stompData>
+    </ZTPlacementData>
+  </shared>
+  <binder>
+    <BFBinder required="1">
+      <instance>
+        <ZTPhotoAnalysisComponent />
+      </instance>
+    </BFBinder>
+    <BFBinder repopulateMethod="byType">
+      <instance>
+        <ZTPlaceEntityComponent />
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="shadowObj">
+      <instance>
+        <BFPhysObj>
+          <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob.tga" baseNode="footprint" width="1.5" minLength="1.5" maxLength="3.25" minOffset="0" maxOffset=".5" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="mainObj">
+      <instance>
+        <BFPhysObj radiusOverride="4.50">
+          <BFActorComponent actorfile="entities/objects/buildings/DinoRecoveryBuilding/DinoRecoveryBuilding.bfm" switch="0 25 50" />
+          <BFGroundFitComponent heightOffset="0.0" maxTilt="50" />
+          <BFCollisionComponent grid="Bip01" isStaticActor="true" />
+          <BFDistanceCullComponent firstPersonOnly="true" cullDistance="100" />
+        </BFPhysObj>
+      </instance>
+      <shared>
+        <BFSharedPhysVars>
+          <virtualNodes>
+            <Dock_EnterRobot x="-1.5" y="-5.0" z="3" yaw="180" />
+            <Dock_EnterCrateTeam x="0" y="-5.0" z="2" yaw="180" />
+            <Dock_EnterTranq x="1.5" y="-5.0" z="1" yaw="180" />
+          </virtualNodes>
+        </BFSharedPhysVars>
+      </shared>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="base">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/DinoRecoveryBuilding/DinoRecoveryBuilding_base" switch="0 25 50" />
+          <BFGroundFitComponent heightOffset="0.0" />
+          <BFTerrainPaintComponent />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFBehaviorMgr behaviorVersion="1" />
+      </instance>
+    </BFBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFAICognitiveMgr>
+          <Sensors>
+            <ZTAISensor />
+            <BFAISensorSelf />
+          </Sensors>
+          <StateThinkers>
+            <ZTAIStateThinker>
+            </ZTAIStateThinker>
+          </StateThinkers>
+          <TaskThinkers>
+            <ZTAITaskThinker />
+          </TaskThinkers>
+        </BFAICognitiveMgr>
+      </instance>
+      <shared>
+        <BFAICogShared />
+      </shared>
+    </BFBinder>
+    <BFBinder>
+      <instance>
+        <ZTEconomyComponent cost="5000">
+          <ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+          <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+          <ZTTransaction name="upkeep" cost="500" period="monthly" type="debit" category="upkeep" />
+        </ZTEconomyComponent>
+      </instance>
+    </BFBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFGCollisionTester maxSlope=".01" />
+      </instance>
+    </BFBinder>
+  </binder>
+</BFTypedBinder>

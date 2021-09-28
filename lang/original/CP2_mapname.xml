@@ -1,0 +1,45 @@
+<ZT2Strings>
+   
+   <mapname>
+	<gobidesert>
+	Gobi Desert (S)
+	</gobidesert>
+	<frostyalps>
+	Frosty Alps (M)
+	</frostyalps>	
+	<americanprairie>
+	American Prairie (L)
+	</americanprairie>
+	<amazonbasin>
+	Amazon Basin (L)
+	</amazonbasin>
+	<fossilridge>
+	Fossil Ridge (L)
+	</fossilridge>	
+	<extinctjunior>
+	Extinct Zoo Junior (S)
+	</extinctjunior>	
+   </mapname>
+   
+   <mapdescription>
+   	<gobidesertdescription>
+   	Many fossil deposits of extinct animals have been discovered in the Gobi Desert. A waterfall and an oasis provide life-sustaining water resources and plant life.
+   	</gobidesertdescription>  	
+   	<americanprairiedescription>
+   	The prairies of North America sustain many animal species. Since the last Ice Age, and with the expanded use of prairie lands by humans, the species that live here continue to change.
+   	</americanprairiedescription> 	
+   	<frostyalpsdescription>
+   	This northern alpine site's craggy mountains and snowy peaks offer a challenging building adventure and amazing views for a zoo!
+   	</frostyalpsdescription>     	
+   	<amazonbasindescription>
+   	The flooded Amazon River has receded, exposing an area of rich wetlands. Waterfalls along the river make this a lush and exotic area for your zoo.
+   	</amazonbasindescription>
+   	<fossilridgedescription>
+   	Situated on a ridge where scrub land meets the forest, paleontologists unearthed fossil deposits here. 
+   	</fossilridgedescription>   	
+   	<extinctjuniordescription>
+   	Built especially for new zookeepers, this zoo has almost everything you need.  Just add animals and feed them!
+   	</extinctjuniordescription>     	
+   </mapdescription>
+
+</ZT2Strings>

@@ -1,0 +1,67 @@
+<BehaviorSets>
+   <GetSick>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_germs stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_germs attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSick>
+   <CureSick>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_germs stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSick>
+   <Diseased>
+      <subjects>
+         <Guest/>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpreadDisease_Guest weight="33"/>
+               <SpreadDisease_Animal weight="66"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Diseased>
+   <SpreadDisease_Guest>
+      <subjects>
+         <Guest/>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Disease" GiveTo="Guest" Radius="20" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </SpreadDisease_Guest>
+   <SpreadDisease_Animal>
+      <subjects>
+         <Guest/>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Disease" GiveTo="animal" Radius="15" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </SpreadDisease_Animal>
+</BehaviorSets>

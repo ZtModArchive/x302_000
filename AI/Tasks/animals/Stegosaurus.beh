@@ -1,0 +1,2256 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="60"/>
+               <DefaultHappy weight="30"/>
+               <DefaultVeryHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="10"/>
+               <DefaultHappy weight="60"/>
+               <DefaultVeryHappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultVeryHappy weight="10"/>
+               <Default_inWater_Happy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultVeryHappy weight="30"/>
+               <Default_inWater_Happy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="60"/>
+               <DefaultVeryUnhappy weight="10"/>
+               <DefaultUnhappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="10"/>
+               <DefaultVeryUnhappy weight="30"/>
+               <DefaultUnhappy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultVeryUnhappy weight="10"/>
+               <Default_inWater_Unhappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultVeryUnhappy weight="30"/>
+               <Default_inWater_Unhappy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultSleep>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultSleep>
+   <DefaultTreadWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swimming"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle"/>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultHappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Clicking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Click"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData social="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultVeryHappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData rest="-20"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultVeryHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClickAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Click"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <DefaultVeryUnhappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultVeryUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClickAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Sleep behSet="DefaultSleep"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Stand>
+   <Sick>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </VerySick>
+   <Sniff>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Sleep behSet="DefaultSleep"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sniff>
+   <TreadWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater>
+   <Drown>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Drown>
+   <ThrashWater>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </ThrashWater>
+   <Turn180>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180" interruptFlag="true"/>
+      </behaviors>
+   </Turn180>
+   <Drink>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <Eat>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </Eat>
+   <BrowseBush>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </BrowseBush>
+   <EnterFoodDish>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_FoodDish" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterTrough>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_FoodTrough" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterSubstratePile>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterSubstratePile> 
+   <UseSubstratePile>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <Lie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <Rest>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Rest>
+   <Sleep>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Yawn>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn>
+   <PushUp>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </PushUp>
+   <CrashDown>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </CrashDown>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Click weight="40"/>
+               <Call weight="20"/>
+               <Roar weight="30"/>
+               <Squeal weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <ContactCall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Click weight="50"/>
+               <Call weight="30"/>
+               <Roar weight="10"/>
+               <Squeal weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Click>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehAnimateRandom>
+	    <randomAnims>
+	       <Stand_ClickA weight="50"/>
+	       <Stand_ClickB weight="50"/>
+	    </randomAnims>
+	 </BFBehAnimateRandom>
+      </behaviors>
+   </Click>
+   <Call>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehAnimateRandom>
+	    <randomAnims>
+	       <Stand_CallA weight="50"/>
+	       <Stand_CallB weight="50"/>
+	    </randomAnims>
+	 </BFBehAnimateRandom>
+      </behaviors>
+   </Call>
+   <Roar>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Roar"/>
+      </behaviors>
+   </Roar>
+   <Squeal>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squeal"/>
+      </behaviors>
+   </Squeal>
+   <Sneeze>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sneeze_Stand"/>
+               <Lie behSet="Sneeze_Lie"/>
+               <Sleep behSet="Sneeze_Lie"/>
+               <Drown behSet="Drown"/>
+               <default behSet="Sneeze_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Stand>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Sneeze_Lie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sneeze"/>
+      </behaviors>
+   </Sneeze_Lie>
+   <Shake>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shake"/>
+      </behaviors>
+   </Shake>
+   <Roll>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Roll"/>
+      </behaviors>
+   </Roll>
+   <DockRubOther>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_RubOther" targetNode="Dock_RubOther2" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </DockRubOther> 
+   <WaitRubOther>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="30"/>
+      </behaviors>
+   </WaitRubOther> 
+   <RubSnap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </RubSnap>
+   <RubOther>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+      </behaviors>
+   </RubOther>
+   <FailureSet>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Roar weight="40"/>
+               <Squeal weight="30"/>
+               <CrashDown weight="10"/>
+               <PushUp weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FailureSet>
+   <Poop>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Poop>
+      <subjects>
+         <Stegosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Stegosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <EnterExtinctShelter1>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+   <EnterShadeStructure>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterShadeStructure> 
+   <UseShadeStructure>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </UseShadeStructure>
+   <ExitShadeStructure>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitShadeStructure>
+   <ChaseBall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <EnterBall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBarrel_Whap>
+   <UseBall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight weight="50"/>
+               <SwatBallLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall>
+   <SwatBallRight_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SwingTailRight"/>
+      </behaviors>
+   </SwatBallRight_Whap>
+   <SwatBallLeft_Whap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SwingTailLeft"/>
+      </behaviors>
+   </SwatBallLeft_Whap>
+   <SwatBallRight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SwingTailRight"/>
+      </behaviors>
+   </SwatBallRight>
+   <SwatBallLeft>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SwingTailLeft"/>
+      </behaviors>
+   </SwatBallLeft>
+   <ExitBall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <EnterTreeRub>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_Rub" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehDock subjectNode="Dock_RubSide" targetAnim="Stand_Idle" redock="true"/>
+      </behaviors>
+   </EnterTreeRub> 
+   <RubTree>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </RubTree>
+   <ExitTreeRub>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="3" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <tree/>
+               <ScratchPost/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </ExitTreeRub>
+   <MatingCall>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Click"/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </MatingCall>
+   <Mate>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <StartNest>
+      <subjects>
+         <Stegosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="SpawnNest"/>
+      </behaviors>
+   </StartNest>
+   <SpawnNest>
+      <subjects>
+         <Stegosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehSpawn spawnEntity="StegosaurusNest" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <BuildStegosaurusNest>
+      <subjects>
+         <Stegosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Eat_Idle weight="50"/>
+               <Eat_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSetAttribute>
+            <BFAITargetData f_ConstructionLevel="34"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BuildStegosaurusNest>
+   <FinishStegosaurusNest>
+      <subjects>
+         <Stegosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Eat_Idle weight="50"/>
+               <Eat_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehSpawn spawnEntity="StegosaurusNest_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </FinishStegosaurusNest>
+   <HatchEgg>
+      <subjects>
+         <StegosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <StegosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <StegosaurusNest_Egg/>
+         <StegosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <StegosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="StegosaurusNest_Egg" morphTargetEntityType="Stegosaurus_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <StegosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="StegosaurusNest_Egg" morphTargetEntityType="Stegosaurus_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <StegosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Stegosaurus_Young_F_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <StegosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Stegosaurus_Young_M_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperM>
+   <JustBorn>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squeal"/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </JustBorn>
+   <FightSide>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="ReadyFightSide_Approach" targetBehSet="ReadyFightSide_Wait"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide weight="50"/>
+               <FightLeftSide weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightSide>
+   <ReadyFightSide_Approach>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDock subjectNode="Dock_Fight" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </ReadyFightSide_Approach>
+   <ReadyFightSide_Wait>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </ReadyFightSide_Wait>
+   <FightRightSide>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Right"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight" resetPhase="true"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide_Win weight="50"/>
+               <FightRightSide_Lose weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightRightSide>
+   <FightRightSide_Win>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight_Lose" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="StandUp" targetBehSet="PushUp" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Win>
+   <FightRightSide_Lose>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight_Lose" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="PushUp" targetBehSet="StandUp" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Lose>
+   <FightLeftSide>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Left"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft" resetPhase="true"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightLeftSide_Win weight="50"/>
+               <FightLeftSide_Lose weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightLeftSide>
+   <FightLeftSide_Win>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft_Lose" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="StandUp" targetBehSet="PushUp" resetPhase="true"/>
+      </behaviors>
+   </FightLeftSide_Win>
+   <FightLeftSide_Lose>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft_Lose" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="PushUp" targetBehSet="StandUp" resetPhase="true"/>
+      </behaviors>
+   </FightLeftSide_Lose>
+   <DockSideFight_Right>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehDock subjectNode="Dock_Fight_Right" targetNode="Dock_FightWait_Right" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Right>
+   <DockSideFight_Left>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehDock subjectNode="Dock_Fight_Left" targetNode="Dock_FightWait_Left" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Left>
+   <WaitSideFight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </WaitSideFight>
+   <DockFight>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="medium" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <WaitFight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFight>
+   <FightSnap>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <DockFight>
+      <subjects>
+         <Stegosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Stegosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <DockPlayFight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetNode="p_PredatorFightOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <SwipeMed>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <DefendEqual>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <Fight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="HitRight"/>
+         <BFBehPlaySet behSet="HitRight"/>
+      </behaviors>
+   </Fight>
+   <FightHurt>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <GetHitRight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </GetHitRight>
+   <GetHitRight_Lose>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+      </behaviors>
+   </GetHitRight_Lose>
+   <GetHitLeft>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitLeft"/>
+      </behaviors>
+   </GetHitLeft>
+   <GetHitLeft_Lose>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitLeft"/>
+      </behaviors>
+   </GetHitLeft_Lose>
+   <HitRight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+      </behaviors>
+   </HitRight>
+   <HitLeft>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </HitLeft>
+   <StandUp>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+      </behaviors>
+   </StandUp>
+   <WaitAttack>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <AttackMed>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </AttackMed>
+   <DockAttacked>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="Node_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <WaitAttackGuest>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <DockAttackGuest>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <BashFence>
+      <subjects>
+         <Stegosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" radius="5" radiusKillType="fence" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFence>
+   <DestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EnterBuildingRight weight="50"/>
+               <EnterBuildingLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DestroyBuilding>
+   <EnterBuildingRight>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Right" targetAnim="Stand_Idle" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <BashFenceDestroyBuilding weight="33"/>
+               <SwingTailLeftDestroyBuilding weight="33"/>
+               <TailStrikeLeftDestroyBuilding weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EnterBuildingRight>
+   <EnterBuildingLeft>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Left" targetAnim="Stand_Idle" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwingTailRightDestroyBuilding weight="50"/>
+               <TailStrikeRightDestroyBuilding weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EnterBuildingLeft>
+   <BashFenceDestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFenceDestroyBuilding>
+   <SwingTailLeftDestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_SwingTailLeft" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </SwingTailLeftDestroyBuilding>
+   <SwingTailRightDestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehKill targetAnim="Stand_SwingTailRight" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </SwingTailRightDestroyBuilding>
+   <TailStrikeLeftDestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_TailStrikeLeft" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </TailStrikeLeftDestroyBuilding>
+   <TailStrikeRightDestroyBuilding>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehKill targetAnim="Stand_TailStrikeRight" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </TailStrikeRightDestroyBuilding>
+   <DestroyBuilding_Fail>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EnterBuildingRight_Fail weight="50"/>
+               <EnterBuildingLeft_Fail weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DestroyBuilding_Fail>
+   <EnterBuildingRight_Fail>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Right" targetAnim="Stand_Idle" locoSpeed="slow" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AttemptBash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </EnterBuildingRight_Fail>
+   <EnterBuildingLeft_Fail>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Left" targetAnim="Stand_Idle" locoSpeed="slow" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AttemptBash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+      </behaviors>
+   </EnterBuildingLeft_Fail>
+   <TranquilizedRampage>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="TranquilizedRampage_Land"/>
+               <water behSet="TranquilizedRampage_Water"/>
+               <underwater behSet="TranquilizedRampage_Water"/>
+               <default behSet="TranquilizedRampage_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </TranquilizedRampage>
+   <TranquilizedRampage_Land>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Roar">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Stand_2Lie"/>
+         <BFBehAnimate targetAnim="Lie_2Sleep">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <ZTBehViewEvent viewKey="Pos_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalTranquilizedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </TranquilizedRampage_Land>
+   <TranquilizedRampage_Water>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Drown_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Drown_Idle" playTime="15"/>
+      </behaviors>
+   </TranquilizedRampage_Water>
+   <LoopIdle>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopSleep>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <TestFence_Shocked>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+      </behaviors>
+   </TestFence_Shocked>
+   <TestFence_Safe>
+      <subjects>
+         <Stegosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+      </behaviors>
+   </TestFence_Safe>   
+</BehaviorSets>

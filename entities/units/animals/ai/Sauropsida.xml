@@ -1,0 +1,17 @@
+<BFTypedBinder binderType="Sauropsida" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida/>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+	<shared>
+		<BFAIEntityDataShared s_Endangerment="Extinct" b_Pees="false"/>
+	</shared>
+</BFTypedBinder>

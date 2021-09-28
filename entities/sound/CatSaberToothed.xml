@@ -1,0 +1,387 @@
+<soundtags>
+<!--NEW Saber SOUNDS-->
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_F_GruntRoar">
+         <snd name="entities/units/animals/Lion/Sound/Lion_Adult_F_GruntRoar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_RoarA">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_RoarA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_RoarB">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Lie_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Cough">
+         <snd name="entities/units/animals/Lion/Sound/Lion_Adult_Cough.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat_2Stand">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Eat_2Stand.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat_BiteA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Eat_BiteA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat_ChewGulp">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Eat_ChewGulp.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat_DrinkA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Eat_DrinkA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat_DrinkB">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Eat_DrinkB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_GroomPaw_B">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_GroomPaw_B.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Lie_EatA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Lie_EatA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Lie_EatB">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Lie_EatB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Lie_EatIdle">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Lie_EatIdle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Lie_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Lie_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Run_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Run_Roar.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Sit_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Sit_Roar.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_SleepPaws_2Lie">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_SleepPaws_2Lie.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_BiteHigh">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_BiteHigh.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_BiteLow">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_BiteLow.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_HitHigh">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_HitHigh.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_HitLow">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_HitLow.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_HitMed">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_HitMed.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_Roar.wav" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_RoarLong">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_RoarLong.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_Yawn.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+<!--young-->
+ <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_F_GruntRoar">
+         <snd name="entities/units/animals/Lion/Sound/Lion_Young_GruntRoar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_RoarA">
+         <snd name="entities/units/animals/Lion/Sound/Lion_Young_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Cough">
+         <snd name="entities/units/animals/Lion/Sound/Lion_Young_Cough.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+<BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat_2Stand">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Eat_2Stand.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat_BiteA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Eat_BiteA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat_ChewGulp">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Eat_ChewGulp.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat_DrinkA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Eat_DrinkA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat_DrinkB">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Eat_DrinkB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_GroomPaw_B">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_GroomPaw_B.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Lie_EatA">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Lie_EatA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Lie_EatB">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Lie_EatB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Lie_EatIdle">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Lie_EatIdle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Lie_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Lie_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Run_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Run_Roar.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Sit_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Sit_Roar.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_SleepPaws_2Lie">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_SleepPaws_2Lie.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_BiteHigh">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_BiteHigh.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_BiteLow">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_BiteLow.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_HitHigh">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_HitHigh.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_HitLow">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_HitLow.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_HitMed">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_HitMed.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_Roar">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_Roar.wav" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_RoarLong">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_RoarLong.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Stand_Yawn">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Young_F_Stand_Yawn.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+
+
+
+
+
+<!--SHARED TIGER BENGAL SOUNDS-->
+
+ <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Bit">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Bit.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Chew">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Chew.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_ChuffB">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_ChuffB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Eat">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Eat.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Hit">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Hit.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_PlayRoar">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Play_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Sleep">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Sleep.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Sneeze">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Sneeze.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Sniff">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Sniff.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Adult_Yawn">
+         <snd name="entities/units/animals/CatSaberToothed/sound/CatSaberToothed_Adult_F_Stand_Yawn.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+
+  <!--young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_PlayRoar">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Play_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Yawn">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Yawn.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Chew">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Chew.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_ChuffB">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_ChuffB.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Eat">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Eat.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Sleep">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Sleep.wav" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Sneeze">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Sneeze.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Sniff">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Sniff.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Hit">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Hit.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_Young_Bit">
+         <snd name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Bit.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+
+ <!--Shared Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CatSaberToothed_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   
+
+</soundtags>

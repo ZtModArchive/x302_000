@@ -1,0 +1,135 @@
+<BFTypedBinder binderType="EntertainerExtinct_Adult_F" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <Entertainer>
+                     <EntertainerExtinct>
+                        <EntertainerExtinct_Adult_F/>
+                     </EntertainerExtinct>
+                  </Entertainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head"/>
+				<parentObj parent="mainObj" child="gloveObj_Right" rottype="use" postype="use" attachnode="Bip01 R Finger0"/>
+				<parentObj parent="mainObj" child="gloveObj_Left" rottype="use" postype="use" attachnode="Bip01 L Finger0"/>
+				<parentObj parent="mainObj" child="tailObj" rottype="use" postype="use" attachnode="Bip01 Spine1"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 0.002026 0.637109" icon3Dscale="2.9"/>
+      <BFAIEntityDataShared b_Male="0" s_Zoopedia="zoopedia:zoopedia_entertainer:entry"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <position x="10" y="0" z="0"/>
+               <BFShadowLODComponent numLevels="1" switchingDists="30.0"/>
+               <BFActorComponent actorfile="entities\units\staff\EntertainerExtinct\EntertainerExtinct_Adult_F.bfm" scale="1.0"/>
+               <BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFBoundedObjectComponent>
+                  <minPoint x="0" y="0" z="-100"/>
+                  <maxPoint x="300" y="300" z="100"/>
+               </BFBoundedObjectComponent>
+               <BFCollisionComponent grid="Grid"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities/units/staff/EntertainerExtinct/Head_Entertainer_F" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="gloveObj_Right">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Gloves\Gloves_Entertainer_R" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+        <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="Entertainer_Head" image="entities\shared\Entertainer_Head2.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder> 
+      <BFNamedBinder binderName="gloveObj_Left">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Gloves\Gloves_Entertainer_L" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+        <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="Entertainer_Head" image="entities\shared\Entertainer_Head2.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>  
+      <BFNamedBinder binderName="tailObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Tail\Entertainer_Tail_M" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+        <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="Entertainer_Body" image="entities\shared\Entertainer_Body2.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>      
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\guest_blob.tga" baseNode="Bip01" width="1.0" minLength="1.0" maxLength="4.0" minOffset="0" maxOffset="1.0"/>
+            </BFPhysObj>
+         </instance>
+			<shared>
+            <BFTextTagMacrosComponent>
+               <MACROS>
+                  <macro name="Walky" text="anim 'Walk_Ahead'"/>
+                  <macro name="Walky2Standy" text="anim 'Walk_2Stand', anim'Stand_Idle'"/>
+                  <macro name="Standy2Walky" text="anim 'Stand_2Walk', anim 'Walk_TurnLeftA'"/>
+                  <macro name="TurnLeft180" text="anim 'Stand_TurnLeft90', anim 'Stand_TurnLeft90'"/>
+                  <macro name="TurnRight180" text="anim 'Stand_TurnRight90', anim 'Stand_TurnRight90'"/>
+                  <macro name="TurnLeft90" text="anim 'Stand_TurnLeft90'"/>
+                  <macro name="TurnRight90" text="anim 'Stand_TurnRight90'"/>
+               </MACROS>
+            </BFTextTagMacrosComponent>
+         </shared>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="200">
+               <ZTTransaction name="build" costType="parent" type="debit" category="staff_salaries"/>
+               <ZTTransaction name="salary" cost="200" period="monthly" type="debit" category="staff_salaries"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

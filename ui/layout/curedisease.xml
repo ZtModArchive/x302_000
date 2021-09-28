@@ -1,0 +1,334 @@
+<UILayout name="Cure Disease Mode">
+  <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len" />
+  <UIState active="normal" visible="hidden" />
+  <UIAspect string="">
+    <default image="" sound="">
+      <BFRect x="0" y="0" w="0" h="0" />
+      <BFColor r="255" g="255" b="255" a="255" />
+    </default>
+  </UIAspect>
+  <UIHotKeys />
+  <children>
+    <UILayout name="cure_mode_screen">
+      <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len" />
+      <UIState active="normal" visible="normal" />
+      <children>
+        <UIStatic name="cure_screen_dither">
+          <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+          <UIState active="normal" visible="hidden" />
+          <UIAspect alwayshit="never">
+            <default image="ui/shared/white1x1.dds">
+              <BFColor r="0" g="0" b="0" a="128" />
+            </default>
+          </UIAspect>
+          <UIHotKeys />
+        </UIStatic>
+        <UILayout name="research info layout">
+          <UIRegion x="855" y="200" w="147" h="49" xalign="min" yalign="min" walign="len" halign="len" />
+          <UIState active="normal" visible="normal" />
+          <UIAspect string="">
+            <default image="UI/minigames/disease_infopanel.dds" sound="">
+              <BFRect x="365" y="0" w="147" h="49" />
+            </default>
+          </UIAspect>
+          <children>
+            <UISlider name="Cure Research Bar" span="0">
+              <UIRegion x="19" y="12" w="109" h="27" />
+              <children>
+                <UIStatic>
+                  <UIRegion walign="max" halign="max" />
+                  <UIAspect>
+                    <default image="">
+                      <BFColor r="255" g="255" b="255" a="128" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+                <UIStatic name="thumb">
+                  <UIRegion w="0" h="100" halign="% min" />
+                  <UIAspect>
+                    <default image="UI/shared/white1x1.dds">
+                      <BFColor r="0" g="255" b="0" a="200" />
+                      <BFRect x="0" y="0" w="1" h="1" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+              </children>
+              <thumb name="thumb" axis="x" style="stretch">
+                <UIRegion x="0" y="0" w="100" h="0" walign="% min" halign="max" />
+              </thumb>
+            </UISlider>
+          </children>
+        </UILayout>
+        <UILayout name="cure info layout">
+          <UIRegion x="872" y="249" w="114" h="434" xalign="min" yalign="min" walign="len" halign="len" />
+          <UIState active="normal" visible="normal" />
+          <children>
+            <UILayout name="Cure Display">
+              <UIRegion x="0" y="0" w="114" h="102" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIAspect alwayshit="never" />
+              <children>
+                <UIMultiIcon name="Cure Panel">
+                  <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIAspect alwayshit="never" />
+                  <images>
+                    <entry key="not_found" image="ui/minigames/disease_back_tan.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                    <entry key="correct" image="ui/minigames/disease_back_green.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                  </images>
+                </UIMultiIcon>
+                <UILayout name="Cure Well" template="3d_displayfield">
+                  <UIRegion x="15" y="14" w="-15" h="-16" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="0" y="0" w="309" h="173" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UILayout>
+                <UIStatic name="Cure Entity Image Display">
+                  <UIRegion x="20" y="19" w="-20" h="-21" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="3" y="5" w="57" h="48" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+                <UIText name="Cure Panel Label">
+                  <UIRegion x="7" y="-15" w="-7" h="0" xalign="min" yalign="max" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect locid="diseasemode:cure_panel_label">
+                    <default>
+                      <BFFont align="right">
+                        <BFColor r="255" g="255" b="255" a="255" />
+                      </BFFont>
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIText>
+              </children>
+            </UILayout>
+            <UILayout name="Cause Display">
+              <UIRegion x="0" y="101" w="114" h="102" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIAspect alwayshit="never" />
+              <children>
+                <UIMultiIcon name="Cause Panel">
+                  <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIAspect alwayshit="never" />
+                  <images>
+                    <entry key="not_found" image="ui/minigames/disease_back_tan.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                    <entry key="correct" image="ui/minigames/disease_back_green.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                  </images>
+                </UIMultiIcon>
+                <UILayout name="Cause Well" template="3d_displayfield">
+                  <UIRegion x="15" y="14" w="-15" h="-16" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="0" y="0" w="309" h="173" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UILayout>
+                <UIStatic name="Cause Entity Image Display">
+                  <UIRegion x="20" y="19" w="-20" h="-21" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="3" y="5" w="57" h="48" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+                <UIText name="Cause Panel Label">
+                  <UIRegion x="7" y="-15" w="-7" h="0" xalign="min" yalign="max" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect locid="diseasemode:cause_panel_label">
+                    <default>
+                      <BFFont align="right">
+                        <BFColor r="255" g="255" b="255" a="255" />
+                      </BFFont>
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIText>
+              </children>
+            </UILayout>
+            <UILayout name="Sample Display">
+              <UIRegion x="0" y="202" w="114" h="102" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIAspect alwayshit="never" />
+              <children>
+                <UIMultiIcon name="Sample Panel">
+                  <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIAspect alwayshit="never" />
+                  <images>
+                    <entry key="not_found" image="ui/minigames/disease_back_tan.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                    <entry key="correct" image="ui/minigames/disease_back_green.dds">
+                      <BFRect x="0" y="0" w="114" h="102" />
+                    </entry>
+                  </images>
+                </UIMultiIcon>
+                <UILayout name="Sample Well" template="3d_displayfield">
+                  <UIRegion x="15" y="14" w="-15" h="-16" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="0" y="0" w="309" h="173" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UILayout>
+                <UIStatic name="Sample Entity Image Display">
+                  <UIRegion x="20" y="19" w="-20" h="-21" xalign="min" yalign="min" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="3" y="5" w="57" h="48" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+                <UIText name="Sample Panel Label">
+                  <UIRegion x="7" y="-15" w="-7" h="0" xalign="min" yalign="max" walign="max" halign="max" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect locid="diseasemode:sample_panel_label">
+                    <default>
+                      <BFFont align="right">
+                        <BFColor r="255" g="255" b="255" a="255" />
+                      </BFFont>
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIText>
+              </children>
+            </UILayout>
+            <UIMultiIcon name="Indicator Panel">
+              <UIRegion x="0" y="303" w="114" h="128" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIAspect alwayshit="never" />
+              <images>
+                <entry key="not_found" image="ui/minigames/disease_bottom_tan.dds">
+                  <BFRect x="1" y="0" w="114" h="128" />
+                </entry>
+                <entry key="incorrect" image="ui/minigames/disease_bottom_red.dds">
+                  <BFRect x="1" y="0" w="114" h="128" />
+                </entry>
+                <entry key="correct" image="ui/minigames/disease_bottom_green.dds">
+                  <BFRect x="1" y="0" w="114" h="128" />
+                </entry>
+              </images>
+            </UIMultiIcon>
+          </children>
+        </UILayout>
+        <UILayout name="user feedback layout">
+          <UIRegion x="505" y="562" w="357" h="87" xalign="min" yalign="min" walign="len" halign="len" />
+          <UIState active="normal" visible="normal" />
+          <UIAspect string="">
+            <default image="UI/minigames/disease_infopanel.dds" sound="">
+              <BFRect x="0" y="0" w="357" h="87" />
+            </default>
+          </UIAspect>
+          <children>
+            <UIListBox name="Research Progress Layout" template="panel">
+              <UIRegion x="19" y="16" w="289" h="53" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIState active="normal" visible="normal" />
+              <UIAspect>
+                <default image="" sound="" />
+              </UIAspect>
+              <children>
+                <UIText name="Research Progress" autosize="true">
+                  <UIRegion x="0" y="0" w="268" h="0" xalign="min" yalign="min" walign="len" halign="len" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect locid="">
+                    <default>
+                      <BFFont>
+                        <BFColor r="250" g="250" b="200" a="255" />
+                      </BFFont>
+                    </default>
+                  </UIAspect>
+                  <text format="diseasemode:format" type="multi" />
+                </UIText>
+              </children>
+            </UIListBox>
+            <UILayout name="move icon">
+              <UIRegion x="321" y="5" w="32" h="32" xalign="min" yalign="min" walign="max" halign="max" />
+              <UIAspect>
+                <default />
+              </UIAspect>
+              <children>
+                <UILayout>
+                  <UIRegion x="0" y="0" w="32" h="32" xalign="min" yalign="min" walign="len" halign="len" />
+                  <UIAspect alwayshit="true">
+                    <default image="ui\shared\moveable.dds">
+                      <BFRect x="0" y="0" w="32" h="32" />
+                    </default>
+                  </UIAspect>
+                </UILayout>
+              </children>
+            </UILayout>
+            <UIDrag bounded="true" cursor="movebox.cur">
+              <UIRegion x="321" y="5" w="32" h="32" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIAspect alwayshit="true">
+                <default image="ui/shared/white1x1.dds">
+                  <BFRect x="0" y="0" w="1" h="1" />
+                  <BFColor r="255" g="255" b="255" a="0" />
+                </default>
+                <standard>
+                  <activated x="0" y="0" w="1" h="1">
+                    <BFColor r="224" g="188" b="95" a="64" />
+                  </activated>
+                </standard>
+              </UIAspect>
+              <drag>
+                <UIDragCommand msg="UI_ADD_POS" />
+              </drag>
+              <doubleclick>
+                <event msg="UI_SET_POS" data="BFPoint" x="500" y="562" />
+                <event msg="UI_SET_SIZE" data="BFPoint" x="357" y="87" />
+              </doubleclick>
+            </UIDrag>
+            <UIButton name="Disease Hint Button">
+              <UIRegion x="312" y="39" w="48" h="48" xalign="min" yalign="min" walign="len" halign="len" />
+              <UIState active="normal" visible="normal" />
+              <UIHelpInfo name="" short="" long="" help="" ids="diseasemode:disease_hint_button" />
+              <UIAspect string="">
+                <default image="ui\minigames\button_hint.dds" sound="">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                  <BFColor r="255" g="255" b="255" a="255" />
+                </default>
+                <standard>
+                  <normal>
+                    <BFRect x="0" y="0" w="64" h="64" />
+                  </normal>
+                  <highlighted>
+                    <BFRect x="0" y="64" w="64" h="64" />
+                  </highlighted>
+                  <activated sound="">
+                    <BFRect x="64" y="0" w="64" h="64" />
+                  </activated>
+                  <disabled>
+                    <BFRect x="64" y="64" w="64" h="64" />
+                  </disabled>
+                </standard>
+              </UIAspect>
+              <UIHotKeys />
+              <activate>
+                <event msg="ZT_INCREMENT_DISEASE_HINT" />
+              </activate>
+            </UIButton>
+          </children>
+        </UILayout>
+      </children>
+    </UILayout>
+  </children>
+</UILayout>

@@ -1,0 +1,71 @@
+﻿<BFTypedBinder binderType="DodoRock">
+	<types>
+		<entity>
+			<enrichment>
+				<treat>
+					<DodoRock />
+				</treat>
+			</enrichment>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="2.3 -0.8 0.184329" icon3Dscale="1.024034" autoFootprint="false">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\enrichment\DodoRock\DodoRock_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:DodoRock" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DodoRock" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\enrichment\DodoRock\DodoRock_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DodoRock" />
+			</on>
+		</UIToggleButton>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared s_Product="Extinct" s_prop="DodoRock_Prop" s_uisort="ea" b_Sniffable="true" s_Zoopedia="zoopedia:zoopedia_dodorock:entry" b_Researchable="true" f_researchUnlockTime="45" f_researchCost="200" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="footprint" width="0.3" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/DodoRock/DodoRock_Full" scale="0.13" switch="0 18 36" />
+					<BFRealPhysicsComponent shapeRadius="0.075" rollFrictionCoef="0.05" bounceCoef="0.7" maxSplashStrength="0.1" displacableByObjects="false" />
+					<BFGroundFitComponent heightOffset="0" floatOnWater="true" waterOffset="-0.02" />
+					<BFCollisionComponent grid="footprint" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="50">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

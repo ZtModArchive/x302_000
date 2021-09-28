@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} snd 'Dig_2StandItem'"/>
+   <key frame="56" text="{Bip01 R Hand} destroy Pick"/>
+   <key frame="114" text="{Bip01 R Finger0} attach object"/>
+</TEXTKEY>

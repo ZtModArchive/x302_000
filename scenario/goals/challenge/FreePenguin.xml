@@ -1,0 +1,16 @@
+<BFScenarioGroup name="freepenguinrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="freepenguin" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHKillerPenguin" overview="Challengetext:CHKillerPenguin" />
+				<success locid="Challengetext:CHKillerPenguinSuccessShort" overview="Challengetext:CHKillerPenguinSuccess" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/FreePenguin.lua" entry="evalFreePenguin" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/FreePenguin.lua" entry="completeFreePenguin" />
+			</success>		
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

@@ -1,0 +1,200 @@
+<BFTypedBinder binderType="Entertainer" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                 <Entertainer/>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData tankPlacement="true" waterPlacement="true" iconObj="headObj" icon3Doffset="0 0.002026 0.637109" icon3Dscale="2.9" displayFootprint="false" deletable="false" dockArrowStyle="none" gridSnap="false" placeable="false">
+         <stompData>
+            <allow>
+               <wildflowers/>
+               <watersurfacefoliage/>
+               <grass/>
+               <fungi/>
+               <bush/>
+               <Poop/>
+               <TrashGround/>
+               <RecyclableGround/>
+               <StageEntertainer/>
+               <TankPlatform/>
+               <ShowPlatform/>
+               <RockIsland_Shelter />
+               <DesertIsland_Shelter />
+            </allow>
+            <prevent>
+               <log/>
+               <thicket/>
+               <flowerbed/>
+            </prevent>
+         </stompData>
+      </ZTPlacementData>
+      <BFAIEntityDataShared f_sensorRadius="48" s_Species="people" f_EdNormal="6" f_EdDonNormal="40" b_CanClimbStaffCenterLadder="false"/>
+      <ZTAIViewComponent>
+         <viewDataTable>
+            <ZTAIViewData name="Entertainer_Event" viewScore="10" donateScore="5"/>
+         </viewDataTable>
+      </ZTAIViewComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj radiusOverride="0.40">
+               <BFActorComponent switch="0 6 32 5000 5001" minSwitch="0 6 32 5000 5001"/>
+            </BFPhysObj>
+         </instance>
+	 <shared>
+	    <BFSharedPhysVars  isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25" splashScale="0.6">
+	       <virtualNodes>
+	          <Dock_Stage y="0.5" yaw="180" />
+	          <Node_EntertainGuest y="-1" yaw="180" />
+	          <Node_HugYoungGuest y="0.2" yaw="180" />
+	          <Node_PictureYoungGuest y="0.1" yaw="180" />
+	       </virtualNodes>
+	    </BFSharedPhysVars>
+	 </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Lion_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\Lion_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Giraffe_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\Giraffe_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="WildDogAfrican_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\WildDogAfrican_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="WildDogAfrican_Puppet2" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\WildDogAfrican_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="BirdSecretary_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\BirdSecretary_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="SharkReefBlacktip_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\SharkReefBlacktip_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="SharkWhite_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\SharkWhite_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Narwhal_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\Narwhal_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Thylacine_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\Thylacine_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="WarthogGiant_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\WarthogGiant_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="CatSaberToothed_Puppet" required="0">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent modelfile="entities\objects\items\gifts\CatSaberToothed_Gift" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+		<BFAICognitiveMgr>
+		   <Sensors>
+			  <ZTAISensor/>
+			  <BFAISensorSelf/>
+		   </Sensors>
+		   <TaskThinkers>
+			  <ZTAITaskThinker/>
+		   </TaskThinkers>
+		</BFAICognitiveMgr>
+	 </instance>
+	 <shared>
+		<BFAICogShared>
+		   <BFAINoPerceive>
+			  <fence/>
+			  <path/>
+			  <foliage/>
+		   </BFAINoPerceive>
+		</BFAICogShared>
+	 </shared>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester escapeBuffer="0.1" radius="0.1f" motionClass="staffMover" waterScore="10" useFastPathing="true"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Stand"/>
+                     <slow name="Walk" minAnimSpeed="1.0" maxAnimSpeed="1.4">
+                        <waggle name="Walk_Ahead" wag="0.1"/>
+                     </slow>
+                     <medium name="Walk" minAnimSpeed="1.4" maxAnimSpeed="1.6"/>
+                     <fast name="Run"/>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="water" required="1">
+               <instance>
+                  <BFLocoAnimate version="1" stationaryAnim="TreadWater_Idle">
+                     <stop name="TreadWater"/>
+                     <slow name="Swim"/>
+                     <medium name="Swim"/>
+                     <fast name="Swim"/>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+	</binder>
+</BFTypedBinder>

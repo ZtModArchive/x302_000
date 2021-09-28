@@ -1,0 +1,227 @@
+<soundtags>
+   <!--ADULT MALE-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Eat">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_EatA.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_QuestionBark">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_QuestionBark.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_HootBark">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_QuestionBark.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Drum">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Drum.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Chuckle">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Chuckle.wav" volume=".8" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Sleep">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Sleep.wav" volume="1" mindist="4" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Growl">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_GrowlA.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Kiss">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Kiss.wav" volume="1" mindist="4" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Scream">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_ScreamA.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Sneeze">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Sneeze.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Grunt">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_GruntA.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Belch">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Belch.wav" volume="1" mindist="6" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Yawn">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Yawn.wav" volume="1" mindist="4" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_M_Spit">
+         <snd name="entities/units/animals/CamelDromedary/sound/CamelDromedary_Adult_SpitA.wav" volume="1" mindist="4" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_Stand_HootBark">
+         <snd name="entities/units/animals/Gigantopithecus/sound/Gigantopithecus_Adult_M_Stand_HootBark.wav" volume="1" mindist="20" maxdist="50" pitch=".5"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+
+   <!--ADULT FEMALE-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Eat">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_EatA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_QuestionBark">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_QuestionBark.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_HootBark">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_QuestionBark.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Drum">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Drum.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Chuckle">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Chuckle.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Sleep">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Sleep.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Growl">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_GrowlA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Kiss">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Kiss.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Scream">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_ScreamA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Sneeze">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Sneeze.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Grunt">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_GruntA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Belch">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Belch.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Yawn">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_Yawn.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Adult_F_Spit">
+         <snd name="entities/units/animals/CamelDromedary/sound/CamelDromedary_Adult_SpitA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Eat">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_EatA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_QuestionBark">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_QuestionBark.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Drum">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Drum.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Chuckle">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Chuckle.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Sleep">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Sleep.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Growl">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_GrowlA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Kiss">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Kiss.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Scream">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_ScreamA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Sneeze">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Sneeze.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Belch">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Belch.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Yawn">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Yawn.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_Young_Grunt">
+         <snd name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_GruntA.wav" volume="1.2" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Shared Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Gigantopithecus_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key time=".4" text="{Bip01 Head} snd 'Stand_DartAnimal'"/>
+   <key frame="1" text="{Bip01 R Finger0} create DartGun"/>
+   <key frame="65" text="{Bip01 R Finger0} destroy DartGun"/>   
+</TEXTKEY>

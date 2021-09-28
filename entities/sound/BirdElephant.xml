@@ -1,0 +1,234 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Attacked_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Attacked_Idle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Eat_ChewGulp">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Eat_ChewGulp.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Eat_Drink">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Eat_Drink.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Eat_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Eat_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_EatHigh_ChewGulp">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_EatHigh_ChewGulp.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_EatHigh_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_EatHigh_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Graze_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Graze_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Run_JumpFence">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Run_JumpFence.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Sit_DustBathe">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Sit_DustBathe.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Sit_Yawn">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Sit_Yawn.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Sleep_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_2Attacked.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_2Sit_KnockedDown">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_2Sit_KnockedDown.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Beak">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Beak.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Click">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Click.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Hiss">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Hiss.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_KickLeft">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_KickLeft.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_MateDance">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_MateDance.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Scratch">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Scratch.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Snort">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Snort.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Squawk">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Squawk.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Adult_F_Stand_Yawn.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Attacked_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Attacked_Idle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Eat_ChewGulp">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Eat_ChewGulp.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Eat_Drink">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Eat_Drink.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Eat_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Eat_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_EatHigh_ChewGulp">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_EatHigh_ChewGulp.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_EatHigh_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_EatHigh_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Graze_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Graze_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Run_JumpFence">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Run_JumpFence.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Sit_DustBathe">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Sit_DustBathe.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Sit_Yawn">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Sit_Yawn.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Sleep_Idle">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Sleep_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_2Attacked">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_2Attacked.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_2Sit_KnockedDown">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_2Sit_KnockedDown.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Beak">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Beak.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Click">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Click.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Hiss">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Hiss.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_KickLeft">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_KickLeft.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_MateDance">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_MateDance.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Scratch">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Scratch.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Snort">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Snort.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Squawk">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Squawk.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="BirdElephant_Young_Stand_Yawn">
+         <snd name="entities/units/animals/BirdElephant/sound/BirdElephant_Young_F_Stand_Yawn.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

@@ -1,0 +1,19 @@
+<ZTPuzzle animal="Ankylosaurus" level="4" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.84" />
+    <ZTPuzzlePiece texture="02_Jaw" node="Piece02" entityScale="0.92" />
+    <ZTPuzzlePiece texture="03_Neck" node="Piece03" entityScale="0.92" />
+    <ZTPuzzlePiece texture="04_Torso" node="Piece04" entityScale="1.84" />
+    <ZTPuzzlePiece texture="05_ArmRight" node="Piece05" entityScale="0.92" />
+    <ZTPuzzlePiece texture="06_ArmLeft" node="Piece06" entityScale="0.92"/>
+    <ZTPuzzlePiece texture="07_Torso" node="Piece07" entityScale="1.84" />
+    <ZTPuzzlePiece texture="08_Torso" node="Piece08" entityScale="1.84" />
+    <ZTPuzzlePiece texture="09_HipsLower" node="Piece09" entityScale="0.92" />
+    <ZTPuzzlePiece texture="10_TailBase" node="Piece10" entityScale="1.84" />
+    <ZTPuzzlePiece texture="11_Tail" node="Piece11" entityScale="1.84" />
+    <ZTPuzzlePiece texture="12_TailClub" node="Piece12" entityScale="1.84"/>
+    <ZTPuzzlePiece texture="13_LegLeft" node="Piece13" entityScale="0.92" />
+    <ZTPuzzlePiece texture="14_LegRight" node="Piece14" entityScale="0.92" />
+    <ZTPuzzlePiece texture="15_HipsUpper" node="Piece15" entityScale="1.84"/>
+  </pieces>
+</ZTPuzzle>

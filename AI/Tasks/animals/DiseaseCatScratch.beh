@@ -1,0 +1,102 @@
+<BehaviorSets>
+   <GetSickCatScratch>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_itch stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_itch attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickCatScratch>
+   <CureSickCatScratch>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_itch stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickCatScratch>
+   <Diseased_CatScratch>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_GetCatScratchDisease" GiveTo="Felidae" Radius="15" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </Diseased_CatScratch>
+   <EnterTreeScratch>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Swipe" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTreeScratch>
+   <ScratchTree>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ScratchTree"/>
+      </behaviors>
+   </ScratchTree>
+   <ExitTreeScratch>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </ExitTreeScratch>
+   <PlayLog>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <ScratchLog weight="50"/>
+               <LieSearchLog weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </PlayLog>
+   <ScratchLog>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ScratchLogHigh weight="50"/>
+               <Stand_ScratchLogLow weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ScratchLog>
+   <LieSearchLog>
+      <subjects>
+         <Felidae/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_SearchLog" playTime="5"/>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="5"/>
+         <BFBehAnimate targetAnim="Lie_SearchLog" playTime="5"/>
+      </behaviors>
+   </LieSearchLog>
+</BehaviorSets>

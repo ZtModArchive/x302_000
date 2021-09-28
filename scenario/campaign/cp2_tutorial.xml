@@ -1,0 +1,6 @@
+<BFCampaign name="Tutoriallabels:cp2_campaignname" xpack="3" tutorial="true">
+   <entry name="Tutoriallabels:cp2_T1" short="Tutoriallabels:cp2_T1short" key="cp2tutorialone" scenario="scenario\goals\cp2_tutorial1.xml" map="cp2tutorialone" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:cp2_T1overviewshort" state="unlocked"/>
+   <entry name="Tutoriallabels:cp2_T2" short="Tutoriallabels:cp2_T2short" key="cp2tutorialtwo" scenario="scenario\goals\cp2_tutorial2.xml" map="cp2tutorialtwo" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:cp2_T2overviewshort" state="unlocked"/>
+   <entry name="Tutoriallabels:cp2_T3" short="Tutoriallabels:cp2_T3short" key="cp2tutorialthree" scenario="scenario\goals\cp2_tutorial3.xml" map="cp2tutorialthree" cash="100000" difficulty="difficulty:easy" description="Tutoriallabels:cp2_T3overviewshort" state="unlocked"/>
+   
+</BFCampaign>

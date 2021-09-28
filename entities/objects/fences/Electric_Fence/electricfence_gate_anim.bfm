@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\fences\Electric_Fence\electricfence_gate_anim.bfb">
+  <animation anim="entities\objects\fences\Electric_Fence\electricfence_gate_anim_Bip01_close.bf" animName="Bip01_close" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\fences\Electric_Fence\electricfence_gate_anim_Bip01_open.bf" animName="Bip01_open" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="electricfence_gate_anim" version="1">
+    <node name="Bip01">
+      <table>
+        <Bip01_close />
+        <Bip01_open />
+      </table>
+    </node>
+  </Graph>
+</BFM>

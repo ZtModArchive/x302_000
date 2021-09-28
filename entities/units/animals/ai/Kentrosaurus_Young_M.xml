@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Kentrosaurus_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Stegosauridae>
+                        <Kentrosaurus>
+                           <Kentrosaurus_Young>
+                              <Kentrosaurus_Young_M/>
+                           </Kentrosaurus_Young>
+                        </Kentrosaurus>
+                     </Stegosauridae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Kentrosaurus_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

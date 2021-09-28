@@ -1,0 +1,136 @@
+<BFTypedBinder binderType="LargeExtinctShelter_Shelter">
+	<types>
+		<entity>
+			<shelters>
+				<LargeExtinctShelter_Shelter />
+			</shelters>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01" />
+				<parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02" />
+				<parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03" />
+				<parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04" />
+				<parentObj parent="mainObj" child="biomedetail_05" rottype="ignore" postype="use" attachnode="biomedetail_05" />
+				<parentObj parent="mainObj" child="biomedetail_06" rottype="ignore" postype="use" attachnode="biomedetail_06" />
+				<parentObj parent="mainObj" child="biomedetail_07" rottype="ignore" postype="use" attachnode="biomedetail_07" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\shelters\LargeExtinctShelter_Shelter\LargeExtinctShelter_Shelter_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:LargeExtinctShelter_Shelter" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="LargeExtinctShelter_Shelter" />
+			</on>
+		</UIToggleButton>
+		<UIToggleButton template="researchentity">
+			<UIAspect>
+				<default image="entities\objects\shelters\LargeExtinctShelter_Shelter\LargeExtinctShelter_Shelter_icon.dds" />
+			</UIAspect>
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="LargeExtinctShelter_Shelter" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Researchable="true" s_Product="Extinct" f_FameReq="40" s_uisort="pd" s_Zoopedia="zoopedia:zoopedia_largeextinctshelter_shelter:entry" f_researchUnlockTime="90" f_researchCost="800" />
+		<ZTTourData>
+			<biome_grasslands value="5" />
+			<shelter value="7" />
+		</ZTTourData>
+		<ZTPlacementData icon3Doffset="-0.35 0.1 0.6" icon3Dscale="0.15" dockArrowStyle="special" dockArrowSize="1.5" minimumHeadroom="3.0" autoFootprint="false">
+			<cfootprint width="4" height="4" />
+			<dfootprint width="6" height="6" />
+		</ZTPlacementData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="6" length="4" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/shelters/LargeExtinctShelter_Shelter/LargeExtinctShelter_Shelter" />
+					<BFTravAnimPathComponent actorfile="entities\objects\shelters\LargeExtinctShelter_Shelter\LargeExtinctShelter_Shelter_TAP.bfm" />
+					<BFGroundFitComponent heightOffset="0.1" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_01">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_02">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_03">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_04">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_05">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_06">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="biomedetail_07">
+			<instance>
+				<BFPhysObj>
+					<BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="TAP">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterExtinctShelter1" useBehSet="UseExtinctShelter" exitBehSet="ExitExtinctShelter1" targetNode="Bip01_DockNode01_EnterA" exclusiveID="ExtinctShelter"/>
+						<BFGEntityContainerSlot enterBehSet="EnterExtinctShelter2" useBehSet="UseExtinctShelter" exitBehSet="ExitExtinctShelter2" targetNode="Bip01_DockNode03_EnterB" exclusiveID="ExtinctShelter"/>
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1500">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

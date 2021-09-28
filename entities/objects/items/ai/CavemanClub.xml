@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="CavemanClub">
+   <types>
+      <entity>
+         <item>
+            <CavemanClub/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_CavemanClub_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:CavemanClub"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/items/CavemanClub/CavemanClub" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

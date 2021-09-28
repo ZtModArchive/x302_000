@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Doedicurus_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Edentata>
+                     <Glyptodontidae>
+                        <Doedicurus>
+                           <Doedicurus_Young>
+                              <Doedicurus_Young_F/>
+                           </Doedicurus_Young>
+                        </Doedicurus>
+                     </Glyptodontidae>
+                  </Edentata>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Doedicurus_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

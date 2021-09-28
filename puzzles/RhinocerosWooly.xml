@@ -1,0 +1,19 @@
+<ZTPuzzle animal="RhinocerosWooly" level="4" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_TuskBig" node="Piece01" entityScale="1.72" />
+    <ZTPuzzlePiece texture="02_TuskSmall" node="Piece02" entityScale="0.86" />
+    <ZTPuzzlePiece texture="03_Head" node="Piece03" entityScale="1.72" />
+    <ZTPuzzlePiece texture="04_Jaw" node="Piece04" entityScale="1.72" />
+    <ZTPuzzlePiece texture="05_Neck" node="Piece05" entityScale="1.72" />
+    <ZTPuzzlePiece texture="06_Torso" node="Piece06" entityScale="1.72"/>
+    <ZTPuzzlePiece texture="07_ArmsUpper" node="Piece07" entityScale="0.86" />
+    <ZTPuzzlePiece texture="08_ArmsLower" node="Piece08" entityScale="0.86" />
+    <ZTPuzzlePiece texture="09_ArmRightHand" node="Piece09" entityScale="0.86" />
+    <ZTPuzzlePiece texture="10_ArmLeftHand" node="Piece10" entityScale="1.72" />
+    <ZTPuzzlePiece texture="11_Hips" node="Piece11" entityScale="1.72" />
+    <ZTPuzzlePiece texture="12_Tail" node="Piece12" entityScale="0.86"/>
+    <ZTPuzzlePiece texture="13_LegRightLower" node="Piece13" entityScale="0.43" />
+    <ZTPuzzlePiece texture="14_LegLeftFoot" node="Piece14" entityScale="0.86" />
+    <ZTPuzzlePiece texture="15_LegRightFoot" node="Piece15" entityScale="0.86"/>
+  </pieces>
+</ZTPuzzle>

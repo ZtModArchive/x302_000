@@ -1,0 +1,19 @@
+<ZTPuzzle animal="Dimetrodon" level="4" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="0.92" />
+    <ZTPuzzlePiece texture="02_Jaw" node="Piece02" entityScale="0.92" />
+    <ZTPuzzlePiece texture="03_Neck" node="Piece03" entityScale="1.84" />
+    <ZTPuzzlePiece texture="04_HandRight" node="Piece04" entityScale="0.92" />
+    <ZTPuzzlePiece texture="05_Torso" node="Piece05" entityScale="0.92" />
+    <ZTPuzzlePiece texture="06_Torso" node="Piece06" entityScale="0.92"/>
+    <ZTPuzzlePiece texture="07_Torso" node="Piece07" entityScale="1.84" />
+    <ZTPuzzlePiece texture="08_Torso" node="Piece08" entityScale="0.92" />
+    <ZTPuzzlePiece texture="09_Hips" node="Piece09" entityScale="1.84" />
+    <ZTPuzzlePiece texture="10_TailBase" node="Piece10" entityScale="1.84" />
+    <ZTPuzzlePiece texture="11_Tail" node="Piece11" entityScale="0.92" />
+    <ZTPuzzlePiece texture="12_TailEnd" node="Piece12" entityScale="0.92"/>
+    <ZTPuzzlePiece texture="13_Foot" node="Piece13" entityScale="0.92" />
+    <ZTPuzzlePiece texture="14_Fin" node="Piece14" entityScale="1.84" />
+    <ZTPuzzlePiece texture="15_Fin" node="Piece15" entityScale="1.84"/>
+  </pieces>
+</ZTPuzzle>

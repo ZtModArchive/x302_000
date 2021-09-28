@@ -1,0 +1,558 @@
+<soundtags>
+
+   <!--EXTINCT ENTERTAINER-->
+
+   <!--MALE ENTERTAINER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle.wav" volume="0.5" mindist="8" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle2.wav" volume="0.3" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle3.wav" volume="0.5" mindist="6" maxdist="30" />
+      </BF3DSndFactory>     
+     <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle5">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle5.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle6">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle6.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>  
+     <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle7">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle7.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle8">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle8.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Dance_Idle9">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle9.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftChaseRight">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftChaseRight2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftChaseRight3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftChaseRight4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_LeftConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_2Stand">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_2Stand.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_2Stand2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_2Stand2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>     
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_Bow">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_Bow2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_Bow3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_PuppetShow_Bow4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightChaseLeft">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightChaseLeft2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightChaseLeft3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightChaseLeft4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerExtinct_Adult_M_RightConverse4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_2Puppet">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_2Puppet2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet2.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_2Puppet3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet3.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_BackFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_BackFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_BreakDance">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_BreakDance.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_ForwardFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_ForwardFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_Robot">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_Robot.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_TellJokeBad">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeBad.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_TellJokeGood">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeGood.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_M_Stand_TellJokeGood2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeGood2.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+
+<!--FEMALE ENTERTAINER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle.wav" volume="0.3" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle2.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle3.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle4.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle5">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle5.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle6">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle6.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Dance_Idle7">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle7.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftChaseRight">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftChaseRight2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftChaseRight3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      </BFSoundtag>
+    <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_LeftConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_PuppetShow_2Stand">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_2Stand.wav" volume="0.3" mindist="4" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_PuppetShow_2Stand2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_2Stand2.wav" volume="0.3" mindist="4" maxdist="20" />
+      </BF3DSndFactory>     
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_PuppetShow_Bow">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_PuppetShow_Bow2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_PuppetShow_Bow3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     </BFSoundtag>
+     <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_RightChaseLeft">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightChaseLeft.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_RightChaseLeft2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightChaseLeft2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_RightConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerExtinct_Adult_F_RightConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerExtinct_Adult_F_RightConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_2Puppet">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_2Puppet.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_2Puppet2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_2Puppet2.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_BackFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BackFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_BreakDance">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BreakDance.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_ForwardFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_ForwardFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_Robot">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_Robot.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_TellJokeBad">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeBad.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerExtinct_Adult_F_Stand_TellJokeGood">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeGood.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>     
+   
+   
+   <!--DINOSAUR ENTERTAINER-->
+   
+
+   <!--MALE ENTERTAINER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle.wav" volume="0.5" mindist="8" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle2.wav" volume="0.3" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle3.wav" volume="0.5" mindist="6" maxdist="30" />
+      </BF3DSndFactory>     
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle5">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle5.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle6">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle6.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>  
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle7">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle7.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle8">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle8.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Dance_Idle9">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Dance_Idle9.wav" volume="0.5" mindist="3" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftChaseRight">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftChaseRight2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftChaseRight3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftChaseRight4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftChaseRight4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_LeftConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_LeftConverse3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_2Stand">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_2Stand.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_2Stand2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_2Stand2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>     
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_Bow">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_Bow2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_Bow3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_PuppetShow_Bow4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_PuppetShow_Bow4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightChaseLeft">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightChaseLeft2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightChaseLeft3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightChaseLeft4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightChaseLeft4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_M_RightConverse4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_RightConverse4.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_2Puppet">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_2Puppet2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet2.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_2Puppet3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_2Puppet3.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_BackFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_BackFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_BreakDance">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_BreakDance.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_ForwardFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_ForwardFlip.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_Robot">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_Robot.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_TellJokeBad">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeBad.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_TellJokeGood">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeGood.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_M_Stand_TellJokeGood2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_M_Stand_TellJokeGood2.wav" volume="0.7" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+
+<!--FEMALE ENTERTAINER-->
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle.wav" volume="0.3" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle2.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle3.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle4.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle5">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle5.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle6">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle6.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Dance_Idle7">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle7.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftChaseRight">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftChaseRight2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftChaseRight3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftChaseRight3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      </BFSoundtag>
+    <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_LeftConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_LeftConverse3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_PuppetShow_2Stand">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_2Stand.wav" volume="0.3" mindist="4" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_PuppetShow_2Stand2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_2Stand2.wav" volume="0.3" mindist="4" maxdist="20" />
+      </BF3DSndFactory>     
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_PuppetShow_Bow">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_PuppetShow_Bow2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow2.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_PuppetShow_Bow3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_PuppetShow_Bow3.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>
+     </BFSoundtag>
+     <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_RightChaseLeft">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightChaseLeft.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_RightChaseLeft2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightChaseLeft2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_RightConverse">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_F_RightConverse2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse2.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+     <BF3DSndFactory name="EntertainerDinosaur_Adult_F_RightConverse3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_RightConverse3.wav" volume="0.5" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_2Puppet">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_2Puppet.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_2Puppet2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_2Puppet2.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_BackFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BackFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_BreakDance">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BreakDance.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_ForwardFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_ForwardFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_Robot">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_Robot.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_TellJokeBad">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeBad.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="EntertainerDinosaur_Adult_F_Stand_TellJokeGood">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeGood.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>     
+
+   
+   
+   
+</soundtags>

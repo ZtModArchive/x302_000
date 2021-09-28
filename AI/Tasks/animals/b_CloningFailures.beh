@@ -1,0 +1,26 @@
+<BehaviorSets>
+   <JustCloned>
+      <subjects>
+         <ambient_ground/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </JustCloned>
+   <JustCloned>
+      <subjects>
+         <ambient_air/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Fly_Idle" loopFlag="true"/>
+      </behaviors>
+   </JustCloned>
+   <FlyStraight>
+      <subjects>
+         <ExtinctButterflyMonarch/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Fly_Ahead" playTime="30" animSpeed="0.4"/>
+      </behaviors>
+   </FlyStraight>
+</BehaviorSets>

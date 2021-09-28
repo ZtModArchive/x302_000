@@ -1,0 +1,9 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_fences">
+         <BFHelpEntry entry="zoopedia_electricfence"/>
+         <BFHelpEntry entry="zoopedia_extinctfence"/>
+         <BFHelpEntry entry="zoopedia_extinctwindowfence"/>         
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

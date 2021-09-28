@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'Lie_SlamGround'"/>
+	<key percent="50" text="{Node_Slam} runps Biomefx"/>
+	<key percent="55" text="{Node_Slam} runps Biomefx"/>
+</TEXTKEY>

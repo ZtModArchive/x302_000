@@ -1,0 +1,6 @@
+<BFPhysObj drawLast="true">
+   <position x="0" y="0" z="0"/>
+   <BFSceneGraphComponent modelfile="entities\objects\puzzles\Dodo\fossilfinding.nif" updateBounds="false"/>
+   <BFHasParticleComponent/>
+   <BFForceUpdateWhenVisibleComponent controllersOnly="false"/>
+</BFPhysObj>

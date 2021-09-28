@@ -1,0 +1,39 @@
+<BehaviorSets>
+   <GetSickPooping>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_stench stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_stench attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickPooping>
+   <CureSickPooping>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_stench stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickPooping>
+   <Diseased_Pooping>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_GetPoopingDisease" GiveTo="animal" Radius="10" ChanceInRadius="20" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </Diseased_Pooping>
+</BehaviorSets>

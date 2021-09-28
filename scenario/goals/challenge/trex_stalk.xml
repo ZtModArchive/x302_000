@@ -1,0 +1,19 @@
+<BFScenarioGroup name="trexrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="trex_stalkphotos" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHTRexShort" overview="PhotoChallengetext:PHTRex" />
+				<success locid="PhotoChallengetext:PHTRexSuccessShort" overview="PhotoChallengetext:PHTRexSuccess" />
+			  </info>
+			 <evaluate>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/trex_stalk.lua" entry="evaltrexphoto" />
+			 </evaluate>
+			 <success>
+			 	<BFScenarioScriptAction script="scenario/scripts/challenge/trex_stalk.lua" entry="completetrex" />
+			 </success>
+			 <failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/trex_stalk.lua" entry="failtrex" />
+			 </failure>
+		</BFScenarioRule>
+	 </children>
+</BFScenarioGroup>

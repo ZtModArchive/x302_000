@@ -1,0 +1,45 @@
+<BFTypedBinder binderType="BirdElephant_Young_M_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Struthioniformes>
+                     <Aepyornithidae>
+                        <BirdElephant>
+                           <BirdElephant_Young>
+                              <BirdElephant_Young_M>
+                              	<BirdElephant_Young_M_Super/>
+                              </BirdElephant_Young_M>
+                           </BirdElephant_Young>
+                        </BirdElephant>
+                     </Aepyornithidae>
+                  </Struthioniformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Super="true" f_BaseDonationAmount="70" s_Zoopedia="zoopedia:zoopedia_super_BirdElephant:entry">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" privacy="-0.02" social="0.40" stimulation="0.40" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/BirdElephant/BirdElephant_Young_F.bfm" scale="0.6" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

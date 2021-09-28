@@ -1,0 +1,20 @@
+<BFScenarioGroup name="fossilbuildingrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="fossilbuilding" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHFossilBuildingShort" overview="Challengetext:CHFossilBuilding" />
+				<success locid="Challengetext:CHFossilBuildingSuccessShort" overview="Challengetext:CHFossilBuildingSuccess" />
+				<failure locid="Challengetext:CHFossilBuildingFailureShort" overview="Challengetext:CHFossilBuildingFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilbuilding.lua" entry="evalFossilBuilding" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilbuilding.lua" entry="completeFossilBuilding" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilbuilding.lua" entry="failFossilBuilding" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

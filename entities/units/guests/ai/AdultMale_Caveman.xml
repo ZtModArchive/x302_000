@@ -1,0 +1,74 @@
+<BFTypedBinder binderType="Guest_Adult_M_Caveman">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Guest>
+                  <Guest_Adult>
+                     <Guest_Adult_F>
+                        <Guest_Adult_M_Caveman/>
+                     </Guest_Adult_F>
+                  </Guest_Adult>
+               </Guest>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+            <parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\guests\AdultMale\Guest_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Guest_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Rarity="unique" b_Male="1" b_NoBuyLHandGift="true" b_NoBuyShirtGift="true" b_NoBuyHeadGift="true" b_NoBuyWaistGift="true">
+         <BFAINeedAdjusts Name="frozen" hunger=".01" thirst=".01" dessert=".01" bathroom=".02" rest="-.5"/>
+      </BFAIEntityDataShared>
+      <ZTPlacementData icon3Doffset="0 0 .86" icon3Dscale="3.17"/>
+      <ZTUserStaffAction>
+      	 <SetAttribute name="f_TagValue" value="0" threshold="90" prescript="behavior:scripts/caveman.lua:tagCaveman" locid="superstaff:TagCaveman"/>
+	  </ZTUserStaffAction>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFShadowLODComponent numLevels="1" switchingDists="30.0"/>
+               <BFActorComponent actorfile="entities\units\guests\AdultMale\Guest_Adult_M_CaveMan.bfm" scale="1.0" switch="0 18 32 64 72"/>
+               <BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFBoundedObjectComponent>
+                  <minPoint x="0" y="0" z="-100"/>
+                  <maxPoint x="300" y="300" z="100"/>
+               </BFBoundedObjectComponent>
+               <BFCollisionComponent grid="Grid"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj useTriShapeGroup="false">
+               <BFSimpleLODComponent isBFR="true" modelfile="entities\units\guests\AdultMale\Head_Adult_M_CaveMan" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_InGlacier="true" b_Frozen="true" f_TagValue="10"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

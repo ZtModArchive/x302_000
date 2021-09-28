@@ -1,0 +1,1944 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSit weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultSit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+      </behaviors>
+   </DefaultSit>
+   <DefaultLie>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultSleep>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultSleep>
+   <DefaultTreadWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swimming"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultHappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData social="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Shoo"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Shoo"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="DefaultStand"/>
+               <water behSet="DefaultTreadWater"/>
+               <underwater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultSit"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Stand>
+   <TreadWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater>
+   <Drink>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <Eat>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+      </behaviors>
+   </Eat>
+   <EnterIceBlock>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock> 
+   <UseIceBlock>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </ExitIceBlock>
+   <EnterHollowLogLeft>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogLeft>
+   <EnterHollowLogRight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogRight>
+   <EnterHollowLogMiddle>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogMiddle>
+   <EnterFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterTrough>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Chew"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterSubstratePile>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterSubstratePile> 
+   <UseSubstratePile>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Chew"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <EnterElevatedFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_ElevatedFoodDish" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterElevatedFoodDish>
+   <UseElevatedFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatElevated_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatElevated_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+      </behaviors>
+   </UseElevatedFoodDish>
+   <DrinkElevatedFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatElevated_Drink"/>
+         <BFBehAnimate targetAnim="EatElevated_Drink"/>
+      </behaviors>
+   </DrinkElevatedFoodDish>
+   <ExitElevatedFoodDish>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitElevatedFoodDish>
+   <EatApple>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+	 <BFBehKill killTarget="true" fadeOutPeriod="3"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </EatApple>
+   <EatFigs>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+	 <BFBehKill killTarget="true" fadeOutPeriod="3"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </EatFigs>
+   <BrowseLow>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="BrowseLow_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Chew" container="foodprop"/>
+         <BFBehPlaySet behSet="Chew_LookAround"/>
+         <BFBehAnimate targetAnim="Chew_Belch"/>
+      </behaviors>
+   </BrowseLow>
+   <BrowseBush>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+	 <BFBehKill killTarget="true" fadeOutPeriod="3"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </BrowseBush>
+   <Browse>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_BrowseTreeA weight="50"/>
+               <Stand_BrowseTreeB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_LookLeft weight="50"/>
+               <Stand_LookRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_BrowseTreeA weight="50"/>
+               <Stand_BrowseTreeB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+      </behaviors>
+   </Browse>
+   <EnterTree>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_TreeBrowse" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTree>
+   <BrowseTree>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_BrowseTreeA weight="50"/>
+               <Stand_BrowseTreeB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_LookLeft weight="50"/>
+               <Stand_LookRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_BrowseTreeA weight="50"/>
+               <Stand_BrowseTreeB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="EatElevated_Chew"/>
+      </behaviors>
+   </BrowseTree>
+   <ExitTree>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTree>
+   <Lie>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+      </behaviors>
+   </Lie>
+   <Rest>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Idle" playTime="10"/>
+      </behaviors>
+   </Rest>
+   <Sleep>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Sleep_Ground"/>
+               <water behSet="Sleep_Water"/>
+               <underwater behSet="Sleep_Water"/>
+               <default behSet="Sleep_Ground"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Sleep>
+   <Sleep_Ground>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep_Ground>
+   <Sleep_Water>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="10"/>
+      </behaviors>
+   </Sleep_Water>
+   <FailureSet>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Yawn weight="33"/>
+               <Roar weight="33"/>
+               <LeanSickly weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FailureSet>
+   <Poop>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Giant" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Giant_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Pee>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Pee"/>
+      </behaviors>
+   </Pee>
+   <DockFight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="4" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="4" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <Swipe>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_SwipeRight weight="50"/>
+               <Stand_SwipeLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Swipe>
+   <Strike>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_StrikeRight weight="50"/>
+               <Stand_StrikeLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Strike>
+   <BashFence>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" radius="5" radiusKillType="fence" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFence>
+   <Fight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Strike weight="75"/>
+               <Swipe weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Fight>
+   <DefendEqual>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <AttackedHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <DockAttacked>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <AttackedHurt>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Swipe weight="75"/>
+               <Strike weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </AttackedHurt>
+   <Sick>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+         <BFBehAnimate targetAnim="Stand_LeanSickly"/>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+         <BFBehAnimate targetAnim="Stand_LeanSickly"/>
+         <BFBehAnimate targetAnim="Sit_Sneeze"/>
+      </behaviors>
+   </VerySick>
+   <DockAttackGuest>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <WaitAttackGuest>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest" interruptFlag="true" blendDuration="0"/>
+      </behaviors>
+   </AttackGuest>
+   <MatingCall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Beckon"/>
+      </behaviors>
+   </MatingCall>
+   <Mate>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <Birth>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+           </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <Birth>
+      <subjects>
+         <SlothGroundGiant_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <SpawnF weight="20"/>
+               <SpawnM weight="20"/>
+               <SpawnSuperF weight="30"/>
+               <SpawnSuperM weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SlothGroundGiant_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SlothGroundGiant_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SlothGroundGiant_Young_F_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="SlothGroundGiant_Young_M_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperM>
+   <Roar>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shoo"/>
+      </behaviors>
+   </Roar>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MotionOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalMotionGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehAnimate targetAnim="Stand_Shoo"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <ContactCall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MotionOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalMotionGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <Shoo weight="50"/>
+               <Beckon weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Turn180>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Turn180>
+   <LoopIdle>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <TreadWater behSet="LoopTreadWater"/>
+               <Lie behSet="LoopLie"/>
+               <Sit behSet="LoopSit"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopTreadWater>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopTreadWater>
+   <LoopLie>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopSit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSit>
+   <LoopSleep>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <Yawn>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Yawn_Stand"/>
+               <Sit behSet="Yawn_Sit"/>
+               <Lie behSet="Yawn_Sit"/>
+               <Sleep behSet="Yawn_Sit"/>
+               <default behSet="Yawn_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Yawn>
+   <Yawn_Stand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn_Stand>
+   <Yawn_Sit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Yawn"/>
+      </behaviors>
+   </Yawn_Sit>
+   <LeanSickly>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LeanSickly"/>
+      </behaviors>
+   </LeanSickly>
+   <Sneeze>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sneeze_Stand"/>
+               <Sit behSet="Sneeze_Sit"/>
+               <Lie behSet="Sneeze_Sit"/>
+               <Sleep behSet="Sneeze_Sit"/>
+               <default behSet="Sneeze_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Stand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Sneeze_Sit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Sneeze"/>
+      </behaviors>
+   </Sneeze_Sit>
+   <Scratch>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <ScratchBelly weight="50"/>
+               <ScratchFace weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Scratch>
+   <ScratchBelly>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ScratchSelfB"/>
+      </behaviors>
+   </ScratchBelly>
+   <ScratchFace>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ScratchSelfA"/>
+      </behaviors>
+   </ScratchFace>
+   <DockCleanYoung>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_CleanYoung" targetNode="Dock_BeCleaned" targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </DockCleanYoung>
+   <WaitCleanYoung>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+         <BFBehAnimate targetAnim="Sit_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitCleanYoung>
+   <CleanYoung>
+      <subjects>
+         <SlothGroundGiant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GroomYoung" interruptFlag="true"/>
+      </behaviors>
+   </CleanYoung>
+   <BeCleaned>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_BeGroomed" interruptFlag="true"/>
+      </behaviors>
+   </BeCleaned>
+   <DockPickup>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Carried" targetNode="Dock_PickUpYoung" targetAnim="Stand_2BeCarried"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </DockPickup>
+   <WaitPickup>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToBeClimbed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPickup>
+   <MommaPickupBaby>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject targetNode="Node_Carried" targetAnim="Stand_2StandYoung" locoMod="carryyoung" detachAction="dropitem" detachBehSet="DetachBaby" targetBehSet="BeingCarried"/>
+      </behaviors>
+   </MommaPickupBaby>
+   <BeingCarried>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeCarried_Idle" loopFlag="true"/>
+      </behaviors>
+   </BeingCarried>
+   <BabyPickedUpByMomma>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2BeCarried"/>
+         <BFBehAnimate targetAnim="BeCarried_Idle" loopFlag="true"/>
+      </behaviors>
+   </BabyPickedUpByMomma>
+   <MommaDropBaby>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dropping" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandYoung_2Stand"/>
+      </behaviors>
+   </MommaDropBaby>
+   <BabyDroppedByMomma>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BeCarried_2Stand"/>
+      </behaviors>
+   </BabyDroppedByMomma>
+   <DetachBaby>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandYoung_Idle"/>
+         <BFBehSyncSet syncEntity="object" subjectBehSet="MommaDropBaby" targetBehSet="BabyDroppedByMomma"/>
+      </behaviors>
+   </DetachBaby>
+   <DockNurse>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Node_Mouth" targetNode="Dock_Nurse" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </DockNurse>
+   <WaitNurse>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitNurse>
+   <Nurse>
+      <subjects>
+         <SlothGroundGiant_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingNursed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="BeCarried_Idle" playTime="5"/>
+      </behaviors>
+   </Nurse>
+   <MommaNurseYoung>
+      <subjects>
+         <SlothGroundGiant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:NurseOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandYoung_Idle" playTime="5"/>
+      </behaviors>
+   </MommaNurseYoung>
+   <Shoo>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shoo"/>
+      </behaviors>
+   </Shoo>
+   <Beckon>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Beckon"/>
+      </behaviors>
+   </Beckon>
+   <Swipe>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwipeLeft weight="50"/>
+               <SwipeRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Swipe>
+   <SwipeLeft>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeLeft"/>
+      </behaviors>
+   </SwipeLeft>
+   <SwipeRight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeRight"/>
+      </behaviors>
+   </SwipeRight>
+   <Sniff>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sniff_Stand"/>
+               <Sit behSet="Sniff_Sit"/>
+               <Lie behSet="Sniff_Sit"/>
+               <Sleep behSet="Sniff_Sit"/>
+               <default behSet="Sniff_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sniff>
+   <Sniff_Stand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+      </behaviors>
+   </Sniff_Stand>
+   <Sniff_Sit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Sniff"/>
+      </behaviors>
+   </Sniff_Sit>
+   <Look>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Look_Stand"/>
+               <Sit behSet="Look_Sit"/>
+               <Lie behSet="Look_Sit"/>
+               <Sleep behSet="Look_Sit"/>
+               <default behSet="Look_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Look>
+   <Look_Stand>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <LookStand_LeftToRight weight="50"/>
+               <LookStand_RightToLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Look_Stand>
+   <LookStand_LeftToRight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+      </behaviors>
+   </LookStand_LeftToRight>
+   <LookStand_RightToLeft>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+      </behaviors>
+   </LookStand_RightToLeft>
+   <Look_Sit>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <LookSit_LeftToRight weight="50"/>
+               <LookSit_RightToLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Look_Sit>
+   <LookSit_LeftToRight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_LookLeft"/>
+         <BFBehAnimate targetAnim="Sit_LookRight"/>
+      </behaviors>
+   </LookSit_LeftToRight>
+   <LookSit_RightToLeft>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_LookRight"/>
+         <BFBehAnimate targetAnim="Sit_LookLeft"/>
+      </behaviors>
+   </LookSit_RightToLeft>
+   <EnterBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Ball" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBarrel_Whap>
+   <UseBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight weight="50"/>
+               <SwatBallLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall>
+   <SwatBallRight_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_SwipeRight"/>
+      </behaviors>
+   </SwatBallRight_Whap>
+   <SwatBallLeft_Whap>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_SwipeLeft"/>
+      </behaviors>
+   </SwatBallLeft_Whap>
+   <SwatBallRight>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeRight"/>
+      </behaviors>
+   </SwatBallRight>
+   <SwatBallLeft>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SwipeLeft"/>
+      </behaviors>
+   </SwatBallLeft>
+   <NudgeBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NoseNudge"/>
+      </behaviors>
+   </NudgeBall>
+   <ExitBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </ExitBall>
+   <PlayBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Nudge weight="50"/>
+               <Swat weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </PlayBall>
+   <ChaseBall>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Ball" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="UsePursuitBall_Whap"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <ShooGuest>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" locoSpeed="slow"/>
+      </behaviors>
+   </ShooGuest>
+   <EnterExtinctShelter1>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <SlothGroundGiant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+</BehaviorSets>

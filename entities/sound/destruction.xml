@@ -1,0 +1,156 @@
+<soundtags>
+   <!--WOOD-->
+
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_wood_small">
+         <snd name="sounds/destruction/Destroy_Wood_Small_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small2">
+         <snd name="sounds/destruction/Destroy_Wood_Small_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small3">
+         <snd name="sounds/destruction/Destroy_Wood_Small_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small4">
+         <snd name="sounds/destruction/Destroy_Wood_Small_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small5">
+         <snd name="sounds/destruction/Destroy_Wood_Small_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small6">
+         <snd name="sounds/destruction/Destroy_Wood_Small_6.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small7">
+         <snd name="sounds/destruction/Destroy_Wood_Small_7.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small8">
+         <snd name="sounds/destruction/Destroy_Wood_Small_8.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small9">
+         <snd name="sounds/destruction/Destroy_Wood_Small_9.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_small10">
+         <snd name="sounds/destruction/Destroy_Wood_Small_10.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>     
+   </BFSoundtag>
+   
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_wood_large">
+         <snd name="sounds/destruction/Destroy_Wood_Large_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_large2">
+         <snd name="sounds/destruction/Destroy_Wood_Large_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_large3">
+         <snd name="sounds/destruction/Destroy_Wood_Large_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_wood_large4">
+         <snd name="sounds/destruction/Destroy_Wood_Large_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   
+   <!--WOOD and GLASS-->
+
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_woodglass_small">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_small2">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_small3">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_small4">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_small5">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_small6">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Small_6.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_woodglass_large">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_large2">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_large3">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_large4">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_4.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_large5">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_5.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_woodglass_large6">
+         <snd name="sounds/destruction/Destroy_WoodGlass_Large_6.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   
+   <!--CONCRETE-->   
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_concrete_small">
+         <snd name="sounds/destruction/Destroy_Concrete_Small_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_concrete_small2">
+         <snd name="sounds/destruction/Destroy_Concrete_Small_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_concrete_small3">
+         <snd name="sounds/destruction/Destroy_Concrete_Small_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   
+   <BFSoundtag>   
+      <BF3DSndFactory name="destroy_concrete_large">
+         <snd name="sounds/destruction/Destroy_Concrete_Large_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_concrete_large2">
+         <snd name="sounds/destruction/Destroy_Concrete_Large_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_concrete_large3">
+         <snd name="sounds/destruction/Destroy_Concrete_Large_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>      
+   
+   <!--TREES-->   
+   <BFSoundtag>
+      <BF3DSndFactory name="destroy_tree_small">
+         <snd name="sounds/destruction/Destroy_TreeSmall_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_tree_small2">
+         <snd name="sounds/destruction/Destroy_TreeSmall_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   
+   <BFSoundtag>   
+      <BF3DSndFactory name="destroy_tree_med">
+         <snd name="sounds/destruction/Destroy_TreeMed_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_tree_med2">
+         <snd name="sounds/destruction/Destroy_TreeMed_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_tree_med3">
+         <snd name="sounds/destruction/Destroy_TreeMed_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>       
+   
+   <BFSoundtag>   
+      <BF3DSndFactory name="destroy_tree_large">
+         <snd name="sounds/destruction/Destroy_TreeLarge_1.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_tree_large2">
+         <snd name="sounds/destruction/Destroy_TreeLarge_2.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>
+      <BF3DSndFactory name="destroy_tree_large3">
+         <snd name="sounds/destruction/Destroy_TreeLarge_3.wav" volume="1" mindist="6" maxdist="300" layer="hugenoise"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>         
+
+  
+</soundtags>

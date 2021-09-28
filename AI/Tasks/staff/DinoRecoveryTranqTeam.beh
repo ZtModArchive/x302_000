@@ -1,0 +1,251 @@
+<BehaviorSets>
+   <FollowCrateTeam>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="5" pursuitRadius="100" failureRadius="600" locoSpeed="fast"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <StandItem_TurnLeft90 weight="33"/>
+               <StandItem_TurnRight90 weight="33"/>
+               <StandItem_TurnRight180 weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </FollowCrateTeam>   
+   <TranqDino>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+       <BFBehLocoSwitchSet>
+         <behaviorTable>
+           <ground behSet="TranqDino_Land"/>
+           <water behSet="TranqDino_Water"/>
+           <underwater behSet="TranqDino_Water"/>
+         </behaviorTable>
+       </BFBehLocoSwitchSet>
+      </behaviors>
+   </TranqDino>
+   <TranqDino_Land>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoTranqAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryTranqTeamGoTranqAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="fast"/>
+         <BFBehSyncSet subjectBehSet="ShootDino_Land" targetBehSet="LoopIdle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:CrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryTranqTeamTranqAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </TranqDino_Land>
+   <ShootDino_Land>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="Stand_DartAnimal"/>
+      </behaviors>
+   </ShootDino_Land>
+   <TranqDino_Water>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoTranqAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryTranqTeamGoTranqAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="fast"/>
+         <BFBehSyncSet subjectBehSet="ShootDino_Water" targetBehSet="LoopIdle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:CrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryTranqTeamTranqAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </TranqDino_Water>
+   <ShootDino_Water>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="TreadWater_DartAnimal"/>
+      </behaviors>
+   </ShootDino_Water>
+   
+<!-- Dino Recovery Building Interactions -->
+   <ExitDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_Idle" interruptFlag="true" playTime="2"/>
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_TurnRightA" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuilding>  
+   <ExitDinoRecoveryBuildingFast>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuildingFast>  
+   <ReturnDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Up" GiveTo="target" Timeout="120" RetainOnFailure="true" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterTranq" locoSpeed="slow" redock="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EnterDRTBuilding" GiveTo="subject" Payload="target" Timein="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="StandItem_Idle" loopFlag="true" />
+      </behaviors>
+   </ReturnDinoRecoveryBuilding>  
+   <EnterDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterTranq" locoSpeed="slow" redock="false"/>
+         <BFBehAnimate targetAnim="WalkItem_TurnLeftA" />
+         <BFBehAnimate targetAnim="WalkItem_TurnRightA" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EnterDRTBuilding" GiveTo="DinoRecoveryCrateTeam" Payload="target" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </EnterDinoRecoveryBuilding>  
+
+<!-- Bathroom Tasks -->
+   <Queue>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehDockQueue hitRadius="2.5" queueRadius="12" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WaitLine" useTargetName="true"/>
+               <ZTThoughtInfo locID="guestthoughts:WaitLine" priority="0" timeout="30" global="true" useTargetName="true"/>               
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWaitQueue minWaitTime="30" maxWaitTime="60" waitBehSet="WaitInLine"/>
+         <BFBehDock targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Queue>
+   <UseBathroom>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:NeedUseBathroom" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+      </behaviors>
+   </UseBathroom>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryTranqTeam_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Male_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryTranqTeam_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Female_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomSmall>
+      <subjects>
+         <DinoRecoveryTranqTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+               <ZTThoughtInfo locID="guestthoughts:NeedUseBathroom" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>      
+         <BFBehPlaySet behSet="Queue"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomSmall>
+</BehaviorSets>

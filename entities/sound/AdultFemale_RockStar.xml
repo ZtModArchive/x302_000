@@ -1,0 +1,57 @@
+<soundtags>
+  
+<!--DALLAS SAMPSON-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle.wav" volume="0.3" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle2">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle2.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle3">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle3.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle4">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle4.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle5">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle5.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle6">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle6.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>     
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Dance_Idle7">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Dance_Idle7.wav" volume="0.5" mindist="2" maxdist="20" />
+      </BF3DSndFactory>      
+   </BFSoundtag>
+   <BFSoundtag>   
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_BackFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BackFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_BreakDance">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_BreakDance.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>     
+   <BFSoundtag>   
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_ForwardFlip">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_ForwardFlip.wav" volume="0.5" mindist="4" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_Robot">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_Robot.wav" volume="0.6" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>   
+   <BFSoundtag>   
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_TellJokeBad">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeBad.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>      
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_F_Rockstar_Stand_TellJokeGood">
+         <snd name="entities/units/staff/EntertainerExtinct/sound/EntertainerExtinct_Adult_F_Stand_TellJokeGood.wav" volume="0.7" mindist="2" maxdist="30" />
+      </BF3DSndFactory>    
+   </BFSoundtag>     
+</soundtags>

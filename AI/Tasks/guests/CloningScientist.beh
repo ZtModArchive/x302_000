@@ -1,0 +1,306 @@
+<BehaviorSets>
+   <CloningFeedback_Default>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Stand weight="70"/>
+               <StandBored weight="10"/>
+               <CheckWatch weight="10"/>
+               <UsePanel weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </CloningFeedback_Default>
+   <Stand>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <StandBored>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Standbored_Idle"/>
+      </behaviors>
+   </StandBored>
+   <CheckWatch>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CheckWatch"/>
+      </behaviors>
+   </CheckWatch>
+   <UsePanel>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_TapTank"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </UsePanel>
+   <CloningFeedback_Good>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Dance weight="10"/>
+               <Cheer weight="45"/>
+               <Applaud weight="45"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestEducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </CloningFeedback_Good>
+   <Dance>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Dance_Robot weight="25"/>
+               <Dance_Idle weight="25"/>
+               <Dance_BreakDance weight="25"/>
+               <Dance_PirateJig weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Dance>
+   <Dance_Robot>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Robot" interruptFlag="true"/>
+      </behaviors>
+   </Dance_Robot>
+   <Dance_Idle>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Dance_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Dance_Idle>
+   <Dance_BreakDance>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BreakDance" interruptFlag="true"/>
+      </behaviors>
+   </Dance_BreakDance>
+   <Dance_PirateJig>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PirateJig" interruptFlag="true"/>
+      </behaviors>
+   </Dance_PirateJig>
+   <Cheer>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Stand_Cheer weight="33"/>
+               <Cheer_OohAhh weight="33"/>
+               <Cheer_ShoutSuperSuccess weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Cheer>
+   <Stand_Cheer>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Cheer" interruptFlag="true"/>
+      </behaviors>
+   </Stand_Cheer>
+   <Cheer_OohAhh>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_OohAhh" interruptFlag="true"/>
+      </behaviors>
+   </Cheer_OohAhh>
+   <Cheer_ShoutSuperSuccess>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutSuperSuccess" interruptFlag="true"/>
+      </behaviors>
+   </Cheer_ShoutSuperSuccess>
+   <Applaud>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Stand_Applaud weight="50"/>
+               <Applaud_ShoutSuccess weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Applaud>
+   <Stand_Applaud>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Applaud" interruptFlag="true"/>
+      </behaviors>
+   </Stand_Applaud>
+   <Applaud_ShoutSuccess>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutSuccess" interruptFlag="true"/>
+      </behaviors>
+   </Applaud_ShoutSuccess>
+   <CloningFeedback_Bad>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Bad_Scold weight="16"/>
+               <Bad_ShakeHead weight="16"/>
+               <Bad_ShoutFailure weight="16"/>
+               <Bad_ShakeFist weight="16"/>
+               <Bad_PinchNose weight="16"/>
+               <Bad_Grumble weight="16"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </CloningFeedback_Bad>
+   <Bad_Scold>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Scold" interruptFlag="true"/>
+      </behaviors>
+   </Bad_Scold>
+   <Bad_ShakeHead>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShakeHead" interruptFlag="true"/>
+      </behaviors>
+   </Bad_ShakeHead>
+   <Bad_ShoutFailure>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShoutFailure" interruptFlag="true"/>
+      </behaviors>
+   </Bad_ShoutFailure>
+   <Bad_ShakeFist>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_ShakeFist" interruptFlag="true"/>
+      </behaviors>
+   </Bad_ShakeFist>
+   <Bad_PinchNose>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PinchNose" interruptFlag="true"/>
+      </behaviors>
+   </Bad_PinchNose>
+   <Bad_Grumble>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Grumble" interruptFlag="true"/>
+      </behaviors>
+   </Bad_Grumble>
+   <CloningFeedback_Confused>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Confused_Dismissive weight="16"/>
+               <Confused_Cry weight="16"/>
+               <Confused_Startled weight="16"/>
+               <Confused_Yell weight="16"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </CloningFeedback_Confused>
+   <Confused_Dismissive>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dismissive" interruptFlag="true"/>
+      </behaviors>
+   </Confused_Dismissive>
+   <Confused_Cry>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Cry" interruptFlag="true"/>
+      </behaviors>
+   </Confused_Cry>
+   <Confused_Startled>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Startled" interruptFlag="true"/>
+      </behaviors>
+   </Confused_Startled>
+   <Confused_Yell>
+      <subjects>
+         <Guest_Adult_M_CloningScientist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yell" interruptFlag="true"/>
+      </behaviors>
+   </Confused_Yell>
+</BehaviorSets>

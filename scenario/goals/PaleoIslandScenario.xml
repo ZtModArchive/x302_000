@@ -1,0 +1,115 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="ExtinctCampaign:PaleoIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup hidden="0" name="ExtinctPaleoOptional" state="0" chain="false" allsuccess="false" sticky="true">
+			<children>
+				<BFScenarioRule name="ExtinctFamousActor" hidden="1" state="0" sticky="true" >
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoOptionalCavemanShort" overview="ExtinctCampaign:PaleoOptionalCaveman"/>
+						<success locid="ExtinctCampaign:PaleoFinishOptionalCaveman" overview="ExtinctCampaign:PaleoFinishOptionalCaveman"/>
+						<failure locid="ExtinctCampaign:PaleoFailedOptionalCaveman" overview="ExtinctCampaign:PaleoFailedOptionalCaveman"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalFamousActor" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeFamousActor" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="ExtinctBreed3Species" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoOptionalBreedShort" overview="ExtinctCampaign:PaleoOptionalBreed"/>
+						<success locid="ExtinctCampaign:PaleoFinishOptionalBreed" overview="ExtinctCampaign:PaleoFinishOptionalBreed"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalBreed3Species" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeBreed3Species" />
+					</success>
+				</BFScenarioRule>
+			</children>
+		</BFScenarioGroup>				
+		<BFScenarioGroup hidden="0" name="ExtinctPaleo" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="ExtinctAcquireBluebuck" hidden="0" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoAdoptFirst" overview="ExtinctCampaign:PaleoOverview"/>
+						<success locid="ExtinctCampaign:PaleoFinishAdoptFirst" overview="ExtinctCampaign:PaleoFinishAdoptFirst"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalAcquireBluebuck" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeAcquireBluebuck" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="BuildLab" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoBuildXRLShort" overview="ExtinctCampaign:PaleoBuildXRL"/>
+						<success locid="ExtinctCampaign:PaleoFinishBuildXRL" overview="ExtinctCampaign:PaleoFinishBuildXRL"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalBuildLab" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeBuildLab" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="CollectFossils" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoFindFossilsShort" overview="ExtinctCampaign:PaleoFindFossils"/>
+						<success locid="ExtinctCampaign:PaleoFinishFindFossils" overview="ExtinctCampaign:PaleoFinishFindFossils"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalCollectFossils" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeCollectFossils" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="BuildFossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoBuildAnimalShort" overview="ExtinctCampaign:PaleoBuildAnimal"/>
+						<success locid="ExtinctCampaign:PaleoFinishBuildAnimal" overview="ExtinctCampaign:PaleoFinishBuildAnimal"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalBuildFossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeBuildFossil" />
+					</success>
+				</BFScenarioRule>		
+				<BFScenarioRule name="CreateSuperFossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoCreateAnimalShort" overview="ExtinctCampaign:PaleoCreateAnimal"/>
+						<success locid="ExtinctCampaign:PaleoFinishCreateAnimal" overview="ExtinctCampaign:PaleoFinishCreateAnimal"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalCreateSuperFossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeCreateSuperFossil" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="Release5Extinct" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:PaleoReleaseAnimalsShort" overview="ExtinctCampaign:PaleoReleaseAnimals"/>
+						<success locid="ExtinctCampaign:PaleoFinishReleaseAnimals" overview="ExtinctCampaign:PaleoFinishReleaseAnimals"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="evalRelease5Species" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/PaleoIslandScenario.lua" entry="completeRelease5Species" />
+					</success>
+				</BFScenarioRule>					
+			</children>
+		</BFScenarioGroup>
+	</children>
+</ZTScenarioMgr>

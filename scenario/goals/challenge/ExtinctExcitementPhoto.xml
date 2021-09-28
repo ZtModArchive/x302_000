@@ -1,0 +1,20 @@
+<BFScenarioGroup name="extinctexcitementrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="extinctexcitement" state="0" sticky="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHExtinctExcitementPhotoShort" overview="PhotoChallengetext:PHExtinctExcitementPhoto" />
+				<success locid="PhotoChallengetext:PHExtinctExcitementPhotoSuccessShort" overview="PhotoChallengetext:PHExtinctExcitementPhotoSuccess" />
+				<failure locid="PhotoChallengetext:PHExtinctExcitementPhotoFailureShort" overview="PhotoChallengetext:PHExtinctExcitementPhotoFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/extinctexcitementphoto.lua" entry="evalExtinctExcitement" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/extinctexcitementphoto.lua" entry="completeExtinctExcitement" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/extinctexcitementphoto.lua" entry="failExtinctExcitement" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

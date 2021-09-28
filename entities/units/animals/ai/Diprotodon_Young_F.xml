@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Diprotodon_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Diprotodontia>
+                     <Diprotodontidae>
+                        <Diprotodon>
+                           <Diprotodon_Young>
+                              <Diprotodon_Young_F/>
+                           </Diprotodon_Young>
+                        </Diprotodon>
+                     </Diprotodontidae>
+                  </Diprotodontia>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Diprotodon_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

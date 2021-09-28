@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="guestgate">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <guestgate/>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_GuestGate="true"/>
+      <BFGCollisionData score="0">
+         <typeScores animal="100000" />
+      </BFGCollisionData>
+      <ZTPlacementData s_GatePlacementRules="guestgate" />
+   </shared>
+</BFTypedBinder>

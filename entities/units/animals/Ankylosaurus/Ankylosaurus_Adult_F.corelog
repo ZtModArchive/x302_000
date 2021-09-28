@@ -1,0 +1,34 @@
+************************************************************
+Date: 03/06/2007
+Time: 10:33
+************************************************************
+Compiled object 0: Scene Root
+Compiled object 1: LODGroup
+Compiled object 2: Ankylosaurus_Adult_F_LOD00
+Compiled object 3: Editable Poly
+Compiled object 4: Ankylosaurus_Adult_F_LOD01
+Compiled object 5: Editable Poly
+Compiled object 6: Ankylosaurus_Adult_F_LOD02
+Compiled object 7: Editable Poly
+Compiled object 8: Bip01 Spine1
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 2377 
+Vertex Count: 1691 
+Vertex Memory: 66 kb
+Material Count: 1 
+Texture Count: 2 
+Texture Memory: 5482 kb
+Num LODs: 3 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 475 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 2s 929ms
+XML File Translation: total time = 2s 617ms
+Data Output: total time = 29ms
+************************************************************

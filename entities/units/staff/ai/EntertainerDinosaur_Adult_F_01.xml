@@ -1,0 +1,44 @@
+<BFTypedBinder binderType="EntertainerDinosaur_Adult_F_01">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <Entertainer>
+                     <EntertainerDinosaur>
+                        <EntertainerDinosaur_Adult_F>
+                           <EntertainerDinosaur_Adult_F_01/>
+                        </EntertainerDinosaur_Adult_F>
+                     </EntertainerDinosaur>
+                  </Entertainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="guest_m_head" image="entities\units\guests\shared\guest_adult_f_head_01_happy.dds" layer="base"/>
+                     <item material="guest_m_headlo" image="entities\units\guests\shared\guest_adult_f_headlo_01.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,70 @@
+ <ZT2Strings>
+   <DinosaurZoo>
+
+      <DinosaurZooIntro>The Dinosaur Zoo</DinosaurZooIntro>
+      <DinosaurZooOverviewShort>Acquire a mighty Tyrannosaurus rex to save your struggling zoo.
+      </DinosaurZooOverviewShort>
+      <DinosaurZooFame1Overview>When scientists discovered how to bring back dinosaurs using extinct animal recovery techniques, your zoo was one of the first to offer a Styracosaurus exhibit. Attendance skyrocketed for a while, but now guests have gotten bored with your exhibit, and zoo attendance has declined.
+      <p/>
+		Your zoo's board of directors wants you to display a Tyrannosaurus rex in your zoo, but only the finest zoos can adopt this magnificent predator. Before you can adopt a T. rex, you must improve your zoo's fame rating and attract more guests to your zoo.
+      <p/>The board of directors has agreed to fund an aggressive campaign to develop your zoo. If you bring the zoo up to 3 stars of fame, the board of directors will give you a cash grant.       
+      </DinosaurZooFame1Overview>
+      
+      <DinosaurZooGuest1Overview>Your zoo's board of directors is pleased with your progress so far but would like you to bring more guests into the zoo. As an incentive, the board has offered to donate a Carnotaurus if you can attract a total of 100 guests to your zoo.      
+		</DinosaurZooGuest1Overview>
+     
+      <DinosaurZooGuest1Success>More than 100 guests have visited your zoo! Heartened by the zoo's new popularity, your board of directors has adopted a Carnotaurus at no cost to you. You will find the Carnotaurus in a crate near the entrance of your zoo.
+      <p/>The board of directors is so pleased with your success that they have agreed to adopt a Triceratops if you can attract a total of 150 guests to your zoo.
+      </DinosaurZooGuest1Success>
+      
+      <DinosaurZooGuest2Success>More than 150 guests have visited your zoo! In recognition of your zoo's continuing popularity, the board of directors has adopted a Triceratops at no cost to you. You will find the Triceratops in a crate near the entrance of your zoo.
+      </DinosaurZooGuest2Success>
+      
+      <DinosaurZooFame1Success>Your progress in developing your zoo has impressed your zoo's board of directors so much that they have given you a cash grant!
+      <p/>
+      The board of directors has promised you an even larger cash grant if you can increase your zoo fame to 4 stars.
+      </DinosaurZooFame1Success>
+      
+      <DinosaurZooFame2Success>Your zoo is more famous than ever! As a reward for your efforts, the board of directors has given you a cash grant.
+      <p/>
+      The board of directors has promised you an even larger cash grant if you can increase your zoo fame to 5 stars.      
+      </DinosaurZooFame2Success> 
+      
+      <DinosaurZooFame3Success>You've reached 5 stars -- the pinnacle of zoo fame! The board of directors has awarded you a cash grant in recognition of your achievement.
+      <p/>
+      To win the scenario, adopt a Tyrannosaurus rex and meet its basic needs.
+      </DinosaurZooFame3Success>       
+     
+      <DinosaurZooSuccessOverview>
+      Your new Tyrannosaurus rex is a huge hit! Your guests are delighted with the new animal, and your board of directors is impressed with the success of your dinosaur zoo. Congratulations on a job well done!
+      </DinosaurZooSuccessOverview>
+      
+      <DinosaurZooOverallGoal>Build a 5-star zoo, acquire a Tyrannosaurus rex, and then meet the T. rex's basic needs.
+      </DinosaurZooOverallGoal>
+      <DinosaurZooOverallGoalDone>You have acquired a Tyrannosaurus rex and met its basic needs!
+      </DinosaurZooOverallGoalDone>
+        
+		<DinosaurZooGuestGoal1>Attract a grand total of 100 guests to your zoo to receive a free Carnotaurus.</DinosaurZooGuestGoal1>
+		<DinosaurZooGuestGoal1Done>You received a free Carnotaurus after 100 guests visited your zoo.</DinosaurZooGuestGoal1Done>
+		
+		<DinosaurZooGuestGoal2>Attract a grand total of 150 guests to your zoo to receive a free Triceratops.</DinosaurZooGuestGoal2>
+		<DinosaurZooGuestGoal2Done>You received a free Triceratops after 150 guests visited your zoo.</DinosaurZooGuestGoal2Done>	
+		
+		<DinosaurZooFameGoal1>Reach 3 stars of zoo fame to receive a cash grant.</DinosaurZooFameGoal1>
+		<DinosaurZooFameGoal1Done>You received a cash grant for reaching 3 stars of fame!</DinosaurZooFameGoal1Done>
+		
+		<DinosaurZooFameGoal2>Reach 4 stars of zoo fame to receive a cash grant.</DinosaurZooFameGoal2>
+		<DinosaurZooFameGoal2Done>You received a cash grant for reaching 4 stars of fame!</DinosaurZooFameGoal2Done>
+		
+		<DinosaurZooFameGoal3>Reach 5 stars of zoo fame to receive a cash grant.</DinosaurZooFameGoal3>
+		<DinosaurZooFameGoal3Done>You received a cash grant for reaching 5 stars of fame!</DinosaurZooFameGoal3Done>
+	                
+   </DinosaurZoo>
+   
+   <DinosaurZooLabels>
+      <DinosaurZooCampaignshort>The Dinosaur Zoo</DinosaurZooCampaignshort>
+      <DinosaurZooCampaignS1>The Dinosaur Zoo</DinosaurZooCampaignS1>
+      <DinosaurZooCampaignS1short>The Dinosaur Zoo</DinosaurZooCampaignS1short>
+   </DinosaurZooLabels>
+   
+</ZT2Strings>

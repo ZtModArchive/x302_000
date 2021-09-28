@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Abelisauridae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Archosauria>
+                  <Saurischia>
+                     <Abelisauridae/>
+                  </Saurischia>
+               </Archosauria>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

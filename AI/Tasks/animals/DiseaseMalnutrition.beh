@@ -1,0 +1,52 @@
+<BehaviorSets>
+   <GetSickMalnutrition>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Bip01 Spine1} runpeff diseased_hunger stop nocull"/>
+	      <diseaseon text="{Bip01 Spine1} runpeff diseased_hunger attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickMalnutrition>
+   <CureSickMalnutrition>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Bip01 Spine1} runpeff diseased_hunger stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickMalnutrition>
+   <GetSickMalnutrition>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Bip01 Spine} runpeff diseased_hunger stop nocull"/>
+	      <diseaseon text="{Bip01 Spine} runpeff diseased_hunger attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickMalnutrition>
+   <CureSickMalnutrition>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Bip01 Spine} runpeff diseased_hunger stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickMalnutrition>
+</BehaviorSets>

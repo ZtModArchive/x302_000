@@ -1,0 +1,20 @@
+<BFScenarioGroup name="familyphotosrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="FamilyPhotos" state="0" sticky="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHFamilyPhotosShort" overview="PhotoChallengetext:PHFamilyPhotos" />
+				<success locid="PhotoChallengetext:PHFamilyPhotosSuccessShort" overview="PhotoChallengetext:PHFamilyPhotosSuccess" />
+				<failure locid="PhotoChallengetext:PHFamilyPhotosFailureShort" overview="PhotoChallengetext:PHFamilyPhotosFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/FamilyPhotos.lua" entry="evalFamilyPhotos" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/FamilyPhotos.lua" entry="completeFamilyPhotos" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/FamilyPhotos.lua" entry="failFamilyPhotos" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

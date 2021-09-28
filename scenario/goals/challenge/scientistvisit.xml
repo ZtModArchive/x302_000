@@ -1,0 +1,20 @@
+<BFScenarioGroup name="scientistvisitrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="scientistvisitphoto" state="0" sticky="true" optional="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHDinoScientistVisitShort" overview="PhotoChallengetext:PHDinoScientistVisit" />
+				<success locid="PhotoChallengetext:PHDinoScientistVisitSuccessShort" overview="PhotoChallengetext:PHDinoScientistVisitSuccess" />
+				<failure locid="PhotoChallengetext:PHDinoScientistVisitFailureShort" overview="PhotoChallengetext:PHDinoScientistVisitFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/scientistvisit.lua" entry="evalscientistvisit" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/scientistvisit.lua" entry="completescientistvisit" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/scientistvisit.lua" entry="failscientistvisit" />
+			</failure>
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

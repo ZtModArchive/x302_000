@@ -1,0 +1,503 @@
+<BehaviorSets>
+<!--Vendor Behavior-->
+   <GiftCartSellItem>
+      <subjects>
+         <giftcart_xt/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate physObj="Vendor" targetAnim="Stand_ShopReceiveItem"/>
+      </behaviors>
+   </GiftCartSellItem>
+<!--Animal Gifts-->
+   <BuyAnkylosaurusGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Ankylosaurus_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyAnkylosaurusGift>
+   <BuyBearShortfacedGift_GiftCart>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="BearShortfaced_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyBearShortfacedGift_GiftCart>
+   <BuyBearShortfacedGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="BearShortfaced_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyBearShortfacedGift>
+   <BuyBirdElephantGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="BirdElephant_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyBirdElephantGift>
+   <BuyBluebuckGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/BluebuckGiftAdult.lua" function="BluebuckGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyBluebuckGift>
+   <BuyBluebuckGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/BluebuckGiftYoung.lua" function="BluebuckGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyBluebuckGift>
+   <BuyCamelGiantGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="CamelGiant_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyCamelGiantGift>
+   <BuyCamelGiantGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="CamelGiant_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyCamelGiantGift>
+   <BuyCatSaberToothedGift_GiftCart>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="CatSaberToothed_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyCatSaberToothedGift_GiftCart>
+   <BuyCatSaberToothedGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="CatSaberToothed_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyCatSaberToothedGift>
+   <BuyCowAurochGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="CowAuroch_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyCowAurochGift>
+   <BuyDeerBushAntleredGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="DeerBushAntlered_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDeerBushAntleredGift>
+   <BuyDeinonychusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/DeinonychusGiftAdult.lua" function="DeinonychusGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDeinonychusGift>
+   <BuyDeinonychusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/DeinonychusGiftYoung.lua" function="DeinonychusGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDeinonychusGift>
+   <BuyDeinosuchusGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Deinosuchus_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDeinosuchusGift>
+   <BuyDimetrodonGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Dimetrodon_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDimetrodonGift>
+   <BuyDimetrodonGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Dimetrodon_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDimetrodonGift>
+   <BuyDoedicurusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/DoedicurusGiftAdult.lua" function="DoedicurusGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDoedicurusGift>
+   <BuyDoedicurusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/DoedicurusGiftYoung.lua" function="DoedicurusGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDoedicurusGift>
+   <BuyDodoGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Dodo_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDodoGift>
+   <BuyDiprotodonGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Diprotodon_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDiprotodonGift>
+   <BuyDiprotodonGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Diprotodon_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyDiprotodonGift>
+   <BuyElephantDwarfSicilianGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/ElephantDwarfSicilianGiftAdult.lua" function="ElephantDwarfSicilianGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyElephantDwarfSicilianGift>
+   <BuyElephantDwarfSicilianGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/ElephantDwarfSicilianGiftYoung.lua" function="ElephantDwarfSicilianGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyElephantDwarfSicilianGift>
+   <BuyGigantopithecusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="Gigantopithecus_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyGigantopithecusGift>
+   <BuyGigantopithecusGift_GiftCart>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Gigantopithecus_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyGigantopithecusGift_GiftCart>
+   <BuyGigantopithecusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="Gigantopithecus_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyGigantopithecusGift>
+   <BuyGigantopithecusGift_GiftCart>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Gigantopithecus_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyGigantopithecusGift_GiftCart>
+   <BuyKentrosaurusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Kentrosaurus_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyKentrosaurusGift>
+   <BuyKentrosaurusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Kentrosaurus_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyKentrosaurusGift>
+   <BuyLionCaveGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="LionCave_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyLionCaveGift>
+   <BuyMastodonAmericanGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="MastodonAmerican_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyMastodonAmericanGift>
+   <BuyMastodonAmericanGift_GiftCart>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="MastodonAmerican_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyMastodonAmericanGift_GiftCart>
+   <BuyProtarchaeopteryxGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Protarchaeopteryx_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyProtarchaeopteryxGift>
+   <BuyRhinocerosWoolyGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="RhinocerosWooly_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyRhinocerosWoolyGift>
+   <BuySivatheriumGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Sivatherium_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySivatheriumGift>
+   <BuySivatheriumGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Sivatherium_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySivatheriumGift>
+   <BuySlothGroundGiantGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="SlothGroundGiant_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuySlothGroundGiantGift>
+   <BuySlothGroundGiantGift_GiftCart>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="SlothGroundGiant_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuySlothGroundGiantGift_GiftCart>
+   <BuyStegosaurusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Stegosaurus_Gift_Adult" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyStegosaurusGift>
+   <BuyStegosaurusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Stegosaurus_Gift" subjectNode="Bip01 Spine3" detachAction="inventory" container="back_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyStegosaurusGift>
+   <BuyStokesosaurusGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Stokesosaurus_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyStokesosaurusGift>
+   <BuyThylacineGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Thylacine_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyThylacineGift>
+   <BuyUtahraptorGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Utahraptor_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyUtahraptorGift>
+   <BuyVelociraptorGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Velociraptor_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyVelociraptorGift>
+   <BuyWarrahGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Warrah_Gift" subjectNode="Bip01 Spine1" detachAction="inventory" container="fanny_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWarrahGift>
+   <BuyWarthogGiantGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="WarthogGiant_Gift" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyWarthogGiantGift>
+<!--Easter egg gifts-->
+   <BuyClubGift_GiftCart>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="CavemanClub" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyClubGift_GiftCart>
+   <BuyClubGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="CavemanClub" subjectNode="Bip01 L Finger0" detachAction="inventory" container="lefthand_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyClubGift>
+</BehaviorSets>

@@ -1,0 +1,251 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="ReceiveDisease" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="Disease:ReceiveDisease">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_ExtinctAnimal/>
+            <b_Adult/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Disease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick" params="ExtinctFlu"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SpreadDisease" GiveTo="subject" Timein="45" Timeout="105" Reconsider="true"/>
+	       <BFAIToken Name="t_ExtinctFluDisease" GiveTo="subject" Timeout="90" Chance="100" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ReceiveDisease_Guest" TaskDelayMin="1200" TaskDelayMax="1800" Priority="3"  UniqueID="Disease:ReceiveDisease_Guest">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Disease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SpreadDisease" GiveTo="subject" Timein="45" Timeout="105" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HealPartialDisease" Priority="6" UniqueID="Disease:HealPartialDisease">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_CureDisease2" GiveTo="subject" Timein="120" Timeout="180" Reconsider="true"/>
+	       <BFAIToken Name="t_SpreadDisease" GiveTo="subject" Timein="30" Timeout="90" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CureDisease" Priority="6" UniqueID="Disease:CureDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CureDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="555"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehPlaySet behSet="CureSick"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CureDisease_Guest" UniqueID="Disease:CureDisease_Guest">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CureDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehDetachObject detachEntity="ElephantAfrican_Gift" subjectNode="Bip01 Head" container="head_inventory"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SpreadDisease" Priority="3" UniqueID="Disease:SpreadDisease">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <animal/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="GetSick_Disease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="Disease:GetSick_Disease">
+      <BFAICreateData>
+         <Subjects>
+            <b_ExtinctAnimal/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_ExtinctFluDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+               <ZTMessageInfo locID="animalthoughts:DiseasedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="45"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_SpreadDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	          <BFAIToken Name="t_ExtinctFluDisease2" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSick"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_Disease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="Disease:GetSick_Disease:2">
+      <BFAICreateData>
+         <Subjects>
+            <b_ExtinctAnimal/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_ExtinctFluDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="45"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_SpreadDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	          <BFAIToken Name="t_ExtinctFluDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSick"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

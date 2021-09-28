@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'Stand_TestFence_Shocked'"/>
+   <key time="2.03" text="{Bip01 L Finger0} runpeff electricsparks attach nocull"/>
+   <key time="2.52" text="{Bip01 L Finger0} runpeff electricsparks stop nocull"/>
+</TEXTKEY>

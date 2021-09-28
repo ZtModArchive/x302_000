@@ -1,0 +1,57 @@
+<BFTypedBinder binderType="DwarfAzalea_Tundra">
+	<types>
+		<entity>
+			<foliage>
+				<plant>
+					<grass>
+						<DwarfAzalea_Tundra />
+					</grass>
+				</plant>
+			</foliage>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="-2.1 0.65 0.9" icon3Dscale="1.4">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\DwarfAzalea\DwarfAzalea_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:DwarfAzalea_Tundra" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DwarfAzalea_Tundra" />
+			</on>
+		</UIToggleButton>
+		<BFGBiomeData location="tundra_america_north_east">
+			<tundra />
+		</BFGBiomeData>
+		<BFAIEntityDataShared s_Product="Extinct" b_GrazeGrass="true" s_prop="Grass_Prop" s_Zoopedia="zoopedia:zoopedia_DwarfAzalea:entry" f_FameReq="40" />
+		<ZTTourData>
+			<biome_tundra value="3" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\foliage\DwarfAzalea\DwarfAzalea" scale="1.0" switch="0 15 25 35 60" />
+					<BFMultiGroundFitComponent heightOffset="0.0" />
+					<BFTerrainPaintComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="15">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

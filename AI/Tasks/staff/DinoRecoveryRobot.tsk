@@ -1,0 +1,726 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="Dance_Idle" CursorTask="false" UniqueID="DinoRecoveryRobot:Dance_Idle">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-5"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTask" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dance"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle" CursorTask="false" Priority="10" UniqueID="DinoRecoveryRobot:Idle">
+    <BFAICreateData>
+      <Subjects>
+        <DinoRecoveryRobot/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <DinoRecoveryCrateTeam/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData distanceInfluenced="false" fixedScore="50"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:Following" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotFollow" priority="1" timeout="30" global="true" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehPlaySet behSet="FollowCrateTeam"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:DRTRobotStaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+            <ZTMessageInfo locID="zoomessages:GeneralFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useEntityName="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Idle_Secondary" CursorTask="false" Priority="10" UniqueID="DinoRecoveryRobot:Idle_Secondary">
+    <BFAICreateData>
+      <Subjects>
+        <DinoRecoveryRobot/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <DinoRecoveryTranqTeam/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Targets>
+      <Objects/>
+    </BFAICreateData>
+    <BFAIEvalData distanceInfluenced="false" fixedScore="40"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:Following" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotFollow" priority="1" timeout="30" global="true" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehPlaySet behSet="FollowCrateTeam"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:DRTRobotStaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+            <ZTMessageInfo locID="zoomessages:GeneralFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useEntityName="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DinoTagged" CursorTask="false" Priority="10" UniqueID="DinoRecoveryRobot:DinoTagged">
+    <BFAIValidationData>
+       <Subjects/>
+       <Targets>
+          <Qualifiers b_Rampage="true"/>
+       </Targets>
+    </BFAIValidationData>
+    <BFAICreateData>
+      <Subjects>
+        <DinoRecoveryRobot/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+        <t_Ready/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData distanceInfluenced="false" fixedScore="65"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:ChasingDino" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehSendToken>
+          <BFAITokenList>
+             <BFAIToken Name="t_GoToRobot" GiveTo="target" Payload="subject" Timeout="120" RetainOnFailure="true" Reconsider="true" OnlyOne="true"/>
+          </BFAITokenList>
+       </BFBehSendToken>
+       <BFBehMove pathRadius="1000" closestApproach="true" locoSpeed="fast"/>
+       <BFBehPursuit hitRadius="15" pursuitRadius="100" failureRadius="600" locoSpeed="fast"/>
+       <BFBehSendToken>
+          <BFAITokenList>
+             <BFAIToken Name="t_ReturnToCrate" GiveTo="subject" Payload="target" Timeout="120" RetainOnFailure="true" Reconsider="true" OnlyOne="true"/>
+          </BFAITokenList>
+       </BFBehSendToken>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:DRTRobotStaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+            <ZTMessageInfo locID="zoomessages:GeneralFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useEntityName="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="ReturnToCrate" CursorTask="false" Priority="10" UniqueID="DinoRecoveryRobot:ReturnToCrate">
+    <BFAICreateData>
+      <Subjects>
+        <DinoRecoveryRobot/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <DinoRecoveryCrateTeam/>
+      </Targets>
+      <Objects>
+        <t_ReturnToCrate/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData distanceInfluenced="false" fixedScore="68"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:Following" useTargetName="true"/>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotFollow" priority="1" timeout="30" global="true" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehPursuit hitRadius="20" pursuitRadius="100" failureRadius="600" locoSpeed="fast"/>
+       <BFBehAnimateRandom minPlays="1" maxPlays="3">
+          <randomAnims>
+             <Stand_Wave weight="75"/>
+             <Stand_PirateJig weight="25"/>
+          </randomAnims>
+       </BFBehAnimateRandom>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:DRTRobotStaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+            <ZTMessageInfo locID="zoomessages:GeneralFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useEntityName="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="DistractDinosaur" useFromTokenQualifiers="true" CursorTask="false" Priority="10" UniqueID="DinoRecoveryRobot:DistractDinosaur">
+    <BFAIValidationData>
+       <Subjects/>
+       <Targets>
+          <Qualifiers b_Rampage="true"/>
+       </Targets>
+    </BFAIValidationData>
+    <BFAICreateData>
+      <Subjects>
+        <DinoRecoveryRobot/>
+        <Qualifiers inWater_OR_onLand="true"/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+        <Qualifiers_AND inWater_OR_onLand="true" isInShow="false" b_Rampage="true"/>
+      </Targets>
+      <Objects>
+         <t_DistractDino/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData distanceInfluenced="false" fixedScore="70"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:GoingToDistract" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehSendToken>
+          <BFAITokenList>
+             <BFAIToken Name="t_GoToRobot" GiveTo="target" Payload="subject" Timeout="120" RetainOnFailure="true" Reconsider="true" OnlyOne="true"/>
+          </BFAITokenList>
+       </BFBehSendToken>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotGoingToDistract" priority="1" timeout="30" global="true" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehFaceTarget/>
+       <BFBehMove pathRadius="1000" closestApproach="true" locoSpeed="fast"/>
+       <BFBehPursuit hitRadius="15" pursuitRadius="100" failureRadius="1000" locoSpeed="fast"/>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:Distracting" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotDistracting" priority="1" timeout="30" global="true" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehSendToken>
+          <BFAITokenList>
+             <BFAIToken Name="t_InviteAttack" GiveTo="target" Payload="subject" Timeout="120" RetainOnFailure="true" Reconsider="true"/>
+          </BFAITokenList>
+       </BFBehSendToken>
+       <BFBehPlaySet behSet="DistractDino"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData>
+      <BFBehExecTask>
+        <ZTBehFeedback>
+          <ZTFeedbackData>
+            <ZTThoughtInfo locID="staffthoughts:DRTRobotStaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+            <ZTMessageInfo locID="zoomessages:GeneralFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useEntityName="true" useTargetName="true"/>
+          </ZTFeedbackData>
+        </ZTBehFeedback>
+      </BFBehExecTask>
+    </BFAIFailureData>
+  </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ReactFountainSplash" Priority="10" CursorTask="false" TaskDelayMin="300" TaskDelayMax="500" UniqueID="DinoRecoveryRobot:ReactFountainSplash">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <FountainSplash_mm/>            
+         </Targets>
+         <Objects>
+            <t_FountainSplash/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:DinoRecoveryRobotSplashFountain" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_PirateJig"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryRobotSplashFountain" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   
+<!-- Dino Recovery Building Interactions -->
+   <BFAITaskTemplate Name="ExitDinoRecoveryBuilding" Priority="10" UniqueID="DinoRecoveryRobot:ExitDinoRecoveryBuilding">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+    	 <Objects>
+      	    <t_ExitDinoRecoveryBuilding/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:LeavingDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="ExitDinoRecoveryBuilding"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="ExitDinoRecoveryBuilding_Fast" Priority="10" UniqueID="DinoRecoveryRobot:ExitDinoRecoveryBuilding_Fast">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+    	 <Objects>
+      	    <t_ExitDinoRecoveryBuildingFast/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:LeavingDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="ExitDinoRecoveryBuildingFast"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="ReturnDinoRecoveryBuilding" Priority="10" UniqueID="DinoRecoveryRobot:ReturnDinoRecoveryBuilding">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+    	 <Objects>
+    	    <t_RecallDRT/>
+    	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoingToDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="ReturnDinoRecoveryBuilding"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="EnterDinoRecoveryBuilding" Priority="10" UniqueID="DinoRecoveryRobot:EnterDinoRecoveryBuilding">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+    	 <Objects>
+    	    <t_EnterDRTBuilding/>
+    	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10005"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EnteringDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="EnterDinoRecoveryBuilding"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="DefaultDinoRecoveryBuilding" reserveTag="General" Priority="2" UniqueID="DinoRecoveryRobot:DefaultDinoRecoveryBuilding">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+         </Subjects>
+         <Targets>
+            <DinoRecoveryBuilding/>
+         </Targets>
+    	 <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="15"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Up" GiveTo="target" Timeout="120" RetainOnFailure="true" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoingToDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterRobot" locoSpeed="slow" redock="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reset" GiveTo="DinoRecoveryBuilding" Radius="1000" Timein="30" RetainOnFailure="true" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EnteringDRTBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="EnterDinoRecoveryBuilding"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="UseBathroomSmall" reserveTag="Use" UniqueID="DinoRecoveryRobot:UseBathroomSmall">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <bathroomsmall/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="false" fixedScore="12"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="UseBathroomSmall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap bathroom="-100" happiness="-3"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="UseBathroomLarge" reserveTag="Use_Male" UniqueID="DinoRecoveryRobot:UseBathroomLarge">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot_Adult_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <bathroomlarge/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="false" fixedScore="13"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="UseBathroom"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="UseBathroomLarge" reserveTag="Use_Female" UniqueID="DinoRecoveryRobot:UseBathroomLarge:1">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot_Adult_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <bathroomlarge/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="false" fixedScore="13"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="UseBathroom"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeaveZoo" CursorTask="false" UniqueID="DinoRecoveryRobot:LeaveZoo">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <entrance/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="false" fixedScore="10"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:LeaveZoo"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock locoSpeed="slow"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehKill killSubject="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehKill killSubject="true"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Animal Rampage Tasks -->
+   <BFAITaskTemplate Name="DinosaurGoToRobot" CursorTask="false" Priority="7" UniqueID="DinoRecoveryRobot:DinosaurGoToRobot">
+    <BFAICreateData>
+      <Subjects_AND>
+         <animal/>
+         <Qualifiers b_Rampage="E true"/>
+      </Subjects_AND>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+         <t_GoToRobot/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="300"/>
+    <BFBehExecTask>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:GoingToInvestigate" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehFaceTarget/>
+       <BFBehPursuit hitRadius="3" pursuitRadius="100" failureRadius="600" locoSpeed="fast"/>
+       <ZTBehFeedback>
+          <ZTFeedbackData>
+             <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+          </ZTFeedbackData>
+       </ZTBehFeedback>
+       <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+
+<!-- Staff Overwrite Tasks -->
+   <BFAITaskTemplate Name="DinoRecoveryRobotWander" CursorTask="false" UniqueID="DinoRecoveryRobot:DinoRecoveryRobotWander">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+           <self/>
+         </Targets>
+         <Objects/>
+       </BFAICreateData>
+       <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-.7"/>
+       </BFAIEvalData>
+       <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:WaitingForTask"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTask" priority="1" timeout="30" global="false"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehExitTankGate/>
+         <BFBehWander playTime="5" avoidWater="true"/>
+       </BFBehExecTask>
+       <BFAICompletionData/>
+       <BFAIFailureData/>
+     </BFAITaskTemplate>
+     <BFAITaskTemplate Name="DinoRecoveryRobotWanderWater" CursorTask="false" UniqueID="DinoRecoveryRobot:DinoRecoveryRobotWanderWater">
+       <BFAICreateData>
+         <Subjects>
+           <DinoRecoveryRobot/>
+           <Qualifiers_AND inWater_OR_onLand="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+           <self/>
+         </Targets>
+         <Objects/>
+       </BFAICreateData>
+       <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-.7"/>
+       </BFAIEvalData>
+       <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:WaitingForTask"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTask" priority="1" timeout="30" global="false"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander playTime="5"/>
+       </BFBehExecTask>
+       <BFAICompletionData/>
+       <BFAIFailureData/>
+     </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DinoRecoveryRobotWaitBench" CursorTask="false" Priority="1" reserveTag="Use_Seating" UniqueID="DinoRecoveryRobot:DinoRecoveryRobotWaitBench">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <bench/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-7"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskBench"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTaskBench" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DinoRecoveryRobotWaitStaffCenter" CursorTask="false" Priority="2" reserveTag="Use" UniqueID="DinoRecoveryRobot:DinoRecoveryRobotWaitStaffCenter">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-12"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTask" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DinoRecoveryRobotWaitStaffCenter_CaffeineMode" CursorTask="false" Priority="2" reserveTag="Use" UniqueID="DinoRecoveryRobot:DinoRecoveryRobotWaitStaffCenter_CaffeineMode">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryRobot/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+            <Qualifiers b_CaffeineTrigger="true"/>                        
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-14"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotWaitingForTask" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData b_CaffeineMode="true"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_DeCaffeinate" GiveTo="subject" Timein="360" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+
+
+</BFAITaskTemplateList>

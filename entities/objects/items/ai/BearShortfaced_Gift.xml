@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="BearShortfaced_Gift">
+   <types>
+      <entity>
+         <item>
+            <BearShortfaced_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_BearShortfaced_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:BearShortfaced_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_RareExtinctGift="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Gifts/BearShortfaced_Gift" scale="1.0" switch="0 36"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

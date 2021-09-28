@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Stegosaurus_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Stegosauridae>
+                        <Stegosaurus>
+                           <Stegosaurus_Young>
+                              <Stegosaurus_Young_M/>
+                           </Stegosaurus_Young>
+                        </Stegosaurus>
+                     </Stegosauridae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Stegosaurus_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

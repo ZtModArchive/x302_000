@@ -1,0 +1,105 @@
+<BFTypedBinder binderType="Quagga_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Perissodactyla>
+                     <Equidae>
+                        <ZebraCommon>
+                           <ZebraCommon_Adult>
+                              <ZebraCommon_Adult_M>
+                              	<Quagga_Adult_M/>
+                              </ZebraCommon_Adult_M>
+                           </ZebraCommon_Adult>
+                        </ZebraCommon>
+                     </Equidae>
+                  </Perissodactyla>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+	<UIToggleButton template="adopt">
+		<UIAspect>
+			<default image="entities\units\animals\Quagga\Quagga_Adult_M_icon.dds" />
+		</UIAspect>
+		<UIHelpInfo ids="entityname:Quagga" />
+		<on>
+			<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Quagga_Adult_M" />
+		</on>
+	</UIToggleButton>
+	<BFAIEntityDataShared s_Product="Extinct" s_Species="Quagga" f_BaseDonationAmount="80" s_Endangerment="Extinct" b_ExtinctAnimal="true" b_Basic="false" b_Medium="true" f_viewBonus="15" s_Zoopedia="zoopedia:zoopedia_quagga:entry" s_ProfileLock="quagga_xtlock" />
+	<BFGBiomeData location="savannah_eastafrica" locationSensitivity="10">
+		<alpine sensitivity="-5" />
+		<benthic sensitivity="-10" />
+		<borealforest sensitivity="0" />
+		<coastal sensitivity="-10" />
+		<desert sensitivity="0" />
+		<grassland sensitivity="2" />
+		<reef sensitivity="-10" />
+		<pelagic sensitivity="-10" />
+		<temperateforest sensitivity="0" />
+		<tropicalrainforest sensitivity="0" />
+		<tundra sensitivity="-10" />
+		<savannah sensitivity="4" primary="true" />
+		<scrub sensitivity="2" />
+		<wetlands sensitivity="-5" />
+	</BFGBiomeData>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Quagga/Quagga_Adult_F.bfm" scale="0.8" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+	<BFNamedBinder binderName="texController" required="1">
+		<instance>
+			<BFAITextureController currState="well" defaultState="well">
+				<attribList>
+					<health />
+					<hygiene />
+				</attribList>
+				<stateList>
+					<sickanddirty>
+						<attribData>
+							<health minRange="70" maxRange="101" />
+							<hygiene minRange="70" maxRange="101" />
+						</attribData>
+						<textureData>
+							<mainObj material="Zebra_Adult_M_MTL" image="entities\units\animals\Quagga\Quagga_Adult_M_Sick_Dirty.dds" />
+						</textureData>
+					</sickanddirty>
+					<sick>
+						<attribData>
+							<health minRange="70" maxRange="101" />
+						</attribData>
+						<textureData>
+							<mainObj material="Zebra_Adult_M_MTL" image="entities\units\animals\Quagga\Quagga_Adult_M_Sick.dds" />
+						</textureData>
+					</sick>
+					<dirty>
+						<attribData>
+							<hygiene minRange="70" maxRange="101" />
+						</attribData>
+						<textureData>
+							<mainObj material="Zebra_Adult_M_MTL" image="entities\units\animals\Quagga\Quagga_Adult_M_Dirty.dds" />
+						</textureData>
+					</dirty>
+					<well>
+						<textureData>
+							<mainObj material="Zebra_Adult_M_MTL" image="entities\units\animals\Quagga\Quagga_Adult_M.dds" />
+						</textureData>
+					</well>
+				</stateList>
+			</BFAITextureController>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

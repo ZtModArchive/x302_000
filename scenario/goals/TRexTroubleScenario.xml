@@ -1,0 +1,125 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="DinoCampaign:TroubleIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup hidden="0" name="OptionalPhoto" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="DinoPhotos" hidden="1" state="0" sticky="true">
+					<info type="primary" >
+						<neutral locid="PhotoChallengetext:PHTroublePhotoShort" overview="DinoCampaign:TroublePhoto"/>
+						<success locid="PhotoChallengetext:PHFinishTroublePhotoShort" overview="DinoCampaign:TroubleFinishPhoto"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalDinoPhotos" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeDinoPhotos"  />
+					</success>							
+				</BFScenarioRule>	
+			</children>
+		</BFScenarioGroup>		
+		<BFScenarioGroup hidden="0" name="TotalWin" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="4StarZoo" hidden="0" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleFourStarsShort" overview="DinoCampaign:TroubleOverview"/>
+						<success locid="DinoCampaign:TroubleFinishFourStars" overview="DinoCampaign:TroubleOverview"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalFame40" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeFame40" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="GetFirstDino" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleAdoptDinoShort" overview="DinoCampaign:TroubleAdoptDino"/>
+						<success locid="DinoCampaign:TroubleFinishAdoptDinoShort" overview="DinoCampaign:TroubleFinishAdoptDino"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalAcquireDino" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeAcquireDino" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="BuildDRT" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleBuildDRTShort" overview="DinoCampaign:TroubleBuildDRT"/>
+						<success locid="DinoCampaign:TroubleFinishBuildDRTShort" overview="DinoCampaign:TroubleFinishBuildDRT"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalBuildDRT" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeBuildDRT" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="Get4Dinos" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleFourDinosShort" overview="DinoCampaign:TroubleFourDinos"/>
+						<success locid="DinoCampaign:TroubleFinishFourDinosShort" overview="DinoCampaign:TroubleFinishFourDinos"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalAcquire4Dinos" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeAcquire4Dinos" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="5StarZoo" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleFiveStarsShort" overview="DinoCampaign:TroubleFiveStars"/>
+						<success locid="DinoCampaign:TroubleFinishFiveStarsShort" overview="DinoCampaign:TroubleFinishFiveStars"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalFame50" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeFame50" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="StopRampage" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleStartRampageShort" overview="DinoCampaign:TroubleStartRampage"/>
+						<success locid="DinoCampaign:TroubleEndRampageShort" overview="DinoCampaign:TroubleEndRampage"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalStopRampage" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeStopRampage" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="GetTRex" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleGetTrexShort" overview="DinoCampaign:TroubleGetTrex"/>
+						<success locid="DinoCampaign:TroubleFinishGetTrex" overview="DinoCampaign:TroubleFinishGetTrex"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalAcquireTRex" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeAcquireTRex" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="ReleaseTRex" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:TroubleReleaseTrexShort" overview="DinoCampaign:TroubleReleaseTrex"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="evalReleaseTRex" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TRexTroubleScenario.lua" entry="completeReleaseTRex" />
+					</success>
+				</BFScenarioRule>				
+			</children>
+		</BFScenarioGroup>
+	</children>
+</ZTScenarioMgr>

@@ -1,0 +1,131 @@
+<BFTypedBinder binderType="ExtinctButterflyMonarch" version="2" versionReplace="true">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_air>
+                  <ExtinctButterflyMonarch/>
+               </ambient_air>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+	<UIToggleButton template="adopt">
+		<UIAspect>
+			<default image="entities\units\animals\Gigantopithecus\Gigantopithecus_Adult_F_icon.dds" />
+		</UIAspect>
+		<UIHelpInfo ids="entityname:ButterflyMonarchGiant" />
+		<on>
+			<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ButterflyMonarchGiant_Adult_F" />
+		</on>
+	</UIToggleButton>
+        <BFAIEntityDataShared s_Species="ButterflyMonarch" b_Caller="false" b_CloningFailures="true" b_NoPerceiveOverride="true" b_DoNotSave="0" b_Ambient="false">
+		<BFAINeedAdjusts lifespan="0.01" />
+	</BFAIEntityDataShared>
+        <ZTPlacementData iconAnim="Fly_Idle" selectable="true" deletable="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <position x="0" y="0" z="0"/>
+               <BFActorComponent actorfile="entities/units/animals/ExtinctButterflyMonarch/ExtinctButterflyMonarch_Adult_F.bfm" scale="1.5"/>
+               <BFBirdGroundFitComponent heightOffset="3.25" ignoreElevatedPath="true" minHeightOffset="1.8" desiredClimbRate="0.2" desiredDiveRate="0.4"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFGridCollisionComponent/>
+               <BFBoundedObjectComponent worldBounded="0">
+                  <minPoint x="-1000000" y="-100000" z="-100000"/>
+                  <maxPoint x="1000000" y="100000" z="100000"/>
+               </BFBoundedObjectComponent>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01 Head" width="1.5" minLength="1.5" maxLength="3.0" minOffset="0" maxOffset=".75"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Glider="false"/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Fly_Idle" interruptFlag="true" loopFlag="true" animSpeed="0.3"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors>
+                  <ZTAISensor/>
+                  <BFAISensorSelf/>
+               </Sensors>
+               <StateThinkers>
+                  <ZTAIStateThinker mergeKey="Name">
+                     <BFAIStateVar Name="lifespan" Value="" ValueMin="0" ValueMax="0" CessationThreshold="0" TriggerThreshold="90" CriticalThreshold="90" Advanced="true"/>
+                  </ZTAIStateThinker>
+               </StateThinkers>
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.3"/>
+                     <slow name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </slow>
+                     <medium name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </medium>
+                     <fast name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </fast>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+            <BFNamedBinder binderName="water" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.3"/>
+                     <slow name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </slow>
+                     <medium name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </medium>
+                     <fast name="Fly" minAnimSpeed="0.3" maxAnimSpeed="0.4">
+                        <waggle name="Fly_Ahead" wag="0.3"/>
+                     </fast>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

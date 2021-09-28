@@ -1,0 +1,198 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="ReceiveSlowingDisease" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="DiseaseSlowing:ReceiveSlowingDisease">
+      <BFAICreateData>
+         <Subjects_AND>
+            <b_ExtinctAnimal/>
+            <b_Adult/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetSlowingDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick" params="SlowingSyndrome"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SlowingDisease" GiveTo="subject" Timein="0" Timeout="120" Reconsider="true"/>
+	       <BFAIToken Name="t_SpreadSlowingDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData b_DeCaffeineMode="true"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CureSlowingDisease" UniqueID="DiseaseSlowing:CureSlowingDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CureSlowingDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="555"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehPlaySet behSet="CureSickSlowing"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData b_DeCaffeineMode="false"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SpreadSlowingDisease" Priority="3" UniqueID="SlowingDisease:SpreadSlowingDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadSlowingDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_Slowing"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_SpreadSlowingDisease2" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="SpreadSlowingDisease" Priority="3" UniqueID="SlowingDisease:SpreadSlowingDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadSlowingDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_Slowing"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_SpreadSlowingDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="GetSick_SlowingDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseaseSlowing:GetSick_SlowingDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SlowingDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sick"/>
+               <ZTMessageInfo locID="animalthoughts:DiseasedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SlowingDisease2" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="GetSickSlowing"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_SlowingDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseaseSlowing:GetSick_SlowingDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SlowingDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SlowingDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="GetSickSlowing"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

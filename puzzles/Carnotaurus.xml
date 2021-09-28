@@ -1,0 +1,16 @@
+<ZTPuzzle animal="Carnotaurus" level="3" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.64" />
+    <ZTPuzzlePiece texture="02_Jaw" node="Piece02" entityScale="0.82" />
+    <ZTPuzzlePiece texture="03_Neck" node="Piece03" entityScale="1.64" />
+    <ZTPuzzlePiece texture="04_Torso" node="Piece04" entityScale="1.64" />
+    <ZTPuzzlePiece texture="05_Hand" node="Piece05" entityScale="0.82" />
+    <ZTPuzzlePiece texture="06_Hips" node="Piece06" entityScale="1.64"/>
+    <ZTPuzzlePiece texture="07_TailBase" node="Piece07" entityScale="1.64" />
+    <ZTPuzzlePiece texture="08_TailEnd" node="Piece08" entityScale="0.82" />
+    <ZTPuzzlePiece texture="09_LegRightUpper" node="Piece09" entityScale="0.82" />
+    <ZTPuzzlePiece texture="10_LegLeftUpper" node="Piece10" entityScale="1.64" />
+    <ZTPuzzlePiece texture="11_LegRightLower" node="Piece11" entityScale="1.64" />
+    <ZTPuzzlePiece texture="12_LegLeftLower" node="Piece12" entityScale="0.82"/>
+  </pieces>
+</ZTPuzzle>

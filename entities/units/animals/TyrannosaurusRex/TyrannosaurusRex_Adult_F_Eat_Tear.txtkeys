@@ -1,0 +1,5 @@
+<TEXTKEY>
+    <key frame="1" text="{Bip01 Head} snd 'Eat_Tear'"/>
+   <key percent="54" text = "{Node_Eat} attach object"/>
+
+</TEXTKEY>

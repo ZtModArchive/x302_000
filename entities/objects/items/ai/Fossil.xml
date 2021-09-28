@@ -1,0 +1,31 @@
+<BFTypedBinder binderType="Fossil">
+   <types>
+      <entity>
+         <item>
+            <Fossil/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Fossil.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Fossil"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared />
+      <ZTDevComponent/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/items/Fossil/Fossil" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,4 @@
+﻿<entries>
+   <ZTLocationEntry name="cretaceous_northamerica" locid="worldlocation:northamerica" icon="ui/icon_maplocations/Cretaceous_North_America.dds"/>
+   <ZTLocationEntry name="cretaceous_southamerica" locid="worldlocation:southamerica" icon="ui/icon_maplocations/Cretaceous_South_America.dds"/>
+</entries>

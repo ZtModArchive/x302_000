@@ -1,0 +1,638 @@
+<BehaviorSets>
+   <AttackedAnkylosaurus>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Ankylosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedAnkylosaurus>
+   <AttackedBearShortfaced>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_BearPolar" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedBearShortfaced>
+   <AttackedBirdElephant>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BirdElephant" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedBirdElephant>
+   <AttackedBluebuck>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Ibex" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedBluebuck>
+   <AttackedCamelGiant>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Attacked_CamelDromedary" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:GotSpitOnBad" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedCamelGiant>
+   <AttackedCatSaberToothed>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_TigerBengal" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedCatSaberToothed>
+   <AttackedCowAuroch>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Auroch" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedCowAuroch>
+   <AttackedDeerBushAntlered>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Moose" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDeerBushAntlered>
+   <AttackedDeinonychus>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Guest" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Run_2Tranquilized_Deinonychus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDeinonychus>
+   <AttackedDeinosuchus>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="AttackedDeinosuchus_Ground"/>
+               <water behSet="AttackedDeinosuchus_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </AttackedDeinosuchus>
+   <AttackedDeinosuchus_Ground>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Run_Deinosuchus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDeinosuchus_Ground>
+   <AttackedDeinosuchus_Water>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="TreadWater_Deinosuchus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDeinosuchus_Water>
+   <AttackedDimetrodon_TouchSail>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="p_TalkOffset" targetNode="Dock_SailGuest" reserveSlotName="general"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </AttackedDimetrodon_TouchSail>
+   <AttackedDimetrodon>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="p_TalkOffset" targetNode="Dock_SailGuest" reserveSlotName="general"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Dimetrodon" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDimetrodon>
+   <AttackedDiprotodon>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockNow subjectNode="p_TalkOffset" targetNode="Dock_Guest" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_Diprotodon" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDiprotodon>
+   <AttackedDodo>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Dodo" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDodo>
+   <AttackedDoedicurus>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Attacked_Doedicurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDoedicurus>
+   <AttackedElephantDwarfSicilian>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Attacked_DwarfSicilianElephant" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedElephantDwarfSicilian>
+   <AttackedGigantopithecus_Female>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_GuestFemale" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Gorilla" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedGigantopithecus_Female>
+   <AttackedGigantopithecus>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Attacked_Gigantopithecus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedGigantopithecus>
+   <AttackedKentrosaurus>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Kentrosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedKentrosaurus>
+   <AttackedLionCave>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Guest" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_LionCave" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedLionCave>
+   <AttackedMastodonAmerican>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_ElephantAfrican" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedMastodonAmerican>
+   <AttackedProtarchaeopteryx>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Protarchaeopteryx" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedProtarchaeopteryx>
+   <AttackedRhinocerosWooly>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedRhinocerosWooly>
+   <AttackedSivatherium>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Attacked_Okapi" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSivatherium>
+   <AttackedSlothGroundGiant>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_SlothGroundGiant" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedSlothGroundGiant>
+   <AttackedStegosaurus>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Stegosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStegosaurus>
+   <AttackedStokesosaurus>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Stokesosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStokesosaurus>
+   <AttackedThylacine>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Thylacine" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedThylacine>
+   <AttackedUtahraptor>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Utahraptor" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedUtahraptor>
+   <AttackedVelociraptor>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Velociraptor" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedVelociraptor>
+   <AttackedWarrah>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Thylacine" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedGood" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWarrah>
+   <AttackedWarthogGiant>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Guest" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedWarthogGiant>
+
+</BehaviorSets>

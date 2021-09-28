@@ -1,0 +1,10 @@
+<UIText name="Cloning Animal">
+   <UIRegion x="495" y="435" w="300" h="32" xalign="min" yalign="min" walign="len" halign="len" />
+   <UIState active="normal" visible="normal" />
+   <UIAspect>
+   	  <default>
+   		 <BFFont align="right"/>
+	  </default>
+   </UIAspect>
+   <text format="cloningfeedback:animal_format" type="multi"/>
+</UIText>

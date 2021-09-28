@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key frame="1" text="{Bip01 Head} snd 'DistressCall'"/>
+   <key frame="5" text="{Bip01 Head} snd 'Grunt'"/>  
+</TEXTKEY>

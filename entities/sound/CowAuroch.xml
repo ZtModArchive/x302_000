@@ -1,0 +1,211 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Charge_2Run">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Charge_2Run.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Charge_Ahead">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Charge_Ahead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Eat_Chew">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Eat_Chew.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Eat_Drink">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Eat_Drink.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Eat_Idle">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Eat_Idle.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Eat_Swallow">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Eat_Swallow.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Lie_Grunt">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Lie_Grunt.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Lie_Moo">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Lie_Moo.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Lie_ShakeHead">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Lie_ShakeHead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Lie_Sneeze">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Lie_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Lie_Sniff">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Lie_Sniff.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Sleep_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_BashFence">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_BashFence.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_Grunt">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_Grunt.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_GuestAttack">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_GuestAttack.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_Moo">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_Moo.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_NurseYoung">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_NurseYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_Roar">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_Roar.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_RubHorns">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_RubHorns.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Adult_Stand_RubObject">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Adult_F_Stand_RubObject.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   
+   <!--YOUNG-->
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_Nurse">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_Nurse.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Charge_2Run">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Charge_2Run.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Charge_Ahead">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Charge_Ahead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Eat_Chew">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Eat_Chew.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Eat_Drink">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Eat_Drink.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Eat_Idle">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Eat_Idle.wav" volume=".7" mindist="1" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Eat_Swallow">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Eat_Swallow.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Lie_Grunt">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Lie_Grunt.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Lie_Moo">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Lie_Moo.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Lie_ShakeHead">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Lie_ShakeHead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Lie_Sneeze">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Lie_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Lie_Sniff">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Lie_Sniff.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Sleep_Idle">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Sleep_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_BashFence">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_BashFence.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_Grunt">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_Grunt.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_GuestAttack">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_GuestAttack.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_Moo">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_Moo.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_NurseYoung">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_NurseYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_Roar">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_Roar.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_RubHorns">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_RubHorns.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="CowAuroch_Young_Stand_RubObject">
+         <snd name="entities/units/animals/CowAuroch/sound/CowAuroch_Young_F_Stand_RubObject.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+  
+   
+</soundtags>

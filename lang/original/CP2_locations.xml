@@ -1,0 +1,97 @@
+<ZT2Strings>
+   <worldlocation>
+   	<cp2extinct>Extinct Animals</cp2extinct>
+      <!--ANIMAL REGIONS-->
+      <europe_iceage>Europe</europe_iceage>
+      <europe_iceage_ltt>
+         <color r="255" g="248" b="178">
+            <b>Europe</b>
+         </color>
+         <br/>
+      </europe_iceage_ltt>
+      <america_south>South America</america_south>
+      <america_south_ltt>
+         <color r="255" g="248" b="178">
+            <b>South America</b>
+         </color>
+         <br/>
+      </america_south_ltt>
+      <america_north>North America</america_north>
+      <america_north_ltt>
+         <color r="255" g="248" b="178">
+            <b>North America</b>
+         </color>
+         <br/>
+      </america_north_ltt>
+      <newzealand>New Zealand</newzealand>
+      <newzealand_ltt>
+         <color r="255" g="248" b="178">
+            <b>New Zealand</b>
+         </color>
+         <br/>
+      </newzealand_ltt>
+      <africa_south>Southern Africa</africa_south>
+      <africa_south_ltt>
+         <color r="255" g="248" b="178">
+            <b>Southern Africa</b>
+         </color>
+         <br/>
+      </africa_south_ltt>
+      <falklandislands>Falkland Islands</falklandislands>
+      <falklandislands_ltt>
+         <color r="255" g="248" b="178">
+            <b>Falkland Islands</b>
+         </color>
+         <br/>
+      </falklandislands_ltt>
+      <mediterraneanislands>Mediterranean Islands</mediterraneanislands>
+      <mediterraneanislands_ltt>
+         <color r="255" g="248" b="178">
+            <b>Mediterranean Islands</b>
+         </color>
+         <br/>
+      </mediterraneanislands_ltt>
+      <america_north_east>North America</america_north_east>
+      <america_north_east_ltt>
+         <color r="255" g="248" b="178">
+            <b>North America</b>
+         </color>
+         <br/>
+      </america_north_east_ltt>
+      <eurasia>Eurasia</eurasia>
+      <eurasia_ltt>
+         <color r="255" g="248" b="178">
+            <b>Eurasia</b>
+         </color>
+         <br/>
+      </eurasia_ltt>
+      <mauritius>Mauritius</mauritius>
+      <mauritius_ltt>
+         <color r="255" g="248" b="178">
+            <b>Mauritius</b>
+         </color>
+         <br/>
+      </mauritius_ltt>
+      <caribbean>Caribbean Islands</caribbean>
+      <caribbean_ltt>
+         <color r="255" g="248" b="178">
+            <b>Caribbean Islands</b>
+         </color>
+         <br/>
+      </caribbean_ltt>   
+      <tasmania>Tasmania</tasmania>
+      <tasmania_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tasmania</b>
+         </color>
+         <br/>
+      </tasmania_ltt>    
+      <asia_central>Central Asia</asia_central>      
+      <asia_central_ltt>
+         <color r="255" g="248" b="178">
+            <b>Central Asia</b>
+         </color>
+         <br/>
+      </asia_central_ltt>         
+   </worldlocation>
+</ZT2Strings>

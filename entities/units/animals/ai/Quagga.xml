@@ -1,0 +1,49 @@
+<BFTypedBinder binderType="Quagga" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Perissodactyla>
+                     <Equidae>
+                        <Quagga/>
+                     </Equidae>
+                  </Perissodactyla>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+	<ZTDevComponent/>
+	<UIToggleButton template="adopt">
+		<UIAspect>
+			<default image="entities\units\animals\Quagga\Quagga_Adult_F_icon.dds" />
+		</UIAspect>
+		<UIHelpInfo ids="entityname:Quagga" />
+		<on>
+			<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Quagga_Adult_F" />
+		</on>
+	</UIToggleButton>
+	<BFAIEntityDataShared s_Product="Extinct" s_Species="Quagga" s_Endangerment="Extinct" b_ExtinctAnimal="true" f_adoptRarity="30" />
+	<BFGBiomeData location="savannah_eastafrica" locationSensitivity="10">
+		<alpine sensitivity="-7" />
+		<benthic sensitivity="-10" />
+		<borealforest sensitivity="-2" />
+		<coastal sensitivity="-10" />
+		<desert sensitivity="-2" />
+		<grassland sensitivity="2" />
+		<reef sensitivity="-10" />
+		<pelagic sensitivity="-10" />
+		<temperateforest sensitivity="-2" />
+		<tropicalrainforest sensitivity="-2" />
+		<tundra sensitivity="-10" />
+		<savannah sensitivity="3" primary="true"/>
+		<scrub sensitivity="2" />
+		<wetlands sensitivity="-7" />
+	</BFGBiomeData>
+   </shared>
+</BFTypedBinder>

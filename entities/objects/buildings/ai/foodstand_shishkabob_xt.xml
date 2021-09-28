@@ -1,0 +1,94 @@
+<BFTypedBinder binderType="foodstand_shishkabob_xt" version="2" versionReplace="true">
+	<types>
+		<entity>
+			<building>
+				<Foodstand>
+					<foodstand_shishkabob>
+						<foodstand_shishkabob_xt />
+					</foodstand_shishkabob>
+				</Foodstand>
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+        <ZTEntityDestructionData explosionEffect="destroy_building" explosionSound="destroy_woodglass_small" rubbleBinderName="Rubble_Fragment_Concrete" entityRuinBinderName="rubble_xt" numParticles="10" secsToRemove="0.3f" applyPhysToRubble="true" forceToRubbleMin="8.5f" forceToRubbleMax="15.0f" rubblePitchAngle="86" rubbleStartHeight="3.0f"/>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\hotstand_xt\foodstand_shishkabob_xt_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:foodstand_shishkabob_xt" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="foodstand_shishkabob_xt" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_food.dds" />
+			</UIAspect>
+		</UIButton>
+		<BFAIEntityDataShared s_Product="Extinct"  s_ProfileLock="extinct_xtlock"  s_uisort="hd" s_ItemsSold="ShishKaBob" b_CommerceBuilding="true" b_DonationAcceptor="false" s_Zoopedia="zoopedia:zoopedia_shish:entry" s_Theme="extinct" f_FameReq="60" />
+		<ZTTriggeredEventsComponent>
+			<Buy_Item>
+				<nonbroadcast>
+					<event msg="BFSND_PLAY_FROM_ENTITY" data="BFString" string="register_shishkabob" />
+				</nonbroadcast>
+			</Buy_Item>
+		</ZTTriggeredEventsComponent>
+		<ZTItemFilter>
+			<Include_OR b_ShishKaBob="true" />
+		</ZTItemFilter>
+		<ZTTourData>
+			<theme_extinct value="5" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/hotstand_xt/Hotstand_xt" switch="0 30 50" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	        <BFNamedBinder binderName="Vendor">
+		   <instance>
+		      <BFPhysObj>
+			 <BFActorComponent actorfile="entities\units\staff\Vendor\Vendor_Adult_M_Caveman.bfm" switch="0 8 16 5000 5001" minSwitch="0 6 14 5000 5001"/>
+		         <BFGroundFitComponent heightOffset="0.0"/>
+		      </BFPhysObj>
+		   </instance>
+		   <shared>
+		      <BFSharedPhysVars minDrawSetting="1"/>
+		   </shared>
+	        </BFNamedBinder>
+		<BFNamedBinder binderName="smokestack">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/Foodstand/Smokestack_df" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="smoke">
+			<instance>
+				<BFPhysObj drawLast="true">
+					<BFSimpleLODComponent modelfile="entities/objects/fx/Smokestack_Medium.nif" />
+					<BFForceUpdateWhenVisibleComponent />
+					<BFHasParticleComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="1300" mergeKey="name">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep" />
+					<ZTTransaction name="Buy_Item" costIndex="1" costChoice="30 40 50" type="debit" category="concessions_food_drink" nextTransaction="add_user" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

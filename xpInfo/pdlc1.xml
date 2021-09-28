@@ -1,0 +1,15 @@
+<ZTExpansionInfo index="201" key="1.1.2" extraAdoptionSlots="1" purchaseIcon="ui/shared/dino_icon.dds">
+  <paths p1="../../zt2dl/PDLC1/data" p2="../../zt2dl/PDLC1_2/data" p3="../../zt2dl/PDLC1_3/data" />
+  <zips z1="PDLC1.z2f" z2="PDLC1_2.z2f" z3="PDLC1_3.z2f" />
+  <smallIcon>
+    <UIStatic>
+      <UIRegion x="0" y="0" w="64" h="64" xalign="min" yalign="min" walign="len" halign="len" />
+      <UIAspect>
+        <default image="xp/DinoDangerPack_icon.dds">
+          <BFRect x="0" y="0" w="128" h="128" />
+        </default>
+      </UIAspect>
+      <UIHelpInfo name="" short="" long="" help="" ids="mainmenu:pdlc1_installed" />
+    </UIStatic>
+  </smallIcon>
+</ZTExpansionInfo>

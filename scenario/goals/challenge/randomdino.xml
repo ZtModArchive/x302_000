@@ -1,0 +1,19 @@
+<BFScenarioGroup name="randomdinorules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="randomdino" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHRandomDinoShort" overview="Challengetext:CHRandomDino" />
+				<success locid="Challengetext:CHRandomDinoSuccessShort" overview="Challengetext:CHRandomDinoSuccess" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/randomdino.lua" entry="evalrandomdino" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/randomdino.lua" entry="completerandomdino" />
+			</success>
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/randomdino.lua" entry="failrandomdino" />
+			</failure>
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

@@ -1,0 +1,158 @@
+<UILayout name="Find Fossils Mode">
+  <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len" />
+  <UIState active="normal" visible="normal" />
+  <UIShowHideAnim time=".3">
+    <start x="0" y="0" w="1024" h="768" />
+    <end x="0" y="0" w="1024" h="768" />
+  </UIShowHideAnim>
+  <UIAspect string="">
+    <default image="" sound="">
+      <BFRect x="0" y="0" w="0" h="0" />
+      <BFColor r="255" g="255" b="255" a="255" />
+    </default>
+  </UIAspect>
+  <UIHotKeys />
+  <children>
+    <UILayout name="find_fossils_screen">
+      <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len" />
+      <UIState active="normal" visible="hidden" />
+      <UIShowHideAnim time=".3">
+        <start x="128" y="768" w="768" h="576" />
+        <end x="0" y="0" w="1024" h="768" />
+      </UIShowHideAnim>
+      <UIAspect>
+        <default />
+        <standard>
+          <normal />
+        </standard>
+      </UIAspect>
+      <children>
+        <UILayout name="back ground pieces">
+          <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+          <UIState active="normal" visible="normal" />
+          <UIAspect string="" alwayshit="never">
+            <default image="" sound="">
+              <BFRect x="0" y="0" w="0" h="0" />
+              <BFColor r="0" g="0" b="0" a="255" />
+            </default>
+          </UIAspect>
+          <children>
+            <UIMultiIcon name="SonarGraphic1">
+              <UIRegion x="0" y="0" w="50" h="50" xalign="% min" yalign="% min" walign="% min" halign="% min" />
+              <UIState active="normal" visible="normal" />
+              <UIAspect string="" alwayshit="never" />
+              <images>
+                <entry key="level1" image="ui/minigames/FossilSonar_Stage1_A_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level2" image="ui/minigames/FossilSonar_Stage2_A_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level3" image="ui/minigames/FossilSonar_Stage3_A_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level4" image="ui/minigames/FossilSonar_Stage4_A_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level5" image="ui/minigames/FossilSonar_Stage5_A_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+              </images>
+              <UIHotKeys />
+            </UIMultiIcon>
+            <UIMultiIcon name="SonarGraphic2">
+              <UIRegion x="50" y="0" w="100" h="50" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+              <UIState active="normal" visible="normal" />
+              <UIAspect string="" alwayshit="never" />
+              <images>
+                <entry key="level1" image="ui/minigames/FossilSonar_Stage1_B_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level2" image="ui/minigames/FossilSonar_Stage2_B_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level3" image="ui/minigames/FossilSonar_Stage3_B_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level4" image="ui/minigames/FossilSonar_Stage4_B_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level5" image="ui/minigames/FossilSonar_Stage5_B_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+              </images>
+              <UIHotKeys />
+            </UIMultiIcon>
+            <UIMultiIcon name="SonarGraphic3">
+              <UIRegion x="0" y="50" w="50" h="100" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+              <UIState active="normal" visible="normal" />
+              <UIAspect string="" alwayshit="never" />
+              <images>
+                <entry key="level1" image="ui/minigames/FossilSonar_Stage1_C_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level2" image="ui/minigames/FossilSonar_Stage2_C_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level3" image="ui/minigames/FossilSonar_Stage3_C_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level4" image="ui/minigames/FossilSonar_Stage4_C_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level5" image="ui/minigames/FossilSonar_Stage5_C_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+              </images>
+              <UIHotKeys />
+            </UIMultiIcon>
+            <UIMultiIcon name="SonarGraphic4">
+              <UIRegion x="50" y="50" w="100" h="100" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+              <UIState active="normal" visible="normal" />
+              <UIAspect string="" alwayshit="never" />
+              <images>
+                <entry key="level1" image="ui/minigames/FossilSonar_Stage1_D_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level2" image="ui/minigames/FossilSonar_Stage2_D_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level3" image="ui/minigames/FossilSonar_Stage3_D_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level4" image="ui/minigames/FossilSonar_Stage4_D_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+                <entry key="level5" image="ui/minigames/FossilSonar_Stage5_D_512.dds">
+                  <BFRect x="0" y="0" w="-1" h="-1" />
+                </entry>
+              </images>
+              <UIHotKeys />
+            </UIMultiIcon>
+            <UIStatic name="hot cold display">
+              <UIRegion x="503" y="600" w="35" h="98" />
+              <UIState active="normal" visible="normal" />
+              <UIAspect string="" alwayshit="never">
+                <default image="ui/minigames/sonar_readoutbar.dds" sound="">
+                  <BFRect x="0" y="0" w="32" h="128" />
+                  <BFColor r="255" g="255" b="255" a="255" />
+                </default>
+              </UIAspect>
+              <UIHotKeys />
+            </UIStatic>
+          </children>
+        </UILayout>
+        <UIStatic name="find_fossils_screen_dither">
+          <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max" />
+          <UIState active="normal" visible="hidden" />
+          <UIAspect alwayshit="never">
+            <default image="ui/shared/white1x1.dds">
+              <BFColor r="0" g="0" b="0" a="128" />
+            </default>
+          </UIAspect>
+          <UIHotKeys />
+        </UIStatic>
+      </children>
+    </UILayout>
+  </children>
+</UILayout>

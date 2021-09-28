@@ -1,0 +1,99 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Drink">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Eat">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_Eat.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Stroke">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_PaintCanvas.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Dip">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_Paint.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Rumble">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_RumbleB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_TrumpetA">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_TrumpetA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_TrunkNoisemaker">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_TrunkNoisemaker.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Young_Drink">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_Drink.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Young_Eat">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_Eat.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Young_Rumble">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_RumbleB.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Young_TrumpetA">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_TrumpetA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Young_TrunkNoisemaker">
+         <snd name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_TrunkNoisemaker.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Shared Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Hit">
+         <snd name="entities\units\animals\shared\sound\Animal_Hit_HardA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Rub">
+         <snd name="entities\units\animals\shared\sound\Animal_PawSnow_SoftB.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Paw">
+         <snd name="entities\units\animals\shared\sound\Animal_PawGrass_HardA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="MastodonAmerican_Adult_Swat">
+         <snd name="entities\units\animals\shared\sound\Animal_Hit_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

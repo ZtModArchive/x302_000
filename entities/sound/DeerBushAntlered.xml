@@ -1,0 +1,120 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_Eat">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Eat.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_Sleep">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Sleep.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_ContactCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_ContactCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_DistressCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_ContactCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_F_MatingCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_MatingCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_Roar">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_Roar.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_Snort">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_Snort.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_GoreObject">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_GoreObject.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_Grunt">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_Grunt.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_AntlerLock">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_Stand_AntlerLock.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Adult_M_MatingCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_Stand_MatingCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_Eat">
+         <snd name="entities/units/animals/Moose/sound/Moose_Young_F_Eat.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_Sleep">
+         <snd name="entities/units/animals/Moose/sound/Moose_Young_F_Sleep.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_ContactCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Young_F_Stand_ContactCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_DistressCall">
+         <snd name="entities/units/animals/Moose/sound/Moose_Young_F_Stand_DistressCall.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_Roar">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_Roar.wav" volume=".4" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_Snort">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_F_Stand_Snort.wav" volume=".4" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_GoreObject">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_GoreObject.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_Grunt">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_Grunt.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_Young_AntlerLock">
+         <snd name="entities/units/animals/Moose/sound/Moose_Adult_M_Stand_AntlerLock.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <!--Shared/Footsteps-->
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="DeerBushAntlered_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

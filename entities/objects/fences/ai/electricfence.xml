@@ -1,0 +1,86 @@
+<BFTypedBinder binderType="electricfence">
+	<types>
+		<entity>
+			<fence>
+				<electricfence />
+			</fence>
+		</entity>
+	</types>
+	<instance>
+		<ZTFenceEntity entityVersion="1" />
+	</instance>
+	<shared>
+      		<ZTEntityDestructionData entityRuinBinderName="electricfence_broken" secsToRemove="0.0f"/>
+		<ZTPlacementData minimumHeadroom="6.0" />
+		<UIToggleButton template="fence">
+			<UIAspect>
+				<default image="entities\objects\fences\Electric_Fence\electricfence_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:electricfence" />
+			<on>
+				<event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="electricfence" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_Product="Extinct" s_uisort="tb" f_FenceStrength="8" s_Zoopedia="zoopedia:zoopedia_electricfence:entry" b_SeeThrough="true" s_Broken="electricfence_broken" b_Electric="true" />
+	</shared>
+	<binder>
+		<BFBinder>
+			<instance>
+				<ZTFence gate="electricgate" hasCurves="false" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="start_post">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\Electric_Fence\electricfence_post" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder required="0" binderName="fence90">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\Electric_Fence\electricfence_vert" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder required="0" binderName="fence45">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\Electric_Fence\electricfence_diag" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="end_post">
+			<instance>
+				<BFPhysObj>
+					<BFRSceneGraphComponent modelfile="entities\objects\fences\Electric_Fence\electricfence_post" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars seeThrough="false" />
+			</shared>
+		</BFNamedBinder>
+	        <BFBinder required="1">
+		   <instance>
+		      <ZTEntityDestructionComponent/>
+		   </instance>
+	        </BFBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="90">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

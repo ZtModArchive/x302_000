@@ -1,0 +1,116 @@
+<BFTypedBinder binderType="ExtinctHare">
+   <types>
+      <entity>
+         <actor>
+            <ambient>
+               <ambient_ground>
+                  <ExtinctHare/>
+               </ambient_ground>
+            </ambient>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+	<UIToggleButton template="adopt">
+		<UIAspect>
+			<default image="entities\units\animals\Gigantopithecus\Gigantopithecus_Adult_F_icon.dds" />
+		</UIAspect>
+		<UIHelpInfo ids="entityname:SpringHare" />
+		<on>
+			<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SpringHare_Adult_F" />
+		</on>
+	</UIToggleButton>
+        <BFAIEntityDataShared s_Species="Springhare" b_CloningFailures="true" b_NoPerceiveOverride="true" b_DoNotSave="0" b_Ambient="false">
+		<BFAINeedAdjusts lifespan="0.01" />
+	</BFAIEntityDataShared>
+        <ZTPlacementData selectable="true" deletable="false"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <position x="0" y="0" z="0"/>
+               <BFActorComponent actorfile="entities/units/animals/ExtinctHare/ExtinctHare_Adult_F.bfm"/>
+               <BF4LegsGroundFitComponent heightOffset="0" maxRollError=".2" maxPitchError=".1" maxHeightError=".5" pitchGain="2.00" heightGain="6.0" rollGain="1.0" bicyclePointBack="Bip01 Pelvis" bicyclePointFront="Bip01 Neck"/>
+               <BFForwardMovingComponent/>
+               <BFRotYawMovingComponent/>
+               <BFCollisionComponent grid="Bip01 Spine1"/>
+	       <BFGridCollisionComponent/>
+               <BFBoundedObjectComponent worldBounded="0">
+                  <minPoint x="-1000000" y="-100000" z="-100000"/>
+                  <maxPoint x="1000000" y="100000" z="100000"/>
+               </BFBoundedObjectComponent>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\blob_animal_final.tga" baseNode="Bip01 Head" width="1.5" minLength="1.5" maxLength="3.0" minOffset="0" maxOffset=".75"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFBehaviorMgr behaviorVersion="1">
+               <subBehaviors>
+                  <BFBehAnimate interruptible="true" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+               </subBehaviors>
+            </BFBehaviorMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAICognitiveMgr>
+               <Sensors>
+                  <ZTAISensor/>
+                  <BFAISensorSelf/>
+               </Sensors>
+               <StateThinkers>
+                  <ZTAIStateThinker mergeKey="Name">
+                     <BFAIStateVar Name="lifespan" Value="" ValueMin="0" ValueMax="0" CessationThreshold="0" TriggerThreshold="90" CriticalThreshold="90" Advanced="true"/>
+                  </ZTAIStateThinker>
+               </StateThinkers>
+               <TaskThinkers>
+                  <ZTAITaskThinker/>
+               </TaskThinkers>
+            </BFAICognitiveMgr>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFLocomotionMgr/>
+         </instance>
+         <binder>
+            <BFNamedBinder binderName="ground" required="1">
+               <instance>
+                  <BFLocoAnimate version="1">
+                     <stop name="Stand" minAnimSpeed="0.5" maxAnimSpeed="0.5"/>
+                     <slow name="Walk" minAnimSpeed="0.5" maxAnimSpeed="0.5">
+                        <waggle name="Walk_Ahead" wag="0.5"/>
+                     </slow>
+                     <medium name="Walk" minAnimSpeed="0.5" maxAnimSpeed="0.5" >
+                        <waggle name="Walk_Ahead" wag="0.5"/>
+                     </medium>
+                     <fast name="Run" minAnimSpeed="0.5" maxAnimSpeed="0.5" >
+                        <waggle name="Run_Ahead" wag="0.5"/>
+                     </fast>
+                  </BFLocoAnimate>
+               </instance>
+            </BFNamedBinder>
+         </binder>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFGCollisionTester radius=".25" motionClass="mover" maxSlope=".75" wadeDepth="0"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

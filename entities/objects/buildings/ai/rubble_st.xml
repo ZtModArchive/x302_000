@@ -1,0 +1,41 @@
+<BFTypedBinder binderType="rubble_st" abstract="true">
+   <types>
+      <entity>
+         <building>
+            <Rubble>
+               <rubble_st/>
+            </Rubble>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\rubble\rubble_st.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:rubble_st"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="rubble_st"/>
+         </on>
+      </UIToggleButton>
+      <UIButton name="overviewicon">
+	 <UIAspect>
+	   <default image="ui/zoomap/icon_food.dds"/>
+	</UIAspect>
+      </UIButton>
+      <BFAIEntityDataShared s_ObjectType="Misc"/>
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="0">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="0" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

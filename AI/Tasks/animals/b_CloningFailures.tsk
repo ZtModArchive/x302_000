@@ -1,0 +1,146 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="JustCloned" priority="10" UniqueID="b_CloningFailures:JustCloned">
+      <BFAICreateData>
+         <Subjects>
+            <b_CloningFailures/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_JustCloned/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="11000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="JustCloned"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SurpriseGuestAnimal" TaskDelayMin="60" TaskDelayMax="120" priority="10" UniqueID="b_CloningFailures:SurpriseGuestAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <b_CloningFailures/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="11000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_FleeClone" GiveTo="animal" Payload="subject" Radius="8" ChanceInRadius="20" Timeout="30" Reconsider="true"/>
+               <BFAIToken Name="t_FleeClone" GiveTo="Guest" Payload="subject" Radius="8" ChanceInRadius="50" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FleeCloneFailure_Guest" UniqueID="b_CloningFailures:FleeCloneFailure_Guest" Priority="5">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifier inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FleeClone/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:RunningFromAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:RunningFromAnimal_Happy" priority="-1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap happiness="-20" amusement="-15"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LaughCloneFailure_Guest" UniqueID="b_CloningFailures:LaughCloneFailure_Guest" Priority="5">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifier inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FleeClone/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:LaughBathroom" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCuteGood" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Laugh"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap happiness="-10" amusement="-25"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FleeCloneFailure_Animal" UniqueID="b_CloningFailures:FleeCloneFailure_Animal" Priority="5">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifier inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FleeClone/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-20" stimulation="-15"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

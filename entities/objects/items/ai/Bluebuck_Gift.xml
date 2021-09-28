@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="Bluebuck_Gift">
+   <types>
+      <entity>
+         <item>
+            <Bluebuck_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Bluebuck_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Bluebuck_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_ExtinctGift="true"/>
+   </shared>
+</BFTypedBinder>

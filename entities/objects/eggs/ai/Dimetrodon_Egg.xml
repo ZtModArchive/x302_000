@@ -1,0 +1,77 @@
+<BFTypedBinder binderType="Dimetrodon_Egg">
+   <types>
+      <entity>
+         <egg>
+            <Dimetrodon_Egg/>
+         </egg>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 0 0.3" icon3Dscale="5.0"/>
+      <UIToggleButton template="adopt">
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Dimetrodon_Egg"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Dimetrodon_Egg"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Species="Dimetrodon" s_Zoopedia="zoopedia:zoopedia_Dimetrodon:entry" s_Endangerment="Vulnerable"/>
+      <BFGBiomeData location="wetlands_northamerica_southcentral" locationSensitivity="10">
+	 <alpine sensitivity="-7" />
+	 <benthic sensitivity="-10" />
+	 <borealforest sensitivity="-7" />
+	 <coastal sensitivity="-10" />
+	 <desert sensitivity="-7" />
+	 <grassland sensitivity="-2" />
+	 <reef sensitivity="-10" />
+	 <pelagic sensitivity="-10" />
+	 <temperateforest sensitivity="-7" />
+	 <tropicalrainforest sensitivity="-7" />
+	 <tundra sensitivity="-10" />
+	 <savannah sensitivity="-2" />
+	 <scrub sensitivity="-2" />
+	 <wetlands sensitivity="3" primary="true" />
+      </BFGBiomeData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFCollisionComponent grid="Bip01"/>
+               <BFActorComponent actorfile="entities/objects/eggs/CrocodileNile_Egg/CrocodileNile_Egg.bfm" activeSequenceName="Stand_Idle" activeSequenceAccumulate="false" scale="1.3"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+	<BFBinder required="1">
+		<instance>
+			<BFAICognitiveMgr>
+				<Sensors>
+					<ZTAISensor />
+					<BFAISensorSelf />
+				</Sensors>
+				<StateThinkers>
+					<ZTAIStateThinker>
+						<BFAIStateVar Name="incubation" Value="" ValueMin=".0075" ValueMax="" CessationThreshold="0" DisplayThreshold="0" PressingThreshold="3.48" TriggerThreshold="3.48" CriticalThreshold="3.48" Advanced="true" />
+					</ZTAIStateThinker>
+				</StateThinkers>
+				<TaskThinkers>
+					<ZTAITaskThinker />
+				</TaskThinkers>
+			</BFAICognitiveMgr>
+		</instance>
+		<shared>
+			<BFAICogShared>
+				<BFAINoPerceive>
+					<fence />
+					<path />
+					<entrance />
+				</BFAINoPerceive>
+			</BFAICogShared>
+		</shared>
+	</BFBinder>
+   </binder>
+</BFTypedBinder>

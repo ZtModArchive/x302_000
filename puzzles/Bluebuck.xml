@@ -1,0 +1,10 @@
+<ZTPuzzle animal="Bluebuck" level="1" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.74" />
+    <ZTPuzzlePiece texture="02_Torso" node="Piece02" entityScale="1.74" />
+    <ZTPuzzlePiece texture="03_LegFront" node="Piece03" entityScale="1.74" />
+    <ZTPuzzlePiece texture="04_Waist" node="Piece04" entityScale="1.74" />
+    <ZTPuzzlePiece texture="05_LegBackLeft" node="Piece05" entityScale="1.74" />
+    <ZTPuzzlePiece texture="06_LegBackRight" node="Piece06" entityScale="1.74"/>
+  </pieces>
+</ZTPuzzle>

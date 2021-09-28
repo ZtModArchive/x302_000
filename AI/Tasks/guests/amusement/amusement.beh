@@ -1,0 +1,1699 @@
+<BehaviorSets>
+   <WaitEntertainer>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WatchingEntertainer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" playTime="30"/>
+      </behaviors>
+   </WaitEntertainer>
+   <WatchEntertainer>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WatchingEntertainer" useTargetName="true"/>
+               <ZTThoughtInfo locID="guestthoughts:GotEntertained" priority="1" timeout="60" global="false" useTargetName="true"/>   			
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <StandListen_A weight="15"/>
+               <StandListen_Idle weight="15"/>
+               <Stand_Applaud weight="20"/>
+               <Stand_Cheer weight="15"/>
+               <Stand_Laugh weight="35"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchEntertainer>
+   <HugEntertainer>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:HuggingEntertainer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_HugEntertainer" interruptFlag="true"/>
+      </behaviors>
+   </HugEntertainer>
+   <TakeEntertainerPicture>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:TakingPictureEntertainer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_EntertainerPicture" interruptFlag="true"/>
+      </behaviors>
+   </TakeEntertainerPicture>
+   <WaveEntertainer>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Wave"/>
+      </behaviors>
+   </WaveEntertainer>
+   <WatchEntertainer_Show>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <StandListen_A weight="15"/>
+               <StandListen_Idle weight="15"/>
+               <Stand_Applaud weight="25"/>
+               <Stand_Cheer weight="10"/>
+               <Stand_Laugh weight="35"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WatchEntertainer_Show>
+   <GetSplashed>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:BeingSplashed" useTargetName="true"/>
+               <ZTThoughtInfo locID="guestthoughts:Splashed" useTargetName="true" priority="0" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <SplashMildHappy weight="5"/>
+               <SplashMildShock weight="1"/>
+               <SplashMildAnnoyed weight="1"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </GetSplashed>
+   <SplashMildHappy>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SplashMildHappy" interruptFlag ="true"/>
+      </behaviors>
+   </SplashMildHappy>
+   <SplashMildShock>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SplashMildShock" interruptFlag ="true"/>
+      </behaviors>
+   </SplashMildShock>
+   <SplashMildAnnoyed>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SplashMildAnnoyed" interruptFlag ="true"/>
+      </behaviors>
+   </SplashMildAnnoyed>
+   <UseSkyTower>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="3">
+            <randomAnims>
+               <SitRide_Idle weight="50"/>
+               <SitRide_Cheer weight="50"/>
+               <SitRide_OohAhh weight="50"/>
+               <SitRide_Point weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseSkyTower> 
+   <EnterSkyTower1>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <BFBehSendTrigger subjectTrigger="Use_Skytower_Up"/>
+         <BFBehAnimate targetAnim="Stand_2SitRide"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterSkyTower1>
+   <ExitSkyTower1>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitSkyTower1>
+   <EnterSkyTower2>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <BFBehSendTrigger subjectTrigger="Use_Skytower_Up"/>
+         <BFBehAnimate targetAnim="Stand_2SitRide"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterSkyTower2>
+   <ExitSkyTower2>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitSkyTower2>
+   <EnterSkyTower3>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <BFBehSendTrigger subjectTrigger="Use_Skytower_Up"/>
+         <BFBehAnimate targetAnim="Stand_2SitRide"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterC" exitTap="false"/>
+      </behaviors>
+   </EnterSkyTower3>
+   <ExitSkyTower3>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitC" exitTAP="true"/>
+      </behaviors>
+   </ExitSkyTower3>
+   <EnterSkyTower4>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Stand_Idle"/>
+         <BFBehSendTrigger subjectTrigger="Use_Skytower_Up"/>
+         <BFBehAnimate targetAnim="Stand_2SitRide"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="EnterD" exitTap="false"/>
+      </behaviors>
+   </EnterSkyTower4>
+   <ExitSkyTower4>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehSendTrigger subjectTrigger="Use_Skytower_Down"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="ExitD" exitTAP="true"/>
+      </behaviors>
+   </ExitSkyTower4>
+   <ES_GetFacePaint>
+      <subjects>
+         <Guest_Young_M/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/ES_FacePaint.lua" function="ES_FacePaint_M"/>
+      </behaviors>
+   </ES_GetFacePaint>
+   <ES_GetFacePaint>
+      <subjects>
+         <Guest_Young_F/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/ES_FacePaint.lua" function="ES_FacePaint_F"/>
+      </behaviors>
+   </ES_GetFacePaint>
+   <EnterTrampoline>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Walk_Ahead"/>
+         <BFBehSyncSet subjectBehSet="EnterTrampolineYoung" targetBehSet="TrampolineEnter" resetPhase="true"/>
+      </behaviors>
+   </EnterTrampoline>
+   <EnterTrampolineLarge>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock targetAnim="Walk_Ahead"/>
+         <BFBehSyncSet subjectBehSet="EnterTrampolineYoungLarge" targetBehSet="TrampolineEnter" resetPhase="true"/>
+      </behaviors>
+   </EnterTrampolineLarge>
+   <EnterTrampolineYoung>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_2Trampoline"/>
+      </behaviors>
+   </EnterTrampolineYoung>
+   <EnterTrampolineYoungLarge>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_2Trampoline_Large"/>
+      </behaviors>
+   </EnterTrampolineYoungLarge>
+   <TrampolineEnter>
+      <subjects>
+         <trampoline/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="InUse_Idle"/>
+      </behaviors>
+   </TrampolineEnter>
+   <UseTrampoline>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="UseTrampolineYoung" targetBehSet="TrampolineActive"/>
+         <BFBehSyncSet subjectBehSet="UseTrampolineYoung" targetBehSet="TrampolineActive"/>
+         <BFBehSyncSet subjectBehSet="UseTrampolineYoung" targetBehSet="TrampolineActive"/>
+      </behaviors>
+   </UseTrampoline>
+   <UseTrampolineYoung>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Trampoline_Idle_A weight="1"/>
+               <Trampoline_Idle_B weight="1"/>
+               <Trampoline_Idle_C weight="1"/>
+               <Trampoline_Idle_D weight="1"/>
+               <Trampoline_Idle_E weight="1"/>
+               <Trampoline_Idle_F weight="1"/>
+               <Trampoline_Idle_G weight="1"/>
+               <Trampoline_Idle_H weight="1"/>
+           </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseTrampolineYoung>
+   <TrampolineActive>
+      <subjects>
+         <trampoline/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="InUse_Idle"/>
+      </behaviors>
+   </TrampolineActive>
+   <ExitTrampoline>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="ExitTrampolineYoung" targetBehSet="TrampolineExit" resetPhase="true"/>
+      </behaviors>
+   </ExitTrampoline>
+   <ExitTrampolineLarge>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="ExitTrampolineYoungLarge" targetBehSet="TrampolineExit" resetPhase="true"/>
+      </behaviors>
+   </ExitTrampolineLarge>
+   <ExitTrampolineYoung>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Trampoline_2Walk"/>
+      </behaviors>
+   </ExitTrampolineYoung>
+   <ExitTrampolineYoungLarge>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Trampoline_2Walk_Large"/>
+      </behaviors>
+   </ExitTrampolineYoungLarge>
+   <TrampolineExit>
+      <subjects>
+         <trampoline/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="InUse_2NotInUse"/>
+      </behaviors>
+   </TrampolineExit>
+   <UsePonyRide>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="UsePonyRideYoung" targetBehSet="PonyRideActive" resetPhase="true"/>
+      </behaviors>
+   </UsePonyRide>
+   <UsePonyRideYoung>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_RidePony"/>
+      </behaviors>
+   </UsePonyRideYoung>
+   <PonyRideActive>
+      <subjects>
+         <shetlandride_df/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Used"/>
+      </behaviors>
+   </PonyRideActive>
+   <EnterBouncyRide>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock locoSpeed="fast" targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Stand_2BouncyRide"/>
+      </behaviors>
+   </EnterBouncyRide>
+   <UseBouncyRide>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="UseBouncyRideYoung" targetBehSet="BouncyRideActive" resetPhase="true"/>
+      </behaviors>
+   </UseBouncyRide> 
+   <UseBouncyRideYoung>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BouncyRide_Idle"/>
+         <BFBehAnimate targetAnim="BouncyRide_Idle"/>
+         <BFBehAnimate targetAnim="BouncyRide_Idle"/>
+      </behaviors>
+   </UseBouncyRideYoung>
+   <BouncyRideActive>
+      <subjects>
+         <BouncyRide/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="BouncyRide_Used"/>
+         <BFBehAnimate targetAnim="BouncyRide_Used"/>
+         <BFBehAnimate targetAnim="BouncyRide_Used"/>
+      </behaviors>
+   </BouncyRideActive>
+   <ExitBouncyRide>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitBouncyRide>
+   <LookAtObject>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_OohAhh weight="10"/>
+               <Camera_TakePhoto weight="20"/>
+               <Stand_Point weight="20"/>
+               <StandListen_Idle weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtObject> 
+   <LookAtMap>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_OohAhh weight="20"/>
+               <Camera_TakePhoto weight="30"/>
+               <StandListen_Idle weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtMap>
+   <LookAtCannon>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_OohAhh weight="20"/>
+               <Camera_TakePhoto weight="30"/>
+               <Stand_Point weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtCannon>
+  <LookAtPirateMast>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_OohAhh weight="20"/>
+               <Camera_TakePhoto weight="30"/>
+               <Stand_Point weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtPirateMast>
+  <LookAtTreasureChest>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_OohAhh weight="20"/>
+               <Camera_TakePhoto weight="30"/>
+               <Stand_Point weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtTreasureChest>
+  <LookAtPirateShip>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="2">
+            <randomAnims>
+               <Stand_OohAhh weight="20"/>
+               <Camera_TakePhoto weight="30"/>
+               <Stand_Point weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtPirateShip>
+   <LookAtTouchpool>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Whistle weight="2"/>
+               <Stand_Wave weight="2"/>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+    </LookAtTouchpool>
+    <UseTouchpool_Conch>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolC"/>
+      </behaviors>
+   </UseTouchpool_Conch>
+   <UseTouchpool_Conch>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolB"/>
+      </behaviors>
+   </UseTouchpool_Conch>
+   <UseTouchpool_StarFish>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolA"/>
+      </behaviors>
+   </UseTouchpool_StarFish>
+   <UseTouchpool_StarFish>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolC"/>
+      </behaviors>
+   </UseTouchpool_StarFish>
+   <UseTouchpool_SeaCucumber>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolB"/>
+      </behaviors>
+   </UseTouchpool_SeaCucumber>
+   <UseTouchpool_SeaCucumber>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolA"/>
+      </behaviors>
+   </UseTouchpool_SeaCucumber>
+   <UseTouchpool_HorseshoeCrab>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolB"/>
+      </behaviors>
+   </UseTouchpool_HorseshoeCrab>
+   <UseTouchpool_HorseshoeCrab>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehAnimate targetAnim="Stand_TouchPoolC"/>
+      </behaviors>
+   </UseTouchpool_HorseshoeCrab>
+   <LookAtKiosk>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_PointCasual weight="20"/>
+               <Stand_Wave weight="5"/>
+               <Stand_OohAhh weight="15"/>
+               <Camera_TakePhoto weight="5"/>
+               <Stand_Idle weight="40"/>
+               <StandListen_Idle weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtKiosk>
+   <LookAtKiosk>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Whistle weight="2"/>
+               <Stand_Wave weight="2"/>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </LookAtKiosk>
+   <UseDiscoveryKiosk1>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim1"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_PointCasual weight="20"/>
+               <Stand_OohAhh weight="15"/>
+               <Stand_Idle weight="40"/>
+               <StandListen_Idle weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk1>
+   <UseDiscoveryKiosk2>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim2"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_PointCasual weight="20"/>
+               <Stand_OohAhh weight="15"/>
+               <Stand_Idle weight="40"/>
+               <StandListen_Idle weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk2>
+   <UseDiscoveryKiosk3>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim3"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_PointCasual weight="20"/>
+               <Stand_OohAhh weight="15"/>
+               <Stand_Idle weight="40"/>
+               <StandListen_Idle weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk3>
+   <UseDiscoveryKiosk1>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>      
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim1"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk1>
+   <UseDiscoveryKiosk2>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim2"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk2>
+   <UseDiscoveryKiosk3>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <BFBehScript context="behavior" file="scripts/kickoffmultianim.lua" function="kickoffanim3"/>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </UseDiscoveryKiosk3>
+   <EnterBall>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock locoSpeed="fast" subjectNode="p_BallNode" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickBall"/>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickBall"/>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <ExitBall>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitBall>
+   <EnterEasel>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Paint_0" targetAnim="Stand_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="0">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+      </behaviors>
+   </EnterEasel>
+   <EnterCavePainting1>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Paint0" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterCavePainting1>
+   <EnterCavePainting2>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Paint1" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterCavePainting2>
+   <EnterCavePainting3>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Paint2" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterCavePainting3>
+   <EnterCavePainting4>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Paint3" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </EnterCavePainting4>
+   <Paint>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Painting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="92">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="94">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="96">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <PaintGood weight="50"/>
+               <PaintBad weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Paint>
+   <PaintCavePainting1>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Painting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_1="0">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_1="30">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_1="60">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_1="100">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <PaintGood weight="50"/>
+               <PaintBad weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </PaintCavePainting1>
+   <PaintCavePainting2>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Painting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_2="0">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_2="30">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_2="60">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_2="100">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <PaintGood weight="50"/>
+               <PaintBad weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </PaintCavePainting2>
+   <PaintCavePainting3>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Painting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_3="0">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_3="30">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_3="60">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_3="100">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <PaintGood weight="50"/>
+               <PaintBad weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </PaintCavePainting3>
+   <PaintCavePainting4>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Painting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_4="0">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_4="30">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_4="60">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel_4="100">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Paint_Idle"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <PaintGood weight="50"/>
+               <PaintBad weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </PaintCavePainting4>
+   <PaintGood>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Paint_2Stand_Good"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="100">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:PaintGood" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSetAttribute>
+            <BFAISubjectData amusement="-100" happiness="-5"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </PaintGood>
+   <PaintBad>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Paint_2Stand_Bad"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_PaintLevel="98">
+               <Options Reset="true"/>
+            </BFAITargetData>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:PaintBad" priority="0" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </PaintBad>
+   <ExitEasel>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitEasel>
+   <EnterFossilDigPit_1_Left>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </EnterFossilDigPit_1_Left>
+   <EnterFossilDigPit_1_Center>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </EnterFossilDigPit_1_Center>
+   <EnterFossilDigPit_1_Right>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </EnterFossilDigPit_1_Right>
+   <EnterFossilDigPit_2_Left>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </EnterFossilDigPit_2_Left>
+   <EnterFossilDigPit_2_Center>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </EnterFossilDigPit_2_Center>
+   <EnterFossilDigPit_2_Right>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </EnterFossilDigPit_2_Right>
+   <EnterFossilDigPit_3_Left>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </EnterFossilDigPit_3_Left>
+   <EnterFossilDigPit_3_Center>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </EnterFossilDigPit_3_Center>
+   <EnterFossilDigPit_3_Right>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </EnterFossilDigPit_3_Right>
+   <EnterFossilDigPit_4_Left>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </EnterFossilDigPit_4_Left>
+   <EnterFossilDigPit_4_Center>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </EnterFossilDigPit_4_Center>
+   <EnterFossilDigPit_4_Right>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead" playTime="2"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </EnterFossilDigPit_4_Right>
+   <Use_FossilDigPit>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehEconomy transactionName="add_user"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UseFossilDigPit" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Dig"/>
+         <BFBehAnimate targetAnim="Dig_Idle" playTime="20"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <Use_FossilDigPit_Success weight="50"/>
+               <Use_FossilDigPit_Failure weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Use_FossilDigPit>
+   <Use_FossilDigPit_Success>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetAnim="Dig_2StandFossil" attachEntity="Fossil" detachAction="inventory" locoMod="fossil"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseFossilDigPit_Success" priority="1" timeout="30" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandFossil_Idle"/>
+      </behaviors>
+   </Use_FossilDigPit_Success>
+   <Use_FossilDigPit_Failure>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Use_FossilDigPit_Failure_1 weight="50"/>
+               <Use_FossilDigPit_Failure_2 weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Use_FossilDigPit_Failure>
+   <Use_FossilDigPit_Failure_1>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetAnim="Dig_2StandItem" attachEntity="Trash" detachAction="inventory" locoMod="carry"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseFossilDigPit_Failure" priority="1" timeout="30" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandItem_Idle"/>
+      </behaviors>
+   </Use_FossilDigPit_Failure_1>
+   <Use_FossilDigPit_Failure_2>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject targetAnim="Dig_2StandItem" attachEntity="Recyclable" detachAction="inventory" locoMod="carry"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseFossilDigPit_Failure" priority="1" timeout="30" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="StandItem_Idle"/>
+      </behaviors>
+   </Use_FossilDigPit_Failure_2>
+   <ExitFossilDigPit_Left>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:ExitFossilDigPit" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="StandItemTurnLeft"/>
+               <StandFossil behSet="StandFossilTurnLeft"/>
+               <default behSet="StandItemTurnLeft"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="WalkItem_2"/>
+               <StandFossil behSet="WalkFossil_2"/>
+               <default behSet="WalkItem_2"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </ExitFossilDigPit_Left>
+   <StandItemTurnLeft>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_TurnLeft90"/>
+      </behaviors>
+   </StandItemTurnLeft>
+   <StandFossilTurnLeft>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandFossil_TurnLeft90"/>
+      </behaviors>
+   </StandFossilTurnLeft>
+   <WalkItem_2>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkItem_Ahead" playTime="2"/>
+      </behaviors>
+   </WalkItem_2>
+   <WalkFossil_2>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkFossil_Ahead" playTime="2"/>
+      </behaviors>
+   </WalkFossil_2>
+   <ExitFossilDigPit_Center>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:ExitFossilDigPit" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="StandItemTurn180"/>
+               <StandFossil behSet="StandFossilTurn180"/>
+               <default behSet="StandItemTurn180"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="WalkItem_2"/>
+               <StandFossil behSet="WalkFossil_2"/>
+               <default behSet="WalkItem_2"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </ExitFossilDigPit_Center>
+   <StandItemTurn180>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_Turn180"/>
+      </behaviors>
+   </StandItemTurn180>
+   <StandFossilTurn180>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandFossil_TurnRight180"/>
+      </behaviors>
+   </StandFossilTurn180>
+   <ExitFossilDigPit_Right>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:ExitFossilDigPit" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="StandItemTurnRight"/>
+               <StandFossil behSet="StandFossilTurnRight"/>
+               <default behSet="StandItemTurnRight"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <StandItem behSet="WalkItem_2"/>
+               <StandFossil behSet="WalkFossil_2"/>
+               <default behSet="WalkItem_2"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </ExitFossilDigPit_Right>
+   <StandItemTurnRight>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_TurnRight90"/>
+      </behaviors>
+   </StandItemTurnRight>
+   <StandFossilTurnRight>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandFossil_TurnRight90"/>
+      </behaviors>
+   </StandFossilTurnRight>
+   <DockFossilEducationCenter>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoToDeliverFossil" useObjectName="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAttachObject attachEntity="object" targetAnim="Stand_2StandFossil" locoMod="fossil" detachAction="inventory"/>
+         <BFBehDockQueue hitRadius="2.5" queueRadius="12"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WaitLine" useTargetName="true"/>
+               <ZTThoughtInfo locID="guestthoughts:WaitLine" priority="0" timeout="30" global="true" useTargetName="true"/>               
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWaitQueue minWaitTime="30" maxWaitTime="60" waitBehSet="WaitInLine"/>
+         <BFBehDock/>
+      </behaviors>
+   </DockFossilEducationCenter>
+   <UseFossilEducationCenter>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseFossilEducationCenter" priority="1" timeout="60" global="false"/>
+               <ZTActionInfo locID="guestactions:DeliveringFossil" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDetachObject targetAnim="StandFossil_2Stand_HandOver" detachEntity="object" detachAction="killitem"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_BoneLevel="1"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </UseFossilEducationCenter>
+   <ExitFossilEducationCenter>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitFossilEducationCenter>
+   <DockViewFossilEducationCenter>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock/>
+      </behaviors>
+   </DockViewFossilEducationCenter>
+   <ViewFossilEducationCenter>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:ViewFossilEducationCenter" priority="1" timeout="60" global="false"/>
+               <ZTActionInfo locID="guestactions:LookingAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Applaud weight="20"/>
+               <Stand_PointCasual weight="20"/>
+               <Stand_Wave weight="5"/>
+               <Stand_OohAhh weight="15"/>
+               <Camera_TakePhoto weight="5"/>
+               <Stand_Idle weight="40"/>
+               <StandListen_Idle weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ViewFossilEducationCenter>
+   <ViewFossilEducationCenter>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:ViewFossilEducationCenter" priority="1" timeout="60" global="false"/>
+               <ZTActionInfo locID="guestactions:LookingAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom minPlays="6" maxPlays="10">
+            <randomAnims>
+               <Stand_Whistle weight="2"/>
+               <Stand_Wave weight="2"/>
+               <Stand_Laugh weight="2"/>
+               <Stand_Idle weight="10"/>
+               <Stand_Point weight="2"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteGuestEducation"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </ViewFossilEducationCenter>
+   <EnterTarFountain>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTarFountain>
+   <UseTarFountain>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Attacked_GetStuck"/>
+      </behaviors>
+   </UseTarFountain>
+   <ExitTarFountain>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseTarFountain" priority="1" timeout="60" global="false"/>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </ExitTarFountain>
+   <DockSizeMural>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:LookingAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DockSizeMural>
+   <UseSizeMural_Hand>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CompareHand"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseSizeMural_Hand" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </UseSizeMural_Hand>
+   <UseSizeMural_Foot>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CompareFoot"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseSizeMural_Foot" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </UseSizeMural_Foot>
+   <UseSizeMural_Size>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_CompareSize"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:UseSizeMural_Size" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </UseSizeMural_Size>
+   <ExitSizeMural_Size>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </ExitSizeMural_Size>
+</BehaviorSets>

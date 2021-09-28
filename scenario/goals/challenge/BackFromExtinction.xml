@@ -1,0 +1,20 @@
+<BFScenarioGroup name="backfromextinctionrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="BackFromExtinction" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHBackFromExtinctionShort" overview="Challengetext:CHBackFromExtinction" />
+				<success locid="Challengetext:CHBackFromExtinctionSuccessShort" overview="Challengetext:CHBackFromExtinctionSuccess" />
+				<failure locid="Challengetext:CHBackFromExtinctionFailureShort" overview="Challengetext:CHBackFromExtinctionFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BackFromExtinction.lua" entry="evalBackFromExtinction" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BackFromExtinction.lua" entry="completeBackFromExtinction" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/BackFromExtinction.lua" entry="failBackFromExtinction" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

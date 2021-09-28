@@ -1,0 +1,5 @@
+<BFCampaign name="ExtinctCampaignLabels:ExtinctCampaignshort" xpack="3">  
+   <entry name="ExtinctCampaignLabels:ExtinctCampaignS1" short="ExtinctCampaignLabels:ExtinctCampaignS1short" key="cp2scen1" scenario="scenario\goals\PaleoIslandScenario.xml" map="cp2scen1" cash="20000" difficulty="difficulty:easy" description="ExtinctCampaign:PaleoOverviewShort" state="unlocked"/>
+   <entry name="ExtinctCampaignLabels:ExtinctCampaignS2" short="ExtinctCampaignLabels:ExtinctCampaignS2short" key="cp2scen2" scenario="scenario\goals\DiseaseScenario.xml" map="cp2scen2" cash="30000" difficulty="difficulty:medium" description="ExtinctCampaign:DiseaseOverviewShort" state="locked"/>
+   <entry name="ExtinctCampaignLabels:ExtinctCampaignS3" short="ExtinctCampaignLabels:ExtinctCampaignS3short" key="cp2scen3" scenario="scenario\goals\IceAgeScenario.xml" map="cp2scen3" cash="30000" difficulty="difficulty:medium" description="ExtinctCampaign:IceAgeOverviewShort" state="locked"/>
+</BFCampaign>

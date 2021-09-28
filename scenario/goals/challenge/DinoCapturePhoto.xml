@@ -1,0 +1,20 @@
+<BFScenarioGroup name="dinocapturerules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="dinocapture" state="0" sticky="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHDinoCaptureShort" overview="PhotoChallengetext:PHDinoCapture" />
+				<success locid="PhotoChallengetext:PHDinoCaptureSuccessShort" overview="PhotoChallengetext:PHDinoCaptureSuccess" />
+				<failure locid="PhotoChallengetext:PHDinoCaptureFailureShort" overview="PhotoChallengetext:PHDinoCaptureFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/dinocapturephoto.lua" entry="evalDinoCapture" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/dinocapturephoto.lua" entry="completeDinoCapture" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/dinocapturephoto.lua" entry="failDinoCapture" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

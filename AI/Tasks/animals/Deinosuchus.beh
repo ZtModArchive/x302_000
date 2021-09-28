@@ -1,0 +1,1908 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Happy_isSwimming>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="90"/>
+               <Default_isSwimming_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_isSwimming>
+   <Default_VeryHappy_isSwimming>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="80"/>
+               <Default_isSwimming_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_isSwimming>
+   <Default_Unhappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+   <Default_Unhappy_isSwimming>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="90"/>
+               <Default_isSwimming_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_isSwimming>
+   <Default_VeryUnhappy_isSwimming>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="80"/>
+               <Default_isSwimming_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_isSwimming>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultTreadWater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:TreadingWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultHappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Gaping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Gape_Idle" playTime="5"/>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Gaping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Gape_Idle" playTime="5"/>
+      </behaviors>
+   </Default_inWater_Happy>
+   <Default_isSwimming_Happy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium"/>
+         <BFBehSetAttribute>
+            <BFAITargetData exercise="-10"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BobbingHead"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_HeadStrike"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BobbingHead"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_HeadStrike"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+   <Default_isSwimming_Unhappy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="TreadWater_TailThrash"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Idle"/>
+               <water behSet="Water_Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Ground_Idle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Ground_Idle>
+   <Water_Idle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="DefaultTreadWater"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultTreadWater"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Water_Idle>
+   <Wander>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet switch="false">
+            <behaviorTable>
+               <ground behSet="Wander_Ground"/>
+               <water behSet="Wander_Water"/>
+               <underwater behSet="Wander_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Wander>
+   <Wander_Ground>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="6" avoidLand="true" locoSpeed="slow"/>
+      </behaviors>
+   </Wander_Ground>
+   <Wander_Water>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="6" avoidLand="true" minDepth="0" maxDepth="0" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Wander_Water>
+   <Wander_Underwater>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="4" maxPlayTime="6" avoidLand="true" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Wander_Underwater>
+   <Stand>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Poop>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large_Sick" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <Poop>
+      <subjects>
+         <Deinosuchus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Deinosuchus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small_Sick" subjectNode="Poop" targetAnim="Poop_Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <Surface_Submerge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet switch="false">
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Surface>
+   <Lie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <Sleep>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <TreadWater_Sleep>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSleep_Idle" playTime="20"/>
+      </behaviors>
+   </TreadWater_Sleep>
+   <TreadWater_Drink>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Bite"/>
+      </behaviors>
+   </TreadWater_Drink>
+   <Pee>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Pee_Idle"/>
+      </behaviors>
+   </Pee>
+   <Gape>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Gape_Idle"/>
+      </behaviors>
+   </Gape>
+   <GapeLong>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Gape_Idle" playTime="10"/>
+      </behaviors>
+   </GapeLong>
+   <Dig>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dig"/>
+      </behaviors>
+   </Dig>
+   <Lunge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Lunge"/>
+               <water behSet="TreadWater_Lunge"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Lunge>
+   <Stand_Lunge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Lunge"/>
+      </behaviors>
+   </Stand_Lunge>
+   <TreadWater_Lunge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Lunge"/>
+      </behaviors>
+   </TreadWater_Lunge>
+   <TreadWater_Bite>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Bite"/>
+      </behaviors>
+   </TreadWater_Bite>
+   <Stand_Bite>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Stand_Bite>
+   <Bite>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Bite"/>
+               <water behSet="TreadWater_Bite"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Bite>
+   <BiteLoop>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="StandBiteLoop"/>
+               <water behSet="WaterBiteLoop"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteLoop>
+   <StandBiteLoop>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite" interruptFlag="true"/>
+         <BFBehAnimateRandom loopFlag="true">
+            <randomAnims>
+               <Stand_Bite weight="50"/>
+               <Stand_HeadStrike weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </StandBiteLoop>
+   <WaterBiteLoop>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Bite" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </WaterBiteLoop>
+   <FightDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_FightDie"/>
+               <water behSet="TreadWater_FightDie"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FightDie>
+   <Stand_FightDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Stand_FightDie>
+   <TreadWater_FightDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Attacked"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </TreadWater_FightDie>
+   <DefendEqual>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <Fight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Fight"/>
+               <water behSet="TreadWater_Fight"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Fight>
+   <TreadWater_Fight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <TreadWater_Bite weight="50"/>
+               <TreadWater_Lunge weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </TreadWater_Fight>
+   <Stand_Fight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <Bite weight="50"/>
+               <Lunge weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Stand_Fight>
+   <MatingCall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_MatingCall"/>
+               <water behSet="TreadWater_MatingCall"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MatingCall>
+   <Stand_MatingCall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_MatingCall"/>
+      </behaviors>
+   </Stand_MatingCall>
+   <TreadWater_MatingCall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_MatingCall"/>
+      </behaviors>
+   </TreadWater_MatingCall>
+   <HeadStrike>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_HeadStrike"/>
+      </behaviors>
+   </HeadStrike>
+   <DockFight>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="6" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="6" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <WaitFight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Stand_Idle"/>
+               <water behSet="TreadWater_Idle"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WaitFight>
+   <Stand_WaitFight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </Stand_WaitFight>
+   <TreadWater_WaitFight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" loopFlag="true"/>
+      </behaviors>
+   </TreadWater_WaitFight>
+   <HitFight>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <HitDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitFight>
+   <HitDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+         <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </HitDie>
+   <FailureSet>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Failure"/>
+               <water behSet="Water_Failure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <Ground_Failure>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Stand_Bite"/>
+               <default behSet="Stand_Bite"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Ground_Failure>
+   <Water_Failure>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWater_Snort"/>
+               <TreadWater behSet="TreadWater_Snort"/>
+               <default behSet="TreadWater_Snort"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Water_Failure>
+   <TreadWater_Snort>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Snort"/>
+      </behaviors>
+   </TreadWater_Snort>
+   <TreadWater_Attacked>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Attacked"/>
+      </behaviors>
+   </TreadWater_Attacked>
+   <TreadWater_BlowBubbles>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_BlowBubbles"/>
+      </behaviors>
+   </TreadWater_BlowBubbles>
+  <TreadWater_HeadLift>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="HeadLift_Idle"/>
+      </behaviors>
+   </TreadWater_HeadLift>
+   <TreadWater_HeadSlap>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_HeadSlap"/>
+      </behaviors>
+   </TreadWater_HeadSlap>
+   <TreadWater_TailThrash>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_TailThrash"/>
+      </behaviors>
+   </TreadWater_TailThrash>
+   <Swim_Bite>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Bite"/>
+      </behaviors>
+   </Swim_Bite>
+   <Nudge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NudgeObject"/>
+      </behaviors>
+   </Nudge>
+   <EnterBall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall> 
+   <UseBall_Whap>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_NudgeObject"/>
+      </behaviors>
+   </UseBall_Whap>
+   <UseBall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NudgeObject"/>
+      </behaviors>
+   </UseBall>
+   <ExitBall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </ExitBall>
+   <Graze>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Graze>
+   <EatLarge>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_dinoprop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_dinoprop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </EatLarge>
+   <Eat>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </Eat>
+   <Drink>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Drink>
+   <EnterFoodDish>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </UseFoodDish>
+   <UseFoodDish_Destroy>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatFoodDish_Destroy weight="75"/>
+               <EatFoodDish_Empty weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseFoodDish_Destroy>
+   <EatFoodDish_Empty>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-100"/>
+         </BFBehSetAttribute>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </EatFoodDish_Empty>  
+   <EatFoodDish_Destroy>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-60"/>
+         </BFBehSetAttribute>
+         <BFBehKill killTarget="true" fadeOutPeriod="5"/>
+      </behaviors>
+   </EatFoodDish_Destroy>  
+   <DrinkFoodDish>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_FoodLevel="-50"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <Stand_Idle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <TreadWater_Idle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <DockAttackGuest>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle" locoSpeed="medium" />
+      </behaviors>
+   </DockAttackGuest>
+   <DockAttackGuest_Water>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Dock_Guest_Water" targetNode="p_TalkOffset" targetAnim="TreadWater_Idle" locoSpeed="medium"/>
+      </behaviors>
+   </DockAttackGuest_Water>
+   <WaitAttackGuest>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack" interruptFlag="true" blendDuration="0"/>
+      </behaviors>
+   </AttackGuest>
+   <AttackGuest_Water>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_GuestAttack" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest_Water>
+   <DockAttacked>
+      <subjects>
+         <Deinosuchus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Deinosuchus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <Sick>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="30"/>
+      </behaviors>
+   </VerySick>
+   <ChaseBall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_NudgeObject"/>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <Mate>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <LayEgg>
+      <subjects>
+         <Deinosuchus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="2">
+            <randomSets>
+               <SpawnEgg weight="100"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LayEgg>
+   <SpawnEgg>
+      <subjects>
+         <Deinosuchus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Deinosuchus_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <SpawnEgg>
+      <subjects>
+         <Deinosuchus_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Deinosuchus_Egg_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <HatchEgg>
+      <subjects>
+         <Deinosuchus_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <Deinosuchus_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <Deinosuchus_Egg/>
+         <Deinosuchus_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <Deinosuchus_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Deinosuchus_Egg" morphTargetEntityType="Deinosuchus_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <Deinosuchus_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Deinosuchus_Egg" morphTargetEntityType="Deinosuchus_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <Deinosuchus_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Deinosuchus_Egg_Super" morphTargetEntityType="Deinosuchus_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <Deinosuchus_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Deinosuchus_Egg_Super" morphTargetEntityType="Deinosuchus_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperM>
+   <EnterIceBlock>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock> 
+   <UseIceBlock>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </ExitIceBlock>
+   <WaitAttack>
+      <subjects>
+         <Deinosuchus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <ChasePrey>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="15" pursuitRadius="30" locoSpeed="fast"/>
+      </behaviors>
+   </ChasePrey>
+   <MissPrey>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Lunge"/>
+      </behaviors>
+   </MissPrey>
+   <AttackPrey>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+       <BFBehPlaySet behSet="Bite"/>
+       <BFBehPursuit hitRadius="5" pursuitRadius="30" locoSpeed="fast"/>
+       <BFBehPlaySet behSet="BiteLoop"/>
+      </behaviors>
+   </AttackPrey>
+   <AttackPrey_Swallow>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killTarget="true" fadeOutPeriod="4"/>
+	 <BFBehAnimate targetAnim="Stand_Lunge" interruptFlag="true"/>
+	 <BFBehSetAttribute>
+	    <BFAISubjectData hunger="-100"/>
+	 </BFBehSetAttribute>
+	 <BFBehAnimate targetAnim="Eat_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackPrey_Swallow>
+   <Roar>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+       <BFBehAnimate targetAnim="Gape_Idle" playTime="5"/>
+      </behaviors>
+   </Roar>
+   <EnterBeefShank>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBeefShank> 
+   <UseBeefShank>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseBeefShank>
+   <ExitBeefShank>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </ExitBeefShank>
+   <EnterLiveFood>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterLiveFood> 
+   <UseLiveFood>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseLiveFood>
+   <ExitLiveFood>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </ExitLiveFood>
+   <SwipeMed>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_HeadStrike"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Lie_Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Roar"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <Turn180>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft180"/>
+      </behaviors>
+   </Turn180>
+   <LoopIdle>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <DockAttacked>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight_Prey"/>
+      </behaviors>
+   </Attacked>
+   <Die_Fight_Prey>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight_Prey>
+   <BashFence>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_2SmashFence" interruptFlag="true"/>
+         <BFBehKill killTarget="true" radius="5" radiusKillType="fence" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+         <BFBehAnimate targetAnim="SmashFence_2Walk"/>
+         <BFBehAnimate targetAnim="Walk_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </BashFence>
+   <EnterBuilding>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Building" targetAnim="Walk_Ahead" locoSpeed="slow"/>
+      </behaviors>
+   </EnterBuilding>
+   <DestroyBuilding>
+      <subjects>
+         <Deinosuchus/>
+      </subjects>
+      <behaviors>
+         <BFBehKill targetAnim="Walk_2SmashFence" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+         <BFBehAnimate targetAnim="SmashFence_2Walk"/>
+      </behaviors>
+   </DestroyBuilding>   
+</BehaviorSets>

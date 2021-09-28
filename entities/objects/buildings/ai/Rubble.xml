@@ -1,0 +1,29 @@
+<BFTypedBinder binderType="Rubble" abstract="true">
+	<types>
+		<entity>
+			<building>
+				<Rubble />
+			</building>
+		</entity>
+	</types>
+        <instance>
+           <BFGEntity/>
+        </instance>
+	<shared>
+		<ZTDevComponent />
+      		<ZTPlacementData gridSnap="true" randomRotate="false" icon3Doffset="0 -0.096704 0.224532" icon3Dscale="0.328071" iconAnim="Stand_Idle" dockArrowSize="1.0" dockArrowStyle="special">
+      		   <cfootprint width="1" height="1"/>
+      		   <dfootprint width="2" height="2"/>
+      		</ZTPlacementData>
+		<BFAIEntityDataShared b_SeeThrough="true" s_uisort=="zz"/>
+	</shared>
+	<binder>
+           <BFNamedBinder binderName="mainObj">
+	      <instance>
+	         <BFPhysObj>
+     	            <BFGroundFitComponent maxTilt="50"/>
+	         </BFPhysObj>
+	      </instance>
+           </BFNamedBinder>
+        </binder>
+</BFTypedBinder>

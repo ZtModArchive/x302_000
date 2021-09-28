@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="DigPit" versionReplace="true">
+   <types>
+      <entity>
+         <item>
+            <DigPit/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <BFGCollisionData isPassable="true"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI\infopan\icon_Trash.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:DigPit"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="DigPit"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_DoNotSave="true" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/DigPit/DigPit" scale="1.0" switch="0 36"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

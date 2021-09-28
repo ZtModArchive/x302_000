@@ -1,0 +1,26 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_fences">
+         <BFHelpEntry entry="zoopedia_dinofence"/>
+      </BFHelpEntry>
+      <BFHelpEntry entry="zoopedia_foliage">
+         <BFHelpEntry entry="zoopedia_kingsagotree" order="zoopedia_treekingsago"/>
+      </BFHelpEntry>
+      <BFHelpEntry entry="zoopedia_food">
+         <BFHelpEntry entry="zoopedia_dinomeat"/>
+         <BFHelpEntry entry="zoopedia_cycadleaves"/>
+      </BFHelpEntry>
+      <BFHelpEntry entry="zoopedia_shelters">
+         <BFHelpEntry entry="zoopedia_dinosaurnest"/>
+      </BFHelpEntry>
+      <BFHelpEntry order="zoopedia_animal2" entry="zoopedia_animalenrichment">
+         <BFHelpEntry entry="zoopedia_dinopreydummy"/>
+      </BFHelpEntry>
+      <BFHelpEntry order="zoopedia_animal1" entry="zoopedia_animals">
+         <BFHelpEntry entry="zoopedia_styracosaurus"/>
+         <BFHelpEntry entry="zoopedia_carnotaurus"/>
+         <BFHelpEntry entry="zoopedia_triceratops"/>
+         <BFHelpEntry entry="zoopedia_tyrannosaurusrex"/>         
+      </BFHelpEntry>      
+   </BFHelpEntry>
+</entries>

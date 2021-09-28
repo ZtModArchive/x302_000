@@ -1,0 +1,5 @@
+<TEXTKEY>
+         <key frame="27" text="{Bip01 Head} snd 'Stand_SmashFence_Raptors'"/>
+         <key time="0" text="{Bip01 Head} snd 'Stand_SmashFence_Utah'"/>
+   <key time="0.9" text="kill"/>
+</TEXTKEY>

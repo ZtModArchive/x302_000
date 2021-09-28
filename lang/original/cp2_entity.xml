@@ -1,0 +1,2230 @@
+<ZT2Strings>
+   <entityname>
+      <!--Cloned Animal Designations-->
+      <weak>Weak </weak>
+      <super>Super </super>
+      
+      <!--animals-->
+      <Ankylosaurus>Ankylosaurus</Ankylosaurus>
+      <Ankylosaurus_stt>Ankylosaurus</Ankylosaurus_stt>
+      <Ankylosaurus_lower>the ankylosaurus</Ankylosaurus_lower>
+      <Ankylosaurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Ankylosaurus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an ankylosaurus, a heavily armored dinosaur with a large clubbed tail.
+      
+      
+      </Ankylosaurus_ltt>
+
+      <CowAuroch>Aurochs</CowAuroch>
+      <CowAuroch_stt>Aurochs</CowAuroch_stt>
+      <CowAuroch_lower>the aurochs</CowAuroch_lower>
+      <CowAuroch_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aurochs</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an aurochs, an ancestor of many modern-day cattle breeds.
+      
+      
+      </CowAuroch_ltt>
+
+      <BearShortfaced>Short-faced Bear</BearShortfaced>
+      <BearShortfaced_stt>Short-faced bear</BearShortfaced_stt>
+      <BearShortfaced_lower>the short-faced bear</BearShortfaced_lower>
+      <BearShortfaced_ltt>
+         <color r="255" g="248" b="178">
+            <b>Short-faced Bear</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a short-faced bear, the largest bear to have ever lived.
+      
+      
+      </BearShortfaced_ltt>
+
+      <BirdElephant>Elephant Bird</BirdElephant>
+      <BirdElephant_stt>Elephant bird</BirdElephant_stt>
+      <BirdElephant_lower>the elephant bird</BirdElephant_lower>
+      <BirdElephant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Elephant Bird</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an elephant bird, a giant fruit-eating bird that laid the largest eggs in the animal kingdom.
+      
+      
+      </BirdElephant_ltt>
+
+      <Bluebuck>Bluebuck</Bluebuck>
+      <Bluebuck_stt>Bluebuck</Bluebuck_stt>
+      <Bluebuck_lower>the Bluebuck</Bluebuck_lower>
+      <Bluebuck_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bluebuck</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Bluebuck, a recently extinct relative of the sable antelope and roan antelope. 
+      
+      
+      </Bluebuck_ltt>
+
+      <CamelGiant>Giant Camel</CamelGiant>
+      <CamelGiant_stt>Giant camel</CamelGiant_stt>
+      <CamelGiant_lower>the giant camel</CamelGiant_lower>
+      <CamelGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Camel</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant camel.  One of the world's largest camels, they are also known by the name Titanotylopus.
+      
+      
+      </CamelGiant_ltt>
+
+      <CatSaberToothed>Saber-Toothed Cat</CatSaberToothed>
+      <CatSaberToothed_stt>Saber-toothed cat</CatSaberToothed_stt>
+      <CatSaberToothed_lower>the saber-toothed cat</CatSaberToothed_lower>
+      <CatSaberToothed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Saber-Toothed Cat</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a saber-toothed cat, a predatory cat known for its two giant saberlike incisors and bob-tail.
+      
+      
+      </CatSaberToothed_ltt>
+
+      <DeerBushAntlered>Bush-Antlered Deer</DeerBushAntlered>
+      <DeerBushAntlered_stt>Bush-antlered deer</DeerBushAntlered_stt>
+      <DeerBushAntlered_lower>the bush-antlered deer</DeerBushAntlered_lower>
+      <DeerBushAntlered_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bush-Antlered Deer</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a bush-antlered deer, also known as eucladoceros.
+      
+      
+      </DeerBushAntlered_ltt>
+
+      <Deinonychus>Deinonychus</Deinonychus>
+      <Deinonychus_stt>Deinonychus</Deinonychus_stt>
+      <Deinonychus_lower>the deinonychus</Deinonychus_lower>
+      <Deinonychus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Deinonychus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a deinonychus, a swift, agile, carnivorous dinosaur.
+      
+      
+      </Deinonychus_ltt>
+
+      <Deinosuchus>Deinosuchus</Deinosuchus>
+      <Deinosuchus_stt>Deinosuchus</Deinosuchus_stt>
+      <Deinosuchus_lower>the deinosuchus</Deinosuchus_lower>
+      <Deinosuchus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Deinosuchus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a deinosuchus, the world's largest known alligator.
+      
+      
+      </Deinosuchus_ltt>
+
+      <Dimetrodon>Dimetrodon</Dimetrodon>
+      <Dimetrodon_stt>Dimetrodon</Dimetrodon_stt>
+      <Dimetrodon_lower>the dimetrodon</Dimetrodon_lower>
+      <Dimetrodon_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dimetrodon</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a dimetrodon, an ancient reptile from before the time of the dinosaurs.
+      
+      
+      </Dimetrodon_ltt>
+
+      <Diprotodon>Diprotodon</Diprotodon>
+      <Diprotodon_stt>Diprotodon</Diprotodon_stt>
+      <Diprotodon_lower>the Diprotodon</Diprotodon_lower>
+      <Diprotodon_ltt>
+         <color r="255" g="248" b="178">
+            <b>Diprotodon</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Diprotodon, the largest marsupial to have ever lived.
+      
+      
+      </Diprotodon_ltt>
+
+      <Dodo>Dodo</Dodo>
+      <Dodo_stt>Dodo</Dodo_stt>
+      <Dodo_lower>the dodo</Dodo_lower>
+      <Dodo_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dodo</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a dodo, a peaceful frugivore that lived without fear of predators.
+      
+      
+      </Dodo_ltt>
+
+      <Doedicurus>Doedicurus</Doedicurus>
+      <Doedicurus_stt>Doedicurus</Doedicurus_stt>
+      <Doedicurus_lower>the Doedicurus</Doedicurus_lower>
+      <Doedicurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Doedicurus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Doedicurus, a giant relative of the armadillo with a spiked clublike tail.
+      
+      
+      </Doedicurus_ltt>
+
+      <ElephantDwarfSicilian>Dwarf Sicilian Elephant</ElephantDwarfSicilian>
+      <ElephantDwarfSicilian_stt>Dwarf Sicilian elephant</ElephantDwarfSicilian_stt>
+      <ElephantDwarfSicilian_lower>the dwarf Sicilian elephant</ElephantDwarfSicilian_lower>
+      <ElephantDwarfSicilian_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dwarf Sicilian Elephant</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a dwarf Sicilian elephant, one of the smallest elephants.
+      
+      
+      </ElephantDwarfSicilian_ltt>
+
+      <Gigantopithecus>Gigantopithecus</Gigantopithecus>
+      <Gigantopithecus_stt>Gigantopithecus</Gigantopithecus_stt>
+      <Gigantopithecus_lower>the Gigantopithecus</Gigantopithecus_lower>
+      <Gigantopithecus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Gigantopithecus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Gigantopithecus, the largest ape that ever lived.
+      
+      
+      </Gigantopithecus_ltt>
+
+      <Kentrosaurus>Kentrosaurus</Kentrosaurus>
+      <Kentrosaurus_stt>Kentrosaurus</Kentrosaurus_stt>
+      <Kentrosaurus_lower>the kentrosaurus</Kentrosaurus_lower>
+      <Kentrosaurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Kentrosaurus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a kentrosaurus, a stegosaur known for their many of spikes.
+      
+      
+      </Kentrosaurus_ltt>
+
+      <LionCave>Cave Lion</LionCave>
+      <LionCave_stt>Cave lion</LionCave_stt>
+      <LionCave_lower>the cave lion</LionCave_lower>
+      <LionCave_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cave Lion</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a cave lion, the largest predatory cat that ever existed.
+      
+      
+      </LionCave_ltt>
+
+      <MastodonAmerican>American Mastodon</MastodonAmerican>
+      <MastodonAmerican_stt>American mastodon</MastodonAmerican_stt>
+      <MastodonAmerican_lower>the American mastodon</MastodonAmerican_lower>
+      <MastodonAmerican_ltt>
+         <color r="255" g="248" b="178">
+            <b>American Mastodon</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an American mastodon, a large boreal herbivore.
+      
+      
+      </MastodonAmerican_ltt>
+
+      <Protarchaeopteryx>Protarchaeopteryx</Protarchaeopteryx>
+      <Protarchaeopteryx_stt>Protarchaeopteryx</Protarchaeopteryx_stt>
+      <Protarchaeopteryx_lower>the protarchaeopteryx</Protarchaeopteryx_lower>
+      <Protarchaeopteryx_ltt>
+         <color r="255" g="248" b="178">
+            <b>Protarchaeopteryx</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a protarchaeopteryx, the first feathered dinosaur discovered.
+      
+      
+      </Protarchaeopteryx_ltt>
+
+      <RhinocerosWooly>Woolly Rhinoceros</RhinocerosWooly>
+      <RhinocerosWooly_stt>Woolly rhinoceros</RhinocerosWooly_stt>
+      <RhinocerosWooly_lower>the woolly rhinoceros</RhinocerosWooly_lower>
+      <RhinocerosWooly_ltt>
+         <color r="255" g="248" b="178">
+            <b>Woolly Rhinoceros</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a woolly rhinoceros, an ancient relative of the Sumatran rhino.
+      
+      
+      </RhinocerosWooly_ltt>
+
+      <Sivatherium>Sivatherium</Sivatherium>
+      <Sivatherium_stt>Sivatherium</Sivatherium_stt>
+      <Sivatherium_lower>the Sivatherium</Sivatherium_lower>
+      <Sivatherium_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sivatherium</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a Sivatherium, an extinct member of the family Giraffidae with close family ties to the okapi.
+      
+      
+      </Sivatherium_ltt>
+
+      <SlothGroundGiant>Giant Ground Sloth</SlothGroundGiant>
+      <SlothGroundGiant_stt>Giant ground sloth</SlothGroundGiant_stt>
+      <SlothGroundGiant_lower>the giant ground sloth</SlothGroundGiant_lower>
+      <SlothGroundGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Ground Sloth</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant ground sloth, a giant bipedal omnivore related to the modern ground sloth.
+      
+      
+      </SlothGroundGiant_ltt>
+
+      <Stegosaurus>Stegosaurus</Stegosaurus>
+      <Stegosaurus_stt>Stegosaurus</Stegosaurus_stt>
+      <Stegosaurus_lower>the stegosaurus</Stegosaurus_lower>
+      <Stegosaurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stegosaurus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select, and then place a Stegosaurus, a dinosaur that used its bony plates to control its body temperature.
+      
+      
+      </Stegosaurus_ltt>
+
+      <Stokesosaurus>Stokesosaurus</Stokesosaurus>
+      <Stokesosaurus_stt>Stokesosaurus</Stokesosaurus_stt>
+      <Stokesosaurus_lower>the stokesosaurus</Stokesosaurus_lower>
+      <Stokesosaurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stokesosaurus</b>
+         </color>
+         <br/>
+         
+         
+         Click to select, and then place a Stokesosaurus, a small tyrannosaur from the Jurassic Period.
+      
+      
+      </Stokesosaurus_ltt>
+
+      <Thylacine>Thylacine</Thylacine>
+      <Thylacine_stt>Thylacine</Thylacine_stt>
+      <Thylacine_lower>the thylacine</Thylacine_lower>
+      <Thylacine_ltt>
+         <color r="255" g="248" b="178">
+            <b>Thylacine</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a thylacine, a marsupial predator with the widest gape of any animal.
+      
+      
+      </Thylacine_ltt>
+
+      <Utahraptor>Utahraptor</Utahraptor>
+      <Utahraptor_stt>Utahraptor</Utahraptor_stt>
+      <Utahraptor_lower>the utahraptor</Utahraptor_lower>
+      <Utahraptor_ltt>
+         <color r="255" g="248" b="178">
+            <b>Utahraptor</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a utahraptor, a large carnivorous dinosaur that walked upright on its hind legs.
+      
+      
+      </Utahraptor_ltt>
+
+      <Velociraptor>Velociraptor</Velociraptor>
+      <Velociraptor_stt>Velociraptor</Velociraptor_stt>
+      <Velociraptor_lower>the velociraptor</Velociraptor_lower>
+      <Velociraptor_ltt>
+         <color r="255" g="248" b="178">
+            <b>Velociraptor</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a velociraptor, a small, feathered raptor from the Cretaceous period.
+      
+      
+      </Velociraptor_ltt>
+
+      <Warrah>Warrah</Warrah>
+      <Warrah_stt>Warrah</Warrah_stt>
+      <Warrah_lower>the Warrah</Warrah_lower>
+      <Warrah_ltt>
+         <color r="255" g="248" b="178">
+            <b>Warrah</b>
+         </color>
+         <br/>
+         
+         
+         Click to select, and then place a Warrah, the only canid known to become extinct in modern historical times.
+
+      
+      
+      </Warrah_ltt>
+
+      <WarthogGiant>Giant Warthog</WarthogGiant>
+      <WarthogGiant_stt>Giant warthog</WarthogGiant_stt>
+      <WarthogGiant_lower>the giant warthog</WarthogGiant_lower>
+      <WarthogGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Warthog</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant warthog, one of the largest warthogs to have ever existed.
+      
+      
+      </WarthogGiant_ltt>
+
+      <Quagga>Quagga</Quagga>
+      <Quagga_stt>Quagga</Quagga_stt>
+      <Quagga_lower>the quagga</Quagga_lower>
+      <Quagga_ltt>
+         <color r="255" g="248" b="178">
+            <b>Quagga</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a quagga, a relative of the modern zebra.
+      
+      
+      </Quagga_ltt>
+
+      <PenguinKiller>Killer Penguin</PenguinKiller>
+      <PenguinKiller_stt>Killer penguin</PenguinKiller_stt>
+      <PenguinKiller_lower>the killer penguin</PenguinKiller_lower>
+      <PenguinKiller_ltt>
+         <color r="255" g="248" b="178">
+            <b>Killer Penguin</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a killer penguin. Careful, they can be dangerous to other animals!
+      
+      
+      </PenguinKiller_ltt>
+
+      <SpringHare>Spring Hare</SpringHare>
+      <SpringHare_stt>Spring hare</SpringHare_stt>
+      <SpringHare_lower>the spring hare</SpringHare_lower>
+      <SpringHare_ltt>
+         <color r="255" g="248" b="178">
+            <b>Spring Hare</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a spring hare.  Careful, it's water soluble!
+      
+      
+      </SpringHare_ltt>
+
+      <Squirrel>Squirrel</Squirrel>
+      <Squirrel_stt>Squirrel</Squirrel_stt>
+      <Squirrel_lower>the squirrel</Squirrel_lower>
+      <Squirrel_ltt>
+         <color r="255" g="248" b="178">
+            <b>Squirrel</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a squirrel.  Careful, it's water soluble!
+      
+      
+      </Squirrel_ltt>
+
+      <BullfrogGiant>Giant Bullfrog</BullfrogGiant>
+      <BullfrogGiant_stt>Giant bullfrog</BullfrogGiant_stt>
+      <BullfrogGiant_lower>the giant bullfrog</BullfrogGiant_lower>
+      <BullfrogGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Bullfrog</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant bullfrog.  Careful, it's water soluble!
+      
+      
+      </BullfrogGiant_ltt>
+
+      <ButterflyMonarchGiant>Giant Monarch Butterfly</ButterflyMonarchGiant>
+      <ButterflyMonarchGiant_stt>Giant monarch butterfly</ButterflyMonarchGiant_stt>
+      <ButterflyMonarchGiant_lower>the giant monarch butterfly</ButterflyMonarchGiant_lower>
+      <ButterflyMonarchGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Monarch Butterfly</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a giant monarch butterfly.  Careful, it's water soluble!
+      
+      
+      </ButterflyMonarchGiant_ltt>
+
+      <!--poop names-->
+      <Poop_BirdElephant>Elephant Bird Poop</Poop_BirdElephant>
+      <Poop_BirdElephant_stt>Elephant bird poop</Poop_BirdElephant_stt>
+      <Poop_BirdElephant_lower>the elephant bird poop</Poop_BirdElephant_lower>
+      <Poop_BirdElephant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Elephant Bird Poop</b>
+         </color>
+         <br/>
+         Click to select and then place elephant bird poop.
+      </Poop_BirdElephant_ltt>
+      
+      <Poop_BirdElephant_Sick>Elephant Bird Poop (Sick)</Poop_BirdElephant_Sick>
+      <Poop_BirdElephant_Sick_stt>Elephant bird poop (sick)</Poop_BirdElephant_Sick_stt>
+      <Poop_BirdElephant_Sick_lower>the elephant bird poop (sick)</Poop_BirdElephant_Sick_lower>
+      <Poop_BirdElephant_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Elephant Bird Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place elephant bird poop (sick).
+      </Poop_BirdElephant_Sick_ltt>
+
+      <Poop_Diprotodon>Diprotodon Poop</Poop_Diprotodon>
+      <Poop_Diprotodon_stt>Diprotodon poop</Poop_Diprotodon_stt>
+      <Poop_Diprotodon_lower>the diprotodon poop</Poop_Diprotodon_lower>
+      <Poop_Diprotodon_ltt>
+         <color r="255" g="248" b="178">
+            <b>Diprotodon Poop</b>
+         </color>
+         <br/>
+         Click to select and then place diprotodon poop.
+      </Poop_Diprotodon_ltt>
+      
+      <Poop_Diprotodon_Sick>Diprotodon Poop (Sick)</Poop_Diprotodon_Sick>
+      <Poop_Diprotodon_Sick_stt>Diprotodon poop (sick)</Poop_Diprotodon_Sick_stt>
+      <Poop_Diprotodon_Sick_lower>the diprotodon poop (sick)</Poop_Diprotodon_Sick_lower>
+      <Poop_Diprotodon_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Diprotodon Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place diprotodon poop (sick).
+      </Poop_Diprotodon_Sick_ltt>
+
+      <Poop_Dodo>Dodo Poop</Poop_Dodo>
+      <Poop_Dodo_stt>Dodo poop</Poop_Dodo_stt>
+      <Poop_Dodo_lower>the dodo poop</Poop_Dodo_lower>
+      <Poop_Dodo_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dodo Poop</b>
+         </color>
+         <br/>
+         Click to select and then place dodo poop.
+      </Poop_Dodo_ltt>
+      
+      <Poop_Dodo_Sick>Dodo Poop (Sick)</Poop_Dodo_Sick>
+      <Poop_Dodo_Sick_stt>Dodo poop (sick)</Poop_Dodo_Sick_stt>
+      <Poop_Dodo_Sick_lower>the dodo poop (sick)</Poop_Dodo_Sick_lower>
+      <Poop_Dodo_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dodo Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place dodo poop (sick).
+      </Poop_Dodo_Sick_ltt>
+
+      <Poop_Doedicurus>Doedicurus Poop</Poop_Doedicurus>
+      <Poop_Doedicurus_stt>Doedicurus poop</Poop_Doedicurus_stt>
+      <Poop_Doedicurus_lower>the doedicurus poop</Poop_Doedicurus_lower>
+      <Poop_Doedicurus_ltt>
+         <color r="255" g="248" b="178">
+            <b>Doedicurus Poop</b>
+         </color>
+         <br/>
+         Click to select and then place doedicurus poop.
+      </Poop_Doedicurus_ltt>
+      
+      <Poop_Doedicurus_Sick>Doedicurus Poop (Sick)</Poop_Doedicurus_Sick>
+      <Poop_Doedicurus_Sick_stt>Doedicurus poop (sick)</Poop_Doedicurus_Sick_stt>
+      <Poop_Doedicurus_Sick_lower>the doedicurus poop (sick)</Poop_Doedicurus_Sick_lower>
+      <Poop_Doedicurus_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Doedicurus Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place doedicurus poop (sick).
+      </Poop_Doedicurus_Sick_ltt>
+
+      <Poop_SlothGroundGiant>Giant Ground Sloth Poop</Poop_SlothGroundGiant>
+      <Poop_SlothGroundGiant_stt>Giant ground sloth poop</Poop_SlothGroundGiant_stt>
+      <Poop_SlothGroundGiant_lower>the giant ground sloth poop</Poop_SlothGroundGiant_lower>
+      <Poop_SlothGroundGiant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Ground Sloth Poop</b>
+         </color>
+         <br/>
+         Click to select and then place giant ground sloth poop.
+      </Poop_SlothGroundGiant_ltt>
+      
+      <Poop_SlothGroundGiant_Sick>Giant Ground Sloth Poop (Sick)</Poop_SlothGroundGiant_Sick>
+      <Poop_SlothGroundGiant_Sick_stt>Giant ground sloth poop (sick)</Poop_SlothGroundGiant_Sick_stt>
+      <Poop_SlothGroundGiant_Sick_lower>the giant ground sloth poop (sick)</Poop_SlothGroundGiant_Sick_lower>
+      <Poop_SlothGroundGiant_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Ground Sloth Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place giant ground sloth poop (sick).
+      </Poop_SlothGroundGiant_Sick_ltt>
+
+      <!--animal gifts-->
+      
+      <Ankylosaurus_Gift>Ankylosaurus Hat</Ankylosaurus_Gift>
+      <Ankylosaurus_Gift_stt>Ankylosaurus hat</Ankylosaurus_Gift_stt>
+      <Ankylosaurus_Gift_lower>the ankylosaurus hat</Ankylosaurus_Gift_lower>
+      <Ankylosaurus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Ankylosaurus Hat</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the ankylosaurus will buy this gift.
+      </Ankylosaurus_Gift_ltt>
+      
+      <CowAuroch_Gift>Aurochs Hat</CowAuroch_Gift>
+      <CowAuroch_Gift_stt>Aurochs hat</CowAuroch_Gift_stt>
+      <CowAuroch_Gift_lower>the aurochs hat</CowAuroch_Gift_lower>
+      <CowAuroch_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Aurochs Hat</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the aurochs will buy this gift.
+      </CowAuroch_Gift_ltt>
+      
+      <BearShortfaced_Gift>Short-faced Bear Hip Pack</BearShortfaced_Gift>
+      <BearShortfaced_Gift_stt>Short-faced bear hip pack</BearShortfaced_Gift_stt>
+      <BearShortfaced_Gift_lower>the short-faced bear hip pack</BearShortfaced_Gift_lower>
+      <BearShortfaced_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Short-faced Bear Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the short-faced bear will buy this gift.
+      </BearShortfaced_Gift_ltt>
+      
+      <BirdElephant_Gift>Elephant Bird Hat</BirdElephant_Gift>
+      <BirdElephant_Gift_stt>Elephant bird hat</BirdElephant_Gift_stt>
+      <BirdElephant_Gift_lower>the elephant bird hat</BirdElephant_Gift_lower>
+      <BirdElephant_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Elephant Bird Hat</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the elephant bird will buy this gift.
+      </BirdElephant_Gift_ltt>
+      
+      <Bluebuck_Gift>Bluebuck Shirt</Bluebuck_Gift>
+      <Bluebuck_Gift_stt>Bluebuck shirt</Bluebuck_Gift_stt>
+      <Bluebuck_Gift_lower>the Bluebuck shirt</Bluebuck_Gift_lower>
+      <Bluebuck_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bluebuck Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Bluebuck will buy this gift.
+      </Bluebuck_Gift_ltt>
+      
+      <CamelGiant_Gift>Giant Camel Backpack</CamelGiant_Gift>
+      <CamelGiant_Gift_stt>Giant camel backpack</CamelGiant_Gift_stt>
+      <CamelGiant_Gift_lower>the giant camel backpack</CamelGiant_Gift_lower>
+      <CamelGiant_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Camel Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the giant camel will buy this gift.
+      </CamelGiant_Gift_ltt>
+      
+      <CatSaberToothed_Gift>Saber-Toothed Cat Puppet</CatSaberToothed_Gift>
+      <CatSaberToothed_Gift_stt>Saber-toothed cat puppet</CatSaberToothed_Gift_stt>
+      <CatSaberToothed_Gift_lower>the saber-toothed cat puppet</CatSaberToothed_Gift_lower>
+      <CatSaberToothed_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Saber-Toothed Cat Puppet</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the saber-toothed cat will buy this gift.
+      </CatSaberToothed_Gift_ltt>
+      
+      <DeerBushAntlered_Gift>Bush-Antlered Deer Hat</DeerBushAntlered_Gift>
+      <DeerBushAntlered_Gift_stt>Bush-antlered deer hat</DeerBushAntlered_Gift_stt>
+      <DeerBushAntlered_Gift_lower>the bush-antlered deer hat</DeerBushAntlered_Gift_lower>
+      <DeerBushAntlered_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bush-Antlered Deer Hat</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the bush-antlered deer will buy this gift.
+      </DeerBushAntlered_Gift_ltt>
+      
+      <Deinonychus_Gift>Deinonychus Shirt</Deinonychus_Gift>
+      <Deinonychus_Gift_stt>Deinonychus shirt</Deinonychus_Gift_stt>
+      <Deinonychus_Gift_lower>the deinonychus shirt</Deinonychus_Gift_lower>
+      <Deinonychus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Deinonychus Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the deinonychus will buy this gift.
+      </Deinonychus_Gift_ltt>
+      
+      <Deinosuchus_Gift>Deinosuchus Stuffed Animal</Deinosuchus_Gift>
+      <Deinosuchus_Gift_stt>Deinosuchus stuffed animal</Deinosuchus_Gift_stt>
+      <Deinosuchus_Gift_lower>the deinosuchus stuffed animal</Deinosuchus_Gift_lower>
+      <Deinosuchus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Deinosuchus Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the deinosuchus will buy this gift.
+      </Deinosuchus_Gift_ltt>
+      
+      <Dimetrodon_Gift>Dimetrodon Backpack</Dimetrodon_Gift>
+      <Dimetrodon_Gift_stt>Dimetrodon backpack</Dimetrodon_Gift_stt>
+      <Dimetrodon_Gift_lower>the dimetrodon backpack</Dimetrodon_Gift_lower>
+      <Dimetrodon_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dimetrodon Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the dimetrodon will buy this gift.
+      </Dimetrodon_Gift_ltt>
+      
+      <Diprotodon_Gift>Diprotodon Backpack</Diprotodon_Gift>
+      <Diprotodon_Gift_stt>Diprotodon backpack</Diprotodon_Gift_stt>
+      <Diprotodon_Gift_lower>the Diprotodon backpack</Diprotodon_Gift_lower>
+      <Diprotodon_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Diprotodon Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Diprotodon will buy this gift.
+      </Diprotodon_Gift_ltt>
+      
+      <Dodo_Gift>Dodo Stuffed Animal</Dodo_Gift>
+      <Dodo_Gift_stt>Dodo stuffed animal</Dodo_Gift_stt>
+      <Dodo_Gift_lower>the dodo stuffed animal</Dodo_Gift_lower>
+      <Dodo_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dodo Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the dodo will buy this gift.
+      </Dodo_Gift_ltt>
+      
+      <Doedicurus_Gift>Doedicurus Shirt</Doedicurus_Gift>
+      <Doedicurus_Gift_stt>Doedicurus shirt</Doedicurus_Gift_stt>
+      <Doedicurus_Gift_lower>the Doedicurus shirt</Doedicurus_Gift_lower>
+      <Doedicurus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Doedicurus Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Doedicurus will buy this gift.
+      </Doedicurus_Gift_ltt>
+      
+      <ElephantDwarfSicilian_Gift>Dwarf Sicilian Elephant Shirt</ElephantDwarfSicilian_Gift>
+      <ElephantDwarfSicilian_Gift_stt>dwarf Sicilian elephant shirt</ElephantDwarfSicilian_Gift_stt>
+      <ElephantDwarfSicilian_Gift_lower>the dwarf Sicilian elephant shirt</ElephantDwarfSicilian_Gift_lower>
+      <ElephantDwarfSicilian_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dwarf Sicilian Elephant Shirt</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the dwarf Sicilian elephant will buy this gift.
+      </ElephantDwarfSicilian_Gift_ltt>
+      
+      <Gigantopithecus_Gift>Gigantopithecus Backpack</Gigantopithecus_Gift>
+      <Gigantopithecus_Gift_stt>Gigantopithecus backpack</Gigantopithecus_Gift_stt>
+      <Gigantopithecus_Gift_lower>the Gigantopithecus backpack</Gigantopithecus_Gift_lower>
+      <Gigantopithecus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Gigantopithecus Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Gigantopithecus will buy this gift.
+      </Gigantopithecus_Gift_ltt>
+      
+      <Kentrosaurus_Gift>Kentrosaurus Backpack</Kentrosaurus_Gift>
+      <Kentrosaurus_Gift_stt>Kentrosaurus backpack</Kentrosaurus_Gift_stt>
+      <Kentrosaurus_Gift_lower>the kentrosaurus backpack</Kentrosaurus_Gift_lower>
+      <Kentrosaurus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Kentrosaurus Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the kentrosaurus will buy this gift.
+      </Kentrosaurus_Gift_ltt>
+      
+      <LionCave_Gift>Cave Lion Hip Pack</LionCave_Gift>
+      <LionCave_Gift_stt>Cave lion hip pack</LionCave_Gift_stt>
+      <LionCave_Gift_lower>the cave lion hip pack</LionCave_Gift_lower>
+      <LionCave_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cave Lion Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the cave lion will buy this gift.
+      </LionCave_Gift_ltt>
+      
+      <MastodonAmerican_Gift>American Mastodon Stuffed Animal</MastodonAmerican_Gift>
+      <MastodonAmerican_Gift_stt>American mastodon stuffed animal</MastodonAmerican_Gift_stt>
+      <MastodonAmerican_Gift_lower>the American mastodon stuffed animal</MastodonAmerican_Gift_lower>
+      <MastodonAmerican_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>American Mastodon Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the American mastodon will buy this gift.
+      </MastodonAmerican_Gift_ltt>
+      
+      <Protarchaeopteryx_Gift>Protarchaeopteryx Hip Pack</Protarchaeopteryx_Gift>
+      <Protarchaeopteryx_Gift_stt>Protarchaeopteryx hip pack</Protarchaeopteryx_Gift_stt>
+      <Protarchaeopteryx_Gift_lower>the protarchaeopteryx hip pack</Protarchaeopteryx_Gift_lower>
+      <Protarchaeopteryx_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Protarchaeopteryx Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the protarchaeopteryx will buy this gift.
+      </Protarchaeopteryx_Gift_ltt>
+      
+      <RhinocerosWooly_Gift>Woolly Rhinoceros Hat</RhinocerosWooly_Gift>
+      <RhinocerosWooly_Gift_stt>Woolly rhinoceros hat</RhinocerosWooly_Gift_stt>
+      <RhinocerosWooly_Gift_lower>the woolly rhinoceros hat</RhinocerosWooly_Gift_lower>
+      <RhinocerosWooly_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Woolly Rhinoceros Hat</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the woolly rhinoceros will buy this gift.
+      </RhinocerosWooly_Gift_ltt>
+      
+      <Sivatherium_Gift>Sivatherium Backpack</Sivatherium_Gift>
+      <Sivatherium_Gift_stt>Sivatherium backpack</Sivatherium_Gift_stt>
+      <Sivatherium_Gift_lower>the Sivatherium backpack</Sivatherium_Gift_lower>
+      <Sivatherium_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sivatherium Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Sivatherium will buy this gift.
+      </Sivatherium_Gift_ltt>
+      
+      <SlothGroundGiant_Gift>Giant Ground Sloth Stuffed Animal</SlothGroundGiant_Gift>
+      <SlothGroundGiant_Gift_stt>Giant ground sloth stuffed animal</SlothGroundGiant_Gift_stt>
+      <SlothGroundGiant_Gift_lower>the giant ground sloth stuffed animal</SlothGroundGiant_Gift_lower>
+      <SlothGroundGiant_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Ground Sloth Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the giant ground sloth will buy this gift.
+      </SlothGroundGiant_Gift_ltt>
+      
+      <Stegosaurus_Gift>Stegosaurus Backpack</Stegosaurus_Gift>
+      <Stegosaurus_Gift_stt>Stegosaurus backpack</Stegosaurus_Gift_stt>
+      <Stegosaurus_Gift_lower>the stegosaurus backpack</Stegosaurus_Gift_lower>
+      <Stegosaurus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stegosaurus Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the stegosaurus will buy this gift.
+      </Stegosaurus_Gift_ltt>
+      
+      <Stokesosaurus_Gift>Stokesosaurus Puppet</Stokesosaurus_Gift>
+      <Stokesosaurus_Gift_stt>Stokesosaurus puppet</Stokesosaurus_Gift_stt>
+      <Stokesosaurus_Gift_lower>the stokesosaurus puppet</Stokesosaurus_Gift_lower>
+      <Stokesosaurus_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stokesosaurus Puppet</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the stokesosaurus will buy this gift.
+      </Stokesosaurus_Gift_ltt>
+      
+      <Thylacine_Gift>Thylacine Puppet</Thylacine_Gift>
+      <Thylacine_Gift_stt>Thylacine puppet</Thylacine_Gift_stt>
+      <Thylacine_Gift_lower>the thylacine puppet</Thylacine_Gift_lower>
+      <Thylacine_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Thylacine Puppet</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the thylacine will buy this gift.
+      </Thylacine_Gift_ltt>
+      
+      <Utahraptor_Gift>Utahraptor Puppet</Utahraptor_Gift>
+      <Utahraptor_Gift_stt>Utahraptor puppet</Utahraptor_Gift_stt>
+      <Utahraptor_Gift_lower>the utahraptor puppet</Utahraptor_Gift_lower>
+      <Utahraptor_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Utahraptor Puppet</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the utahraptor will buy this gift.
+      </Utahraptor_Gift_ltt>
+      
+      <Velociraptor_Gift>Velociraptor Stuffed Animal</Velociraptor_Gift>
+      <Velociraptor_Gift_stt>Velociraptor stuffed animal</Velociraptor_Gift_stt>
+      <Velociraptor_Gift_lower>the velociraptor stuffed animal</Velociraptor_Gift_lower>
+      <Velociraptor_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Velociraptor Stuffed Animal</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the velociraptor will buy this gift.
+      </Velociraptor_Gift_ltt>
+      
+      <Warrah_Gift>Warrah Hip Pack</Warrah_Gift>
+      <Warrah_Gift_stt>Warrah hip pack</Warrah_Gift_stt>
+      <Warrah_Gift_lower>the Warrah hip pack</Warrah_Gift_lower>
+      <Warrah_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Warrah Hip Pack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the Warrah will buy this gift.
+      </Warrah_Gift_ltt>
+      
+      <WarthogGiant_Gift>Giant Warthog Puppet</WarthogGiant_Gift>
+      <WarthogGiant_Gift_stt>Giant warthog puppet</WarthogGiant_Gift_stt>
+      <WarthogGiant_Gift_lower>the giant warthog puppet</WarthogGiant_Gift_lower>
+      <WarthogGiant_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Warthog Puppet</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the giant warthog will buy this gift.
+      </WarthogGiant_Gift_ltt>
+
+      <!--Nests and eggs-->
+            
+      <AnkylosaurusNest>Ankylosaurus Nest</AnkylosaurusNest>
+      <AnkylosaurusNest_stt>Ankylosaurus nest</AnkylosaurusNest_stt>
+      <AnkylosaurusNest_lower>the ankylosaurus nest</AnkylosaurusNest_lower>
+      <AnkylosaurusNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Ankylosaurus Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a ankylosaurus nest, where ankylosaurs lay their eggs.
+      </AnkylosaurusNest_ltt>
+
+      <DeinonychusNest>Deinonychus Nest</DeinonychusNest>
+      <DeinonychusNest_stt>Deinonychus nest</DeinonychusNest_stt>
+      <DeinonychusNest_lower>the deinonychus nest</DeinonychusNest_lower>
+      <DeinonychusNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Deinonychus Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a deinonychus nest, where deinonychus lay their eggs.
+      </DeinonychusNest_ltt>
+
+      <KentrosaurusNest>Kentrosaurus Nest</KentrosaurusNest>
+      <KentrosaurusNest_stt>Kentrosaurus nest</KentrosaurusNest_stt>
+      <KentrosaurusNest_lower>the kentrosaurus nest</KentrosaurusNest_lower>
+      <KentrosaurusNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Kentrosaurus Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a kentrosaurus nest, where kentrosaurs lay their eggs.
+      </KentrosaurusNest_ltt>
+
+      <StegosaurusNest>Stegosaurus Nest</StegosaurusNest>
+      <StegosaurusNest_stt>Stegosaurus nest</StegosaurusNest_stt>
+      <StegosaurusNest_lower>the stegosaurus nest</StegosaurusNest_lower>
+      <StegosaurusNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stegosaurus Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a stegosaurus nest, where stegosaurs lay their eggs.
+      </StegosaurusNest_ltt>
+
+      <StokesosaurusNest>Stokesosaurus Nest</StokesosaurusNest>
+      <StokesosaurusNest_stt>Stokesosaurus nest</StokesosaurusNest_stt>
+      <StokesosaurusNest_lower>the stokesosaurus nest</StokesosaurusNest_lower>
+      <StokesosaurusNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stokesosaurus Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a stokesosaurus nest, where stokesosaurs lay their eggs.
+      </StokesosaurusNest_ltt>
+
+      <UtahraptorNest>Utahraptor Nest</UtahraptorNest>
+      <UtahraptorNest_stt>Utahraptor nest</UtahraptorNest_stt>
+      <UtahraptorNest_lower>the utahraptor nest</UtahraptorNest_lower>
+      <UtahraptorNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Utahraptor Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a utahraptor nest, where utahraptors lay their eggs.
+      </UtahraptorNest_ltt>
+
+      <VelociraptorNest>Velociraptor Nest</VelociraptorNest>
+      <VelociraptorNest_stt>Velociraptor nest</VelociraptorNest_stt>
+      <VelociraptorNest_lower>the velociraptor nest</VelociraptorNest_lower>
+      <VelociraptorNest_ltt>
+         <color r="255" g="248" b="178">
+            <b>Velociraptor Nest</b>
+         </color>
+         <br/>
+         Click to select and then place a velociraptor nest, where velociraptors lay their eggs.
+      </VelociraptorNest_ltt>
+
+      <!--food-->
+      
+      <Terrain_Roots>Roots</Terrain_Roots>
+      <Terrain_Roots_stt>Roots</Terrain_Roots_stt>
+      <Terrain_Roots_lower>the roots</Terrain_Roots_lower>
+      <Terrain_Roots_ltt>
+         <color r="255" g="248" b="178">
+            <b>Roots</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place roots, which are popular as a food source and a nesting material.
+      
+      
+      </Terrain_Roots_ltt>
+
+      <FoodDish_Roots>Food Dish with Roots</FoodDish_Roots>
+      <FoodDish_Roots_stt>Food dish with roots</FoodDish_Roots_stt>
+      <FoodDish_Roots_lower>the food dish</FoodDish_Roots_lower>
+      <FoodDish_Roots_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Dish with Roots</b>
+         </color>
+         <br/>
+         
+         
+          Click to select, and then place the food dish with roots. Because it's small, food dishes need to be refilled often.
+
+      
+      
+      </FoodDish_Roots_ltt>
+      
+      <Trough_Roots>Food Trough with Roots</Trough_Roots>
+      <Trough_Roots_stt>Food trough with roots</Trough_Roots_stt>
+      <Trough_Roots_lower>the food trough</Trough_Roots_lower>
+      <Trough_Roots_ltt>
+         <color r="255" g="248" b="178">
+            <b>Food Trough with Roots</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place the food trough with roots. A food trough can accommodate up to six small animals at a time.
+      
+      
+      </Trough_Roots_ltt>
+      
+      <SubstratePile_Roots>Substrate Pile with Roots</SubstratePile_Roots>
+      <SubstratePile_Roots_stt>Substrate pile with roots</SubstratePile_Roots_stt>
+      <SubstratePile_Roots_lower>the substrate pile</SubstratePile_Roots_lower>
+      <SubstratePile_Roots_ltt>
+         <color r="255" g="248" b="178">
+            <b>Substrate Pile with Roots</b>
+         </color>
+         <br/>
+         
+         Click to select and then place a pile of forest bark and other organic materials mixed with roots.
+.
+      
+      
+      </SubstratePile_Roots_ltt>      
+      <!--staff-->
+      
+      <EntertainerExtinct>Saber-Toothed Cat Entertainer</EntertainerExtinct>
+      <EntertainerExtinct_stt>Saber-toothed cat entertainer</EntertainerExtinct_stt>
+      <EntertainerExtinct_lower>the saber-toothed cat Entertainer</EntertainerExtinct_lower>
+      <EntertainerExtinct_ltt>
+         <color r="255" g="248" b="178">
+            <b>Saber-Toothed Cat Entertainer</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the saber-toothed cat entertainer, a clever performer who entertains guests with small shows at stages.
+      
+      
+      </EntertainerExtinct_ltt>
+      
+      <EntertainerDinosaur>Dinosaur Entertainer</EntertainerDinosaur>
+      <EntertainerDinosaur_stt>Dinosaur entertainer</EntertainerDinosaur_stt>
+      <EntertainerDinosaur_lower>the dinosaur entertainer</EntertainerDinosaur_lower>
+      <EntertainerDinosaur_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dinosaur Entertainer</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the dinosaur entertainer. Entertainers perform small shows at stages to entertain guests.
+      
+      
+      </EntertainerDinosaur_ltt>
+      
+      <Paleontologist>Paleontologist</Paleontologist>
+      <Paleontologist_stt>Paleontologist</Paleontologist_stt>
+      <Paleontologist_lower>the paleontologist</Paleontologist_lower>
+      <Paleontologist_ltt>
+         <color r="255" g="248" b="178">
+            <b>Paleontologist</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the paleontologist, who will help your zoo by finding fossils and educating your guests about extinct animal fossils.
+      
+      
+      </Paleontologist_ltt>
+
+      <DinoRecoveryTeam>Dino Capture Team Agent</DinoRecoveryTeam>
+      <DinoRecoveryTeam_stt>Dino capture team agent</DinoRecoveryTeam_stt>
+      <DinoRecoveryTeam_lower>the dino capture team agent</DinoRecoveryTeam_lower>
+      <DinoRecoveryTeam_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dino Capture Team Agent</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the dino capture team agent, who will work as a group with other agents to recover dinosaurs that have escaped their exhibits.
+      
+      
+      </DinoRecoveryTeam_ltt>
+
+      <DinoRecoveryRobot>Dino Capture Team Robot</DinoRecoveryRobot>
+      <DinoRecoveryRobot_stt>Dino capture team robot</DinoRecoveryRobot_stt>
+      <DinoRecoveryRobot_lower>the dino capture team robot</DinoRecoveryRobot_lower>
+      <DinoRecoveryRobot_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dino Capture Team Robot</b>
+         </color>
+         <br/>
+         
+         
+          Click to hire the dino capture team robot, used by dino capture team agents as a decoy when dealing with dangerous dinosaurs.  Made from organic materials safe for dinosaur consumption.
+      
+      
+      </DinoRecoveryRobot_ltt>
+
+      <!--buildings-->
+     
+      <FossilDigPit>Play Dig Pit</FossilDigPit>
+      <FossilDigPit_stt>Play dig pit</FossilDigPit_stt>
+      <FossilDigPit_lower>the play dig pit</FossilDigPit_lower>
+      <FossilDigPit_ltt>
+         <color r="255" g="248" b="178">
+            <b>Play Dig Pit</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the play dig pit.  Guests get a chance to learn while digging in the dirt.
+
+      </FossilDigPit_ltt>
+      
+      <FossilEducationCenter>Extinct Education Center</FossilEducationCenter>
+      <FossilEducationCenter_stt>Extinct Education Center</FossilEducationCenter_stt>
+      <FossilEducationCenter_lower>the Extinct Education Center</FossilEducationCenter_lower>
+      <FossilEducationCenter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Education Center</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the Extinct Education Center. Educators and paleontologists lecture here and guests help build extinct statues from bones they find at the play dig pit.
+
+      </FossilEducationCenter_ltt>
+
+      <Statue_IrishElk>Irish Elk Statue</Statue_IrishElk>
+      <Statue_IrishElk_stt>Irish elk statue</Statue_IrishElk_stt>
+      <Statue_IrishElk_lower>the Irish elk statue</Statue_IrishElk_lower>
+      <Statue_IrishElk_ltt>
+         <color r="255" g="248" b="178">
+            <b>Irish Elk Statue</b>
+         </color>
+         <br/>
+         Click to select and then place an Irish elk statue. Guests appreciate the beauty of a well-placed statue, especially one they helped create.
+      </Statue_IrishElk_ltt>     
+      
+      <Statue_Mammoth>Imperial Mammoth Statue</Statue_Mammoth>
+      <Statue_Mammoth_stt>Imperial mammoth statue</Statue_Mammoth_stt>
+      <Statue_Mammoth_lower>the imperial mammoth statue</Statue_Mammoth_lower>
+      <Statue_Mammoth_ltt>
+         <color r="255" g="248" b="178">
+            <b>Imperial Mammoth Statue</b>
+         </color>
+         <br/>
+         Click to select and then place an imperial mammoth statue. Guests appreciate the beauty of a well-placed statue, especially one they helped create.
+      </Statue_Mammoth_ltt>     
+
+      <Statue_TyrannosaurusRex>Tyrannosaurus rex Statue</Statue_TyrannosaurusRex>
+      <Statue_TyrannosaurusRex_stt>Tyrannosaurus rex statue</Statue_TyrannosaurusRex_stt>
+      <Statue_TyrannosaurusRex_lower>the Tyrannosaurus rex statue</Statue_TyrannosaurusRex_lower>
+      <Statue_TyrannosaurusRex_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tyrannosaurus rex Statue</b>
+         </color>
+         <br/>
+         Click to select and then place a Tyrannosaurus rex statue. Guests appreciate the beauty of a well-placed statue, especially one they helped create.
+      </Statue_TyrannosaurusRex_ltt>  
+      
+      <Statue_Pteranodon>Pteranodon Statue</Statue_Pteranodon>
+      <Statue_Pteranodon_stt>Pteranodon statue</Statue_Pteranodon_stt>
+      <Statue_Pteranodon_lower>the pteranodon statue</Statue_Pteranodon_lower>
+      <Statue_Pteranodon_ltt>
+         <color r="255" g="248" b="178">
+            <b>Imperial Pteranodon Statue</b>
+         </color>
+         <br/>
+         Click to select and then place a pteranodon statue. Guests appreciate the beauty of a well-placed statue, especially one they helped create.
+      </Statue_Pteranodon_ltt>        
+
+      <SizeMural>Size Comparison Mural</SizeMural>
+      <SizeMural_stt>Size comparison mural</SizeMural_stt>
+      <SizeMural_lower>the size comparison mural</SizeMural_lower>
+      <SizeMural_ltt>
+         <color r="255" g="248" b="178">
+            <b>Size Comparison Mural</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the size comparison mural.  Guests are amused and educated by comparing their size to the size of these extinct animals.
+
+      </SizeMural_ltt>
+      
+      <bathroomlarge_xt>Family Restroom</bathroomlarge_xt>
+      <bathroomlarge_xt_stt>Family restroom</bathroomlarge_xt_stt>
+      <bathroomlarge_xt_lower>the family restroom</bathroomlarge_xt_lower>
+      <bathroomlarge_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Family Restroom</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the family restroom. They cost more than small restrooms, but accommodate up to six guests.
+
+      </bathroomlarge_xt_ltt>
+
+      <bathroomsmall_xt>Small Restroom</bathroomsmall_xt>
+      <bathroomsmall_xt_stt>Small restroom</bathroomsmall_xt_stt>
+      <bathroomsmall_xt_lower>the small restroom</bathroomsmall_xt_lower>
+      <bathroomsmall_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Small Restroom</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the small restroom, which accommodates one guest at a time.
+  
+     </bathroomsmall_xt_ltt>
+
+      <snackcart_fruitcup_xt>Fruit Cup Cart</snackcart_fruitcup_xt>
+      <snackcart_fruitcup_xt_stt>Fruit cup cart</snackcart_fruitcup_xt_stt>
+      <snackcart_fruitcup_xt_lower>the fruit cup cart</snackcart_fruitcup_xt_lower>
+      <snackcart_fruitcup_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Fruit Cup Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the fruit cup cart. Many guests enjoy fruit as a healthy snack.
+
+      </snackcart_fruitcup_xt_ltt>
+
+      <snackcart_icecream_xt>Ice Cream Cart</snackcart_icecream_xt>
+      <snackcart_icecream_xt_stt>Ice cream cart</snackcart_icecream_xt_stt>
+      <snackcart_icecream_xt_lower>the ice cream cart</snackcart_icecream_xt_lower>
+      <snackcart_icecream_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Ice Cream Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the ice cream cart, a big favorite with young zoo guests.
+      
+      </snackcart_icecream_xt_ltt>
+
+      <snackcart_pretzel_xt>Pretzel Cart</snackcart_pretzel_xt>
+      <snackcart_pretzel_xt_stt>Pretzel cart</snackcart_pretzel_xt_stt>
+      <snackcart_pretzel_xt_lower>the pretzel cart</snackcart_pretzel_xt_lower>
+      <snackcart_pretzel_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Pretzel Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the pretzel cart. Pretzels may make guests thirsty.   
+      
+      </snackcart_pretzel_xt_ltt>
+
+      <snackcart_cottoncandy_xt>Cotton Candy Cart</snackcart_cottoncandy_xt>
+      <snackcart_cottoncandy_xt_stt>Cotton candy cart</snackcart_cottoncandy_xt_stt>
+      <snackcart_cottoncandy_xt_lower>the cotton candy cart</snackcart_cottoncandy_xt_lower>
+      <snackcart_cottoncandy_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cotton Candy Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the cotton candy cart. Cotton candy is a classic kids' treat.
+       
+      </snackcart_cottoncandy_xt_ltt>
+
+      <snackcart_cheesecake_xt>Cheesecake Cart</snackcart_cheesecake_xt>
+      <snackcart_cheesecake_xt_stt>Cheesecake cart</snackcart_cheesecake_xt_stt>
+      <snackcart_cheesecake_xt_lower>the cheesecake cart</snackcart_cheesecake_xt_lower>
+      <snackcart_cheesecake_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cheesecake Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the cheesecake cart. Adult guests love cheesecake for dessert.
+      
+      </snackcart_cheesecake_xt_ltt>
+
+      <snackcart_popcorn_xt>Popcorn Cart</snackcart_popcorn_xt>
+      <snackcart_popcorn_xt_stt>Popcorn cart</snackcart_popcorn_xt_stt>
+      <snackcart_popcorn_xt_lower>the popcorn cart</snackcart_popcorn_xt_lower>
+      <snackcart_popcorn_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Popcorn Cart</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the popcorn cart. Popcorn is a filling snack that may make guests thirsty.
+      
+      </snackcart_popcorn_xt_ltt>
+
+      <foodstand_coffee_xt>Coffee Drink Stand</foodstand_coffee_xt>
+      <foodstand_coffee_xt_stt>Coffee drink stand</foodstand_coffee_xt_stt>
+      <foodstand_coffee_xt_lower>the coffee drink stand</foodstand_coffee_xt_lower>
+      <foodstand_coffee_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Coffee Drink Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the coffee drink stand. Adult guests love the caffeine jolt, and some younger guests are willing to try it, too.
+
+      
+      
+      </foodstand_coffee_xt_ltt>
+
+      <foodstand_shishkabob_xt>Shish Kebab Food Stand</foodstand_shishkabob_xt>
+      <foodstand_shishkabob_xt_stt>Shish kebab food stand</foodstand_shishkabob_xt_stt>
+      <foodstand_shishkabob_xt_lower>the shish kebab food stand</foodstand_shishkabob_xt_lower>
+      <foodstand_shishkabob_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Shish Kebab Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the shish kebab food stand, which offers protein-rich food at a reasonable price.
+      
+      </foodstand_shishkabob_xt_ltt>
+
+      <foodstand_hotdog_xt>Hot Dog Food Stand</foodstand_hotdog_xt>
+      <foodstand_hotdog_xt_stt>Hot dog food stand</foodstand_hotdog_xt_stt>
+      <foodstand_hotdog_xt_lower>the hot dog food stand</foodstand_hotdog_xt_lower>
+      <foodstand_hotdog_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Hot Dog Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the hot dog food stand. Especially popular with kids, hot dogs are a classic American food.
+            
+      </foodstand_hotdog_xt_ltt>
+
+      <foodstand_burger_xt>Hamburger Food Stand</foodstand_burger_xt>
+      <foodstand_burger_xt_stt>Hamburger food stand</foodstand_burger_xt_stt>
+      <foodstand_burger_xt_lower>the hamburger food stand</foodstand_burger_xt_lower>
+      <foodstand_burger_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Hamburger Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the hamburger food stand. Hamburgers are reasonably priced and reasonably filling.     
+      
+      </foodstand_burger_xt_ltt>
+
+      <foodstand_salad_xt>Salad Food Stand</foodstand_salad_xt>
+      <foodstand_salad_xt_stt>Salad food stand</foodstand_salad_xt_stt>
+      <foodstand_salad_xt_lower>the salad food stand</foodstand_salad_xt_lower>
+      <foodstand_salad_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Salad Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the salad food stand. Kids usually don't like salads, but adults love them.
+            
+      </foodstand_salad_xt_ltt>
+
+
+      <foodstand_soda_xt>Soda Drink Stand</foodstand_soda_xt>
+      <foodstand_soda_xt_stt>Soda drink stand</foodstand_soda_xt_stt>
+      <foodstand_soda_xt_lower>the soda drink stand</foodstand_soda_xt_lower>
+      <foodstand_soda_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Soda Drink Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the soda drink stand. Sodas are the most popular drink among most zoo guests. 
+           
+      </foodstand_soda_xt_ltt>
+
+      <foodstand_sub_xt>Sub Food Stand</foodstand_sub_xt>
+      <foodstand_sub_xt_stt>Sub food stand</foodstand_sub_xt_stt>
+      <foodstand_sub_xt_lower>the sub food stand</foodstand_sub_xt_lower>
+      <foodstand_sub_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sub Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the sub food stand. Subs are meat-filled sandwiches that are commonly devoured for lunch.
+      
+      
+      </foodstand_sub_xt_ltt>
+
+      <foodstand_sushi_xt>Sushi Food Stand</foodstand_sushi_xt>
+      <foodstand_sushi_xt_stt>Sushi food stand</foodstand_sushi_xt_stt>
+      <foodstand_sushi_xt_lower>the sushi food stand</foodstand_sushi_xt_lower>
+      <foodstand_sushi_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Sushi Food Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the sushi food stand. An expensive food choice, sushi is more popular with adults than kids.
+           
+      </foodstand_sushi_xt_ltt>
+
+      <foodstand_water_xt>Water Drink Stand</foodstand_water_xt>
+      <foodstand_water_xt_stt>Water drink stand</foodstand_water_xt_stt>
+      <foodstand_water_xt_lower>the water drink stand</foodstand_water_xt_lower>
+      <foodstand_water_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Water Drink Stand</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the water drink stand. Water satisfies your guests' most basic thirst needs.  
+      
+      
+      </foodstand_water_xt_ltt>
+
+      <giftcart_xt>Extinct Gift Cart</giftcart_xt>
+      <giftcart_xt_stt>Extinct Gift Cart</giftcart_xt_stt>
+      <giftcart_xt_lower>the Extinct gift cart</giftcart_xt_lower>
+      <giftcart_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Gift Cart</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place an Extinct gift cart, where guests can buy extinct animal souvenirs.
+      
+      
+      </giftcart_xt_ltt>
+      
+      <CloningCenter>Extinct Research Lab</CloningCenter>
+      <CloningCenter_stt>Extinct Research Lab</CloningCenter_stt>
+      <CloningCenter_lower>the Extinct Research Lab</CloningCenter_lower>
+      <CloningCenter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Research Lab</b>
+         </color>
+         <br/>
+         
+         The Extinct Research Lab is the home base for extinct animals. You find fossils, assemble them, create extinct animals, and cure diseases here.
+      
+      
+      </CloningCenter_ltt>
+
+      <CavePaintingHall>Cave Painting Hall</CavePaintingHall>
+      <CavePaintingHall_stt>Cave Painting Hall</CavePaintingHall_stt>
+      <CavePaintingHall_lower>the Cave Painting Hall</CavePaintingHall_lower>
+      <CavePaintingHall_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cave Painting Hall</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the Cave Painting Hall, where guests see how animals were depicted thousands of years ago.
+      
+      
+      </CavePaintingHall_ltt>
+
+      <StageEntertainer>Entertainer Stage</StageEntertainer>
+      <StageEntertainer_stt>Entertainer stage</StageEntertainer_stt>
+      <StageEntertainer_lower>the entertainer stage</StageEntertainer_lower>
+      <StageEntertainer_ltt>
+         <color r="255" g="248" b="178">
+            <b>Entertainer Stage</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the entertainer stage, where your costumed staff members delight and amuse guests.
+      
+      
+      </StageEntertainer_ltt>
+
+      <DinoRecoveryBuilding>Dino Capture Team Bunker</DinoRecoveryBuilding>
+      <DinoRecoveryBuilding_stt>Dino Capture Team bunker</DinoRecoveryBuilding_stt>
+      <DinoRecoveryBuilding_lower>the Dino Capture Team bunker</DinoRecoveryBuilding_lower>
+      <DinoRecoveryBuilding_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dino Capture Team Bunker</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the Dino Capture Team bunker.  Topped with a decorative statue to keep it hidden from view, this building houses your elite dino-catching squad.
+
+      </DinoRecoveryBuilding_ltt>
+
+      <fossilmarker>Flagged Fossil Site</fossilmarker>
+      <fossilmarker_stt>Flagged fossil site</fossilmarker_stt>
+      <fossilmarker_lower>the flagged fossil site</fossilmarker_lower>
+      <fossilmarker_ltt>
+         <color r="255" g="248" b="178">
+            <b>Flagged Fossil Site</b>
+         </color>
+         <br/>
+         
+         Click to select and then place the Flagged Fossil Site.  This dig site could contain extinct fossils!
+
+      </fossilmarker_ltt>
+
+
+      <!--enrichment-->
+
+      <DodoRock>Dodo Rock</DodoRock>
+      <DodoRock_stt>Dodo rock</DodoRock_stt>
+      <DodoRock_lower>the dodo rock</DodoRock_lower>
+      <DodoRock_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dodo Rock</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a dodo rock, a rock that aids the dodo in digesting food.
+      
+      
+      </DodoRock_ltt>
+      
+      <ElephantLog_tiny>Tiny Elephant Log</ElephantLog_tiny>
+      <ElephantLog_tiny_stt>Tiny elephant log</ElephantLog_tiny_stt>
+      <ElephantLog_tiny_lower>the tiny elephant log</ElephantLog_tiny_lower>
+      <ElephantLog_tiny_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tiny Elephant Log</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a tiny elephant log, an enrichment item designed just for your dwarf Sicilian elephant.
+      
+      
+      </ElephantLog_tiny_ltt>
+
+      <Glacier>Glacier</Glacier>
+      <Glacier_stt>Glacier</Glacier_stt>
+      <Glacier_lower>the glacier</Glacier_lower>
+      <Glacier_ltt>
+         <color r="255" g="248" b="178">
+            <b>Glacier</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a glacier. It pleases tundra, boreal, and alpine animals by making an exhibit colder.
+      
+      
+      </Glacier_ltt>
+
+      <MistyWaterfall>Misty Spring</MistyWaterfall>
+      <MistyWaterfall_stt>Misty spring</MistyWaterfall_stt>
+      <MistyWaterfall_lower>the misty spring</MistyWaterfall_lower>
+      <MistyWaterfall_ltt>
+         <color r="255" g="248" b="178">
+            <b>Misty Spring</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a misty spring. It pleases your grassland, wetlands and tropical rainforest animals by making an exhibit warmer and more humid.
+      
+      
+      </MistyWaterfall_ltt>
+
+      <TarPit>Tar Pit</TarPit>
+      <TarPit_stt>Tar pit</TarPit_stt>
+      <TarPit_lower>the tar pit</TarPit_lower>
+      <TarPit_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tar Pit</b>
+         </color>
+         <br/>
+         
+         
+         Click to select and then place a tar pit. It pleases your desert, scrub and savannah animals by making an exhibit hotter.
+      
+      
+      </TarPit_ltt>
+      <!--shelters-->
+      
+      <AnimalBurrows_Grasslands_Large>Grasslands Large Burrow</AnimalBurrows_Grasslands_Large>
+      <AnimalBurrows_Grasslands_Large_stt>Grasslands large burrow</AnimalBurrows_Grasslands_Large_stt>
+      <AnimalBurrows_Grasslands_Large_lower>the grasslands large burrow</AnimalBurrows_Grasslands_Large_lower>
+      <AnimalBurrows_Grasslands_Large_ltt>
+         <color r="255" g="248" b="178">
+            <b>Grasslands Large Burrow</b>
+         </color>
+         <br/>
+         Click to select and then place a grasslands large burrow, which the Warrah and other grassland animals use for shelter.
+      </AnimalBurrows_Grasslands_Large_ltt>
+      
+      <LargeExtinctShelter_Shelter>Rock Shelter</LargeExtinctShelter_Shelter>
+      <LargeExtinctShelter_Shelter_stt>Rock shelter</LargeExtinctShelter_Shelter_stt>
+      <LargeExtinctShelter_Shelter_lower>the rock shelter</LargeExtinctShelter_Shelter_lower>
+      <LargeExtinctShelter_Shelter_ltt>
+         <color r="255" g="248" b="178">
+            <b>Rock Shelter</b>
+         </color>
+         <br/>
+         Click to select and then place a rock shelter, a very large shelter for very large animals.
+      </LargeExtinctShelter_Shelter_ltt>
+
+      <!--foliage-->
+      <Edelweiss_Alpine>Edelweiss</Edelweiss_Alpine>
+		<Edelweiss_Alpine_stt>Edelweiss</Edelweiss_Alpine_stt>
+		<Edelweiss_Alpine_lower>the edelweiss</Edelweiss_Alpine_lower>
+		<Edelweiss_Alpine_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Edelweiss</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an edelweiss, a flower native to the Europe's alpine regions.
+      </Edelweiss_Alpine_ltt>
+
+      <MonkeyPuzzleTree_Alpine>Monkey Puzzle Tree</MonkeyPuzzleTree_Alpine>
+		<MonkeyPuzzleTree_Alpine_stt>Monkey puzzle tree</MonkeyPuzzleTree_Alpine_stt>
+		<MonkeyPuzzleTree_Alpine_lower>the monkey puzzle tree</MonkeyPuzzleTree_Alpine_lower>
+		<MonkeyPuzzleTree_Alpine_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Monkey Puzzle Tree</b>
+		   </color>
+		   <br/>
+		         Click to select and then place a monkey puzzle tree, a large evergreen tree with razor-sharp leaves, often referred to as a living fossil.
+      </MonkeyPuzzleTree_Alpine_ltt>
+
+      <Speargrass_Alpine>Speargrass</Speargrass_Alpine>
+		<Speargrass_Alpine_stt>Speargrass</Speargrass_Alpine_stt>
+		<Speargrass_Alpine_lower>the speargrass</Speargrass_Alpine_lower>
+		<Speargrass_Alpine_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Speargrass</b>
+		   </color>
+		   <br/>
+		         Click to select and then place speargrass, an evergreen perennial with scented flowers native to New Zealand.
+      </Speargrass_Alpine_ltt>
+
+      <AgaveCactus_Desert>Agave Cactus</AgaveCactus_Desert>
+		<AgaveCactus_Desert_stt>Agave cactus</AgaveCactus_Desert_stt>
+		<AgaveCactus_Desert_lower>the agave cactus</AgaveCactus_Desert_lower>
+		<AgaveCactus_Desert_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Agave Cactus</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an agave cactus. Animals from the desert enjoy the agave cactus.
+      </AgaveCactus_Desert_ltt>
+
+      <AloeVera_Desert>Aloe Vera</AloeVera_Desert>
+		<AloeVera_Desert_stt>Aloe vera</AloeVera_Desert_stt>
+		<AloeVera_Desert_lower>the aloe vera</AloeVera_Desert_lower>
+		<AloeVera_Desert_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Aloe Vera</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an aloe vera, a stemless desert plant with fleshy, serrated leaves and known for its use in herbal medicines.
+      </AloeVera_Desert_ltt>
+
+      <SaguaroCactus_Desert>Saguaro Cactus</SaguaroCactus_Desert>
+		<SaguaroCactus_Desert_stt>Saguaro cactus</SaguaroCactus_Desert_stt>
+		<SaguaroCactus_Desert_lower>the saguaro cactus</SaguaroCactus_Desert_lower>
+		<SaguaroCactus_Desert_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Saguaro Cactus</b>
+		   </color>
+		   <br/>
+		         Click to select and then place a saguaro cactus, a slow-growing endangered cactus native to Central and North America.
+      </SaguaroCactus_Desert_ltt>
+
+      <BoxElder_Grassland>Boxelder</BoxElder_Grassland>
+		<BoxElder_Grassland_stt>Boxelder</BoxElder_Grassland_stt>
+		<BoxElder_Grassland_lower>the boxelder</BoxElder_Grassland_lower>
+		<BoxElder_Grassland_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Boxelder</b>
+		   </color>
+		   <br/>
+		         Click to select and then place a boxelder, a maple tree native to North America.
+      </BoxElder_Grassland_ltt>
+
+      <Daisies_Grassland>Daisies</Daisies_Grassland>
+		<Daisies_Grassland_stt>Daisies</Daisies_Grassland_stt>
+		<Daisies_Grassland_lower>daisies</Daisies_Grassland_lower>
+		<Daisies_Grassland_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Daisies</b>
+		   </color>
+		   <br/>
+		         Click to select and then place daisies, a flower native to Europe and common to North America.
+      </Daisies_Grassland_ltt>
+
+      <TallGoldenrod_Grassland>Tall Goldenrod</TallGoldenrod_Grassland>
+		<TallGoldenrod_Grassland_stt>Tall goldenrod</TallGoldenrod_Grassland_stt>
+		<TallGoldenrod_Grassland_lower>the tall goldenrod</TallGoldenrod_Grassland_lower>
+		<TallGoldenrod_Grassland_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Tall Goldenrod</b>
+		   </color>
+		   <br/>
+		         Click to select and then place a tall goldenrod. Common to North America, it grows in woods and meadows, on hills, and even in rocky habitats.
+      </TallGoldenrod_Grassland_ltt>
+
+      <DwarfAzalea_Tundra>Dwarf Azalea</DwarfAzalea_Tundra>
+		<DwarfAzalea_Tundra_stt>Dwarf azalea</DwarfAzalea_Tundra_stt>
+		<DwarfAzalea_Tundra_lower>the dwarf azalea</DwarfAzalea_Tundra_lower>
+		<DwarfAzalea_Tundra_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Dwarf Azalea</b>
+		   </color>
+		   <br/>
+		         Click to select and then place a dwarf azalea, a hardy plant known for its many clusters of small flowers.
+      </DwarfAzalea_Tundra_ltt>
+
+      <!--Rocks-->
+      
+      <!--scenery-->
+      <bench_xt>Extinct Bench</bench_xt>
+		<bench_xt_stt>Extinct bench</bench_xt_stt>
+		<bench_xt_lower>the Extinct bench</bench_xt_lower>
+		<bench_xt_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Extinct Bench</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an extinct-themed bench. Guests enjoy visiting themed areas in your zoo.
+      </bench_xt_ltt>
+      
+      <DonationBox_xt>Extinct Donation Box</DonationBox_xt>
+		<DonationBox_xt_stt>Extinct donation box</DonationBox_xt_stt>
+		<DonationBox_xt_lower>the Extinct donation box</DonationBox_xt_lower>
+		<DonationBox_xt_ltt>
+		   <color r="255" g="248" b="178">
+		            <b>Extinct Donation Box</b>
+		   </color>
+		   <br/>
+		   Click to select and then place an extinct-themed donation box. Guests won't donate money if they can't find a donation box, so place them all over your zoo.
+      </DonationBox_xt_ltt>
+      
+      <umbrellatable_xt>Extinct Umbrella Table</umbrellatable_xt>
+		<umbrellatable_xt_stt>Extinct umbrella table</umbrellatable_xt_stt>
+		<umbrellatable_xt_lower>the Extinct umbrella table</umbrellatable_xt_lower>
+		<umbrellatable_xt_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Extinct Umbrella Table</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an extinct-themed umbrella table, which provides guests with a shaded place to rest and eat.      
+      </umbrellatable_xt_ltt>
+      
+      <ViewingArea_xt>Extinct Viewing Canopy</ViewingArea_xt>
+      <ViewingArea_xt_stt>Extinct viewing canopy</ViewingArea_xt_stt>
+      <ViewingArea_xt_lower>the Extinct viewing canopy</ViewingArea_xt_lower>
+      <ViewingArea_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Viewing Canopy</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed viewing canopy, which allows guests to view animals in shaded comfort.
+      </ViewingArea_xt_ltt>
+      
+      <lamp_xt>Extinct Lamp Post</lamp_xt>
+		<lamp_xt_stt>Extinct lamp post</lamp_xt_stt>
+		<lamp_xt_lower>the Extinct lamp post</lamp_xt_lower>
+		<lamp_xt_ltt>
+		   <color r="255" g="248" b="178">
+		      <b>Extinct Lamp Post</b>
+		   </color>
+		   <br/>
+		         Click to select and then place an extinct-themed lamp post. Guests enjoy visiting themed areas in your zoo.
+      </lamp_xt_ltt>
+      
+      <trashcan_xt>Extinct Trash Can</trashcan_xt>
+      <trashcan_xt_stt>Extinct trash can</trashcan_xt_stt>
+      <trashcan_xt_lower>the Extinct trash can</trashcan_xt_lower>
+      <trashcan_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Trash Can</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed trash can. Trash cans should be placed all over your zoo so that guests can dispose of their garbage.
+      </trashcan_xt_ltt>
+      
+      <Statue_xt>Extinct Statue</Statue_xt>
+      <Statue_xt_stt>Extinct statue</Statue_xt_stt>
+      <Statue_xt_lower>the Extinct statue</Statue_xt_lower>
+      <Statue_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Statue</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed statue. Guests appreciate the beauty of a well-placed statue.
+      </Statue_xt_ltt>     
+              
+      <PathArch_xt>Extinct Arch</PathArch_xt>
+      <PathArch_xt_stt>Extinct arch</PathArch_xt_stt>
+      <PathArch_xt_lower>the Extinct arch</PathArch_xt_lower>
+      <PathArch_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Arch</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed arch, which can be an attractive addition to paths or entrances to themed areas in your zoo. 
+      </PathArch_xt_ltt>
+      
+      <Fountain_xt>Extinct Decorative Tar Pit</Fountain_xt>
+      <Fountain_xt_stt>Extinct decorative tar pit</Fountain_xt_stt>
+      <Fountain_xt_lower>the Extinct decorative tar pit</Fountain_xt_lower>
+      <Fountain_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Decorative Tar Pit</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed decorative tar pit. Guests appreciate the beauty of well-placed decorative items.
+      </Fountain_xt_ltt>   
+   
+       <MusicalRock_xt>Extinct Music Rock</MusicalRock_xt>
+      <MusicalRock_xt_stt>Extinct music rock</MusicalRock_xt_stt>
+      <MusicalRock_xt_lower>the Extinct music rock</MusicalRock_xt_lower>
+      <MusicalRock_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Music Rock</b>
+         </color>
+         <br/>
+         Click to select and then place an extinct-themed music rock, which plays music from speakers hidden inside of it.
+      </MusicalRock_xt_ltt>           
+      
+      <Playground_BrachiosaurusSlide>Brachiosaurus Slide</Playground_BrachiosaurusSlide>
+      <Playground_BrachiosaurusSlide_stt>Brachiosaurus slide</Playground_BrachiosaurusSlide_stt>
+      <Playground_BrachiosaurusSlide_lower>the brachiosaurus slide</Playground_BrachiosaurusSlide_lower>
+      <Playground_BrachiosaurusSlide_ltt>
+         <color r="255" g="248" b="178">
+            <b>Brachiosaurus Slide</b>
+         </color>
+         <br/>
+         Click to select and then place a brachiosaurus slide, an enormous slide your young guests can play on.
+      </Playground_BrachiosaurusSlide_ltt>      
+      
+      <!--fence names-->
+      <highextinct_xt>Extinct Fence</highextinct_xt>
+      <highextinct_xt_stt>Extinct fence</highextinct_xt_stt>
+      <highextinct_xt_lower>the Extinct fence</highextinct_xt_lower>
+      <highextinct_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Fence</b>
+         </color>
+         <br/>
+         Click to select and then place sections of Extinct fence. Guests enjoy visiting themed areas in your zoo.
+      </highextinct_xt_ltt>
+      <lowextinct_xt>Low Extinct Fence</lowextinct_xt>
+      <lowextinct_xt_stt>Low Extinct fence</lowextinct_xt_stt>
+      <lowextinct_xt_lower>the low Extinct fence</lowextinct_xt_lower>
+      <lowextinct_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Low Extinct Fence</b>
+         </color>
+         <br/>
+         Click to select and then place sections of low Extinct fence. Guests enjoy visiting themed areas in your zoo.
+      </lowextinct_xt_ltt>
+      <extinctwindow_xt>Extinct Window Fence</extinctwindow_xt>
+      <extinctwindow_xt_stt>Extinct window fence</extinctwindow_xt_stt>
+      <extinctwindow_xt_lower>the Extinct window fence</extinctwindow_xt_lower>
+      <extinctwindow_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Window Fence</b>
+         </color>
+         <br/>
+         Click to select and then place sections of Extinct window fence. Guests enjoy visiting themed areas in your zoo.
+      </extinctwindow_xt_ltt>
+      <electricfence>Electric Fence</electricfence>
+      <electricfence_stt>Electric fence</electricfence_stt>
+      <electricfence_lower>the electric fence</electricfence_lower>
+      <electricfence_ltt>
+         <color r="255" g="248" b="178">
+            <b>Electric Fence</b>
+         </color>
+         <br/>
+         Click to select and then place sections of electric fence. A weak fence with a small electric charge to discourage animals from escaping.
+      </electricfence_ltt>
+
+      <!--paths-->
+      <path_extinct_xt>Extinct Path</path_extinct_xt>
+		      <path_extinct_xt_stt>Extinct path</path_extinct_xt_stt>
+		      <path_extinct_xt_lower>the extinct path</path_extinct_xt_lower>
+		      <path_extinct_xt_ltt>
+		         <color r="255" g="248" b="178">
+		            <b>Extinct Path</b>
+		         </color>
+		         <br/>
+		         Click to select and then place sections of extinct-themed path. Guests enjoy visiting themed areas in your zoo.     
+      </path_extinct_xt_ltt>
+
+      <!--show platform parented physobjs-->
+
+      <!--show objects and props-->
+      <Grenade>Traquilization Grenade</Grenade>
+      <Grenade_stt>Traquilization grenade</Grenade_stt>
+      <Grenade_lower>the traquilization grenade</Grenade_lower>
+      <Grenade_ltt>
+         <color r="255" g="248" b="178">
+            <b>Traquilization Grenade</b>
+         </color>
+         <br/>
+         This remote tranquilization device is used to make animals go to sleep.
+      </Grenade_ltt>      
+      
+      <Hotdog_Rubble>Hotdog</Hotdog_Rubble>
+      <Hotdog_Rubble_stt>Hotdog</Hotdog_Rubble_stt>
+      <Hotdog_Rubble_lower>the hotdog</Hotdog_Rubble_lower>
+      <Hotdog_Rubble_ltt>
+         <color r="255" g="248" b="178">
+            <b>Hotdog</b>
+         </color>
+         <br/>
+         Remnants of a food stand, animals will enjoy playing with and eatting the hotdog.
+      </Hotdog_Rubble_ltt>      
+      
+      <Rubble_Fragment_Wood>Wood Fragment</Rubble_Fragment_Wood>
+      <Rubble_Fragment_Wood_stt>Wood fragment</Rubble_Fragment_Wood_stt>
+      <Rubble_Fragment_Wood_lower>the wood fragment</Rubble_Fragment_Wood_lower>
+      <Rubble_Fragment_Wood_ltt>
+         <color r="255" g="248" b="178">
+            <b>Wood Fragment</b>
+         </color>
+         <br/>
+         Remnants of a wooden building, animals will enjoy playing with the rubble.
+      </Rubble_Fragment_Wood_ltt>      
+
+      <Rubble_Fragment_Concrete>Concrete Fragment</Rubble_Fragment_Concrete>
+      <Rubble_Fragment_Concrete_stt>Concrete fragment</Rubble_Fragment_Concrete_stt>
+      <Rubble_Fragment_Concrete_lower>the concrete fragment</Rubble_Fragment_Concrete_lower>
+      <Rubble_Fragment_Concrete_ltt>
+         <color r="255" g="248" b="178">
+            <b>Concrete Fragment</b>
+         </color>
+         <br/>
+         Remnants of a concrete building, animals will enjoy playing with the rubble.
+      </Rubble_Fragment_Concrete_ltt>      
+
+      <rubble_concrete>Concrete Rubble</rubble_concrete>
+      <rubble_concrete_stt>Concrete rubble</rubble_concrete_stt>
+      <rubble_concrete_lower>the concrete rubble</rubble_concrete_lower>
+      <rubble_concrete_ltt>
+         <color r="255" g="248" b="178">
+            <b>Concrete Rubble</b>
+         </color>
+         <br/>
+         Remnants of a concrete building.
+      </rubble_concrete_ltt>      
+
+      <rubble_df>Building Rubble</rubble_df>
+      <rubble_df_stt>Building rubble</rubble_df_stt>
+      <rubble_df_lower>the building rubble</rubble_df_lower>
+      <rubble_df_ltt>
+         <color r="255" g="248" b="178">
+            <b>Building Rubble</b>
+         </color>
+         <br/>
+         Remnants of a building.
+      </rubble_df_ltt>      
+
+      <rubble_end>Endangered themed Rubble</rubble_end>
+      <rubble_end_stt>Endangered themed rubble</rubble_end_stt>
+      <rubble_end_lower>the endangered themed rubble</rubble_end_lower>
+      <rubble_end_ltt>
+         <color r="255" g="248" b="178">
+            <b>Endangered Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of a endangered themed building.
+      </rubble_end_ltt>      
+
+      <rubble_et>Desert Themed Rubble</rubble_et>
+      <rubble_et_stt>Desert themed rubble</rubble_et_stt>
+      <rubble_et_lower>the desert themed rubble</rubble_et_lower>
+      <rubble_et_ltt>
+         <color r="255" g="248" b="178">
+            <b>Desert Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of a desert themed building.
+      </rubble_et_ltt>      
+
+      <rubble_jt>Jungle Themed Rubble</rubble_jt>
+      <rubble_jt_stt>Jungle themed rubble</rubble_jt_stt>
+      <rubble_jt_lower>the jungle themed rubble</rubble_jt_lower>
+      <rubble_jt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Jungle Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of a jungle themed building.
+      </rubble_jt_ltt>      
+
+      <rubble_st>Safari Themed Rubble</rubble_st>
+      <rubble_st_stt>Safari themed rubble</rubble_st_stt>
+      <rubble_st_lower>the safari themed rubble</rubble_st_lower>
+      <rubble_st_ltt>
+         <color r="255" g="248" b="178">
+            <b>Safari Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of a safari themed building.
+      </rubble_st_ltt>      
+
+      <rubble_tt>Tundra Themed Rubble</rubble_tt>
+      <rubble_tt_stt>Tundra themed rubble</rubble_tt_stt>
+      <rubble_tt_lower>the tundra themed rubble</rubble_tt_lower>
+      <rubble_tt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tundra Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of a tundra themed building.
+      </rubble_tt_ltt>      
+
+      <rubble_wood>Wood Rubble</rubble_wood>
+      <rubble_wood_stt>Wood rubble</rubble_wood_stt>
+      <rubble_wood_lower>the wood rubble</rubble_wood_lower>
+      <rubble_wood_ltt>
+         <color r="255" g="248" b="178">
+            <b>Wood Rubble</b>
+         </color>
+         <br/>
+         Remnants of a wood building.
+      </rubble_wood_ltt>      
+
+      <rubble_xt>Extinct Themed Rubble</rubble_xt>
+      <rubble_xt_stt>Extinct themed rubble</rubble_xt_stt>
+      <rubble_xt_lower>the extinct themed rubble</rubble_xt_lower>
+      <rubble_xt_ltt>
+         <color r="255" g="248" b="178">
+            <b>Extinct Themed Rubble</b>
+         </color>
+         <br/>
+         Remnants of an extinct themed building.
+      </rubble_xt_ltt>      
+
+      <rubble_InsectKiosk>Destroyed Insect Kiosk</rubble_InsectKiosk>
+      <rubble_InsectKiosk_stt>Destroyed insect kiosk</rubble_InsectKiosk_stt>
+      <rubble_InsectKiosk_lower>the destroyed insect kiosk</rubble_InsectKiosk_lower>
+      <rubble_InsectKiosk_ltt>
+         <color r="255" g="248" b="178">
+            <b>Destroyed Insect Kiosk</b>
+         </color>
+         <br/>
+         Pieces of a destroyed insect kiosk.
+      </rubble_InsectKiosk_ltt>    
+      
+      <rubble_metal>Destroyed Food Cart</rubble_metal>
+      <rubble_metal_stt>Destroyed food cart</rubble_metal_stt>
+      <rubble_metal_lower>the destroyed food cart</rubble_metal_lower>
+      <rubble_metal_ltt>
+         <color r="255" g="248" b="178">
+            <b>Destroyed Food Cart</b>
+         </color>
+         <br/>
+         Remnants of a destroyed food cart.
+      </rubble_metal_ltt>    
+      
+      <rubble_ReptileKiosk>Destroyed Reptile Kiosk</rubble_ReptileKiosk>
+      <rubble_ReptileKiosk_stt>Destroyed reptile kiosk</rubble_ReptileKiosk_stt>
+      <rubble_ReptileKiosk_lower>the destroyed reptile kiosk</rubble_ReptileKiosk_lower>
+      <rubble_ReptileKiosk_ltt>
+         <color r="255" g="248" b="178">
+            <b>Destroyed Reptile Kiosk</b>
+         </color>
+         <br/>
+         Pieces of a destroyed reptile kiosk.
+      </rubble_ReptileKiosk_ltt> 
+      
+      <rubble_SizeMural>Destroyed Size Comparison Mural</rubble_SizeMural>
+      <rubble_SizeMural_stt>Destroyed size comparison mural</rubble_SizeMural_stt>
+      <rubble_SizeMural_lower>the destroyed size comparison mural</rubble_SizeMural_lower>
+      <rubble_SizeMural_ltt>
+         <color r="255" g="248" b="178">
+            <b>Destroyed Size Comparison Mural</b>
+         </color>
+         <br/>
+         Remnants of an destroyed size comparison mural.
+      </rubble_SizeMural_ltt>   
+      
+      <stump>Tree Stump</stump>
+      <stump_stt>Tree stump</stump_stt>
+      <stump_lower>the tree stump</stump_lower>
+      <stump_ltt>
+         <color r="255" g="248" b="178">
+            <b>Tree Stump</b>
+         </color>
+         <br/>
+         A stump left over from a destroyed tree.
+      </stump_ltt>      
+      
+      <cactusstump>Cactus Remains</cactusstump>
+      <cactusstump_stt>Cactus remains</cactusstump_stt>
+      <cactusstump_lower>the cactus remains</cactusstump_lower>
+      <cactusstump_ltt>
+         <color r="255" g="248" b="178">
+            <b>Cactus Remains</b>
+         </color>
+         <br/>
+         Remains of a destroyed cactus.
+      </cactusstump_ltt>      
+      
+      <!-- items -->
+      <Fossil>Dig Pit Bone</Fossil>
+      <Fossil_stt>Dig pit bone</Fossil_stt>
+      <Fossil_lower>the dig pit bone</Fossil_lower>
+      <Fossil_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dig Pit Bone</b>
+         </color>
+         <br/>
+         Guests really like looking at the bone, their piece of a bigger puzzle.
+      </Fossil_ltt>      
+
+      <CavemanClub>Caveman Club</CavemanClub>
+      <CavemanClub_stt>Caveman club</CavemanClub_stt>
+      <CavemanClub_lower>the caveman club</CavemanClub_lower>
+      <CavemanClub_ltt>
+         <color r="255" g="248" b="178">
+            <b>Caveman Club</b>
+         </color>
+         <br/>
+         Guests who really liked the caveman buy this fun and safe replica of a club, made to the highest safety standards.
+      </CavemanClub_ltt>      
+   </entityname>
+   
+</ZT2Strings>

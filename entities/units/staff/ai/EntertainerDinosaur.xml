@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="EntertainerDinosaur" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                 <Entertainer>
+                    <EntertainerDinosaur/>
+                 </Entertainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+               <UIAspect>
+                  <default image="entities\units\staff\EntertainerDinosaur\EntertainerDinosaur_M_icon.dds"/>
+               </UIAspect>
+               <UIHelpInfo ids="entityname:EntertainerDinosaur"/>
+               <on>
+                  <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="EntertainerDinosaur"/>
+               </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"/>
+   </shared>
+</BFTypedBinder>

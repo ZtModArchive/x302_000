@@ -1,0 +1,367 @@
+<BehaviorSets>
+   <LookForDino>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <StandItem_TurnLeft90 weight="33"/>
+               <StandItem_TurnRight90 weight="33"/>
+               <StandItem_TurnRight180 weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <StandItem_TurnLeft90 weight="33"/>
+               <StandItem_TurnRight90 weight="33"/>
+               <StandItem_TurnRight180 weight="33"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehFaceTarget/>
+         <BFBehAnimateRandom minPlays="1" maxPlays="1">
+            <randomAnims>
+               <Gesture_ArcHigh weight="11"/>
+               <Gesture_ArcLow weight="11"/>
+               <Gesture_Circle weight="11"/>
+               <Gesture_DiagonalUp weight="11"/>
+               <Gesture_DiagonalDown weight="11"/>
+               <Gesture_LeftRight weight="11"/>
+               <Gesture_RightLeft weight="11"/>
+               <Gesture_TapObject weight="11"/>
+               <Gesture_UpDown weight="11"/>
+               <Gesture_Circle weight="11"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </LookForDino>
+   <CallDRTAgents>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Gesture_ArcHigh weight="11"/>
+               <Gesture_ArcLow weight="11"/>
+               <Gesture_Circle weight="11"/>
+               <Gesture_DiagonalUp weight="11"/>
+               <Gesture_DiagonalDown weight="11"/>
+               <Gesture_LeftRight weight="11"/>
+               <Gesture_RightLeft weight="11"/>
+               <Gesture_TapObject weight="11"/>
+               <Gesture_UpDown weight="11"/>
+               <Gesture_Circle weight="11"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </CallDRTAgents>
+   <CallDRTRobot>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Gesture_ArcHigh weight="11"/>
+               <Gesture_ArcLow weight="11"/>
+               <Gesture_Circle weight="11"/>
+               <Gesture_DiagonalUp weight="11"/>
+               <Gesture_DiagonalDown weight="11"/>
+               <Gesture_LeftRight weight="11"/>
+               <Gesture_RightLeft weight="11"/>
+               <Gesture_TapObject weight="11"/>
+               <Gesture_UpDown weight="11"/>
+               <Gesture_Circle weight="11"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </CallDRTRobot>
+   <WaitForDRT>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_Idle" playTime="10"/>
+      </behaviors>
+   </WaitForDRT>
+   <WaitForDRT_Long>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_Idle" playTime="20"/>
+      </behaviors>
+   </WaitForDRT_Long>
+   <CallDRTTranq>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Gesture_ArcHigh weight="11"/>
+               <Gesture_ArcLow weight="11"/>
+               <Gesture_Circle weight="11"/>
+               <Gesture_DiagonalUp weight="11"/>
+               <Gesture_DiagonalDown weight="11"/>
+               <Gesture_LeftRight weight="11"/>
+               <Gesture_RightLeft weight="11"/>
+               <Gesture_TapObject weight="11"/>
+               <Gesture_UpDown weight="11"/>
+               <Gesture_Circle weight="11"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </CallDRTTranq>
+   <RecallDRT>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Gesture_ArcHigh weight="11"/>
+               <Gesture_ArcLow weight="11"/>
+               <Gesture_Circle weight="11"/>
+               <Gesture_DiagonalUp weight="11"/>
+               <Gesture_DiagonalDown weight="11"/>
+               <Gesture_LeftRight weight="11"/>
+               <Gesture_RightLeft weight="11"/>
+               <Gesture_TapObject weight="11"/>
+               <Gesture_UpDown weight="11"/>
+               <Gesture_Circle weight="11"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </RecallDRT>
+   <CrateAnimal>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+       <BFBehLocoSwitchSet>
+         <behaviorTable>
+           <ground behSet="CrateAnimal_Land"/>
+           <water behSet="CrateAnimal_Water"/>
+           <underwater behSet="CrateAnimal_Water"/>
+         </behaviorTable>
+       </BFBehLocoSwitchSet>
+      </behaviors>
+   </CrateAnimal>
+   <CrateAnimal_Land>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoCrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryCrateTeamGoCrateAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="fast"/>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="Stand_DartAnimal"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Tranquilized" GiveTo="target" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:CrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryCrateTeamCrateAnimal" priority="1" timeout="30" global="false"/>
+               <ZTMessageInfo locID="zoomessages:AnimalCrated" priority="-1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </CrateAnimal_Land>
+   <CrateAnimal_Water>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoCrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryCrateTeamGoCrateAnimal" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="fast"/>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="TreadWater_DartAnimal"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Tranquilized" GiveTo="target" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:CrateAnimal" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:DinoRecoveryCrateTeamCrateAnimal" priority="1" timeout="30" global="false"/>
+               <ZTMessageInfo locID="zoomessages:AnimalCrated" priority="-1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </CrateAnimal_Water>
+
+<!-- Dino Recovery Building Interactions -->
+   <ExitDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandItem_Idle" interruptFlag="true" playTime="3"/>
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_TurnLeftA" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuilding>  
+   <ExitDinoRecoveryBuildingFast>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuildingFast>  
+   <ReturnDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Up" GiveTo="target" Timeout="120" RetainOnFailure="true" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterCrateTeam" locoSpeed="slow" redock="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EnterDRTBuilding" GiveTo="subject" Payload="target" Timein="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="StandItem_Idle" loopFlag="true" />
+      </behaviors>
+   </ReturnDinoRecoveryBuilding>  
+   <EnterDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterCrateTeam" locoSpeed="slow" redock="false"/>
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehAnimate targetAnim="WalkItem_Ahead" />
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reset" GiveTo="DinoRecoveryBuilding" Radius="1000" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </EnterDinoRecoveryBuilding>  
+
+<!-- Bathroom Tasks -->
+   <Queue>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <BFBehDockQueue hitRadius="2.5" queueRadius="12" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WaitLine" useTargetName="true"/>
+               <ZTThoughtInfo locID="guestthoughts:WaitLine" priority="0" timeout="30" global="true" useTargetName="true"/>               
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWaitQueue minWaitTime="30" maxWaitTime="60" waitBehSet="WaitInLine"/>
+         <BFBehDock targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Queue>
+   <UseBathroom>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:NeedUseBathroom" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+      </behaviors>
+   </UseBathroom>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryCrateTeam_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Male_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryCrateTeam_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Female_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomSmall>
+      <subjects>
+         <DinoRecoveryCrateTeam/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+               <ZTThoughtInfo locID="guestthoughts:NeedUseBathroom" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>      
+         <BFBehPlaySet behSet="Queue"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomSmall>
+</BehaviorSets>

@@ -1,0 +1,4 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'Eat_Chew'"/>
+         <key percent="50" text = "{Node_Eat} detach object"/>
+</TEXTKEY>

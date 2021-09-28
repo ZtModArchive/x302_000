@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Ankylosaurus_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Ankylosauridae>
+                        <Ankylosaurus>
+                           <Ankylosaurus_Young>
+                              <Ankylosaurus_Young_F/>
+                           </Ankylosaurus_Young>
+                        </Ankylosaurus>
+                     </Ankylosauridae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Ankylosaurus_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

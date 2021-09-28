@@ -1,0 +1,149 @@
+<BFTypedBinder binderType="Glacier">
+   <types>
+      <entity>
+         <enrichment>
+            <stationary_enrichment>
+               <Glacier/>
+            </stationary_enrichment>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\enrichment\Glacier\Glacier_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Glacier"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Glacier"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\enrichment\Glacier\Glacier_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Glacier"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData icon3Dscale="0.1" icon3Doffset="0.24 0 0.4" moveable="false" randomRotate="false" gridSnap="true" terrainFlatten="true" minimumHeadroom="6.0" protectedPlacement="false" paintTerrainOnMove="true" />
+      <BFGBiomeData location="tundra_worldwide">
+         <alpine sensitivity="7" />
+         <benthic sensitivity="0" />
+         <borealforest sensitivity="7" />
+         <coastal sensitivity="-7" />
+         <desert sensitivity="-7" />
+         <grassland sensitivity="0" />
+         <reef sensitivity="-7" />
+         <pelagic sensitivity="0" />
+         <temperateforest sensitivity="0" />
+         <tropicalrainforest sensitivity="-7" />
+         <tundra sensitivity="7" primary="true" />
+         <savannah sensitivity="-7" />
+         <scrub sensitivity="-7" />
+         <wetlands sensitivity="-5" />
+      </BFGBiomeData>
+      <BFAIEntityDataShared b_ReceiveUpdates="true" b_NoPerceiveOverride="true" s_Product="Extinct" b_Researchable="true" s_uisort="lb" s_Zoopedia="zoopedia:zoopedia_glacier:entry" f_researchUnlockTime="100" f_researchCost="800" f_FameReq="60" b_ClimateAlteringObject="true"/>
+      <BFGCollisionData isPassable="false" isStatic="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="12" length="6" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Glacier/Glacier" switch="0 15" minSwitch="0 15" initialTextKey="snd &quot;Glacierwind&quot; looping"/>
+               <BFTerrainPaintComponent/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_IceLevel="0"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Glacier_State0" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Glacier/Glacier_Ice_State0" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="65" />
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Glacier_State1" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Glacier/Glacier_Ice_State1" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="65" />
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Glacier_State2" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Glacier/Glacier_Ice_State2" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="65" />
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Glacier_State3" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Glacier/Glacier_Ice_State3" />
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="65" />
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIFadeController attribName="f_IceLevel" currState="Glacier_State0" fadePeriod="3" maxAlpha="0.4">
+               <stateList>
+                  <Glacier_State0 physObj="Glacier_State0" minRange="-1000" maxRange="1"/>
+                  <Glacier_State1 physObj="Glacier_State1" minRange="1" maxRange="2"/>
+                  <Glacier_State2 physObj="Glacier_State2" minRange="2" maxRange="3"/>
+                  <Glacier_State3 physObj="Glacier_State3" minRange="3" maxRange="4"/>
+               </stateList>
+            </BFAIFadeController>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Use_Glacier">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot useBehSet="UseGlacier" exitBehSet="ExitGlacier" targetNode="Dock_Frozen" ownContents="true"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="SpawnCaveman">
+         <instance>
+            <ZTSpawnEntityComponent typeToSpawn="Guest_Adult_M_Caveman" spawnChance="20" relativeYaw="0" placementNode="Dock_Frozen" slotToUse="Use_Glacier" entityConnectedAttribute="b_InGlacier" ignoreCollisions="true" needAdjustmentCategoryName="frozen"/>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

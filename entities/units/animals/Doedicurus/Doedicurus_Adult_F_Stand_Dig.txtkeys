@@ -1,0 +1,17 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'Stand_Dig'"/>
+	<key percent="5" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="10" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="15" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="20" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="25" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="30" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="35" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="40" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="45" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="50" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="55" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="60" text="{Bip01 L Finger0} runps Biomefx"/>
+	<key percent="65" text="{Bip01 R Finger0} runps Biomefx"/>
+	<key percent="70" text="{Bip01 L Finger0} runps Biomefx"/>
+</TEXTKEY>

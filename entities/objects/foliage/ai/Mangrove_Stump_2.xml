@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Mangrove_Stump_2">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <Mangrove_Stump>
+                  <Mangrove_Stump_2/>
+               </Mangrove_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

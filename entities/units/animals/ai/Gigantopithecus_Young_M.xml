@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Gigantopithecus_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Primata>
+                     <Pongidae>
+                        <Gigantopithecus>
+                           <Gigantopithecus_Young>
+                              <Gigantopithecus_Young_M/>
+                           </Gigantopithecus_Young>
+                        </Gigantopithecus>
+                     </Pongidae>
+                  </Primata>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Gigantopithecus_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

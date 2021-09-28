@@ -1,0 +1,87 @@
+<BFTypedBinder binderType="Rubble_Fragment_Wood">
+	<types>
+		<entity>
+			<enrichment>
+				<toy>
+					<Rubble_Fragment_Wood />
+				</toy>
+			</enrichment>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\enrichment\Rubble_Fragment_Wood\Rubble_Fragment_Wood_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:Rubble_Fragment_Wood" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Rubble_Fragment_Wood" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData moveable="false" waterPlacement="true" tankPlacement="true" randomRotate="false" gridSnap="true" autoFootprint="false" icon3Doffset="0 0 1.1" icon3Dscale="3.5" minimumHeadroom=".246">
+			<cfootprint width="0" height="0" />
+			<dfootprint width="1" height="1" />
+		</ZTPlacementData>
+		<BFGCollisionData isPassable="true" />
+		<BFAIEntityDataShared b_Sniffable="true" />
+		<ZTUserStaffAction>
+         		<RemoveObject locid="superstaff:clean_trash" effect="SuperStaffSweep" delay="2.0"/>
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/Rubble_Fragment_Wood/Rubble_Fragment_Wood" scale="1.5" switch="0 36" />
+					<BFRealPhysicsComponent shapeType="cylinder" shapeRadius="0.075" shapeHeight=".2" rollFrictionCoef="0.05" bounceCoef="0.3" maxSplashStrength="0.1" displacableByObjects="false" />
+					<BFGroundFitComponent heightOffset="0.075" floatOnWater="true" waterOffset="-0.04" />
+					<BFCollisionComponent grid="footprint" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_01 x=".85" y="0" z="0" />
+						<Dock_02 x="0" y=".85" z="0" yaw="90" />
+						<Dock_03 x="0" y="-.85" z="0" yaw="-90" />
+						<Dock_04 x="-.85" y="0" z="0" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Play">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UseBall_Whap" exitBehSet="ExitBall" targetNode="Dock_01" exclusiveID="Ball1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UseBall_Whap" exitBehSet="ExitBall" targetNode="Dock_02" exclusiveID="Ball1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UseBall_Whap" exitBehSet="ExitBall" targetNode="Dock_03" exclusiveID="Ball1" capacity="1" />
+						<BFGEntityContainerSlot enterBehSet="EnterBall" useBehSet="UseBall_Whap" exitBehSet="ExitBall" targetNode="Dock_04" exclusiveID="Ball1" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+	        <BFBinder required="1">
+		   <instance>
+		      <ZTAIStaffRequestController triggerOnCreation="true">
+		         <ZTStaffRequestData tokenKey="t_SweepTrash" subjectType="Worker" priority="2"/>
+		      </ZTAIStaffRequestController>
+		   </instance>
+	        </BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Moving="false" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester maxSlope=".01" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

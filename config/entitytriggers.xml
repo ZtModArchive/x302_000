@@ -1,0 +1,5 @@
+<BFGEntityTriggerMgr>
+	<trigger primary="foodstand_coffee" count="5" attribute="b_CaffeineTrigger" on_message="zoomessages:caffeine_mode_guest_on" off_message="zoomessages:caffeine_mode_guest_off"/>
+	<trigger primary="snackcart_cottoncandy" count="5" attribute="b_CaffeineTrigger" on_message="zoomessages:sugar_mode_guest_on" off_message="zoomessages:sugar_mode_guest_off"/>
+	<trigger primary="staffcenter_df" secondary="foodstand_coffee" proximity="9.0" attribute="b_CaffeineTrigger" on_message="zoomessages:caffeine_mode_staff_on" off_message="zoomessages:caffeine_mode_staff_off"/>
+</BFGEntityTriggerMgr>

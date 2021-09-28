@@ -1,0 +1,13 @@
+<ZTPuzzle animal="Diprotodon" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.48" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="1.48" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="2.96" />
+    <ZTPuzzlePiece texture="04_ArmRightLower" node="Piece04" entityScale="1.48" />
+    <ZTPuzzlePiece texture="05_ArmLeftLower" node="Piece05" entityScale="1.48" />
+    <ZTPuzzlePiece texture="06_Waist" node="Piece06" entityScale="1.48"/>
+    <ZTPuzzlePiece texture="07_LegsUpper" node="Piece07" entityScale="1.48" />
+    <ZTPuzzlePiece texture="08_LegLeftLower" node="Piece08" entityScale="1.48" />
+    <ZTPuzzlePiece texture="09_LegRightLower" node="Piece09" entityScale="0.74" />   
+  </pieces>
+</ZTPuzzle>

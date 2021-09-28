@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key frame="0" text="{Bip01 Head} snd 'Stand_TailSlamLeft'"/>
+   <key percent="90" text = "whap 45 0"/>
+</TEXTKEY>

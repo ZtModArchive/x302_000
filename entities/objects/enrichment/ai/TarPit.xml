@@ -1,0 +1,98 @@
+<BFTypedBinder binderType="TarPit">
+   <types>
+      <entity>
+         <enrichment>
+            <stationary_enrichment>
+               <TarPit/>
+            </stationary_enrichment>
+         </enrichment>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\enrichment\TarPit\TarPit_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:TarPit"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TarPit"/>
+         </on>
+      </UIToggleButton>
+      <UIToggleButton template="researchentity">
+         <UIAspect>
+            <default image="entities\objects\enrichment\TarPit\TarPit_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TarPit"/>
+         </on>
+      </UIToggleButton>
+      <ZTPlacementData icon3Dscale="0.175" randomRotate="false" gridSnap="true" terrainFlatten="true" minimumHeadroom="3.0" protectedPlacement="false">
+         <stompData>
+            <allow/>
+            <delete>
+               <bush />
+               <grass />
+               <wildflowers />
+               <fungi />
+               <Poop />
+               <watersurfacefoliage />
+            </delete>
+            <prevent>
+               <treat />
+               <flowerbed />
+               <thicket />
+            </prevent>
+         </stompData>
+      </ZTPlacementData>
+      <BFGBiomeData location="scrub_worldwide">
+         <alpine sensitivity="-5" />
+         <benthic sensitivity="-5" />
+         <borealforest sensitivity="-4" />
+         <coastal sensitivity="-5" />
+         <desert sensitivity="5" />
+         <grassland sensitivity="0" />
+         <reef sensitivity="-5" />
+         <pelagic sensitivity="-5" />
+         <temperateforest sensitivity="0" />
+         <tropicalrainforest sensitivity="0" />
+         <tundra sensitivity="-5" />
+         <savannah sensitivity="5" />
+         <scrub sensitivity="5" primary="true" />
+         <wetlands sensitivity="-4" />
+      </BFGBiomeData>
+      <BFAIEntityDataShared s_Product="Extinct" b_Researchable="true" s_uisort="lb" s_Zoopedia="zoopedia:zoopedia_tarpit:entry" f_researchUnlockTime="60" f_researchCost="600" f_FameReq="20" b_ClimateAlteringObject="true"/>
+      <BFGCollisionData isPassable="false" isStatic="true"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="footprint" width="12" length="6" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/enrichment/TarPit/TarPit" scale="0.8" switch="0 15 35" minSwitch="0 0 15" initialTextKey="snd &quot;Tar_Bubble&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="1500">
+               <ZTTransaction name="build" costType="parent" type="debit" category="animal_upkeep"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,2173 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="GoToLand" UniqueID="BirdElephant:GoToLand">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".002"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLand"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Idle"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater" UniqueID="BirdElephant:ThrashWater">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND isFloating="true" breath="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath="1.45" health=".25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Drowning" UniqueID="BirdElephant:ThrashWater_Drowning">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45" health=".5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLowBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Old" UniqueID="BirdElephant:ThrashWater_Old">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND isFloating="true" lifespan="GE 21.8"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10045"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath="1.45" health=".5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_DrownOld" GiveTo="target" Payload="subject" Chance="0.5" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Die" UniqueID="BirdElephant:ThrashWater_Die">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="GE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDieBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_DieOld" UniqueID="BirdElephant:ThrashWater_DieOld">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND isFloating="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_DrownOld/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Exercise Tasks -->
+   <BFAITaskTemplate Name="Wander" UniqueID="BirdElephant:Wander">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND rest="GE 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderMedium" UniqueID="BirdElephant:WanderMedium">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND rest="L 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="medium" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Rest Tasks -->
+   <BFAITaskTemplate Name="Yawn" TaskDelayMin="180" TaskDelayMax="300" UniqueID="BirdElephant:Yawn">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalYawnGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Yawning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Yawn"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-10"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Yawn" GiveTo="subject" Timeout="-1" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Rest" UniqueID="BirdElephant:Rest">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-38"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-50"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Stretch" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepShade" UniqueID="BirdElephant:SleepShade">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Stretch" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepBush" UniqueID="BirdElephant:SleepBush">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Stretch" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Stretch" TaskDelayMin="180" TaskDelayMax="300" UniqueID="BirdElephant:Stretch">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Stretch/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStretchGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Stretching"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Stretch"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Privacy Tasks -->
+   <BFAITaskTemplate Name="EvadePrivacy" UniqueID="BirdElephant:EvadePrivacy">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+          <ZTBehViewEvent viewKey="Pos_3"/>
+         <BFBehEvasion evasionRadius="15" evasionTime="10" avoidObstacleRadius="3">
+            <avoidEntityTypes>
+               <Guest/>
+            </avoidEntityTypes>
+         </BFBehEvasion>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" privacy="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideBush" UniqueID="BirdElephant:HideBush">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Rest"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideShade" UniqueID="BirdElephant:HideShade">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-23"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Stretch" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap rest="-20" privacy="-60"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideBush2" UniqueID="BirdElephant:HideBush:2">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-15"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Rest"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideShade2" UniqueID="BirdElephant:HideShade:2">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-15"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Stretch" GiveTo="subject" Timeout="30" OnlyOne="true"/>
+         </BFAITokenList>
+         <BFAIAttributeFloatMap rest="-20" privacy="-60"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Hygiene Tasks -->
+   <BFAITaskTemplate Name="Scratch" TaskDelayMin="30" TaskDelayMax="300" UniqueID="BirdElephant:Scratch">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap hygiene="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-15"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Scratch"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-20"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PreenSelf" TaskDelayMin="60" TaskDelayMax="300" UniqueID="BirdElephant:PreenSelf">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Preen"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Preen"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-20"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DustBathe" TaskDelayMin="60" TaskDelayMax="300" UniqueID="BirdElephant:DustBathe">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="25">
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:DustBathe"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDustBatheGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="DustBathe"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-60"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Social Tasks -->
+   <BFAITaskTemplate Name="Contact_Call" TaskDelayMin="60" TaskDelayMax="120" UniqueID="BirdElephant:Contact_Call">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="BirdElephant" Payload="subject" Radius="5" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="BirdElephant" Payload="subject" Radius="15" Chance="75" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="BirdElephant" Payload="subject" Radius="25" Chance="50" Timeout="30"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Contact_Answer" UniqueID="BirdElephant:Contact_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ContactCall/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Chance="25" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Stimulation Tasks -->
+   <BFAITaskTemplate Name="LookAround" TaskDelayMin="30" TaskDelayMax="180" UniqueID="BirdElephant:LookAround">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="Look"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-20" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Hunger/Thirst Tasks -->
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="BirdElephant:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="Eat_Drink"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Reproduction Tasks -->
+   <BFAITaskTemplate Name="WanderPrance" TaskDelayMin="180" TaskDelayMax="300" UniqueID="BirdElephant:WanderPrance">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Prancing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" locoSpeed="prance" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50" reproduction="-30"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_1"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="BirdElephant:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="BirdElephant:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="BirdElephant:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true" hasMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Call"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Sit_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteReproduction_Mate" TaskDelayMin="60" TaskDelayMax="180" UniqueID="BirdElephant:InviteReproduction_Mate">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true" isRelation="mate"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Call"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehPlaySet behSet="WaitMate"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="BirdElephant:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_M/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Call"/>
+         <BFBehSyncSet subjectBehSet="DockMate" targetBehSet="WaitMate"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="MateM" targetBehSet="MateF"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+            <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="BirdElephant:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="300.26" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEggBushes" UniqueID="BirdElephant:LayEggBushes">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+         </Subjects>
+         <Targets>
+            <bush/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010">
+         <BFAIBiomeMap alpine=".10" borealforest=".10" temperateforest="1.00" desert=".10" grassland=".75" savannah=".75" tropicalrainforest=".50" scrub=".10" tundra=".10" wetlands=".10"/>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEggShade" UniqueID="BirdElephant:LayEggShade">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEgg_Dirt" UniqueID="BirdElephant:LayEgg_Dirt">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <dirt/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEgg_GroundCover" UniqueID="BirdElephant:LayEgg_GroundCover">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-90"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+         <BFBehPlaySet behSet="LayEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CheckEgg" TaskDelayMin="120" TaskDelayMax="240" UniqueID="BirdElephant:CheckEgg">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Egg/>
+            <Qualifiers_AND onLand="true" notInSight="3" isRelation="child"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CheckingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Dock_Egg" locoSpeed="slow" targetAnim="Stand_TendEggA"/>
+         <BFBehPlaySet behSet="TendEgg"/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCheckEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="IdleEgg" UniqueID="BirdElephant:IdleEgg">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Egg/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="IdleEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+<!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+   <BFAITaskTemplate Name="HatchEgg" UniqueID="BirdElephant:HatchEgg">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Egg/>
+            <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 4.01"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="200"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="HatchEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="BirdElephant:Born">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+            <Qualifiers_AND onLand="true" isSwimming="false" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEggHatchedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalHatchEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="HappyCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Predator/Prey Interaction Tasks -->
+   <BFAITaskTemplate Name="Attacked" UniqueID="BirdElephant:Attacked">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DistressCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+		  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="BirdElephant:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+
+
+<!-- Mother/Young Interaction Tasks -->
+   <BFAITaskTemplate Name="FollowMother" UniqueID="BirdElephant:FollowMother">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" notInSight="5" isRelation="mother"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".1"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FollowMother"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DistressCall"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="9" locoSpeed="fast"/>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteFeedYoung" TaskDelayMin="60" TaskDelayMax="180" UniqueID="BirdElephant:InviteFeedYoung">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <BirdElephant_Adult_F/>
+            <Qualifiers_AND isRelation="mother" inWater_OR_onLand="true" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap hunger="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_FeedYoung" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="DistressCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondFeedYoung" reserveTag="General" UniqueID="BirdElephant:RespondFeedYoung">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FeedYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFeed" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="DockFeedYoung" targetBehSet="WaitFeedYoung"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FeedYoung" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFeedYoungGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="FeedYoung" targetBehSet="WaitFeedYoung"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITargetData hygiene="-25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="FeedYoung" targetBehSet="WaitFeedYoung_Emote"/>
+         </BFBehExecTask>
+         <BFAITargetData hygiene="-75"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Aging Tasks -->
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="BirdElephant:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 4.25"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="BirdElephant:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="BirdElephant_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="BirdElephant:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="BirdElephant_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperF" UniqueID="BirdElephant:Age_SuperF">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young_F_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="BirdElephant_Adult_F_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperM" UniqueID="BirdElephant:Age_SuperM">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Young_M_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="BirdElephant_Adult_M_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="BirdElephant:Old">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers lifespan="GE 21.8"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="BirdElephant:Die">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Guest Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="BirdElephant:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedBirdElephant"/>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Escape Tasks -->
+   <BFAITaskTemplate Name="BashFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="BirdElephant:BashFence">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant/>
+         </Subjects>
+         <Targets>
+            <fence/>
+            <Qualifiers f_FenceStrength="LE 6"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="30" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_BashFence" locoSpeed="medium"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehMorph morphEntity="target" morphTargetEntityType="s_Broken" morphFade="true" morphPeriod="1"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="JumpLowFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="BirdElephant:JumpLowFence">
+      <BFAICreateData>
+         <Subjects>
+            <BirdElephant_Adult/>
+         </Subjects>
+         <Targets>
+            <b_lowfence/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="30" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToJumpFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_JumpFence" targetAnim="Run_JumpFence" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Run_JumpFence"/>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+</BFAITaskTemplateList>

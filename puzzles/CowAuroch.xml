@@ -1,0 +1,10 @@
+<ZTPuzzle animal="CowAuroch" level="1" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.6" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="0.8" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="1.6" />
+    <ZTPuzzlePiece texture="04_Hands" node="Piece04" entityScale="0.8" />
+    <ZTPuzzlePiece texture="05_Waist" node="Piece05" entityScale="1.6" />
+    <ZTPuzzlePiece texture="06_Legs" node="Piece06" entityScale="1.6"/>
+  </pieces>
+</ZTPuzzle>

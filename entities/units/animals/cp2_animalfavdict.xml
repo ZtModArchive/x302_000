@@ -1,0 +1,177 @@
+<BFParticleDictionary>
+   <AnkylosaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Ankylosaurus\AnkylosaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </AnkylosaurusEmote>
+   <BearShortfacedEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\BearShortfaced\BearShortfacedEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </BearShortfacedEmote>
+   <BirdElephantEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\BirdElephant\BirdElephantEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </BirdElephantEmote>
+   <BluebuckEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Bluebuck\BluebuckEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </BluebuckEmote>
+   <CamelGiantEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\CamelGiant\CamelGiantEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </CamelGiantEmote>
+   <CatSaberToothedEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\CatSaberToothed\CatSaberToothedEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </CatSaberToothedEmote>
+   <CowAurochEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\CowAuroch\CowAurochEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </CowAurochEmote>
+   <DeerBushAntleredEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\DeerBushAntlered\DeerBushAntleredEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DeerBushAntleredEmote>
+   <DeinonychusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Deinonychus\DeinonychusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DeinonychusEmote>
+   <DeinosuchusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Deinosuchus\DeinosuchusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DeinosuchusEmote>
+   <DimetrodonEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Dimetrodon\DimetrodonEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DimetrodonEmote>
+   <DiprotodonEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Diprotodon\DiprotodonEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DiprotodonEmote>
+   <DodoEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Dodo\DodoEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DodoEmote>
+   <DoedicurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Doedicurus\DoedicurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </DoedicurusEmote>
+   <ElephantDwarfSicilianEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\ElephantDwarfSicilian\ElephantDwarfSicilianEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </ElephantDwarfSicilianEmote>
+   <GigantopithecusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Gigantopithecus\GigantopithecusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </GigantopithecusEmote>
+   <KentrosaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Kentrosaurus\KentrosaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </KentrosaurusEmote>
+   <LionCaveEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\LionCave\LionCaveEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </LionCaveEmote>
+   <MastodonAmericanEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\MastodonAmerican\MastodonAmericanEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </MastodonAmericanEmote>
+   <ProtarchaeopteryxEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Protarchaeopteryx\ProtarchaeopteryxEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </ProtarchaeopteryxEmote>
+   <RhinocerosWoolyEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\RhinocerosWooly\RhinocerosWoolyEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </RhinocerosWoolyEmote>
+   <SivatheriumEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Sivatherium\SivatheriumEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SivatheriumEmote>
+   <SlothGroundGiantEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\SlothGroundGiant\SlothGroundGiantEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </SlothGroundGiantEmote>
+   <StegosaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Stegosaurus\StegosaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </StegosaurusEmote>
+   <StokesosaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Stokesosaurus\StokesosaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </StokesosaurusEmote>
+   <ThylacineEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Thylacine\ThylacineEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </ThylacineEmote>
+   <UtahraptorEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Utahraptor\UtahraptorEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </UtahraptorEmote>
+   <VelociraptorEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Velociraptor\VelociraptorEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </VelociraptorEmote>
+   <WarrahEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Warrah\WarrahEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WarrahEmote>
+   <WarthogGiantEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\WarthogGiant\WarthogGiantEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </WarthogGiantEmote>
+   <PenguinKillerEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\PenguinKiller\PenguinKillerEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </PenguinKillerEmote>
+   <CarnotaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Carnotaurus\CarnotaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </CarnotaurusEmote>
+   <StyracosaurusEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Styracosaurus\StyracosaurusEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </StyracosaurusEmote>
+   <TriceratopsEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\Triceratops\TriceratopsEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </TriceratopsEmote>
+   <TyrannosaurusRexEmote>
+      <Conditions>
+         <BFParticleDefinition xmlFile="entities\units\animals\TyrannosaurusRex\TyrannosaurusRexEmote.xml" removeTime="10.0"/>
+      </Conditions>
+   </TyrannosaurusRexEmote>
+</BFParticleDictionary>

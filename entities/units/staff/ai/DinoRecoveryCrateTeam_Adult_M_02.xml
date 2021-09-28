@@ -1,0 +1,36 @@
+<BFTypedBinder binderType="DinoRecoveryCrateTeam_Adult_M_02">
+  <types>
+    <entity>
+      <actor>
+        <people>
+          <Staff>
+            <DinoRecoveryCrateTeam>
+              <DinoRecoveryCrateTeam_Adult_M>
+                <DinoRecoveryCrateTeam_Adult_M_02/>
+              </DinoRecoveryCrateTeam_Adult_M>
+            </DinoRecoveryCrateTeam>
+          </Staff>
+        </people>
+      </actor>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity/>
+  </instance>
+  <binder>
+    <BFNamedBinder binderName="headObj">
+      <instance>
+        <BFPhysObj/>
+      </instance>
+      <shared>
+        <BFSharedRandomTextureInfo>
+          <replacementSet>
+            <group weight="1">
+              <item material="guest_m_head" image="entities\units\staff\DinoRecoveryTeam\DRT_CraterHead_2.dds" layer="base"/>
+            </group>
+          </replacementSet>
+        </BFSharedRandomTextureInfo>
+      </shared>
+    </BFNamedBinder>
+  </binder>
+</BFTypedBinder>

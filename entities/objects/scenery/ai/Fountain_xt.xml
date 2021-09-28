@@ -1,0 +1,79 @@
+<BFTypedBinder binderType="Fountain_xt">
+   <types>
+      <entity>
+         <scenery>
+            <Fountain>
+               <Fountain_xt/>
+            </Fountain>
+         </scenery>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 -0.062720 0.826483" icon3Dscale="0.185538"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\scenery\Fountain_xt\Fountain_xt_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Fountain_xt"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Fountain_xt"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"  s_ProfileLock="extinct_xtlock" s_uisort="p" s_Zoopedia="zoopedia:zoopedia_tarfountain:entry" s_Theme="extinct" b_IsWishFountain="false"/>
+      <BFGCollisionData isStatic="true"/>
+      <ZTTourData>
+         <theme_extinct value="7"/>
+         <fountain value="7"/>
+         <cool value="7"/>
+      </ZTTourData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent modelfile="entities/objects/scenery/fountain_xt/fountain_xt" switch="0 20 36" minSwitch="0 0 30" initialTextKey="snd &quot;Tar_Bubble&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+         <shared>
+            <BFSharedPhysVars>
+               <virtualNodes>
+                  <Dock_Adult_1 x="-1" y="-4.55" yaw="200"/>
+                  <Dock_Adult_2 x="1" y="4.6" yaw="20"/>
+                  <Dock_Adult_3 x="4.5" y="1.25" yaw="60"/>
+                  <Dock_Adult_4 x="-3.9" y="-1.25" yaw="210"/>
+                  <Dock_Adult_5 x="1.35" y="-4.55" yaw="170"/>
+                  <Dock_Adult_6 x="-3.25" y="2.55" yaw="335"/>
+                  <Dock_Adult_7 x="3.05" y="-2.75" yaw="90"/>
+               </virtualNodes>
+            </BFSharedPhysVars>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Use_Fountain">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_1" exclusiveID="Slot1"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_2" exclusiveID="Slot2"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_3" exclusiveID="Slot3"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_4" exclusiveID="Slot4"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_5" exclusiveID="Slot5"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_6" exclusiveID="Slot6"/>
+                  <BFGEntityContainerSlot enterBehSet="EnterTarFountain" useBehSet="UseTarFountain" exitBehSet="ExitTarFountain" targetNode="Dock_Adult_7" exclusiveID="Slot7"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="560">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

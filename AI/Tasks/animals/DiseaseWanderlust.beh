@@ -1,0 +1,27 @@
+<BehaviorSets>
+   <GetSickWanderlust>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wanderlust stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_wanderlust attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickWanderlust>
+   <CureSickWanderlust>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wanderlust stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickWanderlust>
+</BehaviorSets>

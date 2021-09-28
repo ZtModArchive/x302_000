@@ -1,0 +1,53 @@
+ <ZT2Strings>
+      <LOC_STRING _locID="MarineShowsCampaign" version="10" />
+      <LOC_STRING _locID="MarineShowsCampaign:MarineShowPhotographerPart2" version="10"  >The zoo really likes your first batch of marine show photos! Next, they want some action shots of the bottlenose dolphin.
+      <p/>
+      Take the following marine show photos:
+      <br/>
+			* A bottlenose dolphin doing a twist.
+			<br/>
+			* A bottlenose dolphin jumping through a hoop.
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:MarineShowPhotographerPart2Goals" version="10"  >
+      Take the following marine show photos:
+      <br/>
+			* A bottlenose dolphin doing a twist.
+			<br/>
+			* A bottlenose dolphin jumping through a hoop.
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:MarineShowPhotographerPart2Photo1Goal" version="10"  >
+      Take a photo of a bottlenose dolphin doing a twist.
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:MarineShowPhotographerPart2Photo1GoalDone" version="10"  >You photographed a bottlenose dolphin doing a twist!</LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureOverview" version="10"  >You were hired to put on two marine shows at the same time. To demonstrate the diversity of marine mammals, the zoo's board wants you to create two very different shows. One show must feature only cetaceans -- dolphins and whales -- and the other only pinnipeds -- seals, the California sea lion, and the Pacific walrus.
+		<p/>
+		After creating a show featuring only cetaceans and another featuring only pinnipeds, 150 guests must visit each show to win the scenario.
+		<p/>
+		(Hint: Once you create, a show for, say, a pilot whale, you can try other cetaceans in the show. You could even replace the pilot whale with an orca. Just make sure that at least one cetacean is always in the cetacean show and at least one pinniped is always in the pinniped show.)
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureCetaceanSetup" version="10"  >
+      You created a show featuring only cetaceans! As a reward for your efforts, the zoo's board gave you a $15,000 grant. After 150 guests visit your cetacean show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one cetacean in this show ... or else!)
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeaturePinnipedSetup" version="10"  >
+      You created a show featuring only pinnipeds! As a reward for your efforts, the zoo's board gave you a $15,000 grant. After 150 guests visit your pinniped show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one pinniped in this show ... or else!)
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureOverallGoal" version="10"  >Create two shows -- one with only cetaceans and one with only pinnipeds -- and have 150 guests attend each.
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureCetaceanSetupGoal" version="10"  >Create a marine show featuring only cetaceans to receive a $15,000 grant.
+		</LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureCetaceanSetupGoalDone" version="10"  >Well done, you created a marine show featuring only cetaceans!
+		</LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeaturePinnipedSetupGoal" version="10"  >Create a separate marine show featuring only pinnipeds to receive a $15,000 grant.
+		</LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeaturePinnipedSetupGoalDone" version="10"  >Great job! You created a marine show featuring only pinnipeds.
+		</LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeatureCetaceanFailure" version="10"  >
+      Because you altered your cetacean show against their wishes, the board is removing you! They're saddened that you ignored their instructions. You failed the scenario!
+      </LOC_STRING>
+      <LOC_STRING _locID="MarineShowsCampaign:DoubleFeaturePinnipedFailure" version="10"  >
+      Because you altered your pinniped show against their wishes, the board is removing you! They're disappointed that you ignored their instructions. You failed the scenario!
+      </LOC_STRING>
+
+
+
+</ZT2Strings>

@@ -1,0 +1,11 @@
+<soundtags>
+   
+<!--EXTERIOR-->
+
+   <BFSoundtag>
+      <BF3DSndFactory name="cloningcenter_exterior">
+         <snd name="entities/objects/buildings/CloningCenter/sound/cloningcenter_exterior.wav" volume=".9" mindist="3" maxdist="100"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+
+</soundtags>

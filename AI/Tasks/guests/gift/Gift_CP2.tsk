@@ -1,0 +1,1138 @@
+<BFAITaskTemplateList>
+<!--Animal Gifts-->
+   <BFAITaskTemplate Name="BuyAnkylosaurusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyAnkylosaurusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyHeadGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_AnkylosaurusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyAnkylosaurusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyBearShortfacedGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyBearShortfacedGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyWaistGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_BearShortfacedGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyBearShortfacedGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyBearShortfacedGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyBearShortfacedGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyWaistGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_BearShortfacedGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyBearShortfacedGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyBirdElephantGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyBirdElephantGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyHeadGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_BirdElephantGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyBirdElephantGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyBluebuckGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyBluebuckGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyShirtGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_BluebuckGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyBluebuckGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyCamelGiantGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="BuyCamelGiantGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_CamelGiantGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyCamelGiantGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyCatSaberToothedGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyCatSaberToothedGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_CatSaberToothedGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyCatSaberToothedGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyCatSaberToothedGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyCatSaberToothedGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_CatSaberToothedGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyCatSaberToothedGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyCowAurochGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyCowAurochGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyHeadGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_CowAurochGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyCowAurochGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDeerBushAntleredGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDeerBushAntleredGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyHeadGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DeerBushAntleredGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDeerBushAntleredGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDeinonychusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDeinonychusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyShirtGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DeinonychusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDeinonychusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDeinosuchusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDeinosuchusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DeinosuchusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDeinosuchusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDimetrodonGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDimetrodonGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DimetrodonGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDimetrodonGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDiprotodonGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDiprotodonGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DiprotodonGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDiprotodonGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDodoGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDodoGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DodoGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDodoGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyDoedicurusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyDoedicurusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyShirtGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_DoedicurusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyDoedicurusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyElephantDwarfSicilianGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyElephantDwarfSicilianGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyShirtGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_ElephantDwarfSicilianGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyElephantDwarfSicilianGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyGigantopithecusGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyGigantopithecusGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_GigantopithecusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyGigantopithecusGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyGigantopithecusGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyGigantopithecusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_GigantopithecusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyGigantopithecusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyKentrosaurusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyKentrosaurusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_KentrosaurusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyKentrosaurusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyLionCave" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyLionCave">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyWaistGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_LionCaveGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyLionCaveGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyMastodonAmericanGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyMastodonAmericanGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_MastodonAmericanGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyMastodonAmericanGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyMastodonAmericanGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyMastodonAmericanGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_MastodonAmericanGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyMastodonAmericanGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyProtarchaeopteryxGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyProtarchaeopteryxGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyWaistGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_ProtarchaeopteryxGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyProtarchaeopteryxGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyQuaggaGift" CursorTask="false" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyQuaggaGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <giftcart_df/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_QuaggaGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyZebraCommonGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyRhinocerosWoolyGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyRhinocerosWoolyGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyHeadGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_RhinocerosWoolyGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyRhinocerosWoolyGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuySivatheriumGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuySivatheriumGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_SivatheriumGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuySivatheriumGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuySlothGroundGiantGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuySlothGroundGiantGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_SlothGroundGiantGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuySlothGroundGiantGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuySlothGroundGiantGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuySlothGroundGiantGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_SlothGroundGiantGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuySlothGroundGiantGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyStegosaurusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyStegosaurusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyBackGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_StegosaurusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyStegosaurusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyStokesosaurusGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyStokesosaurusGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_StokesosaurusGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyStokesosaurusGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyThylacineGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyThylacineGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_ThylacineGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyThylacineGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyUtahraptorGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyUtahraptorGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_UtahraptorGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyUtahraptorGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyVelociraptorGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyVelociraptorGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyRHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_VelociraptorGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyVelociraptorGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyWarrahGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyWarrahGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyWaistGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_WarrahGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyWarrahGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyWarthogGiantGift" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyWarthogGiantGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_WarthogGiantGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyWarthogGiantGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+<!--Easter Egg-->
+   <BFAITaskTemplate Name="BuyClubGift_GiftCart" reserveTag="Use_Cart" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyClubGift_GiftCart">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false" hunger="L 50" bathroom="L 50" thirst="L 50"/>
+         </Subjects>
+         <Targets>
+            <giftcart_xt/>
+            <Qualifiers inSight="30"/>
+         </Targets>
+         <Objects>
+            <t_ClubGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyClubGift_GiftCart"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuyClubGift" reserveTag="Use_GiftShop" TaskDelayMin="1000000000" TaskDelayMax="1000000001" UniqueID="gift:BuyClubGift">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_NoBuyLHandGift="false" hunger="L 50" bathroom="L 50" thirst="L 50"/>
+         </Subjects>
+         <Targets>
+            <giftshop_df/>
+         </Targets>
+         <Objects>
+            <t_ClubGift/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-100" thirst="-100" dessert="-100" rest="-100" social="-100" amusement="-100" gift="-100" bathroom="-100" viewanimals="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BuyClubGift"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:BuyGift" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap gift="-50"/>
+         <BFAISubjectData happiness="price_effect(-5,0,5)"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

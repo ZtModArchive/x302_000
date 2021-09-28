@@ -1,0 +1,4 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'EatHigh_Idle'"/>
+         <key percent="50" text = "{Node_Eat} attach object"/>
+</TEXTKEY>

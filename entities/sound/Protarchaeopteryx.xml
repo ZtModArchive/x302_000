@@ -1,0 +1,104 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Stand_GuestAttack">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Stand_GuestAttack.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Stand_TestFence_Shocked.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_AttackPosture_2Stand">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_AttackPosture_2Stand.wav" volume="1" mindist="12" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_AttackPosture_2Stand_Submit">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_AttackPosture_2Stand_Submit.wav" volume="1" mindist="12" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Croak">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Croak2.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Drown">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Drown.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Eat_Idle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_GuestAttack">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_GuestAttack.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Idle">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Scratch">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Scratch.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Adult_Stamp">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Stamp.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Drown">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Drown.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Croak">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Adult_Croak2.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Eat_Idle">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Eat_Idle.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Idle">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Scratch">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Scratch.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Stamp">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Stamp.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_Stand_TestFence_Shocked.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_AttackPosture_2Stand">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_AttackPosture_2Stand.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Protarchaeopteryx_Young_AttackPosture_2Stand_Submit">
+         <snd name="entities/units/animals/Protarchaeopteryx/sound/Protarchaeopteryx_Young_AttackPosture_2Stand_Submit.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+</soundtags>

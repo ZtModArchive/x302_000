@@ -1,0 +1,126 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="DinoCampaign:HardWayIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup hidden="0" name="TotalWin" state="0" chain="true" allsuccess="true" sticky="true">
+			<children>
+				<BFScenarioRule name="3StarZoo" hidden="1" state="0" sticky="true" optional="true">
+					<info type="primary">
+						<success overview="DinoCampaign:HardWay3stars"/>
+					</info>				
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalFame30" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeFame30"  />
+					</success>							
+				</BFScenarioRule>					
+				<BFScenarioRule name="BuildLab" hidden="0" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayLabShort" overview="DinoCampaign:HardWayOverview"/>
+						<success locid="DinoCampaign:HardWayFinishLabShort" overview="DinoCampaign:HardWayFinishLab"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalBuildLab" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeBuildLab" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="CollectFossils" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayCollectFirstFossilShort" overview="DinoCampaign:HardWayCollectFirstFossil"/>
+						<success locid="DinoCampaign:HardWayFinishCollectFirstFossil" overview="DinoCampaign:HardWayFinishCollectFirstFossil"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalCollectFossils" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeCollectFossils" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="BuildFossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayBuildFirstFossilShort" overview="DinoCampaign:HardWayBuildFirstFossil"/>
+						<success locid="DinoCampaign:HardWayFinishBuildFirstFossil" overview="DinoCampaign:HardWayFinishBuildFirstFossil"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalBuildFossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeBuildFossil" />
+					</success>
+				</BFScenarioRule>		
+				<BFScenarioRule name="SkeletonPhoto" hidden="1" state="0" sticky="true" optional="true">
+					<info type="primary" >
+						<neutral locid="PhotoChallengetext:PHHardWayPhotoShort" overview="DinoCampaign:HardWayPhoto"/>
+						<success locid="PhotoChallengetext:PHHardWayPhotoShortSuccess" overview="DinoCampaign:HardWayFinishPhoto"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="eval4SkeletonPhoto" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="complete4SkeletonPhoto"  />
+					</success>							
+				</BFScenarioRule>	
+				<BFScenarioRule name="CreateFossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayCreateFirstFossilShort" overview="DinoCampaign:HardWayCreateFirstFossil"/>
+						<success locid="DinoCampaign:HardWayFinishCreateFirstFossil" overview="DinoCampaign:HardWayFinishCreateFirstFossil"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalCreateFossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeCreateFossil" />
+					</success>
+				</BFScenarioRule>		
+				<BFScenarioRule name="Create4Fossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayFourExtinctShort" overview="DinoCampaign:HardWayFourExtinct"/>
+						<success locid="DinoCampaign:HardWayFinishFourExtinct" overview="DinoCampaign:HardWayFinishFourExtinct"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalCreate4Fossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeCreate4Fossil" />
+					</success>
+				</BFScenarioRule>					
+				<BFScenarioRule name="Create8Fossil" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayEightExtinctShort" overview="DinoCampaign:HardWayEightExtinct"/>
+						<success locid="DinoCampaign:HardWayFinishEightExtinct" overview="DinoCampaign:HardWayFinishEightExtinct"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalCreate8Fossil" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeCreate8Fossil" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="4StarZoo" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="DinoCampaign:HardWayFourStarsShort" overview="DinoCampaign:HardWayFourStars"/>
+						<success locid="DinoCampaign:HardWayFinishFourStarsShort" overview="DinoCampaign:HardWayFinishFourStars"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="evalFame40" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="completeFame40" />
+					</success>
+				</BFScenarioRule>					
+			</children>
+		</BFScenarioGroup>
+		<BFScenarioRule name="FailScenario" hidden="0" state="0" sticky="true" optional="false">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/TheHardWayScenario.lua" entry="hasAnimalDied" />
+			</evaluate>
+		</BFScenarioRule>		
+	</children>
+</ZTScenarioMgr>

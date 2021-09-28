@@ -1,0 +1,15 @@
+<ZT2Strings>
+	<zoomessages version="11">
+		<sugar_mode_guest_on>Sugar Shock is now active for young guests!</sugar_mode_guest_on>
+		<sugar_mode_guest_off>Sugar Shock is no longer active for young guests.</sugar_mode_guest_off>
+		<caffeine_mode_guest_on>Caffeine Craze is now active for adult guests!</caffeine_mode_guest_on>
+		<caffeine_mode_guest_off>Caffeine Craze is no longer active for adult guests.</caffeine_mode_guest_off>
+		<caffeine_mode_staff_on>Caffeine Craze is now active for zoo staff!</caffeine_mode_staff_on>
+		<caffeine_mode_staff_off>Caffeine Craze is no longer active for zoo staff.</caffeine_mode_staff_off>
+		<disease_found>One of your animals is diseased!  Go to the Extinct Research Lab to find a cure.</disease_found>
+		<disease_cured>You found the cure to the disease! Walk up to your animals and press SPACEBAR to cure them.</disease_cured>
+		<disease_reward>You received a reward of %m for finding the cure to the disease!</disease_reward>
+		<animal_rampage>%s is rampaging!</animal_rampage>
+		<animal_dock_failed>%1s is unable to reach %2s.  It may be too close to another object.</animal_dock_failed>
+	</zoomessages>
+</ZT2Strings>

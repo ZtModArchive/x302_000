@@ -1,0 +1,235 @@
+<ZTScenarioMgr interval="1" name="mgr" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+   <info locid="Tutoriallabels:cp2_T2"/>
+   <children>
+      <BFScenarioRule hidden="1" name="blinktutorialring" state="0" sticky="false" updateWhenPaused="true">
+         <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/tutorial_1.lua" entry="blinktutorialring"/>
+         </evaluate>
+      </BFScenarioRule>
+      <BFScenarioGroup name="tutorialinit" state="0" chain="true" allsuccess="true" sticky="true">
+         <children>
+            <BFScenarioRule hidden="1" name="setinitialtutorialstate" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="setinitialtutorialstate"/>
+               </evaluate>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+      <BFScenarioGroup name="tutorialrampage" state="0" chain="true" allsuccess="true" sticky="true" updateWhenPaused="true">
+         <children>
+            <BFScenarioRule hidden="0" name="welcome" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="cp2_tutorial2:opengoalpanel" overview="Tutoriallabels:cp2_T2overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="welcome"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="welcomesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="beforerampage" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="beforerampage"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="beforerampagesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="triggerrampage" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="triggerrampage"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="triggerrampagesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selecttrex" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="selecttrex"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="selecttrexsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="clicktranquilize" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="clicktranquilize"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="clicktranquilizesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="tranquilizetrex" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="tranquilizetrex"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="tranquilizetrexsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="cratetrex" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="cratetrex"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="cratetrexsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="drtmessage" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="drtmessage"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="drtmessagesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="openconstructionpanel" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="cp2_tutorial1:opengoalpanel" overview="Tutoriallabels:cp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="openconstructionpanel"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="openconstructionpanelsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectbuildingtab" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="selectbuildingtab"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="selectbuildingtabsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="placedrt" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="placedrt"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="placedrtsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="ankylorampage" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="ankylorampage"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="ankylorampagesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="ankylorampagewait" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="ankylorampagewait"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="ankylorampagewaitsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="endscenario" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="endscenario"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial2.lua" entry="endscenariosuccess"/>
+               </success>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+   </children>
+</ZTScenarioMgr>

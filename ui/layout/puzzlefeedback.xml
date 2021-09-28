@@ -1,0 +1,9 @@
+<UIText name="Puzzle Animal">
+   <UIRegion x="408" y="133" w="240" h="32" xalign="min" yalign="min" walign="len" halign="len" />
+   <UIAspect>
+	  <default>
+		 <BFFont align="center"/>
+	  </default>
+   </UIAspect>
+   <text format="puzzlefeedback:animal_format" type="multi"/>
+</UIText>

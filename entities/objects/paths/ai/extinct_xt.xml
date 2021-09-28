@@ -1,0 +1,42 @@
+<BFTypedBinder binderType="extinct_xt">
+   <types>
+      <entity>
+         <path>
+            <extinct_xt/>
+         </path>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="path">
+         <UIAspect>
+            <default image="entities\objects\paths\extinct_xt\path_extinct_xt_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:path_extinct_xt"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTPATH" data="BFString" string="extinct_xt"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"  s_ProfileLock="extinct_xtlock" s_Zoopedia="zoopedia:zoopedia_asphalt:entry" s_Theme="extinct"/>
+   		<ZTTourData>
+	 		<theme_extinct value="1"/>
+		</ZTTourData>      
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTPath texture="entities\objects\paths\extinct_xt\path_extinct_xt_128.DDS" curb="curb_extinct_xt"/>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="2.5">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

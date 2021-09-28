@@ -1,0 +1,34 @@
+<BFTypedBinder binderType="Deinosuchus_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Crocodylia>
+                     <Alligatoridae>
+                        <Deinosuchus>
+                           <Deinosuchus_Adult>
+                              <Deinosuchus_Adult_F/>
+                           </Deinosuchus_Adult>
+                        </Deinosuchus>
+                     </Alligatoridae>
+                  </Crocodylia>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

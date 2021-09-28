@@ -1,0 +1,29 @@
+<UIToggleButton sticky="1" useListBoxColorIfInContainer="true">
+   <UIRegion x="0" w="190" h="16"/>
+   <UIAspect alwayshit="true">
+      <default>
+         <BFFont x="5">
+               <BFColor r="50" g="255" b="50" a="255"/>
+         </BFFont>
+      </default>
+      <standard>
+         <normal>
+            <BFFont>
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </BFFont>
+         </normal>
+         <highlighted image="">
+            <BFFont>
+               <BFColor r="148" g="239" b="255" a="255"/>
+            </BFFont>
+         </highlighted>
+         <activated image="">
+            <BFFont>
+               <BFColor r="255" g="0" b="0" a="255"/>
+            </BFFont>
+         </activated>
+         <disabled/>
+      </standard>
+   </UIAspect>
+   <text format="guestthoughtformat:thought_format" type="multi"/>
+</UIToggleButton>

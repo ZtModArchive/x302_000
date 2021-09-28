@@ -1,0 +1,11 @@
+<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry order="zoopedia_animal2" entry="zoopedia_animalenrichment">
+         <BFHelpEntry entry="zoopedia_glacier"/>
+         <BFHelpEntry entry="zoopedia_tarpit"/>
+         <BFHelpEntry entry="zoopedia_mistywaterfall"/>
+         <BFHelpEntry entry="zoopedia_dodorock"/>
+         <BFHelpEntry entry="zoopedia_elephantlogtiny"/>
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

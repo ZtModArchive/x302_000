@@ -1,0 +1,39 @@
+<BehaviorSets>
+   <GetSickFertility>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wuv stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_wuv attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickFertility>
+   <CureSickFertility>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wuv stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickFertility>
+   <Diseased_Fertility>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_GetFertilityDisease" GiveTo="animal" Radius="10" ChanceInRadius="20" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </Diseased_Fertility>
+</BehaviorSets>

@@ -1,0 +1,24 @@
+<BFTypedBinder binderType="stump" abstract="true" >
+   <types>
+      <entity>
+         <foliage>
+            <tree>
+               <stump/>
+            </tree>
+         </foliage>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTPlacementData moveable="false" icon3Doffset="1.5 -0.5 0.18" icon3Dscale="0.35" />
+      <ZTDevComponent />
+      <BFGCollisionData isPassable="false" isStatic="false"/>
+      <BFGInfluenceComponent defaultRadius="21.0" defaultGroupFactor="5.0" defaultRadiusDropoff="none" defaultGroupDropoff="linear">
+         <biome/>
+         <location/>
+      </BFGInfluenceComponent>    
+   </shared>
+   <binder/>
+</BFTypedBinder>

@@ -1,0 +1,80 @@
+﻿<BFTypedBinder binderType="bathroomlarge" abstract="true">
+	<types>
+		<entity>
+			<building>
+				<bathroom>
+					<bathroomlarge />
+				</bathroom>
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 0.479318" icon3Dscale="0.273883" />
+		<BFAIEntityDataShared f_BuildingStrength="40" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="Use_Male">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="UseBathroomLarge" capacity="6" exclusiveID="bathroomlarge_1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_Male_Fast">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="UseBathroomLarge_Fast" capacity="6" exclusiveID="bathroomlarge_1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_Female">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="UseBathroomLarge" capacity="6" exclusiveID="bathroomlarge_1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Use_Female_Fast">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="UseBathroomLarge_Fast" capacity="6" exclusiveID="bathroomlarge_1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="300" mergeKey="name">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj />
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Rampage1 y="-3" />
+						<Dock_Rampage2 x="-3" />
+						<Dock_Rampage3 y="3" />
+						<Dock_Rampage4 x="3" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

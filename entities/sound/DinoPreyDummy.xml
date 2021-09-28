@@ -1,0 +1,7 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="DinoPreyDummy_hitdummy">
+         <snd name="entities/objects/enrichment/Dino_Prey_Dummy/sound/Dino_Prey_Dummy.wav" volume="1" mindist="10" maxdist="50" minpitch=".8" maxpitch="1"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

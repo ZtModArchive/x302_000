@@ -1,0 +1,42 @@
+<ZT2Strings>
+   <entityname version="9">
+      <marinefence_high_mm>Marine Fence</marinefence_high_mm>
+      <marinefence_high_mm_stt>Marine fence</marinefence_high_mm_stt>
+      <marinefence_high_mm_lower>the marine fence</marinefence_high_mm_lower>
+      <marinefence_high_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Fence</b>
+         </color>
+         <br/>
+         Click to select and then place a marine fence.
+      </marinefence_high_mm_ltt>
+      <marinefence_window_mm>Marine Window Fence</marinefence_window_mm>
+      <marinefence_window_mm_stt>Marine window fence</marinefence_window_mm_stt>
+      <marinefence_window_mm_lower>the marine window fence</marinefence_window_mm_lower>
+      <marinefence_window_mm_ltt>
+         <color r="255" g="248" b="178">
+            <b>Marine Window Fence</b>
+         </color>
+         <br/>
+         Click to select and then place a marine window fence.
+      </marinefence_window_mm_ltt>
+      <SharkWhale_Gift_Adult>Whale Shark Backpack</SharkWhale_Gift_Adult>
+      <SharkWhale_Gift_Adult_stt>Whale shark backpack</SharkWhale_Gift_Adult_stt>
+      <SharkWhale_Gift_Adult_lower>the whale shark backpack</SharkWhale_Gift_Adult_lower>
+      <SharkWhale_Gift_Adult_ltt>
+         <color r="255" g="248" b="178">
+            <b>Whale Shark Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the whale shark will buy this gift.
+      </SharkWhale_Gift_Adult_ltt>
+      <!--Fix for bug 18754-->
+      <CodArctic_ltt>
+            <color r="255" g="248" b="178">
+               <b>Arctic Cod</b>
+            </color>
+            <br/>
+            Click to select and then place the Arctic cod, a form of live food used as an enrichment item.
+      </CodArctic_ltt>    
+   </entityname>
+</ZT2Strings>

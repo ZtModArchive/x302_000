@@ -1,0 +1,160 @@
+<BFTypedBinder binderType="Deinonychus" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+					  <Saurischia>
+					     <Dromaeosauridae>
+						<Deinonychus/>
+					     </Dromaeosauridae>
+					  </Saurischia>
+				       </Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 1" icon3Dscale="0.45" minimumHeadroom="4.5" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\Deinonychus\Deinonychus_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:Deinonychus" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Deinonychus_Adult_F" />
+			</on>
+		</UIToggleButton>
+	        <BFAIEntityDataShared f_BaseDonationAmount="80" f_MaxTourValue="100" p_FightOffset="0 -1.45 180" p_PreyOffset="0 1 0" p_MateOffset="-1 0 0" s_Product="Extinct" s_Endangerment="Extinct" b_ExtinctAnimal="true" s_DonateToken="t_DonateDeinonychus" s_Species="Deinonychus" b_Advanced="true" b_Carnivore="true" f_adoptRemoveTime="0" f_adoptRarity="50" s_Zoopedia="zoopedia:zoopedia_Deinonychus:entry" f_RequiredInitialSpace="140" f_RequiredAdditionalSpace="40" p_PursuitBallNode="0 -1 180" p_DockFence="0 -7 0" p_SniffFence="0 -4 0" b_PursuitBallUser="true" b_PreyOffset="0 -2 0" p_PredatorOffset="0 -2 0" b_TropicalRainforestAnimal="true" s_KeeperEatType="Terrain_Meat" s_KeeperDrinkType="FoodDish_Water" b_FoodDishEater="true" b_TroughEater="true" b_MetalTroughEater="true" b_LargeAnimal="true" p_DinoPreyNode="0 -4 180" p_FeedYoungNode=".5 -3.25 180" p_AttackGuestNode="0 -2.50 180" b_BeefShankEater="true" f_TranqPointsNeeded="7.5.0f" b_ShadeStructureUser="true" b_GroundNestBuilder="true" b_GroundNestUser="true" b_LargeExtinctShelterUser="true">
+                   <BFAINeedAdjusts privacy="0" explore=".25"/>
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="tropicalrainforest_northamerica_northwest" locationSensitivity="10">
+			<alpine sensitivity="-7" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-7" />
+			<coastal sensitivity="-10" />
+			<desert sensitivity="-7" />
+			<grassland sensitivity="-2" />
+			<reef sensitivity="-10" />
+			<pelagic sensitivity="-10" />
+			<temperateforest sensitivity="-2" />
+			<tropicalrainforest sensitivity="3" primary="true" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-2" />
+			<scrub sensitivity="-7" />
+			<wetlands sensitivity="-2" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_wash" effect="SuperStaffWashLarge" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" effect="SuperStaffHeal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BFActorComponent actorfile="entities/units/animals/Deinonychus/Deinonychus_Adult_F.bfm" pickAgainstSphereOnly="false" scale="1.25" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 -1" ankleRotVectorRight="0 0 -1" heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" backBuoyancyNode="Node_Buoy_Back" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFCollisionComponent grid="Bip01 Tail,Bip01 Head" />
+					<BFGridCollisionComponent />
+					<BFDecalTextureCycleComponent materialName="Deinonychus_Adult_F">
+						<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFHeadLookComponent leftRightAnimName="Secondary_HeadLook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Lie_2Stand&apos;, anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_TurnLeftA&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+				<BFSharedPhysVars isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Dock_Guest x=".3" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_PoleRope x="0" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Ball x="0" y="-1.7" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_PickUpBall x="0" y="-1.7" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Building x="0" y="-3" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_JumpFence x="0" y="-3" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Fence x="0" y="-3" z="0" yaw="180" pitch="0" roll="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehAnimate interruptible="true" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true" />
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Stand" />
+							<slow name="Walk" />
+							<medium name="Walk" minAnimSpeed="1.2" maxAnimSpeed="1.5" />
+							<fast name="Run" />
+							<stalk name="Walk" minAnimSpeed="0.5" maxAnimSpeed="0.7" />
+							<evade name="Run" minAnimSpeed="0.8" maxAnimSpeed="1.4" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="groundcarry" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="StandObject" />
+							<slow name="WalkObject" />
+							<medium name="WalkObject" minAnimSpeed="1.2" maxAnimSpeed="1.5" />
+							<fast name="WalkObject" minAnimSpeed="1.4" maxAnimSpeed="1.7" />
+							<stalk name="WalkObject" minAnimSpeed="0.5" maxAnimSpeed="0.7" />
+							<evade name="WalkObject" minAnimSpeed="1.0" maxAnimSpeed="1.7" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="15000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

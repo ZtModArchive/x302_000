@@ -1,0 +1,66 @@
+<BehaviorSets>
+   <BirthQuaggaChance>
+      <subjects>
+         <ZebraCommon_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF weight="38"/>
+               <SpawnM weight="37"/>
+               <SpawnF_Quagga weight="13"/>
+               <SpawnM_Quagga weight="12"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BirthQuaggaChance>
+   <BirthQuagga>
+      <subjects>
+         <Quagga_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnF_Quagga weight="50"/>
+               <SpawnM_Quagga weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BirthQuagga>
+   <SpawnF_Quagga>
+      <subjects>
+         <ZebraCommon_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Quagga_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF_Quagga>
+   <SpawnM_Quagga>
+      <subjects>
+         <ZebraCommon_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Quagga_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM_Quagga>
+   <SpawnF_Quagga>
+      <subjects>
+         <Quagga_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Quagga_Young_F_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF_Quagga>
+   <SpawnM_Quagga>
+      <subjects>
+         <Quagga_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Quagga_Young_M_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM_Quagga>
+</BehaviorSets>

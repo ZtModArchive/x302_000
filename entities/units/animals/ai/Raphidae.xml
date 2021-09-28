@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Raphidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Columbiformes>
+                     <Raphidae/>
+                  </Columbiformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

@@ -1,0 +1,77 @@
+<ZTDiseaseMgr halfStarMinimum="1" diseaseCheckInterval="720" updateInterval="3" cureTimeout="2880">
+  <diseases>
+    <ZTDisease name="PoopingDisease" nameLocID="disease_names:poopingdiseasename" token="t_GetPoopingDisease" cureToken="t_CurePoopingDisease" clearTokens="t_GetPoopingDisease t_SpreadPoopingDisease t_PoopingDisease t_PoopingDisease2" targetTypes="animal" chance="10" singleQualifier="true" researchLocIDBase="poopingdiseaseresearch" baseReward="5000" rewardDelta="101">
+      <qualifier>
+        <zooTests>
+          <ZTEntityTypePredicate type="Poop" quantity="5" test="GE" different="true" />
+          <ZTZooFamePredicate fameHalfStars="4" test="GE" />
+        </zooTests>
+        <animalFilters>
+          <ZTAnimalAttributeFilter attribute="b_ExtinctAnimal" boolValue="true" />
+        </animalFilters>        
+      </qualifier>
+      <cause types="Poop" hint="exact" />     
+      <cure types="compost_df" hint="exact" />
+    </ZTDisease>
+    
+    <ZTDisease name="ExtinctFlu" nameLocID="disease_names:extinctfluname" token="t_Disease" cureToken="t_CureDisease2" clearTokens="t_Disease t_SpreadDisease t_ExtinctFluDisease t_ExtinctFluDisease2" targetTypes="animal" chance="1" chanceMultiplier="TrashGround" singleQualifier="false" researchLocIDBase="extinctfluresearch" baseReward="5000" rewardDelta="101">
+      <qualifier>
+        <zooTests>
+          <ZTEntityTypePredicate type="animal" attribute="b_ExtinctAnimal" value="true" quantity="10" test="GE" different="false" />
+        </zooTests>
+        <animalFilters>
+          <ZTAnimalAttributeFilter attribute="b_ExtinctAnimal" boolValue="true" />
+          <ZTAnimalProximityFilter type="TrashGround" distance="10" closer="true" />
+        </animalFilters>
+      </qualifier>
+      <cause types="TrashGround trashcontainer RecyclableGround" hint="exact" />
+      <cure types="tree" hint="product" product="Extinct" />
+    </ZTDisease>
+
+    <ZTDisease name="SlowingSyndrome" nameLocID="disease_names:slowingsyndromename" token="t_GetSlowingDisease" cureToken="t_CureSlowingDisease" clearTokens="t_GetSlowingDisease t_SpreadSlowingDisease t_SpreadSlowingDisease2 t_SlowingDisease t_SlowingDisease2" targetTypes="animal" chance="10" singleQualifier="false" researchLocIDBase="slowingsyndromeresearch" baseReward="5000" rewardDelta="101">
+      <qualifier>
+        <animalFilters>
+          <ZTAnimalAttributeFilter attribute="b_ExtinctAnimal" boolValue="true" />        
+          <ZTAnimalProximityFilter type="foodstand_hotdog" distance="10" closer="true" />
+        </animalFilters>
+      </qualifier>
+      <cause types="foodstand_hotdog Hotdog_Rubble" hint="exact" />
+      <cure types="plant" hint="product" product="Extinct" />
+    </ZTDisease>
+    
+    <ZTDisease name="SpeedySyndrome" nameLocID="disease_names:speedysyndromename" token="t_GetSpeedyDisease" cureToken="t_CureSpeedyDisease" clearTokens="t_GetSpeedyDisease t_SpreadSpeedyDisease t_SpreadSpeedyDisease2 t_SpeedyDisease t_SpeedyDisease2" targetTypes="animal" chance="10" singleQualifier="false" researchLocIDBase="speedysyndromeresearch" baseReward="5000" rewardDelta="101">
+      <qualifier>
+        <zooTests>
+          <ZTZooFamePredicate fameHalfStars="4" test="GE" />
+        </zooTests>
+        <animalFilters>
+          <ZTAnimalAttributeFilter attribute="b_ExtinctAnimal" boolValue="true" />
+          <ZTAnimalProximityFilter type="foodstand_coffee" distance="10" closer="true" />
+        </animalFilters>
+      </qualifier>
+      <cause types="foodstand_coffee" hint="exact" />
+      <cure types="plant" hint="product" product="Extinct" />
+    </ZTDisease>
+    
+    <ZTDisease name="CatScratchFever" nameLocID="disease_names:catscratchfevername" token="t_GetCatScratchDisease" cureToken="t_CureCatScratchDisease" clearTokens="t_GetCatScratchDisease t_SpreadCatScratchDisease t_SpreadCatScratchDisease2 t_CatScratchDisease t_CatScratchDisease2" targetTypes="Felidae" chance="10" singleQualifier="false" searchForTargets="false" researchLocIDBase="catscratchfeverresearch" baseReward="5000" rewardDelta="101">
+      <qualifier>
+        <zooTests>
+          <ZTZooFamePredicate fameHalfStars="6" test="GE" />
+        </zooTests>
+      </qualifier>
+      <cause types="ScratchPost" hint="exact" />
+      <cure types="AloeVera_Desert" hint="exact" />
+    </ZTDisease>
+    
+    <ZTDisease name="PinkElephantDisease" nameLocID="disease_names:pinkelephantdiseasename" token="t_GetPinkElephantDisease" cureToken="t_CurePinkElephantDisease" clearTokens="t_GetPinkElephantDisease t_SpreadPinkElephantDisease t_SpreadPinkElephantDisease2 t_PinkElephantDisease t_PinkElephantDisease2" targetTypes="Elephantidae" chance="20" singleQualifier="false" searchForTargets="false" researchLocIDBase="pinkelephantdiseaseresearch" baseReward="5000" rewardDelta="101">
+      <cause types="PursuitBall" hint="exact" />
+      <cure types="snackcart_cottoncandy" hint="exact" />
+    </ZTDisease>
+    
+    <ZTDisease name="TutorialLove" nameLocID="disease_names:tutoriallovediseasename" token="t_GetTutorialLoveDisease" cureToken="t_CureTutorialLoveDisease" clearTokens="t_GetTutorialLoveDisease t_TutorialLoveDisease t_TutorialLoveDisease2" targetTypes="animal" chance="0" singleQualifier="true" researchLocIDBase="tutoriallovediseaseresearch" baseReward="10000" rewardDelta="500" forceOnly="true">
+      <cause types="FoodDish_Bananas" hint="exact" />     
+      <cure types="PursuitBall" hint="exact" />
+    </ZTDisease> 
+   
+  </diseases>
+</ZTDiseaseMgr>

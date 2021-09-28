@@ -1,0 +1,14 @@
+<BFTypedBinder binderType="Synapsida" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Synapsida/>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Velociraptor_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Velociraptor>
+                           <Velociraptor_Young>
+                              <Velociraptor_Young_M/>
+                           </Velociraptor_Young>
+                        </Velociraptor>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Velociraptor_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

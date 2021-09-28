@@ -1,0 +1,2303 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultPerch>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Perching"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Perch_Idle"/>
+      </behaviors>
+   </DefaultPerch>
+   <DefaultHappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="medium"/>
+         <BFBehSetAttribute>
+            <BFAITargetData exercise="-10"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingNervous"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Stand_Angry"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingNervous"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Stand_Angry"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Perch behSet="DefaultPerch"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Lie"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Lie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <EnterShadeStructure>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterShadeStructure> 
+   <UseShadeStructure>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="20"/>
+      </behaviors>
+   </UseShadeStructure>
+   <ExitShadeStructure>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitShadeStructure>
+   <EnterHeatLamp>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHeatLamp> 
+   <UseHeatLamp>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="20"/>
+      </behaviors>
+   </UseHeatLamp>
+   <ExitHeatLamp>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitHeatLamp>
+   <EnterShelter1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter1>
+   <EnterShelter2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter2>
+   <EnterShelter3>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter3>
+   <EnterShelter4>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter4>
+   <EnterShelter5>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter5>
+   <EnterShelter6>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter6>
+   <UseShelter>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="15"/>
+      </behaviors>
+   </UseShelter>
+   <ExitShelter1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter1>
+   <ExitShelter2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter2>
+   <ExitShelter3>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter3>
+   <ExitShelter4>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode08_Branch1DEnd2ExitD" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter4>
+   <ExitShelter5>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode10_Branch1EEnd2ExitE" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter5>
+   <ExitShelter6>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode12_Branch1FEnd2ExitF" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter6>
+   <EnterExtinctShelter1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+   <EnterPerch1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_2Perch" subjectNode="Floor" targetTAP="BirdSec_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="BirdSec_EnterA" exitTAP="false"/>
+      </behaviors>
+   </EnterPerch1>
+   <EnterPerch2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_2Perch" subjectNode="Floor" targetTAP="BirdSec_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="BirdSec_EnterB" exitTAP="false"/>
+      </behaviors>
+   </EnterPerch2>
+   <Perch>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Perching"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Perch_Idle"/>
+      </behaviors>
+   </Perch>
+   <Perch_Idle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Perch_Idle"/>
+      </behaviors>
+   </Perch_Idle>
+   <Perch_Groom>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Preen"/>
+      </behaviors>
+   </Perch_Groom>
+   <ExitPerch1>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="BirdSec_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitPerch1>
+   <ExitPerch2>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="BirdSec_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitPerch2>
+   <Preen>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Preen_Idle"/>
+      </behaviors>
+   </Preen>
+   <Sleep_Idle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </Sleep_Idle>
+   <DryWings>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="WingOutLeftRight"/>
+         <BFBehPlaySet behSet="WingOutLeftRight"/>
+      </behaviors>
+   </DryWings>
+   <WingOutLeftRight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_WingOutLeft weight="50"/>
+               <Stand_WingOutRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WingOutLeftRight>
+   <Groom>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_CleanLeftWing weight="35"/>
+               <Stand_CleanRightWing weight="35"/>
+               <Stand_Scratch weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Groom>
+   <Fly>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Fly_Ahead"/>
+      </behaviors>
+   </Fly>
+   <Poop>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Bird" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Bird_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Eat>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+      </behaviors>
+   </Eat>
+   <Swallow>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </Swallow>
+   <EnterFoodDish>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="p_FoodDishNode" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish>
+   <EnterHollowLogLeft>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogLeft>
+   <EnterHollowLogRight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogRight>
+   <EnterHollowLogMiddle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLogCenter" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogMiddle>
+   <UseFoodDish>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterBeefShank>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_BeefShank" locoSpeed="slow" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBeefShank> 
+   <UseBeefShank>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-100"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </UseBeefShank>
+   <ExitBeefShank>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBeefShank>
+   <EnterLiveFood>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock locoSpeed="medium" targetAnim="Stand_Idle" subjectNode="p_FoodDishNode"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterLiveFood> 
+   <UseLiveFood>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </UseLiveFood>
+   <ExitLiveFood>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitLiveFood>
+   <Drink>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <Sleep>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Lie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <FailureSet>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PeckGround"/>
+      </behaviors>
+   </FailureSet>
+   <AlarmCall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+      </behaviors>
+   </AlarmCall>
+   <Call>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+      </behaviors>
+   </Call>
+   <DustBathe>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_DustBathe"/>
+      </behaviors>
+   </DustBathe>
+   <FeedYoung>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="FeedYoung_Idle"/>
+      </behaviors>
+   </FeedYoung>
+   <Attack>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="30"/>
+               <Stand_KickLeft weight="35"/>
+               <Stand_KickRight weight="35"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Attack>
+   <DockAttacked>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <Fight>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="30"/>
+               <Stand_KickLeft weight="35"/>
+               <Stand_KickRight weight="35"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Fight>
+   <Defend>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Defend>
+   <AttackedHurt>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </AttackedHurt>
+   <DefendEqual>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Defend weight="40"/>
+               <Attacked weight="30"/>
+               <AttackedHurt weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <DockFight>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <Stand_Angry>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Idle weight="60"/>
+               <Stand_StampLeft weight="10"/>
+               <Stand_StampRight weight="10"/>
+               <Stand_ShieldLeft weight="10"/>
+               <Stand_ShieldRight weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Stand_Angry>
+   <Sick>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </VerySick>
+   <MateF>
+      <subjects>
+         <Protarchaeopteryx_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+      </behaviors>
+   </MateF>
+   <MateM>
+      <subjects>
+         <Protarchaeopteryx_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </MateM>
+   <LayEgg>
+      <subjects>
+         <Protarchaeopteryx_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="2">
+            <randomSets>
+               <SpawnEgg weight="100"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LayEgg>
+   <SpawnEgg>
+      <subjects>
+         <Protarchaeopteryx_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Protarchaeopteryx_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <SpawnEgg>
+      <subjects>
+         <Protarchaeopteryx_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Protarchaeopteryx_Egg_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <HatchEgg>
+      <subjects>
+         <Protarchaeopteryx_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <Protarchaeopteryx_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <Protarchaeopteryx_Egg/>
+         <Protarchaeopteryx_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <Protarchaeopteryx_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Protarchaeopteryx_Egg" morphTargetEntityType="Protarchaeopteryx_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <Protarchaeopteryx_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Protarchaeopteryx_Egg" morphTargetEntityType="Protarchaeopteryx_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <Protarchaeopteryx_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Protarchaeopteryx_Egg_Super" morphTargetEntityType="Protarchaeopteryx_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <Protarchaeopteryx_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="Protarchaeopteryx_Egg_Super" morphTargetEntityType="Protarchaeopteryx_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperM>
+   <DockAttackGuest>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <WaitAttackGuest>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack"/>
+      </behaviors>
+   </AttackGuest>
+   <Rest>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Rest>
+   <ThrashWater>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </ThrashWater>
+   <EnterIceBlock>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="p_FoodDishNode" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock> 
+   <UseIceBlock>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitIceBlock>
+   <EnterSubstratePile>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterSubstratePile> 
+   <UseSubstratePile>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Swallow" container="foodprop"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <Roar>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Croak"/>
+      </behaviors>
+   </Roar>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="AttackPosture"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <Turn180>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Turn180>
+   <LoopIdle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <Lie behSet="LoopPerch"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopPerch>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Perch_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopPerch>
+   <LoopSleep>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <Stand_Idle>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true" interruptFlag="true"/>
+      </behaviors>
+   </Stand_Idle>
+   <WaitAttack>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <AttackMed>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="10"/>
+               <Stand_KickLeft weight="30"/>
+               <Stand_KickRight weight="30"/>
+               <Stand_StampLeft weight="15"/>
+               <Stand_StampRight weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </AttackMed>
+   <ChasePrey>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+         <BFBehAnimate targetAnim="StalkPause_Idle" playTime="5"/>
+      </behaviors>
+   </ChasePrey>
+   <TeachChase>
+         <subjects>
+            <Protarchaeopteryx_Young/>
+         </subjects>
+         <behaviors>
+            <BFBehPursuit hitRadius="4" pursuitRadius="30" locoSpeed="stalk"/>
+            <BFBehAnimate targetAnim="StalkPause_Idle" playTime="5"/>
+         </behaviors>
+   </TeachChase>
+   <MissPrey>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RoarAt" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+      </behaviors>
+   </MissPrey>
+   <AttackPrey>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="10"/>
+               <Stand_KickLeft weight="30"/>
+               <Stand_KickRight weight="30"/>
+               <Stand_StampLeft weight="15"/>
+               <Stand_StampRight weight="15"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" locoSpeed="fast"/>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <LoopKickLeft weight="15"/>
+               <LoopKickRight weight="15"/>
+               <LoopPeck weight="10"/>
+               <LoopStampLeft weight="30"/>
+               <LoopStampRight weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>      
+      </behaviors>
+   </AttackPrey>
+   <LoopKickLeft>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickLeft" loopFlag="true"/>
+      </behaviors>
+   </LoopKickLeft>
+   <LoopKickRight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickRight" loopFlag="true"/>
+      </behaviors>
+   </LoopKickRight>
+   <LoopPeck>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Peck" loopFlag="true"/>
+      </behaviors>
+   </LoopPeck>
+   <LoopStampLeft>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_StampLeft" loopFlag="true"/>
+      </behaviors>
+   </LoopStampLeft>
+   <LoopStampRight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_StampRight" loopFlag="true"/>
+      </behaviors>
+   </LoopStampRight>
+   <DockFight>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <WaitFight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="LoopStand"/>
+      </behaviors>
+   </WaitFight>
+   <FightSnap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <DockFight>
+      <subjects>
+         <Protarchaeopteryx_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="2" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Protarchaeopteryx_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="2" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <DockPlayFight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetNode="p_PredatorFightOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <SwipeMed>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="20"/>
+               <Stand_KickLeft weight="40"/>
+               <Stand_KickRight weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>       
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Peck weight="20"/>
+               <Stand_KickLeft weight="40"/>
+               <Stand_KickRight weight="40"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom> 
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <Kick>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Kick>
+   <EnterBall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Whap_StampLeft weight="50"/>
+               <Whap_StampRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Whap_Left weight="50"/>
+               <Whap_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Whap_Left weight="50"/>
+               <Whap_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Whap_Left weight="50"/>
+               <Whap_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBarrel_Whap>
+   <Whap_StampLeft>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_StampLeft"/>
+      </behaviors>
+   </Whap_StampLeft>   
+   <Whap_StampRight>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_StampRight"/>
+      </behaviors>
+   </Whap_StampRight>
+   <Whap_Left>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </Whap_Left>   
+   <Whap_Right>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </Whap_Right>
+   <UseBall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </UseBall>
+   <ExitBall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <ChaseBall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="p_BallNode" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="UsePursuitBall_Whap"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <PlayBall>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </PlayBall>
+   <AttackPosture>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="AttackPosture_Idle" playTime="5"/>
+      </behaviors>
+   </AttackPosture>
+   <AttackPosture_Win>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_2Stand"/>
+      </behaviors>
+   </AttackPosture_Win>
+   <AttackPosture_Lose>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submitting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_2Stand_Submit"/>
+      </behaviors>
+   </AttackPosture_Lose>
+   <AttackPosture_Draw>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_FightAdult" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="AttackPosture_2Stand"/>
+      </behaviors>
+   </AttackPosture_Draw>
+   <AttackPosture_Reposition>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="AttackPosture_2Stand"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_WingOutLeft weight="50"/>
+               <Stand_WingOutRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ShieldLeft weight="50"/>
+               <Stand_ShieldRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_StampLeft weight="50"/>
+               <Stand_StampRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_StampLeft weight="50"/>
+               <Stand_StampRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </AttackPosture_Reposition>
+   <DockStandOff>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="7" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDock subjectNode="Dock_Fight" targetNode="Dock_Fight2" targetAnim="Stand_2AttackPosture" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockStandOff>
+   <DockStandOff2>
+      <subjects>
+         <Protarchaeopteryx_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="7" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_2AttackPosture" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </DockStandOff2>
+   <StandOff>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <StandOff_Win weight="50"/>
+               <StandOff_Lose weight="40"/>
+               <StandOff_Draw weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </StandOff>
+   <StandOff_Win>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="AttackPosture" targetBehSet="AttackPosture" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Reposition" targetBehSet="AttackPosture_Reposition" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Win" targetBehSet="AttackPosture_Lose" resetPhase="true"/>
+      </behaviors>
+   </StandOff_Win>
+   <StandOff_Lose>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="AttackPosture" targetBehSet="AttackPosture" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Reposition" targetBehSet="AttackPosture_Reposition" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Lose" targetBehSet="AttackPosture_Win" resetPhase="true"/>
+      </behaviors>
+   </StandOff_Lose>
+   <StandOff_Draw>
+      <subjects>
+         <Protarchaeopteryx/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="AttackPosture" targetBehSet="AttackPosture" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Reposition" targetBehSet="AttackPosture_Reposition" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="AttackPosture_Draw" targetBehSet="AttackPosture" resetPhase="true"/>
+      </behaviors>
+   </StandOff_Draw>
+</BehaviorSets>

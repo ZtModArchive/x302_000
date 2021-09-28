@@ -1,0 +1,15 @@
+﻿<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry entry="zoopedia_buildings">
+         <BFHelpEntry entry="zoopedia_cloningcenter" order="zoopedia_extinctresearchlab"/>
+         <BFHelpEntry entry="zoopedia_cavepaintinghall"/>
+         <BFHelpEntry entry="zoopedia_entertainerstage"/>         
+         <BFHelpEntry entry="zoopedia_fossileducationcenter" order="zoopedia_extincteducationctr" />
+         <BFHelpEntry entry="zoopedia_fossildigpit" order="zoopedia_playdigpit"/>
+         <BFHelpEntry entry="zoopedia_sizecomparisonmural"/>   
+         <BFHelpEntry entry="zoopedia_giftcart_xt" order="zoopedia_giftcartextinct"/>  
+         <BFHelpEntry entry="zoopedia_dinorecoverybuilding"/>    
+         <BFHelpEntry entry="zoopedia_fossilmarker" />  
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

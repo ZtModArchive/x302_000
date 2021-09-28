@@ -1,0 +1,148 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_ApplaudB">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_ApplaudB.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Argue">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Argue.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_ArmsUp">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_ArmsUp.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Bored">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Bored.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_CheerB">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_CheerB.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Cry">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Cry.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Dismissive">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Dismissive.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_FallScream">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_FallScream.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Grumble">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Grumble.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Happy">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Happy.wav" volume="1" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_HappyA">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_HappyA.wav" volume="1" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_HappyB">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_HappyB.wav" volume="1" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_HappyC">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_HappyC.wav" volume="1" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Laugh">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_LaughA.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_OohAhhB">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_OohAhhB.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Scold">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Scold.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Scream">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_ScreamA.wav" volume="1" mindist="2" maxdist="60"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_ShakeFist">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_ShakeFist.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_TalkA">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_TalkA.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Talkb">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_TalkB.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_WaveHand">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_WaveHand.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Whistle">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Whistle.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Yawn">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Yawn.wav" volume="1.0" mindist="3" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Yell">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Yell.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_CellPhone">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_CellPhone.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--EXTINCT ADDITIONS-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Stand_2Attacked_DwarfSicilianElefant">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Stand_2Attacked_DwarfSicilianElefant.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Dance_Idle">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Stand_Dance_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Stand_2Attacked_GetStuck">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_M_Stand_2Attacked_GetStuck.wav" volume="1.0" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Guest_Adult_M_Caveman_Stand_GetStuck">
+         <snd name="entities/units/guests/AdultMale/sound/Guest_Adult_Stand_GetStuck.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

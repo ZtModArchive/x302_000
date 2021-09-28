@@ -1,0 +1,532 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Attacked_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Attacked_Idle.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Attacked_Struggle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Attacked_Struggle.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Eat_Chew">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Eat_Chew.wav" volume=".9" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Eat_Dig">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Eat_Dig.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Eat_Drink">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Eat_Drink.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Eat_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Eat_Swallow">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Eat_Swallow.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_EatTrough_Chew">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_EatTrough_Chew.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_EatTrough_Drink.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_EatTrough_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_EatTrough_Swallow">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_EatTrough_Swallow.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Growl">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Growl.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Grunt">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Grunt.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_GruntHappily">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_GruntHappily.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Sigh">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sigh.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_SlamGround">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_SlamGround.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Sneeze">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sneeze.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sniff.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Lie_Yawn">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Yawn.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_2Attacked.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_2Sleep_Fall">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_2Sleep_Fall.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_BashFence">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_BashFence.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_BrowseBush">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_BrowseBush.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Dig">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_Dig.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Exhausted">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_Exhausted.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_GetHitLeft">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_GetHitLeft.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_GetHitRight">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_GetHitLeft.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Growl">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Growl.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Grunt">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Grunt.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_GruntHappily">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_GruntHappily.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_GuestAttack">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_Stand_GuestAttack.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_KnockOverYoung">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_KnockOverYoung.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_NuzzleYoung">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_NuzzleYoung.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>       
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sniff.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_SniffOther">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sniff.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Pee">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_Stand_Pee.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_PushUp">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_PushUp.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_RubHead">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_RubHead.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_RubShell">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_RubShell.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Shake">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_Shake.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Sigh">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sigh.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_SlamBallLeft">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_SlamBallLeft.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_SlamBallRight">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_SlamBallRight.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_SlamGround">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_SlamGround.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Sneeze">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Sneeze.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_TailSlamLeft">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_TailSlamLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_TailSlamRight">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_TailSlamLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Adult_F_Stand_TestFence_Shocked.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_TurnRight180_GuestAttack">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_TurnRight180_GuestAttack.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Lie_Yawn.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Adult_Walk_Ahead_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Walk_Ahead_Sniff.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+ 
+    
+   
+   <!--young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_NuzzleMother">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_NuzzleMother.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Attacked_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Attacked_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Attacked_Struggle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Attacked_Struggle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Eat_Chew">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Eat_Chew.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Eat_Dig">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Eat_Dig.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Eat_Drink">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Eat_Drink.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Eat_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Eat_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Eat_Swallow">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Eat_Swallow.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_EatTrough_Chew">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_EatTrough_Chew.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_EatTrough_Drink">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_EatTrough_Drink.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_EatTrough_Idle">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_EatTrough_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_EatTrough_Swallow">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_EatTrough_Swallow.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Growl">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Growl.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Grunt">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Grunt.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_GruntHappily">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_GruntHappily.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Sigh">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sigh.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_SlamGround">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_SlamGround.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Sneeze">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sneeze.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sniff.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Lie_Yawn">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Yawn.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_2Attacked">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_2Attacked.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_2Sleep_Fall">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_2Sleep_Fall.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_BashFence">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_BashFence.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_BrowseBush">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_BrowseBush.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Dig">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_Dig.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Exhausted">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_Exhausted.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_GetHitLeft">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_GetHitLeft.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_GetHitRight">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_GetHitLeft.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Growl">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Growl.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Grunt">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Grunt.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_GruntHappily">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_GruntHappily.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_GuestAttack">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_Stand_GuestAttack.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_KnockOverYoung">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_KnockOverYoung.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_NuzzleYoung">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_NuzzleYoung.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>       
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sniff.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_SniffOther">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sniff.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Pee">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_Stand_Pee.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_PushUp">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_PushUp.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_RubHead">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_RubHead.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_RubShell">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_RubShell.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Shake">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_Shake.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Sigh">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sigh.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_SlamBallLeft">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_SlamBallLeft.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_SlamBallRight">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_SlamBallRight.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_SlamGround">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_SlamGround.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Sneeze">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Sneeze.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_TailSlamLeft">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_TailSlamLeft.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_TailSlamRight">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_TailSlamLeft.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Ankylosaurus/sound/Ankylosaurus_Young_F_Stand_TestFence_Shocked.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_TurnRight180_GuestAttack">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_TurnRight180_GuestAttack.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Stand_Yawn">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Lie_Yawn.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Doedicurus_Young_Walk_Ahead_Sniff">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Walk_Ahead_Sniff.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+  
+</soundtags>

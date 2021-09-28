@@ -1,0 +1,5 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'Lie_2Sleep'"/>
+   	 <key percent="90" text="dc_enabled 0, dc_goto 2"/>
+   	 <key percent="95" text="ai tranquilize"/>
+</TEXTKEY>

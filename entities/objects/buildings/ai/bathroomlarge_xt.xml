@@ -1,0 +1,73 @@
+<BFTypedBinder binderType="bathroomlarge_xt" version="2" versionReplace="true">
+	<types>
+		<entity>
+			<building>
+				<bathroom>
+					<bathroomlarge>
+						<bathroomlarge_xt />
+					</bathroomlarge>
+				</bathroom>
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+        <ZTEntityDestructionData explosionEffect="destroy_building" explosionSound="destroy_woodglass_small" rubbleBinderName="Rubble_Fragment_Concrete" entityRuinBinderName="rubble_xt" numParticles="10" secsToRemove="0.3f" applyPhysToRubble="true" forceToRubbleMin="8.5f" forceToRubbleMax="15.0f" rubblePitchAngle="86" rubbleStartHeight="3.0f"/>
+   		<ZTPlacementData dockArrowStyle="special" dockArrowSize="1.5">
+			<UIAspect>
+				<default image="ui/zoomap/icon_bathroom.tga" />
+			</UIAspect>
+		</ZTPlacementData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\bathroomlarge_xt\bathroomlarge_xt_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:bathroomlarge_xt" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="bathroomlarge_xt" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_bathroom.tga" />
+			</UIAspect>
+		</UIButton>
+		<BFAIEntityDataShared s_Product="Extinct" s_ProfileLock="extinct_xtlock"  s_uisort="cb"s_Zoopedia="zoopedia:zoopedia_familyrestroom:entry" s_Theme="extinct" f_FameReq="40" />
+		<ZTTourData>
+			<theme_extinct value="5" />
+		</ZTTourData>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="ShadowNode_01" width="9" length="10" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/bathroomlarge_xt/bathroomlarge_xt" switch="0 30 60" minSwitch="0 0 30" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFCollisionComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="300" mergeKey="name">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+					<ZTTransaction name="upkeep" cost="25" period="monthly" type="debit" category="upkeep" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

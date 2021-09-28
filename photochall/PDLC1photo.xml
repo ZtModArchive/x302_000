@@ -1,0 +1,31 @@
+<challenges>
+	<ZTPhotoChallenge name="ScientistViewingDino"
+	   difficulty="1"
+	   script="scenario/scripts/challenge/scientistvisit.lua"
+	   function="scoreScientistViewingDino"
+		stt="PhotoChallengetext:stt_DinoScientistVisitDinosaur"
+		csst="PhotoChallengetext:csstt_genericgotphoto"
+	/>
+	<ZTPhotoChallengeSet name="scientistvisit" title="">
+		<ScientistViewingDino/>
+	</ZTPhotoChallengeSet>
+	
+	<ZTPhotoChallenge name="TrexStalking"
+	   difficulty="2"
+	   script="scenario/scripts/challenge/trex_stalk.lua"
+	   function="scoreTrexStalking"
+		stt="PhotoChallengetext:stt_TRexStalking"
+		csst="PhotoChallengetext:csstt_genericgotphoto"
+	/>
+	<ZTPhotoChallenge name="TrexCatching"
+	   difficulty="2"
+	   script="scenario/scripts/challenge/trex_stalk.lua"
+	   function="scoreTrexCatching"
+		stt="PhotoChallengetext:stt_TRexCatching"
+		csst="PhotoChallengetext:csstt_genericgotphoto"
+	/>
+	<ZTPhotoChallengeSet name="trex_stalk" title="">
+		<TrexStalking/>
+		<TrexCatching/>
+	</ZTPhotoChallengeSet>
+</challenges>

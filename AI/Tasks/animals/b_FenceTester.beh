@@ -1,0 +1,18 @@
+<BehaviorSets>
+   <TestFence_Shocked>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TestFence_Shocked"/>
+      </behaviors>
+   </TestFence_Shocked>
+   <TestFence_Safe>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TestFence"/>
+      </behaviors>
+   </TestFence_Safe>   
+</BehaviorSets>

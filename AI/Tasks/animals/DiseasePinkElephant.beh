@@ -1,0 +1,31 @@
+<BehaviorSets>
+   <GetSickPinkElephant>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </GetSickPinkElephant>
+   <CureSickPinkElephant>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </CureSickPinkElephant>
+   <Diseased_PinkElephant>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_GetPinkElephantDisease" GiveTo="Elephantidae" Radius="15" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	       <BFAIToken Name="t_GetPinkElephantDisease" GiveTo="Mammutidae" Radius="15" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </Diseased_PinkElephant>
+</BehaviorSets>

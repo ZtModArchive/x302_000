@@ -1,0 +1,20 @@
+<BFScenarioGroup name="craftycloningrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="craftycloning" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHCraftyCloningShort" overview="Challengetext:CHCraftyCloning" />
+				<success locid="Challengetext:CHCraftyCloningSuccessShort" overview="Challengetext:CHCraftyCloningSuccess" />
+				<failure locid="Challengetext:CHCraftyCloningFailureShort" overview="Challengetext:CHCraftyCloningFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/craftycloning.lua" entry="evalCraftyCloning" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/craftycloning.lua" entry="completeCraftyCloning" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/craftycloning.lua" entry="failCraftyCloning" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

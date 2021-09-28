@@ -1,0 +1,231 @@
+<ZT2Strings>
+      <LOC_STRING _locID="zoopedia_beluga" version="9" />
+      <LOC_STRING _locID="zoopedia_beluga:entry" version="9"  >Beluga</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_beluga:text" version="9"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+            
+               <cell width="284">
+						<cell width="96" bgimg="ui/zoopedia/littleBox-128.tga">
+							<img src="entities/units/animals/Beluga/Beluga_Adult_M_icon.dds" sx="0" sy="0" sw="64" sh="64" width="96" height="96"/>
+						</cell>	
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_male.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_female.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>						 
+						 <cell width="156"/>
+                  <br/>   
+                  <cell width="32" pady="0">               
+                     <img src="ui/zoopedia/vulnerable.dds" sx="0" sy="0" sw="64" sh="64" width="32" height="32"/>
+                  </cell>                 
+                  <cell width="224" padx="10" pady="0">
+                     <color r="255" g="255" b="255">
+                     Conservation Status:
+                     <br/>
+                        <color r="255" g="255" b="0">
+                     Vulnerable
+                        </color>
+                     </color>                  
+                  </cell>
+               </cell>                        
+				 <cell width="128">
+				  <color r="255" g="255" b="255">Tundra<br/></color>
+				  <img src="ui/icon_biomes/icon_tundra.dds" sx="0" sy="0" sw="128" sh="128" width="96" height="96"/>
+				 </cell>
+               <cell width="128">
+                  <color r="255" g="255" b="255">Arctic Ocean</color>
+                  <br/>
+                  <img src="ui/icon_maplocations/tundra_arctic_ocean.dds" sx="0" sy="0" sw="256" sh="256" width="96" height="96"/>
+               </cell>
+               <br/>
+               <cell width="284" pady="10">
+                  <color r="255" g="255" b="255">
+                  Class: Mammals <i>(Mammalia)</i>
+                  <br/>
+                  Order: <i>Cetacea</i>
+                  <br/>
+                  Family: <i>Monodontidae</i>
+                  <br/>
+                  Genus: <i>Delphinapterus</i>
+                  <br/>
+                  Species: <i>leucas</i>
+                  </color>
+               </cell>
+				 <cell width="256" pady="10">
+				  <img src="UI/zoopedia/biome/tundra_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+				 </cell>				 
+            </cell>
+         </cell>
+         <p/>
+         <p/>
+         <cell width="260"/>
+         <cell width="300">
+            <cell width="64">
+               <img src="ui/zoopedia/fact-icon64.tga" sx="0" sy="0" sw="64" sh="64"/>
+            </cell>
+            <cell width="176">
+               <color r="255" g="255" b="255">
+                  <font name="arial" size="12" shadowx="2" shadowy="1" shadowa="50">Fun Beluga Facts</font>
+               </color>
+            </cell>
+            <p/>
+            <cell width="280" bgimg="ui/zoopedia/factBG.tga" padx="10">
+               <p/>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Belugas are born dark gray, brown, or black but gradually turn completely white by the age of five years.</color>
+               </cell>
+               <br/>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Belugas can swim both forward and backward!</color>
+               </cell>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Belugas don&apos;t chew their food; they swallow it whole.</color>
+               </cell>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Belugas forage for food near the bottom of shallow water, typically eating bottom-dwelling fish.</color>
+               </cell>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">A beluga&apos;s flexible neck allows it to move easily while eating. It produces a great deal of suction with its mouth to scoop up animals that don&apos;t want to be eaten!</color>
+               </cell>                
+            </cell>
+         </cell>
+         <cell width="340">
+            <color r="255" g="248" b="178">To unlock the beluga in challenge or campaign games, you must earn a 1/2-star zoo fame rating for your zoo.</color>
+            <p/>The beluga is a toothed whale, closely related to the dolphin, with a clearly defined head and short fins. Belugas (derived from the Russian word "byelukha," meaning "white") are born either black or dark brown, without dorsal fins, and turn milky white in about five years. Males can attain a maximum length of 7 m (23 ft); females are somewhat smaller. Belugas travel in schools of several thousand, feeding on fish, octopus, crabs, snails, and squid. They are common to the Arctic Ocean and travel as far south as the state of New Jersey in the United States and the Rhine River in Europe.     
+         </cell>
+         <p/>
+         <cell width="260"/>
+         <cell width="620">Content adapted from <a href="zoopedia:zoopedia_encarta:entry"><u><color r="255" g="231" b="135">Microsoft&#xAE; Encarta&#xAE; 2006.</color></u></a> &#xA9; 1993&#x96;2005 Microsoft Corporation. All rights reserved.
+         </cell>         
+      </LOC_STRING>
+      <LOC_STRING _locID="zoopedia_penguinrockhopper" version="9" />
+      <LOC_STRING _locID="zoopedia_penguinrockhopper:entry" version="9"  >Penguin, Rockhopper</LOC_STRING>
+      <LOC_STRING _locID="zoopedia_penguinrockhopper:text" version="9"  >
+         <cell pady="0" width="1000"/>
+         <p/>
+         <cell width="260"/>
+         <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+            <cell width="600" padx="20" pady="20">
+            
+               <cell width="284">
+						<cell width="96" bgimg="ui/zoopedia/littleBox-128.tga">
+							<img src="entities/units/animals/PenguinRockhopper/PenguinRockhopper_Adult_M_icon.dds" sx="0" sy="0" sw="64" sh="64" width="96" height="96"/>
+						</cell>	
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_male.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>
+						<cell width="96" bgimg="ui/zoopedia/littleBox-128.tga">
+							<img src="entities/units/animals/PenguinRockhopper/PenguinRockhopper_Adult_F_icon.dds" sx="0" sy="0" sw="64" sh="64" width="96" height="96"/>
+						</cell>							 
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_female.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>						 
+						 <cell width="156"/>
+                  <br/>   
+                  <cell width="32" pady="0">               
+                     <img src="ui/zoopedia/vulnerable.dds" sx="0" sy="0" sw="64" sh="64" width="32" height="32"/>
+                  </cell>                 
+                  <cell width="224" padx="10" pady="0">
+                     <color r="255" g="255" b="255">
+                     Conservation Status:
+                     <br/>
+                        <color r="255" g="255" b="0">
+                     Vulnerable
+                        </color>
+                     </color>                  
+                  </cell>
+               </cell>                        
+				 <cell width="128">
+				  <color r="255" g="255" b="255">Coastal<br/></color>
+				  <img src="ui/icon_biomes/icon_coastal.dds" sx="0" sy="0" sw="128" sh="128" width="96" height="96"/>
+				 </cell>
+               <cell width="128">
+                  <color r="255" g="255" b="255">South Ocean Islands</color>
+                  <br/>
+                  <img src="ui/icon_maplocations/coastal_southern_ocean_islands.dds" sx="0" sy="0" sw="256" sh="256" width="96" height="96"/>
+               </cell>
+               <br/>
+               <cell width="284" pady="10">
+                  <color r="255" g="255" b="255">
+                  Class: Birds <i>Aves</i>
+                  <br/>
+                  Order: <i>Sphenisciformes</i>
+                  <br/>
+                  Family: <i>Spheniscidae</i>
+                  <br/>
+                  Genus: <i>Eudyptes</i>
+                  <br/>
+                  Species: <i>chrysocome</i>
+                  </color>
+               </cell>
+				 <cell width="256" pady="10">
+				  <img src="UI/zoopedia/biome/coastal_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+				 </cell>				 
+            </cell>
+         </cell>
+         <p/>
+         <p/>
+         <cell width="260"/>
+         <cell width="300">
+            <cell width="64">
+               <img src="ui/zoopedia/fact-icon64.tga" sx="0" sy="0" sw="64" sh="64"/>
+            </cell>
+            <cell width="176">
+               <color r="255" g="255" b="255">
+                  <font name="arial" size="12" shadowx="2" shadowy="1" shadowa="50">Fun Rockhopper Penguin Facts</font>
+               </color>
+            </cell>
+            <p/>
+            <cell width="280" bgimg="ui/zoopedia/factBG.tga" padx="10">
+               <p/>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Female rockhoppers normally lay two eggs in a breeding season, but only one is incubated.</color>
+               </cell>
+               <br/>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">Rockhoppers live an average of about ten years.</color>
+               </cell>
+               <cell width="32" pady="10">
+                  <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+               </cell>
+               <cell width="202" pady="10">
+                  <color r="255" g="255" b="255">To attract a mate, male rockhoppers shake their heads to draw attention to their yellow crest feathers.</color>
+               </cell>                 
+            </cell>
+         </cell>
+         <cell width="340">
+            <color r="255" g="248" b="178">To unlock the rockhopper penguin in challenge or campaign games, you must earn a 2-star zoo fame rating for your zoo.</color>
+            <p/>Rockhopper penguins earned their name by hopping among boulders on the rocky islands they inhabit. They are a sub-Antarctic species of penguin, so they are found primarily on southern islands such as the Falklands, Macquarie Island, and the Antipodes.
+            <p/>Sporting a handsome, distinctive crest and blood-red eyes, rockhoppers are as aggressive as their intense stare suggests. It is common for them to fight over premium nesting sites on the rocky terrain they inhabit. Small and powerful, their webbed feet and flippers make them formidable swimmers and hunters.
+				<p/>Rockhoppers prey on lantern fish, krill, and sometimes small squid. They are themselves prey to blue sharks, leopard seals, and fur seals, and their eggs and chicks are often vulnerable on land to gulls and other birds.
+				<p/>Because they make their nests on rocky shorelines, their ability to hop out of the water and up onto the rocks is an important survival skill.  
+         </cell>        
+      </LOC_STRING>  
+
+</ZT2Strings>

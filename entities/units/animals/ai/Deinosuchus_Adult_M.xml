@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="Deinosuchus_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Reptilia>
+                  <Crocodylia>
+                     <Alligatoridae>
+                        <Deinosuchus>
+                           <Deinosuchus_Adult>
+                              <Deinosuchus_Adult_M/>
+                           </Deinosuchus_Adult>
+                        </Deinosuchus>
+                     </Alligatoridae>
+                  </Crocodylia>
+               </Reptilia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\Deinosuchus\Deinosuchus_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Deinosuchus_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,13 @@
+<ZTPuzzle animal="Doedicurus" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="0.76" />
+    <ZTPuzzlePiece texture="02_BodyFront" node="Piece02" entityScale="3.04" />
+    <ZTPuzzlePiece texture="03_HandLeft" node="Piece03" entityScale="0.76" />
+    <ZTPuzzlePiece texture="04_BodyMid" node="Piece04" entityScale="3.04" />
+    <ZTPuzzlePiece texture="05_BodyEnd" node="Piece05" entityScale="1.52" />
+    <ZTPuzzlePiece texture="06_Foot" node="Piece06" entityScale="0.76"/>
+    <ZTPuzzlePiece texture="07_TailBase" node="Piece07" entityScale="1.52" />
+    <ZTPuzzlePiece texture="08_TailMid" node="Piece08" entityScale="0.76" />
+    <ZTPuzzlePiece texture="09_TailEnd" node="Piece09" entityScale="1.52" />    
+  </pieces>
+</ZTPuzzle>

@@ -1,0 +1,74 @@
+<ZT2Strings>
+	<tools version="2">
+      <insert_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Insert Node</b>
+         </font>
+      </insert_label>
+      <insert_event_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Insert Event </b>
+         </font>
+      </insert_event_label>
+      <spline_thickness_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Spline Size</b>
+         </font>
+      </spline_thickness_label>
+      <scoring_prox_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Scoring Prox</b>
+         </font>
+      </scoring_prox_label>
+      <visible_stt>Toggle Spline Visibility</visible_stt>
+      <visible_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Spline Visible</b>
+         </font>
+      </visible_label>
+      <eventhidden_stt>Toggle Memory Event</eventhidden_stt>
+      <event_hidden_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Memory Event</b>
+         </font>
+      </event_hidden_label>
+      <event_override_stt>Event Score Override</event_override_stt>
+      <event_score_override_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Event Override</b>
+         </font>
+      </event_score_override_label>
+      <spline_speed_stt>Change Spline Tracing Speed.</spline_speed_stt>
+      <spline_tracing_speed_label>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>Tracing Speed</b>
+         </font>
+      </spline_tracing_speed_label>
+      <spline_tracing_speed_display>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>%text%</b>
+         </font>
+      </spline_tracing_speed_display>
+      <spline_speed_label>
+         <font name="arial" size="9" shadowx="-1" shadowy="2">
+            <b>Change Spline Tracing Speed</b>
+         </font>
+      </spline_speed_label>
+      <event_scale_stt>Change Event Scale.</event_scale_stt>
+      <event_scale_label>
+         <font name="arial" size="9" shadowx="-1" shadowy="2">
+            <b>Event Scale</b>
+         </font>
+      </event_scale_label>
+      <event_scale_display>
+         <font name="arial" size="9" shadowx="0" shadowy="0">
+            <b>%text%</b>
+         </font>
+      </event_scale_display>
+      <event_scale_header>
+         <font name="arial" size="9" shadowx="-1" shadowy="2">
+            <b>Change Event Scale</b>
+         </font>
+      </event_scale_header>
+	</tools>
+</ZT2Strings>

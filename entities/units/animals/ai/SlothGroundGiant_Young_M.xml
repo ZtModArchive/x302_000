@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="SlothGroundGiant_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Xenarthra>
+                     <Megatheriidae>
+                        <SlothGroundGiant>
+                           <SlothGroundGiant_Young>
+                              <SlothGroundGiant_Young_M/>
+                           </SlothGroundGiant_Young>
+                        </SlothGroundGiant>
+                     </Megatheriidae>
+                  </Xenarthra>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SlothGroundGiant_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

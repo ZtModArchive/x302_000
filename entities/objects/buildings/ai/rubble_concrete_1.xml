@@ -1,0 +1,27 @@
+<BFTypedBinder binderType="rubble_concrete_1">
+   <types>
+      <entity>
+         <building>
+            <Rubble>
+               <rubble_concrete>
+                  <rubble_concrete_1/>
+               </rubble_concrete>
+            </Rubble>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/rubble/rubble_concrete_1" switch="0 20 45" minSwitch="0 0 20"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

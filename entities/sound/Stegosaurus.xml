@@ -1,0 +1,386 @@
+<soundtags>
+   <!--ADULT-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_AttackedIdle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Attacked_Idle.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Drown_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Drown_Idle.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Eat_Drink">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Eat_Drink.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Eat_Idle.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_EatTrough_Drink.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_EatTrough_Idle.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Lie_2Sleep">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Lie_2Sleep.wav" volume=".8" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Lie_Sneeze">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Lie_Sneeze.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_PushUp_2Stand">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_PushUp_2Stand.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_PushUp_2Stand_CrashDown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_PushUp_2Stand_CrashDown.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_PushUp_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_PushUp_Idle.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Run_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Run_2Drown.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Sleep_Idle.wav" volume=".6" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_2Attacked.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_2Attacked_BeHitLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_2Attacked_BeHitLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_2Attacked_BeHitRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_2Attacked_BeHitRight.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_2Drown.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_2PushUp">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_2PushUp.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_BashFence">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_BashFence.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_BeHitLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_BeHitLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_BeHitRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_BeHitRight.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_CallA">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_CallA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_CallB">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_CallB.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_ClickA">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_ClickA.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_ClickB">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_ClickB.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Roar">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_Roar.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Roll">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_Roll.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_RubObject">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_RubObject.wav" volume=".5" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Shake">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Adult_F_Stand_Shake.wav" volume=".7" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Sneeze">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_Sneeze.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Squeal">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_Squeal.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_SwingTailLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_SwingTailLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_SwingTailRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_SwingTailRight.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_TailStrikeLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_TailStrikeLeft.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_TailStrikeRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_TailStrikeRight.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Stand_Yawn.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Adult_Walk_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Adult_F_Walk_2Drown.wav" volume="1" mindist="6" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+ 
+ <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_AttackedIdle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Attacked_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Drown_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Drown_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Eat_Drink">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Eat_Drink.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Eat_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Eat_Idle.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_EatTrough_Drink">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_EatTrough_Drink.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_EatTrough_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_EatTrough_Idle.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Lie_2Sleep">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Lie_2Sleep.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Lie_Sneeze">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Lie_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_PushUp_2Stand">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_PushUp_2Stand.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_PushUp_2Stand_CrashDown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_PushUp_2Stand_CrashDown.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>      
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_PushUp_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_PushUp_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Run_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Run_2Drown.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_2Attacked">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_2Attacked.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_2Attacked_BeHitLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_2Attacked_BeHitLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_2Attacked_BeHitRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_2Attacked_BeHitRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_2Drown.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_2PushUp">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_2PushUp.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_AttackGuest.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_BashFence">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_BashFence.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_BeHitLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_BeHitLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_BeHitRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_BeHitRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_CallA">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_CallA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_CallB">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_CallB.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_ClickA">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_ClickA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_ClickB">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_ClickB.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Roar">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_Roar.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Roll">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_Roll.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_RubObject">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_RubObject.wav" volume=".5" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Shake">
+         <snd name="entities/units/animals/Doedicurus/sound/Doedicurus_Young_F_Stand_Shake.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Sneeze">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Squeal">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_Squeal.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_SwingTailLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_SwingTailLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_SwingTailRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_SwingTailRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_TailStrikeLeft">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_TailStrikeLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_TailStrikeRight">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_TailStrikeRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Stand_Yawn">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Stand_Yawn.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Stegosaurus_Young_Walk_2Drown">
+         <snd name="entities/units/animals/Stegosaurus/sound/Stegosaurus_Young_F_Walk_2Drown.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   
+</soundtags>

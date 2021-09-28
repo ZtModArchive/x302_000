@@ -1,0 +1,12 @@
+<ZT2Strings>
+   <animalactions>
+      <!--New Animal Actions-->
+      <GoingToBuildNest>Going to build nest</GoingToBuildNest>   
+      <BuildingNest>Building nest</BuildingNest>
+      <GoingToWorkOnNest>Going to work on nest</GoingToWorkOnNest>
+      <WorkingOnNest>Working on nest</WorkingOnNest>
+      <GoingToFinishNest>Going to finish nest</GoingToFinishNest>
+      <FinishingNest>Finishing nest</FinishingNest>
+      <GrowlHappy>Growling in contentment</GrowlHappy>
+   </animalactions>
+</ZT2Strings>

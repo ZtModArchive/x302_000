@@ -1,0 +1,20 @@
+<BFTypedBinder binderType="Doedicurus_Gift_Adult">
+   <types>
+      <entity>
+         <item>
+            <Doedicurus_Gift_Adult/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Doedicurus_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Doedicurus_Gift"/>
+      </UIToggleButton>
+   </shared>
+</BFTypedBinder>

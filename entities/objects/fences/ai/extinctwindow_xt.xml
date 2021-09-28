@@ -1,0 +1,76 @@
+<BFTypedBinder binderType="extinctwindow_xt">
+   <types>
+      <entity>
+         <fence>
+            <extinctwindow_xt/>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTEntityDestructionData entityRuinBinderName="extinctwindow_xt_broken" secsToRemove="0.0f"/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\extinctwindow_xt\extinctwindow_xt_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:extinctwindow_xt"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTFENCE" data="BFString" string="extinctwindow_xt"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Researchable="true" s_Product="Extinct" s_Theme="extinct" s_ProfileLock="extinct_xtlock" s_uisort="tb" f_FenceStrength="10" s_Zoopedia="zoopedia:zoopedia_extinctwindowfence:entry" s_Broken="extinctwindow_xt_broken" b_SeeThrough="true"/>
+   		<ZTTourData>
+	 	 	<theme_extinct value="9"/>
+		</ZTTourData>      
+   </shared>
+   <binder>
+      <BFBinder>
+         <instance>
+            <ZTFence gate="extinctgate_xt" hasCurves="false"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinct_xt\extinct_xt_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence90">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctwindow_xt\extinctwindow_xt_vert" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder required="0" binderName="fence45">
+         <instance>
+            <BFPhysObj drawLast="true">
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctwindow_xt\extinctwindow_xt_diag" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinct_xt\extinct_xt_post" switch="0 30"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+	    <ZTEntityDestructionComponent/>
+	 </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="225">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

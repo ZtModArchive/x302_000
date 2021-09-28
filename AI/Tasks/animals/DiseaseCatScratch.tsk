@@ -1,0 +1,507 @@
+<BFAITaskTemplateList>
+<!-- Disease Effects-->
+   <BFAITaskTemplate Name="ReceiveCatScratchDisease" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="Disease:ReceiveCatScratchDisease">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Felidae/>
+            <b_Adult/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetCatScratchDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick" params="CatScratchFever"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_CatScratchDisease" GiveTo="subject" Timein="0" Timeout="120" Reconsider="true"/>
+	       <BFAIToken Name="t_SpreadCatScratchDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ReceiveCatScratchDisease_Animal" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="DiseaseCatScratch:ReceiveCatScratchDisease_Animal">
+      <BFAICreateData>
+         <Subjects_AND>
+            <animal/>
+            <b_Adult/>
+            <Qualifiers_AND b_Felidae="false" inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetCatScratchDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_HealPartial_33" GiveTo="subject" Timein="0" Timeout="120" Reconsider="true"/>
+	       <BFAIToken Name="t_SpreadCatScratchDisease" GiveTo="subject" Timein="60" Timeout="120" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData pink="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HealPartial_33" Priority="3" UniqueID="CatScratchDisease:HealPartial_33">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers_AND b_Disease="true" b_Felidae="false" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_HealPartial_33/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_CatScratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_HealPartial_66" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="HealPartial_66" Priority="3" UniqueID="CatScratchDisease:HealPartial_66">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers_AND b_Disease="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_HealPartial_66/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_CatScratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_CureCatScratchDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="CureCatScratchDisease" UniqueID="Disease:CureCatScratchDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CureCatScratchDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="555"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehPlaySet behSet="CureSickCatScratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SpreadCatScratchDisease" Priority="3" UniqueID="CatScratchDisease:SpreadCatScratchDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadCatScratchDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SpreadCatScratchDisease2" GiveTo="subject" Timeout="240" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Diseased_CatScratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="SpreadCatScratchDisease" Priority="3" UniqueID="CatScratchDisease:SpreadCatScratchDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadCatScratchDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SpreadCatScratchDisease" GiveTo="subject" Timeout="240" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Diseased_CatScratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="GetSick_CatScratchDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="Disease:GetSick_CatScratchDisease">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Felidae/>
+            <b_Adult/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CatScratchDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+               <ZTMessageInfo locID="animalthoughts:DiseasedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="20"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_CatScratchDisease2" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	          <BFAIToken Name="t_CatScratchTree" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickCatScratch"/>
+            <BFBehPlaySet behSet="ScentMark"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_CatScratchDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="Disease:GetSick_CatScratchDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <Felidae/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CatScratchDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               <ZTActionInfo locID="animalactions:Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="20"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_CatScratchDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true" OnlyOne="true"/>
+	          <BFAIToken Name="t_CatScratchPost" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickCatScratch"/>
+            <BFBehPlaySet behSet="ScentMark"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScratchPost_CatScratch" reserveTag="Scratch" UniqueID="DiseaseCatScratch:ScratchPost_CatScratch">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Felidae/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Disease="true"/>
+         </Subjects_AND>
+         <Targets>
+            <ScratchPost/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_CatScratchPost/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Using" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" hygiene="-15"/>
+	 <BFAITokenList>
+	    <BFAIToken Name="t_CatScratchTree" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	 </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScratchTree1_Catscratch" reserveTag="Scratch" UniqueID="CatScratchScratchTree1_Catscratch">
+      <BFAICreateData>
+         <Subjects>
+            <Felidae/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <AcaciaCaffra_Savannah/>
+            <BalsamFir_Boreal/>
+            <Baobob_Savannah/>
+            <Birch_Temperate/>
+            <BlackSpruce_Boreal/>
+            <CamelThornAcacia_Desert/>
+            <ElephantEar_Rainforest/>
+            <HimalayanPine_Alpine/>
+            <Kapok_Rainforest/>
+            <Kily_Rainforest/>
+            <Mangrove_Wetland/>
+            <Maple_Temperate/>
+            <Orchid_Rainforest/>
+            <RedCedar_Rainforest/>
+            <Tamarack_Boreal/>
+            <UmbrellaAcacia_Savannah/>
+            <WeepingMyall_Scrub/>
+            <YellowCedar_Alpine/>
+            <YellowFeverAcacia_Scrub/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_CatScratchTree/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToScratch" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10" hygiene="-15"/>
+	 <BFAITokenList>
+	    <BFAIToken Name="t_CatScratchPost" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	 </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+                  <ZTActionInfo locID="animalactions:Scratching" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="useContainer"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScratchTree2_Catscratch" reserveTag="General" UniqueID="CatScratchScratchTree2_Catscratch">
+      <BFAICreateData>
+         <Subjects>
+            <Felidae/>
+            <Qualifiers_AND inWater_OR_onLand="true" b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <BananaTree_Rainforest/>
+            <DatePalm_Desert/>
+            <FoxtailPalm_Rainforest/>
+            <TremblingAspen_Grassland/>
+            <TreeFern_Rainforest/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_CatScratchTree/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToScratch" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Swipe" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10" hygiene="-15"/>
+	 <BFAITokenList>
+	    <BFAIToken Name="t_CatScratchPost" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	 </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+                  <ZTActionInfo locID="animalactions:Scratching" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="ScratchTree"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScratchLog" reserveTag="General" UniqueID="CatScratchScratchLog">
+      <BFAICreateData>
+         <Subjects>
+            <Felidae/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Log/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToScratch" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Swipe" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-5" hygiene="-5"/>
+	 <BFAITokenList>
+	    <BFAIToken Name="t_CatScratchPost" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	 </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHealthBad"/>
+                  <ZTActionInfo locID="animalactions:Scratching" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="PlayLog"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

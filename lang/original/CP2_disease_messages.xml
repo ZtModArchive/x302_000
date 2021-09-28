@@ -1,0 +1,295 @@
+<ZT2Strings>
+  <diseaseresearch>
+    <animal0>Gather a sample from a diseased animal.</animal0>
+    
+    <cause0>Gather a sample from an item in your zoo.</cause0>
+    <cause1>A sample taken in or near the exhibit could yield clues to the cause.</cause1>
+    <cause2>Research results indicate %s may be the cause.</cause2>
+    
+    <cure0>Gather a sample from another item in your zoo. </cure0>
+    <cure1>A sample taken in or near the exhibit may yield the cure.</cure1>
+    <cure2>Research results indicate %s is effective.</cure2>
+    
+    <analyzing>Analyzing ...</analyzing>
+    <sampleCorrect>Data from this sample indicates you're one step closer to finding the cure!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else, or press H for a new research hint.</sampleIncorrect>
+    
+    <diseaseGone>Your zoo is free from the disease, even though the cure was not found.</diseaseGone>
+    <diseaseTimeout>The disease in your zoo has cleared up, but you didn't find the cure. The disease might return later. </diseaseTimeout>
+  </diseaseresearch>
+
+  <poopingdiseaseresearch>
+    <animal0>One or more of your animals has digestive difficulties. Gather a sample from one.</animal0>
+    
+    <cause0>To diagnose the disease, gather more samples from around your zoo for analysis.</cause0>
+    <cause1>Something smelly in or near the animal's exhibit may yield a clue.</cause1>
+    <cause2>Ewww, too much poop in the exhibit may be the cause! Gather a sample for further analysis. Ewww!</cause2>
+    
+    <cure0>What might solve this problem? Gather some samples from around the zoo for analysis.</cure0>
+    <cure1>Maybe we need someplace to put all this poop?</cure1>
+    <cure2>Research results indicate an organic process could help turn the poop into something useful.</cure2>
+    <cure3>Gather a sample from a compost building, so your research team can work on a cure.</cure3>  
+
+    <analyzing>The lab is analyzing your sample...</analyzing>
+    <sampleCorrect>Data from this sample indicates you're one step closer to finding the cure!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>
+  </poopingdiseaseresearch>
+  
+  <extinctfluresearch>
+    <animal0>Gather a sample from a diseased animal -- one with germ symbols above its head.</animal0>
+        
+    <cause0>An item in or near the animal's exhibit may yield a clue to the cause.</cause0>
+    <cause1>Many of your zoo's extinct animals are not immune to modern-day bacteria.</cause1>
+    <cause2>Something from your guests may be making your extinct animals sick. Gather a sample from an item a guest leaves behind.</cause2>
+    <cause3>Research results indicate your animals have a disease called the Litter Bug!</cause3>
+    <cause4>Gather a sample from a piece of trash, or even a trash can.</cause4>
+    
+    <cure0>Could a tree hold the key to the cure?</cure0>
+    <cure1>Gather samples from trees in your extinct animals' exhibits.</cure1>
+    <cure2>Desert, grassland, or alpine? One of these biomes has the tree that unlocks the cure.</cure2>
+    <cure3>Research indicates a sample of %s is needed.</cure3>
+    
+    <analyzing>The lab is analyzing your sample...</analyzing>
+    <sampleCorrect>That sample has given us more information about the cure!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>
+  </extinctfluresearch>
+  
+  <slowingsyndromeresearch>
+    <animal0>We need a sample from an animal with the slowing syndrome. Look for an animal with Z's above it.</animal0>
+
+    <cause0>Whoa! Your animals are moving more and more slowly. Can you find the reason why?</cause0>
+    <cause1>Your research team's data on the speedy syndrome may help. Could the two syndromes be connected?</cause1>
+    <cause2>Your research team is taking an early break after eating hot dogs for lunch.</cause2>
+    <cause3>Did you get a hot dog sample to the lab?</cause3>
+
+    <cure0>It's likely that a plant holds the key to the cure.</cure0>
+    <cure1>Desert, grassland, alpine, or tundra? One of these biomes has the plant that unlocks the cure.</cure1>
+    <cure2>Research indicates a sample of %s is needed.</cure2>
+    
+    <analyzing>Your research team is analyzing your sample...</analyzing>
+    <sampleCorrect>You're one step closer to curing the disease!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>
+  </slowingsyndromeresearch>
+  
+  <speedysyndromeresearch>
+    <animal0>We need a sample from an animal affected by the speedy syndrome.</animal0>
+    
+    <cause0>Your animals are hyperactive! What could have caused this?</cause0>
+    <cause1>Your research team is taking a coffee break.</cause1>
+    <cause2>Snap! Coffee?! Could caffeine be the cause?</cause2>
+    <cause3>Gather a sample from a coffee stand in your zoo.</cause3>    
+    
+    <cure0>Plants are usually helpful in finding disease cures.</cure0>
+    <cure1>Desert, grassland, alpine, or tundra? One of these biomes has the plant that unlocks the cure.</cure1>
+    <cure2>Research indicates a sample of %s is needed.</cure2>
+    
+    <analyzing>Your research team is analyzing your sample...</analyzing>
+    <sampleCorrect>That's right! You're closer to finishing the cure!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>  
+  </speedysyndromeresearch>
+  
+<catscratchfeverresearch>
+    <animal0>Meow! Your big cats may have cat-scratch fever. Gather a sample from a cat with 'itchy' symbols above its head.</animal0>
+    
+    <cause0>What's making these cats itch?</cause0>
+    <cause1>Could a cat enrichment item be the cause?</cause1>
+    <cause2>Scratch, scratch, scratch ...</cause2>
+    <cause3>Gather a sample from a scratching post. If the exhibit is without it, add one.</cause3>
+    
+    <cure0>Leaves from certain plants often have medicinal qualities.</cure0>
+    <cure1>Are there any plants that help with itchy skin?</cure1>
+    <cure2>Perhaps a moisturizing salve would soothe your itchy cats.</cure2>
+    <cure3>Try sampling some desert plants, perhaps from South Africa.</cure3>  
+    <cure4>Your research team thinks that aloe vera might be the piece you're looking for.</cure4>  
+
+    <analyzing>Your research team is analyzing your sample...</analyzing>
+    <sampleCorrect>That's right! You're closer to finishing the cure!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>
+  </catscratchfeverresearch>
+  
+  <pinkelephantdiseaseresearch>
+    <animal0>Pink elephants! Oh, my! The research team would like you to gather a sample from one.</animal0>
+    
+    <cause0>What's causing the elephants to turn pink?</cause0>
+    <cause1>Could one of their enrichment items be the cause?</cause1>
+    <cause2>Do your elephants play with anything that's pink?</cause2>
+    <cause3>Gather a sample from a pursuit ball.</cause3>
+    
+    <cure0>Your research team wonders if samples from anything pink could hold the key to the cure -- even if it's not in your zoo.</cure0>
+    <cure1>Search beyond the exhibit. Maybe it's something guests use.</cure1>
+    <cure2>Hey! What about that fluffy cloud of spun sugar that's also called "candy floss"? Doesn't it come from a pink food cart?!</cure2>
+    <cure3>Quick! Gather a sample from a cotton candy cart!</cure3>
+    
+    <analyzing>Your research team is testing your sample...</analyzing>
+    <sampleCorrect>Of course! You're getting closer to curing your pink elephants!</sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect>
+    </pinkelephantdiseaseresearch>
+
+  <tutoriallovediseaseresearch>
+    <animal0>Your dodo has the Tutorial Love disease! Walk up to the dodo with the hearts around its head, and press the SPACEBAR to take a sample.</animal0>
+    <animal1>Your first research report! Walk up to the dodo with the hearts around its head, and press the SPACEBAR to take a sample.</animal1>
+    <animal2>Find the dodo with the hearts over its head. Walk up to it, and press the SPACEBAR to take a sample.</animal2>
+    
+    <cause0>You need to sample some fruit for analysis.</cause0>
+    <cause1>Try sampling the bananas. </cause1>
+    <cause2>Walk up to the food dish with bananas, and press the SPACEBAR to take a sample.</cause2>
+    
+    <cure0>The disease cure is bright pink!</cure0>
+    <cure1>Try getting a sample of the pursuit ball!</cure1>
+    <cure2>Walk up to the pursuit ball, and press the SPACEBAR to take a sample.</cure2>
+
+    <analyzing>Your research team is analyzing your sample...</analyzing>
+    <sampleCorrect>Yes! You found one of the items to cure the disease! </sampleCorrect>
+    <sampleIncorrect>Analysis indicates this item doesn't unlock the cure. Sample something else or press H for a new research hint.</sampleIncorrect> 
+  </tutoriallovediseaseresearch>
+  
+  <BoxElder_Grassland>
+       
+    <hint0>Your research team is not interested in a round, young tree. Sample something older.</hint0>
+    <hint1>The lab is researching helicopter seeds.</hint1>
+    <hint2>Look for the grassland tree with seeds falling from it.</hint2>
+    <hint3>Gather a sample from a boxelder tree.</hint3>
+    
+  </BoxElder_Grassland>
+
+  <MonkeyPuzzleTree_Alpine>
+       
+    <hint0>Your research team is puzzled by this disease.</hint0>
+    <hint1>Most monkey species don't like cold weather!</hint1>
+    <hint2>This alpine tree grows in the Andes.</hint2>
+    <hint3>Gather a sample from a monkey puzzle tree to cure the disease.</hint3>
+    
+  </MonkeyPuzzleTree_Alpine>
+
+  <SaguaroCactus_Desert>
+       
+    <hint0>The cure you seek may lead you to a tree with prickly, pointy leaves. Watch out!</hint0>
+    <hint1>Small birds and tiny animals live in this tree.</hint1>
+    <hint2>Research results indicate a large desert tree is the cure.</hint2>
+    <hint3>Gather a sample from the saguaro cactus.</hint3>
+    
+    
+  </SaguaroCactus_Desert>  
+
+  <AgaveCactus_CenturyPlant_Desert>
+       
+    <hint0>The plant you seek has thick green leaves.</hint0>
+    <hint1>It holds considerable amounts of water.</hint1>
+    <hint2>This desert plant blooms once every 100 years.</hint2>
+    <hint3>Your research team discovered that the agave cactus century plant is the cure.</hint3>
+    
+  </AgaveCactus_CenturyPlant_Desert>  
+
+  <AgaveCactus_Desert>
+       
+    <hint0>The plant you seek has thick green leaves.</hint0>
+    <hint1>It holds considerable amounts of water</hint1>
+    <hint2>The plant that holds the key to the cure is a desert plant.</hint2>
+    <hint3>Your research team discovered that the agave cactus is the cure. </hint3>
+    
+  </AgaveCactus_Desert>  
+
+  <AloeVera_Desert>
+       
+    <hint0>This item is renowned for its medicinal properties.</hint0>
+    <hint1>This plant has fleshy, pointed leaves. </hint1>
+    <hint2>Search the desert biomes for this plant.</hint2>
+    <hint3>The aloe vera unlocks the cure.</hint3>
+    
+  </AloeVera_Desert> 
+
+  <Daisies_Grassland>
+       
+    <hint0>Could an herb cure this disease?</hint0>
+    <hint1>This herb sometimes blossoms with pink flowers.</hint1>
+    <hint2>This grassland plant grows all over the world.</hint2>
+    <hint3>Your research team requests a sample of daisies.</hint3>
+    
+  </Daisies_Grassland> 
+
+  <DwarfAzalea_Tundra>
+       
+    <hint0>This disease requires a cure from a strong plant.</hint0>
+    <hint1>This plant is related to the rhododendron.</hint1>
+    <hint2>This hearty plant found on the tundra holds the key to the cure.</hint2>
+    <hint3>Sample the dwarf azalea to discover the cure.</hint3>
+    
+  </DwarfAzalea_Tundra> 
+
+  <Edelweiss_Alpine>
+       
+    <hint0>Something bright and blooming may cure this disease.</hint0>
+    <hint1>This plant is the floral emblem of Switzerland.</hint1>
+    <hint2>This plant grows high in the Alps.</hint2>
+    <hint3>The edelweiss holds the key to the cure.</hint3>
+    
+  </Edelweiss_Alpine>  
+
+  <KingSagoPlant_Rainforest>
+       
+    <hint0>This cycad appeared in a report from your research team.</hint0>
+    <hint1>This cycad tree dominated the landscape in the Jurassic Period.</hint1>
+    <hint2>It's sometimes called the "king" of rainforest trees.</hint2>
+    <hint3>The King Sago Palm unlocks the cure.</hint3>
+    
+  </KingSagoPlant_Rainforest> 
+
+  <Speargrass_Alpine>
+       
+    <hint0>A feathery plant unlocks the cure to this disease.</hint0>
+    <hint1>Often called feather grass, this plant may not be in your zoo yet.</hint1>
+    <hint2>An evergreen, you can find it in New Zealand or growing in some alpine biomes.</hint2>
+    <hint3>A blade of speargrass is just what the doctor ordered. </hint3>
+    
+    
+  </Speargrass_Alpine>  
+
+  <TallGoldenrod_Grassland>
+       
+    <hint0>The item you seek grows in the meadows of North America.</hint0>
+    <hint1>Waving in prairie winds, this plant has a golden hue.</hint1>
+    <hint2>This grassland plant can grow up to 2 m (6 ft)! </hint2>
+    <hint3>The tall goldenrod holds the key to the cure.</hint3>
+    
+  </TallGoldenrod_Grassland>  
+
+  <TrashGround>
+    <cause0>What items in or near the exhibit could be the source?</cause0>
+    <cause1>Many of your zoo's extinct animals are not immune to modern-day bacteria.</cause1>
+    <cause2>Could your guests be making your animals sick? Gather a sample from something a guest leaves behind.</cause2>
+    <cause3>Your research team has a name for this disease. They call it the Litter Bug.</cause3>
+    <cause4>Gather a sample from a piece of trash, or a trash can. </cause4>
+  </TrashGround>
+  
+  <disease_names>
+    <poopingdiseasename>
+    Digestive Difficulties
+    </poopingdiseasename>
+  
+    <extinctfluname>
+    Litter Bug
+    </extinctfluname>
+  
+    <slowingsyndromename>
+    Slowing Syndrome
+    </slowingsyndromename>
+  
+    <speedysyndromename>
+    Speedy Syndrome
+    </speedysyndromename>
+  
+    <catscratchfevername>
+    Cat-scratch Fever
+    </catscratchfevername>
+  
+    <pinkelephantdiseasename>
+    Pink Elephants!
+    </pinkelephantdiseasename>
+
+    <tutoriallovediseasename>
+    Tutorial Love
+    </tutoriallovediseasename>  
+  </disease_names>
+  
+  
+</ZT2Strings>

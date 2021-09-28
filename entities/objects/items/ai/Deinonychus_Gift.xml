@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="Deinonychus_Gift">
+   <types>
+      <entity>
+         <item>
+            <Deinonychus_Gift/>
+         </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="UI/infopan/icon_Deinonychus_Gift.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Deinonychus_Gift"/>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_ExtinctGift="true"/>
+   </shared>
+</BFTypedBinder>

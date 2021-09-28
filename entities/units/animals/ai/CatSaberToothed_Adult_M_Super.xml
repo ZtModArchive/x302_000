@@ -1,0 +1,46 @@
+<BFTypedBinder binderType="CatSaberToothed_Adult_M_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Felidae>
+                        <CatSaberToothed>
+                           <CatSaberToothed_Adult>
+                              <CatSaberToothed_Adult_M>
+                              	<CatSaberToothed_Adult_M_Super/>
+                              </CatSaberToothed_Adult_M>
+                           </CatSaberToothed_Adult>
+                        </CatSaberToothed>
+                     </Felidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTDevComponent />
+      <BFAIEntityDataShared b_Super="true" f_BaseDonationAmount="135" s_Zoopedia="zoopedia:zoopedia_super_catsabertoothed:entry">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" lifespan="0.0050" privacy="-0.02" reproduction="0.33" social="0.40" stimulation="0.40" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/CatSaberToothed/CatSaberToothed_Adult_M.bfm" scale="0.85"/>
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

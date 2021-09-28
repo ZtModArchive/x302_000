@@ -1,0 +1,3879 @@
+<BFAITaskTemplateList>
+<!-- Default Tasks -->
+   <BFAITaskTemplate Name="ThrashWater" UniqueID="Deinonychus:ThrashWater">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND isFloating="true" breath="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Drowning" UniqueID="Deinonychus:ThrashWater_Drowning">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45" health=".25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLowBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Old" UniqueID="Deinonychus:ThrashWater_Old">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND isFloating="true" lifespan="GE 21.4"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10045"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45" health=".2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_DrownOld" GiveTo="target" Payload="subject" Chance="0.5" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Die" UniqueID="Deinonychus:ThrashWater_Die">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="GE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDieBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_DieOld" UniqueID="Deinonychus:ThrashWater_DieOld">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND isFloating="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_DrownOld/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Exercise Tasks -->
+   <BFAITaskTemplate Name="Wander" UniqueID="Deinonychus:Wander">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND rest="GE 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderMedium" UniqueID="Deinonychus:WanderMedium">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND rest="L 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="medium" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderFast" UniqueID="Deinonychus:WanderFast">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND rest="L 25" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-32"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="fast" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Rest Tasks -->
+   <BFAITaskTemplate Name="Yawn" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Deinonychus:Yawn">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalYawnGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Yawning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Yawn"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-10"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Yawn" GiveTo="subject" Timeout="-1" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Rest" UniqueID="Deinonychus:Rest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-38"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepShade" UniqueID="Deinonychus:SleepShade">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepBush" UniqueID="Deinonychus:SleepBush">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Privacy Tasks -->
+   <BFAITaskTemplate Name="SeekPrivacy" UniqueID="Deinonychus:SeekPrivacy">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap privacy="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="15">
+            <avoidEntityTypes>
+               <Guest/>
+            </avoidEntityTypes>
+         </BFBehEvasion>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_PrivacyRoar" GiveTo="subject" Timeout="30"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SeekPrivacy_Roar" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Deinonychus:SeekPrivacy_Roar">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" privacy="GE 45"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="15"/>
+         </Targets>
+         <Objects>
+            <t_PrivacyRoar/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-60"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData privacy="-90"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_DinoRoar" GiveTo="Guest_Adult" Payload="subject" Chance="50" Radius="30" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_DinoRoar" GiveTo="Guest_Young" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="b_SmallPredator" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>    
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Privacy" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Deinonychus:Screech_Privacy">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND inSight="5" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Hygiene Tasks -->
+   <BFAITaskTemplate Name="Sneeze" UniqueID="Deinonychus:Sneeze">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Sneeze/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sneezing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Scratch" TaskDelayMin="45" TaskDelayMax="90" UniqueID="Deinonychus:Scratch">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap hygiene="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Scratch"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GroomSelf" TaskDelayMin="90" TaskDelayMax="180" UniqueID="Deinonychus:GroomSelf">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="GroomSelf"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GroomIntently" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Deinonychus:GroomIntently">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Groom"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-45"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Groom"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-45"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Social Tasks -->
+   <BFAITaskTemplate Name="Contact_Call" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Deinonychus:Contact_Call">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Deinonychus" Payload="subject" Radius="5" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Deinonychus" Payload="subject" Radius="15" Chance="75" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Deinonychus" Payload="subject" Radius="25" Chance="50" Timeout="30"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Contact_Answer" UniqueID="Deinonychus:Contact_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ContactCall/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Chance="25" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Bully" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Deinonychus:Screech_Bully">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Adult" Payload="target" Radius="5" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Adult" Payload="target" Radius="15" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Adult" Payload="target" Radius="25" ChanceInRadius="25" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Young" Payload="target" Radius="5" Timeout="30" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Young" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus_Young" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_Bullied" GiveTo="target" Payload="subject" Timeout="30"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="target" Payload="subject" Timeout="30"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bullied" UniqueID="Deinonychus:Bullied">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects_AND>
+            <t_Bullied/>
+            <t_ScreechAt/>
+            <t_Flee/>
+         </Objects_AND>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Scream"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Animal" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Deinonychus:Screech_Animal">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_SmallPrey/>
+            <b_MediumPrey/>
+            <b_LargePrey/>
+            <b_SmallPredator/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Deinonychus" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Scream_Animal" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Deinonychus:Scream_Animal">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_MediumPrey/>
+            <b_LargePrey/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScreechAtTarget" UniqueID="Deinonychus:ScreechAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ScreechAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScreamAtTarget" UniqueID="Deinonychus:ScreamAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ScreamAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SnarlAtTarget" UniqueID="Deinonychus:SnarlAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_SnarlAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Snarl"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InvitePlayFightYoung" UniqueID="Deinonychus:InvitePlayFightYoung">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus_Young/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_PlayFightYoung" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom playTime="35">
+            <randomAnims>
+               <Stand_ChirpA weight="25"/>
+               <Stand_ChirpB weight="25"/>
+               <Stand_CallA weight="25"/>
+               <Stand_CallB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondPlayFightYoung" reserveTag="General" UniqueID="Deinonychus:RespondPlayFightYoung">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PlayFightYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="WaitPlayFight" targetBehSet="DockPlayFight"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayFighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayFightGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="HitMed"/>
+         <BFBehSyncSet subjectBehSet="HitMed" targetBehSet="Kick"/>
+         <BFBehPlaySet behSet="BitMedPlay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20"/>
+         <BFAITargetData rest="20" stimulation="-20" social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InvitePlayFightAdult" UniqueID="Deinonychus:InvitePlayFightAdult">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus_Adult/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_PlayFightAdult" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom playTime="35">
+            <randomAnims>
+               <Stand_ChirpA weight="25"/>
+               <Stand_ChirpB weight="25"/>
+               <Stand_CallA weight="25"/>
+               <Stand_CallB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondPlayFightAdult" reserveTag="General" UniqueID="Deinonychus:RespondPlayFightAdult">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PlayFightAdult/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="WaitPlayFight" targetBehSet="DockPlayFight"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayFighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayFightGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="HitMed"/>
+         <BFBehSyncSet subjectBehSet="HitMed" targetBehSet="Kick"/>
+         <BFBehPlaySet behSet="BitMedPlay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20"/>
+         <BFAITargetData rest="20" stimulation="-20" social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Stimulation Tasks -->
+   <BFAITaskTemplate Name="Sniff" TaskDelayMin="30" TaskDelayMax="180" UniqueID="Deinonychus:Sniff">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sniffing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSniffSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Sniff"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Sneeze" GiveTo="subject" Chance="50" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-20" social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LookAround" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Deinonychus:LookAround">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalLookAroundGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Look"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InitiateChaseAnimal" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Deinonychus:InitiateChaseAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND stimulation="GE 50" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_SmallPrey/>
+            <b_MediumPrey/>
+            <b_SmallPredator/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Deinonychus" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Deinonychus" Payload="target" Radius="15" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Deinonychus" Payload="target" Radius="25" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="subject" Payload="target" Timeout="30" OnlyOne="true" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Deinonychus" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Deinonychus" Payload="target" Radius="15" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Deinonychus" Payload="target" Radius="25" ChanceInRadius="75" Timeout="5" Timein="4" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" OnlyOne="true" Reconsider="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ChaseAnimal" UniqueID="Deinonychus:ChaseAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_AttackEnMasse/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="115"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:StalkingAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="6" pursuitRadius="40" locoSpeed="stalk"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10" stimulation="-30"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="Snarl"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PickUpBall" attachTag="hand" UniqueID="Deinonychus:PickUpBall">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RattleBall/>
+            <Ball/>
+            <Qualifiers_AND b_Moving="E false" inHabitat="true" waterDepth="LE 1"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPickUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="PickUpBall"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPickUpObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PickUpRubberToy" attachTag="hand" UniqueID="Deinonychus:PickUpRubberToy">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <RubberToy/>
+            <Qualifiers_AND inHabitat="true" waterDepth="LE 1"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPickUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="PickUpBall"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPickUpObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DropBall" Priority="10" objectContainer="hand" UniqueID="Deinonychus:DropBall">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <shade/>
+            <Qualifiers_AND inHabitat="true" inSight="20"/>
+         </Targets>
+         <Objects>
+            <RattleBall/>
+            <RubberToy/>
+            <Ball/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="ChewObject"/>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Dropping" useObjectName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="2" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="ChewObject"/>
+            <BFBehPlaySet behSet="DropObject"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap stimulation="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PickUpBone" attachTag="hand" UniqueID="Deinonychus:PickUpBone">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Bone/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPickUp" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="GrabBall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PickingUp" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPickUpObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="PickUpBone"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DropBone" Priority="10" objectContainer="hand" UniqueID="Deinonychus:DropBone">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <shade/>
+            <Qualifiers_AND inHabitat="true" inSight="20"/>
+         </Targets>
+         <Objects>
+            <Bone/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Carrying" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Dropping" useObjectName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalCarryObjectGood" priority="2" timeout="60" global="false" useTargetObject="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="DropObject"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetLeaves" reserveTag="General" UniqueID="Deinonychus:GetLeaves">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <ShelterMaterials_Leaves/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="ApproachShelterMaterials"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="PickUpLeaves"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+    <BFAITaskTemplate Name="StartGroundNest" UniqueID="Deinonychus:StartGroundNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <ground_cover/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <Leaf/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToCreateGroundNest" useObjectName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" exercise="-10"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="CreateGroundNest"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+  <BFAITaskTemplate Name="BuildUpGroundNest" UniqueID="Deinonychus:BuildUpGroundNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <GroundNest_Shelter/>
+            <Qualifiers_AND f_ConstructionLevel="LE 99" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <Leaf/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="ApproachGroundNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" exercise="-10"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="BuildGroundNest"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   
+<!-- Hunger/Thirst Tasks -->
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="Deinonychus:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="Eat_Drink"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Reproduction Tasks -->
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Deinonychus:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Deinonychus:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="80">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Deinonychus:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+            <Qualifiers b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="50">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="Deinonychus:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="Deinonychus:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="1204.21" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNestShade" UniqueID="Deinonychus:LayNestShade">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_Dirt" UniqueID="Deinonychus:LayNest_Dirt">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <dirt/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_GroundCover" UniqueID="Deinonychus:LayNest_GroundCover">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CheckNest" reserveTag="General" UniqueID="Deinonychus:CheckNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <DeinonychusNest/>
+            <DeinonychusNest_Super/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_CheckNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1500">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Growl"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+               <BFAIToken Name="t_CheckNest" GiveTo="subject" Timein="60" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayLostNest" reserveTag="General" UniqueID="Deinonychus:LayLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <shade/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuildLostNest" reserveTag="General" UniqueID="Deinonychus:BuildLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <DeinonychusNest/>
+            <DeinonychusNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 0" inHabitat="true" inSight="5"/>
+         </Targets>
+         <Objects>
+            <t_BuildLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWorkOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WorkingOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildDeinonychusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_LayEggsLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEgg_LostNest" reserveTag="General" UniqueID="Deinonychus:LayEgg_LostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <DeinonychusNest/>
+            <DeinonychusNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 30" inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_LayEggsLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildDeinonychusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_FinishNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FinishNest" reserveTag="General" UniqueID="Deinonychus:FinishNest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <DeinonychusNest/>
+            <DeinonychusNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 60" inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_FinishNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FinishDeinonychusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="IdleNest" UniqueID="Deinonychus:IdleNest">
+      <BFAICreateData>
+         <Subjects>
+            <DeinonychusNest_Egg/>
+            <DeinonychusNest_Egg_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="IdleEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+<!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+   <BFAITaskTemplate Name="HatchEgg" UniqueID="Deinonychus:HatchEgg">
+      <BFAICreateData>
+         <Subjects>
+            <DeinonychusNest_Egg/>
+            <DeinonychusNest_Egg_Super/>
+            <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 1.60"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="200"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="HatchEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Guest Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackGuest" Priority="10" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Deinonychus:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedDeinonychus"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Escape Tasks -->
+   <BFAITaskTemplate Name="JumpLowFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Deinonychus:JumpLowFence">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+         </Subjects>
+         <Targets>
+            <b_lowfence/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="30" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToJumpFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_JumpFence" targetAnim="Run_JumpFence" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Run_JumpFence"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="JumpLowFence_Privacy" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Deinonychus:JumpLowFence_Privacy">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+         </Subjects>
+         <Targets>
+            <b_lowfence/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="15">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToJumpFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_Fence" targetAnim="Run_JumpLowFence" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Run_JumpLowFence"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Predator/Prey Interaction Tasks -->
+   <BFAITaskTemplate Name="Attacked" UniqueID="Deinonychus:Attacked">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+		  <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="Deinonychus:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GatherPack" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Deinonychus:GatherPack">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" social="GE 50"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Gather" GiveTo="Deinonychus" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_PackGathered" GiveTo="subject"  Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GatherPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Chirp"/>         
+         <BFBehPlaySet behSet="Chirp"/>         
+         <BFBehPlaySet behSet="Chirp"/>         
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSocialGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+	 <BFBehAnimate targetAnim="Walk_Ahead" playTime="3"/>
+	 <BFBehPlaySet behSet="Stand_Idle" playTime="3"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Midday" UniqueID="Deinonychus:LeadPack_Midday">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDayMin="GE 10" timeOfDayMax="LE 14"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadPackTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Deinonychus" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehMove locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Morning" UniqueID="Deinonychus:LeadPack_Morning">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDay="LE 10"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadPackTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Deinonychus" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehMove locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Night" UniqueID="Deinonychus:LeadPack_Night">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDay="GE 22"/>
+         </Subjects>
+         <Targets>
+            <Deinonychus/>
+            <Qualifiers notInSight="30"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PackCallMissing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Chirp" GiveTo="Deinonychus" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehPlaySet behSet="Chirp"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="LeadPack_Default" UniqueID="Deinonychus:LeadPack_Default">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="750"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadingPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Deinonychus" Payload="subject" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehWander minPlayTime="10" maxPlayTime="15" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="LeadPackHunt" UniqueID="Deinonychus:LeadPackHunt">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDay="GE 22"/>
+         </Subjects>
+         <Targets>
+            <b_LargePrey/>
+            <b_MediumPrey/>
+            <b_SmallPrey/>
+            <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000" needPointsGood="60"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAttack" GiveTo="Deinonychus" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Attacked" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehPlaySet behSet="ChasePrey"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PackGather" UniqueID="Deinonychus:PackGather">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Gather/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JoinPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehMove moveRadius="10" locoSpeed="medium"/>
+         <BFBehMove moveRadius="5" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="PackMove" UniqueID="Deinonychus:PackMove">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FollowAlpha/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MoveAsPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="PackHunt" UniqueID="Deinonychus:PackHunt">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FollowAttack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ChasePrey"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_MissPrey" GiveTo="subject" Payload="target" Timeout="20"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="GatherPackHuntPrey" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Deinonychus:GatherPackHuntPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" hunger="GE 70"/>
+         </Subjects>
+         <Targets>
+            <b_LargePrey/>
+            <Qualifiers notInSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Gather" GiveTo="Deinonychus" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+               <BFAIToken Name="t_PreyReady" GiveTo="subject" Payload="target" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GatherPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Chirp" playTime="5"/>         
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSocialGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPackHuntPrey" UniqueID="Deinonychus:LeadPackHuntPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_PreyReady/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_WeakenPrey" GiveTo="Deinonychus" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="30" Chance="50" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>    
+	 <BFBehPlaySet behSet="Stand_Idle" playTime="3"/>
+	 <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>p
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="evade"/>
+         <BFBehPlaySet behSet="AttackMed"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData health="10"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_WeakenPrey" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	       </BFAITokenList>
+	    </BFBehSendToken>    
+	 </BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="WeakenPrey" UniqueID="Deinonychus:WeakenPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers rest="LE 80"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_WeakenPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" failureRadius="80" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+   	<BFAIAttributeFloatMap rest="10"/>
+   	<BFAITargetData health="5" rest="10"/>
+        <BFBehExecTask>
+           <BFBehPlaySet behSet="Scream"/>        
+           <BFBehSendToken>
+	      <BFAITokenList>
+	         <BFAIToken Name="t_BackOff" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	         <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true" OnlyOne="true"/>
+	      </BFAITokenList>
+	   </BFBehSendToken>    
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="WeakenPrey_BackOff" UniqueID="Deinonychus:WeakenPrey_BackOff">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_BackOff/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="10" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+        <BFBehExecTask>
+           <BFBehSendToken>
+	      <BFAITokenList>
+	         <BFAIToken Name="t_WeakenPrey" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	      </BFAITokenList>
+	   </BFBehSendToken>    
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>        
+   <BFAITaskTemplate Name="AttackWeakPrey" UniqueID="Deinonychus:AttackWeakPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+            <Qualifiers_AND hunger="GE 70" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND rest="GE 90" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_WeakenPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_AttackPrey" GiveTo="Deinonychus" Payload="target" radius="20" Timeout="30" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>    
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttack" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackingBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehSyncSet subjectBehSet="AttackPrey" targetBehSet="Attacked"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackPrey" UniqueID="Deinonychus:AttackPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_AttackPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="7" pursuitRadius="30" failureRadius="80" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+   	<BFAIAttributeFloatMap rest="10"/>
+   	<BFAITargetData health="5" rest="10"/>
+        <BFBehExecTask>
+           <BFBehPlaySet behSet="AttackMed"/>        
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>     
+   
+<!-- Mother/Young Interaction Tasks -->
+
+<!-- Aging Tasks -->
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="Deinonychus:Born">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Deinonychus:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 7.25"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="Deinonychus:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Deinonychus_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="Deinonychus:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Deinonychus_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperF" UniqueID="Deinonychus:Age_SuperF">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young_F_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Deinonychus_Adult_F_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperM" UniqueID="Deinonychus:Age_SuperM">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus_Young_M_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Deinonychus_Adult_M_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Deinonychus:Old">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers lifespan="GE 21.4"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="Deinonychus:Die">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   
+<!-- Rampage Tasks -->
+   <BFAITaskTemplate Name="WanderRampage" UniqueID="Deinonychus:WanderRampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="60"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RunningAroundRampage"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehWander minPlayTime="5" locoSpeed="fast" maxPlayTime="10" avoidWater="true" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BashFence_Rampage" TaskDelayMin="30" TaskDelayMax="75" UseForKeeperPanel="false" sensorTag="habitat" Priority="4" reserveTag="General" UniqueID="Deinonychus:BashFence_Rampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <fence/>
+            <Qualifiers_AND inSight="10" f_FenceStrength="LE 8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="140"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_Fence" locoSpeed="medium"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="SmashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Growl"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Rampage" TaskDelayMin="30" TaskDelayMax="75" Priority="5" reserveTag="General" UniqueID="Deinonychus:AttackGuest_Rampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers_AND b_Rampage="E true" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects_AND>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="10" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedDeinonychus"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SmashBuilding" TaskDelayMin="30" TaskDelayMax="75" reserveTag="Rampage" Priority="4" UniqueID="Deinonychus:SmashBuilding">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <tree/>
+            <building/>
+            <Qualifiers_AND inSight="10" f_BuildingStrength="LE 10"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="useContainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   
+<!-- DRT Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackDRTRobot" TaskDelayMin="30" TaskDelayMax="45" Priority="10" reserveTag="General" UniqueID="Deinonychus:AttackDRTRobot">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Deinonychus/>
+            <Qualifiers_AND b_Rampage="E true" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+           <t_InviteAttack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_DistractedDino" GiveTo="DinoRecoveryCrateTeam" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedDeinonychus"/>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Tranquilized Tasks -->
+   <BFAITaskTemplate Name="Sleep_Tranquilized" Priority="10" UniqueID="Deinonychus:Sleep_Tranquilized">
+      <BFAICreateData>
+         <Subjects>
+            <Deinonychus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_TranqHit/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="TranquilizedRampage"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" b_Rampage="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Wake" GiveTo="subject" Timeout="5"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+</BFAITaskTemplateList>

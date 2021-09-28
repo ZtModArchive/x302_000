@@ -1,0 +1,48 @@
+<BFTypedBinder binderType="DinoRecoveryTranqTeam_Adult_M_01">
+  <types>
+    <entity>
+      <actor>
+        <people>
+          <Staff>
+            <DinoRecoveryTranqTeam>
+              <DinoRecoveryTranqTeam_Adult_M>
+                <DinoRecoveryTranqTeam_Adult_M_01/>
+              </DinoRecoveryTranqTeam_Adult_M>
+            </DinoRecoveryTranqTeam>
+          </Staff>
+        </people>
+      </actor>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity/>
+  </instance>
+  <shared>
+    <ZTPlacementData placeable="true"/>
+  </shared>
+  <binder>
+    <BFNamedBinder binderName="headObj">
+      <instance>
+        <BFPhysObj/>
+      </instance>
+      <shared>
+        <BFSharedRandomTextureInfo>
+          <replacementSet>
+            <group weight="1">
+              <item material="guest_m_head" image="entities\units\shared\guest_adult_m_head_01.dds" layer="base"/>
+              <item material="guest_m_headlo" image="entities\units\shared\guest_adult_m_headlo_01.dds" layer="base"/>
+            </group>
+            <group weight="1">
+              <item material="guest_m_head" image="entities\units\shared\guest_adult_m_head_05.dds" layer="base"/>
+              <item material="guest_m_headlo" image="entities\units\shared\guest_adult_m_headlo_04.dds" layer="base"/>
+            </group>
+            <group weight="1">
+              <item material="guest_m_head" image="entities\units\shared\guest_adult_m_head_03.dds" layer="base"/>
+              <item material="guest_m_headlo" image="entities\units\shared\guest_adult_m_headlo_03.dds" layer="base"/>
+            </group>
+          </replacementSet>
+        </BFSharedRandomTextureInfo>
+      </shared>
+    </BFNamedBinder>
+  </binder>
+</BFTypedBinder>

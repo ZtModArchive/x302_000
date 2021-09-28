@@ -1,0 +1,330 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Eat_Drink">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Eat_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Eat_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_EatTrough_Drink.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_EatTrough_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_AngryCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_AngryCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_Distress_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_Distress_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_HappyCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_HappyCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_Idle_Sick">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_Idle_Sick.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_PreenA">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_PreenA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_PreenB">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_PreenB.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Lie_Shake">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Lie_Shake.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Run_Ahead">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Run_Ahead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Sleep_Idle_Sick">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Sleep_Idle_Sick.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_2Sleep_Attacked">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_2Sleep_Attacked.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_AngryCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_AngryCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Bite">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Bite.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Bite_High">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Bite_High.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Bite_Low">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Bite_Low.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Distress_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Distress_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_FeedYoung">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_FeedYoung.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_HappyCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_HappyCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Peck">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Peck.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Peck_Angry">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Peck_Angry.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_PreenOther">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_PreenOther.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_PreenYoung">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_PreenYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_Shake">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_Shake.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_StampLeft">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_StampLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Adult_Stand_StampRight">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Adult_F_Stand_StampRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   
+   <!--YOUNG-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_BeingFed">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_BeingFed.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Eat_Drink">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Eat_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Eat_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Eat_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_EatTrough_Drink">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_EatTrough_Drink.wav" volume=".8" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_EatTrough_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_EatTrough_Idle.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_AngryCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_AngryCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_Distress_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_Distress_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_HappyCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_HappyCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_Idle_Sick">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_Idle_Sick.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_PreenA">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_PreenA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_PreenB">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_PreenB.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Lie_Shake">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Lie_Shake.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Run_Ahead">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Run_Ahead.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Sleep_Idle_Sick">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Sleep_Idle_Sick.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_2Sleep_Attacked">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_2Sleep_Attacked.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_AngryCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_AngryCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_AttackGuest.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Bite">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Bite.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Bite_High">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Bite_High.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Bite_Low">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Bite_Low.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Distress_Call">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Distress_Call.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_FeedYoung">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_FeedYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_HappyCall">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_HappyCall.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Peck">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Peck.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Peck_Angry">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Peck_Angry.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_PreenOther">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_PreenOther.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_PreenYoung">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_PreenYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_Shake">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_Shake.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_StampLeft">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_StampLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dodo_Young_Stand_StampRight">
+         <snd name="entities/units/animals/Dodo/sound/Dodo_Young_F_Stand_StampRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+    
+</soundtags>

@@ -1,0 +1,49 @@
+<BFTypedBinder binderType="CowAuroch_Adult_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Artiodactyla>
+                     <Bovidae>
+                        <CowAuroch>
+                           <CowAuroch_Adult>
+                              <CowAuroch_Adult_F/>
+                           </CowAuroch_Adult>
+                        </CowAuroch>
+                     </Bovidae>
+                  </Artiodactyla>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities/units/animals/CowAuroch/CowAuroch_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="CowAuroch_Adult_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,2)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/CowAuroch/CowAuroch_Adult_F.bfm" scale="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance b_Pregnant="false"/>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

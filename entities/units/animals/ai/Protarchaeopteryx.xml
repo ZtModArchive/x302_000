@@ -1,0 +1,172 @@
+<BFTypedBinder binderType="Protarchaeopteryx" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Aves>
+						<Saurischia>
+							<Caudipteridae>
+								<Protarchaeopteryx />
+							</Caudipteridae>
+						</Saurischia>
+					</Aves>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\Protarchaeopteryx\Protarchaeopteryx_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:Protarchaeopteryx" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Protarchaeopteryx_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_Product="Extinct" f_BaseDonationAmount="60" f_MaxTourValue="20" p_FightOffset="0 -.75 180" p_PredatorOffset="0 -0.75 0" s_DonateToken="t_DonateProtarchaeopteryx" p_FeedYoungNode="0 -1 180" p_EggOffset="0 -.5 0" p_MateOffset="-1 0 0" p_PreyOffset="0 1 0" s_Endangerment="Extinct" b_ExtinctAnimal="true" s_Species="Protarchaeopteryx" b_Basic="true" b_Carnivore="true" b_Insectivore="true" s_KeeperEatType="FoodDish_Meat" b_SmallAnimal="true" b_FoodDishEater="true" s_KeeperDrinkType="FoodDish_Water" b_SubstratePileEater="true" f_adoptRemoveTime="0" f_adoptRarity="20" s_Zoopedia="zoopedia:zoopedia_Protarchaeopteryx:entry" f_RequiredInitialSpace="250" f_RequiredAdditionalSpace="120" p_PursuitBallNode="0 -.25 0" p_TroughNode="0 -1.15 180" b_GrasslandAnimal="true" b_RubberToyUser="true" b_RattleBallUser="true" b_BallUser="true" b_FeederBallUser="true" p_FoodDishNode="0 -.25 0" p_BallNode="0 -1.2 0" b_BeefShankEater="true" b_ShadeStructureUser="true" b_HeatLampUser="true" b_KopjeTopUser="true" b_LargeWoodenShelterUser="true" b_SmallWoodenShelterUser="true" b_SmallRockCaveUser="true" b_LargeRockCaveUser="true" b_LargeSnowCaveOddUser="true" b_SmallSnowCaveOddUser="true" b_LargeExtinctShelterUser="true" />
+		<BFGBiomeData location="wetlands_asia_southeast" locationSensitivity="10">
+			<alpine sensitivity="-7" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-7" />
+			<coastal sensitivity="-10" />
+			<desert sensitivity="-7" />
+			<grassland sensitivity="-2" />
+			<reef sensitivity="-10" />
+			<pelagic sensitivity="-10" />
+			<temperateforest sensitivity="-7" />
+			<tropicalrainforest sensitivity="-7" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-2" />
+			<scrub sensitivity="-2" />
+			<wetlands sensitivity="3" primary="true" />
+		</BFGBiomeData>
+		<ZTPlacementData waterPlacement="false" icon3Doffset="0 0.0 1.19" icon3Dscale=".9" />
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_groom" effect="SuperStaffGroom" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" effect="SuperStaffHeal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BFActorComponent actorfile="entities/units/animals/Protarchaeopteryx/Protarchaeopteryx_Adult_F.bfm" scale="0.8" switch="0 5000 5001 5002 5003" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 -1" ankleRotVectorRight="0 0 -1" heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" />
+					<BFSecondaryAnimComponent animName="Secondary_Tail" frequency="1.5" chance="40" validAnims="Stand_Idle,Stand_Turn180,Stand_TurnL,Stand_TurnLeft180,Stand_TurnLeft90,Stand_TurnR,Stand_TurnRight90,Stand_Breath,Stand_LookLeft,Stand_LookRight,Stand_PeckGuest,Stand_Scratch,Sit_Idle,Sit_LookLeft,Sit_LookRight,Poop_Idle,Rest_Idle,StandLeftLeg_Idle,StandRightLeg_Idle,HeadDown_Idle,HeadDown_Nudge,HeadDown_Scratch,TreadWater_Call,TreadWater_Idle,TreadWater_TurnRight,TreadWater_TurnLeft" maxLOD="1" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFCollisionComponent grid="Bip01 Spine" />
+					<BFGridCollisionComponent />
+					<BFDecalTextureCycleComponent materialName="Protarchaeopteryx_Adult_F">
+						<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.40" />
+					<BFHeadLookComponent leftRightAnimName="Secondary_Headlook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="TurnLeft90" text="anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight90" text="anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="LieLong" text="anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;" />
+						<macro name="Walk2LieBelly" text="!anim &apos;Walk_2Stand&apos;,anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="PerchMapleTree" text="!anim &apos;Perch_Idle&apos; blend .3 advance_cur_t, exit" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Sit_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Lie_2Stand&apos;, anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_LeftA&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+						<macro name="TurnLeft180" text="anim &apos;Stand_TurnLeft90&apos;, anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight180" text="anim &apos;Stand_TurnRight90&apos;, anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="Ground2Perch" text="anim &apos;Walk_2Fly&apos;,anim &apos;Fly_2Perch&apos;, dis, anim &apos;Perch_Idle&apos;" />
+						<macro name="Perch2Ground" text="anim &apos;Perch_Idle&apos;,!anim &apos;Perch_2Fly&apos;,  dis, exit" />
+						<macro name="Ground2PerchSleep" text="anim &apos;Walk_2Fly&apos;,anim &apos;Fly_2Perch&apos;, dis, anim &apos;Perch_Idle&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Fight y="-1.5" />
+						<Dock_Fight2 y="-1.5" yaw="180" />
+						<Dock_Fence y="-2" yaw="180" />
+						<Dock_BeefShank y="-0.7" yaw="180" />
+						<Dock_Guest y="-0.35" yaw="180" />
+						<Dock_HollowLogCenter y="-0.85" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehLocoSwitchSet loopFlag="true">
+							<behaviorTable>
+								<ground behSet="Stand_Idle" />
+								<water behSet="ThrashWater" />
+							</behaviorTable>
+						</BFBehLocoSwitchSet>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Stand" />
+							<slow name="Walk" minAnimSpeed=".8" maxAnimSpeed="1.0" />
+							<medium name="Run" minAnimSpeed=".8" maxAnimSpeed="1.0" />
+							<fast name="WingSpread" minAnimSpeed=".8" maxAnimSpeed="1.0" />
+							<fly name="Fly" minAnimSpeed=".8" maxAnimSpeed="1.0" />
+							<stalk name="Stalk" minAnimSpeed=".8" maxAnimSpeed="1.0" />
+							<evade name="WingSpread" minAnimSpeed=".8" maxAnimSpeed="1.6" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1" stationaryAnim="Drown_Idle">
+							<stop name="Drown" />
+							<slow name="Fly" minAnimSpeed=".8" maxAnimSpeed=".8" />
+							<medium name="Fly" minAnimSpeed="1.0" maxAnimSpeed="1.0" />
+							<fast name="Fly" minAnimSpeed="1.2" maxAnimSpeed="1.2" />
+							<fly name="Fly" />
+							<stalk name="Fly" />
+							<evade name="Fly" minAnimSpeed=".8" maxAnimSpeed="1.6" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="5500">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

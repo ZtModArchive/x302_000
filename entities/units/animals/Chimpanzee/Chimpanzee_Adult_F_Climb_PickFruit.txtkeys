@@ -1,0 +1,4 @@
+<TEXTKEY>
+   <key frame="18" text="{Node_Carry_R} attach object"/>
+   <key percent="100" text="{Node_Carry_R} detach object"/>
+</TEXTKEY>

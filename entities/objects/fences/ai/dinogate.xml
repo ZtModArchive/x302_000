@@ -1,0 +1,73 @@
+<BFTypedBinder binderType="dinogate">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <dinogate/>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTEntityDestructionData entityRuinBinderName="dinofence_broken" secsToRemove="0.0f"/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\staffgate_df\staffgate_icon.dds"/>
+         </UIAspect>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="PDLC1" s_uisort="tb" f_FenceStrength="10" s_Broken="dinofence_broken" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dino_gate_vert"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dino_gate_diag"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFRSceneGraphComponent modelfile="entities\objects\fences\dino_fence\dinofence_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="gate_animation">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\objects\fences\dino_fence\dino_gate_anim.bfm" updateWhenNotVisible="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+	    <ZTEntityDestructionComponent/>
+	 </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="150">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,444 @@
+<BehaviorSets>
+   <FollowCrateTeam>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="5" pursuitRadius="100" failureRadius="600" locoSpeed="fast"/>
+         <BFBehAnimateRandom minPlays="1" maxPlays="2">
+            <randomAnims>
+               <Stand_Wave weight="75"/>
+               <Stand_PirateJig weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </FollowCrateTeam>   
+   <DistractDino>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="100" failureRadius="600" locoSpeed="slow"/>
+         <BFBehPlaySet behSet="Dance"/>
+      </behaviors>
+   </DistractDino>   
+   <Dance>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Robot"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="70"/>
+               <Stand_PirateJig weight="30"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="50"/>
+               <Stand_PirateJig weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Dance>   
+   
+<!-- Dino Recovery Building Interactions -->
+   <ExitDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" playTime="4"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuilding>  
+   <ExitDinoRecoveryBuildingFast>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" interruptFlag="true"/>
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+         <BFBehAnimate targetAnim="WalkFast_Ahead" />
+      </behaviors>
+   </ExitDinoRecoveryBuildingFast>  
+   <ReturnDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Up" GiveTo="target" Timeout="120" RetainOnFailure="true" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterRobot" locoSpeed="slow" redock="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EnterDRTBuilding" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </ReturnDinoRecoveryBuilding>  
+   <EnterDinoRecoveryBuilding>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_TurnRightA" />
+         <BFBehAnimate targetAnim="Walk_TurnLeftA" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehAnimate targetAnim="Walk_Ahead" />
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EnterDRTBuilding" GiveTo="DinoRecoveryTranqTeam" Payload="target" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </EnterDinoRecoveryBuilding>  
+
+<!-- Guest Attacks for Robot -->
+   <Turn180>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Turn180" interruptFlag="true"/>
+      </behaviors>
+   </Turn180>
+   <DockAttacked>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="RunScream_2Attacked" interruptFlag="true"/>
+      </behaviors>
+   </DockAttacked>
+   <WaitAnimalInteraction>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="WaitAnimalInteraction_Land"/>
+               <water behSet="WaitAnimalInteraction_Water"/>
+               <default behSet="WaitAnimalInteraction_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </WaitAnimalInteraction>
+   <WaitAnimalInteraction_Land>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom interruptFlag="true" loopFlag="true">
+            <randomAnims>
+               <Dance_Idle weight="50"/>
+               <Stand_PirateJig weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </WaitAnimalInteraction_Land>
+   <WaitAnimalInteraction_Water>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </WaitAnimalInteraction_Water>   
+   <AttackedAnkylosaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Ankylosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedAnkylosaurus>
+   <AttackedDeinonychus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Guest" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Run_2Tranquilized_Deinonychus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedDeinonychus>
+   <AttackedKentrosaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Kentrosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedKentrosaurus>
+   <AttackedStegosaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Stegosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStegosaurus>
+   <AttackedStokesosaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Stokesosaurus" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStokesosaurus>
+   <AttackedUtahraptor>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_2Tranquilized_Utahraptor" interruptFlag="true" blendDuration="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedUtahraptor>
+   <AttackedCarnotaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_RobotDestroyed" GiveTo="DinoRecoveryCrateTeam" Timeout="30"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Stand_Attacked_Carnotaurus"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="0"/>
+      </behaviors>
+   </AttackedCarnotaurus>
+   <AttackedStyracosaurus>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStyracosaurus>
+   <AttackedTriceratops>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:DRTRobotAttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTriceratops>
+   <AttackedTyrannosaurusRex>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_RobotDestroyed" GiveTo="DinoRecoveryCrateTeam" Timeout="30"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Stand_Attacked_TyrannosaurusRex"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="0"/>
+      </behaviors>
+   </AttackedTyrannosaurusRex>
+
+<!-- Bathroom Tasks -->
+   <Queue>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <BFBehDockQueue hitRadius="2.5" queueRadius="12" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WaitLine" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWaitQueue minWaitTime="30" maxWaitTime="60" waitBehSet="WaitInLine"/>
+         <BFBehDock targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Queue>
+   <UseBathroom>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+      </behaviors>
+   </UseBathroom>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryRobot_Adult_M/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Male_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomLarge>
+      <subjects>
+         <DinoRecoveryRobot_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_Female_Enter" targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomLarge>
+   <UseBathroomSmall>
+      <subjects>
+         <DinoRecoveryRobot/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:GoingUseBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>      
+         <BFBehPlaySet behSet="Queue"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:UsingBathroom"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </UseBathroomSmall>
+
+</BehaviorSets>

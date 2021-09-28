@@ -1,0 +1,340 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Attacked_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Attacked_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Eat_Chew">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Chew.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Eat_Drink">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Eat_Swallow">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Swallow.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_EatTrough_Chew">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_EatTrough_Chew.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_EatTrough_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_EatTrough_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_EatTrough_Swallow">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_EatTrough_Swallow.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Lie_Growl">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Growl.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Lie_Grunt">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Grunt.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Lie_Sneeze">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Lie_Sniff">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Sniff.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Lie_Yawn">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Yawn.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Sleep_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_2Attacked.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_AttackPosture">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackPosture.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_BashFence">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_BashFence.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_CleanYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_CleanYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_Dig">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Dig.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_MarkGround">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_MarkGround.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_MarkObject">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_MarkObject.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_NurseYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_NurseYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_Ram">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Ram.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_RollYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_RollYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_ScratchBelly">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_ScratchBelly.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_ScratchFace">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_ScratchFace.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_Shiver">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Shiver.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_Squeak">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Squeak.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_SwipeLeft">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_SwipeLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Adult_Stand_SwipeRight">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_SwipeRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   
+   <!--YOUNG-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_RollOver">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_RollOver.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_BeCleaned">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_BeCleaned.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_Nurse">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_Nurse.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Attacked_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Attacked_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Eat_Chew">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Eat_Chew.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Eat_Drink">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Eat_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Eat_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Eat_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Eat_Swallow">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Eat_Swallow.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_EatTrough_Chew">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_EatTrough_Chew.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_EatTrough_Drink">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_EatTrough_Drink.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_EatTrough_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_EatTrough_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_EatTrough_Swallow">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_EatTrough_Swallow.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Lie_Growl">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Lie_Growl.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Lie_Grunt">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Lie_Grunt.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Lie_Sneeze">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Lie_Sneeze.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Lie_Sniff">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Lie_Sniff.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Lie_Yawn">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Lie_Yawn.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Sleep_Idle.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_2Attacked">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_2Attacked.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_AttackGuest.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_AttackPosture">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_AttackPosture.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_BashFence">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_BashFence.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_CleanYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_CleanYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_Dig">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_Dig.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_MarkGround">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_MarkGround.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_MarkObject">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_MarkObject.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_NurseYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_NurseYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_Ram">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_Ram.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_RollYoung">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_RollYoung.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_ScratchBelly">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_ScratchBelly.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_ScratchFace">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_ScratchFace.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_Shiver">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_Shiver.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_Squeak">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_Squeak.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_SwipeLeft">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_SwipeLeft.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Diprotodon_Young_Stand_SwipeRight">
+         <snd name="entities/units/animals/Diprotodon/sound/Diprotodon_Young_F_Stand_SwipeRight.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+    
+</soundtags>

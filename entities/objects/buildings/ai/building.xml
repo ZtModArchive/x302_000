@@ -1,0 +1,86 @@
+<BFTypedBinder binderType="building" abstract="true">
+	<types>
+		<entity>
+			<building />
+		</entity>
+	</types>
+	<shared>
+		<BFAIEntityDataShared b_VisibleThroughRemoteStations="true" b_CommerceBuilding="false" b_DonationAcceptor="false" b_ReceiveUpdates="1" b_SeeThrough="false" s_GenerateName="byType" f_FameReq="0" f_BuildingStrength="100"/>
+		<ZTPlacementData moveable="false" randomRotate="false" gridSnap="true" autoFootprint="true" terrainFlatten="true" sound="place_building" deleteSound="recycle_building" minimumHeadroom="5.0">
+			<stompData>
+				<delete>
+					<treat />
+					<bush />
+					<grass />
+					<thicket />
+					<wildflowers />
+					<fungi />
+					<watersurfacefoliage />
+					<Poop />
+				</delete>
+				<prevent />
+			</stompData>
+		</ZTPlacementData>
+		<BFGCollisionData score="100000">
+		    <typeScores vehicle="0"/>
+      </BFGCollisionData>
+		<ZTEntitySelector>
+			<BFPhysObj>
+				<BFTerrainDecalComponent imageName="UI/fx/selection/object.tga" alphaBlend="true">
+					<lighting emmisiveColor="255 255 255" specularColor="255 255 255" diffuseColor="255 255 255" ambientColor="255 255 255" />
+				</BFTerrainDecalComponent>
+			</BFPhysObj>
+		</ZTEntitySelector>
+		<ZTEntityCrater crateType="ObjectCrate_df" crateContainer="default" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent minSwitch="0 15 25 35 40" />
+					<BFGroundFitComponent heightOffset="0.0" />
+					<BFCollisionComponent />
+					<BFTerrainPaintComponent />
+					<BFDistanceCullComponent firstPersonOnly="true" cullDistance="110" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Rampage1 x="0" y="-4" z="0" yaw="180" />
+						<Dock_Rampage2 x="-4" y="0" z="0" yaw="-90" />
+						<Dock_Rampage3 x="0" y="4" z="0" yaw="0" />
+						<Dock_Rampage4 x="4" y="0" z="0" yaw="90" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance s_name="unnamed" />
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<ZTPhotoAnalysisComponent />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="Rampage">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterBuilding" useBehSet="DestroyBuilding" exitBehSet="ExitFoodDish" targetNode="Dock_Rampage1" capacity="1" exclusiveID="Building_Rampage" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuilding" useBehSet="DestroyBuilding" exitBehSet="ExitFoodDish" targetNode="Dock_Rampage2" capacity="1" exclusiveID="Building_Rampage" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuilding" useBehSet="DestroyBuilding" exitBehSet="ExitFoodDish" targetNode="Dock_Rampage3" capacity="1" exclusiveID="Building_Rampage" />
+						<BFGEntityContainerSlot enterBehSet="EnterBuilding" useBehSet="DestroyBuilding" exitBehSet="ExitFoodDish" targetNode="Dock_Rampage4" capacity="1" exclusiveID="Building_Rampage" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+	        <BFBinder required="1">
+		    <instance>
+		        <ZTEntityDestructionComponent/>
+		    </instance>
+	        </BFBinder>
+	</binder>
+</BFTypedBinder>

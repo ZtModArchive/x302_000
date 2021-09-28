@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\eggs\Dinosaur_Nest\Dinosaur_Nest_Full_Actor.bfb">
+  <animation anim="entities\objects\eggs\Dinosaur_Nest\Dinosaur_Nest_Stand_Idle.bf" animName="Stand_Idle" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="Dinosaur_Nest_Full_Actor" version="1">
+    <node name="Stand">
+      <table>
+        <Stand_Idle />
+      </table>
+    </node>
+  </Graph>
+</BFM>

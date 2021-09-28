@@ -1,0 +1,39 @@
+<ZT2Strings>
+   <entityname>
+      <!--ES decorative zoo wall-->
+      <zoowall_end>Zoo Wall</zoowall_end>
+      <zoowall_end_stt>Zoo wall</zoowall_end_stt>
+      <zoowall_end_lower>the zoo wall</zoowall_end_lower>
+      <zoowall_end_ltt>
+         <color r="255" g="248" b="178">
+            <b>Decorative Zoo Wall</b>
+         </color>
+         <br/>
+         Click to select, and then place a section of decorative zoo wall.
+      </zoowall_end_ltt>
+      
+      <zoowallfence_end>Zoo Wall</zoowallfence_end>
+      <zoowallfence_end_stt>Zoo wall</zoowallfence_end_stt>
+      <zoowallfence_end_lower>the zoo wall</zoowallfence_end_lower>
+      <zoowallfence_end_ltt>
+         <color r="255" g="248" b="178">
+            <b>Decorative Zoo Wall</b>
+         </color>
+         <br/>
+         Click to select, and then place a section of decorative zoo wall.
+      </zoowallfence_end_ltt>
+
+      <zoowallposts_end>Zoo Wall</zoowallposts_end>
+      <zoowallposts_end_stt>Zoo wall</zoowallposts_end_stt>
+      <zoowallposts_end_lower>the zoo wall</zoowallposts_end_lower>
+      <zoowallposts_end_ltt>
+         <color r="255" g="248" b="178">
+            <b>Decorative Zoo Wall</b>
+         </color>
+         <br/>
+         Click to select, and then place a section of decorative zoo wall.
+      </zoowallposts_end_ltt>
+
+   </entityname>
+   
+</ZT2Strings>

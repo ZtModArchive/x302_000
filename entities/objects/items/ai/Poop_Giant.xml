@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Poop_Giant">
+   <types>
+      <entity>
+         <item>
+            <Poop>
+               <Poop_Giant/>
+            </Poop>
+        </item>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:Poop_Giant"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Poop_Giant"/>
+         </on>
+      </UIToggleButton>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Poop_Giant/Poop_Giant" scale="1.0" switch="0 18 36"/>
+               <BFGroundFitComponent heightOffset="-0.10"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

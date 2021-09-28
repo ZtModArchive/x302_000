@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\units\animals\ButterflyMonarch\ButterflyMonarch_Adult_F.nif">
+  <animation anim="entities\units\animals\ButterflyMonarch\ButterflyMonarch_Adult_F_Fly_Ahead.bf" animName="Fly_Ahead" debug="false" animSpeed="0.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\ButterflyMonarch\ButterflyMonarch_Adult_F_Fly_Idle.bf" animName="Fly_Idle" debug="false" animSpeed="0.5" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\ButterflyMonarch\ButterflyMonarch_Adult_F_Fly_TurnLeftA.bf" animName="Fly_TurnLeftA" debug="false" animSpeed="0.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\units\animals\ButterflyMonarch\ButterflyMonarch_Adult_F_Fly_TurnRightA.bf" animName="Fly_TurnRightA" debug="false" animSpeed="0.5" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="true" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="ButterflyMonarch_Adult_F" version="1">
+    <node name="Fly">
+      <table>
+        <Fly_Ahead />
+        <Fly_Idle />
+        <Fly_TurnLeftA />
+        <Fly_TurnRightA />
+      </table>
+    </node>
+  </Graph>
+</BFM>

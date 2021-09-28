@@ -1,0 +1,135 @@
+﻿<BFTypedBinder binderType="EntertainerDinosaur_Adult_F" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<people>
+					<Staff>
+						<Entertainer>
+							<EntertainerDinosaur>
+								<EntertainerDinosaur_Adult_F />
+							</EntertainerDinosaur>
+						</Entertainer>
+					</Staff>
+				</people>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="headObj" rottype="use" postype="use" attachnode="Link_Head" />
+				<parentObj parent="mainObj" child="gloveObj_Right" rottype="use" postype="use" attachnode="Bip01 R Finger0" />
+				<parentObj parent="mainObj" child="gloveObj_Left" rottype="use" postype="use" attachnode="Bip01 L Finger0" />
+				<parentObj parent="mainObj" child="tailObj" rottype="use" postype="use" attachnode="Bip01 Spine1" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="-0.67 0.232026 0.587109" icon3Dscale="1.85" />
+		<BFAIEntityDataShared b_Male="0" s_Zoopedia="zoopedia:zoopedia_entertainer:entry" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<position x="10" y="0" z="0" />
+					<BFShadowLODComponent numLevels="1" switchingDists="30.0" />
+					<BFActorComponent actorfile="entities\units\staff\EntertainerDinosaur\EntertainerDinosaur_Adult_F.bfm" scale="1.0" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 1" ankleRotVectorRight="0 0 1" heightOffset="0" fitRadius=".15" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFBoundedObjectComponent>
+						<minPoint x="0" y="0" z="-100" />
+						<maxPoint x="300" y="300" z="100" />
+					</BFBoundedObjectComponent>
+					<BFCollisionComponent grid="Grid" />
+					<BFGridCollisionComponent />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="headObj">
+			<instance>
+				<BFPhysObj useTriShapeGroup="false">
+					<BFSimpleLODComponent modelfile="entities/units/staff/EntertainerDinosaur/EntertainerDinosaur_Head_F" scale="0.05" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="gloveObj_Right">
+			<instance>
+				<BFPhysObj useTriShapeGroup="false">
+					<BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Gloves\EntertainerDinosaur_Gloves_R" scale="1.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedRandomTextureInfo>
+					<replacementSet>
+						<group weight="1">
+							<item material="Entertainer_Head" image="entities\shared\Entertainer_Head_Dino_Blue.dds" layer="base" />
+						</group>
+					</replacementSet>
+				</BFSharedRandomTextureInfo>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="gloveObj_Left">
+			<instance>
+				<BFPhysObj useTriShapeGroup="false">
+					<BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Gloves\EntertainerDinosaur_Gloves_L" scale="1.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedRandomTextureInfo>
+					<replacementSet>
+						<group weight="1">
+							<item material="Entertainer_Head" image="entities\shared\Entertainer_Head_Dino_Blue.dds" layer="base" />
+						</group>
+					</replacementSet>
+				</BFSharedRandomTextureInfo>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="tailObj">
+			<instance>
+				<BFPhysObj useTriShapeGroup="false">
+					<BFSimpleLODComponent modelfile="entities\objects\items\Entertainer_Tail\EntertainerDinosaur_Tail_M" scale="1.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedRandomTextureInfo>
+					<replacementSet>
+						<group weight="1">
+							<item material="Entertainer_Body" image="entities\shared\Entertainer_Head_Dino_Blue.dds" layer="base" />
+						</group>
+					</replacementSet>
+				</BFSharedRandomTextureInfo>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\guest_blob.tga" baseNode="Bip01" width="1.0" minLength="1.0" maxLength="4.0" minOffset="0" maxOffset="1.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_TurnLeftA&apos;" />
+						<macro name="TurnLeft180" text="anim &apos;Stand_TurnLeft90&apos;, anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight180" text="anim &apos;Stand_TurnRight90&apos;, anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="TurnLeft90" text="anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight90" text="anim &apos;Stand_TurnRight90&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="200">
+					<ZTTransaction name="build" costType="parent" type="debit" category="staff_salaries" />
+					<ZTTransaction name="salary" cost="200" period="monthly" type="debit" category="staff_salaries" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

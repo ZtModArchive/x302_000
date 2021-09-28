@@ -1,0 +1,27 @@
+************************************************************
+Date: 03/20/2007
+Time: 16:33
+************************************************************
+Compiled object 1: LODGroup01
+Compiled object 2: Kent_Gift
+************************************************************
+Asset Compiler Statistics
+Polygon Count: 246 
+Vertex Count: 203 
+Vertex Memory: 6 kb
+Material Count: 1 
+Texture Count: 1 
+Texture Memory: 21 kb
+Num LODs: 1 
+Has Billboards: false
+Has Glossmap: false
+Has Reflectionmap: false
+Polygon Density: 246 
+Is Low Version: false
+Has Low Version: false
+************************************************************
+Timer Info
+Asset Compiler: total time = 119ms
+XML File Translation: total time = 83ms
+Data Output: total time = 2ms
+************************************************************

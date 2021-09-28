@@ -1,0 +1,25 @@
+<UILayout templateName="creditsback_leatherbackturtle1">
+<UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+	  <default/>
+   </UIAspect>
+   <children>
+      <UIStatic name="Image 1">
+         <UIRegion x="500" y="20" w="375" h="375" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <default image="UI/credits/logos/LeatherBackTurtle2.dds">
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </default>
+         </UIAspect>
+      </UIStatic> 
+      <UIStatic name="Image 2">
+         <UIRegion x="500" y="395" w="375" h="375" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <default image="UI/credits/logos/LeatherBackTurtle1.dds">
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </default>
+         </UIAspect>
+      </UIStatic> 
+   </children>
+</UILayout>

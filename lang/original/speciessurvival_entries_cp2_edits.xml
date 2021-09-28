@@ -1,0 +1,10 @@
+<ZT2Strings>      
+<SpeciesSurvival version="9">      
+      
+      <!--Fixes statusof typo, bug 7072-->
+      <SecondGenerationFailureoverview version="9">
+       Oh no, you only have one %s! You neglected to keep enough animals of mixed gender to maintain a breeding program. Achieving the select status of breeding multiple generations of animals is out of your grasp.
+      </SecondGenerationFailureoverview>
+      
+</SpeciesSurvival>      
+</ZT2Strings>            

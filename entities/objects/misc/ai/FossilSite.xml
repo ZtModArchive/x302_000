@@ -1,0 +1,47 @@
+﻿<BFTypedBinder binderType="FossilSite" versionReplace="true">
+	<types>
+		<entity>
+			<FossilSite />
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<ZTPlacementData moveable="false" deletable="false" selectable="false" elevatedTilePlacement="false" waterPlacement="true" tankPlacement="true" />
+		<BFGCollisionData isPassable="true" />
+		<ZTDevComponent />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/DigPit/DigPit" scale="1.0" switch="0 36" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Node1 x="0" y="0.5" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Node2 x="0.5" y="0" z="0" yaw="90" pitch="0" roll="0" />
+						<Dock_Node3 x="0" y="-0.5" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Node4 x="-0.5" y="0" z="0" yaw="-90" pitch="0" roll="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Find">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot targetNode="Dock_Node1" exclusiveID="Fossil1" />
+						<BFGEntityContainerSlot targetNode="Dock_Node2" exclusiveID="Fossil1" />
+						<BFGEntityContainerSlot targetNode="Dock_Node3" exclusiveID="Fossil1" />
+						<BFGEntityContainerSlot targetNode="Dock_Node4" exclusiveID="Fossil1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

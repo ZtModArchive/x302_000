@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Diprotodontidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Diprotodontia>
+                     <Diprotodontidae/>
+                  </Diprotodontia>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

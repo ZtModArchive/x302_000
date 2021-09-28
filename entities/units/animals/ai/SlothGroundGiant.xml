@@ -1,0 +1,204 @@
+<BFTypedBinder binderType="SlothGroundGiant" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Xenarthra>
+							<Megatheriidae>
+								<SlothGroundGiant />
+							</Megatheriidae>
+						</Xenarthra>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj2" rottype="use" postype="ignore" attachnode="link" />
+				<parentObj parent="mainObj" child="shadowObj3" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities/units/animals/SlothGroundGiant/SlothGroundGiant_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:SlothGroundGiant" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="SlothGroundGiant_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<ZTPlacementData icon3Doffset="3.75 -1.15 0.174329" icon3Dscale="0.354034" waterPlacement="true" />
+		<BFAIEntityDataShared s_Product="Extinct" f_BaseDonationAmount="120" f_MaxTourValue="40" p_PreyOffset="0 1 0" s_DonateToken="t_DonateSlothGroundGiant" p_NurseNode=".20 -.5 90" p_AttackGuestNode="0 -3 0" p_FightOffset="0 -2.25 0" p_FightOffset2="0 -1.25 180" s_Species="SlothGroundGiant" s_Endangerment="Extinct" b_ExtinctAnimal="true" b_Elite="true" b_Carnivore="true" b_Piscivore="true" b_Radicivore="true" b_Herbivore="true" b_Folivore="true" b_Frugivore="true" b_BerriesEater="true" s_KeeperEatType="Terrain_Branches" b_LargeAnimal="true" b_TroughEater="true" b_MetalTroughEater="true" b_FoodDishEater="true" b_SubstratePileEater="true" s_KeeperDrinkType="FoodDish_Water" f_adoptRemoveTime="0" f_adoptRarity="100" s_Zoopedia="zoopedia:zoopedia_slothgroundgiant:entry" f_RequiredInitialSpace="480" f_RequiredAdditionalSpace="140" b_ScrubAnimal="true" b_Browser="true" b_TreeBrowser="true" p_PursuitBallNode="0 -3 180" b_PursuitBallUser="true" b_AppleTreatEater="true" b_FigEater="true" b_LargeExtinctShelterUser="true">
+			<BFAINeedAdjusts privacy="0" social="0.2" exercise="0.22" rest="0.4" hunger="0.4" thirst="0.4" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="scrub_america_south" locationSensitivity="10">
+			<alpine sensitivity="-10" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-10" />
+			<coastal sensitivity="-10" />
+			<desert sensitivity="-5" />
+			<grassland sensitivity="-2" />
+			<reef sensitivity="-10" />
+			<pelagic sensitivity="-10" />
+			<temperateforest sensitivity="-5" />
+			<tropicalrainforest sensitivity="-10" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-2" />
+			<scrub sensitivity="3" primary="true" />
+			<wetlands sensitivity="-5" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_groom" effect="SuperStaffGroom" node="Bip01 Neck"/>
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" effect="SuperStaffHeal" node="Bip01 Neck" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BFActorComponent actorfile="entities/units/animals/SlothGroundGiant/SlothGroundGiant_Adult_F.bfm" scale="1.0" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 -1" ankleRotVectorRight="0 0 -1" heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFCollisionComponent grid="Bip01 Spine1" />
+					<BFGridCollisionComponent />
+					<BFDecalTextureCycleComponent materialName="SlothGroundGiant_Adult_F">
+						<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFHeadLookComponent leftRightAnimName="Secondary_HeadLook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+					<BFSwimComponent waterInDistance="0.50" waterOutDistance="0.1" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Lie_2Stand&apos;, anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_TurnLeftA&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+				<BFSharedPhysVars isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25" splashScale="0.3">
+					<virtualNodes>
+						<Node_Ball y="-3.5" />
+						<Dock_Fence y="-4" />
+						<Dock_Guest y="-2.4" />
+						<Dock_HollowLog y="-4" />
+						<Dock_TreeBrowse y="-4" />
+						<Dock_CleanYoung y="-2.5" />
+						<Dock_BeCleaned y="-3" yaw="180" />
+						<Dock_ElevatedFoodDish y="-4" />
+						<Dock_PickUpYoung x="0" y="-2.4" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Nurse x="0" y="-2.3" z="0" yaw="180" pitch="0" roll="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehLocoSwitchSet loopFlag="true">
+							<behaviorTable>
+								<ground behSet="Stand" />
+								<water behSet="TreadWater" />
+							</behaviorTable>
+						</BFBehLocoSwitchSet>
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Stand" />
+							<slow name="Walk">
+								<waggle name="Walk_Ahead" wag="0.5" />
+							</slow>
+							<medium name="Walk">
+								<waggle name="Walk_Ahead" wag="0.5" />
+							</medium>
+							<fast name="Run">
+								<waggle name="Run_Ahead" wag="0.5" />
+							</fast>
+							<evade name="Run" minAnimSpeed="0.8" maxAnimSpeed="1.5">
+								<waggle name="Run_Ahead" wag="0.5" />
+							</evade>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="groundcarryyoung" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="StandYoung" />
+							<slow name="WalkYoung">
+								<waggle name="WalkYoung_Ahead" wag="0.5" />
+							</slow>
+							<medium name="WalkYoung">
+								<waggle name="WalkYoung_Ahead" wag="0.5" />
+							</medium>
+							<fast name="WalkYoung" minAnimSpeed="0.8" maxAnimSpeed="1.5">
+								<waggle name="WalkYoung_Ahead" wag="0.5" />
+							</fast>
+							<evade name="WalkYoung" minAnimSpeed="0.8" maxAnimSpeed="1.5">
+								<waggle name="WalkYoung_Ahead" wag="0.5" />
+							</evade>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="TreadWater" />
+							<slow name="Swim">
+								<waggle name="Swim_Ahead" wag="0.5" />
+							</slow>
+							<medium name="Swim">
+								<waggle name="Swim_Ahead" wag="0.5" />
+							</medium>
+							<fast name="Swim">
+								<waggle name="Swim_Ahead" wag="0.5" />
+							</fast>
+							<evade name="Swim" minAnimSpeed="0.8" maxAnimSpeed="1.5">
+								<waggle name="Swim_Ahead" wag="0.5" />
+							</evade>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="80000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

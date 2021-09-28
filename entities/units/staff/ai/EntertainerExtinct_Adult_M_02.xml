@@ -1,0 +1,55 @@
+<BFTypedBinder binderType="EntertainerExtinct_Adult_M_02">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <Entertainer>
+                     <EntertainerExtinct>
+                        <EntertainerExtinct_Adult_M>
+                           <EntertainerExtinct_Adult_M_02/>
+                        </EntertainerExtinct_Adult_M>
+                     </EntertainerExtinct>
+                  </Entertainer>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+           <BFSharedRandomTextureInfo>
+             <replacementSet>
+               <group weight="1">
+                 <item material="body" image="entities\units\staff\shared\Entertainer_Body_Purple_02.dds" layer="base"/>
+               </group>
+             </replacementSet>
+           </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="headObj">
+         <instance>
+            <BFPhysObj/>
+         </instance>
+         <shared>
+            <BFSharedRandomTextureInfo>
+               <replacementSet>
+                  <group weight="1">
+                     <item material="guest_m_head" image="entities\units\shared\guest_adult_m_head_02_happy.dds" layer="base"/>
+                  </group>
+                  <group weight="1">
+                     <item material="guest_m_head" image="entities\units\shared\guest_adult_m_head_06_happy.dds" layer="base"/>
+                  </group>
+               </replacementSet>
+            </BFSharedRandomTextureInfo>
+         </shared>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

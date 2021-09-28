@@ -1,0 +1,126 @@
+<BehaviorSets>
+   <Educate_With_VEvent>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SpeakCrowd_Idle weight="50"/>
+               <Stand_Idle weight="50"/>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehViewEvent viewKey="Educator_Event" viewRadius="20" targetType="Guest" edValue="f_EdNormal" edDonate="f_EdDonNormal">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:GotEducated" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </Educate_With_VEvent>
+   <Educate_Without_VEvent>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SpeakCrowd_Idle weight="50"/>
+               <Stand_Idle weight="50"/>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Educate_Without_VEvent>
+   <DockFossilEducationCenter_Left>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEducateGuests"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorGotoEducateGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </DockFossilEducationCenter_Left>
+   <DockFossilEducationCenter_Right>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEducateGuests"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorGotoEducateGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </DockFossilEducationCenter_Right>
+   <UseFossilEducationCenter>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EducateGuests"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorEducateGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="5" maxPlays="10">
+            <randomSets>
+               <Educate_With_VEvent weight="20"/>
+               <Educate_Without_VEvent weight="80"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseFossilEducationCenter>
+   <ExitFossilEducationCenter_Left>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitFossilEducationCenter_Left>
+   <ExitFossilEducationCenter_Right>
+      <subjects>
+         <Educator/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitFossilEducationCenter_Right>
+</BehaviorSets>

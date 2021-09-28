@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="PalmTree_Stump_2">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <PalmTree_Stump>
+                  <PalmTree_Stump_2/>
+               </PalmTree_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

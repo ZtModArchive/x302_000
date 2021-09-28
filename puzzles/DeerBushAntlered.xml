@@ -1,0 +1,13 @@
+<ZTPuzzle animal="DeerBushAntlered" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="2.9" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="0.725" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="1.45" />
+    <ZTPuzzlePiece texture="04_ArmLeftLower" node="Piece04" entityScale="0.725" />
+    <ZTPuzzlePiece texture="05_ArmRightLower" node="Piece05" entityScale="1.45" />
+    <ZTPuzzlePiece texture="06_Waist" node="Piece06" entityScale="1.45"/>
+    <ZTPuzzlePiece texture="07_LegLeftLower" node="Piece07" entityScale="1.45" />
+    <ZTPuzzlePiece texture="08_LegRightUpper" node="Piece08" entityScale="0.725" />
+    <ZTPuzzlePiece texture="09_LegRightLower" node="Piece09" entityScale="1.45" />
+  </pieces>
+</ZTPuzzle>

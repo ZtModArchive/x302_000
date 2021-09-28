@@ -1,0 +1,5 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'Stand_SwingTailLeft'"/>
+   <key time="1.16" text = "kill"/>
+   <key time="1.17" text = "whap 45 0"/>
+</TEXTKEY>

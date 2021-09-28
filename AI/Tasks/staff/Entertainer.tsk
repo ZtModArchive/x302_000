@@ -1,0 +1,815 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="PutOnShow"  TaskDelayMin="120" TaskDelayMax="180" CursorTask="false" reserveTag="Use_educator_podium" Priority="10" UniqueID="Entertainer:PutOnShow">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <StageEntertainer/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="false">
+         <BFAIAttributeFloatMap work="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoPerformance"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="EnterEntertainerStage"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_WatchEntertainerShow" GiveTo="Guest" Radius="10" Payload="subject" Timeout="45" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:Performing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerEntertainGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="1" maxPlays="2">
+            <randomSets>
+               <Show_With_VEvent weight="20"/>
+               <Show_Without_VEvent weight="80"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_StopEntertainerShow" GiveTo="Guest" Radius="10" Payload="subject" Timeout="45" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="ExitEntertainerStage"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+		  <ZTMessageInfo locID="zoomessages:EntertainerFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredGuest_Close" CursorTask="false" Priority="10" UniqueID="Entertainer:InviteEntertainBoredGuest_Close">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND inSight="10" amusement="GE 60" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredGuest_Medium" CursorTask="false" Priority="10" UniqueID="Entertainer:InviteEntertainBoredGuest_Medium">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND inSight="25" amusement="GE 60" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredGuest_Far" CursorTask="false" Priority="10" UniqueID="Entertainer:InviteEntertainBoredGuest_Far">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND amusement="GE 60" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredYoungGuest_Close" CursorTask="false" Priority="10"  TaskDelayMin="60" TaskDelayMax="120"  UniqueID="Entertainer:InviteEntertainBoredYoungGuest_Close">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest_Young/>
+            <Qualifiers_AND inSight="10" amusement="GE 50" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredYoungGuest_Medium" CursorTask="false" Priority="10"  TaskDelayMin="60" TaskDelayMax="120"  UniqueID="Entertainer:InviteEntertainBoredYoungGuest_Medium">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest_Young/>
+            <Qualifiers_AND inSight="25" amusement="GE 50" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteEntertainBoredYoungGuest_Far" CursorTask="false" Priority="10"  TaskDelayMin="60" TaskDelayMax="120"  UniqueID="Entertainer:InviteEntertainBoredYoungGuest_Far">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <Guest_Young/>
+            <Qualifiers_AND amusement="GE 50" f_departurePoints="G 0"/>                                                
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap work="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_InviteEntertainer" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+         </BFAITokenList>      
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Dance"/>
+         </BFBehExecTask>
+      </BFAICompletionData>      
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondEntertainBoredGuest" TaskDelayMin="300" TaskDelayMax="500" UniqueID="Entertainer:RespondEntertainBoredGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_InviteEntertainer/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:WatchingEntertainer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EntertainerGuest" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" playTime="30"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EntertainBoredGuest" CursorTask="false" Priority="10" UniqueID="Entertainer:EntertainBoredGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_EntertainerGuest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+         <BFBehSyncSet subjectBehSet="DockEntertainGuest" targetBehSet="WaitEntertainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="EntertainGuest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData amusement="-30"/>
+         <BFBehExecTask>
+            <BFBehSyncSet subjectBehSet="WaveGuest" targetBehSet="WaveEntertainer"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EntertainBoredYoungGuest" CursorTask="false" Priority="10"  TaskDelayMin="60" TaskDelayMax="120"  UniqueID="Entertainer:EntertainBoredYoungGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets_AND>
+            <fromToken/>
+            <Guest_Young/>
+         </Targets_AND>
+         <Objects>
+            <t_EntertainerGuest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEntertainGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerGotoEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="EntertainYoungGuest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData amusement="-30"/>
+         <BFBehExecTask>
+            <BFBehSyncSet subjectBehSet="WaveGuest" targetBehSet="WaveEntertainer"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DefaultTask" UniqueID="Entertainer:DefaultTask">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".00005">
+         <BFAIAttributeFloatMap/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:StaffPlaced"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Dance_Idle" playTime="3"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="StaffWander" CursorTask="false" UniqueID="Entertainer:StaffWander">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+           <self/>
+         </Targets>
+         <Objects/>
+       </BFAICreateData>
+       <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-1"/>
+       </BFAIEvalData>
+       <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:WaitingForTask"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:WaitingForTask" priority="1" timeout="30" global="false"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehExitTankGate/>
+         <BFBehWander playTime="5" avoidWater="true" locoSpeed="fast"/>
+       </BFBehExecTask>
+       <BFAICompletionData/>
+       <BFAIFailureData/>
+     </BFAITaskTemplate>
+     <BFAITaskTemplate Name="StaffWanderWater" CursorTask="false" UniqueID="Entertainer:StaffWanderWater">
+       <BFAICreateData>
+         <Subjects>
+           <Entertainer/>
+           <Qualifiers_AND inWater_OR_onLand="true" isSwimming="true"/>
+         </Subjects>
+         <Targets>
+           <self/>
+         </Targets>
+         <Objects/>
+       </BFAICreateData>
+       <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-1"/>
+       </BFAIEvalData>
+       <BFBehExecTask>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTActionInfo locID="staffactions:WaitingForTask"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+           <ZTFeedbackData>
+             <ZTThoughtInfo locID="staffthoughts:WaitingForTask" priority="1" timeout="30" global="false"/>
+           </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander playTime="5" locoSpeed="fast"/>
+       </BFBehExecTask>
+       <BFAICompletionData/>
+       <BFAIFailureData/>
+     </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DanceMusicalRock_Extinct" CursorTask="false" reserveTag="Use_MusicalRock" TaskDelayMin="60" TaskDelayMax="75" UniqueID="Entertainer:DanceMusicalRock_Extinct">
+      <BFAICreateData>
+         <Subjects>
+            <EntertainerExtinct/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <b_MusicalRock/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-15"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoDanceMusicalRock" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="4"/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:DanceMusicalRock" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerDanceMusicalRock" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom minPlays="2" maxPlays="4">
+            <randomAnims>
+               <Stand_Robot weight="25"/>
+               <Stand_BreakDance weight="75"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DanceMusicalRock_Dinosaur" CursorTask="false" reserveTag="Use_MusicalRock" TaskDelayMin="60" TaskDelayMax="75" UniqueID="Entertainer:DanceMusicalRock_Dinosaur">
+      <BFAICreateData>
+         <Subjects>
+            <EntertainerDinosaur/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <b_MusicalRock/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-15"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoDanceMusicalRock" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="4"/>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:DanceMusicalRock" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerDanceMusicalRock" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom minPlays="2" maxPlays="4">
+            <randomAnims>
+               <Stand_Robot weight="25"/>
+               <Stand_DinoDance weight="75"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAmusementgood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Dance_Idle" TaskDelayMin="60" TaskDelayMax="75" CursorTask="false" Priority="1" UniqueID="Entertainer:Dance_Idle">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:WaitingForTask" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dance"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ReactFountainSplash" Priority="5" CursorTask="false" TaskDelayMin="300" TaskDelayMax="500" UniqueID="Entertainer:ReactFountainSplash">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <FountainSplash_mm/>            
+         </Targets>
+         <Objects>
+            <t_FountainSplash/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainerSplashFountain" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_PirateJig"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerSplashFountain" priority="1" timeout="60" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="Entertainer:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifier inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:RunningFromAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:RunningFromAnimal" priority="-1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="StaffWaitStaffCenter" CursorTask="false" Priority="2" reserveTag="UseExtinct" UniqueID="Entertainer:StaffWaitStaffCenter">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-11"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:WaitingForTaskCenter" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="StaffWaitStaffCenter_CaffeineMode" CursorTask="false" Priority="2" reserveTag="UseExtinct" UniqueID="Entertainer:StaffWaitStaffCenter_CaffeineMode">
+      <BFAICreateData>
+         <Subjects>
+            <Entertainer/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+            <Qualifiers b_CaffeineTrigger="true"/>                        
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-13"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:WaitingForTaskCenter" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData b_CaffeineMode="true"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_DeCaffeinate" GiveTo="subject" Timein="360" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

@@ -1,0 +1,53 @@
+<BFTypedBinder binderType="Stokesosaurus_Adult_F_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Archosauria>
+                  <Saurischia>
+                     <Tyrannosauridae>
+                        <Stokesosaurus>
+                           <Stokesosaurus_Adult>
+                              <Stokesosaurus_Adult_F>
+                              	<Stokesosaurus_Adult_F_Super/>
+                              </Stokesosaurus_Adult_F>
+                           </Stokesosaurus_Adult>
+                        </Stokesosaurus>
+                     </Tyrannosauridae>
+                  </Saurischia>
+               </Archosauria>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTDevComponent />
+      <BFAIEntityDataShared b_Super="true" f_BaseDonationAmount="110" s_Zoopedia="zoopedia:zoopedia_super_stokesosaurus:entry" f_TranqPointsNeeded="15.0f">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" lifespan="0.0050" privacy="-0.02" reproduction="0.33" social="0.40" stimulation="0.40" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Stokesosaurus/Stokesosaurus_Adult_F.bfm" scale="0.80" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+	<BFNamedBinder binderName="Glasses" required="0">
+	   <instance>
+	      <BFPhysObj>
+		<BFSceneGraphComponent isBFR="true" modelfile="entities\objects\items\Glasses_Prop\Glasses_Prop" scale="0.80" switch="0" />
+	      </BFPhysObj>
+	   </instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

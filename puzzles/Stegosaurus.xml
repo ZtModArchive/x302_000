@@ -1,0 +1,19 @@
+<ZTPuzzle animal="Stegosaurus" level="4" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="0.91" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="0.91" />
+    <ZTPuzzlePiece texture="03_Neck" node="Piece03" entityScale="0.91" />
+    <ZTPuzzlePiece texture="04_Torso" node="Piece04" entityScale="1.82" />
+    <ZTPuzzlePiece texture="05_ArmRight" node="Piece05" entityScale="0.91" />
+    <ZTPuzzlePiece texture="06_ArmLeft" node="Piece06" entityScale="0.91"/>
+    <ZTPuzzlePiece texture="07_Torso" node="Piece07" entityScale="0.91" />
+    <ZTPuzzlePiece texture="08_Plates" node="Piece08" entityScale="1.82" />
+    <ZTPuzzlePiece texture="09_TailBase" node="Piece09" entityScale="1.82" />
+    <ZTPuzzlePiece texture="10_LegLeftUpper" node="Piece10" entityScale="0.91" />
+    <ZTPuzzlePiece texture="11_LegLeftLower" node="Piece11" entityScale="0.91" />
+    <ZTPuzzlePiece texture="12_LegRightLower" node="Piece12" entityScale="0.91"/>
+    <ZTPuzzlePiece texture="13_Tail" node="Piece13" entityScale="1.82" />
+    <ZTPuzzlePiece texture="14_Tail" node="Piece14" entityScale="1.82" />
+    <ZTPuzzlePiece texture="15_TailEnd" node="Piece15" entityScale="0.91"/>
+  </pieces>
+</ZTPuzzle>

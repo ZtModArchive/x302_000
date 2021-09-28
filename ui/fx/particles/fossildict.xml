@@ -1,0 +1,177 @@
+<BFParticleDictionary>
+   <FossilAnkylosaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Ankylosaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilAnkylosaurus>
+   <FossilBearShortfaced>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\BearShortfaced.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilBearShortfaced>
+   <FossilBirdElephant>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\BirdElephant.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilBirdElephant>
+   <FossilBluebuck>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Bluebuck.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilBluebuck>
+   <FossilCamelGiant>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\CamelGiant.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilCamelGiant>
+   <FossilCarnotaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Carnotaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilCarnotaurus>
+   <FossilCatSaberToothed>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\CatSaberToothed.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilCatSaberToothed>
+   <FossilCowAuroch>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\CowAuroch.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilCowAuroch>
+   <FossilDeerBushAntlered>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\DeerBushAntlered.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDeerBushAntlered>
+   <FossilDeinonychus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Deinonychus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDeinonychus>
+   <FossilDeinosuchus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Deinosuchus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDeinosuchus>
+   <FossilDimetrodon>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Dimetrodon.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDimetrodon>
+   <FossilDiprotodon>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Diprotodon.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDiprotodon>
+   <FossilDodo>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Dodo.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDodo>
+   <FossilDoedicurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Doedicurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilDoedicurus>
+   <FossilElephantDwarfSicilian>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\ElephantDwarfSicilian.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilElephantDwarfSicilian>
+   <FossilGigantopithecus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Gigantopithecus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilGigantopithecus>
+   <FossilKentrosaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Kentrosaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilKentrosaurus>
+   <FossilLionCave>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\LionCave.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilLionCave>
+   <FossilMastodonAmerican>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\MastodonAmerican.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilMastodonAmerican>
+   <FossilProtarchaeopteryx>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Protarchaeopteryx.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilProtarchaeopteryx>
+   <FossilQuagga>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Quagga.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilQuagga>
+   <FossilRhinocerosWooly>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\RhinocerosWooly.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilRhinocerosWooly>
+   <FossilSivatherium>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Sivatherium.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilSivatherium>
+   <FossilSlothGroundGiant>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\SlothGroundGiant.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilSlothGroundGiant>
+   <FossilStegosaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Stegosaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilStegosaurus>
+   <FossilStokesosaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Stokesosaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilStokesosaurus>
+   <FossilStyracosaurus>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Styracosaurus.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilStyracosaurus>
+   <FossilTriceratops>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Triceratops.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilTriceratops>
+   <FossilThylacine>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Thylacine.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilThylacine>
+   <FossilTyrannosaurusRex>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\TyrannosaurusRex.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilTyrannosaurusRex>
+   <FossilUtahraptor>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Utahraptor.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilUtahraptor>
+   <FossilVelociraptor>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Velociraptor.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilVelociraptor>
+   <FossilWarrah>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\Warrah.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilWarrah>
+   <FossilWarthogGiant>
+      <Conditions>
+         <BFParticleDefinition xmlFile="UI\fx\particles\fossil_emotes\WarthogGiant.xml" removeTime="5.0"/>
+      </Conditions>
+   </FossilWarthogGiant>
+</BFParticleDictionary>

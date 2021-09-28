@@ -1,0 +1,47 @@
+﻿<BFTypedBinder binderType="bathroomsmall" abstract="true" version="2" versionreplace="true">
+	<types>
+		<entity>
+			<building>
+				<bathroom>
+					<bathroomsmall />
+				</bathroom>
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0.001135 0.460151" icon3Dscale="0.308900" />
+		<BFAIEntityDataShared f_BuildingStrength="20" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="Use">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot targetNode="Dock_Male_Enter" capacity="1" />
+					</slots>
+					<queue>
+						<BFGEntityContainerSlot targetNode="Dock_Male_Enter" capacity="3" />
+					</queue>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj />
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_Rampage1 y="-1.5" />
+						<Dock_Rampage2 x="-3" />
+						<Dock_Rampage3 y="1.75" />
+						<Dock_Rampage4 x="3" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

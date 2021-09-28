@@ -1,0 +1,145 @@
+<BFAITaskTemplateList> 
+   <BFAITaskTemplate Name="Idle" UniqueID="DinoRecoveryBuilding:Idle">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>  
+         <Objects/>             
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Idle"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+   <BFAITaskTemplate Name="Up" UniqueID="DinoRecoveryBuilding:Up">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>  
+      	 <Objects>
+      	    <t_Up/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Up"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+   <BFAITaskTemplate Name="Reset" UniqueID="DinoRecoveryBuilding:Reset">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>  
+      	 <Objects>
+      	    <t_Reset/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Down"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+   <BFAITaskTemplate Name="SpawnDRT" UniqueID="DinoRecoveryBuilding:SpawnDRT">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+      	 <Objects>
+      	    <t_SpawnDRT/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="102"/>
+      <BFBehExecTask>
+         <BFBehAnimate targetAnim="Up_Idle" />
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="SpawnDRT"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="SpawnReplacementCrate" UniqueID="DinoRecoveryBuilding:SpawnReplacementCrate">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+      	 <Objects>
+      	    <t_SpawnTranq/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="102"/>
+      <BFBehExecTask>
+         <BFBehAnimate targetAnim="Up_Idle" />
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="SpawnDRTCrate"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="SpawnReplacementTranq" UniqueID="DinoRecoveryBuilding:SpawnReplacementTranq">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+      	 <Objects>
+      	    <t_SpawnTranq/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="102"/>
+      <BFBehExecTask>
+         <BFBehAnimate targetAnim="Up_Idle" />
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="SpawnDRTTranq"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="SpawnReplacementRobot" UniqueID="DinoRecoveryBuilding:SpawnReplacementRobot">
+      <BFAICreateData>
+         <Subjects>
+            <DinoRecoveryBuilding/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+      	 <Objects>
+      	    <t_SpawnRobot/>
+      	 </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="102"/>
+      <BFBehExecTask>
+         <BFBehAnimate targetAnim="Up_Idle" />
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="SpawnDRTRobot"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>   
+</BFAITaskTemplateList>

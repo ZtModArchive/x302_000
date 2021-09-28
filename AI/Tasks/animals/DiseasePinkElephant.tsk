@@ -1,0 +1,230 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="ReceivePinkElephantDisease" TaskDelayMin="600" TaskDelayMax="1200" Priority="4"  UniqueID="DiseasePinkElephant:ReceivePinkElephantDisease">
+      <BFAICreateData>
+         <Subjects>
+            <Elephantidae/>
+            <Mammutidae/>
+            <Qualifiers b_Adult="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetPinkElephantDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="makeAnimalSick" params="PinkElephantDisease"/>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_PinkElephantDisease" GiveTo="subject" Timein="0" Timeout="120" Reconsider="true"/>
+	       <BFAIToken Name="t_SpreadPinkElephantDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData pink="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ReceivePinkElephantDisease_Animal" TaskDelayMin="600" TaskDelayMax="1200" Priority="3"  UniqueID="DiseasePinkElephant:ReceivePinkElephantDisease_Animal">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_GetPinkElephantDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="400"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_SpreadPinkElephantDisease" GiveTo="subject" Timein="60" Timeout="120" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CurePinkElephantDisease" UniqueID="DiseasePinkElephant:CurePinkElephantDisease">
+      <BFAICreateData>
+         <Subjects>
+            <animal/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_CurePinkElephantDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="555"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scenario/scripts/disease.lua" function="cureAnimal"/>
+         <BFBehPlaySet behSet="CureSickPinkElephant"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData pink="-100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SpreadPinkElephantDisease" Priority="3" UniqueID="PinkElephantDisease:SpreadPinkElephantDisease">
+      <BFAICreateData>
+         <Subjects>
+            <Elephantidae/>
+            <Mammutidae/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadPinkElephantDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_PinkElephant"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_SpreadPinkElephantDisease2" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="SpreadPinkElephantDisease" Priority="3" UniqueID="PinkElephantDisease:SpreadPinkElephantDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <Elephantidae/>
+            <Mammutidae/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_SpreadPinkElephantDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="505"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Diseased_PinkElephant"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+	    <BFAIToken Name="t_SpreadPinkElephantDisease" GiveTo="subject" Timein="180" Timeout="240" Reconsider="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="GetSick_PinkElephantDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseasePinkElephant:GetSick_PinkElephantDisease">
+      <BFAICreateData>
+         <Subjects>
+            <Elephantidae/>
+            <Mammutidae/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_PinkElephantDisease/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sick"/>
+               <ZTMessageInfo locID="animalthoughts:DiseasedAnimal" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap pink="100"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_PinkElephantDisease2" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickPinkElephant"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GetSick_PinkElephantDisease" TaskDelayMin="30" TaskDelayMax="60" Priority="3" UniqueID="DiseasePinkElephant:GetSick_PinkElephantDisease:2">
+      <BFAICreateData>
+         <Subjects>
+            <Elephantidae/>
+            <Mammutidae/>
+            <Qualifiers b_Disease="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_PinkElephantDisease2/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="504"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap pink="100"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_PinkElephantDisease" GiveTo="subject" Timein="30" Timeout="90" Chance="100" Reconsider="true"/>
+	       </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="GetSickPinkElephant"/>
+            <BFBehPlaySet behSet="Sick"/>
+            <ZTBehViewEvent viewKey="Neg_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

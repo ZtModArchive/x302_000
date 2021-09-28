@@ -1,0 +1,12 @@
+<ZT2Strings>
+   <superstaff>
+      <tranq_animal>Press SPACEBAR to tranquilize %s</tranq_animal>
+      <take_sample>Press SPACEBAR to take a sample from %s</take_sample>
+      <already_sampled>You already took a sample from %s</already_sampled>
+      <animal_search_cure>Press SPACEBAR to find a cure for %s</animal_search_cure>
+      <animal_cure>Press SPACEBAR to cure %s</animal_cure>
+      <dig_artifact>Press SPACEBAR to dig here</dig_artifact>
+      <artifact_blocked>This site is blocked by %s!</artifact_blocked>
+      <artifact_inaccessible>The digging site is blocked by something!</artifact_inaccessible>
+   </superstaff>
+</ZT2Strings>

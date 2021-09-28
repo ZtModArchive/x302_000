@@ -1,0 +1,27 @@
+<BFTypedBinder binderType="Dodo_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Columbiformes>
+                     <Raphidae>
+                        <Dodo>
+                           <Dodo_Young>
+                              <Dodo_Young_F/>
+                           </Dodo_Young>
+                        </Dodo>
+                     </Raphidae>
+                  </Columbiformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

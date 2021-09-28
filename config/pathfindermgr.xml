@@ -1,0 +1,1 @@
+<BFGPathFinderMgr itersPerSlice="2" shortPathIters="100" priorityPathIters="250" longPathIters="1000" spliceIndex="19" shortPathNodes="2000" longPathNodes="4000" />

@@ -1,0 +1,7 @@
+<ZT2Strings>
+      <LOC_STRING _locID="xp2_tutorial1" version="9" />
+      <LOC_STRING _locID="xp2_tutorial1:selectLandscaping" version="9"  >When you first place a tank, the tank&apos;s water uses the biome of the terrain on which the tank is placed. Because this tank was built on grassland, the water inside is grassland water. Let&apos;s change it to the reef biome so you can put a manta ray in the tank. Click the Landscaping tab.</LOC_STRING>
+      <LOC_STRING _locID="xp2_tutorial4" version="9" />
+      <LOC_STRING _locID="xp2_tutorial4:placeDolphinPortal" version="9"  >Whenever you add a show platform, you&apos;re automatically prompted to place tank portals. Tank portals let your animals travel from the exhibit tank, where they live, to the show tank, where they perform. You can only place tank portals on tank walls. Let&apos;s connect the dolphin exhibit and the orca exhibit to the show tank. Because you already have a tank portal on your cursor, just click the tank walls to place the portals.</LOC_STRING>      
+   
+</ZT2Strings>

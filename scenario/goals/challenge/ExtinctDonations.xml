@@ -1,0 +1,20 @@
+<BFScenarioGroup name="extinctdonationsrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="extinctdonations" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHExtinctDonationsShort" overview="Challengetext:CHExtinctDonations" />
+				<success locid="Challengetext:CHExtinctDonationsSuccessShort" overview="Challengetext:CHExtinctDonationsSuccess" />
+				<failure locid="Challengetext:CHExtinctDonationsFailureShort" overview="Challengetext:CHExtinctDonationsFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/extinctdonations.lua" entry="evalExtinctDonations" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/extinctdonations.lua" entry="completeExtinctDonations" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/instant/extinctdonations.lua" entry="failExtinctDonations" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

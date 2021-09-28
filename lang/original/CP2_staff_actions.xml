@@ -1,0 +1,45 @@
+<ZT2Strings>
+   <staffactions>
+      <!--Staff Actions-->
+      <GotoEntertainGuest>Going to entertain %s</GotoEntertainGuest>
+      <GotoPerformance>Going to perform for guests</GotoPerformance>
+      <Performing>Performing for guests</Performing>
+      <JumpOnStage>Jumping onto the stage</JumpOnStage>
+      <LeaveStage>Leaving the stage</LeaveStage>
+      <EntertainGuest>Entertaining %s</EntertainGuest>
+      <HugGuest>Hugging %s</HugGuest>
+      <PictureGuest>Letting %s take a picture</PictureGuest>
+      <GoDanceMusicalRock>Going to dance by %s</GoDanceMusicalRock>
+      <DanceMusicalRock>Dancing by %s</DanceMusicalRock>
+      <EntertainerSplashFountain>Dancing by %s</EntertainerSplashFountain>
+      <GotoEducateGuestsFossils>Going to teach guests about fossils</GotoEducateGuestsFossils>
+      <EducateGuestsFossils>Teaching guests about fossils</EducateGuestsFossils>
+      <BeingScared>Fleeing from %s</BeingScared>
+      <SearchFossil>Looking for fossils</SearchFossil>
+      <MarkingFossil>Marking fossil</MarkingFossil>
+      <GoToDigFossil>Going to dig up fossil</GoToDigFossil>
+      <DigFossil>Digging up fossil</DigFossil>
+      <Regrouping>Regrouping with %s</Regrouping>
+      <LookFor>Looking for %s</LookFor>
+      <TagDino>Tagging %s for capture</TagDino>
+      <ChasingDino>Chasing %s</ChasingDino>
+      <CallDinoDistract>Calling for distraction of %s</CallDinoDistract>
+      <WaitDinoDistraction>Waiting for distraction of %s</WaitDinoDistraction>
+      <CallDinoTranq>Calling for tranquilization of %s</CallDinoTranq>
+      <WaitDinoTranq>Waiting for tranquilization of %s</WaitDinoTranq>
+      <RecallDRT>Recalling Dino Capture Team to %s</RecallDRT>
+      <CallRobotReplacement>Calling %s for replacement robot</CallRobotReplacement>
+      <LeavingDRTBuilding>Leaving Dino Capture Team bunker</LeavingDRTBuilding>
+      <GoingToDRTBuilding>Returning to %s</GoingToDRTBuilding>
+      <EnteringDRTBuilding>Entering %s</EnteringDRTBuilding>
+      <Following>Following %s</Following>
+      <GoingToDistract>Going to distract %s</GoingToDistract>
+      <Distracting>Distracting %s</Distracting>
+      <AttackedAnimal>Temporarily distracting %s</AttackedAnimal>      
+      <DinoRecoveryRobotSplashFountain>Being distracted by %s</DinoRecoveryRobotSplashFountain>
+      <GoTranqAnimal>Going to tranquilize %s</GoTranqAnimal>
+   </staffactions>
+   <superstaff>
+   	  <TagCaveman>Press SPACEBAR to tag %s</TagCaveman>
+   </superstaff>
+</ZT2Strings>

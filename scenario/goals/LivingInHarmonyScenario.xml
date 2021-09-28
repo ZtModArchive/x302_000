@@ -1,0 +1,86 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="DinoCampaign:HarmonyIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup hidden="0" name="TotalWin" state="0" chain="true" allsuccess="true" sticky="true">
+		 <children>
+			<BFScenarioRule name="Have3Species" hidden="0" state="0" sticky="true">
+				<info type="primary">
+				       <neutral locid="DinoCampaign:HarmonyAdoptThreeShort" overview="DinoCampaign:HarmonyOverview"/>
+				       <success locid="DinoCampaign:HarmonyFinishAdoptThree" overview="DinoCampaign:HarmonyFinishAdoptThree"/>
+				</info>
+				<evaluate>
+				       <BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="evalAcquire3Species" />
+				</evaluate>
+				<success>
+				       <BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="completeAcquire3Species" />
+				</success>
+			</BFScenarioRule>          		
+			<BFScenarioRule name="Have4Biomes" hidden="1" state="0" sticky="true" optional="true">
+				<info type="primary">
+					<neutral locid="DinoCampaign:HarmonyOptionalFourBiomesShort" overview="DinoCampaign:HarmonyOptionalFourBiomes"/>
+					<success locid="DinoCampaign:HarmonyFinishOptionalFourBiomes" overview="DinoCampaign:HarmonyFinishOptionalFourBiomes"/>
+				</info>
+				<evaluate>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="eval4Biomes" />
+				</evaluate>
+				<success>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="complete4Biomes" />
+				</success>
+			</BFScenarioRule>	
+			<BFScenarioRule name="Have8Species" hidden="1" state="0" sticky="true">
+				<info type="primary">
+					<neutral locid="DinoCampaign:HarmonyAdoptEightShort" overview="DinoCampaign:HarmonyAdoptEight"/>
+					<success locid="DinoCampaign:HarmonyFinishAdoptEight" overview="DinoCampaign:HarmonyFinishAdoptEight"/>
+				</info>
+				<evaluate>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="evalAcquire8Species" />
+				</evaluate>
+				<success>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="completeAcquire8Species" />
+				</success>
+			</BFScenarioRule>	
+			<BFScenarioRule name="Have8Biomes" hidden="1" state="0" sticky="true" optional="true">
+				<info type="primary">
+					<neutral locid="DinoCampaign:HarmonyOptionalEightBiomesShort" overview="DinoCampaign:HarmonyOptionalEightBiomes"/>
+					<success locid="DinoCampaign:HarmonyFinishOptionalEightBiomes" overview="DinoCampaign:HarmonyFinishOptionalEightBiomes"/>
+				</info>
+				<evaluate>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="eval8Biomes" />
+				</evaluate>
+				<success>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="complete8Biomes" />
+				</success>
+			</BFScenarioRule>					
+			<BFScenarioRule name="Have10ExtinctSpecies" hidden="1" state="0" sticky="true">
+				<info type="primary">
+					<neutral locid="DinoCampaign:HarmonyAdoptTenExtinctShort" overview="DinoCampaign:HarmonyAdoptTenExtinct"/>
+					<success locid="DinoCampaign:HarmonyFinishAdoptTenExtinct" overview="DinoCampaign:HarmonyFinishAdoptTenExtinct"/>
+				</info>
+				<evaluate>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="evalAcquire10ExtinctSpecies" />
+				</evaluate>
+				<success>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="completeAcquire10ExtinctSpecies" />
+				</success>
+			</BFScenarioRule>	
+			<BFScenarioRule name="Have25Species" hidden="1" state="0" sticky="true">
+				<info type="primary">
+					<neutral locid="DinoCampaign:HarmonyFinalGoalShort" overview="DinoCampaign:HarmonyFinalGoal"/>
+					<success locid="DinoCampaign:HarmonyFinishFinalGoal" overview="DinoCampaign:HarmonyFinishFinalGoal"/>
+				</info>
+				<evaluate>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="evalAcquire25Species" />
+				</evaluate>
+				<success>
+					<BFScenarioScriptAction script="scenario/scripts/LivingInHarmonyScenario.lua" entry="completeAcquire25Species" />
+				</success>
+			</BFScenarioRule>				
+		  </children>
+		</BFScenarioGroup>		
+	</children>
+</ZTScenarioMgr>

@@ -1,0 +1,104 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Mew">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_MewA.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Eat">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Eat.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Sniff">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Sniff.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Snort">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_SnortA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Sleep">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_SleepA.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Graze">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Eat.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Charge">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Charge.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Adult_Attacked">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Attacked.wav" volume="1" mindist="8" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Eat">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Eat.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Sniff">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Sniff.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Squeal">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_SquealA.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Snort">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_SnortA.wav" volume=".9" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Sleep">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_SleepA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Graze">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Eat.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Charge">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Charge.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_Young_Attacked">
+         <snd name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Attacked.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Shared Sounds/Footsteps-->
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_WallowA">
+         <snd name="entities\units\animals\shared\sound\Animal_Hit_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="RhinocerosWooly_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

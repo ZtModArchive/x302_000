@@ -1,0 +1,19 @@
+<ZTPuzzle animal="CatSaberToothed" level="4" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.4" />
+    <ZTPuzzlePiece texture="02_Jaw" node="Piece02" entityScale="0.7" />
+    <ZTPuzzlePiece texture="03_Neck" node="Piece03" entityScale="1.4" />
+    <ZTPuzzlePiece texture="04_Torso" node="Piece04" entityScale="1.4" />
+    <ZTPuzzlePiece texture="05_ArmLeftLower" node="Piece05" entityScale="0.7"/>
+    <ZTPuzzlePiece texture="06_ArmLeftUpper" node="Piece06" entityScale="0.7" />
+    <ZTPuzzlePiece texture="07_ArmLeftFoot" node="Piece07" entityScale="0.7" />
+    <ZTPuzzlePiece texture="08_ArmRightUpper" node="Piece08" entityScale="0.35" />
+    <ZTPuzzlePiece texture="09_ArmRightLower" node="Piece09" entityScale="0.7" />
+    <ZTPuzzlePiece texture="10_ArmRightFoot" node="Piece10" entityScale="0.7" />
+    <ZTPuzzlePiece texture="11_Spine" node="Piece11" entityScale="1.4" />
+    <ZTPuzzlePiece texture="12_Hips" node="Piece12" entityScale="1.4"/>
+    <ZTPuzzlePiece texture="13_Tail" node="Piece13" entityScale="0.7" />
+    <ZTPuzzlePiece texture="14_LegLeft" node="Piece14" entityScale="1.4" />
+    <ZTPuzzlePiece texture="15_LegRight" node="Piece15" entityScale="1.4"/>
+  </pieces>
+</ZTPuzzle>

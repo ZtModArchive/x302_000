@@ -1,0 +1,221 @@
+<BFTypedBinder binderType="CloningCenter">
+   <types>
+      <entity>
+         <building>
+            <CloningCenter/>
+         </building>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity entityVersion="1">
+         <physObjParenting>
+            <parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link"/>
+         </physObjParenting>
+      </BFGEntity>
+   </instance>
+   <shared>
+      <ZTPlacementData dockArrowStyle="special" randomRotate="false" gridSnap="true" dockArrowSize="1.5" icon3Doffset="0 -0.001465 0.554523" icon3Dscale="0.11" minimumHeadroom="12.0" landPlacement="true" dockArrowSize="1.0" dockArrowStyle="special" elevatedTilePlacement="false">
+         <cfootprint width="9" height="4"/>
+         <dfootprint width="13" height="6"/>
+         <soundEnv>
+            <stageVolume soundStage="cloning_center" botLeftX="-12.0" botLeftY="-7.5" topRightX="12.0" topRightY="9.6" height="12.0" occludeCrowdSounds="1"/>
+         </soundEnv>
+         <excludedIconObjs>
+            <Goo_State0/>
+            <Goo_State1/>
+            <Goo_State2/>
+            <Goo_State3/>
+            <Goo_State4/>
+            <Goo_State5/>
+            <Goo_State6/>
+         </excludedIconObjs>
+      </ZTPlacementData>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\buildings\CloningCenter\CloningCenter_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:CloningCenter"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="CloningCenter"/>
+         </on>
+      </UIToggleButton>
+      <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_staff.dds"/>
+         </UIAspect>
+      </UIButton>
+      <BFAIEntityDataShared s_uisort="aa" s_ObjectType="Misc" s_Product="Extinct" s_PanelLock="CloningCenter" s_Zoopedia="zoopedia:zoopedia_cloningcenter:entry" b_DoNotDisplayUsers="true" f_CameraDistanceFromFocalPoint="10.0" f_CameraFocalPointZOffset="4.75" f_PuzzleCameraDistanceFromFocalPoint="12.0" b_HasEntityFittingSurface="true"/>
+      <ZTCloningCenterComponent>
+         <FailureAnimals>
+            <ExtinctBullfrogNorthAmerican weight="23"/>
+            <ExtinctButterflyMonarch weight="23"/>
+            <ExtinctHare weight="22"/>
+            <ExtinctSquirrel weight="22"/>
+            <PenguinKiller_Egg weight="10" limit="1" testType="PenguinKiller"/>
+         </FailureAnimals>
+         <Difficulty sicklyThreshold="50" normalThreshold="70" superThreshold="95">
+            <Level1 numGestures="2" researchTime="60" traceSpeed="3.15" traceSpeedIncrement="0.6" traceSpeedCounter="1">
+               <Gestures g1="1star_LR_T_1" g2="1star_RL_T_1" g3="1star_LR_T_2" g4="1star_RL_T_2" g5="1star_LR_T_3" g6="1star_RL_T_3" g7="1star_LR_T_4" g8="1star_RL_T_4" g9="1star_LR_T_5" g10="1star_RL_T_5" g11="1star_LR_T_6" g12="1star_RL_T_6" g13="1star_LR_T_7" g14="1star_RL_T_7" g15="1star_LR_T_8" g16="1star_RL_T_8" g17="1star_LR_T_9" g18="1star_RL_T_9" g19="1star_LR_T_10" g20="1star_RL_T_10" g21="1star_LR_T_11" g22="1star_RL_T_11" g23="1star_LR_T_12" g24="1star_RL_T_12" g25="1star_LR_T_13" g26="1star_RL_T_13" g27="1star_LR_T_14" g28="1star_RL_T_14" g29="1star_LR_T_15" g30="1star_RL_T_15" g31="1star_LR_T_16" g32="1star_RL_T_16" g33="1star_LR_T_17" g34="1star_RL_T_17" g35="1star_LR_T_18" g36="1star_RL_T_18" g37="1star_LR_T_19" g38="1star_RL_T_19" g39="1star_LR_T_20" g40="1star_RL_T_20" g41="1star_LR_T_21" g42="1star_RL_T_21" g43="1star_LR_T_22" g44="1star_RL_T_22" g45="1star_LR_T_23" g46="1star_RL_T_23" g47="1star_LR_T_24" g48="1star_RL_T_24" g49="1star_LR_T_25" g50="1star_RL_T_25" g51="1star_LR_T_26" g52="1star_RL_T_26" g53="1star_LR_T_27" g54="1star_RL_T_27" g55="1star_LR_T_28" g56="1star_RL_T_28" g57="1star_LR_T_29" g58="1star_RL_T_29" g59="1star_LR_T_30" g60="1star_RL_T_30" g61="1star_LR_B_1" g62="1star_RL_B_1" g63="1star_LR_B_2" g64="1star_RL_B_2" g65="1star_LR_B_3" g66="1star_RL_B_3" g67="1star_LR_B_4" g68="1star_RL_B_4" g69="1star_LR_B_5" g70="1star_RL_B_5" g71="1star_LR_B_6" g72="1star_RL_B_6" g73="1star_LR_B_7" g74="1star_RL_B_7" g75="1star_LR_B_8" g76="1star_RL_B_8" g77="1star_LR_B_9" g78="1star_RL_B_9" g79="1star_LR_B_10" g80="1star_RL_B_10" g81="1star_LR_B_11" g82="1star_RL_B_11" g83="1star_LR_B_12" g84="1star_RL_B_12" g85="1star_LR_B_13" g86="1star_RL_B_13" g87="1star_LR_B_14" g88="1star_RL_B_14" g89="1star_LR_B_15" g90="1star_RL_B_15" g91="1star_LR_B_16" g92="1star_RL_B_16" g93="1star_LR_B_17" g94="1star_RL_B_17" g95="1star_LR_B_18" g96="1star_RL_B_18" g97="1star_LR_B_19" g98="1star_RL_B_19" g99="1star_LR_B_20" g100="1star_RL_B_20" g101="1star_LR_B_21" g102="1star_RL_B_21" g103="1star_LR_B_22" g104="1star_RL_B_22" g105="1star_LR_B_23" g106="1star_RL_B_23" g107="1star_LR_B_24" g108="1star_RL_B_24" g109="1star_LR_B_25" g110="1star_RL_B_25" g111="1star_LR_B_26" g112="1star_RL_B_26" g113="1star_LR_B_27" g114="1star_RL_B_27" g115="1star_LR_B_28" g116="1star_RL_B_28" g117="1star_LR_B_29" g118="1star_RL_B_29" g119="1star_LR_B_30" g120="1star_RL_B_30"/>
+            </Level1>
+            <Level2 numGestures="3" researchTime="80" traceSpeed="3.20" traceSpeedIncrement="0.6" traceSpeedCounter="1">
+               <Gestures g1="2star_LR_T_1" g2="2star_RL_T_1" g3="2star_LR_T_2" g4="2star_RL_T_2" g5="2star_LR_T_3" g6="2star_RL_T_3" g7="2star_LR_T_4" g8="2star_RL_T_4" g9="2star_LR_T_5" g10="2star_RL_T_5" g11="2star_LR_T_6" g12="2star_RL_T_6" g13="2star_LR_T_7" g14="2star_RL_T_7" g15="2star_LR_T_8" g16="2star_RL_T_8" g17="2star_LR_T_9" g18="2star_RL_T_9" g19="2star_LR_T_10" g20="2star_RL_T_10" g21="2star_LR_T_11" g22="2star_RL_T_11" g23="2star_LR_T_12" g24="2star_RL_T_12" g25="2star_LR_T_13" g26="2star_RL_T_13" g27="2star_LR_T_14" g28="2star_RL_T_14" g29="2star_LR_T_15" g30="2star_RL_T_15" g31="2star_LR_T_16" g32="2star_RL_T_16" g33="2star_LR_T_17" g34="2star_RL_T_17" g35="2star_LR_T_18" g36="2star_RL_T_18" g37="2star_LR_T_19" g38="2star_RL_T_19" g39="2star_LR_T_20" g40="2star_RL_T_20" g41="2star_LR_T_21" g42="2star_RL_T_21" g43="2star_LR_T_22" g44="2star_RL_T_22" g45="2star_LR_T_23" g46="2star_RL_T_23" g47="2star_LR_T_24" g48="2star_RL_T_24" g49="2star_LR_T_25" g50="2star_RL_T_25" g51="2star_LR_T_26" g52="2star_RL_T_26" g53="2star_LR_T_27" g54="2star_RL_T_27" g55="2star_LR_T_28" g56="2star_RL_T_28" g57="2star_LR_T_29" g58="2star_RL_T_29" g59="2star_LR_T_30" g60="2star_RL_T_30" g61="2star_LR_B_1" g62="2star_RL_B_1" g63="2star_LR_B_2" g64="2star_RL_B_2" g65="2star_LR_B_3" g66="2star_RL_B_3" g67="2star_LR_B_4" g68="2star_RL_B_4" g69="2star_LR_B_5" g70="2star_RL_B_5" g71="2star_LR_B_6" g72="2star_RL_B_6" g73="2star_LR_B_7" g74="2star_RL_B_7" g75="2star_LR_B_8" g76="2star_RL_B_8" g77="2star_LR_B_9" g78="2star_RL_B_9" g79="2star_LR_B_10" g80="2star_RL_B_10" g81="2star_LR_B_11" g82="2star_RL_B_11" g83="2star_LR_B_12" g84="2star_RL_B_12" g85="2star_LR_B_13" g86="2star_RL_B_13" g87="2star_LR_B_14" g88="2star_RL_B_14" g89="2star_LR_B_15" g90="2star_RL_B_15" g91="2star_LR_B_16" g92="2star_RL_B_16" g93="2star_LR_B_17" g94="2star_RL_B_17" g95="2star_LR_B_18" g96="2star_RL_B_18" g97="2star_LR_B_19" g98="2star_RL_B_19" g99="2star_LR_B_20" g100="2star_RL_B_20" g101="2star_LR_B_21" g102="2star_RL_B_21" g103="2star_LR_B_22" g104="2star_RL_B_22" g105="2star_LR_B_23" g106="2star_RL_B_23" g107="2star_LR_B_24" g108="2star_RL_B_24" g109="2star_LR_B_25" g110="2star_RL_B_25" g111="2star_LR_B_26" g112="2star_RL_B_26" g113="2star_LR_B_27" g114="2star_RL_B_27" g115="2star_LR_B_28" g116="2star_RL_B_28" g117="2star_LR_B_29" g118="2star_RL_B_29" g119="2star_LR_B_30" g120="2star_RL_B_30"/>
+            </Level2>
+            <Level3 numGestures="4" researchTime="120" traceSpeed="3.25" traceSpeedIncrement="0.6" traceSpeedCounter="1">
+               <Gestures g1="3star_LR_T_1" g2="3star_RL_T_1" g3="3star_LR_T_2" g4="3star_RL_T_2" g5="3star_LR_T_3" g6="3star_RL_T_3" g7="3star_LR_T_4" g8="3star_RL_T_4" g9="3star_LR_T_5" g10="3star_RL_T_5" g11="3star_LR_T_6" g12="3star_RL_T_6" g13="3star_LR_T_7" g14="3star_RL_T_7" g15="3star_LR_T_8" g16="3star_RL_T_8" g17="3star_LR_T_9" g18="3star_RL_T_9" g19="3star_LR_T_10" g20="3star_RL_T_10" g21="3star_LR_T_11" g22="3star_RL_T_11" g23="3star_LR_T_12" g24="3star_RL_T_12" g25="3star_LR_T_13" g26="3star_RL_T_13" g27="3star_LR_T_14" g28="3star_RL_T_14" g29="3star_LR_T_15" g30="3star_RL_T_15" g31="3star_LR_T_16" g32="3star_RL_T_16" g33="3star_LR_T_17" g34="3star_RL_T_17" g35="3star_LR_T_18" g36="3star_RL_T_18" g37="3star_LR_T_19" g38="3star_RL_T_19" g39="3star_LR_T_20" g40="3star_RL_T_20" g41="3star_LR_T_21" g42="3star_RL_T_21" g43="3star_LR_T_22" g44="3star_RL_T_22" g45="3star_LR_T_23" g46="3star_RL_T_23" g47="3star_LR_T_24" g48="3star_RL_T_24" g49="3star_LR_T_25" g50="3star_RL_T_25" g51="3star_LR_T_26" g52="3star_RL_T_26" g53="3star_LR_T_27" g54="3star_RL_T_27" g55="3star_LR_T_28" g56="3star_RL_T_28" g57="3star_LR_T_29" g58="3star_RL_T_29" g59="3star_LR_T_30" g60="3star_RL_T_30" g61="3star_LR_B_1" g62="3star_RL_B_1" g63="3star_LR_B_2" g64="3star_RL_B_2" g65="3star_LR_B_3" g66="3star_RL_B_3" g67="3star_LR_B_4" g68="3star_RL_B_4" g69="3star_LR_B_5" g70="3star_RL_B_5" g71="3star_LR_B_6" g72="3star_RL_B_6" g73="3star_LR_B_7" g74="3star_RL_B_7" g75="3star_LR_B_8" g76="3star_RL_B_8" g77="3star_LR_B_9" g78="3star_RL_B_9" g79="3star_LR_B_10" g80="3star_RL_B_10" g81="3star_LR_B_11" g82="3star_RL_B_11" g83="3star_LR_B_12" g84="3star_RL_B_12" g85="3star_LR_B_13" g86="3star_RL_B_13" g87="3star_LR_B_14" g88="3star_RL_B_14" g89="3star_LR_B_15" g90="3star_RL_B_15" g91="3star_LR_B_16" g92="3star_RL_B_16" g93="3star_LR_B_17" g94="3star_RL_B_17" g95="3star_LR_B_18" g96="3star_RL_B_18" g97="3star_LR_B_19" g98="3star_RL_B_19" g99="3star_LR_B_20" g100="3star_RL_B_20" g101="3star_LR_B_21" g102="3star_RL_B_21" g103="3star_LR_B_22" g104="3star_RL_B_22" g105="3star_LR_B_23" g106="3star_RL_B_23" g107="3star_LR_B_24" g108="3star_RL_B_24" g109="3star_LR_B_25" g110="3star_RL_B_25" g111="3star_LR_B_26" g112="3star_RL_B_26" g113="3star_LR_B_27" g114="3star_RL_B_27" g115="3star_LR_B_28" g116="3star_RL_B_28" g117="3star_LR_B_29" g118="3star_RL_B_29" g119="3star_LR_B_30" g120="3star_RL_B_30"/>
+            </Level3>
+            <Level4 numGestures="5" researchTime="180" traceSpeed="3.30" traceSpeedIncrement="0.6" traceSpeedCounter="1">
+               <Gestures g1="4star_LR_T_1" g2="4star_RL_T_1" g3="4star_LR_T_2" g4="4star_RL_T_2" g5="4star_LR_T_3" g6="4star_RL_T_3" g7="4star_LR_T_4" g8="4star_RL_T_4" g9="4star_LR_T_5" g10="4star_RL_T_5" g11="4star_LR_T_6" g12="4star_RL_T_6" g13="4star_LR_T_7" g14="4star_RL_T_7" g15="4star_LR_T_8" g16="4star_RL_T_8" g17="4star_LR_T_9" g18="4star_RL_T_9" g19="4star_LR_T_10" g20="4star_RL_T_10" g21="4star_LR_T_11" g22="4star_RL_T_11" g23="4star_LR_T_12" g24="4star_RL_T_12" g25="4star_LR_T_13" g26="4star_RL_T_13" g27="4star_LR_T_14" g28="4star_RL_T_14" g29="4star_LR_T_15" g30="4star_RL_T_15" g31="4star_LR_T_16" g32="4star_RL_T_16" g33="4star_LR_T_17" g34="4star_RL_T_17" g35="4star_LR_T_18" g36="4star_RL_T_18" g37="4star_LR_T_19" g38="4star_RL_T_19" g39="4star_LR_T_20" g40="4star_RL_T_20" g41="4star_LR_T_21" g42="4star_RL_T_21" g43="4star_LR_T_22" g44="4star_RL_T_22" g45="4star_LR_T_23" g46="4star_RL_T_23" g47="4star_LR_T_24" g48="4star_RL_T_24" g49="4star_LR_T_25" g50="4star_RL_T_25" g51="4star_LR_T_26" g52="4star_RL_T_26" g53="4star_LR_T_27" g54="4star_RL_T_27" g55="4star_LR_T_28" g56="4star_RL_T_28" g57="4star_LR_T_29" g58="4star_RL_T_29" g59="4star_LR_T_30" g60="4star_RL_T_30" g61="4star_LR_B_1" g62="4star_RL_B_1" g63="4star_LR_B_2" g64="4star_RL_B_2" g65="4star_LR_B_3" g66="4star_RL_B_3" g67="4star_LR_B_4" g68="4star_RL_B_4" g69="4star_LR_B_5" g70="4star_RL_B_5" g71="4star_LR_B_6" g72="4star_RL_B_6" g73="4star_LR_B_7" g74="4star_RL_B_7" g75="4star_LR_B_8" g76="4star_RL_B_8" g77="4star_LR_B_9" g78="4star_RL_B_9" g79="4star_LR_B_10" g80="4star_RL_B_10" g81="4star_LR_B_11" g82="4star_RL_B_11" g83="4star_LR_B_12" g84="4star_RL_B_12" g85="4star_LR_B_13" g86="4star_RL_B_13" g87="4star_LR_B_14" g88="4star_RL_B_14" g89="4star_LR_B_15" g90="4star_RL_B_15" g91="4star_LR_B_16" g92="4star_RL_B_16" g93="4star_LR_B_17" g94="4star_RL_B_17" g95="4star_LR_B_18" g96="4star_RL_B_18" g97="4star_LR_B_19" g98="4star_RL_B_19" g99="4star_LR_B_20" g100="4star_RL_B_20" g101="4star_LR_B_21" g102="4star_RL_B_21" g103="4star_LR_B_22" g104="4star_RL_B_22" g105="4star_LR_B_23" g106="4star_RL_B_23" g107="4star_LR_B_24" g108="4star_RL_B_24" g109="4star_LR_B_25" g110="4star_RL_B_25" g111="4star_LR_B_26" g112="4star_RL_B_26" g113="4star_LR_B_27" g114="4star_RL_B_27" g115="4star_LR_B_28" g116="4star_RL_B_28" g117="4star_LR_B_29" g118="4star_RL_B_29" g119="4star_LR_B_30" g120="4star_RL_B_30"/>
+            </Level4>
+            <Level5 numGestures="6" researchTime="240" traceSpeed="3.35" traceSpeedIncrement="0.6" traceSpeedCounter="1">
+               <Gestures g1="5star_LR_T_1" g2="5star_RL_T_1" g3="5star_LR_T_2" g4="5star_RL_T_2" g5="5star_LR_T_3" g6="5star_RL_T_3" g7="5star_LR_T_4" g8="5star_RL_T_4" g9="5star_LR_T_5" g10="5star_RL_T_5" g11="5star_LR_T_6" g12="5star_RL_T_6" g13="5star_LR_T_7" g14="5star_RL_T_7" g15="5star_LR_T_8" g16="5star_RL_T_8" g17="5star_LR_T_9" g18="5star_RL_T_9" g19="5star_LR_T_10" g20="5star_RL_T_10" g21="5star_LR_T_11" g22="5star_RL_T_11" g23="5star_LR_T_12" g24="5star_RL_T_12" g25="5star_LR_T_13" g26="5star_RL_T_13" g27="5star_LR_T_14" g28="5star_RL_T_14" g29="5star_LR_T_15" g30="5star_RL_T_15" g31="5star_LR_T_16" g32="5star_RL_T_16" g33="5star_LR_T_17" g34="5star_RL_T_17" g35="5star_LR_T_18" g36="5star_RL_T_18" g37="5star_LR_T_19" g38="5star_RL_T_19" g39="5star_LR_T_20" g40="5star_RL_T_20" g41="5star_LR_T_21" g42="5star_RL_T_21" g43="5star_LR_T_22" g44="5star_RL_T_22" g45="5star_LR_T_23" g46="5star_RL_T_23" g47="5star_LR_T_24" g48="5star_RL_T_24" g49="5star_LR_T_25" g50="5star_RL_T_25" g51="5star_LR_T_26" g52="5star_RL_T_26" g53="5star_LR_T_27" g54="5star_RL_T_27" g55="5star_LR_T_28" g56="5star_RL_T_28" g57="5star_LR_T_29" g58="5star_RL_T_29" g59="5star_LR_T_30" g60="5star_RL_T_30" g61="5star_LR_B_1" g62="5star_RL_B_1" g63="5star_LR_B_2" g64="5star_RL_B_2" g65="5star_LR_B_3" g66="5star_RL_B_3" g67="5star_LR_B_4" g68="5star_RL_B_4" g69="5star_LR_B_5" g70="5star_RL_B_5" g71="5star_LR_B_6" g72="5star_RL_B_6" g73="5star_LR_B_7" g74="5star_RL_B_7" g75="5star_LR_B_8" g76="5star_RL_B_8" g77="5star_LR_B_9" g78="5star_RL_B_9" g79="5star_LR_B_10" g80="5star_RL_B_10" g81="5star_LR_B_11" g82="5star_RL_B_11" g83="5star_LR_B_12" g84="5star_RL_B_12" g85="5star_LR_B_13" g86="5star_RL_B_13" g87="5star_LR_B_14" g88="5star_RL_B_14" g89="5star_LR_B_15" g90="5star_RL_B_15" g91="5star_LR_B_16" g92="5star_RL_B_16" g93="5star_LR_B_17" g94="5star_RL_B_17" g95="5star_LR_B_18" g96="5star_RL_B_18" g97="5star_LR_B_19" g98="5star_RL_B_19" g99="5star_LR_B_20" g100="5star_RL_B_20" g101="5star_LR_B_21" g102="5star_RL_B_21" g103="5star_LR_B_22" g104="5star_RL_B_22" g105="5star_LR_B_23" g106="5star_RL_B_23" g107="5star_LR_B_24" g108="5star_RL_B_24" g109="5star_LR_B_25" g110="5star_RL_B_25" g111="5star_LR_B_26" g112="5star_RL_B_26" g113="5star_LR_B_27" g114="5star_RL_B_27" g115="5star_LR_B_28" g116="5star_RL_B_28" g117="5star_LR_B_29" g118="5star_RL_B_29" g119="5star_LR_B_30" g120="5star_RL_B_30"/>
+            </Level5>
+         </Difficulty>
+      </ZTCloningCenterComponent>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="shadowObj">
+         <instance>
+            <BFPhysObj>
+               <BFMovingBlobShadowComponent shadowTexture="world\shadows\blob\square_blob2.tga" baseNode="ShadowNode_01" width="18" length="10" offwidth="1" offlength="4" intensity="0.3"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter" initialTextKey="snd &quot;cloningcenter_exterior&quot; looping"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFCollisionComponent/>
+               <BFTerrainPaintComponent/>
+               <BFDistanceCullComponent firstPersonOnly="true" cullDistance="200"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="interiorObj" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_Interior"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="puzzleInteriorObj" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_FossilLab"/>
+               <BFGroundFitComponent heightOffset="0.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="FitSurfacePick">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_FittingSurface"/>
+               <BFGFittingSurfaceComponent heightOffset="2.71" fitToActualHeight="false"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="countdownObj" required="1">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="UI/fx/traininggestures/cloningcenter_countdown"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="8000" mergeKey="name">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+               <ZTTransaction name="upkeep" cost="1250" period="monthly" type="debit" category="upkeep"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTGestureComponent trickName="NewCloneGesture" stepSize="0.05" eventMarkerName="cloning_event_marker" eventTextures="UI/fx/traininggestures/cloningcenter_mouseleft.dds,UI/fx/traininggestures/cloningcenter_upkey.dds,UI/fx/traininggestures/cloningcenter_downkey.dds,UI/fx/traininggestures/cloningcenter_leftkey.dds,UI/fx/traininggestures/cloningcenter_rightkey.dds,UI/fx/traininggestures/cloningcenter_A.dds,UI/fx/traininggestures/cloningcenter_C.dds,UI/fx/traininggestures/cloningcenter_G.dds,UI/fx/traininggestures/cloningcenter_T.dds"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="GestureLine" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFGestureSplineComponent material="GestureSpline.bfmat" diststep="0.4" distWrapU="1.0" endPiecesLen="1.0"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <ZTCloningCenterInstanceComponent/>
+         </instance>
+      </BFBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIEntityDataInstance f_GooLevel="0"/>
+         </instance>
+      </BFBinder>
+      <BFNamedBinder binderName="Goo_State0" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State6" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State1" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State5" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State2" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State4" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State3" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State3" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State4" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State2" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State5" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State1" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="Goo_State6" required="0">
+         <instance>
+            <BFPhysObj>
+               <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CloningCenter/CloningCenter_ScienceGoo_State0" switch="0 20 40" minSwitch="0 0 15" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+         <instance>
+            <BFAIFadeController attribName="f_GooLevel" currState="Goo_State0" fadePeriod="0" parentObj="interiorObj" parentNode="Liquid_Full">
+               <stateList>
+                  <Goo_State0 physObj="Goo_State0" minRange="0" maxRange="1"/>
+                  <Goo_State1 physObj="Goo_State1" minRange="1" maxRange="2"/>
+                  <Goo_State2 physObj="Goo_State2" minRange="2" maxRange="3"/>
+                  <Goo_State3 physObj="Goo_State3" minRange="3" maxRange="4"/>
+                  <Goo_State4 physObj="Goo_State4" minRange="4" maxRange="5"/>
+                  <Goo_State5 physObj="Goo_State5" minRange="5" maxRange="6"/>
+                  <Goo_State6 physObj="Goo_State6" minRange="6" maxRange="7"/>
+               </stateList>
+            </BFAIFadeController>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

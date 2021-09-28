@@ -1,0 +1,547 @@
+<ZTScenarioMgr interval="1" name="mgr" state="0" chain="true" allsuccess="true" sticky="true" optional="false">
+   <info locid="Tutoriallabels:cp2_T1"/>
+   <children>
+      <BFScenarioRule hidden="1" name="blinktutorialring" state="0" sticky="false" updateWhenPaused="true">
+         <evaluate>
+            <BFScenarioScriptAction script="scenario/scripts/tutorial_1.lua" entry="blinktutorialring"/>
+         </evaluate>
+      </BFScenarioRule>
+      <BFScenarioGroup name="tutorialinit" state="0" chain="true" allsuccess="true" sticky="true">
+         <children>
+            <BFScenarioRule hidden="1" name="setinitialtutorialstate" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="setinitialtutorialstate"/>
+               </evaluate>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+      <BFScenarioGroup name="tutorialcloning" state="0" chain="true" allsuccess="true" sticky="true" updateWhenPaused="true">
+         <children>
+            <BFScenarioRule hidden="0" name="welcome" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="cp2_tutorial1:opengoalpanel" overview="Tutoriallabels:cp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="welcome"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="welcomesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="openconstructionpanel" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="cp2_tutorial1:opengoalpanel" overview="Tutoriallabels:cp2_T1overviewshort"/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="openconstructionpanel"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="openconstructionpanelsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectbuildingtab" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectbuildingtab"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectbuildingtabsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <!--BFScenarioRule hidden="1" name="selectresearchlabicon" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlabicon"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlabiconsuccess"/>
+               </success>
+            </BFScenarioRule-->
+            <BFScenarioRule hidden="1" name="placeresearchlab" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid="tutorial2:opengoalpanelcompleted"/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="placeresearchlab"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="placeresearchlabsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectresearchlab" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlab"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlabsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectfossilfinding" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectfossilfinding"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectfossilfindingsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="enterfossilfinding" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enterfossilfinding"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enterfossilfindingsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="findfossils1" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="findfossils1"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="findfossils1success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="digfossils1" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils1"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils1success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="findfossils2" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="findfossils2"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="findfossils2success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="digfossils2" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils2"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils2success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="digfossils3" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils3"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="digfossils3success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectresearchlab2" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlab2"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlab2success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectfossilbuilding" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectfossilbuilding"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectfossilbuildingsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <!--BFScenarioRule hidden="1" name="selectdodo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectdodo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectdodosuccess"/>
+               </success>
+            </BFScenarioRule-->
+            <BFScenarioRule hidden="1" name="enterfossilbuilding" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enterfossilbuilding"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enterfossilbuildingsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="startfossilbuilding" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startfossilbuilding"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startfossilbuildingsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="builddodo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="builddodo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="builddodosuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectresearchlab3" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlab3"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectresearchlab3success"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectanimalcreation" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectanimalcreation"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectanimalcreationsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="enteranimalcreation" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enteranimalcreation"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="enteranimalcreationsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="startanimalcreation" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startanimalcreation"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startanimalcreationsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="createdodo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="createdodo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="createdodosuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="dodocloned" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="dodocloned"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="dodoclonedsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="dcshowcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="placedodo" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="placedodo"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="placedodosuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="diseaseintro" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="diseaseintro"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="diseaseintrosuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectbigdiseasebutton" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectbigdiseasebutton"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectbigdiseasebuttonsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="selectdiseasebutton" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectdiseasebutton"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="selectdiseasebuttonsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="startdiseasemode" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startdiseasemode"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="startdiseasemodesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="tutorialdisease" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="tutorialdisease"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="tutorialdiseasesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="showcompletiontext" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontext"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="showcompletiontextsuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="curedisease" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="curedisease"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="curediseasesuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="applycure" state="0" sticky="true">
+               <info type="primary">
+                  <neutral locid="" overview=""/>
+                  <success locid=""/>
+               </info>
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="applycure"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="applycuresuccess"/>
+               </success>
+            </BFScenarioRule>
+            <BFScenarioRule hidden="1" name="endscenario" state="0" sticky="true">
+               <evaluate>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="endscenario"/>
+               </evaluate>
+               <success>
+                  <BFScenarioScriptAction script="scenario/scripts/cp2_tutorial1.lua" entry="endscenariosuccess"/>
+               </success>
+            </BFScenarioRule>
+         </children>
+      </BFScenarioGroup>
+   </children>
+</ZTScenarioMgr>

@@ -1,0 +1,2403 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="25"/>
+               <DefaultHappy weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="10"/>
+               <DefaultHappy weight="90"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="25"/>
+               <Default_inWater_Happy weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <Default_inWater_Happy weight="90"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="25"/>
+               <DefaultUnhappy weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultUnhappy weight="90"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="25"/>
+               <Default_inWater_Unhappy weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <Default_inWater_Unhappy weight="90"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultHappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultCall weight="20"/>
+               <DefaultChirp weight="20"/>
+               <DefaultLook weight="20"/>
+               <DefaultListen weight="20"/>
+               <DefaultScratch weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultCall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Call"/>
+      </behaviors>
+   </DefaultCall>
+   <DefaultChirp>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Chirp"/>
+      </behaviors>
+   </DefaultChirp>
+   <DefaultLook>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Look"/>
+      </behaviors>
+   </DefaultLook>
+   <DefaultListen>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Listening"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Look"/>
+      </behaviors>
+   </DefaultListen>
+   <DefaultScratch>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ScratchingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Scratch"/>
+      </behaviors>
+   </DefaultScratch>
+   <Default_inWater_Happy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultCall weight="20"/>
+               <DefaultChirp weight="20"/>
+               <DefaultLook weight="20"/>
+               <DefaultListen weight="20"/>
+               <DefaultScratch weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Screech weight="30"/>
+               <Stand_Scream weight="60"/>
+               <Stand_Snarl weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <DefaultScreech>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Screech"/>
+      </behaviors>
+   </DefaultScreech>
+   <DefaultScream>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Scream"/>
+      </behaviors>
+   </DefaultScream>
+   <DefaultSnarl>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Snarl"/>
+      </behaviors>
+   </DefaultSnarl>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Screech weight="30"/>
+               <Stand_Scream weight="60"/>
+               <Stand_Snarl weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DefaultStand"/>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Look"/>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Lie>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="12"/>
+      </behaviors>
+   </Lie>
+   <Sleep>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Rest>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="12"/>
+      </behaviors>
+   </Rest>
+   <Lie_Idle>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Lie_Idle>
+   <Look>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <LookLeftRight weight="50"/>
+               <LookRightLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Look>
+   <LookLeftRight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+      </behaviors>
+   </LookLeftRight>
+   <LookRightLeft>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+      </behaviors>
+   </LookRightLeft>
+   <Sniff>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+      </behaviors>
+   </Sniff>
+   <FailureSet>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Ground_Failure"/>
+               <water behSet="Water_Failure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <Ground_Failure>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Screech"/>
+               <StandObject behSet="ChewObject"/>
+               <default behSet="Screech"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Ground_Failure>
+   <Water_Failure>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="TreadWater"/>
+               <TreadWater behSet="TreadWater"/>
+               <default behSet="TreadWater"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Water_Failure>
+   <StandObject>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="StandObject_Idle"/>
+      </behaviors>
+   </StandObject>
+   <Poop>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Groom>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <Scratch weight="50"/>
+               <GroomSelf weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Groom>
+   <GroomSelf>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GroomSelf" playTime="5"/>
+      </behaviors>
+   </GroomSelf>
+   <Scratch>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="3">
+            <randomSets>
+               <ScratchFace weight="50"/>
+               <ScratchBody weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Scratch>
+   <ScratchFace>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ScratchFaceA weight="50"/>
+               <Stand_ScratchFaceB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ScratchFace>
+   <ScratchBody>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ScratchBodyA weight="50"/>
+               <Stand_ScratchBodyB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ScratchBody>
+   <Sneeze>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="LieSickly_Sneeze"/>
+               <Lie behSet="Stand_Sneeze"/>
+               <LieSickly behSet="LieSickly_Sneeze"/>
+               <default behSet="Stand_Sneeze"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Stand_Sneeze>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Stand_Sneeze>
+   <LieSickly_Sneeze>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="LieSickly_Sneeze"/>
+      </behaviors>
+   </LieSickly_Sneeze>
+   <Yawn>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn>
+   <EatLarge>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Look"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Chew" container="foodprop"/>
+         <BFBehPlaySet behSet="Chew"/>
+         <BFBehPlaySet behSet="Scratch"/>
+      </behaviors>
+   </EatLarge>
+   <Eat>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" detachBehSet="Chew" container="foodprop"/>
+         <BFBehPlaySet behSet="Chew"/>
+         <BFBehPlaySet behSet="Scratch"/>
+      </behaviors>
+   </Eat>  
+   <Chew>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_ChewSwallow"/>
+      </behaviors>
+   </Chew>   
+   <Drink>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+      </behaviors>
+   </Drink>
+   <EnterFoodDish>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterBeefShank>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock targetAnim="Stand_Idle" subjectNode="Node_Mouth" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBeefShank> 
+   <UseBeefShank>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseBeefShank>
+   <ExitBeefShank>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBeefShank>
+   <EnterLiveFood>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock targetAnim="Stand_Idle" subjectNode="Node_Mouth" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterLiveFood> 
+   <UseLiveFood>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+         <BFBehAnimate targetAnim="EatTrough_Idle"/>
+      </behaviors>
+   </UseLiveFood>
+   <ExitLiveFood>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitLiveFood>
+   <EnterIceBlock>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock targetAnim="Stand_Idle" subjectNode="Dock_IceBlock" interpolationDistance="2"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock> 
+   <UseIceBlock>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Eat"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitIceBlock>
+   <EnterBall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_Ball" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+      </behaviors>
+   </UseBarrel_Whap>
+   <UseBall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick"/>
+      </behaviors>
+   </UseBall>
+   <UseBall_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+      </behaviors>
+   </UseBall_Whap>
+   <PlayBone>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sniff"/>
+         <BFBehPlaySet behSet="Look"/>
+         <BFBehPlaySet behSet="Sniff"/>
+      </behaviors>
+   </PlayBone>
+   <ExitBall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <PlayBall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick"/>
+      </behaviors>
+   </PlayBall>
+   <Bite>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Bite>
+   <Bite_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_Bite"/>
+      </behaviors>
+   </Bite_Whap>
+   <DockFight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" locoSpeed="fast" targetAnim="Stand_KickLeft" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <WaitFight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFight>
+   <DockPlayFight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" locoSpeed="fast" targetAnim="Stand_KickLeft" redock="true"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <HitMed>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHit" />
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHit" />
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="75"/>
+               <HitMedDie weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Bite" loopFlag="true"/>
+      </behaviors>
+   </BiteMed>
+   <SwipeMed>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Bite" loopFlag="true"/>
+      </behaviors>
+   </SwipeMed>
+   <BitMed>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHit" />
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHit" />
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="75"/>
+               <BitMedDie weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMedPlayLose>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHit" />
+      </behaviors>
+   </BitMedPlayLose>
+   <BitMedPlay>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMedPlayEqualLose weight="50"/>
+               <BitMedPlayEqualWin weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMedPlay>
+   <BitMedPlayEqualLose>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="BitMed" targetBehSet="Kick"/>
+         <BFBehSyncSet subjectBehSet="BitMedPlayLose" targetBehSet="BiteMed"/>
+      </behaviors>
+   </BitMedPlayEqualLose>
+   <BitMedPlayEqualWin>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="BitMed"/>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="BitMedPlayLose"/>
+      </behaviors>
+   </BitMedPlayEqualWin>
+   <Kick>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <KickLeft weight="50"/>
+               <KickRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Kick>
+   <Kick_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <KickLeft_Whap weight="50"/>
+               <KickRight_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Kick_Whap>
+   <KickLeft>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </KickLeft>
+   <KickLeft_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </KickLeft_Whap>
+   <KickRight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </KickRight>
+   <KickRight_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </KickRight_Whap>
+   <Roar>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Screech weight="30"/>
+               <Stand_Scream weight="60"/>
+               <Stand_Snarl weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Roar>
+   <Screech>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Screech"/>
+      </behaviors>
+   </Screech>
+   <Scream>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Scream"/>
+      </behaviors>
+   </Scream>
+   <Snarl>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Snarl"/>
+      </behaviors>
+   </Snarl>
+   <ContactCall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <Call weight="50"/>
+               <Chirp weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Call>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_CallA weight="50"/>
+               <Stand_CallB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Call>
+   <Chirp>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_ChirpA weight="50"/>
+               <Stand_ChirpB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Chirp>
+   <SubmissiveGreeting>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Call"/>
+      </behaviors>
+   </SubmissiveGreeting>
+   <DominanceGreeting>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Snarl"/>
+      </behaviors>
+   </DominanceGreeting>
+   <TurnRight>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </TurnRight>
+   <Stand_Idle>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <TreadWater_Idle>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <WaitAttack>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <AttackMed>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </AttackMed>
+   <ChasePrey>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="6" pursuitRadius="40" locoSpeed="stalk"/>
+         <BFBehPlaySet behSet="Chirp"/>
+         <BFBehPlaySet behSet="Chirp"/>
+      </behaviors>
+   </ChasePrey>
+   <TeachChase>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="6" pursuitRadius="40" locoSpeed="stalk"/>
+         <BFBehPlaySet behSet="Chirp"/>
+         <BFBehPlaySet behSet="Chirp"/>
+      </behaviors>
+   </TeachChase>
+   <MissPrey>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+      </behaviors>
+   </MissPrey>
+   <AttackPrey>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_KickLeft weight="50"/>
+               <Stand_KickRight weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="Stand_Bite" loopFlag="true"/>
+      </behaviors>
+   </AttackPrey>
+   <DockAttacked>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <EnterShelter1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter1>
+   <EnterShelter2>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter2>
+   <EnterShelter3>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter3>
+   <EnterShelter4>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter4>
+   <EnterShelter5>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter5>
+   <EnterShelter6>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" exitTap="false"/>
+      </behaviors>
+   </EnterShelter6>
+   <UseExtinctShelter>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="15"/>
+         <BFBehAnimate targetAnim="Sleep_2Lie"/>
+         <BFBehAnimate targetAnim="Lie_2Stand"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitShelter1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter1>
+   <ExitShelter2>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter2>
+   <ExitShelter3>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter3>
+   <ExitShelter4>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode08_Branch1DEnd2ExitD" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter4>
+   <ExitShelter5>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode10_Branch1EEnd2ExitE" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter5>
+   <ExitShelter6>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode12_Branch1FEnd2ExitF" exitTAP="true"/>
+      </behaviors>
+   </ExitShelter6>
+   <EnterKopjeTop>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Top_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Top_EnterA" exitTAP="false"/>
+      </behaviors>
+   </EnterKopjeTop>
+   <UseKopjeTop>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <LookLeftRight weight="50"/>
+               <LookRightLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="7"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </UseKopjeTop>
+   <ExitKopjeTop>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Top_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitKopjeTop>
+   <EnterExtinctShelter1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseShelter>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </UseShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+   <EnterShadeStructure>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterShadeStructure> 
+   <UseShadeStructure>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="20"/>
+      </behaviors>
+   </UseShadeStructure>
+   <ExitShadeStructure>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitShadeStructure>
+   <EnterHeatLamp>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHeatLamp> 
+   <UseHeatLamp>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="20"/>
+      </behaviors>
+   </UseHeatLamp>
+   <ExitHeatLamp>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitHeatLamp>
+   <Mate>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <StartNest>
+      <subjects>
+         <Velociraptor_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="SpawnNest"/>
+      </behaviors>
+   </StartNest>
+   <SpawnNest>
+      <subjects>
+         <Velociraptor_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehSpawn spawnEntity="VelociraptorNest" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <SpawnNest>
+      <subjects>
+         <Velociraptor_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehSpawn spawnEntity="VelociraptorNest_Super" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <BuildVelociraptorNest>
+      <subjects>
+         <Velociraptor_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehSetAttribute>
+            <BFAITargetData f_ConstructionLevel="34"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BuildVelociraptorNest>
+   <FinishVelociraptorNest>
+      <subjects>
+         <Velociraptor_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehSpawn spawnEntity="VelociraptorNest_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </FinishVelociraptorNest>
+   <FinishVelociraptorNest>
+      <subjects>
+         <Velociraptor_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2StandObject"/>
+         <BFBehAnimate targetAnim="StandObject_2Stand"/>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehSpawn spawnEntity="VelociraptorNest_Egg_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </FinishVelociraptorNest>
+   <HatchEgg>
+      <subjects>
+         <VelociraptorNest_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <VelociraptorNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <VelociraptorNest_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <VelociraptorNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="VelociraptorNest_Egg" morphTargetEntityType="Velociraptor_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <VelociraptorNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="VelociraptorNest_Egg" morphTargetEntityType="Velociraptor_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <VelociraptorNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="VelociraptorNest_Egg_Super" morphTargetEntityType="Velociraptor_Young_F_Super" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <VelociraptorNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="VelociraptorNest_Egg_Super" morphTargetEntityType="Velociraptor_Young_M_Super" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnSuperM>
+   <ThrashWater>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </ThrashWater>
+   <Sick>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="LieSickly_Idle"/>
+         <BFBehAnimate targetAnim="LieSickly_Sneeze"/>
+         <BFBehAnimate targetAnim="LieSickly_Idle" playTime="20"/>
+      </behaviors>
+   </VerySick>
+   <MatingCall>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Call"/>
+      </behaviors>
+   </MatingCall>
+   <DockAttackGuest>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Velociraptor_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <ChaseBall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_Ball" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <CallMother>
+      <subjects>
+         <Velociraptor_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallingTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_ChirpA" playTime="20"/>
+      </behaviors>
+   </CallMother>
+   <CallMother2>
+      <subjects>
+         <Velociraptor_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallingTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_ChirpB" playTime="15"/>
+      </behaviors>
+   </CallMother2>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <Wake>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Scratch weight="33"/>
+               <GroomSelf weight="33"/>
+               <Kick weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehPlaySet behSet="Look"/>
+      </behaviors>
+   </Wake>
+   <EnterRockSniff1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToSniff" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock targetAnim="Stand_Idle" subjectNode="Node_Mouth"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterRockSniff1>
+   <SniffRock>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SniffOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sniff"/>
+      </behaviors>
+   </SniffRock>
+   <ExitRockSniff1>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitRockSniff1>
+   <DockGreet>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Greet" targetNode="Dock_Greet" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockGreet>
+   <WaitGreet>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitGreet>
+   <JumpFence>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Run_JumpFence"/>
+      </behaviors>
+   </JumpFence>
+   <TestFence>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TestFence"/>
+      </behaviors>
+   </TestFence>
+   <TestFence_Shocked>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TestFenceShocked"/>
+      </behaviors>
+   </TestFence_Shocked>
+   <EnterPoleRopeFeeder>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_PoleRope" targetNode="Dock_Swipe" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterPoleRopeFeeder>
+   <UsePoleRopeFeeder_Eat>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="4">
+            <randomAnims>
+               <Stand_Bite weight="80"/>
+               <Stand_Sniff weight="20"/>
+            </randomAnims>
+         </BFBehAnimateRandom>      
+      </behaviors>
+   </UsePoleRopeFeeder_Eat>   
+   <EnterPoleRope>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_PoleRope" targetNode="Dock_Swipe" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterPoleRope> 
+   <UsePoleRope>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Bite"/>
+      </behaviors>
+   </UsePoleRope>
+   <UsePoleRope_Whap>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick_Whap"/>
+      </behaviors>
+   </UsePoleRope_Whap>
+   <ExitPoleRope>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </ExitPoleRope>
+   <Turn180>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Turn180>
+   <LoopIdle>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopSleep>
+      <subjects>
+         <Velociraptor/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+</BehaviorSets>

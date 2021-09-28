@@ -1,0 +1,20 @@
+<BFScenarioGroup name="fossilfindingrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="fossilfinding" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHFossilFindingShort" overview="Challengetext:CHFossilFinding" />
+				<success locid="Challengetext:CHFossilFindingSuccessShort" overview="Challengetext:CHFossilFindingSuccess" />
+				<failure locid="Challengetext:CHFossilFindingFailureShort" overview="Challengetext:CHFossilFindingFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilfinding.lua" entry="evalFossilFinding" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilfinding.lua" entry="completeFossilFinding" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/fossilfinding.lua" entry="failFossilFinding" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

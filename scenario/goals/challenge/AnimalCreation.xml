@@ -1,0 +1,20 @@
+<BFScenarioGroup name="animalcreationrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="animalcreation" state="0" sticky="true">
+			<info type="primary">
+				<neutral locid="Challengetext:CHAnimalCreationShort" overview="Challengetext:CHAnimalCreation" />
+				<success locid="Challengetext:CHAnimalCreationSuccessShort" overview="Challengetext:CHAnimalCreationSuccess" />
+				<failure locid="Challengetext:CHAnimalCreationFailureShort" overview="Challengetext:CHAnimalCreationFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/animalcreation.lua" entry="evalAnimalCreation" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/animalcreation.lua" entry="completeAnimalCreation" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/animalcreation.lua" entry="failAnimalCreation" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

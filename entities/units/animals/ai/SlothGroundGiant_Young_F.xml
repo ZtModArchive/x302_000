@@ -1,0 +1,27 @@
+<BFTypedBinder binderType="SlothGroundGiant_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Xenarthra>
+                     <Megatheriidae>
+                        <SlothGroundGiant>
+                           <SlothGroundGiant_Young>
+                              <SlothGroundGiant_Young_F/>
+                           </SlothGroundGiant_Young>
+                        </SlothGroundGiant>
+                     </Megatheriidae>
+                  </Xenarthra>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,10 @@
+<UILayout name="Message Panel">
+   <UIRegion x="236" y="106" w="558" h="280" xalign="min" yalign="min" walign="len" halign="len" />
+   <UIState active="normal" visible="hidden" />
+   <children>
+      <UIText name="Message Text">
+         <UIRegion x="0" y="1" w="558" h="280" xalign="min" yalign="min" walign="len" halign="len" />
+         <text format="cloningfeedback:animal_format" type="multi"/>
+      </UIText>
+   </children>
+</UILayout>

@@ -1,0 +1,63 @@
+<UILayout name="LegendItem">
+   <UIRegion x="0" y="0" w="215" h="64" xalign="min" yalign="min" walign="len" halign="len"/>
+   <children>
+      <UIStatic name="background">
+         <UIRegion x="0" w="215" h="64" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <default image="">
+               <BFRect x="0" y="0" w="64" h="64"/>
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </default>
+         </UIAspect>
+      </UIStatic>
+      <UIText name="textname">
+         <UIRegion x="70" y="18" w="145" h="40" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <standard>
+               <normal>
+                  <BFFont/>
+               </normal>
+            </standard>
+         </UIAspect>
+         <text format="shell:currentdatedisplay" type="multi"/>
+      </UIText>
+      <UIToggleButton name="checkbox" sticky="0">
+         <!--checkbox-->
+         <UIRegion x="0" y="0" w="64" h="64" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="normal"/>
+         <UIHelpInfo name="" short="" long="" help="" ids="zoomap:legend_item"/>
+         <UIAspect string="">
+            <default image="ui\shared\button_check.dds"/>
+            <standard>
+               <normal>
+                  <BFRect x="0" y="0" w="64" h="64"/>
+               </normal>
+               <highlighted>
+                  <BFRect x="0" y="64" w="64" h="64"/>
+               </highlighted>
+               <activated>
+                  <BFRect x="64" y="0" w="64" h="64"/>
+               </activated>
+               <disabled>
+                  <BFRect x="64" y="64" w="64" h="64"/>
+               </disabled>
+            </standard>
+            <alternate>
+               <normal>
+                  <BFRect x="0" y="128" w="64" h="64"/>
+               </normal>
+               <highlighted>
+                  <BFRect x="0" y="192" w="64" h="64"/>
+               </highlighted>
+               <activated sound="uicheck">
+                  <BFRect x="64" y="128" w="64" h="64"/>
+               </activated>
+               <disabled>
+                  <BFRect x="64" y="192" w="64" h="64"/>
+               </disabled>
+            </alternate>
+         </UIAspect>
+         <UIHotKeys/>
+      </UIToggleButton>
+   </children>
+</UILayout>

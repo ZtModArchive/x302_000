@@ -1,0 +1,68 @@
+<BFTypedBinder binderType="fossilmarker">
+  <types>
+    <entity>
+      <scenery>
+        <fossilmarker />
+      </scenery>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity entityVersion="1" />
+  </instance>
+  <shared>
+    <UIToggleButton template="adopt">
+      <UIHelpInfo name="" short="" long="" help="" ids="entityname:fossilmarker" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="fossilmarker" />
+      </on>
+    </UIToggleButton>
+    <UIButton name="overviewicon">
+         <UIAspect>
+            <default image="ui/zoomap/icon_fossilmarker.dds"/>
+         </UIAspect>
+      </UIButton>
+    <ZTDevComponent />
+    <BFAIEntityDataShared s_Theme="extinct" s_uisort="g" s_Zoopedia="zoopedia:zoopedia_fossilmarker:entry" />
+    <ZTPlacementData icon3Doffset="0 0 0.4" icon3Dscale="0.45" deletable="false" moveable="false" randomRotate="false" autoFootprint="false" elevatedTilePlacement="false" waterPlacement="true" tankPlacement="true"  terrainFlatten="false">
+       <stompData>
+        <stomp>
+          <treat />
+          <Poop />
+        </stomp>
+        <allow>
+          <bush />
+          <grass />
+          <thicket />
+          <wildflowers />
+          <fungi />
+          <watersurfacefoliage />
+        </allow>
+        <prevent>
+        </prevent>
+      </stompData>
+    </ZTPlacementData>
+    <BFGCollisionData isPassable="true" isTraversable="true" />
+    <ZTUserStaffAction>
+      <DigArtifact locid="superstaff:dig_artifact" effect="SuperStaffDigFossil" delay="2.0" />
+    </ZTUserStaffAction>
+  </shared>
+  <binder>
+    <BFNamedBinder binderName="mainObj">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="UI/minigames/fossil_groundmarker" switch="0 30" />
+	  <BFMultiGroundFitComponent heightOffset="0.0" maxTilt="75" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+      <BFNamedBinder binderName="Dig">
+         <instance>
+            <BFGEntityContainer>
+               <slots>
+                  <BFGEntityContainerSlot exclusiveID="Fossil1" capacity="1"/>
+               </slots>
+            </BFGEntityContainer>
+         </instance>
+      </BFNamedBinder>
+  </binder>
+</BFTypedBinder>

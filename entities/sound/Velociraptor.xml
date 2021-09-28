@@ -1,0 +1,350 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Attacked_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Attacked_Idle.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Drown_2Stand">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Drown_2Stand.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Drown_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Drown_Idle.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_EatTrough_ChewSwallow">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_EatTrough_ChewSwallow.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_EatTrough_Drink.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_EatTrough_Idle.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_LieSickly_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_LieSickly_Idle.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_LieSickly_Sneeze">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_LieSickly_Sneeze.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Run_2Drown">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Run_2Drown.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_2Attacked.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_2Attacked_BeHit">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_2Attacked_BeHit.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_2Drown">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_2Drown.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="8" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_BeHit">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_BeHit.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Bite">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Bite.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_CallA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_CallA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_CallB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_CallB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ChirpA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ChirpA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ChirpB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ChirpB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_GroomSelf">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_GroomSelf.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_KickLeft">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_KickLeft.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_KickRight">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_KickRight.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ScatchFaceA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ScatchFaceA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ScatchFaceB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ScatchFaceB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ScratchBodyA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ScratchBodyA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_ScratchBodyB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_ScratchBodyB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Scream">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Scream.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Screech">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Screech.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Stand_SmashFence_Raptors">
+         <snd name="entities/units/animals/shared/sound/Generic_Smash_Fence.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Snarl">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Snarl.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Sneeze">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Sneeze.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Sniff">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Sniff.wav" volume=".4" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_TestFenceShocked">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_TestFenceShocked.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Adult_F_Stand_Yawn.wav" volume=".7" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Attacked_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Attacked_Idle.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Drown_2Stand">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Drown_2Stand.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Drown_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Drown_Idle.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_EatTrough_ChewSwallow">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_EatTrough_ChewSwallow.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_EatTrough_Drink">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_EatTrough_Drink.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_EatTrough_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_EatTrough_Idle.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_LieSickly_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_LieSickly_Idle.wav" volume="1" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_LieSickly_Sneeze">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_LieSickly_Sneeze.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Run_2Drown">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Run_2Drown.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Sleep_Idle.wav" volume=".6" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_2Attacked">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_2Attacked.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_2Attacked_BeHit">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_2Attacked_BeHit.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_2Drown">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_2Drown.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_AttackGuest">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_AttackGuest.wav" volume="1" mindist="8" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_BeHit">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_BeHit.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Bite">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Bite.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_CallA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_CallA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_CallB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_CallB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ChirpA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ChirpA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ChirpB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ChirpB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_GroomSelf">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_GroomSelf.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_KickLeft">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_KickLeft.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_KickRight">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_KickRight.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ScatchFaceA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ScatchFaceA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ScatchFaceB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ScatchFaceB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ScratchBodyA">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ScratchBodyA.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_ScratchBodyB">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_ScratchBodyB.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Scream">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Scream.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Screech">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Screech.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Snarl">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Snarl.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Sneeze">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Sneeze.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Sniff">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Sniff.wav" volume=".4" mindist="2" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_TestFenceShocked">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_TestFenceShocked.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Velociraptor_Young_Stand_Yawn">
+         <snd name="entities/units/animals/Velociraptor/sound/Velociraptor_Young_F_Stand_Yawn.wav" volume=".7" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+</soundtags>

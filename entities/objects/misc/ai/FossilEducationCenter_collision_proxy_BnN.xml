@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="FossilEducationCenter_collision_proxy_BnN">
+   <types>
+      <entity>
+         <collision_proxy>
+            <FossilEducationCenter_collision_proxy_BnN/>
+         </collision_proxy>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData autoFootprint="false" gridSnap="false">
+      	<stompData>
+         	<allow>
+        		<FossilEducationCenter/>
+        	</allow>
+        </stompData>
+	<cfootprint width="1" height="1" />
+	<dfootprint width="1" height="1" />
+      </ZTPlacementData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\misc\FossilEducationCenter_ABV_BnN"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,477 @@
+<BFTypedBinder binderType="FossilEducationCenter">
+  <types>
+    <entity>
+      <building>
+        <FossilEducationCenter />
+      </building>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity entityVersion="1" />
+  </instance>
+  <shared>
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_icon.dds" />
+      </UIAspect>
+      <UIHelpInfo name="" short="" long="" help="" ids="entityname:FossilEducationCenter" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FossilEducationCenter" />
+      </on>
+    </UIToggleButton>
+    <UIToggleButton template="researchentity">
+      <UIAspect>
+        <default image="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_icon.dds" />
+      </UIAspect>
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="FossilEducationCenter" />
+      </on>
+    </UIToggleButton>
+    <UIButton name="overviewicon">
+      <UIAspect>
+        <default image="ui/zoomap/icon_attractions.dds" />
+      </UIAspect>
+    </UIButton>
+    <ZTTourData>
+      <theme_extinct value="5" />
+      <cool value="6" />
+    </ZTTourData>
+    <BFAIEntityDataShared s_Product="Extinct" s_uisort="ca" s_ObjectType="Misc" s_Zoopedia="zoopedia:zoopedia_fossileducationcenter:entry" b_Researchable="true" f_researchUnlockTime="80" f_researchCost="400" f_FameReq="40" f_numSkeletons="4" f_NumLevels="10" />
+    <ZTPlacementData dockArrowStyle="none" icon3Doffset="1.0 -0.35 0.3" icon3Dscale=".20" autoFootprint="false" gridSnap="true">
+      <cfootprint width="4" height="5" />
+      <dfootprint width="5" height="6" />
+      <!--attachObj>
+        <entity nodeName="Link_ABV_Podium" binderType="FossilEducationCenter_collision_proxy_BnN" />
+        <entity nodeName="Link_ABV_Statue" binderType="FossilEducationCenter_collision_proxy_SnN" />
+      </attachObj-->
+    </ZTPlacementData>
+    <BFGCollisionData isPassable="false" />
+  </shared>
+  <binder>
+    <BFBinder repopulateMethod="byType">
+      <instance>
+        <ZTPlaceEntityComponent />
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="mainObj">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter" switch="0 20 40" minSwitch="0 0 15" />
+          <BFGroundFitComponent heightOffset="0.0" />
+        </BFPhysObj>
+      </instance>
+      <shared>
+        <BFSharedPhysVars>
+          <virtualNodes>
+            <Dock_Podium_L x="2.25" y="-2.75" yaw="90" />
+            <Dock_Podium_R x="-2.25" y="-2.75" yaw="-90" />
+            <Dock_Guest_1 x="3.75" y="0" yaw="110" />
+            <Dock_Guest_2 x="-3.75" y="-0.5" yaw="-110" />
+            <Dock_Guest_3 x="2.5" y="4.25" yaw="35" />
+            <Dock_Guest_4 x="-2.5" y="4.25" yaw="-35" />
+            <Dock_Guest_View_1 x="2.75" y="-2.5" yaw="145" />
+            <Dock_Guest_View_2 x="-2.75" y="-2.5" yaw="-145" />
+            <Dock_Guest_View_3 x="4" y="2.25" yaw="70" />
+            <Dock_Guest_View_4 x="-4" y="2.25" yaw="-70" />
+            <Dock_Guest_View_5 x="0" y="5.5" yaw="0" />
+          </virtualNodes>
+        </BFSharedPhysVars>
+      </shared>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFAIEntityDataInstance f_BoneLevel="0" />
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="Mammoth_State0" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State0" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State1" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State1" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State2" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State2" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State3" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State3" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State4" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State4" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State5" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State5" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State6" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State6" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State7" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State7" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State8" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State8" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Mammoth_State9" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Mammoth_State9" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State0" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State0" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State1" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State1" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State2" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State2" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State3" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State3" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State4" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State4" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State5" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State5" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State6" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State6" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State7" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State7" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State8" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State8" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="IrishElk_State9" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_IrishElk_State9" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State0" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State0" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State1" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State1" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State2" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State2" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State3" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State3" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State4" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State4" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State5" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State5" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State6" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State6" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State7" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State7" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State8" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State8" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="TyrannosaurusRex_State9" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_TyrannosaurusRex_State9" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State0" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State0" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State1" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State1" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State2" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State2" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State3" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State3" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State4" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State4" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State5" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State5" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State6" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State6" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State7" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State7" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State8" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State8" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Pteranodon_State9" required="0">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/FossilEducationCenter/FossilEducationCenter_Pteranodon_State9" switch="0 20 40" minSwitch="0 0 15" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFAIFadeController attribName="f_BoneLevel" currState="Mammoth_State0" fadePeriod="1" wrapValue="true">
+          <stateList>
+            <Mammoth_State0 physObj="Mammoth_State0" minRange="-1000" maxRange="1" />
+            <Mammoth_State1 physObj="Mammoth_State1" minRange="1" maxRange="2" />
+            <Mammoth_State2 physObj="Mammoth_State2" minRange="2" maxRange="3" />
+            <Mammoth_State3 physObj="Mammoth_State3" minRange="3" maxRange="4" />
+            <Mammoth_State4 physObj="Mammoth_State4" minRange="4" maxRange="5" />
+            <Mammoth_State5 physObj="Mammoth_State5" minRange="5" maxRange="6" />
+            <Mammoth_State6 physObj="Mammoth_State6" minRange="6" maxRange="7" />
+            <Mammoth_State7 physObj="Mammoth_State7" minRange="7" maxRange="8" />
+            <Mammoth_State8 physObj="Mammoth_State8" minRange="8" maxRange="9" />
+            <Mammoth_State9 physObj="Mammoth_State9" minRange="9" maxRange="10" />
+            <IrishElk_State0 physObj="IrishElk_State0" minRange="10" maxRange="11" />
+            <IrishElk_State1 physObj="IrishElk_State1" minRange="11" maxRange="12" />
+            <IrishElk_State2 physObj="IrishElk_State2" minRange="12" maxRange="13" />
+            <IrishElk_State3 physObj="IrishElk_State3" minRange="13" maxRange="14" />
+            <IrishElk_State4 physObj="IrishElk_State4" minRange="14" maxRange="15" />
+            <IrishElk_State5 physObj="IrishElk_State5" minRange="15" maxRange="16" />
+            <IrishElk_State6 physObj="IrishElk_State6" minRange="16" maxRange="17" />
+            <IrishElk_State7 physObj="IrishElk_State7" minRange="17" maxRange="18" />
+            <IrishElk_State8 physObj="IrishElk_State8" minRange="18" maxRange="19" />
+            <IrishElk_State9 physObj="IrishElk_State9" minRange="19" maxRange="20" />
+            <TyrannosaurusRex_State0 physObj="TyrannosaurusRex_State0" minRange="20" maxRange="21" />
+            <TyrannosaurusRex_State1 physObj="TyrannosaurusRex_State1" minRange="21" maxRange="22" />
+            <TyrannosaurusRex_State2 physObj="TyrannosaurusRex_State2" minRange="22" maxRange="23" />
+            <TyrannosaurusRex_State3 physObj="TyrannosaurusRex_State3" minRange="23" maxRange="24" />
+            <TyrannosaurusRex_State4 physObj="TyrannosaurusRex_State4" minRange="24" maxRange="25" />
+            <TyrannosaurusRex_State5 physObj="TyrannosaurusRex_State5" minRange="25" maxRange="26" />
+            <TyrannosaurusRex_State6 physObj="TyrannosaurusRex_State6" minRange="26" maxRange="27" />
+            <TyrannosaurusRex_State7 physObj="TyrannosaurusRex_State7" minRange="27" maxRange="28" />
+            <TyrannosaurusRex_State8 physObj="TyrannosaurusRex_State8" minRange="28" maxRange="29" />
+            <TyrannosaurusRex_State9 physObj="TyrannosaurusRex_State9" minRange="29" maxRange="30" />
+            <Pteranodon_State0 physObj="Pteranodon_State0" minRange="30" maxRange="31" />
+            <Pteranodon_State1 physObj="Pteranodon_State1" minRange="31" maxRange="32" />
+            <Pteranodon_State2 physObj="Pteranodon_State2" minRange="32" maxRange="33" />
+            <Pteranodon_State3 physObj="Pteranodon_State3" minRange="33" maxRange="34" />
+            <Pteranodon_State4 physObj="Pteranodon_State4" minRange="34" maxRange="35" />
+            <Pteranodon_State5 physObj="Pteranodon_State5" minRange="35" maxRange="36" />
+            <Pteranodon_State6 physObj="Pteranodon_State6" minRange="36" maxRange="37" />
+            <Pteranodon_State7 physObj="Pteranodon_State7" minRange="37" maxRange="38" />
+            <Pteranodon_State8 physObj="Pteranodon_State8" minRange="38" maxRange="39" />
+            <Pteranodon_State9 physObj="Pteranodon_State9" minRange="39" maxRange="40" />
+          </stateList>
+        </BFAIFadeController>
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="FossilSkeletonController">
+      <instance>
+        <ZTFossilSkeletonComponent entityAttribute="f_BoneLevel" rewardDelay="180" rewardMessage="zoomessages:NewStatue">
+          <rewardObjects>
+            <Statue_Mammoth />
+            <Statue_IrishElk />
+            <Statue_TyrannosaurusRex />
+            <Statue_Pteranodon />
+          </rewardObjects>
+        </ZTFossilSkeletonComponent>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Use_FossilEducation" repopulateMethod="byName">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_1" />
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_2" />
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_3" />
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_4" />
+          </slots>
+          <queue>
+            <BFGEntityContainerSlot targetNode="Dock_Guest_1" capacity="3" />
+            <BFGEntityContainerSlot targetNode="Dock_Guest_2" capacity="3" />
+            <BFGEntityContainerSlot targetNode="Dock_Guest_3" capacity="3" />
+            <BFGEntityContainerSlot targetNode="Dock_Guest_4" capacity="3" />
+          </queue>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="View_FossilEducation" repopulateMethod="byName">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot enterBehSet="DockViewFossilEducationCenter" useBehSet="ViewFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_View_1" />
+            <BFGEntityContainerSlot enterBehSet="DockViewFossilEducationCenter" useBehSet="ViewFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_View_2" />
+            <BFGEntityContainerSlot enterBehSet="DockViewFossilEducationCenter" useBehSet="ViewFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_View_3" />
+            <BFGEntityContainerSlot enterBehSet="DockViewFossilEducationCenter" useBehSet="ViewFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_View_4" />
+            <BFGEntityContainerSlot enterBehSet="DockViewFossilEducationCenter" useBehSet="ViewFossilEducationCenter" exitBehSet="ExitFossilEducationCenter" targetNode="Dock_Guest_View_5" />
+          </slots>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Use_educator_podium" repopulateMethod="byName">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter_Left" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter_Left" targetNode="Dock_Podium_L" exclusiveID="FossilEducationCenter_Educator" />
+            <BFGEntityContainerSlot enterBehSet="DockFossilEducationCenter_Right" useBehSet="UseFossilEducationCenter" exitBehSet="ExitFossilEducationCenter_Right" targetNode="Dock_Podium_R" exclusiveID="FossilEducationCenter_Educator" />
+          </slots>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+    <BFBinder>
+      <instance>
+        <ZTEconomyComponent cost="1200">
+          <ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+          <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+          <ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep" />
+        </ZTEconomyComponent>
+      </instance>
+    </BFBinder>
+  </binder>
+</BFTypedBinder>

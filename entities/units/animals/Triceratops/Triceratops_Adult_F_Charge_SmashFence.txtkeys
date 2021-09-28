@@ -1,0 +1,8 @@
+<TEXTKEY>
+   <key percent="13" text="{Bip01 Head} snd 'generic_smash_fence'"/> 
+   <key percent="0" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/> 
+   <key percent="30" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/>    
+   <key percent="74" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/>       
+   <key percent="87" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/>       
+   <key time="1.28" text="kill"/>
+</TEXTKEY>

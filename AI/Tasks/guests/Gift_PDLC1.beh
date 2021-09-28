@@ -1,0 +1,58 @@
+﻿<BehaviorSets>
+
+   <BuyTyrannosaurusRexGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopLeft"/>
+         <BFBehAttachObject attachEntity="TyrannosaurusRex_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehPlaySet behSet="ExitGiftShopLeft"/>
+      </behaviors>
+   </BuyTyrannosaurusRexGift>
+
+   <BuyCarnotaurusGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="Carnotaurus_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyCarnotaurusGift>   
+   
+   <BuyStyracosaurusGift>
+      <subjects>
+         <Guest_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/StyracosaurusGiftAdult.lua" function="StyracosaurusGiftAdult"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyStyracosaurusGift>
+   
+   <BuyStyracosaurusGift>
+      <subjects>
+         <Guest_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehScript context="behavior" file="scripts/StyracosaurusYoung.lua" function="StyracosaurusGiftYoung"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyStyracosaurusGift>
+   
+   <BuyTriceratopsGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="EnterGiftShopRight"/>
+         <BFBehAttachObject attachEntity="Triceratops_Gift" subjectNode="Bip01 R Finger0" detachAction="inventory" locoMod="carry"/>
+         <BFBehPlaySet behSet="ExitGiftShopRight"/>
+      </behaviors>
+   </BuyTriceratopsGift>
+   
+</BehaviorSets>

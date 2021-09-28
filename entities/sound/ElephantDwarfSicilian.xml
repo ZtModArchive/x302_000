@@ -1,0 +1,114 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Drink">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_Drink.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_F_Stand_GuestAttack">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_F_Stand_GuestAttack.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Eat">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_Eat.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Stroke">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_PaintCanvas.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Dip">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_Paint.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Rumble">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_RumbleB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_TrumpetA">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_TrumpetA.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_TrunkNoisemaker">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Adult_TrunkNoisemaker.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Drink_ShowerA">
+         <snd name="entities/units/animals/ElephantAfrican/sound/Drink_ShowerA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Drink_ShowerB">
+         <snd name="entities/units/animals/ElephantAfrican/sound/Drink_ShowerB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>      
+   <!--young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Young_Drink">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Young_Drink.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Young_Eat">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Young_Eat.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Young_Rumble">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Young_RumbleB.wav" volume=".8" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Young_TrumpetA">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Young_TrumpetA.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Young_TrunkNoisemaker">
+         <snd name="entities/units/animals/ElephantDwarfSicilian/sound/ElephantDwarfSicilian_Young_TrunkNoisemaker.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Shared Sounds-->
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_pawground_dirt">
+         <snd name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_pawground_grass">
+         <snd name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_pawground_snow">
+         <snd name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Hit">
+         <snd name="entities\units\animals\shared\sound\Animal_Hit_HardA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Rub">
+         <snd name="entities\units\animals\shared\sound\Animal_PawSnow_SoftB.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Paw">
+         <snd name="entities\units\animals\shared\sound\Animal_PawGrass_HardA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="ElephantDwarfSicilian_Adult_Swat">
+         <snd name="entities\units\animals\shared\sound\Animal_Hit_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

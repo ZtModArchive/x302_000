@@ -1,0 +1,100 @@
+<BFTypedBinder binderType="StageEntertainer" version="2" versionReplace="true">
+	<types>
+		<entity>
+			<building>
+				<StageEntertainer />
+			</building>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="FitSurfacePick" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="-0.75 0.25 0.73" icon3Dscale="0.27" autoFootprint="true" landPlacement="true" tankPlacement="false" waterPlacement="false" minimumHeadroom="8.0" moveable="true" elevatedTilePlacement="false">
+			<cfootprint width="3" height="2" />
+			<dfootprint width="4" height="3" />
+			<excludedIconObjs>
+				<FitSurfacePick />
+			</excludedIconObjs>
+			<stompData>
+				<delete />
+				<prevent />
+				<allow>
+					<Entertainer />
+					<Guest_Adult_F_Rockstar />
+				</allow>
+			</stompData>
+		</ZTPlacementData>
+        <ZTEntityDestructionData explosionEffect="destroy_building" explosionSound="destroy_wood_small" rubbleBinderName="Rubble_Fragment_Wood" entityRuinBinderName="rubble_wood" numParticles="10" secsToRemove="0.3f" applyPhysToRubble="true" forceToRubbleMin="8.5f" forceToRubbleMax="15.0f" rubblePitchAngle="86" rubbleStartHeight="3.0f"/>
+		<BFGCollisionData isStatic="true">
+     			<typeScores Entertainer="0" Guest_Adult_F_Rockstar="0"/>
+		</BFGCollisionData>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\buildings\StageEntertainerExtinct\StageEntertainerExtinct_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:StageEntertainer" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="StageEntertainer" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared s_uisort="ay" s_ObjectType="Misc" s_Product="Extinct" b_HasEntityFittingSurface="true" b_GeneratesTraversabilityInfo="true" s_Zoopedia="zoopedia:zoopedia_entertainerstage:entry" f_FameReq="0" f_BuildingStrength="20"/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/StageEntertainerExtinct/StageEntertainerExtinct.bfb" scale="1" switch="0 20 40" />
+					<BFGroundFitComponent heightOffset="0.16" floatOnWater="false" waterOffset="-0.16" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars>
+					<virtualNodes>
+						<Dock_EnterFront parentNode="AutoRoot" x="0" y="-2.45" z="0" yaw="180" />
+						<Dock_EnterFront_Run parentNode="AutoRoot" x="0" y="-4.0" z="0" yaw="180" />
+						<Dock_EnterBack parentNode="AutoRoot" x="0.75" y="2" z="0" yaw="0" />
+						<Dock_EnterBack_Run parentNode="AutoRoot" x="0.75" y="4" z="0" yaw="0" />
+						<Dock_Rampage1 parentNode="AutoRoot" x="0" y="-2.45" z="0" yaw="180" />
+						<Dock_Rampage2 parentNode="AutoRoot" x="-4" y="0" z="0" yaw="-90" />
+						<Dock_Rampage3 parentNode="AutoRoot" x="0" y="2" z="0" yaw="0" />
+						<Dock_Rampage4 parentNode="AutoRoot" x="4" y="0" z="0" yaw="90" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="Show">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot enterBehSet="EnterEntertainerStage" useBehSet="UseEntertainerStage" exitBehSet="ExitEntertainerStage1" targetNode="Dock_Enter1" capacity="1" exclusiveID="EntertainerStage" />
+						<BFGEntityContainerSlot enterBehSet="EnterEntertainerStage" useBehSet="UseEntertainerStage" exitBehSet="ExitEntertainerStage2" targetNode="Dock_Enter2" capacity="1" exclusiveID="EntertainerStage" />
+						<BFGEntityContainerSlot enterBehSet="EnterEntertainerStage" useBehSet="UseEntertainerStage" exitBehSet="ExitEntertainerStage3" targetNode="Dock_Enter3" capacity="1" exclusiveID="EntertainerStage" />
+						<BFGEntityContainerSlot enterBehSet="EnterEntertainerStage" useBehSet="UseEntertainerStage" exitBehSet="ExitEntertainerStage4" targetNode="Dock_Enter4" capacity="1" exclusiveID="EntertainerStage" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="FitSurfacePick">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/StageEntertainerExtinct/StageEntertainerExtinct_FittingSurface.bfb" />
+					<BFGFittingSurfaceComponent heightOffset="0" fitToActualHeight="true"/>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+        <BFBinder>
+			<instance>
+		    		<ZTEconomyComponent cost="300">
+		       			<ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+		       			<ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+		       			<ZTTransaction name="upkeep" cost="50" period="monthly" type="debit" category="upkeep"/>
+		    		</ZTEconomyComponent>
+		 	</instance>
+        </BFBinder>
+     </binder>
+</BFTypedBinder>

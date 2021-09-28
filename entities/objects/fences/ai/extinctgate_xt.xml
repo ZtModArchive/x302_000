@@ -1,0 +1,73 @@
+<BFTypedBinder binderType="extinctgate_xt">
+   <types>
+      <entity>
+         <fence>
+            <gate>
+               <extinctgate_xt/>
+            </gate>
+         </fence>
+      </entity>
+   </types>
+   <instance>
+      <ZTFenceEntity entityVersion="1"/>
+   </instance>
+   <shared>
+      <ZTEntityDestructionData entityRuinBinderName="highextinct_xt_broken" secsToRemove="0.0f"/>
+      <UIToggleButton template="fence">
+         <UIAspect>
+            <default image="entities\objects\fences\staffgate_df\staffgate_icon.dds"/>
+         </UIAspect>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Product="Extinct"  s_ProfileLock="extinct_xtlock" s_uisort="tb" s_Broken="highextinct_xt_broken" f_FenceStrength="10" />
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="start_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctgate_xt\extinctgate_xt_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fence90">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctgate_xt\extinctgate_xt_vert"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="fence45">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctgate_xt\extinctgate_xt_diag"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="end_post">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\fences\extinctgate_xt\extinctgate_xt_post"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="gate_animation">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities\objects\fences\extinctgate_xt\extinctgate_xt_anim.bfm" updateWhenNotVisible="true"/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFBinder required="1">
+	 <instance>
+	    <ZTEntityDestructionComponent/>
+	 </instance>
+      </BFBinder>
+      <BFBinder>
+         <instance>
+            <ZTEconomyComponent cost="160">
+               <ZTTransaction name="build" costType="parent" type="debit" category="construction"/>
+               <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling"/>
+            </ZTEconomyComponent>
+         </instance>
+      </BFBinder>
+   </binder>
+</BFTypedBinder>

@@ -1,0 +1,9 @@
+<ZT2Strings>
+  <zoomessages version="10">
+    <!--CP2 Zoo Messages-->
+    <CloningCenterReady>Research is complete. %s is ready for extinct animal creating.</CloningCenterReady>
+    <EntertainerFailure>Entertainer can't reach %s!</EntertainerFailure>
+    <NewStatue>You can now place %s!</NewStatue>
+    <PaleoFailure>Paleontologist can't reach %s!</PaleoFailure>
+  </zoomessages>
+</ZT2Strings>

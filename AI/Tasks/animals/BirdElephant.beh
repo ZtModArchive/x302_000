@@ -1,0 +1,1738 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultSleep>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultSleep>
+   <DefaultSit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sitting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+      </behaviors>
+   </DefaultSit>
+   <DefaultHappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidWater="true" locoSpeed="medium"/>
+         <BFBehSetAttribute>
+            <BFAITargetData exercise="-10"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Squawk"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Squawk"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Sit behSet="DefaultSit"/>
+               <Sleep behSet="DefaultSleep"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </Stand>
+   <Groom>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_GroomWingA weight="50"/>
+               <Stand_GroomWingB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Groom>
+   <Preen>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_GroomWingA weight="50"/>
+               <Stand_GroomWingB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Preen>
+   <Poop>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_GiantBird" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_GiantBird_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Look>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Look_Stand"/>
+               <Sit behSet="Look_Sit"/>
+               <Sleep behSet="Look_Sit"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Look_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Look>
+   <Look_Stand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <LookLeft_Stand weight="50"/>
+               <LookRight_Stand weight="50"/>
+           </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Look_Stand>
+   <LookLeft_Stand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookLeft"/>
+      </behaviors>
+   </LookLeft_Stand>
+   <LookRight_Stand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_LookRight"/>
+      </behaviors>
+   </LookRight_Stand>
+   <Look_Sit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <LookLeft_Sit weight="50"/>
+               <LookRight_Sit weight="50"/>
+           </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Look_Sit>
+   <LookLeft_Sit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_LookLeft"/>
+      </behaviors>
+   </LookLeft_Sit>
+   <LookRight_Sit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_LookRight"/>
+      </behaviors>
+   </LookRight_Sit>
+   <DustBathe>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_DustBathe"/>
+      </behaviors>
+   </DustBathe>
+   <Sit_Yawn>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Yawn"/>
+      </behaviors>
+   </Sit_Yawn>
+   <Stand_Yawn>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Stand_Yawn>
+   <Yawn>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Stand_Yawn"/>
+               <Sit behSet="Sit_Yawn"/>
+               <default behSet="Stand_Yawn"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Yawn>
+   <WingOut_Left>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_WingOutLeft"/>
+      </behaviors>
+   </WingOut_Left>
+   <WingOut_Right>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_WingOutRight"/>
+      </behaviors>
+   </WingOut_Right>
+   <WingOut>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WingOut_Left weight="50"/>
+               <WingOut_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WingOut>
+   <Stretch>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WingOut_Left weight="50"/>
+               <WingOut_Right weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Stretch>
+   <Eat>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </Eat>
+   <Drink>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <Graze>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Graze_Idle"/>
+         <BFBehAnimate targetAnim="Graze_Idle"/>
+      </behaviors>
+   </Graze>
+   <Chew>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_ChewGulp"/>
+      </behaviors>
+   </Chew>
+   <EnterFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_FoodDish" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterTrough>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_Trough" targetAnim="Eat_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterIceBlock>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_IceBlock" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterIceBlock> 
+   <UseIceBlock>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitIceBlock>
+   <EnterHollowLogLeft>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogLeft>
+   <EnterHollowLogRight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogRight>
+   <EnterHollowLogMiddle>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_HollowLog" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterHollowLogMiddle>
+   <EnterElevatedFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_ElevatedFoodDish" targetNode="Dock_02" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterElevatedFoodDish>
+   <UseElevatedFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatHigh_Idle"/>
+         <BFBehAnimate targetAnim="EatHigh_ChewGulp"/>
+         <BFBehAnimate targetAnim="EatHigh_Idle"/>
+         <BFBehAnimate targetAnim="EatHigh_ChewGulp"/>
+      </behaviors>
+   </UseElevatedFoodDish>
+   <DrinkElevatedFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatHigh_Idle"/>
+         <BFBehAnimate targetAnim="EatHigh_Idle"/>
+      </behaviors>
+   </DrinkElevatedFoodDish>
+   <ExitElevatedFoodDish>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitElevatedFoodDish>
+   <EatApple>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+	 <BFBehKill killTarget="true" fadeOutPeriod="2"/>
+      </behaviors>
+   </EatApple>
+   <EatFigs>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+	 <BFBehKill killTarget="true" fadeOutPeriod="3"/>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+      </behaviors>
+   </EatFigs>
+   <Sleep>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Sit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Idle"/>
+      </behaviors>
+   </Sit>
+   <Click>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Click"/>
+      </behaviors>
+   </Click>
+   <Hiss>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+      </behaviors>
+   </Hiss>
+   <BashFence>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="3">
+            <randomSets>
+               <KickLeft weight="50"/>
+               <KickRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BashFence>
+   <Kick>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <KickLeft weight="50"/>
+               <KickRight weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Kick>
+   <KickLeft>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </KickLeft>
+   <KickRight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </KickRight>
+   <KickWhap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <KickLeftWhap weight="40"/>
+               <KickRightWhap weight="40"/>
+               <BeakWhap weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </KickWhap>
+   <KickLeftWhap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickLeft"/>
+      </behaviors>
+   </KickLeftWhap>
+   <KickRightWhap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_KickRight"/>
+      </behaviors>
+   </KickRightWhap>
+   <BeakWhap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="Stand_Beak"/>
+      </behaviors>
+   </BeakWhap>
+   <Scratch>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Scratch"/>
+      </behaviors>
+   </Scratch>
+   <Snort>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Snort"/>
+      </behaviors>
+   </Snort>
+   <Squawk>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squawk"/>
+      </behaviors>
+   </Squawk>
+   <TendEgg>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom minPlays="2" maxPlays="3">
+            <randomAnims>
+               <Stand_TendEggA weight="50"/>
+               <Stand_TendEggB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </TendEgg>
+   <EnterBall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterBall> 
+   <UseBall_Whap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="KickWhap"/>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="KickWhap"/>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseBall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick"/>
+      </behaviors>
+   </UseBall>
+   <ExitBall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <FailureSet>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Click"/>
+      </behaviors>
+   </FailureSet>
+   <ContactCall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Squawk weight="40"/>
+               <Snort weight="15"/>
+               <Hiss weight="15"/>
+               <Click weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Call>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squawk"/>
+      </behaviors>
+   </Call>
+   <DistressCall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+      </behaviors>
+   </DistressCall>
+   <HappyCall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squawk"/>
+      </behaviors>
+   </HappyCall>
+   <BeakAttack>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Beak"/>
+      </behaviors>
+   </BeakAttack>
+   <DockAttacked>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="p_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <Fight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Beak"/>
+      </behaviors>
+   </Fight>
+   <AttackedHurt>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </AttackedHurt>
+   <DefendEqual>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Attacked weight="30"/>
+               <AttackedHurt weight="70"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <DockFight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <FightSnap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <Stand_Angry>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+      </behaviors>
+   </Stand_Angry>
+   <Sick>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Snort"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </VerySick>
+   <DockMate>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Dock_Reproduction" locoSpeed="slow" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockMate>
+   <WaitMate>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sit_Idle" playTime="35"/>
+      </behaviors>
+   </WaitMate>
+   <MateF>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+      </behaviors>
+   </MateF>
+   <MateM>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingDanceAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_MateDance"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <BFBehAnimate targetAnim="Stand_Hiss"/>
+      </behaviors>
+   </MateM>
+   <LayEgg>
+      <subjects>
+         <BirdElephant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="2">
+            <randomSets>
+               <SpawnEgg weight="100"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LayEgg>
+   <SpawnEgg>
+      <subjects>
+         <BirdElephant_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="BirdElephant_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnEgg>
+   <HatchEgg>
+      <subjects>
+         <BirdElephant_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <BirdElephant_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <BirdElephant_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="BirdElephant_Egg" morphTargetEntityType="BirdElephant_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <BirdElephant_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Hatch_Idle"/>
+         <ZTBehMorph morphEntity="BirdElephant_Egg" morphTargetEntityType="BirdElephant_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <DockAttackGuest>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <WaitAttackGuest>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <ChaseBall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_PursuitBall" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="KickWhap"/>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <Rest>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Idle" playTime="12"/>
+      </behaviors>
+   </Rest>
+   <Drown>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle"/>
+      </behaviors>
+   </Drown>
+   <ThrashWater>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </ThrashWater>
+   <Roar>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Click"/>
+      </behaviors>
+   </Roar>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Roar"/>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <Turn180>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </Turn180>
+   <LoopIdle>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Sit behSet="LoopSit"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopSit>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sit_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSit>
+   <LoopSleep>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <DockFight>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <BirdElephant_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <WaitFight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFight>
+   <FightSnap>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <DockFight>
+      <subjects>
+         <BirdElephant_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <BirdElephant_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <DockPlayFight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetNode="p_PredatorFightOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_MateDance" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <SwipeMed>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Kick"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Sit_KnockedDown"/>
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Beak"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Sit_KnockedDown"/>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <EnterExtinctShelter1>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <BirdElephant/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+
+</BehaviorSets>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BFM modelname="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding.bfb">
+  <animation anim="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_Down_2Up.bf" animName="Down_2Up" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_Down_Idle.bf" animName="Down_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_Up_2Down.bf" animName="Up_2Down" debug="false" animSpeed="1" explicitUseOnly="false" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <animation anim="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_Up_Idle.bf" animName="Up_Idle" debug="false" animSpeed="1" explicitUseOnly="true" resolveUnitCollisions="true" groundFitRotation="false" allowSpineBending="false" load="true" yawSpeed="0" pitchSpeed="0" rollSpeed="0" />
+  <Graph name="DinoRecoveryBuilding" version="1">
+    <node name="Down">
+      <table>
+        <Down_Idle />
+      </table>
+      <edge name="Up">
+        <table>
+          <Down_2Up />
+        </table>
+      </edge>
+    </node>
+    <node name="Up">
+      <table>
+        <Up_Idle />
+      </table>
+      <edge name="Down">
+        <table>
+          <Up_2Down />
+        </table>
+      </edge>
+    </node>
+  </Graph>
+</BFM>

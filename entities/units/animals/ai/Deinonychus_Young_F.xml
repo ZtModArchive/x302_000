@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Deinonychus_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Deinonychus>
+                           <Deinonychus_Young>
+                              <Deinonychus_Young_F/>
+                           </Deinonychus_Young>
+                        </Deinonychus>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Deinonychus_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

@@ -1,0 +1,27 @@
+<BFTypedBinder binderType="BirdElephant_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Struthioniformes>
+                     <Aepyornithidae>
+                        <BirdElephant>
+                           <BirdElephant_Young>
+                              <BirdElephant_Young_F/>
+                           </BirdElephant_Young>
+                        </BirdElephant>
+                     </Aepyornithidae>
+                  </Struthioniformes>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

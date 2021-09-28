@@ -1,0 +1,22 @@
+<ZT2Strings>
+      <LOC_STRING _locID="awards" version="2" />
+      <LOC_STRING _locID="awards:MarineTrainingTycoonThree_pre_ltt" version="2"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Achieve 100 perfect 100% training scores to receive the </b>
+              <b/>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Statue</b>
+                </color>
+            <b>.</b>
+           </font>
+        </LOC_STRING>
+      <LOC_STRING _locID="awards:MarineTrainingTycoonThree_post_ltt" version="2"  >
+           <font name="arial" size="10" shadowx="-1" shadowy="1" shadowa="32">
+              <b>Congratulations! As a reward for achieving 100 perfect 100% training scores the </b>
+              <color r="255" g="255" b="0" a="255">
+                 <b>Marine Training Statue</b>
+              </color>
+              <b> was delivered to your zoo gate!</b>
+           </font>
+      </LOC_STRING>
+</ZT2Strings>

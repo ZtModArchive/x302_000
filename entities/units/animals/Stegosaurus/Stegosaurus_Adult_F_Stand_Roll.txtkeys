@@ -1,0 +1,5 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'Stand_Roll'"/>
+      <key percent="1.0" text="gf 0"/>
+      <key percent="99.0" text="gf 101"/>
+</TEXTKEY>

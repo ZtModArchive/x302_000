@@ -1,0 +1,269 @@
+<soundtags>
+   <!--ADULT-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Sleep_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_SleepStand_Idle">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_SleepStand_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Yawn">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_Yawn.wav" volume=".8" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Lie_Yawn">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Lie_Yawn.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Eat_Chew">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Eat_Chew.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Eat_Idle">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Eat_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Eat_ScratchFood">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Eat_ScratchFood.wav" volume=".8" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_LayNest">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_LayNest.wav" volume=".6" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Sneeze">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_Sneeze.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Lie_Sneeze">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Lie_Sneeze.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Dig">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_Dig.wav" volume=".5" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_RubObject">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_RubObject.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_DustBathe">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_DustBathe.wav" volume=".5" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_ShakeFrill">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_ShakeFrill.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_ShakeFrillViolent">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_ShakeFrillViolent.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Snort">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_Snort.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_SnortAngry">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_SnortAngry.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Mew">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_Mew.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_FrillDisplay">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_FrillDisplay.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_FrillDisplayAggressive">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_FrillDisplayAggressive.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_AlarmRumble">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_AlarmRumble.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_GruntA">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_M_Stand_GruntA.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_GruntB">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_M_Stand_GruntB.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_GruntC">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_M_Stand_GruntC.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_ThrustForward">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_ThrustForward.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_Defend">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Adult_F_Stand_Defend.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Adult_Stand_GuestAttack">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Adult_F_Stand_GuestAttack.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--YOUNG-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_GuestAttack">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_GuestAttack.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Sleep_Idle">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Sleep_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Yawn">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_Yawn.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Lie_Yawn">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Lie_Yawn.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Eat_Chew">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Eat_Chew.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Eat_Idle">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Eat_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Eat_ScratchFood">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Eat_ScratchFood.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Sneeze">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_Sneeze.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Lie_Sneeze">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Lie_Sneeze.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Dig">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_Dig.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_RubObject">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_RubObject.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_DustBathe">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_DustBathe.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_ShakeFrill">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_ShakeFrill.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Snort">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_Snort.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_DistressCall">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_DistressCall.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_GruntA">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_M_Stand_GruntA.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_GruntB">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_M_Stand_GruntB.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Bawl">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_Bawl.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_ThrustForward">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_ThrustForward.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Defend">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_Defend.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_SnortAngry">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_SnortAngry.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_Mew">
+         <snd name="entities/units/animals/Triceratops/sound/Triceratops_Young_F_Stand_Mew.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_FrillDisplay">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_FrillDisplay.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_FrillDisplayAggressive">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_FrillDisplayAggressive.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_Stand_AlarmRumble">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_Stand_AlarmRumble.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Styracosaurus_Young_SleepStand_Idle">
+         <snd name="entities/units/animals/Styracosaurus/sound/Styracosaurus_Young_F_SleepStand_Idle.wav" volume="1" mindist="20" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

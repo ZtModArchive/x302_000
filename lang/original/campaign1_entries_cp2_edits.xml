@@ -1,0 +1,19 @@
+<ZT2Strings>
+   <!--Changed text for bug 7077-->
+   <genericscenariofailure version="9">
+      <animaldiedsick>
+   		You lost one of your animals! Healthy animals are an essential part of a successful zoo. You were not able to keep your animals long enough to achieve your goals.
+   	</animaldiedsick>
+   </genericscenariofailure>
+   <C1scenariogoals version="9">
+   <C1failanimaldeathoverview>
+      	MSPA officials are distressed over the recent loss of an animal at the Waltham Animal Park. They 
+       	are reevaluating their position on the park's viability. The remaining animals were 
+       	transferred to other facilities.
+   </C1failanimaldeathoverview>
+   <C1failanimaldeath>
+       	MSPA officials are distressed over the recent loss of an animal. The remaining animals were 
+       	transferred to other facilities.
+   </C1failanimaldeath>
+   </C1scenariogoals>
+</ZT2Strings>   

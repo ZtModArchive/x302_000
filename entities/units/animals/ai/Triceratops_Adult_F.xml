@@ -1,0 +1,83 @@
+﻿<BFTypedBinder binderType="Triceratops_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+						<Ornithischia>
+							<Ceratopsidae>
+								<Triceratops>
+									<Triceratops_Adult>
+										<Triceratops_Adult_F />
+									</Triceratops_Adult>
+								</Triceratops>
+							</Ceratopsidae>
+						</Ornithischia>
+					</Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" p_DinoPreyNode="0 -5.75 180" />
+	</shared>
+	<binder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/Triceratops/Triceratops_Adult_F.bfm" scale="0.65" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<attribList>
+						<health />
+						<hygiene />
+					</attribList>
+					<stateList>
+						<sickanddirty>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="Triceratops_Adult_F" image="entities\units\animals\Triceratops\Triceratops_Adult_F_SickDirty.dds" />
+							</textureData>
+						</sickanddirty>
+						<sick>
+							<attribData>
+								<health minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="Triceratops_Adult_F" image="entities\units\animals\Triceratops\Triceratops_Adult_F_Sick.dds" />
+							</textureData>
+						</sick>
+						<dirty>
+							<attribData>
+								<hygiene minRange="70" maxRange="101" />
+							</attribData>
+							<textureData>
+								<mainObj material="Triceratops_Adult_F" image="entities\units\animals\Triceratops\Triceratops_Adult_F_Dirty.dds" />
+							</textureData>
+						</dirty>
+						<well>
+							<textureData>
+								<mainObj material="Triceratops_Adult_F" image="entities\units\animals\Triceratops\Triceratops_Adult_F.dds" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

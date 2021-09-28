@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="ThickBrownSmall_Stump_2">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <ThickBrownSmall_Stump>
+                  <ThickBrownSmall_Stump_2/>
+               </ThickBrownSmall_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

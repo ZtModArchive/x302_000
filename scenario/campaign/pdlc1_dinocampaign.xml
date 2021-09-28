@@ -1,0 +1,4 @@
+﻿<BFCampaign name="DinosaurZooLabels:DinosaurZooCampaignshort" xpack="201">
+   <entry name="DinosaurZooLabels:DinosaurZooCampaignS1" short="DinosaurZooLabels:DinosaurZooCampaignS1short" key="DinosaurZooCampaignscenario1" scenario="scenario\goals\DinosaurZooCampaignGoals.xml" map="pdlc1dinozoo1" cash="40000" difficulty="difficulty:medium" description="DinosaurZoo:DinosaurZooOverviewShort" state="unlocked"/>
+   
+</BFCampaign>

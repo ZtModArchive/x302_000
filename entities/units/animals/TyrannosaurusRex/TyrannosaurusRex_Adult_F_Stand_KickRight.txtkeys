@@ -1,0 +1,5 @@
+<TEXTKEY>
+	 <key frame="1" text="{Bip01 Head} snd 'Stand_KickRight'"/>
+	<key frame="11" text = "kill" />
+	<key frame="12" text = "whap 45 15" />
+</TEXTKEY>

@@ -1,0 +1,40 @@
+<ZT2Strings>
+      <LOC_STRING _locID="entityname" version="9" />
+      <LOC_STRING _locID="entityname:marinefence_high_mm" version="9"  >Marine Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_stt" version="9"  >Marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_lower" version="9"  >the marine fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_high_mm_ltt" version="9"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Fence</b>
+         </color>
+         <br/>
+         Click to select and then place a marine fence.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm" version="9"  >Marine Window Fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_stt" version="9"  >Marine window fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_lower" version="9"  >the marine window fence</LOC_STRING>
+      <LOC_STRING _locID="entityname:marinefence_window_mm_ltt" version="9"  >
+         <color r="255" g="248" b="178">
+            <b>Marine Window Fence</b>
+         </color>
+         <br/>
+         Click to select and then place a marine window fence.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_Adult" version="9"  >Whale Shark Backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_Adult_stt" version="9"  >Whale shark backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_Adult_lower" version="9"  >the whale shark backpack</LOC_STRING>
+      <LOC_STRING _locID="entityname:SharkWhale_Gift_Adult_ltt" version="9"  >
+         <color r="255" g="248" b="178">
+            <b>Whale Shark Backpack</b>
+         </color>
+         <br/>
+         Guests who enjoy watching the whale shark will buy this gift.
+      </LOC_STRING>
+      <LOC_STRING _locID="entityname:CodArctic_ltt" version="9"  >
+            <color r="255" g="248" b="178">
+               <b>Arctic Cod</b>
+            </color>
+            <br/>
+            Click to select and then place the Arctic cod, a form of live food used as an enrichment item.
+      </LOC_STRING>
+</ZT2Strings>

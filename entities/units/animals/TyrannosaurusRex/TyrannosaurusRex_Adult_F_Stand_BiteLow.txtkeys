@@ -1,0 +1,4 @@
+<TEXTKEY>
+	 <key frame="1" text="{Bip01 Head} snd 'Stand_BiteLow'"/>
+   <key percent="40" text="{Bip01 Head} snd 'footstep_large' b_Rampage"/>    
+</TEXTKEY>

@@ -1,0 +1,3607 @@
+<BFAITaskTemplateList>
+<!-- Default Tasks -->
+   <BFAITaskTemplate Name="DefaultTask_Styracosaurus" UniqueID="Styracosaurus:DefaultTask_Styracosaurus">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater="true"/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".002"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLand"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="Idle"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Exercise Tasks -->
+   <BFAITaskTemplate Name="SlowWander" UniqueID="Styracosaurus:SlowWander">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" rest="GE 70"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="20" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="5" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="MediumWander" UniqueID="Styracosaurus:MediumWander">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" rest="GE 40"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RunningAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Walk"/>
+         <BFBehWander minPlayTime="10" locoSpeed="medium" maxPlayTime="20" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalRunGood" priority="0" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FastWander" UniqueID="Styracosaurus:FastWander">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RunningAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_2Charge_FrillDisplay"/>
+         <BFBehWander minPlayTime="10" locoSpeed="fast" maxPlayTime="20" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalRunGood" priority="0" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   
+<!-- Rest Tasks -->
+   <BFAITaskTemplate Name="SleepShade" UniqueID="Styracosaurus:SleepShade">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Sleep" UniqueID="Styracosaurus:Sleep">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingSleep"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepShade_Midday" UniqueID="Styracosaurus:SleepShade_Midday">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND timeOfDayMin="8" timeOfDay="16"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Sleep"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+
+<!-- Privacy Tasks -->
+<!-- Hygiene Tasks -->
+   <BFAITaskTemplate Name="DustBathe" UniqueID="Styracosaurus:DustBathe">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets_AND>
+            <dirt/>
+            <biome/>
+            <Qualifiers inSight="25"/>
+         </Targets_AND>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+         <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".50" desert=".25" grassland=".50" savannah=".25" tropicalrainforest="1.00" scrub=".25" tundra=".25" wetlands=".50"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToDustBathe"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:TakingDustBath"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_6">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalDustBathGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Wallow"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bathe_Midday" UniqueID="Styracosaurus:Bathe_Midday">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND timeOfDayMin="8" timeOfDay="16"/>
+         </Subjects>
+         <Targets_AND>
+            <water/>
+            <Qualifiers_AND inHabitat="true" inSight="25" waterDepth="LE 1"/>
+         </Targets_AND>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWallow"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:BatheWater"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_6">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalDustBathGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Wallow"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-40"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Social Tasks -->
+   <BFAITaskTemplate Name="Snort_Call" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:Snort_Call">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SnortAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Snort"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Snort" GiveTo="target" Payload="subject" Timeout="30"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Snort_Answer" UniqueID="Styracosaurus:Snort_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Snort/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:SnortAnswer" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_6">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Snort"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteNuzzle" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:InviteNuzzle">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Nuzzle" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitNuzzle" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="20"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondNuzzle" reserveTag="General" UniqueID="Styracosaurus:RespondNuzzle">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Nuzzle/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15" fixedScore="100">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="DockNuzzle" targetBehSet="WaitNuzzle"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalNuzzleGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Nuzzle" targetBehSet="Nuzzle"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFAITargetData social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteTouchBeaks" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:InviteTouchBeaks">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_TouchBeaks" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitGreet" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="20"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondTouchBeaks" reserveTag="General" UniqueID="Styracosaurus:RespondTouchBeaks">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_TouchBeaks/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10" fixedScore="100">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="Node_Mouth" targetBehSet="WaitTouchBeaks"/>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSniffGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="TouchBeaks" targetBehSet="WaitTouchBeaks"/>
+         <BFBehSyncSet subjectBehSet="WaitTouchBeaks" targetBehSet="TouchBeaks"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+         <BFAITargetData social="-30"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="YoungChase" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Styracosaurus:YoungChase">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" notInSight="8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadePlayYoung" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="YoungEvade" UniqueID="Styracosaurus:YoungEvade">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_EvadePlayYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AdultChase" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:AdultChase">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" notInSight="8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AdultEvade" UniqueID="Styracosaurus:AdultEvade">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_EvadePlayAdult/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-20" social="-20" exercise="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Snort" UniqueID="Styracosaurus:Snort">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Snorting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Snort"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AdultChase_Night" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:AdultChase_Night">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" timeOfDay="GE 22"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" notInSight="8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadePlayAdult" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="YoungChase_Night" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Styracosaurus:YoungChase_Night">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" timeOfDay="GE 22"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" notInSight="8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="8" pursuitRadius="15" locoSpeed="fast"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_EvadePlayYoung" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="4" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Stimulation Tasks -->
+<!-- Hunger/Thirst Tasks -->
+   <BFAITaskTemplate Name="BrowseSavannahTreeMedium" reserveTag="Browse" UniqueID="Styracosaurus:BrowseSavannahTreeMedium">
+      <BFAICreateData>
+         <Subjects_AND>
+	    <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Styracosaurus/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-30"/>
+         <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".25" grassland=".75" savannah="1.00" tropicalrainforest=".50" scrub=".25" tundra=".25" wetlands=".25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBrowse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Browsing" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBrowseGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-40" bathroom="30" hygiene="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BrowseSavannahTreeAdvanced" reserveTag="Browse" UniqueID="Styracosaurus:BrowseSavannahTreeAdvanced">
+      <BFAICreateData>
+         <Subjects_AND>
+	    <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <Styracosaurus/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-30"/>
+         <BFAIBiomeMap alpine=".25" borealforest=".50" temperateforest=".75" desert=".25" grassland=".75" savannah="1.00" tropicalrainforest=".50" scrub=".25" tundra=".25" wetlands=".25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBrowse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Browsing" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBrowseGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-40" bathroom="30" hygiene="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BrowseBorealForestTreeTrunkBasic" reserveTag="BrowseTrunk" UniqueID="Styracosaurus:BrowseBorealForestTreeTrunkBasic">
+      <BFAICreateData>
+         <Subjects_AND>
+	    <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects_AND>
+         <Targets>
+            <b_BrowseBarkTree/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-30"/>
+         <BFAIBiomeMap alpine=".75" borealforest="1.00" temperateforest=".50" desert=".25" grassland=".50" savannah=".50" tropicalrainforest=".25" scrub=".25" tundra=".50" wetlands=".25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBrowse" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Browsing" useTargetName="true"/>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalBrowseGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hunger="-40" bathroom="30" hygiene="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="Styracosaurus:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="Stand_Idle" subjectNode="Node_Mouth" drinkDepth=".3"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_2"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="Eat_Drink"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Dig" UniqueID="Styracosaurus:Dig">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap thirst="-2"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PawingGround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dig"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstBad"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="animalthoughts:ThirstyAnimal" priority="1" timeout="30" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Reproduction Tasks -->
+   <BFAITaskTemplate Name="Charge" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Styracosaurus:Charge">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap reproduction="-50" social="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChargeAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Charge" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="7" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeCharge" UniqueID="Styracosaurus:EvadeCharge">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Charge/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100">
+         <BFAIAttributeFloatMap reproduction="-50" social="-10"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChargeAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChargeBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Dig"/>
+         <BFBehPursuit hitRadius="7" pursuitRadius="15" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-30" social="-10"/>
+         <BFAITargetData reproduction="-30" social="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DisplayFrill" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Styracosaurus:DisplayFrill">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers reproduction="GE 30"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers isFamily="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap reproduction="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" exercise="-20" stimulation="-20"/>
+         <BFAITargetData reproduction="20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThreatDisplay_Call" UniqueID="Styracosaurus:ThreatDisplay_Call">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Threaten" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalThreatenBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ShakeFrillViolent"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Threat" GiveTo="target" Payload="subject" Timeout="30"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThreatDisplay_Answer" UniqueID="Styracosaurus:ThreatDisplay_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Threat/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AnswerThreat" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalThreatenBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="ShakeFrillViolent"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteFight" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Styracosaurus:InviteFight">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InviteFight_NoFamily" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Styracosaurus:InviteFight_NoFamily">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inHabitat="true" isFamily="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Fight" GiveTo="target" Payload="subject" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondFight" reserveTag="General" UniqueID="Styracosaurus:RespondFight">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Fight/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100">
+         <BFAIAttributeFloatMap reproduction="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehSyncSet subjectBehSet="DockFight" targetBehSet="DockFight2"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFightBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="DefendEqual" targetBehSet="Fight"/>
+         <BFBehSyncSet subjectBehSet="Fight" targetBehSet="DefendEqual"/>
+         <BFBehSyncSet subjectBehSet="DefendEqual" targetBehSet="Fight"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-20"/>
+         <BFAITargetData reproduction="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Styracosaurus:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="90">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Styracosaurus:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="90">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="Styracosaurus:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_6"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="45" ModifyChance="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+            <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="Styracosaurus:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="388.8" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNestShade" UniqueID="Styracosaurus:LayNestShade">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_Dirt" UniqueID="Styracosaurus:LayNest_Dirt">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <dirt/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_GroundCover" UniqueID="Styracosaurus:LayNest_GroundCover">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CheckNest" reserveTag="General" UniqueID="Styracosaurus:CheckNest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <StyracosaurusNest/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_CheckNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1500">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Growl"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+               <BFAIToken Name="t_CheckNest" GiveTo="subject" Timein="60" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayLostNest" reserveTag="General" UniqueID="Styracosaurus:LayLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <shade/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuildLostNest" reserveTag="General" UniqueID="Styracosaurus:BuildLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <StyracosaurusNest/>
+            <Qualifiers_AND f_ConstructionLevel="GE 0" inHabitat="true" inSight="5"/>
+         </Targets>
+         <Objects>
+            <t_BuildLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWorkOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WorkingOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildStyracosaurusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_LayEggsLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEgg_LostNest" reserveTag="General" UniqueID="Styracosaurus:LayEgg_LostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <StyracosaurusNest/>
+            <Qualifiers_AND f_ConstructionLevel="GE 30" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_LayEggsLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildStyracosaurusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_FinishNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehMove/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:FinishingNest"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="FinishStyracosaurusNest"/>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FinishNest" reserveTag="General" UniqueID="Styracosaurus:FinishNest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND f_ConstructionLevel="GE 60" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FinishNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FinishStyracosaurusNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_7">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="IdleNest" UniqueID="Styracosaurus:IdleNest">
+      <BFAICreateData>
+         <Subjects>
+            <StyracosaurusNest_Egg/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="IdleEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+<!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+   <BFAITaskTemplate Name="HatchEgg" UniqueID="Styracosaurus:HatchEgg">
+      <BFAICreateData>
+         <Subjects>
+            <StyracosaurusNest_Egg/>
+            <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 1.60"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="200"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="HatchEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Guest Interaction Tasks -->
+   <BFAITaskTemplate Name="ScareGuest" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Styracosaurus:ScareGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="450"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+         <BFBehPlaySet behSet="BroadcastAttack"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+         <BFAISubjectData b_Escaped="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest" Priority="10" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Styracosaurus:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BroadcastAttack"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttackGuest" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedStyracosaurus"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Escape Tasks -->
+   <BFAITaskTemplate Name="BashFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Styracosaurus:BashFence">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets>
+            <fence/>
+            <Qualifiers f_FenceStrength="LE 8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="p_BashFence" targetAnim="Charge_Ahead" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_9"/>
+         <BFBehPlaySet behSet="SmashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BashWeakFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Styracosaurus:BashWeakFence">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+         </Subjects>
+         <Targets>
+            <fence/>
+            <Qualifiers f_FenceStrength="LE 4"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="p_BashFence" targetAnim="Charge_Ahead" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_9"/>
+         <BFBehPlaySet behSet="SmashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BashFence_Privacy" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Styracosaurus:BashFence_Privacy">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers privacy="GE 70"/>
+         </Subjects>
+         <Targets>
+            <fence/>
+            <Qualifiers f_FenceStrength="LE 8"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="p_BashFence" targetAnim="Stand_Idle" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="SmashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Predator/Prey Interaction Tasks -->
+   <BFAITaskTemplate Name="Attacked_Adult" UniqueID="Styracosaurus:Attacked_Adult">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_9">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmRumble" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="AlarmRumble"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="b_XXLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Attacked_Young" UniqueID="Styracosaurus:Attacked_Young">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_9">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+       	    <BFAITokenList>
+       	       <BFAIToken Name="t_Help" GiveTo="Styracosaurus_Adult_F" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+       	    </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DistressCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HelpYoung" UniqueID="Styracosaurus:HelpYoung">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers isRelation="child"/>
+         </Targets>
+         <Objects>
+            <t_Help/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ProtectYoung" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove moveRadius="10" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="Charge" playTime="3"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="b_XLargePredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_LargePredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_MediumPredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="b_SmallPredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="Styracosaurus:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DriveOffPredator" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Styracosaurus:DriveOffPredator">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_LargePredator/>
+            <b_MediumPredator/>
+            <b_SmallPredator/>
+            <Qualifiers_AND inSight="30" notInSight="10"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+ 	    <BFAITokenList>
+ 	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="8" pursuitRadius="30" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="DriveOffPredatorClose" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Styracosaurus:DriveOffPredatorClose">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_MediumPredator/>
+            <b_SmallPredator/>
+            <Qualifiers_AND inSight="10"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+ 	    <BFAITokenList>
+ 	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="FrillDisplay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+
+<!-- Mother/Young Interaction Tasks -->
+   <BFAITaskTemplate Name="CallChild" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Styracosaurus:CallChild">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" isRelation="child"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_7"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Mew"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-25"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Come" GiveTo="Styracosaurus_Young" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ChildCome" UniqueID="Styracosaurus:ChildCome">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Come/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Mew"/>
+         <BFBehMove moveRadius="5" locoSpeed="fast"/>
+         <BFBehPlaySet behSet="Lie"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallYoungGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20" health="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FollowMother" UniqueID="Styracosaurus:FollowMother">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" notInSight="4" isRelation="mother"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore=".1"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FollowMother"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Mew"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="10" locoSpeed="fast"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CallMother" TaskDelayMin="60" TaskDelayMax="160" UniqueID="Styracosaurus:CallMother">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" isRelation="mother"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="20">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="DistressCall"/>
+         <BFBehPlaySet behSet="Lie"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_ComeAdult" GiveTo="target" Payload="subject" Radius="60" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="MotherCome" UniqueID="Styracosaurus:MotherCome">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ComeAdult/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Mew"/>
+         <BFBehMove moveRadius="5"/>
+         <BFBehPlaySet behSet="Mew"/>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetSpecies="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITargetData health="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+
+<!-- Aging Tasks -->
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="Styracosaurus:Born">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEggHatchedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Styracosaurus:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 5.22"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="Styracosaurus:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Styracosaurus_Adult_F" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="Styracosaurus:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Styracosaurus_Adult_M" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperF" UniqueID="Styracosaurus:Age_SuperF">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young_F_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Styracosaurus_Adult_F_Super" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperM" UniqueID="Styracosaurus:Age_SuperM">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Young_M_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Styracosaurus_Adult_M_Super" morphScale="true" morphPeriod="10" initScale="0.55"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Styracosaurus:Old">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers lifespan="GE 40.7"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="Styracosaurus:Die">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Styracosaurus:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Herding behaviors -->
+   <BFAITaskTemplate Name="GatherHerd" UniqueID="Styracosaurus:GatherHerd">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" social="GE 50"/>
+         </Subjects>
+         <Targets>
+            <Styracosaurus/>
+            <Qualifiers_AND notInSight="15" isFamily="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GatherHerd" GiveTo="Styracosaurus" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_MoveHerd" GiveTo="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FormHerd"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander playTime="10" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <Styracosaurus/>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+            </avoidEntityTypes>
+         </BFBehWander>         
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="MoveHerd" UniqueID="Styracosaurus:MoveHerd">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_MoveHerd/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="75"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadingHerd"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander playTime="20" avoidWater="true" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <b_XLargePredator/>
+               <b_LargePredator/>
+               <b_MediumPredator/>
+               <Styracosaurus/>
+            </avoidEntityTypes>
+         </BFBehWander>         
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="MoveAsHerd" UniqueID="Styracosaurus:MoveAsHerd">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_GatherHerd/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MoveAsHerd"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="GatherHerd_Stampede" UniqueID="Styracosaurus:GatherHerd_Stampede">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" social="GE 50"/>
+         </Subjects>
+         <Targets>
+            <b_XLargePredator/>
+            <b_LargePredator/>
+            <b_MediumPredator/>
+            <Qualifiers_AND isSwimming="false" notInSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="10">
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_GatherStampede" GiveTo="Styracosaurus" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_PrepareStampede" GiveTo="subject" Payload="target" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FormHerd"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="10"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GatherStampede" UniqueID="Styracosaurus:GatherStampede">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_GatherHerd/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JoinHerd" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehMove hitRadius="8" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="Lead_Stampede" UniqueID="Styracosaurus:Lead_Stampede">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_PrepareStampede/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Stampeding"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_HerdStampede" GiveTo="Styracosaurus" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_Flee" GiveTo="b_LargePredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_Flee" GiveTo="b_MediumPredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_Flee" GiveTo="b_SmallPredator" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="8" pursuitRadius="30" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="Herd_Stampede" UniqueID="Styracosaurus:Herd_Stampede">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_HerdStampede/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Stampeding"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_6">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPrivacyGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+ 	    <BFAITokenList>
+ 	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="8" pursuitRadius="30" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   
+<!-- Rampage Tasks -->
+   <BFAITaskTemplate Name="WanderRampage" UniqueID="Styracosaurus:WanderRampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Styracosaurus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="60"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RunningAroundRampage"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehWander minPlayTime="3" locoSpeed="fast" maxPlayTime="6" avoidWater="true" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-100"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BashFence_Rampage" TaskDelayMin="15" TaskDelayMax="45" UseForKeeperPanel="false" sensorTag="habitat" Priority="4" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Styracosaurus:BashFence_Rampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Styracosaurus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <fence/>
+            <Qualifiers_AND inSight="15" f_FenceStrength="LE 10"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="140"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="p_BashFence" targetAnim="Charge_Ahead" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_9"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="SmashFence" interruptEvent="collideWithTarget"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackGuest_Rampage" TaskDelayMin="30" TaskDelayMax="45" reserveTag="General" UniqueID="Styracosaurus:AttackGuest_Rampage">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Styracosaurus/>
+            <Qualifiers_AND b_Rampage="E true" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects_AND>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="15" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BroadcastAttack"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttackGuest" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedStyracosaurus"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SmashBuilding" TaskDelayMin="30" TaskDelayMax="45" reserveTag="Rampage" Priority="4" UniqueID="Styracosaurus:SmashBuilding">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Styracosaurus/>
+            <Qualifiers b_Rampage="E true"/>
+         </Subjects_AND>
+         <Targets>
+            <tree/>
+            <building/>
+            <Qualifiers_AND inSight="15" f_BuildingStrength="LE 20"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="useContainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- DRT Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackDRTRobot" TaskDelayMin="30" TaskDelayMax="45" Priority="10" reserveTag="General" UniqueID="Styracosaurus:AttackDRTRobot">
+      <BFAICreateData>
+         <Subjects_AND>
+            <Styracosaurus/>
+            <Qualifiers_AND b_Rampage="E true" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects_AND>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+           <t_InviteAttack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="BroadcastAttack"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Attack" GiveTo="Guest" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Attack" GiveTo="Staff" Payload="subject" Radius="30" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_DistractedDino" GiveTo="DinoRecoveryCrateTeam" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttackGuest" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedStyracosaurus"/>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Tranquilized Tasks -->
+   <BFAITaskTemplate Name="Sleep_Tranquilized" Priority="10" UniqueID="Styracosaurus:Sleep_Tranquilized">
+      <BFAICreateData>
+         <Subjects>
+            <Styracosaurus/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_TranqHit/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="TranquilizedRampage"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-100" b_Rampage="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Wake" GiveTo="subject" Timeout="5"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+ </BFAITaskTemplateList>

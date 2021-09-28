@@ -1,0 +1,34 @@
+﻿<ZT2Strings>
+
+   <mainmenu>
+      <legalcopy1 version="3">
+         <font name="arial" size="10" shadowx="0" shadowy="0">
+            <b>© &amp; (p) 2006 Microsoft Corporation. All rights reserved.</b>
+         </font>
+      </legalcopy1>
+      <legalcopy2 version="3">
+         <font name="arial" size="10" shadowx="0" shadowy="0">
+            <b>Developed by Blue Fang Games for Microsoft Corporation.</b>
+         </font>
+      </legalcopy2>
+      <legalcopy3 version="3">
+         <font name="arial" size="10" shadowx="0" shadowy="0">
+            <b>This program is protected by U.S. and international copyright law</b>
+         </font>
+      </legalcopy3>
+      <legalcopy4 version="3">
+         <font name="arial" size="10" shadowx="0" shadowy="0">
+            <b>as described in Help/About.</b>
+         </font>
+      </legalcopy4>
+
+      <pdlc1_installed_stt>Dino Danger Pack Installed</pdlc1_installed_stt>
+      <pdlc1_installed_ltt>
+         <color r="255" g="248" b="178">
+            <b>Dino Danger Pack Installed</b>
+         </color>
+         <br>Dino Danger Pack is installed. </br>
+      </pdlc1_installed_ltt>
+   </mainmenu>
+  
+</ZT2Strings>

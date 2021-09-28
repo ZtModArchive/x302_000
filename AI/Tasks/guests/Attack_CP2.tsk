@@ -1,0 +1,34 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="EvadeHappy" UniqueID="attack:EvadeHappy" Priority="5">
+      <BFAICreateData>
+         <Subjects>
+            <Guest/>
+	    <Qualifiers inWater_OR_onLand="true"/>            
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_EvadeHappy/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:RunningFromAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:RunningFromAnimal_Happy" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="17" locoSpeed="scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap happiness="-20" rest="10" amusement="-10" gift="20"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

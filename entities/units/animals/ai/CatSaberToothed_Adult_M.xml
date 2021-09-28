@@ -1,0 +1,97 @@
+<BFTypedBinder binderType="CatSaberToothed_Adult_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Mammalia>
+                  <Carnivora>
+                     <Felidae>
+                        <CatSaberToothed>
+                           <CatSaberToothed_Adult>
+                              <CatSaberToothed_Adult_M/>
+                           </CatSaberToothed_Adult>
+                        </CatSaberToothed>
+                     </Felidae>
+                  </Carnivora>
+               </Mammalia>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities/units/animals/CatSaberToothed/CatSaberToothed_Adult_M_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="CatSaberToothed_Adult_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1" p_PredatorOffset="0 -2 0" b_Predator="true" f_adoptCount="rand(1,1)"/>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFActorComponent actorfile="entities/units/animals/CatSaberToothed/CatSaberToothed_Adult_M.bfm" scale="0.75"/>
+		<BFDecalTextureCycleComponent materialName="CatSaberToothed_Adult_F">
+			<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+			<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+			<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+			<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+		</BFDecalTextureCycleComponent>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+      <BFNamedBinder binderName="texController" required="1">
+         <instance>
+            <BFAITextureController currState="well" defaultState="well">
+	       <weights>
+		       <base weight="90" />
+		       <variant extension="1" weight="5" />
+		       <variant extension="2" weight="5" />
+	       </weights>
+               <attribList>
+                  <health/>
+                  <hygiene/>
+               </attribList>
+               <stateList>
+                  <sickanddirty>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                        <hygiene minRange="80" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_M_Sick_Dirty.dds"/>
+                     </textureData>
+                  </sickanddirty>
+                  <sick>
+                     <attribData>
+                        <health minRange="70" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_M_Sick.dds"/>
+                     </textureData>
+                  </sick>
+                  <dirty>
+                     <attribData>
+                        <hygiene minRange="80" maxRange="101"/>
+                     </attribData>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_M_Dirty.dds"/>
+                     </textureData>
+                  </dirty>
+                  <well>
+                     <textureData>
+                        <mainObj material="CatSaberToothed_Adult_F" image="entities\units\animals\CatSaberToothed\CatSaberToothed_Adult_M.dds"/>
+                     </textureData>
+                  </well>
+               </stateList>
+            </BFAITextureController>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

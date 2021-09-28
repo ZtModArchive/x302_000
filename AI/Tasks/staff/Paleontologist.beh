@@ -1,0 +1,254 @@
+<BehaviorSets>
+   <Educate_With_VEvent>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SpeakCrowd_Idle weight="50"/>
+               <Stand_Idle weight="50"/>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehViewEvent viewKey="Educator_Event" viewRadius="20" targetType="Guest" edValue="f_EdNormal" edDonate="f_EdDonNormal">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:GotEducatedFossils" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </Educate_With_VEvent>
+   <Educate_Without_VEvent>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SpeakCrowd_Idle weight="50"/>
+               <Stand_Idle weight="50"/>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Educate_Without_VEvent>
+   <DockFossilEducationCenter_Left>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEducateGuestsFossils"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorGotoEducateGuestsFossils" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </DockFossilEducationCenter_Left>
+   <DockFossilEducationCenter_Right>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEducateGuestsFossils"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorGotoEducateGuestsFossils" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_2Stand"/>
+      </behaviors>
+   </DockFossilEducationCenter_Right>
+   <UseFossilEducationCenter>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EducateGuestsFossils"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorEducateGuestsFossils" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="5" maxPlays="10">
+            <randomSets>
+               <Educate_With_VEvent weight="20"/>
+               <Educate_Without_VEvent weight="80"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseFossilEducationCenter>
+   <ExitFossilEducationCenter_Left>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitFossilEducationCenter_Left>
+   <ExitFossilEducationCenter_Right>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitFossilEducationCenter_Right>
+   <DockFossil>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="DockFossil_Land"/>
+               <water behSet="DockFossil_Water"/>
+               <underwater behSet="DockFossil_Underwater"/>
+               <default behSet="DockFossil_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DockFossil>
+   <DockFossil_Land>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockFossil_Land>
+   <DockFossil_Water>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline targetAnim="TreadWaterSub_Idle" locoSpeed="sonar"/>
+      </behaviors>
+   </DockFossil_Water>
+   <DockFossil_Underwater>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline targetAnim="TreadWaterSub_Idle" locoSpeed="sonar"/>
+      </behaviors>
+   </DockFossil_Underwater>
+   <MarkFossil>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="MarkFossil_Land"/>
+               <water behSet="MarkFossil_Water"/>
+               <underwater behSet="MarkFossil_Underwater"/>
+               <default behSet="MarkFossil_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MarkFossil>
+   <MarkFossil_Land>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PlaceFlag"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+         <BFBehAnimate targetAnim="Stand_PlaceFlag"/>
+      </behaviors>
+   </MarkFossil_Land>
+   <MarkFossil_Water>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWater_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWater_PlaceFood"/>
+      </behaviors>
+   </MarkFossil_Water>
+   <MarkFossil_Underwater>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_PlaceFood"/>
+      </behaviors>
+   </MarkFossil_Underwater>
+   <DigFossil>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="DigFossil_Land"/>
+               <water behSet="DigFossil_Water"/>
+               <underwater behSet="DigFossil_Underwater"/>
+               <default behSet="DigFossil_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </DigFossil>
+   <DigFossil_Land>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Excavate"/>
+         <ZTBehDigArtifact/>
+      </behaviors>
+   </DigFossil_Land>
+   <DigFossil_Water>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWater_PlaceFood"/>
+         <ZTBehDigArtifact/>
+      </behaviors>
+   </DigFossil_Water>
+   <DigFossil_Underwater>
+      <subjects>
+         <Paleontologist/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWaterSub_PlaceFood"/>
+         <BFBehAnimate targetAnim="TreadWaterSub_PlaceFood"/>
+         <ZTBehDigArtifact/>
+      </behaviors>
+   </DigFossil_Underwater>
+</BehaviorSets>

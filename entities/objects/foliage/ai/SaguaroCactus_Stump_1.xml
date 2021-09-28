@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="SaguaroCactus_Stump_1">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <SaguaroCactus_Stump>
+                  <SaguaroCactus_Stump_1/>
+               </SaguaroCactus_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

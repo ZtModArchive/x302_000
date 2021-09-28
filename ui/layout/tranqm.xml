@@ -1,0 +1,170 @@
+<UILayout name="Tranq Mode">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIShowHideAnim time=".3">
+      <start x="0" y="0" w="1024" h="768"/>
+      <end x="0" y="0" w="1024" h="768"/>
+   </UIShowHideAnim>
+   <UIAspect string="">
+      <default image="" sound="">
+         <BFRect x="0" y="0" w="0" h="0"/>
+         <BFColor r="255" g="255" b="255" a="255"/>
+      </default>
+   </UIAspect>
+   <UIHotKeys/>
+   <children>
+      <UILayout name="tranq_gun_screen">
+         <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".3">
+            <start x="128" y="768" w="768" h="576"/>
+            <end x="0" y="0" w="1024" h="768"/>
+         </UIShowHideAnim>
+         <UIAspect>
+            <default/>
+            <standard>
+               <normal/>
+            </standard>
+         </UIAspect>
+         <children>
+            <UILayout name="back ground pieces">
+               <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect string="" alwayshit="never">
+                  <default image="" sound="">
+                     <BFRect x="0" y="0" w="0" h="0"/>
+                     <BFColor r="0" g="0" b="0" a="255"/>
+                  </default>
+               </UIAspect>
+               <children>
+                  <UIStatic name="background graphic 1">
+                     <UIRegion x="0" y="50" w="50" h="100" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranq_A_512.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                  <UIStatic name="background graphic 2">
+                     <UIRegion x="50" y="50" w="100" h="100" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranq_B_512.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                  <UIText name="tranq_gun target label">
+                     <UIRegion x="525" y="658" w="138" h="15"/>
+                     <UIAspect locid="fptranqdisplay:tranqtarget_label_message" alwayshit="never"/>
+                     <text format="fptranqdisplay:tranqscreen_format1"/>
+                  </UIText>
+                  <UIText name="tranq_gun target name">
+                     <UIRegion x="528" y="676" w="130" h="25"/>
+                     <text format="fptranqdisplay:tranqscreen_format2"/>
+                  </UIText>
+                  <UIText name="tranq_gun distance label">
+                     <UIRegion x="525" y="694" w="138" h="15"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect locid="fptranqdisplay:tranqdistance_label_message" alwayshit="never"/>
+                     <text format="fptranqdisplay:tranqscreen_format1"/>
+                  </UIText>
+                  <UIText name="tranq_gun distance text">
+                     <UIRegion x="525" y="712" w="130" h="25"/>
+                     <text format="fptranqdisplay:tranqscreen_format2"/>
+                  </UIText>
+                  <UIText name="tranq_gun out of range label">
+                     <UIRegion x="525" y="694" w="138" h="40"/>
+                     <UIState active="normal" visible="hidden"/>
+                     <UIAspect locid="fptranqdisplay:tranqdistance_outofrange_message" alwayshit="never">
+                        <default>
+                          <BFFont align="center"/>
+                        </default>
+                     </UIAspect>
+                     <text format="fptranqdisplay:tranqscreen_format3" type="multi"/>
+                  </UIText>
+                  <UIStatic name="tranq aiming reticule">
+                     <UIRegion x="46" y="45" w="54" h="55" xalign="% min" yalign="% min" walign="% min" halign="% min"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranqgun_reticule_red.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                  <UIStatic name="tranq_gun charging bar left">
+                     <UIRegion x="441" y="345" w="25" h="78"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranqgun_readoutbar.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                  <UIStatic name="tranq_gun charging bar right">
+                     <UIRegion x="555" y="345" w="25" h="78"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranqgun_readoutbar.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                  <UIStatic name="tranq_gun charging bar display">
+                     <UIRegion x="665" y="658" w="28" h="78"/>
+                     <UIState active="normal" visible="normal"/>
+                     <UIAspect string="" alwayshit="never">
+                        <default image="ui/minigames/tranqgun_readoutbar.dds" sound="">
+                           <BFRect x="0" y="0" w="-1" h="-1"/>
+                           <BFColor r="255" g="255" b="255" a="255"/>
+                        </default>
+                     </UIAspect>
+                     <UIHotKeys/>
+                  </UIStatic>
+                <UIStatic name="tranq_gun target image">
+                  <UIRegion x="455" y="669" w="55" h="60" />
+                  <UIState active="normal" visible="normal" />
+                  <UIAspect>
+                    <default image="" sound="">
+                      <BFRect x="3" y="5" w="57" h="48" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+                <UIStatic name="tranq_gun misfire indicator">
+                  <UIRegion x="445" y="659" w="76" h="80" />
+                  <UIState active="normal" visible="hidden" />
+                  <UIAspect>
+                    <default image="ui/minigames/RedTarget_X.dds" sound="">
+                      <BFRect x="0" y="0" w="128" h="128" />
+                      <BFColor r="255" g="255" b="255" a="255" />
+                    </default>
+                  </UIAspect>
+                </UIStatic>
+               </children>
+            </UILayout>
+            <UIStatic name="tranq_screen_dither">
+               <UIRegion x="0" y="0" w="0" h="0" xalign="min" yalign="min" walign="max" halign="max"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIAspect alwayshit="never">
+                  <default image="ui/shared/white1x1.dds">
+                     <BFColor r="0" g="0" b="0" a="128"/>
+                  </default>
+               </UIAspect>
+               <UIHotKeys/>
+            </UIStatic>
+         </children>
+      </UILayout>
+   </children>
+</UILayout>

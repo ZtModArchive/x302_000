@@ -1,0 +1,45 @@
+<BFTypedBinder binderType="Utahraptor_Young_M_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Utahraptor>
+                           <Utahraptor_Young>
+                              <Utahraptor_Young_M>
+                              	<Utahraptor_Young_M_Super/>
+                              </Utahraptor_Young_M>
+                           </Utahraptor_Young>
+                        </Utahraptor>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared b_Super="true" f_BaseDonationAmount="130" s_Zoopedia="zoopedia:zoopedia_super_Utahraptor:entry">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" privacy="-0.02" social="0.40" stimulation="0.50" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Utahraptor/Utahraptor_Young_F.bfm" scale="0.9" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

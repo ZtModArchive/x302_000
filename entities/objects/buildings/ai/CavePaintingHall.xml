@@ -1,0 +1,399 @@
+<BFTypedBinder binderType="CavePaintingHall">
+  <types>
+    <entity>
+      <building>
+        <CavePaintingHall />
+      </building>
+    </entity>
+  </types>
+  <instance>
+    <BFGEntity entityVersion="1">
+      <physObjParenting>
+        <parentObj parent="mainObj" child="ShadowObj_01" rottype="use" postype="ignore" attachnode="link" />
+        <parentObj parent="mainObj" child="biomedetail_01" rottype="ignore" postype="use" attachnode="biomedetail_01" />
+        <parentObj parent="mainObj" child="biomedetail_02" rottype="ignore" postype="use" attachnode="biomedetail_02" />
+        <parentObj parent="mainObj" child="biomedetail_03" rottype="ignore" postype="use" attachnode="biomedetail_03" />
+        <parentObj parent="mainObj" child="biomedetail_04" rottype="ignore" postype="use" attachnode="biomedetail_04" />
+        <parentObj parent="mainObj" child="biomedetail_05" rottype="ignore" postype="use" attachnode="biomedetail_05" />
+        <parentObj parent="mainObj" child="biomedetail_06" rottype="ignore" postype="use" attachnode="biomedetail_06" />
+        <parentObj parent="mainObj" child="biomedetail_07" rottype="ignore" postype="use" attachnode="biomedetail_07" />
+        <parentObj parent="mainObj" child="biomedetail_08" rottype="ignore" postype="use" attachnode="biomedetail_08" />
+        <parentObj parent="mainObj" child="Painting01" rottype="use" postype="use" attachnode="Painting01" />
+        <parentObj parent="mainObj" child="Painting02" rottype="use" postype="use" attachnode="Painting02" />
+        <parentObj parent="mainObj" child="Painting03" rottype="use" postype="use" attachnode="Painting03" />
+        <parentObj parent="mainObj" child="Painting04" rottype="use" postype="use" attachnode="Painting04" />
+      </physObjParenting>
+    </BFGEntity>
+  </instance>
+  <shared>
+    <UIToggleButton template="adopt">
+      <UIAspect>
+        <default image="entities\objects\buildings\CavePaintingHall\CavePaintingHall_icon.dds" />
+      </UIAspect>
+      <UIHelpInfo name="" short="" long="" help="" ids="entityname:CavePaintingHall" />
+      <on>
+        <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="CavePaintingHall" />
+      </on>
+    </UIToggleButton>
+    <UIButton name="overviewicon">
+      <UIAspect>
+        <default image="ui/zoomap/icon_attractions.dds" />
+      </UIAspect>
+    </UIButton>
+    <ZTPlacementData autoFootprint="false" terrainFlatten="true" dockArrowStyle="standard" dockArrowSize="0.75" icon3Dscale="0.085" icon3Doffset="0 0 0.5" minimumHeadroom="6.5">
+      <cfootprint width="3" height="7" />
+      <dfootprint width="4" height="10" />
+      <attachObj>
+        <entity nodeName="Link_ABV_01" binderType="WhaleHall_collision_proxy" />
+        <entity nodeName="Link_ABV_02" binderType="WhaleHall_collision_proxy" />
+      </attachObj>
+      <soundEnv>
+        <stageVolume soundStage="cavepaintinghall" botLeftX="-4.0" botLeftY="-12" topRightX="4.0" topRightY="12" height="4.0" occludeCrowdSounds="1" />
+        <fringeVolume soundStage="cavepaintinghall" botLeftX="-4.0" botLeftY="-35.0" topRightX="4.0" topRightY="-12" height="12.0" />
+        <fringeVolume soundStage="cavepaintinghall" botLeftX="-4.0" botLeftY="12" topRightX="4.0" topRightY="35.0" height="12.0" />
+      </soundEnv>
+    </ZTPlacementData>
+    <BFGCollisionData isPassable="true" />
+    <BFAIEntityDataShared s_Product="Extinct" s_uisort="tc" s_ObjectType="Misc" s_Zoopedia="zoopedia:zoopedia_cavepaintinghall:entry" f_FameReq="60" />
+    <ZTTourData>
+      <theme_extinct value="5" />
+      <cool value="8" />
+    </ZTTourData>
+  </shared>
+  <binder>
+    <BFBinder repopulateMethod="byType">
+      <instance>
+        <ZTPlaceEntityComponent />
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="mainObj">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities\objects\buildings\CavePaintingHall\CavePaintingHall" switch="0 35 43 50" />
+          <BFGroundFitComponent heightOffset="0.0" />
+          <BFForceUpdateWhenVisibleComponent />
+        </BFPhysObj>
+      </instance>
+      <shared>
+        <BFSharedPhysVars>
+          <virtualNodes>
+            <Dock_Guest1 x="-1.0" y="-4.5" z=".1" yaw="90" />
+            <Dock_Guest2 x="1.0" y="-2.0" z=".1" yaw="-90" />
+            <Dock_Guest3 x="-1.0" y="0.0" z=".1" yaw="90" />
+            <Dock_Guest4 x="1.0" y="2.0" z=".1" yaw="-90" />
+            <Dock_Guest5 x="-1.0" y="4.0" z=".1" yaw="90" />
+            <Dock_Guest6 x="1.0" y="4.5" z=".1" yaw="-90" />
+            <Dock_Paint0 x="-1.25" y="-2.6" z=".1" yaw="90" />
+            <Dock_Paint1 x="-1.25" y="-0.3" z=".1" yaw="90" />
+            <Dock_Paint2 x="-1.25" y="1.9" z=".1" yaw="90" />
+            <Dock_Paint3 x="-1.25" y="4.5" z=".1" yaw="90" />
+          </virtualNodes>
+        </BFSharedPhysVars>
+      </shared>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="ShadowObj_01">
+      <instance>
+        <BFPhysObj>
+          <BFStaticBlobShadowComponent shadowTexture="world\shadows\blob\round_blob2.tga" baseNode="ShadowNode_01" width="15" length="20" offwidth="1" intensity="0.3" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_01">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_02">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_03">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_04">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_05">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_06">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_07">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="biomedetail_08">
+      <instance>
+        <BFPhysObj>
+          <BFDecorativeDetailObjectComponent lodDistances="5 15 25 35" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Painting01" required="1">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CavePaintingHall/CavePaintingHall_Painting" switch="0 25" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Painting02" required="1">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CavePaintingHall/CavePaintingHall_Painting" switch="0 25" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Painting03" required="1">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CavePaintingHall/CavePaintingHall_Painting" switch="0 25" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Painting04" required="1">
+      <instance>
+        <BFPhysObj>
+          <BFSimpleLODComponent isBFR="true" modelfile="entities/objects/buildings/CavePaintingHall/CavePaintingHall_Painting" switch="0 25" />
+        </BFPhysObj>
+      </instance>
+    </BFNamedBinder>
+    <BFBinder required="1">
+      <instance>
+        <BFAIEntityDataInstance f_PaintLevel_1="0" f_PaintLevel_2="0" f_PaintLevel_3="0" f_PaintLevel_4="0" />
+      </instance>
+    </BFBinder>
+    <BFNamedBinder binderName="texController1" required="1">
+      <instance>
+        <BFAITextureController currState="Painting_1_0" defaultState="Painting_1_0">
+          <attribList>
+            <f_PaintLevel_1 />
+          </attribList>
+          <stateList>
+            <Painting_1_0>
+              <attribData>
+                <f_PaintLevel_1 minRange="-1000" maxRange="1" />
+              </attribData>
+              <textureData>
+                <Painting01 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_0.dds" />
+              </textureData>
+            </Painting_1_0>
+            <Painting_1_33>
+              <attribData>
+                <f_PaintLevel_1 minRange="1" maxRange="33" />
+              </attribData>
+              <textureData>
+                <Painting01 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_1.dds" />
+              </textureData>
+            </Painting_1_33>
+            <Painting_1_66>
+              <attribData>
+                <f_PaintLevel_1 minRange="33" maxRange="66" />
+              </attribData>
+              <textureData>
+                <Painting01 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_2.dds" />
+              </textureData>
+            </Painting_1_66>
+            <Painting_1_100>
+              <attribData>
+                <f_PaintLevel_1 minRange="66" maxRange="101" />
+              </attribData>
+              <textureData>
+                <Painting01 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_3.dds" />
+              </textureData>
+            </Painting_1_100>
+          </stateList>
+        </BFAITextureController>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="texController2" required="1">
+      <instance>
+        <BFAITextureController currState="Painting_2_0" defaultState="Painting_2_0">
+          <attribList>
+            <f_PaintLevel_2 />
+          </attribList>
+          <stateList>
+            <Painting_2_0>
+              <attribData>
+                <f_PaintLevel_2 minRange="-1000" maxRange="1" />
+              </attribData>
+              <textureData>
+                <Painting02 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_0.dds" />
+              </textureData>
+            </Painting_2_0>
+            <Painting_2_33>
+              <attribData>
+                <f_PaintLevel_2 minRange="1" maxRange="33" />
+              </attribData>
+              <textureData>
+                <Painting02 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_1.dds" />
+              </textureData>
+            </Painting_2_33>
+            <Painting_2_66>
+              <attribData>
+                <f_PaintLevel_2 minRange="33" maxRange="66" />
+              </attribData>
+              <textureData>
+                <Painting02 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_2.dds" />
+              </textureData>
+            </Painting_2_66>
+            <Painting_2_100>
+              <attribData>
+                <f_PaintLevel_2 minRange="66" maxRange="101" />
+              </attribData>
+              <textureData>
+                <Painting02 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_3.dds" />
+              </textureData>
+            </Painting_2_100>
+          </stateList>
+        </BFAITextureController>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="texController3" required="1">
+      <instance>
+        <BFAITextureController currState="Painting_3_0" defaultState="Painting_3_0">
+          <attribList>
+            <f_PaintLevel_3 />
+          </attribList>
+          <stateList>
+            <Painting_3_0>
+              <attribData>
+                <f_PaintLevel_3 minRange="-1000" maxRange="1" />
+              </attribData>
+              <textureData>
+                <Painting03 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_0.dds" />
+              </textureData>
+            </Painting_3_0>
+            <Painting_3_33>
+              <attribData>
+                <f_PaintLevel_3 minRange="1" maxRange="33" />
+              </attribData>
+              <textureData>
+                <Painting03 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_1.dds" />
+              </textureData>
+            </Painting_3_33>
+            <Painting_3_66>
+              <attribData>
+                <f_PaintLevel_3 minRange="33" maxRange="66" />
+              </attribData>
+              <textureData>
+                <Painting03 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_2.dds" />
+              </textureData>
+            </Painting_3_66>
+            <Painting_3_100>
+              <attribData>
+                <f_PaintLevel_3 minRange="66" maxRange="101" />
+              </attribData>
+              <textureData>
+                <Painting03 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_3.dds" />
+              </textureData>
+            </Painting_3_100>
+          </stateList>
+        </BFAITextureController>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="texController4" required="1">
+      <instance>
+        <BFAITextureController currState="Painting_4_0" defaultState="Painting_4_0">
+          <attribList>
+            <f_PaintLevel_4 />
+          </attribList>
+          <stateList>
+            <Painting_4_0>
+              <attribData>
+                <f_PaintLevel_4 minRange="-1000" maxRange="1" />
+              </attribData>
+              <textureData>
+                <Painting04 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_0.dds" />
+              </textureData>
+            </Painting_4_0>
+            <Painting_4_33>
+              <attribData>
+                <f_PaintLevel_4 minRange="1" maxRange="33" />
+              </attribData>
+              <textureData>
+                <Painting04 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_1.dds" />
+              </textureData>
+            </Painting_4_33>
+            <Painting_4_66>
+              <attribData>
+                <f_PaintLevel_4 minRange="33" maxRange="66" />
+              </attribData>
+              <textureData>
+                <Painting04 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_2.dds" />
+              </textureData>
+            </Painting_4_66>
+            <Painting_4_100>
+              <attribData>
+                <f_PaintLevel_4 minRange="66" maxRange="101" />
+              </attribData>
+              <textureData>
+                <Painting04 material="CavePainting" image="entities\objects\buildings\CavePaintingHall\CavePainting_3.dds" />
+              </textureData>
+            </Painting_4_100>
+          </stateList>
+        </BFAITextureController>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Paint">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot enterBehSet="EnterCavePainting1" useBehSet="PaintCavePainting1" exitBehSet="ExitEasel" targetNode="Dock_Paint0" capacity="1" />
+            <BFGEntityContainerSlot enterBehSet="EnterCavePainting2" useBehSet="PaintCavePainting2" exitBehSet="ExitEasel" targetNode="Dock_Paint1" capacity="1" exclusiveID="CavePaintingHall_1" />
+            <BFGEntityContainerSlot enterBehSet="EnterCavePainting3" useBehSet="PaintCavePainting3" exitBehSet="ExitEasel" targetNode="Dock_Paint2" capacity="1" />
+            <BFGEntityContainerSlot enterBehSet="EnterCavePainting4" useBehSet="PaintCavePainting4" exitBehSet="ExitEasel" targetNode="Dock_Paint3" capacity="1" exclusiveID="CavePaintingHall_2" />
+          </slots>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+    <BFNamedBinder binderName="Use_Kiosk">
+      <instance>
+        <BFGEntityContainer>
+          <slots>
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk1" targetNode="Dock_Guest1" />
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk2" targetNode="Dock_Guest2" />
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk3" targetNode="Dock_Guest3" exclusiveID="CavePaintingHall_1" />
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk1" targetNode="Dock_Guest4" />
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk2" targetNode="Dock_Guest5" exclusiveID="CavePaintingHall_2" />
+            <BFGEntityContainerSlot useBehSet="UseDiscoveryKiosk3" targetNode="Dock_Guest6" />
+          </slots>
+        </BFGEntityContainer>
+      </instance>
+    </BFNamedBinder>
+    <BFBinder>
+      <instance>
+        <ZTEconomyComponent cost="1200">
+          <ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+          <ZTTransaction name="upkeep" cost="100" period="monthly" type="debit" category="upkeep" />
+          <ZTTransaction name="destroy" cost="80" costType="%parent" type="credit" category="recycling" />
+          <ZTTransaction name="add_user" cost="1" type="addUser" category="user" />
+        </ZTEconomyComponent>
+      </instance>
+    </BFBinder>
+  </binder>
+</BFTypedBinder>

@@ -1,0 +1,40 @@
+<BFTypedBinder binderType="DinoRecoveryBuilding_collision">
+   <types>
+      <entity>
+         <collision_proxy>
+            <DinoRecoveryBuilding_collision/>
+         </collision_proxy>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData autoFootprint="false" gridSnap="false" elevatedTilePlacement="false" dockArrowStyle="special" dockArrowSize="0.75">
+         <stompData>
+	    <allow>
+               <DinoRecoveryBuilding/>
+               <DinoRecoveryRobot/>
+               <DinoRecoveryTranqTeam/>
+               <DinoRecoveryCrateTeam/>
+            </allow>
+            <prevent>
+	       <actor />
+	       <avatar />
+            </prevent>
+         </stompData>
+      </ZTPlacementData>
+	<BFGCollisionData>
+     		<typeScores DinoRecoveryCrateTeam="0" DinoRecoveryTranqTeam="0" DinoRecoveryRobot="0"/>
+	</BFGCollisionData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFSceneGraphComponent isBFR="true" modelfile="entities\objects\buildings\DinoRecoveryBuilding\DinoRecoveryBuilding_collision.bfb" />
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+   </binder>
+</BFTypedBinder>

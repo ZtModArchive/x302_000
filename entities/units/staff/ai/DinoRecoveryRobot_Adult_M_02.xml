@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="DinoRecoveryRobot_Adult_M_02">
+   <types>
+      <entity>
+         <actor>
+            <people>
+               <Staff>
+                  <DinoRecoveryRobot>
+                     <DinoRecoveryRobot_Adult_M>
+                        <DinoRecoveryRobot_Adult_M_02/>
+                     </DinoRecoveryRobot_Adult_M>
+                  </DinoRecoveryRobot>
+               </Staff>
+            </people>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <binder/>
+</BFTypedBinder>

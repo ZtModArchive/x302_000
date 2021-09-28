@@ -1,0 +1,81 @@
+<BFTypedBinder binderType="Deinonychus_Adult" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Deinonychus>
+                           <Deinonychus_Adult/>
+                        </Deinonychus>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared f_viewBonus="50" b_Adult="1" b_Territorial="true" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_LargePredator="true" b_Rampager="true" b_FenceTester="true"/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine" width="1.65" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	      <BFNamedBinder binderName="texController" required="1">
+		 <instance>
+		    <BFAITextureController currState="well" defaultState="well">
+		       <attribList>
+			  <health/>
+			  <hygiene/>
+		       </attribList>
+		       <stateList>
+			  <sickanddirty>
+			     <attribData>
+				<health minRange="70" maxRange="101"/>
+				<hygiene minRange="70" maxRange="101"/>
+			     </attribData>
+			     <textureData>
+				<mainObj material="Deinonychus_Adult_F" image="entities\units\animals\Deinonychus\Deinonychus_Adult_F_Sick_Dirty.dds"/>
+			     </textureData>
+			  </sickanddirty>
+			  <sick>
+			     <attribData>
+				<health minRange="70" maxRange="101"/>
+			     </attribData>
+			     <textureData>
+				<mainObj material="Deinonychus_Adult_F" image="entities\units\animals\Deinonychus\Deinonychus_Adult_F_Sick.dds"/>
+			     </textureData>
+			  </sick>
+			  <dirty>
+			     <attribData>
+				<hygiene minRange="70" maxRange="101"/>
+			     </attribData>
+			     <textureData>
+				<mainObj material="Deinonychus_Adult_F" image="entities\units\animals\Deinonychus\Deinonychus_Adult_F_Dirty.dds"/>
+			     </textureData>
+			  </dirty>
+			  <well>
+			     <textureData>
+				<mainObj material="Deinonychus_Adult_F" image="entities\units\animals\Deinonychus\Deinonychus_Adult_F.dds"/>
+			     </textureData>
+			  </well>
+		       </stateList>
+		    </BFAITextureController>
+		 </instance>
+	      </BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" radius="0.375" motionClass="mover" waterScore="10" maxSlope=".75" wadeDepth="1" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

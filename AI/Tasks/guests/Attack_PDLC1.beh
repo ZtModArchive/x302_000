@@ -1,0 +1,72 @@
+<BehaviorSets>
+   <AttackedCarnotaurus>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Attacked_Carnotaurus"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="0"/>
+      </behaviors>
+   </AttackedCarnotaurus>
+   <AttackedStyracosaurus>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedStyracosaurus>
+   <AttackedTriceratops>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="Dock_Attack" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </AttackedTriceratops>
+   <AttackedTyrannosaurusRex>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:InteractAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Stand_Attacked_TyrannosaurusRex"/>
+         <BFBehKill killSubject="true" fadeOutPeriod="0"/>
+      </behaviors>
+   </AttackedTyrannosaurusRex>
+</BehaviorSets>

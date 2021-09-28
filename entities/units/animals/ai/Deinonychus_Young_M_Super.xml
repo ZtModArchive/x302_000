@@ -1,0 +1,45 @@
+<BFTypedBinder binderType="Deinonychus_Young_M_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Deinonychus>
+                           <Deinonychus_Young>
+                              <Deinonychus_Young_M>
+                              	<Deinonychus_Young_M_Super/>
+                              </Deinonychus_Young_M>
+                           </Deinonychus_Young>
+                        </Deinonychus>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <BFAIEntityDataShared f_BaseDonationAmount="90" b_Super="true" s_Zoopedia="zoopedia:zoopedia_super_Deinonychus:entry">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" privacy="-0.02" social="0.40" stimulation="0.40" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Deinonychus/Deinonychus_Young_F.bfm" scale="0.55" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

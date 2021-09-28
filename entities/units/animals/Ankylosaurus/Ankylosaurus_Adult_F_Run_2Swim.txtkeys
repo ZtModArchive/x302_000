@@ -1,0 +1,5 @@
+<TEXTKEY>
+   <key percent="32.5" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/>
+   <key percent="58.125" text="{Bip01 Head} snd 'footstep_med' b_Rampage"/>   
+   <key percent="77.5" text="{Bip01 Head} snd 'footstep_small' b_Rampage"/>  
+</TEXTKEY>

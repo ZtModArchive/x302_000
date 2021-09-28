@@ -1,0 +1,20 @@
+<BFScenarioGroup name="marsupialmadnesssrules" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<children>
+		<BFScenarioRule hidden="1" name="marsupialmadness" state="0" sticky="true">
+			<info type="photo">
+				<neutral locid="PhotoChallengetext:PHMarsupialMadnessPhotoShort" overview="PhotoChallengetext:PHMarsupialMadnessPhoto" />
+				<success locid="PhotoChallengetext:PHMarsupialMadnessPhotoSuccessShort" overview="PhotoChallengetext:PHMarsupialMadnessPhotoSuccess" />
+				<failure locid="PhotoChallengetext:PHMarsupialMadnessPhotoFailureShort" overview="PhotoChallengetext:PHMarsupialMadnessPhotoFailure" />
+			</info>
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marsupialmadnessphoto.lua" entry="evalMarsupialMadness" />
+			</evaluate>
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marsupialmadnessphoto.lua" entry="completeMarsupialMadness" />
+			</success>		
+			<failure>
+				<BFScenarioScriptAction script="scenario/scripts/challenge/marsupialmadnessphoto.lua" entry="failMarsupialMadness" />
+			</failure>	
+		</BFScenarioRule>
+	</children>
+</BFScenarioGroup>

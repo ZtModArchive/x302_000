@@ -1,0 +1,10 @@
+<ZTPuzzle animal="Protarchaeopteryx" level="1" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_ArmLeft" node="Piece01" entityScale="1.42" />
+    <ZTPuzzlePiece texture="02_Torso" node="Piece02" entityScale="1.42" />
+    <ZTPuzzlePiece texture="03_Head" node="Piece03" entityScale="0.71" />
+    <ZTPuzzlePiece texture="04_ArmRight" node="Piece04" entityScale="1.42" />
+    <ZTPuzzlePiece texture="05_LegRight" node="Piece05" entityScale="1.42" />
+    <ZTPuzzlePiece texture="06_LegLeft" node="Piece06" entityScale="1.42"/>
+  </pieces>
+</ZTPuzzle>

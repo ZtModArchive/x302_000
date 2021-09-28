@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="TyrannosaurusRex_Young_M">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Archosauria>
+                  <Saurischia>
+                     <Tyrannosauridae>
+                        <TyrannosaurusRex>
+                           <TyrannosaurusRex_Young>
+                              <TyrannosaurusRex_Young_M/>
+                           </TyrannosaurusRex_Young>
+                        </TyrannosaurusRex>
+                     </Tyrannosauridae>
+                  </Saurischia>
+               </Archosauria>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="TyrannosaurusRex_Young_M"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="1"/>
+   </shared>
+</BFTypedBinder>

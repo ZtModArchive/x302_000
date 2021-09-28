@@ -1,0 +1,50 @@
+<ZT2Strings>
+   <entityname>
+      <!--poop names-->
+      <Poop_GiantBird>Giant Bird Poop</Poop_GiantBird>
+      <Poop_GiantBird_stt>Giant bird poop</Poop_GiantBird_stt>
+      <Poop_GiantBird_lower>the giant bird poop</Poop_GiantBird_lower>
+      <Poop_GiantBird_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Bird Poop</b>
+         </color>
+         <br/>
+         Click to select and then place Giant bird poop.
+      </Poop_GiantBird_ltt>
+      
+      <Poop_GiantBird_Sick>Giant Bird Poop (Sick)</Poop_GiantBird_Sick>
+      <Poop_GiantBird_Sick_stt>Giant bird poop (sick)</Poop_GiantBird_Sick_stt>
+      <Poop_GiantBird_Sick_lower>the giant bird poop (sick)</Poop_GiantBird_Sick_lower>
+      <Poop_GiantBird_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Bird Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place giant bird poop (sick).
+      </Poop_GiantBird_Sick_ltt>
+
+      <Poop_Giant>Giant Poop</Poop_Giant>
+      <Poop_Giant_stt>Giant poop</Poop_Giant_stt>
+      <Poop_Giant_lower>the giant poop</Poop_Giant_lower>
+      <Poop_Giant_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Poop</b>
+         </color>
+         <br/>
+         Click to select and then place giant poop.
+      </Poop_Giant_ltt>
+      
+      <Poop_Giant_Sick>Giant Poop (Sick)</Poop_Giant_Sick>
+      <Poop_Giant_Sick_stt>Giant poop (sick)</Poop_Giant_Sick_stt>
+      <Poop_Giant_Sick_lower>the giant poop (sick)</Poop_Giant_Sick_lower>
+      <Poop_Giant_Sick_ltt>
+         <color r="255" g="248" b="178">
+            <b>Giant Poop (Sick)</b>
+         </color>
+         <br/>
+         Click to select and then place giant poop (sick).
+      </Poop_Giant_Sick_ltt>
+
+   </entityname>
+   
+</ZT2Strings>

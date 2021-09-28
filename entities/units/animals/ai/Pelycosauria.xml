@@ -1,0 +1,16 @@
+<BFTypedBinder binderType="Pelycosauria" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Synapsida>
+                  <Pelycosauria/>
+               </Synapsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

@@ -1,0 +1,17 @@
+<UILayout templateName="creditsback_utahraptor">
+<UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+	  <default/>
+   </UIAspect>
+   <children>
+      <UIStatic name="Image 1">
+         <UIRegion x="-400" y="385" w="800" h="400" xalign="mid" yalign="min" walign="len" halign="len"/>
+         <UIAspect>
+            <default image="UI/credits/logos/UtahRaptor.dds">
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </default>
+         </UIAspect>
+      </UIStatic> 
+   </children>
+</UILayout>

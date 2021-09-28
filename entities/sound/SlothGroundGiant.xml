@@ -1,0 +1,305 @@
+<soundtags>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Attacked_Idle">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Attacked_Idle.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Eat_Chew">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Eat_Chew.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Eat_Drink">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Eat_Drink.wav" volume=".6" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Eat_Idle">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Eat_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatElevated_Chew">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatElevated_Chew.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatElevated_Drink">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatElevated_Drink.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatElevated_Idle">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatElevated_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatTrough_Chew">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatTrough_Chew.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatTrough_Drink">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatTrough_Drink.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_EatTrough_Idle">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_EatTrough_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_Beckon">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_Beckon.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_BeGroomed">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_BeGroomed.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_Shoo">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_Shoo.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_Sneeze">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_Sneeze.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_Sniff">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_Sniff.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sit_Yawn">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sit_Yawn.wav" volume=".7" mindist="2" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Sleep_Idle">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Sleep_Idle.wav" volume=".5" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_2Attacked">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_2Attacked.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_2Run">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_2Run.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_AttackGuest">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_BashFence">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_BashFence.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_Beckon">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_Beckon.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_BrowseTreeA">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_BrowseTreeA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_BrowseTreeB">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_BrowseTreeB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_GroomOtherA">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_GroomOtherA.wav" volume=".4" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_LeanSickly">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_LeanSickly.wav" volume=".4" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_ScratchSelfA">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_ScratchSelfA.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_ScratchSelfB">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_ScratchSelfB.wav" volume=".7" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_StrikeLeft">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_StrikeLeft.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="SlothGroundGiant_Adult_Stand_SwipeLeft">
+         <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Adult_F_Stand_SwipeLeft.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag> 
+   
+   <!--YOUNG-->
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Attacked_Idle">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Attacked_Idle.wav" volume=".6" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Eat_Chew">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Eat_Chew.wav" volume=".5" mindist="2" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Eat_Drink">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Eat_Drink.wav" volume=".5" mindist="2" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Eat_Idle">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Eat_Idle.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatElevated_Chew">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatElevated_Chew.wav" volume=".5" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>   
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatElevated_Drink">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatElevated_Drink.wav" volume=".5" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatElevated_Idle">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatElevated_Idle.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatTrough_Chew">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatTrough_Chew.wav" volume=".5" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatTrough_Drink">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatTrough_Drink.wav" volume=".5" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_EatTrough_Idle">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_EatTrough_Idle.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_Beckon">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_Beckon.wav" volume=".9" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_BeGroomed">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_BeGroomed.wav" volume=".8" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_Shoo">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_Shoo.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_Sneeze">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_Sneeze.wav" volume=".7" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_Sniff">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_Sniff.wav" volume=".5" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>   
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sit_Yawn">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sit_Yawn.wav" volume=".7" mindist="2" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Sleep_Idle">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Sleep_Idle.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_2Attacked">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_2Attacked.wav" volume=".9" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_2Run">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_2Run.wav" volume=".6" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_AttackGuest">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_AttackGuest.wav" volume="1" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag> 
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_BashFence">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_BashFence.wav" volume="1" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_Beckon">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_Beckon.wav" volume=".9" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_BrowseTreeA">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_BrowseTreeA.wav" volume=".7" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_BrowseTreeB">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_BrowseTreeB.wav" volume=".7" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_GroomOtherA">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_GroomOtherA.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>   
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_LeanSickly">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_LeanSickly.wav" volume=".4" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_ScratchSelfA">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_ScratchSelfA.wav" volume=".7" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_ScratchSelfB">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_ScratchSelfB.wav" volume=".7" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_StrikeLeft">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_StrikeLeft.wav" volume="1" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+    </BFSoundtag>
+    <BFSoundtag>
+       <BF3DSndFactory name="SlothGroundGiant_Young_Stand_SwipeLeft">
+          <snd name="entities/units/animals/SlothGroundGiant/sound/SlothGroundGiant_Young_F_Stand_SwipeLeft.wav" volume=".6" mindist="4" maxdist="50"/>
+       </BF3DSndFactory>
+   </BFSoundtag> 
+  
+</soundtags>

@@ -1,0 +1,762 @@
+<BehaviorSets>
+   <EnterEntertainerStage>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterFront_Run" locoSpeed="fast"/>
+         <BFBehDock subjectNode="Bip01" targetNode="Dock_EnterFront" locoSpeed="slow" redock="true"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:JumpOnStage"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_BackFlip" groundFit="false"/>
+      </behaviors>
+   </EnterEntertainerStage> 
+   <ExitEntertainerStage>
+      <subjects>
+         <EntertainerExtinct/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:LeaveStage"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_ForwardFlip" groundFit="false"/>
+         <BFBehWander playTime="5" avoidWater="true" locoSpeed="medium">
+            <avoidEntityTypes>
+               <StageEntertainer/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </ExitEntertainerStage> 
+   <ExitEntertainerStage>
+      <subjects>
+         <EntertainerDinosaur/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </ExitEntertainerStage> 
+   <DockEntertainGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_EntertainGuest" targetNode="p_TalkOffset"/>
+      </behaviors>
+   </DockEntertainGuest>   
+   <DockHugYoungGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_HugYoungGuest" targetNode="p_TalkOffset"/>
+      </behaviors>
+   </DockHugYoungGuest>   
+   <DockPictureYoungGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Node_PictureYoungGuest" targetNode="p_TalkOffset"/>
+      </behaviors>
+   </DockPictureYoungGuest>   
+   <EntertainYoungGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HugYoungGuest weight="50"/>
+               <PictureWithGuest weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EntertainYoungGuest>   
+   <HugYoungGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="DockHugYoungGuest" targetBehSet="WaitEntertainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:HugGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="Hug" targetBehSet="HugEntertainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+               <ZTThoughtInfo locID="staffthoughts:EntertainerEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="Entertain" targetBehSet="WatchEntertainer"/>
+      </behaviors>
+   </HugYoungGuest>   
+   <Hug>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_HugYoungGuest" interruptFlag="true"/>
+      </behaviors>
+   </Hug>   
+   <PictureWithGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="DockPictureYoungGuest" targetBehSet="WaitEntertainer"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:PictureGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="GetPictureTaken" targetBehSet="TakeEntertainerPicture"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EntertainGuest" useTargetName="true"/>
+                <ZTThoughtInfo locID="staffthoughts:EntertainerEntertainGuest" useTargetName="true" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="Entertain" targetBehSet="WatchEntertainer"/>
+      </behaviors>
+   </PictureWithGuest>   
+   <GetPictureTaken>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GetPictureTaken" interruptFlag="true"/>
+      </behaviors>
+   </GetPictureTaken>   
+   <EntertainGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="Entertain" targetBehSet="WatchEntertainer"/>
+      </behaviors>
+   </EntertainGuest>   
+   <WaveGuest>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Wave"/>
+      </behaviors>
+   </WaveGuest>   
+   <Show_With_VEvent>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Dance"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <TellJokes weight="50"/>
+               <PuppetShow weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehRandomSet>
+            <randomSets>
+               <TellJokes weight="30"/>
+               <PuppetShow weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehViewEvent viewKey="Entertainer_Event" viewRadius="20" targetType="Guest" edValue="f_EdNormal" edDonate="f_EdDonNormal">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:GotEntertained_Show" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </Show_With_VEvent>
+   <Show_Without_VEvent>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Dance"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <TellJokes weight="50"/>
+               <PuppetShow weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehRandomSet>
+            <randomSets>
+               <TellJokes weight="30"/>
+               <PuppetShow weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Show_Without_VEvent>   
+   <Entertain>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>               
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_TellJokeBad weight="50"/>
+               <Stand_TellJokeGood weight="50"/>               
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <ZTBehViewEvent viewKey="Entertainer_Event" viewRadius="20" targetType="Guest" edValue="f_EdNormal" edDonate="f_EdDonNormal">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:GotEntertained" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </Entertain>
+   <Dance>
+      <subjects>
+         <EntertainerExtinct/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Dance_Idle" playTime="3"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="20"/>
+               <Stand_BreakDance weight="70"/>
+               <Stand_PirateJig weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="70"/>
+               <Stand_BreakDance weight="20"/>
+               <Stand_PirateJig weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Dance>   
+   <Dance>
+      <subjects>
+         <EntertainerDinosaur/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Dance_Idle" playTime="3"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="20"/>
+               <Stand_DinoDance weight="70"/>
+               <Stand_PirateJig weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Robot weight="70"/>
+               <Stand_DinoDance weight="20"/>
+               <Stand_PirateJig weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </Dance>   
+   <TellJokes>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <StandTalk_A weight="50"/>
+               <StandTalk_Idle weight="50"/>               
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_TellJokeBad weight="50"/>
+               <Stand_TellJokeGood weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </TellJokes>   
+   <PuppetShow>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <PutOnPuppetShow_Default weight="10"/>
+               <PutOnPuppetShow_Endangered weight="10"/>
+               <PutOnPuppetShow_Africa1 weight="10"/>
+               <PutOnPuppetShow_Africa2 weight="10"/>
+               <PutOnPuppetShow_Marine1 weight="10"/>
+               <PutOnPuppetShow_Marine2 weight="10"/>
+               <PutOnPuppetShow_Marine3 weight="10"/>
+               <PutOnPuppetShow_Extinct1 weight="10"/>
+               <PutOnPuppetShow_Extinct2 weight="10"/>
+               <PutOnPuppetShow_Extinct3 weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </PuppetShow>   
+   <PutOnPuppetShow_Default>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create Lion_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create Giraffe_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy Lion_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy Giraffe_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Default>      
+   <PutOnPuppetShow_Endangered>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create WildDogAfrican_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create WildDogAfrican_Puppet2"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy WildDogAfrican_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy WildDogAfrican_Puppet2"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Endangered>      
+   <PutOnPuppetShow_Africa1>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create BirdSecretary_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create Giraffe_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy BirdSecretary_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy Giraffe_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Africa1>      
+   <PutOnPuppetShow_Africa2>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create Lion_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create BirdSecretary_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy Lion_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy BirdSecretary_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Africa2>      
+   <PutOnPuppetShow_Marine1>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create SharkReefBlacktip_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create Narwhal_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy SharkReefBlacktip_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy Narwhal_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Marine1>      
+   <PutOnPuppetShow_Marine2>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create SharkWhite_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create SharkReefBlacktip_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy SharkWhite_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy SharkReefBlacktip_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Marine2>      
+   <PutOnPuppetShow_Marine3>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create Narwhal_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create SharkWhite_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy Narwhal_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy SharkWhite_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Marine3>      
+   <PutOnPuppetShow_Extinct1>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create Thylacine_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create CatSaberToothed_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy Thylacine_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy CatSaberToothed_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Extinct1>      
+   <PutOnPuppetShow_Extinct2>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create WarthogGiant_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create Thylacine_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy WarthogGiant_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy Thylacine_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Extinct2>      
+   <PutOnPuppetShow_Extinct3>
+      <subjects>
+         <Entertainer/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2PuppetShow">
+	    <textkeys>
+	      <leftgloveoff text="{Bip01 L Finger0} destroy gloveObj_Left"/>
+	      <rightgloveoff text="{Bip01 R Finger0} destroy gloveObj_Right"/>
+	      <leftpuppeton text="{Bip01 L Finger0} create CatSaberToothed_Puppet"/>
+	      <rightpuppeton text="{Node_RightPuppet} create WarthogGiant_Puppet"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftConverse weight="50"/>
+               <PuppetShow_RightConverse weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <PuppetShow_LeftChaseRight weight="50"/>
+               <PuppetShow_RightChaseLeft weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehAnimate targetAnim="PuppetShow_Idle"/>
+         <BFBehAnimate targetAnim="PuppetShow_Bow"/>
+         <BFBehAnimate targetAnim="PuppetShow_2Stand">
+	    <textkeys>
+	      <leftpuppetoff text="{Bip01 L Finger0} destroy CatSaberToothed_Puppet"/>
+	      <rightpuppetoff text="{Node_RightPuppet} destroy WarthogGiant_Puppet"/>
+	      <leftgloveon text="{Bip01 L Finger0} create gloveObj_Left"/>
+	      <rightgloveon text="{Bip01 R Finger0} create gloveObj_Right"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </PutOnPuppetShow_Extinct3>      
+</BehaviorSets>

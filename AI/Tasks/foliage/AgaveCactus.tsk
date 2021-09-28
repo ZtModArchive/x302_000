@@ -1,0 +1,36 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="Bloom" UniqueID="AgaveCactus:Bloom">
+      <BFAICreateData>
+         <Subjects>
+            <AgaveCactus_Desert/>
+            <Qualifiers_AND inWater_OR_onLand="true" bloom="GE 50"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="AgaveCactus_CenturyPlant_Desert"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Unbloom" UniqueID="AgaveCactus:Unbloom">
+      <BFAICreateData>
+         <Subjects>
+            <AgaveCactus_CenturyPlant_Desert/>
+            <Qualifiers_AND inWater_OR_onLand="true" unbloom="GE 10"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="150"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="AgaveCactus_Desert"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

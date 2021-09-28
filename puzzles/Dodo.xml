@@ -1,0 +1,10 @@
+<ZTPuzzle animal="Dodo" level="1" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="Head" node="Piece01" entityScale="0.8" />
+    <ZTPuzzlePiece texture="Neck" node="Piece02" entityScale="0.8" />
+    <ZTPuzzlePiece texture="BodyFront" node="Piece03" entityScale="0.8" />
+    <ZTPuzzlePiece texture="BodyBack" node="Piece04" entityScale="0.8" />
+    <ZTPuzzlePiece texture="Tail" node="Piece05" entityScale="0.8" />
+    <ZTPuzzlePiece texture="Legs" node="Piece06" entityScale="1.6"/>
+  </pieces>
+</ZTPuzzle>

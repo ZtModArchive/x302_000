@@ -1,0 +1,97 @@
+<challenges>
+  <ZTPhotoChallenge name="DodoAndRock" difficulty="1" script="scenario/scripts/challenge/instant/DodoPhoto.lua" function="scoreDodoAndRock" stt="PhotoChallengetext:stt_DodoPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="DodoPhoto" title="">
+    <DodoAndRock />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="BluebuckPhoto" difficulty="1" script="scenario/scripts/challenge/instant/BluebuckAurochPhoto.lua" function="scoreBluebuck" stt="PhotoChallengetext:stt_BluebuckPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="AurochPhoto" difficulty="1" script="scenario/scripts/challenge/instant/BluebuckAurochPhoto.lua" function="scoreAuroch" stt="PhotoChallengetext:stt_AurochPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="BluebuckAurochPhoto" title="">
+    <BluebuckPhoto />
+    <AurochPhoto />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="TwoDodoPhoto" difficulty="1" script="scenario/scripts/challenge/FamilyPhotos.lua" function="scoreTwoDodo" stt="PhotoChallengetext:stt_DodoFamilyPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="ThreeSivatheriumPhoto" difficulty="1" script="scenario/scripts/challenge/FamilyPhotos.lua" function="scoreThreeSivatherium" stt="PhotoChallengetext:stt_SivatheriumFamilyPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="TwoBushAntleredPhoto" difficulty="1" script="scenario/scripts/challenge/FamilyPhotos.lua" function="scoreTwoBushAntlered" stt="PhotoChallengetext:stt_DeerFamilyPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="FamilyPhoto" title="">
+    <TwoDodoPhoto />
+    <ThreeSivatheriumPhoto />
+    <TwoBushAntleredPhoto />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="DiprotodonWaterfallPhoto" difficulty="1" script="scenario/scripts/challenge/MarsupialMadnessPhoto.lua" function="scoreDiprotodonWaterfall" stt="PhotoChallengetext:stt_DiprotodonPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="ThylacineGapePhoto" difficulty="1" script="scenario/scripts/challenge/MarsupialMadnessPhoto.lua" function="scoreThylacineGape" stt="PhotoChallengetext:stt_ThylacinePhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="MarsupialMadness" title="">
+    <DiprotodonWaterfallPhoto />
+    <ThylacineGapePhoto />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="RhinoGlacierPhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctEnrichmentPhoto.lua" function="scoreRhinoGlacier" stt="PhotoChallengetext:stt_WoolyGlacierPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="WarthogTarPitPhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctEnrichmentPhoto.lua" function="scoreWarthogTarPit" stt="PhotoChallengetext:stt_WarthogTarpitPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="GigantopithecusBambooPhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctEnrichmentPhoto.lua" function="scoreGigantopithecusBamboo" stt="PhotoChallengetext:stt_GigantopithecusPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="ExtinctEnrichment" title="">
+    <RhinoGlacierPhoto />
+    <WarthogTarPitPhoto />
+    <GigantopithecusBambooPhoto />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="ExtinctCampaignDisease1" difficulty="1" script="scenario/scripts/DiseaseScenario.lua" function="scoreAnyDiseasedAnimal" stt="PhotoChallengetext:stt_DiseasedAnimalPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="DiseaseScenarioPhoto1" title="">
+    <ExtinctCampaignDisease1 />
+  </ZTPhotoChallengeSet>
+  <ZTPhotoChallenge name="EntertainerJoking" difficulty="1" script="scenario/scripts/DiseaseScenario.lua" function="scoreEntertainerJoking" stt="PhotoChallengetext:stt_EntertainerJoking" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="GuestDigging" difficulty="1" script="scenario/scripts/DiseaseScenario.lua" function="scoreGuestDigging" stt="PhotoChallengetext:stt_GuestDigging" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="CompletedSkeleton" difficulty="1" script="scenario/scripts/DiseaseScenario.lua" function="scoreCompletedSkeleton" stt="PhotoChallengetext:stt_CompletedSkeleton" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="DiseaseScenarioPhoto2" title="">
+    <EntertainerJoking />
+    <GuestDigging />
+    <CompletedSkeleton />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="ExtinctCampaignDisease3" difficulty="1" script="scenario/scripts/DiseaseScenario.lua" function="scoreHealthyAnimals" stt="PhotoChallengetext:stt_HealthyAnimalPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="DiseaseScenarioPhoto3" title="">
+    <ExtinctCampaignDisease3 />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="CompletedSkeletonMammoth" difficulty="1" script="scenario/scripts/TheHardWayScenario.lua" function="scoreCompletedSkeletonMammoth" stt="PhotoChallengetext:stt_HardWayPhotoMammoth" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="CompletedSkeletonIrishElk" difficulty="1" script="scenario/scripts/TheHardWayScenario.lua" function="scoreCompletedSkeletonIrishElk" stt="PhotoChallengetext:stt_HardWayPhotoElk" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="CompletedSkeletonTyrannosaurusRex" difficulty="1" script="scenario/scripts/TheHardWayScenario.lua" function="scoreCompletedSkeletonTyrannosaurusRex" stt="PhotoChallengetext:stt_HardWayPhotoTRex" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="CompletedSkeletonPteranodon" difficulty="1" script="scenario/scripts/TheHardWayScenario.lua" function="scoreCompletedSkeletonPteranodon" stt="PhotoChallengetext:stt_HardWayPhotoPteranodon" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="TheHardWayScenarioPhoto" title="">
+    <CompletedSkeletonMammoth />
+    <CompletedSkeletonIrishElk />
+    <CompletedSkeletonTyrannosaurusRex />
+    <CompletedSkeletonPteranodon />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="DinoEating" difficulty="1" script="scenario/scripts/TRexTroubleScenario.lua" function="scoreDinoEating" stt="PhotoChallengetext:stt_TroublePhotoEat" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="DinoWithDummy" difficulty="1" script="scenario/scripts/TRexTroubleScenario.lua" function="scoreDinoWithDummy" stt="PhotoChallengetext:stt_TroublePhotoPreyDummy" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="DinoSleeping" difficulty="1" script="scenario/scripts/TRexTroubleScenario.lua" function="scoreDinoSleeping" stt="PhotoChallengetext:stt_TroublePhotoSleep" cstt="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="TRexTroubleScenarioPhoto" title="">
+    <DinoEating />
+    <DinoWithDummy />
+    <DinoSleeping />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="SuperAnimalPhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctExcitementPhoto.lua" function="scoreSuperAnimal" stt="PhotoChallengetext:stt_SuperAnimalPhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="ChildOnSlidePhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctExcitementPhoto.lua" function="scoreChildOnSlide" stt="PhotoChallengetext:stt_ChildSlidePhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="EntertainerOnStagePhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctExcitementPhoto.lua" function="scoreEntertainerOnStage" stt="PhotoChallengetext:stt_ShowStagePhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="ChildCarryingBonePhoto" difficulty="1" script="scenario/scripts/challenge/ExtinctExcitementPhoto.lua" function="scoreChildCarryingBone" stt="PhotoChallengetext:stt_CarryBonePhoto" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="ExtinctExcitement" title="">
+    <SuperAnimalPhoto />
+    <ChildOnSlidePhoto />
+    <EntertainerOnStagePhoto />
+    <ChildCarryingBonePhoto />
+  </ZTPhotoChallengeSet>
+  
+  <ZTPhotoChallenge name="DCTInActionPhoto" difficulty="1" script="scenario/scripts/challenge/DinoCapturePhoto.lua" function="scoreDCTInAction" stt="PhotoChallengetext:stt_DinoTeam" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="DCTBuildingPhoto" difficulty="1" script="scenario/scripts/challenge/DinoCapturePhoto.lua" function="scoreDCTBuilding" stt="PhotoChallengetext:stt_DinoBuilding" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallenge name="DestroyedObjectPhoto" difficulty="1" script="scenario/scripts/challenge/DinoCapturePhoto.lua" function="scoreDestroyedObject" stt="PhotoChallengetext:stt_Rubble" csst="PhotoChallengetext:cstt_genericgotphoto" />
+  <ZTPhotoChallengeSet name="DinoCapture" title="">
+    <DCTInActionPhoto />
+    <DCTBuildingPhoto />
+    <DestroyedObjectPhoto />
+  </ZTPhotoChallengeSet>
+  
+</challenges>

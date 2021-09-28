@@ -1,0 +1,168 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="ExtinctCampaign:IceAgeIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+        <BFScenarioGroup hidden="0" name="StarLevels" state="0" chain="true" allsuccess="true" sticky="true">
+            <children>	
+                <BFScenarioRule name="ExtinctFame35" hidden="0" state="0" sticky="true" optional="false">
+                    <info type="secondary">
+                        <!--neutral locid="ExtinctCampaign:IceAge35stars" overview="ExtinctCampaign:IceAge35stars"/ -->
+                        <success locid="ExtinctCampaign:IceAge35stars" overview="ExtinctCampaign:IceAge35stars"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalFame35" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeFame35" />
+                    </success>
+                </BFScenarioRule>
+                <BFScenarioRule name="ExtinctFame40" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="secondary">
+                        <!--neutral locid="ExtinctCampaign:IceAge4stars" overview="ExtinctCampaign:IceAge4stars"/ -->
+                        <success locid="ExtinctCampaign:IceAge4stars" overview="ExtinctCampaign:IceAge4stars"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalFame40" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeFame40" />
+                    </success>
+                </BFScenarioRule>
+                <BFScenarioRule name="ExtinctFame50" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="secondary">
+                        <!--neutral locid="ExtinctCampaign:IceAge5stars" overview="ExtinctCampaign:IceAge4stars"/ -->
+                        <success locid="ExtinctCampaign:IceAge5stars" overview="ExtinctCampaign:IceAge5stars"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalFame50" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeFame50" />
+                    </success>
+                </BFScenarioRule>
+            </children>	
+        </BFScenarioGroup>			
+        <BFScenarioGroup hidden="0" name="CloneSuperRhino" state="0" chain="true" allsuccess="true" sticky="true">
+            <info type="primary">
+                <neutral locid="ExtinctCampaign:IceAgeOptionalCloneWoolyShort" overview="ExtinctCampaign:IceAgeOptionalCloneWooly"/>
+            </info>				
+            <children>	
+                <BFScenarioRule name="FindRhinoFossil" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="primary">
+                        <neutral locid="ExtinctCampaign:IceAgeOptionalFindWoolySubgoalShort"/>
+                        <success locid="ExtinctCampaign:IceAgeFinishFindWoolySubgoal" overview="ExtinctCampaign:IceAgeFinishFindWoolySubgoal"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalFindRhinoFossil" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeFindRhinoFossil" />
+                    </success>
+                </BFScenarioRule>				
+                <BFScenarioRule name="FindAllRhinoFossils" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="primary">
+                        <neutral locid="ExtinctCampaign:IceAgeOptionalFindAllWoolySubgoalShort" overview="ExtinctCampaign:IceAgeOptionalFindAllWoolySubgoal"/>
+                        <success locid="ExtinctCampaign:IceAgeFinishFindAllWoolySubgoal" overview="ExtinctCampaign:IceAgeFinishFindAllWoolySubgoal"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalFindAllRhinoFossils" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeFindAllRhinoFossils" />
+                    </success>
+                </BFScenarioRule>	
+                <BFScenarioRule name="BuildFossil" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="primary">
+                        <neutral locid="ExtinctCampaign:IceAgeOptionalBuildWoolySubgoalShort" overview="ExtinctCampaign:IceAgeOptionalBuildWoolySubgoal"/>
+                        <success locid="ExtinctCampaign:IceAgeFinishBuildWoolySubgoal" overview="ExtinctCampaign:IceAgeFinishBuildWoolySubgoal"/>
+                    </info>
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalBuildFossil" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeBuildFossil" />
+                    </success>
+                </BFScenarioRule>	
+                <BFScenarioRule name="CreateSuperRhino" hidden="1" state="0" sticky="true" optional="false">
+                    <info type="primary">
+                        <success locid="ExtinctCampaign:IceAgeFinishCloneWooly" overview="ExtinctCampaign:IceAgeFinishCloneWooly"/>
+                    </info>				
+                    <evaluate>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalSuperRhino" />
+                    </evaluate>
+                    <success>
+                        <BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeSuperRhino" />
+                    </success>	
+                </BFScenarioRule>					
+            </children>	
+        </BFScenarioGroup>			
+		<BFScenarioGroup hidden="0" name="ExtinctIceAge" state="0" chain="true" allsuccess="true" sticky="true">
+			<success>
+				<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeMastodon" />
+			</success>
+			<children>
+				<BFScenarioRule name="ExtinctRhino" hidden="0" state="0" sticky="true" optional="false">
+					<info type="primary">
+        				<neutral locid="ExtinctCampaign:IceAgeAdoptFirstShort" overview="ExtinctCampaign:IceAgeOverview"/>
+						<success locid="ExtinctCampaign:IceAgeFinishAdoptFirst" overview="ExtinctCampaign:IceAgeFinishAdoptFirst"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalRhino" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeRhino" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="ExtinctGlacier" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:IceAgeGlacierShort" overview="ExtinctCampaign:IceAgeGlacier"/>
+						<success locid="ExtinctCampaign:IceAgeFinishGlacierShort" overview="ExtinctCampaign:IceAgeFinishGlacier"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalGlacier" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeGlacier" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="ExtinctCatBear" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:IceAgeNextTwoAnimalsShort" overview="ExtinctCampaign:IceAgeNextTwoAnimals"/>
+						<success locid="ExtinctCampaign:IceAgeNextTwoAnimalsSuccessShort" overview="ExtinctCampaign:IceAgeNextTwoAnimalsSuccess"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalCatBear" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeCatBear" />
+					</success>
+				</BFScenarioRule>	
+				<BFScenarioRule name="ExtinctUnlockMastodon" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:IceAge45StarsShort" overview="ExtinctCampaign:IceAge45Stars"/>
+						<success locid="ExtinctCampaign:IceAge45starsSuccessShort" overview="ExtinctCampaign:IceAge45starsSuccess"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalUnlockMastodon" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="completeUnlockMastodon" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="ExtinctMastodon" hidden="1" state="0" sticky="true" optional="false">
+					<info type="primary">
+						<neutral locid="ExtinctCampaign:IceAgeMastodonShort" overview="ExtinctCampaign:IceAgeMastodon"/>
+						<success locid="ExtinctCampaign:IceAgeFinishMastodonShort" overview="ExtinctCampaign:IceAgeFinishMastodon"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/IceAgeScenario.lua" entry="evalMastodon" />
+					</evaluate>
+				</BFScenarioRule>	
+			</children>	
+		</BFScenarioGroup>	
+	</children>
+</ZTScenarioMgr>

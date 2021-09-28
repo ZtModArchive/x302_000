@@ -1,0 +1,2254 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultHappy weight="30"/>
+               <DefaultVeryHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultHappy weight="60"/>
+               <DefaultVeryHappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultVeryHappy weight="10"/>
+               <Default_inWater_Happy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultVeryHappy weight="30"/>
+               <Default_inWater_Happy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Unhappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultVeryUnhappy weight="10"/>
+               <DefaultUnhappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultVeryUnhappy weight="30"/>
+               <DefaultUnhappy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="60"/>
+               <DefaultVeryUnhappy weight="10"/>
+               <Default_inWater_Unhappy weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultStand weight="10"/>
+               <DefaultVeryUnhappy weight="30"/>
+               <Default_inWater_Unhappy weight="60"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultSleep>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultSleep>
+   <DefaultTreadWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swimming"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle"/>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultHappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Clicking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Click"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData social="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultVeryHappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="PushUp"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData social="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultVeryHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <DefaultVeryUnhappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AggressiveAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="CrashDown"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultVeryUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RoarAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Sleep behSet="DefaultSleep"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Stand>
+   <Sick>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </VerySick>
+   <Sniff>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Sleep behSet="DefaultSleep"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sniff>
+   <TreadWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater>
+   <Drown>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Drown>
+   <ThrashWater>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Drown_Idle" interruptFlag="true"/>
+      </behaviors>
+   </ThrashWater>
+   <Turn180>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180" interruptFlag="true"/>
+      </behaviors>
+   </Turn180>
+   <Drink>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </Drink>
+   <Eat>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </Eat>
+   <BrowseBush>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </BrowseBush>
+   <EnterFoodDish>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_FoodDish" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterTrough>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_FoodTrough" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterSubstratePile>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterSubstratePile> 
+   <UseSubstratePile>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <Lie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <Rest>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Rest>
+   <Sleep>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Yawn>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn>
+   <PushUp>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </PushUp>
+   <CrashDown>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </CrashDown>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Click weight="40"/>
+               <Call weight="20"/>
+               <Roar weight="30"/>
+               <Squeal weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <ContactCall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Click weight="50"/>
+               <Call weight="30"/>
+               <Roar weight="10"/>
+               <Squeal weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Click>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehAnimateRandom>
+	    <randomAnims>
+	       <Stand_ClickA weight="50"/>
+	       <Stand_ClickB weight="50"/>
+	    </randomAnims>
+	 </BFBehAnimateRandom>
+      </behaviors>
+   </Click>
+   <Call>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehAnimateRandom>
+	    <randomAnims>
+	       <Stand_CallA weight="50"/>
+	       <Stand_CallB weight="50"/>
+	    </randomAnims>
+	 </BFBehAnimateRandom>
+      </behaviors>
+   </Call>
+   <Roar>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Roar"/>
+      </behaviors>
+   </Roar>
+   <Squeal>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squeal"/>
+      </behaviors>
+   </Squeal>
+   <Sneeze>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sneeze_Stand"/>
+               <Lie behSet="Sneeze_Lie"/>
+               <Sleep behSet="Sneeze_Lie"/>
+               <Drown behSet="Drown"/>
+               <default behSet="Sneeze_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Stand>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Sneeze_Lie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sneeze"/>
+      </behaviors>
+   </Sneeze_Lie>
+   <Shake>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shake"/>
+      </behaviors>
+   </Shake>
+   <DockRubOther>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_RubOther" targetNode="Dock_RubOther2" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </DockRubOther> 
+   <WaitRubOther>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehAnimateRandom loopFlag="true">
+	    <randomAnims>
+	       <Stand_CallA weight="25"/>
+	       <Stand_CallB weight="25"/>
+	       <Stand_ClickA weight="25"/>
+	       <Stand_ClickB weight="25"/>
+	    </randomAnims>
+	 </BFBehAnimateRandom>
+      </behaviors>
+   </WaitRubOther> 
+   <RubSnap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </RubSnap>
+   <RubOther>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+      </behaviors>
+   </RubOther>
+   <FailureSet>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Roar weight="40"/>
+               <Squeal weight="30"/>
+               <CrashDown weight="10"/>
+               <PushUp weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FailureSet>
+   <Poop>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Large_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Poop>
+      <subjects>
+         <Kentrosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Kentrosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <EnterExtinctShelter1>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+   <EnterShadeStructure>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterShadeStructure> 
+   <UseShadeStructure>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </UseShadeStructure>
+   <ExitShadeStructure>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitShadeStructure>
+   <ChaseBall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <EnterBall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBarrel_Whap>
+   <UseBall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight weight="50"/>
+               <SwatBallLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall>
+   <SwatBallRight_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SwingTailRight"/>
+      </behaviors>
+   </SwatBallRight_Whap>
+   <SwatBallLeft_Whap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SwingTailLeft"/>
+      </behaviors>
+   </SwatBallLeft_Whap>
+   <SwatBallRight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SwingTailRight"/>
+      </behaviors>
+   </SwatBallRight>
+   <SwatBallLeft>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SwingTailLeft"/>
+      </behaviors>
+   </SwatBallLeft>
+   <ExitBall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <EnterTreeRub>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_Rub" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehDock subjectNode="Dock_RubSide" targetAnim="Stand_Idle" redock="true"/>
+      </behaviors>
+   </EnterTreeRub> 
+   <RubTree>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehAnimate targetAnim="Stand_RubObject"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </RubTree>
+   <ExitTreeRub>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="2" maxPlayTime="3" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <tree/>
+               <ScratchPost/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </ExitTreeRub>
+   <MatingCall>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Click"/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </MatingCall>
+   <Mate>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <StartNest>
+      <subjects>
+         <Kentrosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="SpawnNest"/>
+      </behaviors>
+   </StartNest>
+   <SpawnNest>
+      <subjects>
+         <Kentrosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Idle"/>
+         <BFBehSpawn spawnEntity="KentrosaurusNest" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <BuildKentrosaurusNest>
+      <subjects>
+         <Kentrosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Eat_Idle weight="50"/>
+               <Eat_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSetAttribute>
+            <BFAITargetData f_ConstructionLevel="34"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BuildKentrosaurusNest>
+   <FinishKentrosaurusNest>
+      <subjects>
+         <Kentrosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Eat_Idle weight="50"/>
+               <Eat_Idle weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehSpawn spawnEntity="KentrosaurusNest_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </FinishKentrosaurusNest>
+   <HatchEgg>
+      <subjects>
+         <KentrosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <KentrosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <KentrosaurusNest_Egg/>
+         <KentrosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <KentrosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="KentrosaurusNest_Egg" morphTargetEntityType="Kentrosaurus_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <KentrosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="KentrosaurusNest_Egg" morphTargetEntityType="Kentrosaurus_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <KentrosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Kentrosaurus_Young_F_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <KentrosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Kentrosaurus_Young_M_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperM>
+   <JustBorn>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Squeal"/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </JustBorn>
+   <FightSide>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="ReadyFightSide_Approach" targetBehSet="ReadyFightSide_Wait"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide weight="50"/>
+               <FightLeftSide weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightSide>
+   <ReadyFightSide_Approach>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehDock subjectNode="Dock_Fight" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </ReadyFightSide_Approach>
+   <ReadyFightSide_Wait>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehAnimate targetAnim="PushUp_Idle"/>
+      </behaviors>
+   </ReadyFightSide_Wait>
+   <FightRightSide>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Right"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight" resetPhase="true"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide_Win weight="50"/>
+               <FightRightSide_Lose weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightRightSide>
+   <FightRightSide_Win>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight_Lose" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="StandUp" targetBehSet="PushUp" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Win>
+   <FightRightSide_Lose>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight_Lose" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="PushUp" targetBehSet="StandUp" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Lose>
+   <FightLeftSide>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Left"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft" resetPhase="true"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightLeftSide_Win weight="50"/>
+               <FightLeftSide_Lose weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightLeftSide>
+   <FightLeftSide_Win>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft_Lose" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="StandUp" targetBehSet="PushUp" resetPhase="true"/>
+      </behaviors>
+   </FightLeftSide_Win>
+   <FightLeftSide_Lose>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft_Lose" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="PushUp" targetBehSet="StandUp" resetPhase="true"/>
+      </behaviors>
+   </FightLeftSide_Lose>
+   <DockSideFight_Right>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnLeftA"/>
+         <BFBehDock subjectNode="Dock_Fight_Right" targetNode="Dock_FightWait_Right" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Right>
+   <DockSideFight_Left>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnRightA"/>
+         <BFBehDock subjectNode="Dock_Fight_Left" targetNode="Dock_FightWait_Left" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Left>
+   <WaitSideFight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </WaitSideFight>
+   <DockFight>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <WaitFight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFight>
+   <FightSnap>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <DockFight>
+      <subjects>
+         <Kentrosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Kentrosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <DockPlayFight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetNode="p_PredatorFightOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <SwipeMed>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="PushUp_2Stand_CrashDown"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <DefendEqual>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <Fight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="HitRight"/>
+         <BFBehPlaySet behSet="HitRight"/>
+      </behaviors>
+   </Fight>
+   <FightHurt>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <GetHitRight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitRight"/>
+      </behaviors>
+   </GetHitRight>
+   <GetHitRight_Lose>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+      </behaviors>
+   </GetHitRight_Lose>
+   <GetHitLeft>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_BeHitLeft"/>
+      </behaviors>
+   </GetHitLeft>
+   <GetHitLeft_Lose>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitLeft"/>
+      </behaviors>
+   </GetHitLeft_Lose>
+   <HitRight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+      </behaviors>
+   </HitRight>
+   <HitLeft>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </HitLeft>
+   <StandUp>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+      </behaviors>
+   </StandUp>
+   <WaitAttack>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <AttackMed>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </AttackMed>
+   <DockAttacked>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="Node_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked_BeHitRight"/>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <WaitAttackGuest>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <DockAttackGuest>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_AttackGuest" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <BashFence>
+      <subjects>
+         <Kentrosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" radius="5" radiusKillType="fence" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFence>
+   <DestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EnterBuildingRight weight="50"/>
+               <EnterBuildingLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DestroyBuilding>
+   <EnterBuildingRight>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Right" targetAnim="Stand_Idle" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <BashFenceDestroyBuilding weight="33"/>
+               <SwingTailLeftDestroyBuilding weight="33"/>
+               <TailStrikeLeftDestroyBuilding weight="33"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EnterBuildingRight>
+   <EnterBuildingLeft>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Left" targetAnim="Stand_Idle" locoSpeed="slow"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BashingBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwingTailRightDestroyBuilding weight="50"/>
+               <TailStrikeRightDestroyBuilding weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </EnterBuildingLeft>
+   <BashFenceDestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFenceDestroyBuilding>
+   <SwingTailLeftDestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_SwingTailLeft" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </SwingTailLeftDestroyBuilding>
+   <SwingTailRightDestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehKill targetAnim="Stand_SwingTailRight" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </SwingTailRightDestroyBuilding>
+   <TailStrikeLeftDestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_TailStrikeLeft" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </TailStrikeLeftDestroyBuilding>
+   <TailStrikeRightDestroyBuilding>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehKill targetAnim="Stand_TailStrikeRight" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </TailStrikeRightDestroyBuilding>
+   <DestroyBuilding_Fail>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EnterBuildingRight_Fail weight="50"/>
+               <EnterBuildingLeft_Fail weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DestroyBuilding_Fail>
+   <EnterBuildingRight_Fail>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Right" targetAnim="Stand_Idle" locoSpeed="slow" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AttemptBash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeLeft"/>
+      </behaviors>
+   </EnterBuildingRight_Fail>
+   <EnterBuildingLeft_Fail>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBashBuilding" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Building_Left" targetAnim="Stand_Idle" locoSpeed="slow" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AttemptBash" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnLeft90"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+         <BFBehAnimate targetAnim="Stand_TailStrikeRight"/>
+      </behaviors>
+   </EnterBuildingLeft_Fail>
+   <TranquilizedRampage>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="TranquilizedRampage_Land"/>
+               <water behSet="TranquilizedRampage_Water"/>
+               <underwater behSet="TranquilizedRampage_Water"/>
+               <default behSet="TranquilizedRampage_Land"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </TranquilizedRampage>
+   <TranquilizedRampage_Land>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Roar">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Stand_2Lie"/>
+         <BFBehAnimate targetAnim="Lie_2Sleep">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+         <ZTBehViewEvent viewKey="Pos_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalTranquilizedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </TranquilizedRampage_Land>
+   <TranquilizedRampage_Water>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Drown_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Drown_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Drown_Idle" playTime="15"/>
+      </behaviors>
+   </TranquilizedRampage_Water>
+   <LoopIdle>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopSleep>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <TestFence_Shocked>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+      </behaviors>
+   </TestFence_Shocked>
+   <TestFence_Safe>
+      <subjects>
+         <Kentrosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="5"/>
+      </behaviors>
+   </TestFence_Safe>   
+</BehaviorSets>

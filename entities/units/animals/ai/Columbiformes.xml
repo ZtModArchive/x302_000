@@ -1,0 +1,16 @@
+<BFTypedBinder binderType="Columbiformes" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Aves>
+                  <Columbiformes/>
+               </Aves>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

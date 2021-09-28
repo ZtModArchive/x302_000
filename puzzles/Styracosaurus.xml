@@ -1,0 +1,10 @@
+<ZTPuzzle animal="Styracosaurus" level="1" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="3.68" />
+    <ZTPuzzlePiece texture="02_Torso" node="Piece02" entityScale="3.68" />
+    <ZTPuzzlePiece texture="03_ArmLeft" node="Piece03" entityScale="0.92" />
+    <ZTPuzzlePiece texture="04_Hips" node="Piece04" entityScale="1.84" />
+    <ZTPuzzlePiece texture="05_LegLeft" node="Piece05" entityScale="0.92" />
+    <ZTPuzzlePiece texture="06_Tail" node="Piece06" entityScale="1.84"/>
+  </pieces>
+</ZTPuzzle>

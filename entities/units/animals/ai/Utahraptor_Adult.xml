@@ -1,0 +1,39 @@
+<BFTypedBinder binderType="Utahraptor_Adult" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae>
+                        <Utahraptor>
+                           <Utahraptor_Adult/>
+                        </Utahraptor>
+                     </Dromaeosauridae>
+                  </Saurischia>
+               </Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared f_viewBonus="95" b_Adult="1" b_Territorial="true" s_MorphMessage="zoomessages:AnimalPuberty" f_MorphMessagePriority="1" f_MorphMessageDuration="30" b_XLargePredator="true" p_PredatorOffset="0 -3 0" b_Rampager="true"/>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" baseNode="Bip01 Spine" width="1.65" intensity="0.3" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" radius="0.375" motionClass="mover" waterScore="10" maxSlope=".75" wadeDepth="1" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,34 @@
+<BehaviorSets>
+   <GetSickTutorialLove>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wuv stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_wuv attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickTutorialLove>
+   <CureSickTutorialLove>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_wuv stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickTutorialLove>
+   <Diseased_TutorialLove>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+      </behaviors>
+   </Diseased_TutorialLove>
+</BehaviorSets>

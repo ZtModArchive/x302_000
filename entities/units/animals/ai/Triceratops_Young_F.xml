@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="Triceratops_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Ceratopsidae>
+                        <Triceratops>
+                           <Triceratops_Young>
+                              <Triceratops_Young_F/>
+                           </Triceratops_Young>
+                        </Triceratops>
+                     </Ceratopsidae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Triceratops_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+</BFTypedBinder>

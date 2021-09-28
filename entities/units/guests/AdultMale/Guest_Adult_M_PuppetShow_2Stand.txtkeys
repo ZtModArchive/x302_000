@@ -1,0 +1,7 @@
+<TEXTKEY>
+   <key time="0" text="{Bip01} snd 'PuppetShow_2Stand'"/>
+   <key frame="16" text="ai rightpuppetoff"/>
+   <key frame="17" text="ai rightgloveon"/>
+   <key frame="24" text="ai leftpuppetoff"/>
+   <key frame="25" text="ai leftgloveon"/>
+</TEXTKEY>

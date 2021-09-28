@@ -1,0 +1,40 @@
+﻿<ZT2Strings>
+   <PhotoChallengetext>
+      <PHTRexPhotos>Tyrannosaurus rex the Predator</PHTRexPhotos>
+      <PHTRex>
+      Scientists from the Operational Paleontology Association would like you to help them settle the debate over the T. rex's eating habits. The scientists feel that while the Tyrannosaurus rex may have obtained some of its food from scavenging, it must also have been a very capable predator. They would like you to take a pair of pictures proving their theory. If you succeed, the publicity created by the photos will attract additional guests to your zoo!
+         <br/>
+         Difficulty: Challenging	
+      </PHTRex>
+      <PHTRexShort>
+      Take a series of two pictures that show:
+         <p/>
+   		*  A Tyrannosaurus rex hunting its prey.   		
+         <br/>
+   		*  A Tyrannosaurus rex catching its prey.
+      </PHTRexShort>
+      <PHTRexSuccess>Your photos have greatly impressed the scientists from the Operational Paleontology Association! You've shown that the T. rex was an effective predator.
+	   </PHTRexSuccess>
+      <PHTRexSuccessShort>Your photos of T. rex acting as a predator have attracted more guests to your zoo.
+   	</PHTRexSuccessShort>
+      <stt_TRexStalking>Take a photo of a Tyrannosaurus rex hunting its prey.</stt_TRexStalking>
+      <stt_TRexCatching>Take a photo of a Tyrannosaurus rex catching its prey.</stt_TRexCatching>
+      
+		<PHDinoScientistVisitPhotos>Scientist Visit</PHDinoScientistVisitPhotos>
+		<PHDinoScientistVisit>World-renowned paleontologist Alvin Einheim is coming to visit your zoo! If you can take a picture of Professor Einheim viewing one of your dinosaurs, the resulting publicity will make your zoo slightly more famous. Take the following picture:
+					<br/>         
+		*  A photo of Alvin Einheim viewing a dinosaur.  
+					<br/>
+		Difficulty: Moderate.			
+		</PHDinoScientistVisit>
+		<PHDinoScientistVisitShort>Take a photo of Alvin Einheim viewing a dinosaur.   	
+		</PHDinoScientistVisitShort>
+		<PHDinoScientistVisitSuccess>The publicity resulting from your photo of Alvin Einheim made your zoo more famous! Not only that, but all the guests currently in your zoo are now slightly happier. Everyone's thrilled to be visiting the favorite zoo of such a brilliant man!</PHDinoScientistVisitSuccess>
+		<PHDinoScientistVisitSuccessShort>The publicity from your photo of Alvin Einheim has made your guests slightly happier and made your zoo more famous as well.</PHDinoScientistVisitSuccessShort>
+		<PHDinoScientistVisitFailure>Alvin Einheim has left the zoo! Unfortunately, he left before you could take the photo you needed.</PHDinoScientistVisitFailure>
+		<PHDinoScientistVisitFailureShort>Alvin Einheim left the zoo before you could get the photo you needed.</PHDinoScientistVisitFailureShort>		
+		<PHDinoScientistVisitScientistName>Alvin Einheim</PHDinoScientistVisitScientistName>
+		<stt_DinoScientistVisitDinosaur>Take a photo of Alvin Einheim viewing a dinosaur.</stt_DinoScientistVisitDinosaur>
+		<stt_DinoScientistVisitArrival>Famous scientist Alvin Einheim has entered your zoo!</stt_DinoScientistVisitArrival>
+   </PhotoChallengetext>
+</ZT2Strings>

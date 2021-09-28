@@ -1,0 +1,151 @@
+************************************************************
+Date: 02/16/2007
+Time: 13:08
+************************************************************
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 1: Bip01
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 2: Bip01 Footsteps
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 3: Bip01 Pelvis
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 4: Bip01 Spine
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 5: Bip01 Spine1
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 6: Bip01 Spine2
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 7: Bip01 Neck
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 8: Bip01 Neck1
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 9: Bip01 Head
+Compiled object 10: Bip01 HeadNub
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 11: Bip01 Ponytail1
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 12: Bip01 Ponytail11
+Compiled object 13: Bip01 Ponytail1Nub
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 14: Bip01 Ponytail2
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 15: Bip01 Ponytail21
+Compiled object 16: Bip01 Ponytail2Nub
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 17: Bone01
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 18: Bone02
+Compiled object 19: Node_Buoy
+Compiled object 20: Node_Carry
+Compiled object 21: Node_Eat
+Compiled object 22: bp1
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 23: Bip01 L Clavicle
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 24: Bip01 L UpperArm
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 25: Bip01 L Forearm
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 26: Bip01 L Hand
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 27: Bip01 L Finger0
+Compiled object 28: Bip01 L Finger0Nub
+Compiled object 29: FootFrontLeft
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 30: Bip01 R Clavicle
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 31: Bip01 R UpperArm
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 32: Bip01 R Forearm
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 33: Bip01 R Hand
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 34: Bip01 R Finger0
+Compiled object 35: Bip01 R Finger0Nub
+Compiled object 36: FootFrontRight
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 38: Bip01 L Thigh
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 39: Bip01 L Calf
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 40: Bip01 L Foot
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 41: Bip01 L Toe0
+Compiled object 42: Bip01 L Toe0Nub
+Compiled object 43: FootBackLeft
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 44: Bip01 R Thigh
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 45: Bip01 R Calf
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 46: Bip01 R Foot
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 47: Bip01 R Toe0
+Compiled object 48: Bip01 R Toe0Nub
+Compiled object 49: FootBackRight
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 50: Bip01 Tail
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 51: Bip01 Tail1
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 52: Bip01 Tail2
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 53: Bip01 Tail3
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+MeshTranslator::getObjMaterialInfo - mesh is missing a material
+Compiled object 54: Bip01 Tail4
+Compiled object 55: Bip01 TailNub
+Compiled object 56: Node_Buoy_Back
+Compiled object 57: bp2
+Compiled object 58: Floor
+Compiled object 59: Grid
+Compiled object 60: Dock_Tap
+Compiled object 61: Poop
+Compiled object 62: Node_Mouth
+Compiled object 63: Dock_Attack
+Compiled object 64: Node_Swipe
+Compiled object 65: Ankylosaurus_Adult_M
+************************************************************
+Timer Info
+Asset Compiler: total time = 606ms
+XML File Translation: total time = 588ms
+Scene optimization: total time = 0ms
+Data Output: total time = 18ms
+************************************************************

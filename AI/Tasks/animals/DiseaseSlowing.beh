@@ -1,0 +1,39 @@
+<BehaviorSets>
+   <GetSickSlowing>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	      <diseaseon text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </GetSickSlowing>
+   <CureSickSlowing>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle">
+	    <textkeys>
+	      <diseaseoff text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+      </behaviors>
+   </CureSickSlowing>
+   <Diseased_Slowing>
+      <subjects>
+         <animal/>
+      </subjects>
+      <behaviors>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_GetSlowingDisease" GiveTo="b_ExtinctAnimal" Radius="15" ChanceInRadius="50" Timeout="60" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </behaviors>
+   </Diseased_Slowing>
+</BehaviorSets>

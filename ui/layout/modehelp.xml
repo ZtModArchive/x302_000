@@ -1,0 +1,146 @@
+<UILayout name="modeHelpMainLayout">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+      <default image="" sound="">
+         <BFRect x="0" y="0" w="0" h="0"/>
+         <BFColor r="0" g="0" b="0" a="0"/>
+      </default>
+   </UIAspect>
+   <UIHotKeys/>
+   <children>
+      <UIButton name="mode_help_maximize" toggle="0" sticky="0">
+         <UIRegion x="-3" y="189" w="35" h="92" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIHelpInfo name="" short="" long="" help="" ids="shell:minigame_help_button"/>
+         <UIAspect string="">
+            <default image="ui/maingame/minimize_help.dds" sound="">
+               <BFRect x="0" y="0" w="-1" h="-1"/>
+               <BFColor r="255" g="255" b="255" a="255"/>
+            </default>
+            <standard>
+               <normal>
+                  <BFRect x="0" y="0" w="35" h="92"/>
+               </normal>
+               <highlighted>
+                  <BFRect x="35" y="0" w="35" h="92"/>
+               </highlighted>
+               <activated sound="collapse">
+                  <BFRect x="70" y="0" w="35" h="92"/>
+               </activated>
+               <disabled>
+                  <BFRect x="105" y="0" w="35" h="92"/>
+               </disabled>
+            </standard>
+            <alternate/>
+         </UIAspect>
+         <UIHotKeys/>
+         <on>
+            <event msg="UI_CHILD" data="UIChildData" name="mode_help_minimize">
+               <child msg="UI_SHOW"/>
+            </event>
+            <event msg="UI_CHILD" data="UIChildData" name="Mode help layout">
+               <child msg="UI_SHOW"/>
+            </event>
+            <event msg="UI_CHILD" data="UIChildData" name="mode_help_maximize">
+               <child msg="UI_HIDE"/>
+            </event>
+         </on>
+      </UIButton>
+      <UILayout name="Mode help layout">
+         <UIRegion x="0" y="170" w="525" h="500" xalign="min" yalign="min" walign="len" halign="min"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIShowHideAnim time=".2f">
+            <start x="0" y="170" w="10" h="50"/>
+            <end x="0" y="170" w="525" h="500"/>
+         </UIShowHideAnim>
+         <UIAspect string="">
+            <default image="" sound="">
+               <BFRect x="0" y="0" w="-1" h="-1"/>
+               <BFColor r="0" g="0" b="0" a="0"/>
+            </default>
+         </UIAspect>
+         <show>
+            <event msg="UI_SEND_NAMED_EVENTS" data="BFString" string="pause"/>
+         </show>
+         <hide>
+            <event msg="UI_CHILD" data="UIChildData" name="mode_help_listbox">
+             <child msg="UI_SET_SCROLL" data="BFPoint" x="0" y="0"/>
+            </event>
+            <event msg="UI_SEND_NAMED_EVENTS" data="BFString" string="unpause"/>
+         </hide>
+         <children>
+            <UIStatic name="mode_help_background_expanded">
+               <UIRegion x="0" y="20" w="400" h="300" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIAspect string="">
+                  <default image="ui/template/backs/Tooltips.dds" sound="">
+                     <BFRect x="16" y="16" w="1" h="1"/>
+                     <BFColor r="255" g="255" b="255" a="192"/>
+                  </default>
+               </UIAspect>
+               <UIHotKeys/>
+            </UIStatic>
+            <UIButton name="mode_help_minimize" toggle="0" sticky="0">
+               <UIRegion x="400" y="19" w="29" h="92" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="hidden"/>
+               <UIHelpInfo name="" short="" long="" help="" ids="shell:minigame_help_minimize_button"/>
+               <UIAspect string="">
+                  <default image="ui/maingame/minimize_help.dds" sound="">
+                     <BFRect x="0" y="0" w="-1" h="-1"/>
+                     <BFColor r="255" g="255" b="255" a="255"/>
+                  </default>
+                  <standard>
+                     <normal>
+                        <BFRect x="227" y="0" w="29" h="92"/>
+                     </normal>
+                     <highlighted>
+                        <BFRect x="198" y="0" w="29" h="92"/>
+                     </highlighted>
+                     <activated sound="expand">
+                        <BFRect x="169" y="0" w="29" h="92"/>
+                     </activated>
+                     <disabled>
+                        <BFRect x="140" y="0" w="29" h="92"/>
+                     </disabled>
+                  </standard>
+                  <alternate/>
+               </UIAspect>
+               <UIHotKeys/>
+               <on>
+                  <event msg="UI_CHILD" data="UIChildData" name="Mode help layout">
+                     <child msg="UI_HIDE"/>
+                  </event>
+                  <event msg="UI_CHILD" data="UIChildData" name="mode_help_maximize">
+                     <child msg="UI_SHOW"/>
+                  </event>
+               </on>
+            </UIButton>
+            <UILayout name="mode_help_text_background" template="panelwell">
+               <UIRegion x="50" y="30" w="335" h="280" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <UIHotKeys/>
+            </UILayout>
+            <UIListBox name="mode_help_listbox" template="panel">
+               <UIRegion x="58" y="40" w="319" h="260" xalign="min" yalign="min" walign="len" halign="len"/>
+               <UIState active="normal" visible="normal"/>
+               <children>
+                    <UIText name="mode_help_text" autosize="true">
+                       <UIRegion x="10" y="20" w="284" h="0" xalign="min" yalign="min" walign="len" halign="len"/>
+                       <UIState active="normal" visible="normal"/>
+                       <UIAspect locid="shell:pgb_pointer_structures">
+                          <default image="" sound="">
+                             <BFFont align="left">
+                                <BFColor r="50" g="0" b="128" a="255"/>
+                             </BFFont>
+                          </default>
+                       </UIAspect>
+                       <UIHotKeys/>
+                       <text format="minigameHelp:minigameHelp_format" type="multi"/>
+                    </UIText>
+                </children>
+            </UIListBox>
+         </children>
+      </UILayout>
+   </children>
+</UILayout>

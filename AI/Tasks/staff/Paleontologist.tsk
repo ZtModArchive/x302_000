@@ -1,0 +1,335 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="EducatePodium" TaskDelayMin="360" TaskDelayMax="480" Priority="4" CursorTask="false" reserveTag="Use_educator_podium" UniqueID="paleontologist:EducatePodium">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>                                    
+         </Subjects>
+         <Targets>
+            <educator_podium_df/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap teach="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GotoEducateGuests"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorGotoEducateGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock targetNode="Dock_Staff" targetAnim="Stand_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:EducateGuests"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:EducatorEducateGuests" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet minPlays="5" maxPlays="10">
+            <randomSets>
+               <Educate_With_VEvent weight="20"/>
+               <Educate_Without_VEvent weight="80"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap teach="-15"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+                  <ZTMessageInfo locID="zoomessages:PaleoFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EducateFossilEducationCenter" TaskDelayMin="180" TaskDelayMax="360" CursorTask="false" reserveTag="Use_educator_podium" Priority="10" UniqueID="paleontologist:EducateFossilEducationCenter">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <FossilEducationCenter/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap teach="-35"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehEnter/>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap teach="-15"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="staffthoughts:StaffFailure" priority="-1" timeout="30" global="false" useTargetName="true"/>
+                  <ZTMessageInfo locID="zoomessages:PaleoFailure" tolerance="1" priority="-1" timeout="30" interval="30" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FindFossil" reserveTag="Find" Priority="4" UniqueID="paleontologist:FindFossil">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers_AND b_Teleport="false" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <FossilSite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap find="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:SearchFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistSearchFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="sonar" heightAboveFloor="1"/>
+         <BFBehPlaySet behSet="DockFossil"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:MarkingFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistMarkFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MarkFossil"/>
+         <ZTBehFindArtifact/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap find="-30" dig="-10" teach="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FindFossil_Teleport" reserveTag="Find" Priority="4" UniqueID="paleontologist:FindFossil_Teleport">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers_AND b_Teleport="true" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <FossilSite/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap find="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:SearchFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistSearchFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="1000" locoSpeed="sonar" closestApproach="true" heightAboveFloor="1"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:MarkingFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistMarkFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="MarkFossil"/>
+         <ZTBehFindArtifact/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap find="-30" dig="-10" teach="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="DigUpFossil" reserveTag="Dig"  Priority="4" UniqueID="paleontologist:DigUpFossil">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fossilmarker/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData distanceInfluenced="true">
+         <BFAIAttributeFloatMap dig="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:GoToDigFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistGotoDigFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial targetRadius="0"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:DigFossil" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:PaleontologistDigFossil" priority="1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="DigFossil"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap dig="-30" teach="10" find="10"/>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" Priority="5" UniqueID="paleontologist:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifier inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:RunningFromAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:RunningFromAnimal" priority="-1" timeout="30" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="StaffWaitStaffCenter" CursorTask="false" Priority="2" reserveTag="UseExtinct" UniqueID="paleontologist:StaffWaitStaffCenter">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-11"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:WaitingForTaskCenter" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="StaffWaitStaffCenter_CaffeineMode" CursorTask="false" Priority="2" reserveTag="UseExtinct" UniqueID="paleontologist:StaffWaitStaffCenter_CaffeineMode">
+      <BFAICreateData>
+         <Subjects>
+            <Paleontologist/>
+            <Qualifiers inWater_OR_onLand="true"/>                        
+         </Subjects>
+         <Targets>
+            <staffcenter_df/>
+            <Qualifiers b_CaffeineTrigger="true"/>                        
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap work="-13"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTaskCenter"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="staffthoughts:WaitingForTaskCenter" priority="1" timeout="30" global="false"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEnter/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="staffactions:WaitingForTask"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="useContainer"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData b_CaffeineMode="true"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_DeCaffeinate" GiveTo="subject" Timein="360" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>

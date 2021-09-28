@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Tamarack_Stump_2">
+   <types>
+      <entity>
+         <tree>
+            <stump>
+               <Tamarack_Stump>
+                  <Tamarack_Stump_2/>
+               </Tamarack_Stump>
+            </stump>
+         </tree>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared/>
+   <binder/>
+</BFTypedBinder>

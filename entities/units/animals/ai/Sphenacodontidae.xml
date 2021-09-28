@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Sphenacodontidae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Synapsida>
+                  <Pelycosauria>
+                     <Sphenacodontidae/>
+                  </Pelycosauria>
+               </Synapsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

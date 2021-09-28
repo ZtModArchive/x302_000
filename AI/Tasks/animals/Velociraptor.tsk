@@ -1,0 +1,3561 @@
+<BFAITaskTemplateList>
+<!-- Default Tasks -->
+   <BFAITaskTemplate Name="ThrashWater" UniqueID="Velociraptor:ThrashWater">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND isFloating="true" breath="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Drowning" UniqueID="Velociraptor:ThrashWater_Drowning">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="LE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45" health=".25"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLowBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Old" UniqueID="Velociraptor:ThrashWater_Old">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND isFloating="true" lifespan="GE 13.42"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10045"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ThrashWater"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap breath=".45" health=".2"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_DrownOld" GiveTo="target" Payload="subject" Chance="0.5" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_Die" UniqueID="Velociraptor:ThrashWater_Die">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND isFloating="true" breath="GE 95" health="GE 95"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDieBreath" priority="-1" timeout="15" global="true" useTargetName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ThrashWater_DieOld" UniqueID="Velociraptor:ThrashWater_DieOld">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND isFloating="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_DrownOld/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10050"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Die_Drown"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Exercise Tasks -->
+   <BFAITaskTemplate Name="WanderMedium" UniqueID="Velociraptor:WanderMedium">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND rest="GE 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WalkingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="medium" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="WanderFast" UniqueID="Velociraptor:WanderFast">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND rest="L 50" inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap exercise="-32"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RunningAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander locoSpeed="fast" minPlayTime="10" maxPlayTime="20" avoidEntityRadius="8"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="10" exercise="-50"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Rest Tasks -->
+   <BFAITaskTemplate Name="Yawn" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Velociraptor:Yawn">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalYawnGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Yawning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Yawn"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-10"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Yawn" GiveTo="subject" Timeout="-1" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Rest" UniqueID="Velociraptor:Rest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Yawn/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-38"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="-50"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepShade" UniqueID="Velociraptor:SleepShade">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_3"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SleepBush" UniqueID="Velociraptor:SleepBush">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap rest="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShade"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="3" locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:RestShade"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-100" privacy="-10"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Privacy Tasks -->
+   <BFAITaskTemplate Name="EvadePrivacy" UniqueID="Velociraptor:EvadePrivacy">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers inSight="15"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SeekingPrivacy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+          <ZTBehViewEvent viewKey="Pos_3"/>
+         <BFBehEvasion evasionRadius="15">
+            <avoidEntityTypes>
+               <Guest/>
+            </avoidEntityTypes>
+         </BFBehEvasion>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap exercise="-10" privacy="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_Hide" GiveTo="subject" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideBush" UniqueID="Velociraptor:HideBush">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <grass/>
+            <bush/>
+            <wildflowers/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideRock_Desert" UniqueID="Velociraptor:HideRock_Desert">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <Rock_Desert_Large_A/>
+            <Rock_Desert_Medium_A/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="HideRock_Other" UniqueID="Velociraptor:HideRock_Other">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <rock/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Hide/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToHide" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove locoSpeed="medium"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:HidingIn" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalHideGrassGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehPlaySet behSet="Sleep"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap rest="-15" privacy="-50"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Privacy" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Velociraptor:Screech_Privacy">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest/>
+            <Qualifiers_AND inSight="5" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Hygiene Tasks -->
+   <BFAITaskTemplate Name="Sneeze" UniqueID="Velociraptor:Sneeze">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_Sneeze/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sneezing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" hygiene="10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Scratch" TaskDelayMin="45" TaskDelayMax="90" UniqueID="Velociraptor:Scratch">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap hygiene="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Scratch"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GroomSelf" TaskDelayMin="90" TaskDelayMax="180" UniqueID="Velociraptor:GroomSelf">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap hygiene="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scratch"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-10"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="GroomSelf"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="GroomIntently" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Velociraptor:GroomIntently">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap hygiene="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GroomingSelf"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Groom"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap hygiene="-45"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehPlaySet behSet="Groom"/>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap hygiene="-45"/>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+
+<!-- Social Tasks -->
+   <BFAITaskTemplate Name="Contact_Call" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Velociraptor:Contact_Call">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Velociraptor" Payload="subject" Radius="5" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Velociraptor" Payload="subject" Radius="15" ChanceInRadius="75" Timeout="30"/>
+            <BFAIToken Name="t_ContactCall" GiveTo="Velociraptor" Payload="subject" Radius="25" ChanceInRadius="50" Timeout="30"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Contact_Answer" UniqueID="Velociraptor:Contact_Answer">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ContactCall/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="15">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ContactCall"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_ContactCall" GiveTo="target" Payload="subject" Chance="25" Timeout="30"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Bully" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Velociraptor:Screech_Bully">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND social="GE 75" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor/>
+            <Qualifiers_AND social="LE 25" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Adult" Payload="target" Radius="5" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Adult" Payload="target" Radius="15" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Adult" Payload="target" Radius="25" ChanceInRadius="25" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Young" Payload="target" Radius="5" Timeout="30" Reconsider="true"/>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Young" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor_Young" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_Bullied" GiveTo="target" Payload="subject" Timeout="30"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Screech"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Screech"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Bullied" UniqueID="Velociraptor:Bullied">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Bullied/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scream"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="10" locoSpeed="fast" avoidWater="true" evasionTime="15" />
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Screech_Animal" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Velociraptor:Screech_Animal">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_SmallPrey/>
+            <b_MediumPrey/>
+            <b_LargePrey/>
+            <b_SmallPredator/>
+            <b_MediumPredator/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="15" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_ScreechAt" GiveTo="Velociraptor" Payload="target" Radius="25" ChanceInRadius="50" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Scream_Animal" TaskDelayMin="60" TaskDelayMax="120" UniqueID="Velociraptor:Scream_Animal">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_MediumPrey/>
+            <b_LargePrey/>
+            <b_MediumPredator/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap social="-20"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScreechAtTarget" UniqueID="Velociraptor:ScreechAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ScreechAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Screech"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Screech"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Screech"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ScreamAtTarget" UniqueID="Velociraptor:ScreamAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_ScreamAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Scream"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Scream"/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Scream"/>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="Scream"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="SnarlAtTarget" UniqueID="Velociraptor:SnarlAtTarget">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_SnarlAt/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Snarl"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAITokenList>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="10" Timeout="30" OnlyOne="true"/>
+        </BFAITokenList>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InvitePlayFightYoung" UniqueID="Velociraptor:InvitePlayFightYoung">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor_Young/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_PlayFightYoung" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom playTime="35">
+            <randomAnims>
+               <Stand_CallA weight="50"/>
+               <Stand_CallB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondPlayFightYoung" reserveTag="General" UniqueID="Velociraptor:RespondPlayFightYoung">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PlayFightYoung/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="WaitPlayFight" targetBehSet="DockPlayFight"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayFighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayFightGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="HitMed"/>
+         <BFBehSyncSet subjectBehSet="HitMed" targetBehSet="Kick"/>
+         <BFBehPlaySet behSet="BitMedPlay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20"/>
+         <BFAITargetData rest="20" stimulation="-20" social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InvitePlayFightAdult" UniqueID="Velociraptor:InvitePlayFightAdult">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor_Adult/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="20">
+         <BFAIAttributeFloatMap social="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_PlayFightAdult" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom playTime="35">
+            <randomAnims>
+               <Stand_CallA weight="50"/>
+               <Stand_CallB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook disengage="true"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondPlayFightAdult" reserveTag="General" UniqueID="Velociraptor:RespondPlayFightAdult">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+            <Qualifiers_AND onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PlayFightAdult/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSyncSet subjectBehSet="WaitPlayFight" targetBehSet="DockPlayFight"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayFighting" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayFightGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSyncSet subjectBehSet="Kick" targetBehSet="HitMed"/>
+         <BFBehSyncSet subjectBehSet="HitMed" targetBehSet="Kick"/>
+         <BFBehPlaySet behSet="BitMedPlay"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap rest="20" stimulation="-20" social="-20"/>
+         <BFAITargetData rest="20" stimulation="-20" social="-20"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Stimulation Tasks -->
+   <BFAITaskTemplate Name="Sniff" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Velociraptor:Sniff">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="5">
+         <BFAIAttributeFloatMap stimulation="-25"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sniffing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSniffSelfGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Sniff"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Sneeze" GiveTo="subject" Chance="50" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" social="5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LookAround" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Velociraptor:LookAround">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="10">
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_8">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalLookAroundGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="Look"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap stimulation="-10" social="5"/>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="InitiateChaseAnimal" TaskDelayMin="180" TaskDelayMax="360" UniqueID="Velociraptor:InitiateChaseAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND stimulation="GE 50" inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_SmallPrey/>
+            <b_MediumPrey/>
+            <b_SmallPredator/>
+            <Qualifiers_AND sameSpecies="false" inWater_OR_onLand="true" isSwimming="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap stimulation="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Aggressive" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Velociraptor" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Velociraptor" Payload="target" Radius="15" Timeout="5" Reconsider="true"/>
+               <BFAIToken Name="t_ScreamAt" GiveTo="Velociraptor" Payload="target" Radius="25" ChanceInRadius="75" Timeout="5" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="Scream"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-20"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="subject" Payload="target" Timeout="30" OnlyOne="true" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Velociraptor" Payload="target" Radius="5" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Velociraptor" Payload="target" Radius="15" Timeout="5" Reconsider="true"/>
+            <BFAIToken Name="t_AttackEnMasse" GiveTo="Velociraptor" Payload="target" Radius="25" ChanceInRadius="75" Timeout="5" Timein="4" Reconsider="true"/>
+            <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" OnlyOne="true" Reconsider="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="ChaseAnimal" UniqueID="Velociraptor:ChaseAnimal">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_AttackEnMasse/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="115"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:StalkingAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="6" pursuitRadius="40" locoSpeed="stalk"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap social="-10" stimulation="-30"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+            <BFBehPlaySet behSet="Snarl"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Hunger/Thirst Tasks -->
+   <BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="Velociraptor:DrinkWaterTerrain">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap thirst="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingDrink"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockWater targetAnim="EatTrough_Drink" subjectNode="Node_Mouth"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_4"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:Drinking"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehAnimate targetAnim="EatTrough_Drink"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAIAttributeFloatMap thirst="-40" bathroom="30"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Reproduction Tasks -->
+   <BFAITaskTemplate Name="OffspringCheck" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Velociraptor:OffspringCheck">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CantReproduce" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Velociraptor:CantReproduce">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+            <Qualifiers_AND b_Pregnant="E false" hasMate="false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="false"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="80">
+         <BFAIAttributeFloatMap reproduction="-27"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_Childless" GiveTo="subject" Timeout="180" OnlyOne="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="InviteReproduction" TaskDelayMin="60" TaskDelayMax="180" UniqueID="Velociraptor:InviteReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+            <Qualifiers b_Pregnant="E false"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inHabitat="true" canMate="true"/>
+         </Targets>
+         <Objects>
+            <t_Childless/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap reproduction="-40"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Reproduce" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="35"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="RespondReproduction" reserveTag="General" UniqueID="Velociraptor:RespondReproduction">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Reproduce/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_5"/>
+         <BFBehHeadLook/>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="MatingCall"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDock subjectNode="Dock_Mate" targetNode="Dock_Mate2" targetAnim="Lie_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Pregnant1" GiveTo="target" Timeout="-1" Chance="75"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAISubjectData reproduction="-50" rest="-10"/>
+         <BFAITargetData rest="-10"/>
+         <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Pregnant" UniqueID="Velociraptor:Pregnant">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Pregnant1/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="50"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:PregnantAnimal" priority="1" timeout="30" global="true" useEntityName="true"/>
+               <ZTEmoticonInfo emoticonName="EmotePregnant"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData b_Pregnant="true"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_Pregnant" GiveTo="subject" Timein="90.21" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNestShade" UniqueID="Velociraptor:LayNestShade">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2005">
+         <BFAIAttributeFloatMap reproduction="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_Dirt" UniqueID="Velociraptor:LayNest_Dirt">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <dirt/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayNest_GroundCover" UniqueID="Velociraptor:LayNest_GroundCover">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="CheckNest" reserveTag="General" UniqueID="Velociraptor:CheckNest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <VelociraptorNest/>
+            <VelociraptorNest_Super/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_CheckNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1500">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Growl"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+               <BFAIToken Name="t_CheckNest" GiveTo="subject" Timein="60" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayLostNest" reserveTag="General" UniqueID="Velociraptor:LayLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <ground_cover/>
+            <dirt/>
+            <shade/>
+            <Qualifiers_AND inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_Pregnant/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToBuildNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>       
+         <BFBehPlaySet behSet="StartNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_BuildLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalBuiltNest" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="BuildLostNest" reserveTag="General" UniqueID="Velociraptor:BuildLostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <VelociraptorNest/>
+            <VelociraptorNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 0" inHabitat="true" inSight="5"/>
+         </Targets>
+         <Objects>
+            <t_BuildLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToWorkOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WorkingOnNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildVelociraptorNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_LayEggsLostNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LayEgg_LostNest" reserveTag="General" UniqueID="Velociraptor:LayEgg_LostNest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <VelociraptorNest/>
+            <VelociraptorNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 30" inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_LayEggsLostNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1800">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLayEgg"/>
+               <ZTMessageInfo locID="zoomessages:AnimalGoingToLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LayingEgg"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="BuildVelociraptorNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFAISubjectData b_Pregnant="false"/>
+         <BFAITokenList>
+            <BFAIToken Name="t_FinishNest" GiveTo="subject" Timeout="-1" OnlyOne="true" RetainOnFailure="true"/>
+         </BFAITokenList>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_5">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalLayEggGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalLayEgg" priority="1" timeout="30" global="true" useEntityName="true"/>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="FinishNest" reserveTag="General" UniqueID="Velociraptor:FinishNest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <VelociraptorNest/>
+            <VelociraptorNest_Super/>
+            <Qualifiers_AND f_ConstructionLevel="GE 60" inHabitat="true" inSight="25"/>
+         </Targets>
+         <Objects>
+            <t_FinishNest/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000">
+         <BFAIAttributeFloatMap reproduction="-95"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="FinishVelociraptorNest"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAIAttributeFloatMap reproduction="-100"/>
+         <BFBehExecTask>
+            <ZTBehViewEvent viewKey="Pos_8">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalBuildNestGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="IdleNest" UniqueID="Velociraptor:IdleNest">
+      <BFAICreateData>
+         <Subjects>
+            <VelociraptorNest_Egg/>
+            <VelociraptorNest_Egg_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="IdleEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+<!-- Remember to set Trigger Threshhold data in the animal's egg file to equal incubation -->
+   <BFAITaskTemplate Name="HatchEgg" UniqueID="Velociraptor:HatchEgg">
+      <BFAICreateData>
+         <Subjects>
+            <VelociraptorNest_Egg/>
+            <VelociraptorNest_Egg_Super/>
+            <Qualifiers_AND inWater_OR_onLand="true" incubation="GE 0.85"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="200"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="HatchEgg"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+
+<!-- Guest Interaction Tasks -->
+   <BFAITaskTemplate Name="AttackGuest" Priority="5" reserveTag="General" TaskDelayMin="30" TaskDelayMax="60" UniqueID="Velociraptor:AttackGuest">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <Guest_Adult_M/>
+            <Qualifiers_AND inSight="25" inHabitat="true" b_Attacked="E false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="500"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_InteractAnimal" GiveTo="target" Payload="subject" Radius="30" Timeout="30" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:InteractGuest" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSyncSet subjectBehSet="DockAttackGuest" targetBehSet="WaitAnimalInteraction"/>
+      </BFBehExecTask>
+      <BFAICompletionData invalidateTarget="true">
+         <BFBehExecTask>
+            <BFBehHeadLook/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedVelociraptor"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" global="true" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="zoomessages:GuestAttacked" priority="-1" timeout="60" global="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+         <BFAISubjectData b_Escaped="true"/>
+         <BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100"/>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Escape Tasks -->
+   <BFAITaskTemplate Name="JumpLowFence" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Velociraptor:JumpLowFence">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+         </Subjects>
+         <Targets>
+            <b_lowfence/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="30" fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToJumpFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_Fence" targetAnim="Run_JumpFence" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Run_JumpFence"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="JumpLowFence_Privacy" sensorTag="habitat" TaskDelayMin="90" TaskDelayMax="180" reserveTag="General" UniqueID="Velociraptor:JumpLowFence_Privacy">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+         </Subjects>
+         <Targets>
+            <b_lowfence/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsBad="15">
+         <BFAIAttributeFloatMap privacy="-30"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToJumpFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehDockFence subjectNode="Dock_Fence" targetAnim="Run_JumpFence" locoSpeed="fast"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JumpingFence"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Run_JumpFence"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+
+<!-- Predator/Prey Interaction Tasks -->
+   <BFAITaskTemplate Name="GatherPack" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Velociraptor:GatherPack">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData needPointsGood="30">
+         <BFAIAttributeFloatMap social="-45"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Gather" GiveTo="Velociraptor" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_PackGathered" GiveTo="subject"  Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GatherPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Chirp"/>         
+         <BFBehPlaySet behSet="Chirp"/>         
+         <BFBehPlaySet behSet="Chirp"/>         
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSocialGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+	 <BFBehAnimate targetAnim="Walk_Ahead" playTime="3"/>
+	 <BFBehPlaySet behSet="Stand_Idle" playTime="3"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Midday" UniqueID="Velociraptor:LeadPack_Midday">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDayMin="GE 10" timeOfDayMax="LE 14"/>
+         </Subjects>
+         <Targets>
+            <shade/>
+            <Qualifiers_AND inSight="25" inHabitat="true" onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadPackTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Velociraptor" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehMove locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Morning" UniqueID="Velociraptor:LeadPack_Morning">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDay="LE 10"/>
+         </Subjects>
+         <Targets>
+            <shore/>
+            <Qualifiers_AND inSight="25" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadPackTo" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Velociraptor" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehMove locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPack_Night" UniqueID="Velociraptor:LeadPack_Night">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false" timeOfDay="GE 22"/>
+         </Subjects>
+         <Targets>
+            <Velociraptor/>
+            <Qualifiers notInSight="30"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PackCallMissing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Chirp" GiveTo="Velociraptor" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehPlaySet behSet="Chirp"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="LeadPack_Default" UniqueID="Velociraptor:LeadPack_Default">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="750"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LeadingPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+	 <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAlpha" GiveTo="Velociraptor" Payload="subject" Radius="60" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehWander minPlayTime="10" maxPlayTime="15" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="LeadPackHunt" UniqueID="Velociraptor:LeadPackHunt">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <b_LargePrey/>
+            <b_MediumPrey/>
+            <b_SmallPrey/>
+            <Qualifiers_AND inHabitat="true" inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_PackGathered/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000" needPointsGood="60"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_FollowAttack" GiveTo="Velociraptor" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Attacked" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>         
+         <BFBehPlaySet behSet="ChasePrey"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="PackGather" UniqueID="Velociraptor:PackGather">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_Gather/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:JoinPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehMove moveRadius="10" locoSpeed="medium"/>
+         <BFBehMove moveRadius="5" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="PackMove" UniqueID="Velociraptor:PackMove">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FollowAlpha/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MoveAsPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="3" pursuitRadius="30" failureRadius="80" locoSpeed="slow"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="PackHunt" UniqueID="Velociraptor:PackHunt">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_FollowAttack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPlaySet behSet="ChasePrey"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITokenList>
+            <BFAIToken Name="t_MissPrey" GiveTo="subject" Payload="target" Timeout="20"/>
+         </BFAITokenList>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="GatherPackHuntPrey" TaskDelayMin="300" TaskDelayMax="420" UniqueID="Velociraptor:GatherPackHuntPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" hasMate="true" hunger="GE 40"/>
+         </Subjects>
+         <Targets>
+            <b_LargePrey/>
+            <b_MediumPrey/>
+            <b_MediumPredator/>
+            <Qualifiers_AND notInSight="15" sameSpecies="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap hunger="-42"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Gather" GiveTo="Velociraptor" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+               <BFAIToken Name="t_PreyReady" GiveTo="subject" Payload="target" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GatherPack"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Chirp" playTime="5"/>         
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalSocialGood" priority="1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="LeadPackHuntPrey" UniqueID="Velociraptor:LeadPackHuntPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_M/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_PreyReady/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_WeakenPrey" GiveTo="Velociraptor" Payload="target" Radius="60" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="30" Chance="50" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="30" Reconsider="true"/>
+	       <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true"/>
+	    </BFAITokenList>
+	 </BFBehSendToken>    
+	 <BFBehPlaySet behSet="Stand_Idle" playTime="3"/>
+	 <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>p
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="evade"/>
+         <BFBehPlaySet behSet="AttackMed"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFAITargetData health="10"/>
+         <BFBehExecTask>
+            <BFBehSendToken>
+	       <BFAITokenList>
+	          <BFAIToken Name="t_WeakenPrey" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	       </BFAITokenList>
+	    </BFBehSendToken>    
+	 </BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="WeakenPrey" UniqueID="Velociraptor:WeakenPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+            <Qualifiers rest="LE 80"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_WeakenPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" failureRadius="80" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+   	<BFAIAttributeFloatMap rest="10"/>
+   	<BFAITargetData health="5" rest="10"/>
+        <BFBehExecTask>
+           <BFBehPlaySet behSet="Scream"/>        
+           <BFBehSendToken>
+	      <BFAITokenList>
+	         <BFAIToken Name="t_BackOff" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	         <BFAIToken Name="t_Flee" GiveTo="target" Payload="subject" Timeout="30" Reconsider="true" OnlyOne="true"/>
+	      </BFAITokenList>
+	   </BFBehSendToken>    
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="WeakenPrey_BackOff" UniqueID="Velociraptor:WeakenPrey_BackOff">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_BackOff/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="10" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+        <BFBehExecTask>
+           <BFBehSendToken>
+	      <BFAITokenList>
+	         <BFAIToken Name="t_WeakenPrey" GiveTo="subject" Payload="target" Timeout="30" Reconsider="true"/>
+	      </BFAITokenList>
+	   </BFBehSendToken>    
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>        
+   <BFAITaskTemplate Name="AttackWeakPrey" UniqueID="Velociraptor:AttackWeakPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+            <Qualifiers_AND hunger="GE 70" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers_AND rest="GE 90" inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_WeakenPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+                  <BFAIToken Name="t_AttackPrey" GiveTo="Velociraptor" Payload="target" radius="20" Timeout="30" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>    
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttack" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackingBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehSyncSet subjectBehSet="AttackPrey" targetBehSet="Attacked"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="AttackPrey" UniqueID="Velociraptor:AttackPrey">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inHabitat="true"/>
+         </Targets>
+         <Objects>
+            <t_AttackPrey/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="105"/>
+      <BFBehExecTask>
+         <BFBehFaceTarget/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:HuntAsPack" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Pos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalStalkGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehPursuit hitRadius="7" pursuitRadius="30" failureRadius="80" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+   	<BFAIAttributeFloatMap rest="10"/>
+   	<BFAITargetData health="5" rest="10"/>
+        <BFBehExecTask>
+           <BFBehPlaySet behSet="AttackMed"/>        
+	</BFBehExecTask>   
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFAIAttributeFloatMap/>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>     
+   <BFAITaskTemplate Name="NoticePredator" TaskDelayMin="120" TaskDelayMax="180" UniqueID="Velociraptor:NoticePredator">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+         </Subjects>
+         <Targets>
+            <b_XLargePredator/>
+            <b_LargePredator/>
+            <b_MediumPredator/>
+            <Qualifiers_AND hunger="GE 20" inWater_OR_onLand="true" inSight="10" sameSpecies="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="90"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Scared" GiveTo="subject" Timeout="20"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>      
+   <BFAITaskTemplate Name="NoticePredatorClose" TaskDelayMin="45" TaskDelayMax="90" UniqueID="Velociraptor:NoticePredatorClose">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+         </Subjects>
+         <Targets>
+            <b_XLargePredator/>
+            <b_LargePredator/>
+            <b_MediumPredator/>
+            <b_SmallPredator/>
+            <Qualifiers_AND hunger="GE 20" inWater_OR_onLand="true" inSight="5" sameSpecies="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="90"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_Scared" GiveTo="subject" Timeout="20"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>    
+   <BFAITaskTemplate Name="EvadePredator_Young" UniqueID="Velociraptor:EvadePredator_Young">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <b_XLargePredator/>
+            <b_LargePredator/>
+            <b_MediumPredator/>
+            <Qualifiers_AND inSight="2" sameSpecies="false"/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="85"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="evade" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="YoungScared" UniqueID="Velociraptor:YoungScared">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+         </Subjects>
+         <Targets>
+            <Velociraptor_Adult_F/>
+            <Qualifiers isRelation="mother"/>
+         </Targets>
+         <Objects>
+            <t_Scared/>  
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="1500"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+	    <ZTFeedbackData>
+	       <ZTActionInfo locID="animalactions:CallAt" useTargetName="true"/>
+	    </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehSendToken>
+	    <BFAITokenList>
+	       <BFAIToken Name="t_YoungThreatened" GiveTo="target" Payload="subject" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehFaceTarget/>
+            <BFBehPlaySet behSet="CallMother"/>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="AttackThreat" TaskDelayMin="180" TaskDelayMax="300" UniqueID="Velociraptor:AttackThreat">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <b_SmallPredator/>
+            <Qualifiers_AND inWater_OR_onLand="true" inSight="10" sameSpecies="false"/>
+         </Targets>
+         <Objects>
+            <t_YoungThreatened/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="400"/>
+         <BFBehExecTask>
+            <BFBehFaceTarget/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:ProtectingYoung" />
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+      	       <BFAIToken Name="t_KillThreat" GiveTo="subject" Payload="target" Timeout="20"/>
+	       <BFAIToken Name="t_Attack" GiveTo="target" Payload="subject" Radius="30" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>  
+   <BFAITaskTemplate Name="KillThreat" UniqueID="Velociraptor:KillThreat">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Adult_F/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+         </Targets>
+         <Objects>
+            <t_KillThreat/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="400"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ProtectingYoung" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="3" pursuitRadius="15" locoSpeed="evade"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+    	 <BFAITokenList>
+	    <BFAIToken Name="t_Flee" GiveTo="b_LargePredator" Payload="subject" Chance="15" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_MediumPredator" Payload="subject" Chance="50" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_SmallPredator" Payload="subject" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="subject" Chance="10" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="subject" Chance="50" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="subject" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	    <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="subject" radius="20" Timeout="-1" Reconsider="true" OnlyOne="true"/>
+	 </BFAITokenList>
+	 <BFBehExecTask>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTActionInfo locID="animalactions:AttackingAnimal" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+            <BFBehHeadLook/>
+            <BFBehSyncSet subjectBehSet="WaitAttack" targetBehSet="DockAttacked"/>
+            <BFBehHeadLook disengage="true"/>
+            <ZTBehViewEvent viewKey="Neg_10">
+               <ZTFeedbackData>
+                  <ZTThoughtInfo locID="guestthoughts:AnimalAttackingBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehViewEvent>
+            <BFBehSyncSet subjectBehSet="AttackPrey" targetBehSet="Attacked"/>
+            <ZTBehFeedback>
+               <ZTFeedbackData>
+                  <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useTargetName="true"/>
+               </ZTFeedbackData>
+            </ZTBehFeedback>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet"/>
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>   
+   <BFAITaskTemplate Name="Attacked" UniqueID="Velociraptor:Attacked">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Attack/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Screech"/>
+      </BFBehExecTask>
+      <BFAICompletionData>
+         <BFBehExecTask>
+            <BFBehSendToken>
+               <BFAITokenList>
+		  <BFAIToken Name="t_Flee" GiveTo="b_XLargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_LargePrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_MediumPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+		  <BFAIToken Name="t_Flee" GiveTo="b_SmallPrey" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+                  <BFAIToken Name="t_Flee" GiveTo="subject" Payload="target" Radius="30" Timeout="15" Reconsider="true"/>
+               </BFAITokenList>
+            </BFBehSendToken>
+         </BFBehExecTask>
+      </BFAICompletionData>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="EvadeAttack" UniqueID="Velociraptor:EvadeAttack">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <fromToken/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Targets>
+         <Objects>
+            <t_Flee/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="100"/>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Neg_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Fleeing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehEvasion evasionRadius="30" locoSpeed="fast" avoidWater="true"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+      <BFAIFailureData/>
+   </BFAITaskTemplate>
+   
+<!-- Mother/Young Interaction Tasks -->
+
+<!-- Aging Tasks -->
+   <BFAITaskTemplate Name="Born" TaskDelayMin="10000" TaskDelayMax="100000" UniqueID="Velociraptor:Born">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Born"/>
+               <ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Puberty" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Velociraptor:Puberty">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young/>
+            <Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 8.25"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Age" GiveTo="subject" Timeout="59" Chance="50" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_F" UniqueID="Velociraptor:Age_F">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young_F/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Velociraptor_Adult_F" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_M" UniqueID="Velociraptor:Age_M">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young_M/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2000"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Velociraptor_Adult_M" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperF" UniqueID="Velociraptor:Age_SuperF">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young_F_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Velociraptor_Adult_F_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Age_SuperM" UniqueID="Velociraptor:Age_SuperM">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor_Young_M_Super/>
+            <Qualifiers inWater_OR_onLand="true"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Age/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="2010"/>
+      <BFBehExecTask>
+         <ZTBehMorph morphTargetEntityType="Velociraptor_Adult_M_Super" morphScale="true" morphPeriod="10" initScale="0.4"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Old" TaskDelayMin="60" TaskDelayMax="60" UniqueID="Velociraptor:Old">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers lifespan="GE 24.8"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects/>
+      </BFAICreateData>
+      <BFAIEvalData>
+         <BFAIAttributeFloatMap lifespan="-100"/>
+      </BFAIEvalData>
+      <BFBehExecTask>
+         <ZTBehViewEvent viewKey="Pos_1"/>
+         <BFBehPlaySet behSet="Sleep"/>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_Die" GiveTo="subject" Timeout="59" Chance="25" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   <BFAITaskTemplate Name="Die" UniqueID="Velociraptor:Die">
+      <BFAICreateData>
+         <Subjects>
+            <Velociraptor/>
+            <Qualifiers_AND inWater_OR_onLand="true" isSwimming="false"/>
+         </Subjects>
+         <Targets>
+            <self/>
+         </Targets>
+         <Objects>
+            <t_Die/>
+         </Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000"/>
+      <BFBehExecTask>
+         <BFBehPlaySet behSet="Die_OldAge"/>
+      </BFBehExecTask>
+      <BFAICompletionData/>
+   </BFAITaskTemplate>
+   
+</BFAITaskTemplateList>

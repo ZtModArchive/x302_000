@@ -1,0 +1,10 @@
+;Gamebryo KFM File Version 1.0
+
+DEFAULTPATHS#1#
+DEFAULTNIFPATH#NULL#
+DEFAULTKFPATH#NULL#
+MODEL#c:/zoo2/contentpack2_extinct/entities/units/animals/Ankylosaurus/Ankylosaurus_Adult_F_TEMP.nif#Bip01#
+
+ANIMATION#EVENTCODE 0#EMPTY_SEQUENCE_AT_0f#c:/zoo2/contentpack2_extinct/entities/units/animals/Ankylosaurus/Ankylosaurus_Adult_F_TEMP.kf#INDEX 0#
+
+END_KFM_FILE

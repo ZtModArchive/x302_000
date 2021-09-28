@@ -1,0 +1,18 @@
+<BFTypedBinder binderType="Dromaeosauridae" abstract="true">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Saurischia>
+                     <Dromaeosauridae/>
+                  </Saurischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+</BFTypedBinder>

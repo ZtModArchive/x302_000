@@ -1,0 +1,99 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Sleep">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Sleep.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Scratch">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Scratch.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Growl">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Growl.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Regurgitate">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Regurgitate.wav" volume="1" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Bite">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Bite.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Swipe">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Swipe.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_FastChew">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_FastChew.wav" volume="1" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_EatChew">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Eat_Chew.wav" volume="1" mindist="8" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>   
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Stand_GuestAttack">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Stand_GuestAttack.wav" volume="1" mindist="15" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>  
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Adult_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Stand_TestFence_Shocked.wav" volume="1" mindist="15" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Sleep">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Sleep.wav" volume=".4" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Scratch">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Scratch.wav" volume=".6" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Growl">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Growl.wav" volume=".6" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Regurgitate">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Regurgitate.wav" volume=".6" mindist="4" maxdist="30"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Bite">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Bite.wav" volume=".6" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Swipe">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Swipe.wav" volume=".6" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_FastChew">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_FastChew.wav" volume=".6" mindist="4" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_EatChew">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Adult_F_Eat_Chew.wav" volume="1" mindist="8" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>    
+   <BFSoundtag>
+      <BF3DSndFactory name="Dimetrodon_Young_Stand_TestFence_Shocked">
+         <snd name="entities/units/animals/Dimetrodon/sound/Dimetrodon_Young_F_Stand_TestFence_Shocked.wav" volume="1" mindist="12" maxdist="25"/>
+      </BF3DSndFactory>
+   </BFSoundtag>     
+</soundtags>

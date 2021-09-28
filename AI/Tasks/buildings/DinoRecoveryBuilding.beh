@@ -1,0 +1,243 @@
+<BehaviorSets>
+   <!--Dino Recovery Building Behaviors-->
+   
+   <Idle>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Down behSet="Down"/>
+               <Up behSet="Up"/>
+               <default behSet="Down"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>  
+
+   <Down>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Down_Idle" playTime="10" />
+      </behaviors>
+   </Down>  
+
+   <Up>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Up_Idle" playTime="10" />
+      </behaviors>
+   </Up>  
+
+<!-- Staff Spawning Behaviors -->
+   
+   <SpawnDRT>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryCrateTeam_F_01 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_M_01 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_F_02 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryTranqTeam_F_01 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_M_01 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_F_02 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryRobot_F_01 weight="25"/>
+               <SpawnDinoRecoveryRobot_M_01 weight="25"/>
+               <SpawnDinoRecoveryRobot_F_02 weight="25"/>
+               <SpawnDinoRecoveryRobot_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ExitDinoRecoveryBuilding" GiveTo="DinoRecoveryCrateTeam" Radius="5" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_ExitDinoRecoveryBuilding" GiveTo="DinoRecoveryTranqTeam" Radius="5" Timeout="15" Reconsider="true"/>
+               <BFAIToken Name="t_ExitDinoRecoveryBuilding" GiveTo="DinoRecoveryRobot" Radius="5" Timeout="15" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Up_Idle" playTime="5" />
+      </behaviors>
+   </SpawnDRT>  
+   <SpawnDRTCrate>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryCrateTeam_F_01 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_M_01 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_F_02 weight="25"/>
+               <SpawnDinoRecoveryCrateTeam_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ExitDinoRecoveryBuildingFast" GiveTo="DinoRecoveryCrateTeam" Radius="5" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Up_Idle" playTime="5" />
+      </behaviors>
+   </SpawnDRTCrate>  
+   <SpawnDRTTranq>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryTranqTeam_F_01 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_M_01 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_F_02 weight="25"/>
+               <SpawnDinoRecoveryTranqTeam_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ExitDinoRecoveryBuildingFast" GiveTo="DinoRecoveryTranqTeam" Radius="5" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Up_Idle" playTime="5" />
+      </behaviors>
+   </SpawnDRTTranq>  
+   <SpawnDRTRobot>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SpawnDinoRecoveryRobot_F_01 weight="25"/>
+               <SpawnDinoRecoveryRobot_M_01 weight="25"/>
+               <SpawnDinoRecoveryRobot_F_02 weight="25"/>
+               <SpawnDinoRecoveryRobot_M_02 weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehSendToken>
+            <BFAITokenList>
+               <BFAIToken Name="t_ExitDinoRecoveryBuildingFast" GiveTo="DinoRecoveryRobot" Radius="5" Timeout="10" Reconsider="true"/>
+            </BFAITokenList>
+         </BFBehSendToken>
+         <BFBehAnimate targetAnim="Up_Idle" playTime="5" />
+      </behaviors>
+   </SpawnDRTRobot>  
+   
+
+   <SpawnDinoRecoveryRobot_F_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryRobot_Adult_F_01" subjectNode="Bip01" fadeInPeriod="1" />
+      </behaviors>
+   </SpawnDinoRecoveryRobot_F_01>  
+   <SpawnDinoRecoveryRobot_M_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryRobot_Adult_M_01" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryRobot_M_01>  
+   <SpawnDinoRecoveryRobot_F_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryRobot_Adult_F_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryRobot_F_02>  
+   <SpawnDinoRecoveryRobot_M_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryRobot_Adult_M_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryRobot_M_02>  
+   <SpawnDinoRecoveryTranqTeam_F_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryTranqTeam_Adult_F_01" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryTranqTeam_F_01>  
+   <SpawnDinoRecoveryTranqTeam_M_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryTranqTeam_Adult_M_01" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryTranqTeam_M_01>  
+   <SpawnDinoRecoveryTranqTeam_F_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryTranqTeam_Adult_F_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryTranqTeam_F_02>  
+   <SpawnDinoRecoveryTranqTeam_M_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryTranqTeam_Adult_M_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryTranqTeam_M_02>  
+   <SpawnDinoRecoveryCrateTeam_F_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryCrateTeam_Adult_F_01" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryCrateTeam_F_01>  
+   <SpawnDinoRecoveryCrateTeam_M_01>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryCrateTeam_Adult_M_01" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryCrateTeam_M_01>  
+   <SpawnDinoRecoveryCrateTeam_F_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryCrateTeam_Adult_F_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryCrateTeam_F_02>  
+   <SpawnDinoRecoveryCrateTeam_M_02>
+      <subjects>
+         <DinoRecoveryBuilding/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="DinoRecoveryCrateTeam_Adult_M_02" subjectNode="Bip01" fadeInPeriod="1"/>
+      </behaviors>
+   </SpawnDinoRecoveryCrateTeam_M_02>  
+
+<!-- Staff Exit and Entry Behaviors -->
+
+
+</BehaviorSets>

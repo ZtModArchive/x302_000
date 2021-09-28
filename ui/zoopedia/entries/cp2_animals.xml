@@ -1,0 +1,69 @@
+<entries>
+   <BFHelpEntry entry="zoopedia_home">
+      <BFHelpEntry order="zoopedia_animal1" entry="zoopedia_animals">
+         <BFHelpEntry entry="zoopedia_ankylosaurus"/>  
+         <BFHelpEntry entry="zoopedia_bearshortfaced"/>                    
+         <BFHelpEntry entry="zoopedia_birdelephant"/>
+         <BFHelpEntry entry="zoopedia_bluebuck"/>
+         <BFHelpEntry entry="zoopedia_camelgiant"/>         
+         <BFHelpEntry entry="zoopedia_catsabertoothed"/>         
+         <BFHelpEntry entry="zoopedia_cowauroch" order="zoopedia_aurochs"/>
+         <BFHelpEntry entry="zoopedia_deerbushantlered"/>         
+         <BFHelpEntry entry="zoopedia_deinonychus"/> 
+         <BFHelpEntry entry="zoopedia_deinosuchus"/>          
+         <BFHelpEntry entry="zoopedia_dimetrodon"/> 
+         <BFHelpEntry entry="zoopedia_diprotodon"/>         
+         <BFHelpEntry entry="zoopedia_dodo"/>
+         <BFHelpEntry entry="zoopedia_doedicurus"/> 
+         <BFHelpEntry entry="zoopedia_elephantdwarfsicilian"/>
+         <BFHelpEntry entry="zoopedia_gigantopithecus"/>                 
+         <BFHelpEntry entry="zoopedia_kentrosaurus"/>
+         <BFHelpEntry entry="zoopedia_lioncave"/>         
+         <BFHelpEntry entry="zoopedia_mastodonamerican"/>
+         <BFHelpEntry entry="zoopedia_protarchaeopteryx"/> 
+         <BFHelpEntry entry="zoopedia_quagga" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_rhinoceroswooly"/>
+         <BFHelpEntry entry="zoopedia_sivatherium"/>         
+         <BFHelpEntry entry="zoopedia_slothgroundgiant"/>         
+         <BFHelpEntry entry="zoopedia_stegosaurus"/> 
+         <BFHelpEntry entry="zoopedia_stokesosaurus"/> 
+         <BFHelpEntry entry="zoopedia_thylacine"/>
+         <BFHelpEntry entry="zoopedia_utahraptor"/>
+         <BFHelpEntry entry="zoopedia_velociraptor"/>
+         <BFHelpEntry entry="zoopedia_warrah"/>         
+         <BFHelpEntry entry="zoopedia_warthoggiant"/>
+         <BFHelpEntry entry="zoopedia_super_ankylosaurus" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_bearshortfaced" hidden="true"/>                   
+         <BFHelpEntry entry="zoopedia_super_birdelephant" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_bluebuck" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_camelgiant" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_catsabertoothed" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_cowauroch" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_deerbushantlered" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_deinonychus" hidden="true"/> 
+         <BFHelpEntry entry="zoopedia_super_deinosuchus" hidden="true"/>          
+         <BFHelpEntry entry="zoopedia_super_dimetrodon" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_diprotodon" hidden="true"/>                  
+         <BFHelpEntry entry="zoopedia_super_dodo" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_doedicurus" hidden="true"/> 
+         <BFHelpEntry entry="zoopedia_super_elephantdwarfsicilian" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_gigantopithecus" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_kentrosaurus" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_lioncave" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_mastodonamerican" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_protarchaeopteryx" hidden="true"/> 
+         <BFHelpEntry entry="zoopedia_super_quagga" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_rhinoceroswooly" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_sivatherium" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_slothgroundgiant" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_stegosaurus" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_stokesosaurus" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_thylacine" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_utahraptor" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_velociraptor" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_super_warrah" hidden="true"/>         
+         <BFHelpEntry entry="zoopedia_super_warthoggiant" hidden="true"/>
+         <BFHelpEntry entry="zoopedia_penguinkiller" hidden="true"/>               
+      </BFHelpEntry>
+   </BFHelpEntry>
+</entries>

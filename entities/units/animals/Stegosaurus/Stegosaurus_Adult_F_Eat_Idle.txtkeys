@@ -1,0 +1,5 @@
+<TEXTKEY>
+         <key time="0" text="{Bip01 Head} snd 'Eat_Idle'"/>
+   <key time="0.48" text = "{Node_Eat} attach object"/>
+   <key time="1.89" text = "{Node_Eat} detach object"/>
+</TEXTKEY>

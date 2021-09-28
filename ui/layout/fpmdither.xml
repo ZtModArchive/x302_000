@@ -1,0 +1,23 @@
+<UILayout name="First Person Dither">
+   <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+   <UIState active="normal" visible="normal"/>
+   <UIAspect string="">
+      <default image="" sound="">
+         <BFRect x="0" y="0" w="0" h="0"/>
+         <BFColor r="0" g="0" b="0" a="0"/>
+      </default>
+   </UIAspect>
+   <UIHotKeys/>
+   <children>
+      <UIStatic name="screendither">
+         <UIRegion x="0" y="0" w="1024" h="768" xalign="min" yalign="min" walign="len" halign="len"/>
+         <UIState active="normal" visible="hidden"/>
+         <UIAspect alwayshit="never">
+            <default image="ui/shared/white1x1.dds">
+               <BFColor r="0" g="0" b="0" a="128"/>
+            </default>
+         </UIAspect>
+         <UIHotKeys/>
+      </UIStatic>
+   </children>
+</UILayout>

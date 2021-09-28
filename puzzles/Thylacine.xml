@@ -1,0 +1,16 @@
+<ZTPuzzle animal="Thylacine" level="3" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Head" node="Piece01" entityScale="1.78" />
+    <ZTPuzzlePiece texture="02_Neck" node="Piece02" entityScale="0.89" />
+    <ZTPuzzlePiece texture="03_Torso" node="Piece03" entityScale="1.78" />
+    <ZTPuzzlePiece texture="04_ArmsUpper" node="Piece04" entityScale="0.89" />
+    <ZTPuzzlePiece texture="05_ArmLowerRight" node="Piece05" entityScale="0.89" />
+    <ZTPuzzlePiece texture="06_ArmLowerLeft" node="Piece06" entityScale="1.78"/>
+    <ZTPuzzlePiece texture="07_Spine" node="Piece07" entityScale="0.89" />
+    <ZTPuzzlePiece texture="08_Hips" node="Piece08" entityScale="1.78" />
+    <ZTPuzzlePiece texture="09_LegLowerLeft" node="Piece09" entityScale="1.78" />
+    <ZTPuzzlePiece texture="10_LegLowerRight" node="Piece10" entityScale="1.78" />
+    <ZTPuzzlePiece texture="11_TailBase" node="Piece11" entityScale="1.78" />
+    <ZTPuzzlePiece texture="12_TailEnd" node="Piece12" entityScale="1.78"/>
+  </pieces>
+</ZTPuzzle>

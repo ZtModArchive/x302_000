@@ -1,0 +1,50 @@
+﻿<BFTypedBinder binderType="ThickBrownSmall_Stump" abstract="true">
+	<types>
+		<entity>
+			<tree>
+				<stump>
+					<ThickBrownSmall_Stump />
+				</stump>
+			</tree>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+	        <ZTPlacementData icon3Doffset="1.5 -0.5 0.18" icon3Dscale="0.25" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\objects\foliage\stumps\ThickBrownSmall_2X2.dds" />
+			</UIAspect>
+			<UIHelpInfo name="" short="" long="" help="" ids="entityname:stump" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="ThickBrownSmall_Stump" />
+			</on>
+		</UIToggleButton>
+		<UIButton name="overviewicon">
+			<UIAspect>
+				<default image="ui/zoomap/icon_food.dds" />
+			</UIAspect>
+		</UIButton>
+		<BFAIEntityDataShared s_ObjectType="Misc" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/foliage/stumps/ThickBrown_2X2" switch="0 20 45" minSwitch="0 0 20" scale="0.75" />
+					<BFGroundFitComponent heightOffset="0.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="0">
+					<ZTTransaction name="build" costType="parent" type="debit" category="construction" />
+					<ZTTransaction name="destroy" cost="0" costType="%parent" type="credit" category="recycling" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

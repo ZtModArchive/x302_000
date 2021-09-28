@@ -1,0 +1,156 @@
+<BFTypedBinder binderType="Velociraptor" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Sauropsida>
+						<Saurischia>
+							<Dromaeosauridae>
+								<Velociraptor />
+							</Dromaeosauridae>
+						</Saurischia>
+					</Sauropsida>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj parent="mainObj" child="shadowObj" rottype="use" postype="ignore" attachnode="link" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0 1" icon3Dscale="0.45" minimumHeadroom="4.5" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\Velociraptor\Velociraptor_Adult_F_icon.dds" />
+			</UIAspect>
+			<UIHelpInfo ids="entityname:Velociraptor" />
+			<on>
+				<event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="Velociraptor_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared f_BaseDonationAmount="60" f_MaxTourValue="20" p_FightOffset="0 -1.5 180" p_PreyOffset="0 1 0" p_MateOffset="-1 0 0" s_Product="Extinct" s_Endangerment="Extinct" b_ExtinctAnimal="true" s_DonateToken="t_DonateVelociraptor" s_Species="Velociraptor" b_Basic="true" b_Carnivore="true" f_adoptRemoveTime="0" f_adoptRarity="1" s_Zoopedia="zoopedia:zoopedia_Velociraptor:entry" f_RequiredInitialSpace="70" f_RequiredAdditionalSpace="20" p_PursuitBallNode="0 -1 180" p_DockFence="0 -7 0" p_SniffFence="0 -4 0" b_PursuitBallUser="true" b_RattleBallUser="true" b_BallUser="true" b_RubberToyUser="true" b_PreyOffset="0 -2 0" b_DesertAnimal="true" s_KeeperEatType="Terrain_Meat" s_KeeperDrinkType="FoodDish_Water" b_FoodDishEater="true" b_SmallAnimal="true" p_DinoPreyNode="0 -4 180" p_FeedYoungNode=".5 -3.25 180" p_AttackGuestNode="0 -2.50 180" b_BeefShankEater="true" b_ShadeStructureUser="true" b_HeatLampUser="true" b_KopjeTopUser="true" b_LargeWoodenShelterUser="true" b_SmallWoodenShelterUser="true" b_SmallRockCaveUser="true" b_LargeRockCaveUser="true" b_LargeSnowCaveOddUser="true" b_SmallSnowCaveOddUser="true" b_LargeExtinctShelterUser="true">
+			<BFAINeedAdjusts privacy="0" explore=".25" />
+		</BFAIEntityDataShared>
+		<BFGBiomeData location="desert_asia_central" locationSensitivity="10">
+			<alpine sensitivity="-10" />
+			<benthic sensitivity="-10" />
+			<borealforest sensitivity="-10" />
+			<coastal sensitivity="-10" />
+			<desert sensitivity="3" primary="true" />
+			<grassland sensitivity="-10" />
+			<reef sensitivity="-10" />
+			<pelagic sensitivity="-10" />
+			<temperateforest sensitivity="-10" />
+			<tropicalrainforest sensitivity="-10" />
+			<tundra sensitivity="-10" />
+			<savannah sensitivity="-2" />
+			<scrub sensitivity="0" />
+			<wetlands sensitivity="-10" />
+		</BFGBiomeData>
+		<ZTUserStaffAction>
+			<SetAttribute name="hygiene" value="0" threshold="20" locid="superstaff:animal_wash" effect="SuperStaffWashLarge" />
+			<SetAttribute name="health" value="0" threshold="20" locid="superstaff:animal_heal" effect="SuperStaffHeal" />
+		</ZTUserStaffAction>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFShadowLODComponent numLevels="1" switchingDists="60.0" />
+					<BFActorComponent actorfile="entities/units/animals/Velociraptor/Velociraptor_Adult_F.bfm" scale="0.7" />
+					<BF2LegsGroundFitComponent rightAnkleJoint="Bip01 R Foot" leftAnkleJoint="Bip01 L Foot" ankleRotVectorLeft="0 0 -1" ankleRotVectorRight="0 0 -1" heightOffset="0" fitRadius=".15" frontBuoyancyNode="Node_Buoy" backBuoyancyNode="Node_Buoy_Back" />
+					<BFForwardMovingComponent />
+					<BFRotYawMovingComponent />
+					<BFCollisionComponent grid="Bip01 Spine1" />
+					<BFGridCollisionComponent />
+					<BFDecalTextureCycleComponent materialName="Velociraptor_Adult_F">
+						<Step imageName="entities/units/animals/shared/tiger_blink_blank.dds" hold="3.0" variance="0.5" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink.dds" hold="0.1" variance="" />
+						<Step imageName="entities/units/animals/shared/tiger_blink02.dds" hold="0.08" variance="" />
+					</BFDecalTextureCycleComponent>
+					<BFHeadLookComponent leftRightAnimName="Secondary_HeadLook" lookDirNode="Bip01 Head" lookDirVector="0 1 0" gain_z="-2" fov_extreme_lr="90.0" />
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFTextTagMacrosComponent>
+					<MACROS>
+						<macro name="JumpOnRock" text="as 100 1, anim &apos;Run_JumpFence&apos;" />
+						<macro name="JumpOnHeatedRock" text="as 100 1, anim &apos;Run_JumpFence&apos;" />
+						<macro name="Walky" text="anim &apos;Walk_Ahead&apos;" />
+						<macro name="Walky2Standy" text="anim &apos;Walk_2Stand&apos;, anim&apos;Stand_Idle&apos;" />
+						<macro name="Stand2LieBelly" text="anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+						<macro name="LieBelly2Stand" text="anim &apos;Stand_Idle&apos;" />
+						<macro name="Standy2Walky" text="anim &apos;Stand_2Walk&apos;, anim &apos;Walk_Ahead&apos;" />
+						<macro name="LieOnBelly" text="anim &apos;Lie_Idle&apos;" />
+						<macro name="TurnLeft180" text="anim &apos;Stand_TurnLeft90&apos;, anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight180" text="anim &apos;Stand_TurnRight180&apos;" />
+						<macro name="TurnLeft90" text="anim &apos;Stand_TurnLeft90&apos;" />
+						<macro name="TurnRight90" text="anim &apos;Stand_TurnRight90&apos;" />
+						<macro name="LieLong" text="anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;,anim &apos;Lie_Idle&apos;" />
+						<macro name="Walk2LieBelly" text="!anim &apos;Walk_2Stand&apos;,anim &apos;Stand_2Lie&apos;, anim &apos;Lie_Idle&apos;" />
+					</MACROS>
+				</BFTextTagMacrosComponent>
+				<BFSharedPhysVars isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Dock_Guest x="0" y="-2.75" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_PoleRope x="0" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Ball x="0" y="-1.7" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_IceBlock x="0" y="-1.7" z="0" yaw="0" pitch="0" roll="0" />
+						<Dock_Fence x="0" y="-4" z="0" yaw="180" pitch="0" roll="0" />
+						<Dock_Mate y="-0.25" x="0.6" />
+						<Dock_Mate2 y="-0.25" x="0.6" yaw="180" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFBehaviorMgr behaviorVersion="1">
+					<subBehaviors>
+						<BFBehAnimate interruptible="true" targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true" />
+					</subBehaviors>
+				</BFBehaviorMgr>
+			</instance>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Stand" />
+							<slow name="Walk" />
+							<medium name="Walk" minAnimSpeed="1.2" maxAnimSpeed="1.5" />
+							<fast name="Run" />
+							<stalk name="Walk" minAnimSpeed="0.5" maxAnimSpeed="0.8" />
+							<evade name="Run" minAnimSpeed="0.8" maxAnimSpeed="1.4" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="foodprop" repopulateMethod="byName" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot ownContents="false" hideContents="false" capacity="1" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder>
+			<instance>
+				<ZTEconomyComponent cost="3000">
+					<ZTTransaction name="build" costType="parent" type="debit" category="animal" />
+				</ZTEconomyComponent>
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

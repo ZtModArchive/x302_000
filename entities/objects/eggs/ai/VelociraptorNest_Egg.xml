@@ -1,0 +1,82 @@
+<BFTypedBinder binderType="VelociraptorNest_Egg">
+   <types>
+      <entity>
+          <egg>
+              <VelociraptorNest_Egg/>
+          </egg>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTPlacementData icon3Doffset="0 0 1" icon3Dscale="0.08" moveable="false"/>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\objects\eggs\Dinosaur_Nest_Desert\Dinosaur_Nest_Desert_icon.dds"/>
+         </UIAspect>
+         <UIHelpInfo name="" short="" long="" help="" ids="entityname:VelociraptorNest"/>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="VelociraptorNest"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared s_Species="Velociraptor" s_Zoopedia="zoopedia:zoopedia_Velociraptor:entry" s_Endangerment="Extinct"/>
+      <BFGBiomeData location="desert_asia_central" locationSensitivity="10">
+	 <alpine sensitivity="-10" />
+	 <benthic sensitivity="-10" />
+	 <borealforest sensitivity="-10" />
+	 <coastal sensitivity="-10" />
+	 <desert sensitivity="3" primary="true" />
+	 <grassland sensitivity="-10" />
+	 <reef sensitivity="-10" />
+	 <pelagic sensitivity="-10" />
+	 <temperateforest sensitivity="-10" />
+	 <tropicalrainforest sensitivity="-10" />
+	 <tundra sensitivity="-10" />
+	 <savannah sensitivity="-2" />
+	 <scrub sensitivity="0" />
+	 <wetlands sensitivity="-10" />
+      </BFGBiomeData>
+   </shared>
+   <binder>
+      <BFNamedBinder binderName="mainObj">
+         <instance>
+            <BFPhysObj>
+               <BFCollisionComponent grid="Bip01"/>
+               <!-- <BFRSceneGraphComponent modelfile="entities/objects/eggs/Dinosaur_Nest_Desert/Dinosaur_Nest_Desert_Actor" scale="1" /> -->
+		<BFActorComponent actorfile="entities/objects/eggs/Dinosaur_Nest_Desert/Dinosaur_Nest_Desert.bfm" activeSequenceName="Stand_Idle" activeSequenceAccumulate="false" scale="0.05"/>
+		<!-- <BFActorComponent actorfile="entities/objects/eggs/BirdElephant/BirdElephant_Egg.bfm" activeSequenceName="Stand_Idle" activeSequenceAccumulate="false" scale="1.0"/> -->
+               <BFGroundFitComponent heightOffset="0.0"/>
+               <BFGridCollisionComponent/>
+            </BFPhysObj>
+         </instance>
+      </BFNamedBinder>
+	<BFBinder required="1">
+		<instance>
+			<BFAICognitiveMgr>
+				<Sensors>
+					<ZTAISensor />
+					<BFAISensorSelf />
+				</Sensors>
+				<StateThinkers>
+					<ZTAIStateThinker>
+						<BFAIStateVar Name="incubation" Value="" ValueMin=".0075" ValueMax="" CessationThreshold="0" DisplayThreshold="0" PressingThreshold="0.85" TriggerThreshold="0.85" CriticalThreshold="0.85" Advanced="true" />
+					</ZTAIStateThinker>
+				</StateThinkers>
+				<TaskThinkers>
+					<ZTAITaskThinker />
+				</TaskThinkers>
+			</BFAICognitiveMgr>
+		</instance>
+		<shared>
+			<BFAICogShared>
+				<BFAINoPerceive>
+					<fence />
+					<path />
+					<entrance />
+				</BFAINoPerceive>
+			</BFAICogShared>
+		</shared>
+	</BFBinder>
+   </binder>
+</BFTypedBinder>

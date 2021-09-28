@@ -1,0 +1,46 @@
+<BFTypedBinder binderType="Styracosaurus_Adult_F_Super">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Sauropsida>
+                  <Ornithischia>
+                     <Ceratopsidae>
+                        <Styracosaurus>
+                           <Styracosaurus_Adult>
+                              <Styracosaurus_Adult_F>
+                              	<Styracosaurus_Adult_F_Super/>
+                              </Styracosaurus_Adult_F>
+                           </Styracosaurus_Adult>
+                        </Styracosaurus>
+                     </Ceratopsidae>
+                  </Ornithischia>
+               </Sauropsida>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <ZTDevComponent />
+      <BFAIEntityDataShared b_Super="true" s_Zoopedia="zoopedia:zoopedia_super_styracosaurus:entry" f_TranqPointsNeeded="15.0f">
+	 <BFAINeedAdjusts hunger="0.22" thirst="0.22" rest="0.22" bathroom="0" hygiene="0" exercise="0.40" lifespan="0.0050" privacy="-0.02" reproduction="0.33" social="0.40" stimulation="0.40" breath="-0.75"/>
+      </BFAIEntityDataShared>
+      <ZTEntitySelector>
+         <BFPhysObj>
+	    <BFTerrainDecalComponent imageName="UI/fx/selection/superclone.dds" alphaBlend="true" size="3.0" />
+	 </BFPhysObj>
+      </ZTEntitySelector>
+   </shared>
+   <binder>
+	<BFNamedBinder binderName="mainObj">
+		<instance>
+			<BFPhysObj>
+				<BFActorComponent actorfile="entities/units/animals/Styracosaurus/Styracosaurus_Adult_F.bfm" scale="0.65" />
+			</BFPhysObj>
+		</instance>
+	</BFNamedBinder>
+   </binder>
+</BFTypedBinder>

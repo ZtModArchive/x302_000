@@ -1,0 +1,14 @@
+﻿<BFM modelname="entities\objects\enrichment\Dino_Prey_Dummy\Dino_Prey_Dummy.nif">
+	<animation anim="entities\objects\enrichment\Dino_Prey_Dummy\Dino_Prey_Dummy_Idle_HitLeft.bf" animName="Idle_HitLeft" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\objects\enrichment\Dino_Prey_Dummy\Dino_Prey_Dummy_Idle.bf" animName="Idle" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+	<animation anim="entities\objects\enrichment\Dino_Prey_Dummy\Dino_Prey_Dummy_Idle_HitRight.bf" animName="Idle_HitRight" debug="false" animSpeed="1.000000" explicitUseOnly="false" resolveUnitCollisions="true" load="true" />
+</BFM>
+<Graph name="Dino_Prey_Dummy" version="1">
+	<node name="Idle">
+		<table>
+			<Idle />
+			<Idle_HitLeft />
+			<Idle_HitRight />
+		</table>
+	</node>
+</Graph>

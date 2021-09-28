@@ -1,0 +1,5 @@
+<BFCampaign name="DinoCampaignLabels:DinoCampaignshort" xpack="3"> 
+   <entry name="DinoCampaignLabels:DinoCampaignS2" short="DinoCampaignLabels:DinoCampaignS2short" key="cp2scen5" scenario="scenario\goals\TheHardWayScenario.xml" map="cp2scen5" cash="20000" difficulty="difficulty:medium" description="DinoCampaign:HardWayOverviewShort" state="unlock"/>
+   <entry name="DinoCampaignLabels:DinoCampaignS1" short="DinoCampaignLabels:DinoCampaignS1short" key="cp2scen4" scenario="scenario\goals\LivingInHarmonyScenario.xml" map="cp2scen4" cash="40000" difficulty="difficulty:medium" description="DinoCampaign:HarmonyOverviewShort" state="locked"/>   
+   <entry name="DinoCampaignLabels:DinoCampaignS3" short="DinoCampaignLabels:DinoCampaignS3short" key="cp2scen6" scenario="scenario\goals\TRexTroubleScenario.xml" map="cp2scen6" cash="40000" difficulty="difficulty:hard" description="DinoCampaign:TroubleOverviewShort" state="locked"/>
+</BFCampaign>

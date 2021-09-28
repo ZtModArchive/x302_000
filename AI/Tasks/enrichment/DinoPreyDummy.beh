@@ -1,0 +1,18 @@
+<BehaviorSets>
+   <Hit_Left>
+      <subjects>
+         <DinoPreyDummy/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Idle_HitLeft" loopFlag="true"/>
+      </behaviors>
+   </Hit_Left>
+   <Hit_Right>
+      <subjects>
+         <DinoPreyDummy/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Idle_HitRight" loopFlag="true"/>
+      </behaviors>
+   </Hit_Right>   
+</BehaviorSets>

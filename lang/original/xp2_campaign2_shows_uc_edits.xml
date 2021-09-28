@@ -1,0 +1,69 @@
+ <ZT2Strings>
+   <MarineShowsCampaign version="10">
+<!--Draft. All specific values for cash awards, etc. are highly speculative, tentative, and subject to change!-->
+
+      <MarineShowPhotographerPart2>The zoo really likes your first batch of marine show photos! Next, they want some action shots of the bottlenose dolphin.
+      <p/>
+      Take the following marine show photos:
+      <br/>
+			* A bottlenose dolphin doing a twist.
+			<br/>
+			* A bottlenose dolphin jumping through a hoop.
+      </MarineShowPhotographerPart2>
+
+      <MarineShowPhotographerPart2Goals>
+      Take the following marine show photos:
+      <br/>
+			* A bottlenose dolphin doing a twist.
+			<br/>
+			* A bottlenose dolphin jumping through a hoop.
+      </MarineShowPhotographerPart2Goals>
+
+      <MarineShowPhotographerPart2Photo1Goal>
+      Take a photo of a bottlenose dolphin doing a twist.
+      </MarineShowPhotographerPart2Photo1Goal>
+      <MarineShowPhotographerPart2Photo1GoalDone>You photographed a bottlenose dolphin doing a twist!</MarineShowPhotographerPart2Photo1GoalDone>
+
+
+      <DoubleFeatureOverview>You were hired to put on two marine shows at the same time. To demonstrate the diversity of marine mammals, the zoo's board wants you to create two very different shows. One show must feature only cetaceans -- dolphins and whales -- and the other only pinnipeds -- seals, the California sea lion, and the Pacific walrus.
+		<p/>
+		After creating a show featuring only cetaceans and another featuring only pinnipeds, 150 guests must visit each show to win the scenario.
+		<p/>
+		(Hint: Once you create, a show for, say, a pilot whale, you can try other cetaceans in the show. You could even replace the pilot whale with an orca. Just make sure that at least one cetacean is always in the cetacean show and at least one pinniped is always in the pinniped show.)
+      </DoubleFeatureOverview>
+
+      <DoubleFeatureCetaceanSetup>
+      You created a show featuring only cetaceans! As a reward for your efforts, the zoo's board gave you a $15,000 grant. After 150 guests visit your cetacean show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one cetacean in this show ... or else!)
+      </DoubleFeatureCetaceanSetup>
+
+      <DoubleFeaturePinnipedSetup>
+      You created a show featuring only pinnipeds! As a reward for your efforts, the zoo's board gave you a $15,000 grant. After 150 guests visit your pinniped show, the board promises to give you an additional $20,000. (Hint: Make sure there's always at least one pinniped in this show ... or else!)
+      </DoubleFeaturePinnipedSetup>
+
+      <DoubleFeatureOverallGoal>Create two shows -- one with only cetaceans and one with only pinnipeds -- and have 150 guests attend each.
+      </DoubleFeatureOverallGoal>
+
+		<DoubleFeatureCetaceanSetupGoal>Create a marine show featuring only cetaceans to receive a $15,000 grant.
+		</DoubleFeatureCetaceanSetupGoal>
+		<DoubleFeatureCetaceanSetupGoalDone>Well done, you created a marine show featuring only cetaceans!
+		</DoubleFeatureCetaceanSetupGoalDone>
+
+		<DoubleFeaturePinnipedSetupGoal>Create a separate marine show featuring only pinnipeds to receive a $15,000 grant.
+		</DoubleFeaturePinnipedSetupGoal>
+		<DoubleFeaturePinnipedSetupGoalDone>Great job! You created a marine show featuring only pinnipeds.
+		</DoubleFeaturePinnipedSetupGoalDone>
+
+
+      <DoubleFeatureCetaceanFailure>
+      Because you altered your cetacean show against their wishes, the board is removing you! They're saddened that you ignored their instructions. You failed the scenario!
+      </DoubleFeatureCetaceanFailure>
+
+      <DoubleFeaturePinnipedFailure>
+      Because you altered your pinniped show against their wishes, the board is removing you! They're disappointed that you ignored their instructions. You failed the scenario!
+      </DoubleFeaturePinnipedFailure>
+
+   </MarineShowsCampaign>
+
+
+
+</ZT2Strings>

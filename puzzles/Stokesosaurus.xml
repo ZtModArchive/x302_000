@@ -1,0 +1,13 @@
+<ZTPuzzle animal="Stokesosaurus" level="2" piecesPerLocation="1">
+  <pieces>
+    <ZTPuzzlePiece texture="01_Tail" node="Piece01" entityScale="1.28" />
+    <ZTPuzzlePiece texture="02_Head" node="Piece02" entityScale="0.64" />
+    <ZTPuzzlePiece texture="03_Tail" node="Piece03" entityScale="0.64" />
+    <ZTPuzzlePiece texture="04_Neck" node="Piece04" entityScale="0.64" />
+    <ZTPuzzlePiece texture="05_Torso" node="Piece05" entityScale="1.28" />
+    <ZTPuzzlePiece texture="06_ArmRight" node="Piece06" entityScale="0.64"/>
+    <ZTPuzzlePiece texture="07_Torso" node="Piece07" entityScale="0.64" />
+    <ZTPuzzlePiece texture="08_Hips" node="Piece08" entityScale="1.28" />
+    <ZTPuzzlePiece texture="09_LegRight" node="Piece09" entityScale="1.28" />    
+  </pieces>
+</ZTPuzzle>

@@ -1,0 +1,2493 @@
+<BehaviorSets>
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Happy_inWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <Default_inWater_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_inWater>
+   <Default_VeryHappy_inWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <Default_inWater_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_inWater>
+   <Default_Happy_isSwimming>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="90"/>
+               <Default_isSwimming_Happy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy_isSwimming>
+   <Default_VeryHappy_isSwimming>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_5">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="80"/>
+               <Default_isSwimming_Happy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy_isSwimming>
+   <Default_Unhappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+   <Default_Unhappy_inWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="90"/>
+               <Default_inWater_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_inWater>
+   <Default_VeryUnhappy_inWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultLie weight="80"/>
+               <Default_inWater_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_inWater>
+   <Default_Unhappy_isSwimming>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="90"/>
+               <Default_isSwimming_Unhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy_isSwimming>
+   <Default_VeryUnhappy_isSwimming>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultTreadWater weight="80"/>
+               <Default_isSwimming_Unhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy_isSwimming>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultStand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Standing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DefaultStand>
+   <DefaultLie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LyingDown"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultSleep>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle"/>
+      </behaviors>
+   </DefaultSleep>
+   <DefaultTreadWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Swimming"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </DefaultTreadWater>
+   <DefaultHappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sighing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sigh"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData social="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultHappy>
+   <Default_inWater_Happy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drinking"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Drink"/>
+         <BFBehSetAttribute>
+            <BFAISubjectData thirst="-1"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Happy>
+   <Default_isSwimming_Happy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium"/>
+         <BFBehSetAttribute>
+            <BFAITargetData exercise="-10"/>
+         </BFBehSetAttribute>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Happy>
+   <DefaultUnhappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+   <Default_inWater_Unhappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GrowlAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Roar"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_inWater_Unhappy>
+   <Default_isSwimming_Unhappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:TreadingWater"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="TreadWater_Idle"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Default_isSwimming_Unhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="DefaultStand"/>
+               <Lie behSet="DefaultLie"/>
+               <Sleep behSet="DefaultSleep"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="DefaultStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <Think>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <LookAt>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Idle weight="50"/>
+               <Investigate weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </LookAt>
+   <Investigate>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Die_OldAge>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Die_Fight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Meat" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Drown>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Drown>   
+   <Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true"/>
+      </behaviors>
+   </Stand>
+   <Sick>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Sneeze"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehPlaySet behSet="Sneeze"/>
+      </behaviors>
+   </VerySick>
+   <TreadWater>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater>
+   <TreadWater_Idle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle" interruptFlag="true"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <Drink>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </Drink>
+   <Eat>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </Eat>
+   <BrowseBush>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dig"/>
+         <BFBehAnimate targetAnim="Stand_BrowseBush"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAnimate targetAnim="Stand_BrowseBush"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </BrowseBush>
+   <EnterFoodDish>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterFoodDish> 
+   <UseFoodDish>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </UseFoodDish>
+   <DrinkFoodDish>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+         <BFBehAnimate targetAnim="Eat_Drink"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </DrinkFoodDish>
+   <ExitFoodDish>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitFoodDish>
+   <EnterTrough>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTrough> 
+   <UseTrough>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Chew"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="EatTrough_Swallow"/>
+      </behaviors>
+   </UseTrough>
+   <DrinkTrough>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+         <BFBehAnimate targetAnim="EatTrough_Swallow"/>
+         <BFBehAnimate targetAnim="EatTrough_Drink"/>
+         <BFBehAnimate targetAnim="EatTrough_Swallow"/>
+      </behaviors>
+   </DrinkTrough>
+   <ExitTrough>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitTrough>
+   <EnterSubstratePile>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterSubstratePile> 
+   <UseSubstratePile>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Eat_Dig"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Chew"/>
+         <BFBehAnimate targetAnim="Eat_Dig"/>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="Eat_Idle" targetNode="Dock_Attach" detachAction="killitem" container="foodprop"/>
+         <BFBehAnimate targetAnim="Eat_Swallow"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle"/>
+      </behaviors>
+   </Lie>
+   <Rest>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" playTime="10"/>
+      </behaviors>
+   </Rest>
+   <Sleep>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep>
+   <Sleep_Exhausted>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Sleep_Fall"/>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+      </behaviors>
+   </Sleep_Exhausted>
+   <Yawn>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Yawn_Stand"/>
+               <Lie behSet="Yawn_Lie"/>
+               <Sleep behSet="Yawn_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Yawn_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Yawn>
+   <Yawn_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Yawn"/>
+      </behaviors>
+   </Yawn_Stand>
+   <Yawn_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Yawn"/>
+      </behaviors>
+   </Yawn_Lie>
+   <Exhaust>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Exhausted"/>
+      </behaviors>
+   </Exhaust>
+   <SleepCurl>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Curl_Idle" playTime="20"/>
+      </behaviors>
+   </SleepCurl>
+   <WaitNuzzle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Grunt"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitNuzzle>
+   <DockNuzzle>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_NuzzleYoung" targetNode="Dock_BeNuzzled" targetAnim="Stand_Idle"/>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </DockNuzzle>
+   <Nuzzle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NuzzleYoung" interruptFlag="true"/>
+      </behaviors>
+   </Nuzzle>
+   <BeNuzzled>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_NuzzleMother" interruptFlag="true"/>
+      </behaviors>
+   </BeNuzzled>
+   <WaitKnockOver>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Grunt"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitKnockOver>
+   <DockKnockOver>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_KnockYoung" targetNode="Dock_BeKnocked" targetAnim="Stand_Idle"/>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </DockKnockOver>
+   <KnockOverYoung>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_KnockOverYoung" interruptFlag="true"/>
+         <BFBehAnimateRandom minPlays="2" maxPlays="5">
+            <randomAnims>
+               <Stand_Grunt weight="100"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </KnockOverYoung>
+   <BeKnockedOver>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked" interruptFlag="true"/>
+         <BFBehAnimateRandom minPlays="1" maxPlays="4">
+            <randomAnims>
+               <Attacked_Struggle weight="100"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BeKnockedOver>
+   <WaitSniff>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Grunt"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitSniff>
+   <DockSniff>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_SniffOther" targetNode="Dock_BeNuzzled" targetAnim="Stand_Idle"/>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </DockSniff>
+   <Sniff>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sniff_Stand"/>
+               <Lie behSet="Sniff_Lie"/>
+               <Sleep behSet="Sniff_Lie"/>
+               <Walk behSet="Sniff_Walk"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Sniff_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sniff>
+   <Sniff_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sniff"/>
+      </behaviors>
+   </Sniff_Stand>
+   <Sniff_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sniff"/>
+      </behaviors>
+   </Sniff_Lie>
+   <Sniff_Walk>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Walk_Ahead_Sniff"/>
+      </behaviors>
+   </Sniff_Walk>
+   <Sigh>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sigh_Stand"/>
+               <Lie behSet="Sigh_Lie"/>
+               <Sleep behSet="Sigh_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Sigh_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sigh>
+   <Sigh_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sigh"/>
+      </behaviors>
+   </Sigh_Stand>
+   <Sigh_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sigh"/>
+      </behaviors>
+   </Sigh_Lie>
+   <PushUp>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PushUp"/>
+      </behaviors>
+   </PushUp>
+   <SlamGround>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="SlamGround_Stand"/>
+               <Lie behSet="SlamGround_Lie"/>
+               <Sleep behSet="SlamGround_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="SlamGround_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </SlamGround>
+   <SlamGround_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SlamGround"/>
+      </behaviors>
+   </SlamGround_Stand>
+   <SlamGround_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_SlamGround"/>
+      </behaviors>
+   </SlamGround_Lie>
+   <Dig>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dig"/>
+      </behaviors>
+   </Dig>
+   <InterspeciesTerritorialCall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Growl weight="40"/>
+               <GruntHappy weight="20"/>
+               <Grunt weight="40"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </InterspeciesTerritorialCall>
+   <ContactCall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Growl weight="30"/>
+               <GruntHappy weight="20"/>
+               <Grunt weight="40"/>
+               <PushUp weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ContactCall>
+   <Grunt>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Grunt_Stand"/>
+               <Lie behSet="Grunt_Lie"/>
+               <Sleep behSet="Grunt_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Grunt_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Grunt>
+   <Grunt_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Grunt"/>
+      </behaviors>
+   </Grunt_Stand>
+   <Grunt_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Grunt"/>
+      </behaviors>
+   </Grunt_Lie>
+   <GruntHappy>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="GruntHappy_Stand"/>
+               <Lie behSet="GruntHappy_Lie"/>
+               <Sleep behSet="GruntHappy_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="GruntHappy_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </GruntHappy>
+   <GruntHappy_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GruntHappily"/>
+      </behaviors>
+   </GruntHappy_Stand>
+   <GruntHappy_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_GruntHappily"/>
+      </behaviors>
+   </GruntHappy_Lie>
+   <Roar>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Growl_Stand"/>
+               <Lie behSet="Growl_Lie"/>
+               <Sleep behSet="Growl_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Growl_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Roar>
+   <Growl>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Growl_Stand"/>
+               <Lie behSet="Growl_Lie"/>
+               <Sleep behSet="Growl_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Growl_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Growl>
+   <Growl_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Growl"/>
+      </behaviors>
+   </Growl_Stand>
+   <Growl_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Growl"/>
+      </behaviors>
+   </Growl_Lie>
+   <Sneeze>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Stand behSet="Sneeze_Stand"/>
+               <Lie behSet="Sneeze_Lie"/>
+               <Sleep behSet="Sneeze_Lie"/>
+               <TreadWater behSet="DefaultTreadWater"/>
+               <default behSet="Sneeze_Stand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Sneeze>
+   <Sneeze_Stand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Sneeze"/>
+      </behaviors>
+   </Sneeze_Stand>
+   <Sneeze_Lie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Sneeze"/>
+      </behaviors>
+   </Sneeze_Lie>
+   <Shake>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Shake"/>
+      </behaviors>
+   </Shake>
+   <DockRubOther>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_RubShell" targetNode="Dock_RubShell2" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </DockRubOther> 
+   <WaitRubOther>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" playTime="30"/>
+      </behaviors>
+   </WaitRubOther> 
+   <RubSnap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </RubSnap>
+   <RubOther>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_RubShell"/>
+         <BFBehAnimate targetAnim="Stand_RubShell"/>
+      </behaviors>
+   </RubOther>
+   <FailureSet>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="FailureSet_Ground"/>
+               <water behSet="FailureSet_Water"/>
+               <underwater behSet="FailureSet_Water"/>
+               <default behSet="FailureSet_Ground"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <FailureSet_Ground>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Growl weight="20"/>
+               <Dig weight="20"/>
+               <SlamGround weight="40"/>
+               <PushUp weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FailureSet_Ground>
+   <FailureSet_Water>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="TreadWater_Idle"/>
+      </behaviors>
+   </FailureSet_Water>
+   <Poop>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Medium_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Poop>
+      <subjects>
+         <Ankylosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <Ankylosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Poop_Small_Sick" subjectNode="Poop" targetAnim="Stand_Poop"/>
+      </behaviors>
+   </Poop_Sick>
+   <Pee>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Pee"/>
+      </behaviors>
+   </Pee>
+   <EnterExtinctShelter1>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode01_EnterA" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter1>
+   <EnterExtinctShelter2>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockTAP targetAnim="Walk_Ahead" subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB"/>
+         <BFBehHeadLook disengage="true"/>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode03_EnterB" exitTap="false"/>
+      </behaviors>
+   </EnterExtinctShelter2>
+   <UseExtinctShelter>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Sleep_Idle" playTime="20"/>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </UseExtinctShelter>
+   <ExitExtinctShelter1>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode02_ExitA" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter1>
+   <ExitExtinctShelter2>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateTAP subjectNode="Floor" targetTAP="Bip01_DockNode04_ExitB" exitTAP="true"/>
+      </behaviors>
+   </ExitExtinctShelter2>
+   <EnterShadeStructure>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehHeadLook/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Floor" targetRadius="3" rotError="180"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterShadeStructure> 
+   <UseShadeStructure>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Curl_Idle" playTime="20"/>
+      </behaviors>
+   </UseShadeStructure>
+   <ExitShadeStructure>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitShadeStructure>
+   <ChaseBall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehViewEvent viewKey="Pos_4">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" global="false" useTargetTarget="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+      </behaviors>
+   </ChaseBall>
+   <EnterBall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+      </behaviors>
+   </EnterBall>
+   <UseBall_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall_Whap>
+   <UsePursuitBall_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UsePursuitBall_Whap>
+   <UseCarTire_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseCarTire_Whap>
+   <UseBarrel_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight_Whap weight="50"/>
+               <SwatBallLeft_Whap weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBarrel_Whap>
+   <UseBall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <SwatBallRight weight="50"/>
+               <SwatBallLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </UseBall>
+   <SwatBallRight_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SlamBallRight"/>
+      </behaviors>
+   </SwatBallRight_Whap>
+   <SwatBallLeft_Whap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWhap targetAnim="Stand_SlamBallLeft"/>
+      </behaviors>
+   </SwatBallLeft_Whap>
+   <SwatBallRight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitRight" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SlamBallRight"/>
+      </behaviors>
+   </SwatBallRight>
+   <SwatBallLeft>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Dock_BallHitLeft" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_SlamBallLeft"/>
+      </behaviors>
+   </SwatBallLeft>
+   <ExitBall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </ExitBall>
+   <EnterTreeRub>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDock subjectNode="Dock_Rub" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+      </behaviors>
+   </EnterTreeRub> 
+   <RubTree>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <RubTree_Head weight="50"/>
+               <RubTree_Shell weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </RubTree>
+   <RubTree_Head>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_RubHead" targetAnim="Stand_Idle" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_RubHead"/>
+         <BFBehAnimate targetAnim="Stand_RubHead"/>
+         <BFBehPlaySet behSet="Shake"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight180"/>
+      </behaviors>
+   </RubTree_Head>
+   <RubTree_Shell>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_RubShell" targetAnim="Stand_Idle" redock="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Rubbing" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_RubShell"/>
+         <BFBehAnimate targetAnim="Stand_RubShell"/>
+         <BFBehAnimate targetAnim="Walk_Ahead"/>
+      </behaviors>
+   </RubTree_Shell>
+   <ExitTreeRub>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <tree/>
+               <ScratchPost/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </ExitTreeRub>
+   <MatingCall>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Grunt"/>
+         <BFBehAnimate targetAnim="Stand_PushUp"/>
+      </behaviors>
+   </MatingCall>
+   <Mate>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Curl_Idle" playTime="10"/>
+      </behaviors>
+   </Mate>
+   <StartNest>
+      <subjects>
+         <Ankylosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="SpawnNest"/>
+      </behaviors>
+   </StartNest>
+   <SpawnNest>
+      <subjects>
+         <Ankylosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dig"/>
+         <BFBehSpawn spawnEntity="AnkylosaurusNest" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <SpawnNest>
+      <subjects>
+         <Ankylosaurus_Adult_F_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Dig"/>
+         <BFBehSpawn spawnEntity="AnkylosaurusNest_Super" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+      </behaviors>
+   </SpawnNest>
+   <BuildAnkylosaurusNest>
+      <subjects>
+         <Ankylosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToBuildNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BuildingNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Dig weight="50"/>
+               <Stand_Dig weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehSetAttribute>
+            <BFAITargetData f_ConstructionLevel="34"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </BuildAnkylosaurusNest>
+   <FinishAnkylosaurusNest>
+      <subjects>
+         <Ankylosaurus_Adult_F/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFinishNest"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehHeadLook/>
+         <BFBehDockRadial subjectNode="Floor" targetAnim="Stand_Idle"/>
+         <BFBehHeadLook disengage="true"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:FinishingNest" />
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Stand_Dig weight="50"/>
+               <Stand_Dig weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehSpawn spawnEntity="AnkylosaurusNest_Egg" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="1" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </FinishAnkylosaurusNest>
+   <HatchEgg>
+      <subjects>
+         <AnkylosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <HatchEgg>
+      <subjects>
+         <AnkylosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="1" maxPlays="1">
+            <randomSets>
+               <SpawnSuperF weight="50"/>
+               <SpawnSuperM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HatchEgg>
+   <IdleEgg>
+      <subjects>
+         <AnkylosaurusNest_Egg/>
+         <AnkylosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle"/>
+      </behaviors>
+   </IdleEgg>
+   <SpawnF>
+      <subjects>
+         <AnkylosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="AnkylosaurusNest_Egg" morphTargetEntityType="Ankylosaurus_Young_F" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <AnkylosaurusNest_Egg/>
+      </subjects>
+      <behaviors>
+         <ZTBehMorph morphEntity="AnkylosaurusNest_Egg" morphTargetEntityType="Ankylosaurus_Young_M" morphPeriod="2"/>
+         <BFBehKill killSubject="true"/>
+      </behaviors>
+   </SpawnM>
+   <SpawnSuperF>
+      <subjects>
+         <AnkylosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Ankylosaurus_Young_F_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperF>
+   <SpawnSuperM>
+      <subjects>
+         <AnkylosaurusNest_Egg_Super/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="Ankylosaurus_Young_M_Super" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnSuperM>
+   <JustBorn>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_SlamGround"/>
+         <BFBehAnimate targetAnim="Stand_PushUp"/>
+      </behaviors>
+   </JustBorn>
+   <FightSide>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide weight="50"/>
+               <FightLeftSide weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightSide>
+   <FightRightSide>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Right"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight" resetPhase="true"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <FightRightSide_Win weight="50"/>
+               <FightRightSide_Lose weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </FightRightSide>
+   <FightRightSide_Win>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="GetHitRight" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitRight_Lose" targetBehSet="HitRight" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="Struggle" targetBehSet="PushUp" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="Struggle" targetBehSet="Growl" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Win>
+   <FightRightSide_Lose>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="HitRight" targetBehSet="GetHitRight_Lose" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="PushUp" targetBehSet="Struggle" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="Growl" targetBehSet="Struggle" resetPhase="true"/>
+      </behaviors>
+   </FightRightSide_Lose>
+   <FightLeftSide>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehSyncSet subjectBehSet="WaitSideFight" targetBehSet="DockSideFight_Left"/>
+         <BFBehSyncSet subjectBehSet="FightSnap" targetBehSet="FightSnap" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="GetHitLeft" targetBehSet="HitLeft" resetPhase="true"/>
+         <BFBehSyncSet subjectBehSet="HitLeft" targetBehSet="GetHitLeft" resetPhase="true"/>
+      </behaviors>
+   </FightLeftSide>
+   <DockSideFight_Right>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnLeftB"/>
+         <BFBehDock subjectNode="Dock_Fight_Right" targetNode="Dock_FightWait_Right" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Right>
+   <DockSideFight_Left>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Walk_TurnRightB"/>
+         <BFBehDock subjectNode="Dock_Fight_Left" targetNode="Dock_FightWait_Left" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockSideFight_Left>
+   <WaitSideFight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" interruptFlag="true" loopFlag="true"/>
+      </behaviors>
+   </WaitSideFight>
+   <DockFight>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="medium" pollFreq="0.1"/>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="5" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <WaitFight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitFight>
+   <FightSnap>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </FightSnap>
+   <DockFight>
+      <subjects>
+         <Ankylosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockNow subjectNode="p_FightOffset" targetNode="p_FightOffset" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <Ankylosaurus_Young/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <DockPlayFight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetNode="p_PredatorFightOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockPlayFight>
+   <WaitPlayFight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitPlayFight>
+   <SwipeMed>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PushUp"/>
+      </behaviors>
+   </SwipeMed>
+   <HitMed>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMed>
+   <HitMedDie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie>
+   <HitMediumEqual>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <BiteMed>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_PushUp"/>
+      </behaviors>
+   </BiteMed>
+   <BitMed>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <GetHitRight weight="50"/>
+               <GetHitLeft weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie>
+   <BitMediumEqual>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <DefendEqual>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <Fight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="HitRight"/>
+         <BFBehPlaySet behSet="HitRight"/>
+      </behaviors>
+   </Fight>
+   <FightHurt>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="HitRight"/>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <GetHitRight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GetHitRight"/>
+      </behaviors>
+   </GetHitRight>
+   <GetHitRight_Lose>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_2Attacked"/>
+      </behaviors>
+   </GetHitRight_Lose>
+   <GetHitLeft>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GetHitLeft"/>
+      </behaviors>
+   </GetHitLeft>
+   <HitRight>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailSlamRight"/>
+      </behaviors>
+   </HitRight>
+   <HitLeft>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TailSlamLeft"/>
+      </behaviors>
+   </HitLeft>
+   <Struggle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_Struggle"/>
+      </behaviors>
+   </Struggle>
+   <WaitAttack>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttack>
+   <AttackMed>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehAnimate targetAnim="Stand_TailSlamLeft"/>
+      </behaviors>
+   </AttackMed>
+   <DockAttacked>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_PredatorOffset" subjectNode="Node_PreyOffset" reserveSlotName="general"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Attacked_2Stand"/>
+         <BFBehAnimate targetAnim="Attacked_Struggle"/>
+         <BFBehAnimate targetAnim="Attacked_Idle"/>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   <WaitAttackGuest>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </WaitAttackGuest>
+   <DockAttackGuest>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehFaceTarget/>
+         <BFBehDock subjectNode="Dock_Guest" targetNode="p_TalkOffset" targetAnim="Stand_Idle"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_GuestAttack" interruptFlag="true"/>
+      </behaviors>
+   </AttackGuest>
+   <BashFence>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_TurnRight90"/>
+         <BFBehKill targetAnim="Stand_BashFence" killTarget="true" radius="5" radiusKillType="fence" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </BashFence>
+   <EnterBuilding>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehDock subjectNode="Dock_Building" targetAnim="Stand_Idle" locoSpeed="slow"/>
+      </behaviors>
+   </EnterBuilding>
+   <DestroyBuilding>
+      <subjects>
+         <Ankylosaurus_Adult/>
+      </subjects>
+      <behaviors>
+         <BFBehKill targetAnim="Stand_GuestAttack" killTarget="true" fadeOutPeriod="1" killUsingDestroyEntity="true"/>
+      </behaviors>
+   </DestroyBuilding>
+   <LoopIdle>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Stand behSet="LoopStand"/>
+               <Lie behSet="LoopLie"/>
+               <Sleep behSet="LoopSleep"/>
+               <default behSet="LoopStand"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+   <LoopStand>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Stand_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopStand>
+   <LoopLie>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Lie_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopLie>
+   <LoopSleep>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Sleep_Idle" loopFlag="true"/>
+      </behaviors>
+   </LoopSleep>
+   <TranquilizedRampage>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="TranquilizedRampage_Land"/>
+               <water behSet="TranquilizedRampage_Water"/>
+               <underwater behSet="TranquilizedRampage_Water"/>
+               <default behSet="TranquilizedRampage_Water"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </TranquilizedRampage>
+   <TranquilizedRampage_Land>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="Stand_Growl">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="Stand_2Sleep_Fall">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <ZTBehViewEvent viewKey="Pos_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalTranquilizedGood" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Sleeping"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Sleep"/>
+      </behaviors>
+   </TranquilizedRampage_Land>
+   <TranquilizedRampage_Water>
+      <subjects>
+         <Ankylosaurus/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:BeingTranquilized" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy attach nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="5"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Drowning"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehAnimate targetAnim="TreadWater_Idle">
+	    <textkeys>
+	      <tranquilize text="{Node_Eat} runpeff diseased_sleepy stop nocull"/>
+	    </textkeys>
+         </BFBehAnimate>
+         <BFBehAnimate targetAnim="TreadWater_Idle" playTime="15"/>
+      </behaviors>
+   </TranquilizedRampage_Water>
+
+</BehaviorSets>

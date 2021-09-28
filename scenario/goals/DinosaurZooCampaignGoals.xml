@@ -1,0 +1,100 @@
+<ZTScenarioMgr interval="2" name="mgr" state="0" chain="false" allsuccess="true" sticky="true" optional="false">
+	<info locid="DinosaurZoo:DinosaurZooIntro"/>
+	<children>
+		<BFScenarioRule hidden="1" name="setinitialzoostate" state="0" sticky="true">
+			<evaluate>
+				<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="setinitialzoostate" />
+			</evaluate>
+		</BFScenarioRule>
+		<BFScenarioGroup hidden="0" name="TotalWin" state="0" chain="false" allsuccess="true" sticky="true">
+		   <info type="primary">
+		      <neutral locid="DinosaurZoo:DinosaurZooOverallGoal" />
+                      <success locid="DinosaurZoo:DinosaurZooOverallGoalDone" overview="DinosaurZoo:DinosaurZooSuccessOverview"/>
+		   </info>
+		   <success>
+				<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completetotalwin" />
+			</success>
+		   <children>
+				<BFScenarioRule name="FameA" hidden="0" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="DinosaurZoo:DinosaurZooFameGoal1" overview="DinosaurZoo:DinosaurZooFame1Overview"/>
+						<success locid="DinosaurZoo:DinosaurZooFameGoal1Done" overview="DinosaurZoo:DinosaurZooFame1Overview" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalFameA" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completeFameA" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="FameB" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="DinosaurZoo:DinosaurZooFameGoal2" overview="DinosaurZoo:DinosaurZooFame1Success"/>
+						<success locid="DinosaurZoo:DinosaurZooFameGoal2Done" overview="DinosaurZoo:DinosaurZooFame1Success" />
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalFameB" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completeFameB" />
+					</success>
+				</BFScenarioRule>      		
+				<BFScenarioRule name="FameC" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral locid="DinosaurZoo:DinosaurZooFameGoal3" overview="DinosaurZoo:DinosaurZooFame2Success"/>
+						<success locid="DinosaurZoo:DinosaurZooFameGoal3Done"/>
+					</info>
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalFameC" />
+					</evaluate>
+					<success>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completeFameC" />
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="HaveTrex" hidden="1" state="0" sticky="true">
+					<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalhavewinspec" />
+					</evaluate>
+					<success>
+					   <BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completehavewinspec"/>
+					</success>
+				</BFScenarioRule>
+				<BFScenarioRule name="TrexNeeds" hidden="1" state="0" sticky="true">
+					<info type="primary">
+						<neutral overview="DinosaurZoo:DinosaurZooFame3Success"/>
+					</info>
+						<evaluate>
+						<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evaltrexneeds" />
+					</evaluate>
+					<success>
+					   <BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completetrexneeds"/>
+					</success>
+				</BFScenarioRule>
+		  </children>
+      </BFScenarioGroup>
+      <BFScenarioRule name="GuestA" hidden="1" state="0" sticky="true">
+		<info type="primary">
+			<neutral locid="DinosaurZoo:DinosaurZooGuestGoal1" />
+			<success locid="DinosaurZoo:DinosaurZooGuestGoal1Done" />
+		</info>
+		<evaluate>
+			<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalGuestA" />
+		</evaluate>
+		<success>
+			<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completeGuestA" />
+		</success>
+	</BFScenarioRule>          		
+        <BFScenarioRule name="GuestB" hidden="1" state="0" sticky="true">
+		<info type="primary">
+			<neutral locid="DinosaurZoo:DinosaurZooGuestGoal2" />
+			<success locid="DinosaurZoo:DinosaurZooGuestGoal2Done"/>
+		</info>
+		<evaluate>
+			<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="evalGuestB" />
+		</evaluate>
+		<success>
+			<BFScenarioScriptAction script="scenario/scripts/dinocampaign.lua" entry="completeGuestB" />
+		</success>
+	</BFScenarioRule>            
+   </children>
+</ZTScenarioMgr>

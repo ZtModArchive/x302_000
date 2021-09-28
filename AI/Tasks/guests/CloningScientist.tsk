@@ -1,0 +1,83 @@
+<BFAITaskTemplateList>
+  <BFAITaskTemplate Name="DefaultCloningBehavior" Priority="80" UniqueID="CloningScientist:DefaultCloningBehavior">
+    <BFAICreateData>
+      <Subjects>
+        <Guest_Adult_M_CloningScientist/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+        <t_CloningDefaultTask/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="95"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="CloningFeedback_Default"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Good_Cloning" Priority="90" UniqueID="CloningScientist:Feedback_Good_Cloning">
+    <BFAICreateData>
+      <Subjects>
+        <Guest_Adult_M_CloningScientist/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+        <t_CloningGood/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="CloningFeedback_Good"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Bad_Cloning" Priority="90" UniqueID="CloningScientist:Feedback_Bad_Cloning">
+    <BFAICreateData>
+      <Subjects>
+        <Guest_Adult_M_CloningScientist/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+        <t_CloningBad/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <BFBehPlaySet behSet="CloningFeedback_Bad"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+  <BFAITaskTemplate Name="Feedback_Confused_Cloning" Priority="90" UniqueID="CloningScientist:Feedback_Confused_Cloning">
+    <BFAICreateData>
+      <Subjects>
+        <Guest_Adult_M_CloningScientist/>
+      </Subjects>
+      <Targets>
+        <fromToken/>
+      </Targets>
+      <Objects>
+        <t_CloningConfused/>
+      </Objects>
+    </BFAICreateData>
+    <BFAIEvalData fixedScore="100"/>
+    <BFBehExecTask>
+      <ZTBehFeedback>
+        <ZTFeedbackData>
+          <ZTEmoticonInfo emoticonName="EmoteGuestUneducation" emoticonEntityNode="Bip01 Head"/>
+        </ZTFeedbackData>
+      </ZTBehFeedback>
+      <BFBehPlaySet behSet="CloningFeedback_Confused"/>
+    </BFBehExecTask>
+    <BFAICompletionData/>
+    <BFAIFailureData/>
+  </BFAITaskTemplate>
+</BFAITaskTemplateList>
